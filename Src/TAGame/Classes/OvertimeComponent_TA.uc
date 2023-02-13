@@ -5,7 +5,7 @@
 *******************************************************************************/
 class OvertimeComponent_TA extends ActorComponent_X within GameEvent_Soccar_TA;
 
-var() _Types_TA.EMatchTieBreaker TieBreaker;
+var() int /** _Types_TA.EMatchTieBreaker*/ TieBreaker;
 var() int OvertimeGameTime;
 var() float BallHitGroundTimeoutSeconds;
 var int FirstScoreTeamIndex;

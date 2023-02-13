@@ -24,7 +24,7 @@ var() float ActiveTime;
 var() float ValueMin;
 var() float ValueMax;
 var transient MaterialInstanceConstant MatInst;
-var transient MaterialEffect_X.EMaterialEffectStage Stage;
+var transient EMaterialEffectStage Stage;
 var transient float StageTime;
 
 defaultproperties

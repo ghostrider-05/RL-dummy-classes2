@@ -8,20 +8,20 @@ class GameEvent_KnockOut_TA extends GameEvent_Soccar_TA
 	notplaceable
 	hidecategories(Navigation,Actor,Object);
 
-var /*0x00010000-0x00000000*/ const bool bFreeForAll;
-var /*0x00010000-0x00000000*/ repnotify int PlayerLives;
-var /*0x00010000-0x00000000*/ int PlayersEliminated;
-var() /*0x00010000-0x00000000*/ array<SpecialPickup_TA> PickupArchetypes;
-var() /*0x00010000-0x00000000*/ FXActor_X PickupFXActor;
-var() /*0x00010000-0x00000000*/ float PickupRespawnDelay;
-var /*0x00010000-0x00000000*/ FXActor_SafeZone_Knockout_TA SafeZone;
-var /*0x00010000-0x00000000*/ FXActor_SafeZone_Knockout_TA SafeZoneArchetype;
-var /*0x00010000-0x00000000*/ Message_TA ReturnToSafezoneMessage;
-var /*0x00010000-0x00000000*/ Message_TA ReturnedToSafezoneMessage;
-var /*0x00010000-0x00000000*/ Message_TA SafeZoneShrinkingMessage;
-var /*0x00010000-0x00000000*/ Message_TA SafeZoneFinalZoneMessage;
-var /*0x00010000-0x00000000*/ Message_TA OutOfWorldMessage;
-var /*0x00010000-0x00000000*/ float PodiumSpawnLocationZ;
+var const bool bFreeForAll;
+var repnotify int PlayerLives;
+var int PlayersEliminated;
+var() array<SpecialPickup_TA> PickupArchetypes;
+var() FXActor_X PickupFXActor;
+var() float PickupRespawnDelay;
+var FXActor_SafeZone_Knockout_TA SafeZone;
+var FXActor_SafeZone_Knockout_TA SafeZoneArchetype;
+var Message_TA ReturnToSafezoneMessage;
+var Message_TA ReturnedToSafezoneMessage;
+var Message_TA SafeZoneShrinkingMessage;
+var Message_TA SafeZoneFinalZoneMessage;
+var Message_TA OutOfWorldMessage;
+var float PodiumSpawnLocationZ;
 
 defaultproperties
 {

@@ -5,5 +5,5 @@
 *******************************************************************************/
 class CrumbTrailSave_TA extends SaveObject_TA;
 
-var /*0x00010000-0x00000000*/ array<name> CompletedTrails;
-var /*0x00010000-0x00000000*/ array<name> ActiveTrails;
+var array<name> CompletedTrails;
+var array<name> ActiveTrails;

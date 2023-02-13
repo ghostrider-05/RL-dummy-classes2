@@ -5,7 +5,7 @@
 *******************************************************************************/
 class AvatarRequester_X extends Object within OnlineGame_X;
 
-var /*0x00008000-0x00000000*/ VanityConfig_X VanityConfig;
+var VanityConfig_X VanityConfig;
 var array<PendingAvatarRequest_X> AllRequests;
 var array<PendingAvatarRequest_X> PendingPermissionRequests;
 var array<PendingAvatarRequest_X> PendingAvatarRequests;

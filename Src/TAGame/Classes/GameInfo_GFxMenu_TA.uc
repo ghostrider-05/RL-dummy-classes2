@@ -10,11 +10,11 @@ class GameInfo_GFxMenu_TA extends GameInfoBase_TA
 var transient CarPreviewSet_TA CarPreviewSet;
 var transient PremiumGaragePreviewSet_TA PremiumPreviewSet;
 var export editinline transient ExplosionPreviewer_TA ExplosionPreviewer;
-var /*0x00010000-0x00000000*/ MusicStingersPreviewer_TA MusicStingersPreviewer;
+var MusicStingersPreviewer_TA MusicStingersPreviewer;
 var() export editinline MenuSequencer_TA MenuSequencer;
 var const string UIStateNames[EUIMenuState];
 var const name UISoundState_MainMenu;
-var /*0x00010000-0x00000000*/ const array<CinematicIntroSequence_TA> CinematicSequences;
+var const array<CinematicIntroSequence_TA> CinematicSequences;
 var EnableOnlineSave_X OnlineSaveEnable;
 
 defaultproperties

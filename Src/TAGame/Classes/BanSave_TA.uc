@@ -5,4 +5,4 @@
 *******************************************************************************/
 class BanSave_TA extends SaveObject_TA;
 
-var /*0x00080000-0x00000000*/ bool bViewedLastChanceModal;
+var bool bViewedLastChanceModal;

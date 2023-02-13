@@ -7,14 +7,14 @@ class Stunlock_TA extends Actor
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ repnotify transient Car_KnockOut_TA Car;
-var /*0x00010000-0x00000000*/ const float ButtonMashReduceTime;
-var /*0x00010000-0x00000000*/ const float MinTimeBetweenMashes;
-var /*0x00010000-0x00000000*/ transient float LastMashTime;
-var /*0x00010000-0x00000000*/ repnotify transient float MaxStunTime;
-var /*0x00010000-0x00000000*/ transient float StunTimeRemaining;
-var /*0x00010000-0x00000000*/ transient float MashTime;
-var /*0x00010000-0x00000000*/ transient bool bMashed;
+var repnotify transient Car_KnockOut_TA Car;
+var const float ButtonMashReduceTime;
+var const float MinTimeBetweenMashes;
+var transient float LastMashTime;
+var repnotify transient float MaxStunTime;
+var transient float StunTimeRemaining;
+var transient float MashTime;
+var transient bool bMashed;
 
 defaultproperties
 {

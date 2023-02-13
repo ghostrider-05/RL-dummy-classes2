@@ -62,15 +62,15 @@ var transient GFxModal_X ModalProcessing;
 var int BlackMarketSkinProductID;
 var transient float CatalogExpirationTime;
 var float CatalogCacheDuration;
-var transient _Types_TA.EMTXCatalogCategory CatalogCategory;
+var transient EMTXCatalogCategory CatalogCategory;
 var const float PurchaseTimeoutTime;
 var const float GetPriceTimeoutTime;
 var transient GameInfo_GFxMenu_TA Menu;
-var() /*0x00008000-0x00000000*/ MtxConfig_TA MtxConfig;
+var() MtxConfig_TA MtxConfig;
 var OnlineSystemInterface SystemInterface;
 var OnlinePurchaseInterface PurchaseInterface;
 var PsyNetConnection_X PsyNetConnection;
-var /*0x00010000-0x00000000*/ const localized string RegionRestrictedOpenCrate;
+var const localized string RegionRestrictedOpenCrate;
 var export editinline transient OnlineProductStoreSet_TA OnlineProductStoreSet;
 
 defaultproperties
@@ -79,7 +79,6 @@ defaultproperties
 	CatalogCacheDuration=300.0
 	PurchaseTimeoutTime=60.0
 	GetPriceTimeoutTime=10.0
-	RegionRestrictedOpenCrate="Sorry, your country’s regulations do not allow for you to open Crates with keys."
 	TableName=MTXGarage
 	bLevelTransitionPersistent=true
 }

@@ -7,7 +7,7 @@ class SeqEvent_UIStateChange_TA extends SequenceEvent
 	forcescriptorder(true)
 	hidecategories(Object);
 
-var const _Types_TA.EUIMenuState UIState;
+var const EUIMenuState UIState;
 
 defaultproperties
 {

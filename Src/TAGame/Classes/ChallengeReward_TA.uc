@@ -5,8 +5,8 @@
 *******************************************************************************/
 class ChallengeReward_TA extends ListenObject_TA;
 
-var /*0x00010000-0x00000000*/ databinding int XP;
-var /*0x00010000-0x00000000*/ array<ChallengeCurrency_TA> Currency;
-var /*0x00010000-0x00000000*/ array<OnlineProductData> Products;
-var /*0x00010000-0x00000000*/ databinding string ProductHashIDs;
-var /*0x00010000-0x00000000*/ export editinline transient OnlineProductStoreSet_TA OnlineProductStoreSet;
+var databinding int XP;
+var array<ChallengeCurrency_TA> Currency;
+var array<OnlineProductData> Products;
+var databinding string ProductHashIDs;
+var export editinline transient OnlineProductStoreSet_TA OnlineProductStoreSet;

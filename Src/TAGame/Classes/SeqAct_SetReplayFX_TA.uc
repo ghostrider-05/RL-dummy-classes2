@@ -13,7 +13,7 @@ var() float FocusStrength;
 var() bool bUseGreenScreen;
 var() bool bUseVignetteOverlay;
 var() LinearColor GreenScreenColor;
-var() Engine.EImageFilterOptions ImageFilterIndex;
+var() EImageFilterOptions ImageFilterIndex;
 var() float ImageFilterIntensity;
 var() float Vignette;
 

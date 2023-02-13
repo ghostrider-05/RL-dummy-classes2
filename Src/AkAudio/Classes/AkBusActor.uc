@@ -26,7 +26,7 @@ enum EBusEmitterType
 
 var export editinline AkSoundSource SoundSource;
 var name TargetBusName;
-var AkBusActor.EPinnedAxisType PinnedAxis;
+var EPinnedAxisType PinnedAxis;
 
 defaultproperties
 {

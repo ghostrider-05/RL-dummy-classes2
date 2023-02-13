@@ -5,4 +5,4 @@
 *******************************************************************************/
 class ServerFormPartyEvent_TA extends Object;
 
-var /*0x00010000-0x00000000*/ MergePartyEvent_TA ConfirmedMerge;
+var MergePartyEvent_TA ConfirmedMerge;

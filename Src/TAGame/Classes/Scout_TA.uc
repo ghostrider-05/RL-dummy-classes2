@@ -21,7 +21,7 @@ defaultproperties
 	WalkableFloorZ=0.7070
 	
 	CylinderComponent=CollisionCylinder
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__Scout_TA.CollisionCylinder'

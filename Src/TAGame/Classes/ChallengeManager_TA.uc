@@ -5,23 +5,18 @@
 *******************************************************************************/
 class ChallengeManager_TA extends Object within OnlinePlayer_X;
 
-var /*0x00010000-0x00000000*/ array<Challenge_TA> Challenges;
-var /*0x00010000-0x00000000*/ array<int> ChallengeProgressSyncIDs;
-var /*0x00010000-0x00000000*/ array<int> ClearNewInfoChallengeIDQueue;
-var /*0x00010000-0x00000000*/ array<Challenge_TA> RemovedChallenges;
-var /*0x00010000-0x00000000*/ array<int> PendingNewChallengeIDs;
-var /*0x00010000-0x00000000*/ array<int> PendingRemovedChallengeIDs;
-var /*0x00010000-0x00000000*/ const localized string NewChallengesTitle;
-var /*0x00010000-0x00000000*/ const localized string NewChallengesDesc;
-var /*0x00010000-0x00000000*/ const localized string ExpiredChallengesTitle;
-var /*0x00010000-0x00000000*/ const localized string ExpiredChallengesDesc;
-var /*0x00010000-0x00000000*/ const localized string MixedChallengesDesc;
+var array<Challenge_TA> Challenges;
+var array<int> ChallengeProgressSyncIDs;
+var array<int> ClearNewInfoChallengeIDQueue;
+var array<Challenge_TA> RemovedChallenges;
+var array<int> PendingNewChallengeIDs;
+var array<int> PendingRemovedChallengeIDs;
+var const localized string NewChallengesTitle;
+var const localized string NewChallengesDesc;
+var const localized string ExpiredChallengesTitle;
+var const localized string ExpiredChallengesDesc;
+var const localized string MixedChallengesDesc;
 
 defaultproperties
 {
-	NewChallengesTitle="New Challenges"
-	NewChallengesDesc="New challenges are now available!"
-	ExpiredChallengesTitle="Expired Challenges"
-	ExpiredChallengesDesc="Some of your unclaimed, completed challenge rewards have expired and will be added to your inventory."
-	MixedChallengesDesc="New challenges are now available! Any unclaimed, completed challenge rewards that have expired will be added to your inventory."
 }

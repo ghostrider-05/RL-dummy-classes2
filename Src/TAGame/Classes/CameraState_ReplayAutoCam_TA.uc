@@ -78,7 +78,7 @@ var PRI_TA LastScorer;
 var array<PRI_TA> AerialPRIs;
 var array<PRI_TA> CountDownPRIs;
 var export editinline Goal_TA GoalFocus;
-var CameraState_ReplayAutoCam_TA.ECountDownFocus CountDownFocusType;
+var ECountDownFocus CountDownFocusType;
 var transient Ball_TA Ball;
 var transient GameEvent_Soccar_TA SoccarGame;
 var CameraState_X ReplayCameraState;

@@ -5,10 +5,10 @@
 *******************************************************************************/
 class ServerMergeErrorEvent_TA extends Object;
 
-var /*0x00010000-0x00000000*/ StayAsPartyVote_TA Vote;
-var /*0x00010000-0x00000000*/ array<UniqueNetId> Invitees;
-var /*0x00010000-0x00000000*/ UniqueNetId Leader;
-var /*0x00010000-0x00000000*/ ErrorType Reason;
+var StayAsPartyVote_TA Vote;
+var array<UniqueNetId> Invitees;
+var UniqueNetId Leader;
+var ErrorType Reason;
 
 defaultproperties
 {

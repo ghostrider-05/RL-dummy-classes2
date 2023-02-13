@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ForceVolume_TA extends Volume
+	native
 	hidecategories(Navigation,Object,Movement,Display)
 	implements(ITickNotify_TA);
 
@@ -16,9 +17,9 @@ enum EForceDirection
 };
 
 var native const noexport Pointer VfTable_IITickNotify_TA;
-var() ForceVolume_TA.EForceDirection ForceDirection;
-var() Actor.EForceMode ConstantForceMode;
-var() Actor.EForceMode EnterForceMode;
+var() EForceDirection ForceDirection;
+var() EForceMode ConstantForceMode;
+var() EForceMode EnterForceMode;
 var() float ConstantForce;
 var() float EnterForce;
 var() Actor CustomForceDirection;
@@ -28,7 +29,7 @@ defaultproperties
 	EnterForceMode=ForceMode_Impulse
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		ReplacementPrimitive=none
 		bAcceptsLights=false
 		BlockZeroExtent=true

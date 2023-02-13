@@ -16,7 +16,7 @@ enum ERotationAxis
 };
 
 var() name SkelControlName;
-var() InterpTrackSkelControlRotation_TA.ERotationAxis RotAxis;
+var() ERotationAxis RotAxis;
 
 defaultproperties
 {

@@ -7,5 +7,5 @@ class AdHocInterface_X extends Object;
 
 var LanBrowser_X OldLanBrowser;
 var AdHocBeacon_X AdHocBeacon;
-var /*0x00008000-0x00000000*/ OnlineGameParty_X OnlineGameParty;
-var /*0x00008000-0x00000000*/ OnlineGameMatchmaking_X Matchmaking;
+var OnlineGameParty_X OnlineGameParty;
+var OnlineGameMatchmaking_X Matchmaking;

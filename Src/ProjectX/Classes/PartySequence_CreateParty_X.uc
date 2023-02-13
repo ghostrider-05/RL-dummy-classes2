@@ -5,4 +5,4 @@
 *******************************************************************************/
 class PartySequence_CreateParty_X extends Object within Parties_X;
 
-var /*0x00010000-0x00000000*/ RPC_PartyCreate_X PendingRPC;
+var RPC_PartyCreate_X PendingRPC;

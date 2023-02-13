@@ -5,7 +5,7 @@
 *******************************************************************************/
 class OnlineGameDedicatedServerRegistration_X extends Online_X within OnlineGameDedicatedServer_X;
 
-var() /*0x00008000-0x00000000*/ ServerConfig_X MyConfig;
+var() ServerConfig_X MyConfig;
 var() export editinline CacheTimer_X HeartbeatTimer;
 var() int GameTimeTimer;
 var transient int GameTimeSeconds;

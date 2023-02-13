@@ -5,12 +5,12 @@
 *******************************************************************************/
 class GFxData_ChallengeTab_TA extends GFxData_ChallengeFolder_TA;
 
-var /*0x00010000-0x00000000*/ ChallengeManager_TA ChallengeManager;
-var /*0x00010000-0x00000000*/ databinding int TotalNormalChallenges;
-var /*0x00010000-0x00000000*/ databinding int CompletedNormalChallenges;
-var /*0x00010000-0x00000000*/ databinding int TotalPremiumChallenges;
-var /*0x00010000-0x00000000*/ databinding int CompletedPremiumChallenges;
-var /*0x00010000-0x00000000*/ databinding bool bHasVisibleChallenges;
+var ChallengeManager_TA ChallengeManager;
+var databinding int TotalNormalChallenges;
+var databinding int CompletedNormalChallenges;
+var databinding int TotalPremiumChallenges;
+var databinding int CompletedPremiumChallenges;
+var databinding bool bHasVisibleChallenges;
 
 defaultproperties
 {

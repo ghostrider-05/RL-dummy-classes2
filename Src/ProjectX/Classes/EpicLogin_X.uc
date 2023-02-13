@@ -33,19 +33,17 @@ var bool bAccountCreationInProgress;
 var bool bNintendoServiceAccountLinkingNeeded;
 var bool bUserSpecifiedPrimaryAccount;
 var bool bInitialized;
-var /*0x00010000-0x00000000*/ bool bTestLinkAccount;
+var bool bTestLinkAccount;
 var databinding string ParentalConsentURL;
 var databinding EpicLogin_X.AgeGateState CabinedFlowState;
 var EpicLogin_X.AgeGateState OldCabinedFlowState_Switch;
 var int LoginFailureCount;
 var Error LoginError;
 var Qword LoginErrorTimestamp;
-var /*0x00008000-0x00000000*/ EpicConfig_X EpicConfig;
+var EpicConfig_X EpicConfig;
 var config string CreateAccountURL;
 var const localized string Unknown;
 
 defaultproperties
 {
-	CreateAccountURL="https://api.epicgames.dev/epic/id/v1/accounts"
-	Unknown="Unknown"
 }

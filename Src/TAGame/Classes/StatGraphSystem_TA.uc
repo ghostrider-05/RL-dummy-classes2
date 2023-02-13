@@ -6,7 +6,7 @@
 class StatGraphSystem_TA extends Component;
 
 var() float GraphSampleTime;
-var _Types_TA.EStatGraphLevel GraphLevel;
+var EStatGraphLevel GraphLevel;
 var export editinline PerfStatGraph_TA PerfStatGraph;
 var export editinline NetStatGraph_TA NetStatGraph;
 var export editinline InputBufferGraph_TA InputBufferGraph;

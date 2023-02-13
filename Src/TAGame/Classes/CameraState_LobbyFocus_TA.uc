@@ -5,8 +5,8 @@
 *******************************************************************************/
 class CameraState_LobbyFocus_TA extends CameraState_X;
 
-var /*0x00010000-0x00000000*/ float XOffsetDistance;
-var /*0x00010000-0x00000000*/ float CameraOffsetPitch;
-var /*0x00010000-0x00000000*/ array<float> AngleOffsets;
-var /*0x00010000-0x00000000*/ transient Car_TA TargetCar;
-var /*0x00010000-0x00000000*/ transient CameraOrientation TargetCamera;
+var float XOffsetDistance;
+var float CameraOffsetPitch;
+var array<float> AngleOffsets;
+var transient Car_TA TargetCar;
+var transient CameraOrientation TargetCamera;

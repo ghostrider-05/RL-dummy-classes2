@@ -24,15 +24,10 @@ var() config array<config string> SuppressHeadersForDebug;
 
 defaultproperties
 {
-	bAllowPerCon=true
-	bRequiresPerCon=true
 	bAllowPsyNetParty=true
-	bSendPingMessage=true
 	bAllowServerBacktraceUploads=true
 	bAllowServerBacktraceLogUploads=true
 	bAllowPlayerCancelMatch=true
-	PerConTimeout=90.0
-	PerConPingInterval=60.0
 	FreshConnectionWindow=30.0
 	MatchmakingHeartbeatTimeSeconds=30.0
 }

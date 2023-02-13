@@ -12,7 +12,7 @@ var Actor Instigator;
 var Actor SpawnTransform;
 var Actor PlacedBall;
 var() bool bWake;
-var() /*0x00000800-0x00000000*/ const string BallArchetype;
+var() const string BallArchetype;
 
 defaultproperties
 {

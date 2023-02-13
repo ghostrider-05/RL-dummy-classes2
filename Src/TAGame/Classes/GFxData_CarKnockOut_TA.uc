@@ -13,13 +13,13 @@ enum EStunlockType
 	SL_MAX
 };
 
-var /*0x00010000-0x00000000*/ databinding int LivesRemaining;
-var /*0x00010000-0x00000000*/ databinding int DodgesRemaining;
-var /*0x00010000-0x00000000*/ databinding int JumpsRemaining;
-var /*0x00010000-0x00000000*/ databinding float StunlockAlpha;
-var /*0x00010000-0x00000000*/ databinding GFxData_CarKnockOut_TA.EStunlockType StunlockType;
-var /*0x00010000-0x00000000*/ databinding float GrabbingAlpha;
-var /*0x00010000-0x00000000*/ transient Car_KnockOut_TA ActiveGrabbedCar;
+var databinding int LivesRemaining;
+var databinding int DodgesRemaining;
+var databinding int JumpsRemaining;
+var databinding float StunlockAlpha;
+var databinding EStunlockType StunlockType;
+var databinding float GrabbingAlpha;
+var transient Car_KnockOut_TA ActiveGrabbedCar;
 
 defaultproperties
 {

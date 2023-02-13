@@ -18,7 +18,7 @@ struct PendingError
 	}
 };
 
-var() /*0x00008000-0x00000000*/ GameEvent_TA GameEvent;
+var() GameEvent_TA GameEvent;
 var array<PendingError> PendingErrors;
 
 defaultproperties

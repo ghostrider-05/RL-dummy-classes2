@@ -13,5 +13,4 @@ var const localized string TwoFactorAuthenticationRequired_EGS;
 defaultproperties
 {
 	
-	TwoFactorAuthenticationRequired_EGS="Access to this feature requires (both):\\n* Two-factor Authentication (2FA)\\n* Verified Email Address (via Epic Games)\\n\\n Visit {!epicgames.com/account!} for setup.\\n(Please restart your game for the changes to take effect)"
 }

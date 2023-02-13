@@ -11,13 +11,12 @@ var native const noexport Pointer VfTable_FTickableObject;
 var native const transient Pointer LanBeacon;
 var const config int LanAnnouncePort;
 var const Qword QueryNonce;
-var const OnlineSubsystem.ELanBeaconState BeaconState;
+var const ELanBeaconState BeaconState;
 var const export editinline OnlineMessageComponent_X MessageComponent;
 var const int MaxPacketSize;
 
 defaultproperties
 {
-	LanAnnouncePort=14001
 	MessageComponent=OnlineMessageComponent_X'Default__LanBeacon_X.DefaultMessageComponent'
 	MaxPacketSize=1024
 }

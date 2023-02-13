@@ -10,7 +10,7 @@ defaultproperties
 {
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		bBlockComplexCollisionTrace=true
 		ReplacementPrimitive=none
 		bAcceptsLights=false

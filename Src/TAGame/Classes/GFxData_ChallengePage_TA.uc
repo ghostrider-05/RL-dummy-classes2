@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_ChallengePage_TA extends GFxData_ChallengeFolder_TA;
 
-var /*0x00010000-0x00000000*/ class ChallengeFilter;
+var class ChallengeFilter;
 
 defaultproperties
 {

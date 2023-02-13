@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class AIController_TA extends AIController
+	native
 	hidecategories(Navigation);
 
 struct native CachedTargetData

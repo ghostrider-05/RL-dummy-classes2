@@ -8,5 +8,5 @@ class DynamicValueModifier_X extends Object
 	editinlinenew;
 
 var() string DisplayName;
-var() DynamicValue_X.EDynamicValueModType Type;
+var() EDynamicValueModType Type;
 var() int Priority;

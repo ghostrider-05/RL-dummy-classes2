@@ -5,8 +5,8 @@
 *******************************************************************************/
 class GFxData_TrainingMode_TA extends GFxDataRow_X;
 
-var /*0x00008000-0x00000000*/ TrainingConfig_TA TrainingModeConfig;
-var databinding transient Engine.EBasicLoadResult Status;
+var TrainingConfig_TA TrainingModeConfig;
+var databinding transient EBasicLoadResult Status;
 var databinding transient string SanitizedTrainingModeName;
 var databinding transient string SanitizedCreatorName;
 var databinding transient string Tags;
@@ -31,9 +31,6 @@ var transient GFxModal_X ModalProcessing;
 defaultproperties
 {
 	OpenTrainingMapBaseCmd="Start $0?Game=TAGame.GameInfo_TrainingEditor_TA?Offline"
-	OutOfDateMessage="Local Version Modified"
-	DownloadingTrainingModeTitleMessage="Downloading"
-	DownloadingTrainingModeBodyMessage="Downloading Training Sequence"
 	TableName=TrainingMode
 	ProxyClass=class'TrainingEditorData_TA'
 }

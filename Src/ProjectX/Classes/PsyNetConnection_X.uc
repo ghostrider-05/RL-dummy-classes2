@@ -6,11 +6,11 @@
 class PsyNetConnection_X extends Object
 	implements(IDisposable);
 
-var /*0x00008000-0x00000000*/ PsyNet_X PsyNet;
-var /*0x00008000-0x00000000*/ OnlineSubsystem OnlineSub;
-var /*0x00008000-0x00000000*/ PsyNetConfig_X Config;
-var /*0x00008000-0x00000000*/ PsyNetRetryConfig_X RetryConfig;
-var /*0x00008000-0x00000000*/ PsyNetUrl_X URL;
+var PsyNet_X PsyNet;
+var OnlineSubsystem OnlineSub;
+var PsyNetConfig_X Config;
+var PsyNetRetryConfig_X RetryConfig;
+var PsyNetUrl_X URL;
 var export editinline StringMap Headers;
 var PsyNetRequestQue_X RequestQue;
 var export editinline RPCQueue_X RPCQueue;

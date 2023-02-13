@@ -5,4 +5,4 @@
 *******************************************************************************/
 class PartyPlatformSession_X extends Object within Parties_X;
 
-var /*0x00010000-0x00000000*/ UniqueLobbyId PartyID;
+var UniqueLobbyId PartyID;

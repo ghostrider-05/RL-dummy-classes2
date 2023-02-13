@@ -7,9 +7,9 @@ class OnlinePlayerStorageManifest_X extends Object within OnlinePlayerStorage_X;
 
 struct StorageMetadata
 {
-	var /*0x00010000-0x00000000*/ name Category;
-	var /*0x00010000-0x00000000*/ int Checksum;
-	var /*0x00010000-0x00000000*/ EncodeObject_X.EObjectEncoding Encoding;
+	var name Category;
+	var int Checksum;
+	var EObjectEncoding Encoding;
 
 	structdefaultproperties
 	{
@@ -19,4 +19,4 @@ struct StorageMetadata
 	}
 };
 
-var /*0x00010000-0x00000000*/ array<StorageMetadata> MetaData;
+var array<StorageMetadata> MetaData;

@@ -33,15 +33,14 @@ var export editinline RetryDelayer_X PsyNetFriendsDownloadDelayer;
 var export editinline RetryDelayer_X EpicFriendsDownloadDelayer;
 var array<UniqueNetId> PendingFriendAccepts;
 var BlockStatusReporter_X BlockStatusReporter;
-var() /*0x00008000-0x00000000*/ OSSConfig_X OSSConfig;
-var /*0x00008000-0x00000000*/ EpicConfig_X EpicConfig;
-var() /*0x00080000-0x00000000*/ EpicFriendsPlugin_X EpicFriendsPlugin;
+var() OSSConfig_X OSSConfig;
+var EpicConfig_X EpicConfig;
+var() EpicFriendsPlugin_X EpicFriendsPlugin;
 var array<EpicSocialTaskData> BlockPlayerCallbacks;
 var array<EpicSocialTaskData> UnblockPlayerCallbacks;
 
 defaultproperties
 {
-	bRepeatFriendsListDownloadsUntilSuccess=true
 	CachedFriends=OnlineFriendMap_X'Default__OnlinePlayerFriends_X.DefaultCachedFriends'
 	PlatformFriends=PlatformFriends_X'Default__OnlinePlayerFriends_X.DefaultPlatformFriends'
 	EpicFriends=EpicFriends_X'Default__OnlinePlayerFriends_X.DefaultEpicFriends'

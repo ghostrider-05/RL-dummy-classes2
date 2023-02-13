@@ -28,12 +28,12 @@ struct ActorTouchRecordData
 
 var array<ActorTouchRecordData> ActorTouchRecords;
 var float MaxRadius;
-var GameEditor_Ring_TA.EDetectionType DetectionType;
+var EDetectionType DetectionType;
 
 defaultproperties
 {
 	MaxRadius=425.0
-	begin object name=StaticComponent0 class=StaticMeshComponent
+	begin object name=StaticComponent0
 		ReplacementPrimitive=none
 		BlockRigidBody=true
 		RBCollideWithChannels=(Vehicle=true,GameplayPhysics=true,EffectPhysics=true,Ball=true)
@@ -41,7 +41,7 @@ defaultproperties
 	// Reference: StaticMeshComponent'Default__GameEditor_Ring_TA.StaticComponent0'
 	Mesh=StaticComponent0
 	RotateCameraOffset=(X=-700.0,Y=0.0,Z=25.0)
-	begin object name=DefaultCollisionCylinder class=CylinderComponent
+	begin object name=DefaultCollisionCylinder
 		CollisionHeight=335.0
 		CollisionRadius=335.0
 		ReplacementPrimitive=none

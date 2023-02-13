@@ -30,7 +30,7 @@ struct native SoundStateItem
 {
 	var name StateName;
 	var GFxShell_X Shell;
-	var GFxEngine_TA.ESoundStatePriority Priority;
+	var ESoundStatePriority Priority;
 
 	structdefaultproperties
 	{
@@ -43,4 +43,4 @@ struct native SoundStateItem
 var transient array<SoundStateItem> UISoundStates;
 var transient bool bViewingOnlineScene;
 var LoadingScreen_TA LoadingScreen;
-var /*0x00008000-0x00000000*/ OnlineSubsystem OnlineSubsystem;
+var OnlineSubsystem OnlineSubsystem;

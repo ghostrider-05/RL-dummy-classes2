@@ -5,9 +5,9 @@
 *******************************************************************************/
 class GFxData_IntroCarSelect_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ transient GFxModal_X ModalProcessing;
-var /*0x00010000-0x00000000*/ databinding string CarBodyName;
-var /*0x00010000-0x00000000*/ GFxData_FirstTimeExperience_TA FTE;
+var transient GFxModal_X ModalProcessing;
+var databinding string CarBodyName;
+var GFxData_FirstTimeExperience_TA FTE;
 
 defaultproperties
 {

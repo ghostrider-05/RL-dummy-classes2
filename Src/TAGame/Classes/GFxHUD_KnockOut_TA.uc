@@ -8,8 +8,8 @@ class GFxHUD_KnockOut_TA extends GFxHUD_Soccar_TA
 	config(Game)
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ transient GameEvent_KnockOut_TA KnockOutGame;
-var /*0x00010000-0x00000000*/ transient GFxData_CarKnockOut_TA KnockOutCarData;
+var transient GameEvent_KnockOut_TA KnockOutGame;
+var transient GFxData_CarKnockOut_TA KnockOutCarData;
 
 defaultproperties
 {

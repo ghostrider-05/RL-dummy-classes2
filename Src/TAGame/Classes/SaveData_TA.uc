@@ -36,7 +36,7 @@ var transient SaveGameManager_TA SaveManager;
 var bool bFromPreviousSave;
 var config transient bool bEnableOnlineData;
 var transient bool bUnloaded;
-var /*0x00080000-0x00000000*/ array<OnlineProduct_TA> OnlineProducts;
+var array<OnlineProduct_TA> OnlineProducts;
 var export editinline transient OnlineProductStoreSet_TA OnlineProductSet;
 var export editinline transient ProductTransactions_TA ProductTransactions;
 /** Loaded profiles */
@@ -48,7 +48,7 @@ var int SaveDataVersion;
 var export editinline transient ObjectProvider SaveObjectProvider;
 var array<SaveObject_TA> SaveObjects;
 var int SaveTick;
-var /*0x00010000-0x00000000*/ transient AsyncTask SyncOnlineStorageTask;
+var transient AsyncTask SyncOnlineStorageTask;
 var transient OnlineStorageSyncManager_TA StorageSyncManager;
 var transient EOSOnlineStorageUploader_TA EOSStorageUploader;
 var transient OnlineProductExpirationHelper_TA ExpirationHelper;
@@ -58,7 +58,6 @@ var transient array<OnlineProduct_TA> NewProductNotificationQueue;
 
 defaultproperties
 {
-	bEnableOnlineData=true
 	ProductTransactions=ProductTransactions_TA'Default__SaveData_TA.DefaultProductTransactions'
 	XPGainPercentage(0)=1.0
 	XPGainPercentage(1)=0.50

@@ -7,10 +7,10 @@ class GFxData_BlueprintGarage_TA extends GFxDataSingleton_X;
 
 struct BlueprintPreviewProduct
 {
-	var /*0x00010000-0x00000000*/ int BlueprintProductID;
-	var /*0x00010000-0x00000000*/ ProductHashID BlueprintHashID;
-	var /*0x00010000-0x00000000*/ OnlineProduct_TA OnlineProduct;
-	var /*0x00010000-0x00000000*/ array<ProductHashID> PossibleHashIDsForThisProduct;
+	var int BlueprintProductID;
+	var ProductHashID BlueprintHashID;
+	var OnlineProduct_TA OnlineProduct;
+	var array<ProductHashID> PossibleHashIDsForThisProduct;
 
 	structdefaultproperties
 	{
@@ -21,10 +21,10 @@ struct BlueprintPreviewProduct
 	}
 };
 
-var /*0x00010000-0x00000000*/ export editinline transient OnlineProductStoreSet_TA BlueprintGarageSet;
-var /*0x00010000-0x00000000*/ transient array<BlueprintPreviewProduct> BlueprintPreviewProducts;
-var /*0x00010000-0x00000000*/ OnlineProduct_TA PendingBlueprintProduct;
-var /*0x00010000-0x00000000*/ transient SaveData_TA SaveData;
+var export editinline transient OnlineProductStoreSet_TA BlueprintGarageSet;
+var transient array<BlueprintPreviewProduct> BlueprintPreviewProducts;
+var OnlineProduct_TA PendingBlueprintProduct;
+var transient SaveData_TA SaveData;
 
 defaultproperties
 {

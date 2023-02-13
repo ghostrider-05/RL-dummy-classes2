@@ -3,7 +3,8 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class CertifiedStatDatabase_TA extends Object;
+class CertifiedStatDatabase_TA extends Object
+	native;
 
 var() const editconst array<editconst CertifiedStat_TA> Stats;
 var native const Map_Mirror StatNameToStatID;

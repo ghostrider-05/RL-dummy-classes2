@@ -6,16 +6,16 @@
 class PlayerStart_Platform_TA extends PlayerStart
 	hidecategories(Navigation,Lighting,LightColor,Force,Collision);
 
-var() /*0x00010000-0x00000000*/ const editconst export editinline StaticMeshComponent StaticMeshComponent;
-var() /*0x00010000-0x00000000*/ const float HideTime;
-var /*0x00010000-0x00000000*/ repnotify transient bool bActive;
+var() const editconst export editinline StaticMeshComponent StaticMeshComponent;
+var() const float HideTime;
+var repnotify transient bool bActive;
 
 defaultproperties
 {
 	
 	StaticMeshComponent=StaticMeshComponent0
 	HideTime=5.0
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__PlayerStart_Platform_TA.CollisionCylinder'

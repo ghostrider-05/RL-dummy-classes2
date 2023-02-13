@@ -28,7 +28,7 @@ struct native WordFilterPair
 	var string Id;
 	var string Key;
 	var string Value;
-	var WordFilterTypes_X.EWordFilterUsage Usage;
+	var EWordFilterUsage Usage;
 	var bool bPending;
 	var float LastRequestTime;
 	var Error Error;

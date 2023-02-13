@@ -17,7 +17,7 @@ struct LocalizedQuickChat
 {
 	var databinding string MessageId;
 	var databinding string Message;
-	var databinding GFxData_QuickChatBindings_TA.EQuickChatState QuickChatState;
+	var databinding EQuickChatState QuickChatState;
 
 	structdefaultproperties
 	{

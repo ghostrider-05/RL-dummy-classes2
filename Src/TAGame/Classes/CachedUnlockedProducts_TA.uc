@@ -5,4 +5,4 @@
 *******************************************************************************/
 class CachedUnlockedProducts_TA extends Object;
 
-var /*0x00080000-0x00000000*/ transient array<int> Products;
+var transient array<int> Products;

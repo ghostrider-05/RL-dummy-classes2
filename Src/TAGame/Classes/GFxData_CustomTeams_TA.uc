@@ -20,7 +20,7 @@ struct GFxCustomTeamSettings
 };
 
 var databinding array<GFxCustomTeamSettings> Settings;
-var databinding _Types_TA.ECustomMatchSettingsType SettingsType;
+var databinding ECustomMatchSettingsType SettingsType;
 var databinding array<GFxTeamColor> TeamColors;
 var databinding array<GFxTeamColor> CustomColors;
 var transient LocalPlayer_TA TAPlayer;

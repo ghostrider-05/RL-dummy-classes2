@@ -17,13 +17,13 @@ enum EThrowSetting
 
 struct ThrowSetting
 {
-	var /*0x00010000-0x00000000*/ float Pitch;
-	var /*0x00010000-0x00000000*/ float LinearScale;
-	var /*0x00010000-0x00000000*/ float AngularScale;
-	var /*0x00010000-0x00000000*/ float MinLinearForce;
-	var /*0x00010000-0x00000000*/ float MaxLinearForce;
-	var /*0x00010000-0x00000000*/ float MinAngularForce;
-	var /*0x00010000-0x00000000*/ float MaxAngularForce;
+	var float Pitch;
+	var float LinearScale;
+	var float AngularScale;
+	var float MinLinearForce;
+	var float MaxLinearForce;
+	var float MinAngularForce;
+	var float MaxAngularForce;
 
 	structdefaultproperties
 	{
@@ -37,23 +37,23 @@ struct ThrowSetting
 	}
 };
 
-var /*0x00010000-0x00000000*/ AkSoundCue BallHitSFX;
-var /*0x00010000-0x00000000*/ AkSoundCue DeactivateSFX;
-var /*0x00010000-0x00000000*/ transient float AttachTime;
-var /*0x00010000-0x00000000*/ transient float DetachTime;
-var /*0x00010000-0x00000000*/ array<ThrowSetting> ThrowSettings;
-var /*0x00010000-0x00000000*/ Vector AttachOffset;
-var /*0x00010000-0x00000000*/ float CarFumbleForce;
-var /*0x00010000-0x00000000*/ float DoubleJumpUpForce;
-var /*0x00010000-0x00000000*/ float DemolishUpForce;
-var /*0x00010000-0x00000000*/ float MinBreakTime;
-var /*0x00010000-0x00000000*/ float MinAttachTime;
-var /*0x00010000-0x00000000*/ float CheckLastTouchRate;
-var /*0x00010000-0x00000000*/ float OutOfBoundsZ;
-var /*0x00010000-0x00000000*/ repnotify transient Ball_TA WeldedBall;
-var /*0x00010000-0x00000000*/ transient float LastTouchCheckTime;
-var /*0x00010000-0x00000000*/ transient Ball_TA PendingBall;
-var /*0x00010000-0x00000000*/ transient Vector PendingBallDodge;
+var AkSoundCue BallHitSFX;
+var AkSoundCue DeactivateSFX;
+var transient float AttachTime;
+var transient float DetachTime;
+var array<ThrowSetting> ThrowSettings;
+var Vector AttachOffset;
+var float CarFumbleForce;
+var float DoubleJumpUpForce;
+var float DemolishUpForce;
+var float MinBreakTime;
+var float MinAttachTime;
+var float CheckLastTouchRate;
+var float OutOfBoundsZ;
+var repnotify transient Ball_TA WeldedBall;
+var transient float LastTouchCheckTime;
+var transient Ball_TA PendingBall;
+var transient Vector PendingBallDodge;
 
 defaultproperties
 {

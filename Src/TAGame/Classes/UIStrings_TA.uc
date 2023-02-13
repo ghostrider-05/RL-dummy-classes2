@@ -33,28 +33,4 @@ var const localized string Savage;
 
 defaultproperties
 {
-	Continue="Continue"
-	ExitGame="Exit Game"
-	Retry="Retry"
-	OK="OK"
-	Cancel="Cancel"
-	Yes="Yes"
-	No="No"
-	SignIn="Sign In"
-	Days="Days"
-	Hours="Hours"
-	Minutes="Minutes"
-	Seconds="Seconds"
-	Meters="Meters"
-	Kilometers="Kilometers"
-	Feet="Feet"
-	Miles="Miles"
-	MetersUnit="m"
-	FeetUnit="ft"
-	MetersPerSecondUnit="m/s"
-	FeetPerSecondUnit="ft/s"
-	Error="Error"
-	Warning="Warning"
-	Close="Close"
-	Savage="Savage!"
 }

@@ -13,8 +13,8 @@ enum ECameraTrackFlyType
 	CameraTrackFly_MAX
 };
 
-var /*0x00008000-0x00000000*/ Replay_TA Replay;
-var() CameraState_CameraTrack_TA.ECameraTrackFlyType FlyType;
+var Replay_TA Replay;
+var() ECameraTrackFlyType FlyType;
 var bool bFlying;
 var float LastReplayTime;
 var Rotator AccumulatedLook;

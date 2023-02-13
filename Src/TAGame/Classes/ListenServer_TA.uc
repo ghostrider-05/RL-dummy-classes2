@@ -20,8 +20,8 @@ struct LoadingPlayer
 	}
 };
 
-var /*0x00008000-0x00000000*/ GRI_X GRI;
-var /*0x00008000-0x00000000*/ AdHocBeacon_X AdHocBeacon;
+var GRI_X GRI;
+var AdHocBeacon_X AdHocBeacon;
 var GameEvent_TA GameEvent;
 var array<LoadingPlayer> LoadingPlayers;
 var bool bRegistered;

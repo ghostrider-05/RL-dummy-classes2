@@ -7,15 +7,15 @@ class FaceIt_TA extends Object;
 
 struct FaceItMatchInfo
 {
-	var /*0x00010000-0x00000000*/ int MatchID;
-	var /*0x00010000-0x00000000*/ int ServerId;
-	var /*0x00010000-0x00000000*/ string TeamNameA;
-	var /*0x00010000-0x00000000*/ string TeamNameB;
-	var /*0x00010000-0x00000000*/ bool bIsSpectator;
-	var /*0x00010000-0x00000000*/ bool bIsCrossPlatform;
-	var /*0x00010000-0x00000000*/ int TeamSize;
-	var /*0x00010000-0x00000000*/ int PartnerID;
-	var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
+	var int MatchID;
+	var int ServerId;
+	var string TeamNameA;
+	var string TeamNameB;
+	var bool bIsSpectator;
+	var bool bIsCrossPlatform;
+	var int TeamSize;
+	var int PartnerID;
+	var UniqueNetId PlayerID;
 
 	structdefaultproperties
 	{
@@ -31,13 +31,13 @@ struct FaceItMatchInfo
 	}
 };
 
-var /*0x00010000-0x00000000*/ FaceItMatchInfo MatchInfo;
-var /*0x00010000-0x00000000*/ ServerReservationData ReservationData;
-var /*0x00010000-0x00000000*/ AsyncTask JoinTask;
-var /*0x00018000-0x00000000*/ transient FaceItConfig_TA Config;
-var /*0x00018000-0x00000000*/ OnlineGame_TA OnlineGame;
-var /*0x00018000-0x00000000*/ OnlineGameParty_X OnlineGameParty;
-var /*0x00010000-0x00000000*/ transient AsyncTask PendingFindMatchTask;
+var FaceItMatchInfo MatchInfo;
+var ServerReservationData ReservationData;
+var AsyncTask JoinTask;
+var transient FaceItConfig_TA Config;
+var OnlineGame_TA OnlineGame;
+var OnlineGameParty_X OnlineGameParty;
+var transient AsyncTask PendingFindMatchTask;
 
 defaultproperties
 {

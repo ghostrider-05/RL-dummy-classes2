@@ -5,5 +5,5 @@
 *******************************************************************************/
 class MatchAdminComponent_TA extends Object;
 
-var /*0x00010000-0x00000000*/ GameEvent_TA GameEvent;
-var /*0x00018000-0x00000000*/ OnlinePlayerPermissions_X PlayerPermissions;
+var GameEvent_TA GameEvent;
+var OnlinePlayerPermissions_X PlayerPermissions;

@@ -5,10 +5,10 @@
 *******************************************************************************/
 class GFxData_TourBracketLeaderboard_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ databinding array<TourPlacementInfo> TeamGoals;
-var /*0x00010000-0x00000000*/ databinding array<TourPlacementInfo> PlayerGoals;
-var /*0x00010000-0x00000000*/ databinding array<TourPlacementInfo> PlayerAssists;
-var /*0x00010000-0x00000000*/ databinding array<TourPlacementInfo> PlayerSaves;
+var databinding array<TourPlacementInfo> TeamGoals;
+var databinding array<TourPlacementInfo> PlayerGoals;
+var databinding array<TourPlacementInfo> PlayerAssists;
+var databinding array<TourPlacementInfo> PlayerSaves;
 
 defaultproperties
 {

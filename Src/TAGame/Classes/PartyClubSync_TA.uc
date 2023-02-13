@@ -5,7 +5,7 @@
 *******************************************************************************/
 class PartyClubSync_TA extends Object;
 
-var /*0x00018000-0x00000000*/ OnlineGameParty_X Party;
-var /*0x00018000-0x00000000*/ OnlineClubProvider_X Clubs;
-var /*0x00018000-0x00000000*/ PsyNet_X PsyNet;
-var /*0x00010000-0x00000000*/ array<UniqueNetId> PlayerIds;
+var OnlineGameParty_X Party;
+var OnlineClubProvider_X Clubs;
+var PsyNet_X PsyNet;
+var array<UniqueNetId> PlayerIds;

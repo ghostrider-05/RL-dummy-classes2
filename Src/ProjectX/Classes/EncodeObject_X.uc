@@ -13,6 +13,6 @@ enum EObjectEncoding
 	OPSE_MAX
 };
 
-var EncodeObject_X.EObjectEncoding Encoding;
+var EObjectEncoding Encoding;
 var int Checksum;
 var string Encoded;

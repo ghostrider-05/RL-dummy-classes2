@@ -5,8 +5,8 @@
 *******************************************************************************/
 class GFxData_AutoTour_Week_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding int Score;
-var /*0x00010000-0x00000000*/ databinding array<TournamentResult> Results;
+var databinding int Score;
+var databinding array<TournamentResult> Results;
 
 defaultproperties
 {

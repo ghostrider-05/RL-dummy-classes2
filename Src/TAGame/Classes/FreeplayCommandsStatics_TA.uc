@@ -8,11 +8,11 @@ class FreeplayCommandsStatics_TA extends Object
 
 struct CalculateBallInFrontLocationInParams
 {
-	var /*0x00010000-0x00000000*/ float BallRadius;
-	var /*0x00010000-0x00000000*/ float BallInFrontDistance;
-	var /*0x00010000-0x00000000*/ Rotator CarRotation;
-	var /*0x00010000-0x00000000*/ Vector CarLocalCollisionExtent;
-	var /*0x00010000-0x00000000*/ Vector CarLocation;
+	var float BallRadius;
+	var float BallInFrontDistance;
+	var Rotator CarRotation;
+	var Vector CarLocalCollisionExtent;
+	var Vector CarLocation;
 
 	structdefaultproperties
 	{
@@ -26,18 +26,18 @@ struct CalculateBallInFrontLocationInParams
 
 struct CalculateBallOnCarLocationInParams
 {
-	var /*0x00010000-0x00000000*/ Rotator CarRotation;
-	var /*0x00010000-0x00000000*/ Vector CarLocation;
-	var /*0x00010000-0x00000000*/ Vector CarAcceleration;
-	var /*0x00010000-0x00000000*/ float CarSpeedPerc;
-	var /*0x00010000-0x00000000*/ float CarTurnPerc;
-	var /*0x00010000-0x00000000*/ float BaseForwardOffset;
-	var /*0x00010000-0x00000000*/ float BaseUpOffset;
-	var /*0x00010000-0x00000000*/ float ForwardOffsetFromTurn;
-	var /*0x00010000-0x00000000*/ float AccelerationEffectMultiplier;
-	var /*0x00010000-0x00000000*/ float MaxRightOffset;
-	var /*0x00010000-0x00000000*/ float SlowRightOffsetPerc;
-	var /*0x00010000-0x00000000*/ float MinUpOffsetPerc;
+	var Rotator CarRotation;
+	var Vector CarLocation;
+	var Vector CarAcceleration;
+	var float CarSpeedPerc;
+	var float CarTurnPerc;
+	var float BaseForwardOffset;
+	var float BaseUpOffset;
+	var float ForwardOffsetFromTurn;
+	var float AccelerationEffectMultiplier;
+	var float MaxRightOffset;
+	var float SlowRightOffsetPerc;
+	var float MinUpOffsetPerc;
 
 	structdefaultproperties
 	{
@@ -58,12 +58,12 @@ struct CalculateBallOnCarLocationInParams
 
 struct CalculateBallOnCarInAirLocationInParams
 {
-	var /*0x00010000-0x00000000*/ float BallRadius;
-	var /*0x00010000-0x00000000*/ float BallOnCarDistance;
-	var /*0x00010000-0x00000000*/ float CarLocalCollisionZ;
-	var /*0x00010000-0x00000000*/ Rotator CarRotation;
-	var /*0x00010000-0x00000000*/ Vector CarLocation;
-	var /*0x00010000-0x00000000*/ Vector CarCurrentLinearVelocity;
+	var float BallRadius;
+	var float BallOnCarDistance;
+	var float CarLocalCollisionZ;
+	var Rotator CarRotation;
+	var Vector CarLocation;
+	var Vector CarCurrentLinearVelocity;
 
 	structdefaultproperties
 	{
@@ -78,11 +78,11 @@ struct CalculateBallOnCarInAirLocationInParams
 
 struct CalculateRedirectHorizontalLaunchSpeedInParams
 {
-	var /*0x00010000-0x00000000*/ Vector BallLocation;
-	var /*0x00010000-0x00000000*/ Vector CarLocation;
-	var /*0x00010000-0x00000000*/ Vector CarVelocity;
-	var /*0x00010000-0x00000000*/ float MaxHorizontalLaunchSpeed;
-	var /*0x00010000-0x00000000*/ float SpeedDropoffMaxRange;
+	var Vector BallLocation;
+	var Vector CarLocation;
+	var Vector CarVelocity;
+	var float MaxHorizontalLaunchSpeed;
+	var float SpeedDropoffMaxRange;
 
 	structdefaultproperties
 	{
@@ -96,17 +96,17 @@ struct CalculateRedirectHorizontalLaunchSpeedInParams
 
 struct CalculateRedirectPassLocationInParams
 {
-	var /*0x00010000-0x00000000*/ Vector BallStartLocation;
-	var /*0x00010000-0x00000000*/ Vector CarStartLocation;
-	var /*0x00010000-0x00000000*/ Vector CarStartVelocity;
-	var /*0x00010000-0x00000000*/ Vector BestGoalLocation;
-	var /*0x00010000-0x00000000*/ float VelocityWeight;
-	var /*0x00010000-0x00000000*/ float VelocityZWeight;
-	var /*0x00010000-0x00000000*/ float GoalWeight;
-	var /*0x00010000-0x00000000*/ float BallHorizontalSpeed;
-	var /*0x00010000-0x00000000*/ float MaxGoalLeading;
-	var /*0x00010000-0x00000000*/ float AdditionalTargetHeight;
-	var /*0x00010000-0x00000000*/ int Iterations;
+	var Vector BallStartLocation;
+	var Vector CarStartLocation;
+	var Vector CarStartVelocity;
+	var Vector BestGoalLocation;
+	var float VelocityWeight;
+	var float VelocityZWeight;
+	var float GoalWeight;
+	var float BallHorizontalSpeed;
+	var float MaxGoalLeading;
+	var float AdditionalTargetHeight;
+	var int Iterations;
 
 	structdefaultproperties
 	{
@@ -126,11 +126,11 @@ struct CalculateRedirectPassLocationInParams
 
 struct GetTargetLocationFromFlightTimeInParams
 {
-	var /*0x00010000-0x00000000*/ Vector TargetStartLocation;
-	var /*0x00010000-0x00000000*/ Vector TargetVelocity;
-	var /*0x00010000-0x00000000*/ float FlightTime;
-	var /*0x00010000-0x00000000*/ float VelocityWeight;
-	var /*0x00010000-0x00000000*/ float VelocityZWeight;
+	var Vector TargetStartLocation;
+	var Vector TargetVelocity;
+	var float FlightTime;
+	var float VelocityWeight;
+	var float VelocityZWeight;
 
 	structdefaultproperties
 	{
@@ -144,13 +144,13 @@ struct GetTargetLocationFromFlightTimeInParams
 
 struct CalculateShotOnGoalLocationStandardInParams
 {
-	var /*0x00010000-0x00000000*/ float BallRadius;
-	var /*0x00010000-0x00000000*/ float HorizontalGoalPosition;
-	var /*0x00010000-0x00000000*/ float VerticalGoalPosition;
-	var /*0x00010000-0x00000000*/ float GoalVolumeHalfWidth;
-	var /*0x00010000-0x00000000*/ float GoalVolumeHalfHeight;
-	var /*0x00010000-0x00000000*/ Vector GoalWorldFrontCenter;
-	var /*0x00010000-0x00000000*/ Vector GoalForward;
+	var float BallRadius;
+	var float HorizontalGoalPosition;
+	var float VerticalGoalPosition;
+	var float GoalVolumeHalfWidth;
+	var float GoalVolumeHalfHeight;
+	var Vector GoalWorldFrontCenter;
+	var Vector GoalForward;
 
 	structdefaultproperties
 	{
@@ -166,13 +166,13 @@ struct CalculateShotOnGoalLocationStandardInParams
 
 struct CalculateShotOnGoalLocationHoopsInParams
 {
-	var /*0x00010000-0x00000000*/ float SurfaceHeight;
-	var /*0x00010000-0x00000000*/ float GoalRadius;
-	var /*0x00010000-0x00000000*/ float WidthPosition;
-	var /*0x00010000-0x00000000*/ float LengthPosition;
-	var /*0x00010000-0x00000000*/ Vector BackboardDirection;
-	var /*0x00010000-0x00000000*/ Vector BackboardLocation;
-	var /*0x00010000-0x00000000*/ Vector GoalCenter;
+	var float SurfaceHeight;
+	var float GoalRadius;
+	var float WidthPosition;
+	var float LengthPosition;
+	var Vector BackboardDirection;
+	var Vector BackboardLocation;
+	var Vector GoalCenter;
 
 	structdefaultproperties
 	{
@@ -188,11 +188,11 @@ struct CalculateShotOnGoalLocationHoopsInParams
 
 struct CalculateShotOnGoalSpeedHoopsInParams
 {
-	var /*0x00010000-0x00000000*/ float MaxLaunchSpeed;
-	var /*0x00010000-0x00000000*/ float DropoffRange;
-	var /*0x00010000-0x00000000*/ float MinSpeedReductionAngle;
-	var /*0x00010000-0x00000000*/ float AboveNetSpeedReduction;
-	var /*0x00010000-0x00000000*/ Vector BallProximityToRim;
+	var float MaxLaunchSpeed;
+	var float DropoffRange;
+	var float MinSpeedReductionAngle;
+	var float AboveNetSpeedReduction;
+	var Vector BallProximityToRim;
 
 	structdefaultproperties
 	{
@@ -206,11 +206,11 @@ struct CalculateShotOnGoalSpeedHoopsInParams
 
 struct CalculateLaunchVectorInParams
 {
-	var /*0x00010000-0x00000000*/ Vector StartLocation;
-	var /*0x00010000-0x00000000*/ Vector TargetLocation;
-	var /*0x00010000-0x00000000*/ float Gravity;
-	var /*0x00010000-0x00000000*/ float HorizontalSpeed;
-	var /*0x00010000-0x00000000*/ float MaxVerticalLaunchSpeedRatio;
+	var Vector StartLocation;
+	var Vector TargetLocation;
+	var float Gravity;
+	var float HorizontalSpeed;
+	var float MaxVerticalLaunchSpeedRatio;
 
 	structdefaultproperties
 	{
@@ -224,10 +224,10 @@ struct CalculateLaunchVectorInParams
 
 struct CalculateVerticalLaunchSpeedInParams
 {
-	var /*0x00010000-0x00000000*/ float TargetHeight;
-	var /*0x00010000-0x00000000*/ float StartHeight;
-	var /*0x00010000-0x00000000*/ float FlightTime;
-	var /*0x00010000-0x00000000*/ float Gravity;
+	var float TargetHeight;
+	var float StartHeight;
+	var float FlightTime;
+	var float Gravity;
 
 	structdefaultproperties
 	{
@@ -240,10 +240,10 @@ struct CalculateVerticalLaunchSpeedInParams
 
 struct ModifyRBStateInParams
 {
-	var /*0x00010000-0x00000000*/ ReplicatedRBState InRBState;
-	var /*0x00010000-0x00000000*/ Vector NewLocation;
-	var /*0x00010000-0x00000000*/ Vector NewLinearVelocity;
-	var /*0x00010000-0x00000000*/ Vector NewAngularVelocity;
+	var ReplicatedRBState InRBState;
+	var Vector NewLocation;
+	var Vector NewLinearVelocity;
+	var Vector NewAngularVelocity;
 
 	structdefaultproperties
 	{

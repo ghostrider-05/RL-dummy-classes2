@@ -7,11 +7,11 @@ class AutoTour_TA extends Object;
 
 struct ScheduledTournament
 {
-	var /*0x00010000-0x00000000*/ Qword Time;
-	var /*0x00010000-0x00000000*/ Qword ScheduleID;
-	var /*0x00010000-0x00000000*/ string Description;
-	var /*0x00010000-0x00000000*/ bool bUpdateSkill;
-	var /*0x00010000-0x00000000*/ array<TourSettings_TA> Tournaments;
+	var Qword Time;
+	var Qword ScheduleID;
+	var string Description;
+	var bool bUpdateSkill;
+	var array<TourSettings_TA> Tournaments;
 
 	structdefaultproperties
 	{
@@ -25,7 +25,7 @@ struct ScheduledTournament
 
 struct TournamentWeek
 {
-	var /*0x00010000-0x00000000*/ array<TournamentResult> Results;
+	var array<TournamentResult> Results;
 
 	structdefaultproperties
 	{
@@ -33,24 +33,24 @@ struct TournamentWeek
 	}
 };
 
-var /*0x00090000-0x00000000*/ array<ScheduledTournament> Schedules;
-var /*0x00090000-0x00000000*/ transient array<TournamentWeek> CycleResults;
-var /*0x00090000-0x00000000*/ Qword IneligibleScheduleID;
-var /*0x00090000-0x00000000*/ string RegionID;
-var /*0x00010000-0x00000000*/ Qword CycleID;
-var /*0x00010000-0x00000000*/ databinding Qword CycleEndTime;
-var /*0x00010000-0x00000000*/ databinding int WeekID;
-var /*0x00010000-0x00000000*/ databinding Qword WeekEndTime;
-var /*0x00010000-0x00000000*/ databinding array<ShopCurrencyInfo> WeeklyCurrencies;
-var /*0x00010000-0x00000000*/ transient array<int> MaxTierScores;
-var /*0x00010000-0x00000000*/ float DataRefreshTime;
-var /*0x00010000-0x00000000*/ float LastSyncTime;
-var /*0x00018000-0x00000000*/ AutoTourConfig_TA Config;
-var /*0x00018000-0x00000000*/ OnlineGame_X OnlineGame;
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var() /*0x00010000-0x00000000*/ export editinline TourList_TA TourList;
-var /*0x00010000-0x00000000*/ transient AsyncTask SyncCycleDataTask;
-var /*0x00010000-0x00000000*/ transient AsyncTask SyncScheduleTask;
+var array<ScheduledTournament> Schedules;
+var transient array<TournamentWeek> CycleResults;
+var Qword IneligibleScheduleID;
+var string RegionID;
+var Qword CycleID;
+var databinding Qword CycleEndTime;
+var databinding int WeekID;
+var databinding Qword WeekEndTime;
+var databinding array<ShopCurrencyInfo> WeeklyCurrencies;
+var transient array<int> MaxTierScores;
+var float DataRefreshTime;
+var float LastSyncTime;
+var AutoTourConfig_TA Config;
+var OnlineGame_X OnlineGame;
+var() OnlineGameTournaments_TA Tournaments;
+var() export editinline TourList_TA TourList;
+var transient AsyncTask SyncCycleDataTask;
+var transient AsyncTask SyncScheduleTask;
 
 defaultproperties
 {

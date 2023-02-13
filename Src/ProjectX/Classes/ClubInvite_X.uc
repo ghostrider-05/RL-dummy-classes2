@@ -5,10 +5,10 @@
 *******************************************************************************/
 class ClubInvite_X extends Object;
 
-var /*0x00010000-0x00000000*/ Qword ClubID;
-var /*0x00010000-0x00000000*/ string ClubName;
-var /*0x00010000-0x00000000*/ string ClubTag;
-var /*0x00010000-0x00000000*/ ClubMember InvitedBy;
+var Qword ClubID;
+var string ClubName;
+var string ClubTag;
+var ClubMember InvitedBy;
 
 defaultproperties
 {

@@ -5,20 +5,20 @@
 *******************************************************************************/
 class GFxData_TourSearch_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ TourConfig_TA Config;
-var() /*0x00010000-0x00000000*/ databinding string Text;
-var() /*0x00010000-0x00000000*/ databinding int RankMin;
-var() /*0x00010000-0x00000000*/ databinding int RankMax;
-var() /*0x00010000-0x00000000*/ databinding int GameMode;
-var() /*0x00010000-0x00000000*/ databinding array<GFxRegion> Regions;
-var() /*0x00010000-0x00000000*/ databinding int TeamSize;
-var() /*0x00010000-0x00000000*/ databinding int BracketSize;
-var() /*0x00010000-0x00000000*/ databinding bool bShowIneligibleRank;
-var() /*0x00010000-0x00000000*/ export editinline GFxTourList_TA GFxTourList;
-var() /*0x00010000-0x00000000*/ export editinline TourList_TA TourList;
-var /*0x00010000-0x00000000*/ transient Profile_TA Profile;
-var /*0x00010000-0x00000000*/ transient AsyncTask SearchTask;
-var /*0x00010000-0x00000000*/ transient TournamentSettingsSave_TA TournamentSave;
+var TourConfig_TA Config;
+var() databinding string Text;
+var() databinding int RankMin;
+var() databinding int RankMax;
+var() databinding int GameMode;
+var() databinding array<GFxRegion> Regions;
+var() databinding int TeamSize;
+var() databinding int BracketSize;
+var() databinding bool bShowIneligibleRank;
+var() export editinline GFxTourList_TA GFxTourList;
+var() export editinline TourList_TA TourList;
+var transient Profile_TA Profile;
+var transient AsyncTask SearchTask;
+var transient TournamentSettingsSave_TA TournamentSave;
 
 defaultproperties
 {

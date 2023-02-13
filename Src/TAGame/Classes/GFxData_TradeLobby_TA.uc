@@ -23,7 +23,7 @@ var export editinline transient OnlineProductStoreSet_TA RemoteProductSet;
 var transient GFxModal_X ModalProcessing;
 var transient Guid TradeId;
 var transient UniqueNetId TradingPlayerID;
-var /*0x00008000-0x00000000*/ MtxConfig_TA MtxConfig;
+var MtxConfig_TA MtxConfig;
 var GFxData_PartyMemberProfile_TA PartyMemberProfile;
 
 defaultproperties

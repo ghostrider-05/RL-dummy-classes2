@@ -5,12 +5,12 @@
 *******************************************************************************/
 class RocketPassErrors_TA extends ErrorList;
 
-var /*0x00010000-0x00000000*/ const ErrorType InvalidRocketPass;
-var /*0x00010000-0x00000000*/ const ErrorType RocketPassNotActive;
-var /*0x00010000-0x00000000*/ const ErrorType InvalidKey;
-var /*0x00010000-0x00000000*/ const ErrorType PlayerAlreadyPremium;
-var /*0x00010000-0x00000000*/ const ErrorType DoesNotOwnPremium;
-var /*0x00010000-0x00000000*/ const ErrorType PurchasableNotFound;
+var const ErrorType InvalidRocketPass;
+var const ErrorType RocketPassNotActive;
+var const ErrorType InvalidKey;
+var const ErrorType PlayerAlreadyPremium;
+var const ErrorType DoesNotOwnPremium;
+var const ErrorType PurchasableNotFound;
 
 defaultproperties
 {

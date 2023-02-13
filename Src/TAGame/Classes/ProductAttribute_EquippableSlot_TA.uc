@@ -7,7 +7,7 @@ class ProductAttribute_EquippableSlot_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var _Types_TA.EEquippableProductSlot Slot;
+var EEquippableProductSlot Slot;
 
 defaultproperties
 {

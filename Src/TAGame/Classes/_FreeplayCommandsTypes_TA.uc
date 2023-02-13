@@ -18,13 +18,13 @@ enum EFreeplayCommand
 
 struct FreeplayCommandsMetricsData
 {
-	var /*0x00010000-0x00000000*/ Vector BallLocation;
-	var /*0x00010000-0x00000000*/ Vector BallVelocity;
-	var /*0x00010000-0x00000000*/ Vector CarLocation;
-	var /*0x00010000-0x00000000*/ Vector CarVelocity;
-	var /*0x00010000-0x00000000*/ RotatorRadians CarRotation;
-	var /*0x00010000-0x00000000*/ string MapName;
-	var /*0x00010000-0x00000000*/ bool bCarOnGround;
+	var Vector BallLocation;
+	var Vector BallVelocity;
+	var Vector CarLocation;
+	var Vector CarVelocity;
+	var RotatorRadians CarRotation;
+	var string MapName;
+	var bool bCarOnGround;
 
 	structdefaultproperties
 	{
@@ -40,10 +40,10 @@ struct FreeplayCommandsMetricsData
 
 struct FreeplayCommandEvent
 {
-	var /*0x00010000-0x00000000*/ Qword ActivationTimestamp;
-	var /*0x00010000-0x00000000*/ _FreeplayCommandsTypes_TA.EFreeplayCommand ActivatedCommand;
-	var /*0x00010000-0x00000000*/ FreeplayCommandsMetricsData PreActivationData;
-	var /*0x00010000-0x00000000*/ name CommandExecutionError;
+	var Qword ActivationTimestamp;
+	var EFreeplayCommand ActivatedCommand;
+	var FreeplayCommandsMetricsData PreActivationData;
+	var name CommandExecutionError;
 
 	structdefaultproperties
 	{

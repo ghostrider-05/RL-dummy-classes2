@@ -50,7 +50,7 @@ struct CachedDownloadedFile
 	}
 };
 
-var /*0x00008000-0x00000000*/ TrainingConfig_TA TrainingBrowserConfig;
+var TrainingConfig_TA TrainingBrowserConfig;
 var SearchCacheData CachedOnlineSearchResults[ETrainingModeSearchTypes];
 var transient RPC_X PendingRPC;
 var const float CachedSearchDuration;

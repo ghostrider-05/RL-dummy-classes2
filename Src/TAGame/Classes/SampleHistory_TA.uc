@@ -29,7 +29,7 @@ struct native Sample
 
 struct native GraphSummaryMethod
 {
-	var SampleHistory_TA.EGraphSummaryType Type;
+	var EGraphSummaryType Type;
 	var float MaxSampleAge;
 	var bool bAbsoluteValue;
 

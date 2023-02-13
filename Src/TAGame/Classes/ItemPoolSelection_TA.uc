@@ -5,10 +5,10 @@
 *******************************************************************************/
 class ItemPoolSelection_TA extends ItemPool_TA within PlayerItemDispenser_TA;
 
-var() /*0x00010000-0x00000000*/ int ConcurrentItemCount;
-var() /*0x00010000-0x00000000*/ bool bPreviewItems;
-var /*0x00010000-0x00000000*/ transient array<SpecialPickup_TA> LastDispensedItems;
-var /*0x00010000-0x00000000*/ transient array<SpecialPickup_TA> DemolishedItems;
-var /*0x00010000-0x00000000*/ transient int OriginalPickupCooldownSeconds;
-var /*0x00010000-0x00000000*/ transient int CooldownSecondsAtPreviousGoal;
-var /*0x00010000-0x00000000*/ transient SpecialPickup_TA ActivePickup;
+var() int ConcurrentItemCount;
+var() bool bPreviewItems;
+var transient array<SpecialPickup_TA> LastDispensedItems;
+var transient array<SpecialPickup_TA> DemolishedItems;
+var transient int OriginalPickupCooldownSeconds;
+var transient int CooldownSecondsAtPreviousGoal;
+var transient SpecialPickup_TA ActivePickup;

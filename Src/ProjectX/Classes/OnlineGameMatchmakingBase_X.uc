@@ -12,5 +12,4 @@ var const localized string PingingRegionsString;
 
 defaultproperties
 {
-	PingingRegionsString="Updating ping to regions..."
 }

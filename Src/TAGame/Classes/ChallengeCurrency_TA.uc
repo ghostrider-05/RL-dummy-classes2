@@ -5,5 +5,5 @@
 *******************************************************************************/
 class ChallengeCurrency_TA extends ListenObject_TA;
 
-var /*0x00010000-0x00000000*/ databinding int CurrencyID;
-var /*0x00010000-0x00000000*/ databinding int Amount;
+var databinding int CurrencyID;
+var databinding int Amount;

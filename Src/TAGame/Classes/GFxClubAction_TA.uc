@@ -6,5 +6,5 @@
 class GFxClubAction_TA extends Object
 	implements(IDisposable);
 
-var /*0x00010000-0x00000000*/ AsyncTask Task;
-var /*0x00010000-0x00000000*/ string ErrorMessage;
+var AsyncTask Task;
+var string ErrorMessage;

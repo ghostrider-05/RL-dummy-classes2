@@ -27,7 +27,7 @@ var const localized string PartyMemberNotOriginalAppOwner;
 var const localized string PartyMemberNotLoggedIn;
 var databinding array<GFxRegion> Regions;
 var databinding int TotalPopulation;
-var databinding _Types_TA.EMatchmakingViewTab MatchmakingViewTab;
+var databinding EMatchmakingViewTab MatchmakingViewTab;
 var databinding bool bRankedPlaylistsEnabled;
 var databinding bool bMultiSelectEnabled;
 var databinding int SeasonEndDays;
@@ -36,19 +36,11 @@ var databinding int SeasonEndMinutes;
 var MatchmakingSettingsSave_TA MatchmakingSave;
 var() array<MessageUpdate> MessageUpdates;
 var transient int CurrentMessageUpdateIndex;
-var() /*0x00008000-0x00000000*/ RankedConfig_X RankedConfig;
+var() RankedConfig_X RankedConfig;
 var MatchmakingViewFilters_TA TabFilters;
 
 defaultproperties
 {
-	NoPlaylistSelectedMessage="Please select a playlist."
-	NoRegionSelectedMessage="Please select a region."
-	PartyTooBigMessage="Your party is too large to play online. Try private match instead."
-	LeavePenaltyMessage="You are banned from matchmaking for [PenaltyHours] hour(s), [PenaltyMinutes] minute(s). Leaving matches creates an unfair match for your teammates, hurts your rank, and will cause increasingly severe punishments."
-	MatchmakingBanMessage="You are banned from matchmaking for [PenaltyHours] hour(s), [PenaltyMinutes] minute(s)."
-	PartySkillTooDistant="Party skills must be within [TierCount] tiers to search for a competitive match. [HighPlayerName] is [TierGap] tiers above [LowPlayerName]."
-	PartyMemberNotOriginalAppOwner="\\"Family Sharing\\" accounts are not eligible for competitive matches. [PlayerName] must own Rocket League? to gain access."
-	PartyMemberNotLoggedIn="[PlayerName], or one of their splitscreen players, is not logged in to Rocket League? servers."
 	TableName=Matchmaking
 	bLevelTransitionPersistent=true
 }

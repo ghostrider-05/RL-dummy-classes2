@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_LanBrowser_TA extends GFxDataSingleton_X;
 
-var /*0x00008000-0x00000000*/ LanBrowser_X LanBrowser;
+var LanBrowser_X LanBrowser;
 var AsyncTask GetServerListTask;
 
 defaultproperties

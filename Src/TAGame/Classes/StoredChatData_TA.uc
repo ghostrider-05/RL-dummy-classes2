@@ -5,7 +5,7 @@
 *******************************************************************************/
 class StoredChatData_TA extends Object;
 
-var _Types_TA.EChatChannel ChatChannel;
+var EChatChannel ChatChannel;
 var UniqueNetId SenderId;
 var Qword LastChatUpdate;
 var array<GFxChatMessage> Messages;

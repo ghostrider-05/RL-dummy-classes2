@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ChallengeDefaultManager_TA extends Object;
 
-var /*0x00010000-0x00000000*/ array<ChallengeDefault_TA> DefaultChallenges;
-var /*0x00010000-0x00000000*/ array<ChallengeFolder_TA> Folders;
-var /*0x00018000-0x00000000*/ ChallengeConfig_TA ChallengeConfig;
-var /*0x00010000-0x00000000*/ transient array<PsyNetService_ChallengeDefault_TA> NewChallengesNotifications;
+var array<ChallengeDefault_TA> DefaultChallenges;
+var array<ChallengeFolder_TA> Folders;
+var ChallengeConfig_TA ChallengeConfig;
+var transient array<PsyNetService_ChallengeDefault_TA> NewChallengesNotifications;

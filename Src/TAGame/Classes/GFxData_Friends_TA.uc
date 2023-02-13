@@ -36,12 +36,12 @@ var databinding bool bRequirePinForFriends;
 var const config bool bUsePresenceGroups;
 var bool bCrossplayEnabled;
 var databinding string ForgotPinURL;
-var /*0x00008000-0x00000000*/ transient Personas_TA PersonasData;
+var transient Personas_TA PersonasData;
 var transient OnlineGame_X OnlineGame;
 var export editinline transient AccountSettingsComponent_TA AccountSettings;
-var const config array<config _Types_TA.EPresenceGroup> DefaultPlatformFriendGroups;
-var const config array<config _Types_TA.EPresenceGroup> DefaultEpicFriendGroups;
-var /*0x00008000-0x00000000*/ transient OnlineGameParty_X Party;
+var const config array<EPresenceGroup> DefaultPlatformFriendGroups;
+var const config array<EPresenceGroup> DefaultEpicFriendGroups;
+var transient OnlineGameParty_X Party;
 var array<Persona_TA> PartyMemberPersonas;
 var GFxData_PersonaGroup_TA PlatformPartyPresenceGroup;
 var GFxData_PersonaGroup_TA EpicPartyPresenceGroup;
@@ -52,13 +52,6 @@ var int PinGrantPlatform;
 defaultproperties
 {
 	RecentPlayers=RecentPlayers_TA'Default__GFxData_Friends_TA.DefaultRecentPlayers'
-	bUsePresenceGroups=true
-	DefaultPlatformFriendGroups(0)=229
-	DefaultPlatformFriendGroups(1)=56
-	DefaultPlatformFriendGroups(2)=0
-	DefaultEpicFriendGroups(0)=229
-	DefaultEpicFriendGroups(1)=56
-	DefaultEpicFriendGroups(2)=0
 	ObservedProfile=OtherPlayerProfile_TA'Default__GFxData_Friends_TA.DefaultObservedProfile'
 	TableName=Personas
 	bLevelTransitionPersistent=true

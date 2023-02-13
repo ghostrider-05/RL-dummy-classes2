@@ -7,5 +7,5 @@ class CarComponent_Boost_KO_TA extends CarComponent_Boost_TA
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ const float LimitVelocityXYToForceScale;
-var /*0x00010000-0x00000000*/ const float LimitVelocityZToForceScale;
+var const float LimitVelocityXYToForceScale;
+var const float LimitVelocityZToForceScale;

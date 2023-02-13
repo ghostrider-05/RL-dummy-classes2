@@ -15,7 +15,7 @@ struct CompensationItem
 	}
 };
 
-var databinding _Types_TA.ELegacyBoxStatus LegacyStatus;
+var databinding ELegacyBoxStatus LegacyStatus;
 var databinding array<CompensationItem> CompensationItems;
 var databinding bool bIsLegacySet;
 

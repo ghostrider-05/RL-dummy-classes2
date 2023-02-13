@@ -4,7 +4,8 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ExplosionHitHandler_X extends ActorComponent_X
-	abstract;
+	abstract
+	native;
 
 struct native ContactInformation
 {

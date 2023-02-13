@@ -7,7 +7,7 @@ class GFxData_TourBracketMatchTeamDetails_TA extends GFxDataRow_X;
 
 struct TeamGameStats
 {
-	var /*0x00010000-0x00000000*/ databinding int Goals;
+	var databinding int Goals;
 
 	structdefaultproperties
 	{
@@ -15,9 +15,9 @@ struct TeamGameStats
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding Qword TeamID;
-var /*0x00010000-0x00000000*/ array<TeamGameStats> GameStats;
-var /*0x00010000-0x00000000*/ array<TourMatchPlayerStats> PlayerStats;
+var databinding Qword TeamID;
+var array<TeamGameStats> GameStats;
+var array<TourMatchPlayerStats> PlayerStats;
 
 defaultproperties
 {

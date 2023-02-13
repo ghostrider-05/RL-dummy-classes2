@@ -72,7 +72,7 @@ var transient BoostMesh_TA BoostMesh;
 var() RandomRange BoostMeshFadeInTime;
 var() RandomRange BoostMeshFadeOutTime;
 var() export editinline array<export editinline ParticleSystemComponent> MultipleBoostsOverride;
-var() FXActor_Boost_TA.EmitterSocketBehavior BoostEmitterSocketBehavior;
+var() EmitterSocketBehavior BoostEmitterSocketBehavior;
 var const array<PreviewParticleOverride> PreviewParticleOverrides;
 var transient bool bWasBoosting;
 var transient bool bWasInputBoosting;

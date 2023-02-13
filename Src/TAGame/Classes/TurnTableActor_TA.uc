@@ -35,7 +35,7 @@ defaultproperties
 	LightEnvironment=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
 	FacialAudioComp=AudioComponent'Default__TurnTableActor_TA.FaceAudioComponent'
 	Components(0)=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
-	begin object name=SkeletalMeshComponent0 class=SkeletalMeshComponent
+	begin object name=SkeletalMeshComponent0
 		Animations=AnimNodeSequence'Default__TurnTableActor_TA.SkeletalMeshComponent0.AnimNodeSeq0'
 		ReplacementPrimitive=none
 		LightEnvironment=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'

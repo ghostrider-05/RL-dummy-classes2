@@ -3,7 +3,8 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class EngineAudioPreview_TA extends EngineAudioPreviewBase_TA;
+class EngineAudioPreview_TA extends EngineAudioPreviewBase_TA
+	native;
 
 var EngineAudioProfile_TA Profile;
 var native const Pointer NativeState;

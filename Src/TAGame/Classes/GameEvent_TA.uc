@@ -35,8 +35,8 @@ var repnotify transient bool bHasLeaveMatchPenalty;
 var repnotify transient bool bCanVoteToForfeit;
 var bool bAwardAchievements;
 var bool bIsBotMatch;
-var /*0x00010000-0x00000000*/ bool bAllowTeamVoiceChat;
-var /*0x00010000-0x00000000*/ bool bAllowSpectatorVoiceChat;
+var bool bAllowTeamVoiceChat;
+var bool bAllowSpectatorVoiceChat;
 /** If multiplayer, limits on how many people can play this event */
 var() int MinPlayers;
 /** If multiplayer, limits on how many people can play this event */
@@ -46,7 +46,7 @@ var(Setup) array<Actor> SpawnPoints;
 /** AI manager to spawn */
 var() AIManager_TA AIManagerArchetype;
 var transient AIManager_TA AIManager;
-var(Setup) /*0x00080000-0x00000000*/ Pylon_Soccar_TA Pylon;
+var(Setup) Pylon_Soccar_TA Pylon;
 /** AI controller to use for bots */
 var() AIController_TA BotArchetype;
 var transient float BotSkill;
@@ -54,7 +54,7 @@ var() array<Mutator_TA> DefaultMutators;
 var transient array<Mutator_TA> Mutators;
 var() float MatchTimeDilation;
 /** HUD Archetype for this game event */
-var() /*0x00020000-0x00000000*/ HUD HUDArchetype;
+var() HUD HUDArchetype;
 var transient PlayerController_TA Activator;
 var transient Car_TA ActivatorCar;
 var transient array<Controller> Players;
@@ -74,17 +74,17 @@ var array<Message_TA> CountdownMessages;
 var Message_TA GoMessage;
 var array<Message_TA> ReplacingBotCountdownMessages;
 var Message_TA ReplacingBotGoMessage;
-var /*0x00008000-0x00000000*/ SpawnDelayConfig_TA SpawnDelayConfig;
+var SpawnDelayConfig_TA SpawnDelayConfig;
 var transient array<PlayerChatMessage> ChatHistory;
 var transient int GameStateTimeRemaining;
 var repnotify transient int ReplicatedGameStateTimeRemaining;
-var /*0x00008000-0x00000000*/ BotConfig_TA BotConfig;
+var BotConfig_TA BotConfig;
 var transient array<UniqueNetId> ForfeitInitiatorIDs;
 var transient array<UniqueNetId> BannedPlayers;
 var repnotify transient PRI_TA GameOwner;
 var repnotify transient CustomMatchSettings MatchSettings;
 var string RichPresenceString;
-var /*0x00010000-0x00000000*/ transient MatchAdminComponent_TA MatchAdmin;
+var transient MatchAdminComponent_TA MatchAdmin;
 var ListenServer_TA ListenServer;
 var repnotify int ReplicatedRoundCountDownNumber;
 var MatchRecorder_TA MatchRecorder;

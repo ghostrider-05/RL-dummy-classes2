@@ -9,8 +9,8 @@ var bool bMetric;
 var bool bTeamColoredBoostMeter;
 var bool bDisableDivisions;
 var bool bDisableDivisionsSports;
-var _Types_TA.EHUDMessageLevel HUDMessageThreshold;
-var _Types_TA.ENameplateMode NameplateMode;
+var EHUDMessageLevel HUDMessageThreshold;
+var ENameplateMode NameplateMode;
 
 defaultproperties
 {

@@ -7,9 +7,9 @@ class OnlinePlayerStorageQueue_X extends Object within OnlinePlayerStorage_X;
 
 struct PendingStorage
 {
-	var /*0x00010000-0x00000000*/ Object Data;
-	var /*0x00010000-0x00000000*/ class DataClass;
-	var /*0x00010000-0x00000000*/ int Tick;
+	var Object Data;
+	var class DataClass;
+	var int Tick;
 
 	structdefaultproperties
 	{
@@ -21,8 +21,8 @@ struct PendingStorage
 
 struct StorageMaxSize
 {
-	var /*0x00010000-0x00000000*/ name Category;
-	var /*0x00010000-0x00000000*/ int MaxSizeBytes;
+	var name Category;
+	var int MaxSizeBytes;
 
 	structdefaultproperties
 	{
@@ -31,8 +31,8 @@ struct StorageMaxSize
 	}
 };
 
-var() /*0x00018000-0x00000000*/ OnlinePlayerStorageConfig_X Config;
-var /*0x00010000-0x00000000*/ array<PendingStorage> QueuedObjects;
-var /*0x00010000-0x00000000*/ array<PendingStorage> PendingObjects;
-var() /*0x00010000-0x00000000*/ const float DefaultStorageMaxSizeBytes;
-var() /*0x00010000-0x00000000*/ const array<StorageMaxSize> StorageMaxSizes;
+var() OnlinePlayerStorageConfig_X Config;
+var array<PendingStorage> QueuedObjects;
+var array<PendingStorage> PendingObjects;
+var() const float DefaultStorageMaxSizeBytes;
+var() const array<StorageMaxSize> StorageMaxSizes;

@@ -8,12 +8,12 @@ class GameEvent_GodBall_TA extends GameEvent_Soccar_TA
 	notplaceable
 	hidecategories(Navigation,Actor,Object);
 
-var /*0x00010000-0x00000000*/ int LastScoredTeamIndex;
-var /*0x00010000-0x00000000*/ const Vector GoalBallSpawnOffset;
-var /*0x00010000-0x00000000*/ const Vector GoalPlayerSpawnOffset;
-var /*0x00010000-0x00000000*/ const Vector BallKickOffDirection;
-var /*0x00010000-0x00000000*/ const float BallKickOffScale;
-var /*0x00010000-0x00000000*/ const float SpawnRadiusCheck;
+var int LastScoredTeamIndex;
+var const Vector GoalBallSpawnOffset;
+var const Vector GoalPlayerSpawnOffset;
+var const Vector BallKickOffDirection;
+var const float BallKickOffScale;
+var const float SpawnRadiusCheck;
 
 defaultproperties
 {

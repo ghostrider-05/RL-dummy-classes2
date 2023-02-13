@@ -7,7 +7,7 @@ class GFxData_CrumbTrails_TA extends GFxDataSingleton_X;
 
 struct CrumbTrailName
 {
-	var /*0x00010000-0x00000000*/ databinding name CrumbName;
+	var databinding name CrumbName;
 
 	structdefaultproperties
 	{
@@ -15,8 +15,8 @@ struct CrumbTrailName
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding array<CrumbTrailName> TrailNames;
-var /*0x00018000-0x00000000*/ CrumbTrails_TA CrumbsMgr;
+var databinding array<CrumbTrailName> TrailNames;
+var CrumbTrails_TA CrumbsMgr;
 
 defaultproperties
 {

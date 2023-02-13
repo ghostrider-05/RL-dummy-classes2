@@ -12,9 +12,8 @@ var native const Pointer Thread;
 var native const Pointer Runnable;
 var config int SocketErrorLogDelaySeconds;
 var config bool bThreaded;
-var /*0x00008000-0x00000000*/ BeaconConfig_X Config;
+var BeaconConfig_X Config;
 
 defaultproperties
 {
-	SocketErrorLogDelaySeconds=5
 }

@@ -7,11 +7,11 @@ class GFxData_MiniScoreboard_TA extends GFxDataSingleton_X;
 
 struct ScoreIndex
 {
-	var /*0x00010000-0x00000000*/ databinding UniqueNetId PlayerID;
-	var /*0x00010000-0x00000000*/ databinding int Place;
-	var /*0x00010000-0x00000000*/ databinding int Score;
-	var /*0x00010000-0x00000000*/ databinding string PlayerName;
-	var /*0x00010000-0x00000000*/ databinding bool bOwningPlayer;
+	var databinding UniqueNetId PlayerID;
+	var databinding int Place;
+	var databinding int Score;
+	var databinding string PlayerName;
+	var databinding bool bOwningPlayer;
 
 	structdefaultproperties
 	{
@@ -23,8 +23,8 @@ struct ScoreIndex
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding array<ScoreIndex> Data;
-var /*0x00010000-0x00000000*/ const int MiniScoreboardSlots;
+var databinding array<ScoreIndex> Data;
+var const int MiniScoreboardSlots;
 
 defaultproperties
 {

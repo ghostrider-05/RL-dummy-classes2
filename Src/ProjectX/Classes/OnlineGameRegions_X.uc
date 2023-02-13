@@ -7,10 +7,10 @@ class OnlineGameRegions_X extends Online_X within OnlineGame_X;
 
 var() float PingRegionsCacheTime;
 var transient float LastPingRegionsTime;
-var /*0x00008000-0x00000000*/ RegionConfig_X Config;
+var RegionConfig_X Config;
 var transient array<RegionPing_X> RegionPings;
 var transient array<CachedRegionPing> CachedRegionPings;
-var /*0x00008000-0x00000000*/ BeaconConfig_X BeaconConfig;
+var BeaconConfig_X BeaconConfig;
 var transient bool bPingingRegions;
 
 defaultproperties

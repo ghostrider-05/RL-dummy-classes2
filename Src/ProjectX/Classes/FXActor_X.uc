@@ -62,7 +62,7 @@ struct native FXEventSubscription
 struct native AttachToParameterWithUnlockAxes
 {
 	var() name Parameter;
-	var() FXActor_X.EAttachActorLocationUnlockFlags IgnoredAxis;
+	var() EAttachActorLocationUnlockFlags IgnoredAxis;
 
 	structdefaultproperties
 	{
@@ -80,7 +80,7 @@ struct native FXAttachment
 	var() float AttachDelay;
 	var() float DetachDelay;
 	var() float LifeTime;
-	var() FXActor_X.EFXComponentTarget Target;
+	var() EFXComponentTarget Target;
 	var() export editinline ActorComponent Component;
 	var() array<FXActorEvent_X> AttachAny;
 	var() array<FXActorEvent_X> DetachAny;
@@ -88,7 +88,7 @@ struct native FXAttachment
 	var() editinline array<editinline RuntimeParameterBase_X> RuntimeParameters;
 	var() editinline array<editinline FXAttachmentTraitBase_X> Traits;
 	var() AttachToParameterWithUnlockAxes AttachToParameterActor;
-	var() FXActor_X.EFXOverrideAttachBehavior OverrideAttachBehavior;
+	var() EFXOverrideAttachBehavior OverrideAttachBehavior;
 	var() Vector OverrideAttachLocationOffset;
 	var() Rotator OverrideAttachRotationOffset;
 	var const bool bCreateDuplicates;
@@ -98,7 +98,7 @@ struct native FXAttachment
 	var editoronly bool bExistingComponent;
 	var editoronly bool bExistingAttachment;
 	var transient float AttachedTime;
-	var transient FXActor_X.EFXComponentState State;
+	var transient EFXComponentState State;
 	var transient float WantsAttachmentChangeTime;
 	var export editinline transient SkeletalMeshComponent AttachedToMesh;
 	var transient Matrix RelativeTransform;
@@ -157,8 +157,8 @@ struct native FXActorEventCheck
 
 var FXActorEvent_X SpawnState;
 var FXActorEvent_X ActivationState;
-var() /*0x00020000-0x00000000*/ array<FXAttachment> Attachments;
-var() FXActor_X.EFXLocality Locality;
+var() array<FXAttachment> Attachments;
+var() EFXLocality Locality;
 var() name SocketOrBoneName;
 var() bool bDeactivateWhenOwnerDestroyed;
 var() bool bAllowShadowCasting;

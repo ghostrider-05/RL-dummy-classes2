@@ -53,9 +53,9 @@ var bool bAirPitchSafetyEnabled;
 var config bool bAllowAsymmetricalMute;
 var transient bool bResetCamera;
 var transient string LoginURL;
-var transient _Types_TA.EVoiceFilter DeprecatedVoiceFilter;
-var transient _Types_TA.EChatFilter QuickChatFilter;
-var transient _Types_TA.EChatFilter MatchChatFilter;
+var transient EVoiceFilter DeprecatedVoiceFilter;
+var transient EChatFilter QuickChatFilter;
+var transient EChatFilter MatchChatFilter;
 var() ChatSpamData ChatSpam;
 var ChatSpamData ChatSpamHarsh;
 var export editinline LightBarComponent_TA LightBar;
@@ -112,13 +112,13 @@ var transient float LastInputYawRight;
 var transient float LastInputPitch;
 var transient float LastInputYaw;
 var const float MouseInputMax;
-var /*0x00008000-0x00000000*/ EngineShare_TA EngineShare;
+var EngineShare_TA EngineShare;
 var repnotify NetworkInputBuffer_TA InputBuffer;
-var /*0x00008000-0x00000000*/ CrossplayConfig_X CrossplayConfig;
+var CrossplayConfig_X CrossplayConfig;
 var const localized string PlayerReportedMessage;
-var /*0x00010000-0x00000000*/ VoiceRoomCredentials RoomCredentials;
-var /*0x00090000-0x00000000*/ EOSGameClipsController_TA EOSGameClipsControllerArchetype;
-var /*0x00090000-0x00000000*/ EOSGameClipsController_TA EOSGameClipsController;
+var VoiceRoomCredentials RoomCredentials;
+var EOSGameClipsController_TA EOSGameClipsControllerArchetype;
+var EOSGameClipsController_TA EOSGameClipsController;
 
 defaultproperties
 {
@@ -134,12 +134,7 @@ defaultproperties
 	CrosshairTraceExtents(1)=(Extent=(X=100.0,Y=100.0,Z=100.0),minDot=0.70)
 	CrosshairTraceExtents(2)=(Extent=(X=500.0,Y=500.0,Z=500.0),minDot=0.990)
 	RotateActorCameraSide=-1
-	MinClientInputRate=20
-	MedianClientInputRate=40
-	MaxClientInputRate=60
-	ConfiguredClientInputRate=60
 	MouseInputMax=1000.0
-	PlayerReportedMessage="REPORT RECEIVED\\nYour report is being reviewed for disciplinary action.\\nThank you"
 	CheatClass=class'CheatManager_TA'
 	InputClass=class'PlayerInput_Game_TA'
 	CylinderComponent=none

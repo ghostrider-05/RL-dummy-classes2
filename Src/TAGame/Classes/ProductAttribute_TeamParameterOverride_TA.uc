@@ -7,4 +7,4 @@ class ProductAttribute_TeamParameterOverride_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() _Types_TA.EPaintTeam Team;
+var() EPaintTeam Team;

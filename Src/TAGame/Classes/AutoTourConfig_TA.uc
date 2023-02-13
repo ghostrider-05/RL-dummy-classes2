@@ -7,8 +7,8 @@ class AutoTourConfig_TA extends OnlineConfig_X;
 
 struct ScheduleRegion
 {
-	var /*0x00010000-0x00000000*/ string Id;
-	var /*0x00010000-0x00000000*/ string Label;
+	var string Id;
+	var string Label;
 
 	structdefaultproperties
 	{
@@ -17,12 +17,12 @@ struct ScheduleRegion
 	}
 };
 
-var /*0x00010000-0x00000000*/ int MaxTournamentsPerWeek;
-var /*0x00010000-0x00000000*/ int TourResultsTimeoutSeconds;
-var /*0x00010000-0x00000000*/ int CurrencyID;
-var /*0x00010000-0x00000000*/ int MaxNumPlayers;
-var /*0x00010000-0x00000000*/ bool bAutoPartyUpEnabled;
-var /*0x00010000-0x00000000*/ array<ScheduleRegion> ScheduleRegions;
+var int MaxTournamentsPerWeek;
+var int TourResultsTimeoutSeconds;
+var int CurrencyID;
+var int MaxNumPlayers;
+var bool bAutoPartyUpEnabled;
+var array<ScheduleRegion> ScheduleRegions;
 
 defaultproperties
 {

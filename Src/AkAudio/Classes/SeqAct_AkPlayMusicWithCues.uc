@@ -17,7 +17,7 @@ enum EMusicSyncType
 struct native MusicSyncEvent
 {
 	var string CueName;
-	var SeqAct_AkPlayMusicWithCues.EMusicSyncType CueType;
+	var EMusicSyncType CueType;
 
 	structdefaultproperties
 	{

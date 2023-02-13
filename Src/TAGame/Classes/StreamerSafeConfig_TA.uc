@@ -5,5 +5,5 @@
 *******************************************************************************/
 class StreamerSafeConfig_TA extends OnlineConfig_X;
 
-var() /*0x00010000-0x00000000*/ array<string> StreamerSafeSoundCueNames;
-var /*0x00090000-0x00000000*/ transient bool bPlayerSettingEnabled;
+var() array<string> StreamerSafeSoundCueNames;
+var transient bool bPlayerSettingEnabled;

@@ -134,7 +134,7 @@ var float TutorialCompleteTime;
 var float BallDestroyTimeOnTouch;
 var float AllMessagesDisplayedTime;
 var float WaitTimeBeforeCheckCompleteAction;
-var Tutorial_TA.ETutorialStatus TutorialStatus;
+var ETutorialStatus TutorialStatus;
 var float StartTime;
 var string StartTimeString;
 var array<string> UseActions;

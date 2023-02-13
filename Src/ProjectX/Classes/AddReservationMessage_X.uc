@@ -10,7 +10,7 @@ var array<ReservationPlayerData> Players;
 var UniqueNetId PartyLeaderID;
 var string ReservationID;
 var bool bDisableCrossPlay;
-var /*0x00010000-0x00000000*/ config transient bool bMarkSplitscreenAsRemote;
+var config transient bool bMarkSplitscreenAsRemote;
 
 defaultproperties
 {

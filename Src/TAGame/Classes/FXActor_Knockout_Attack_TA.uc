@@ -14,8 +14,8 @@ enum EAttackType
 	AT_MAX
 };
 
-var /*0x00010000-0x00000000*/ transient FXActor_Knockout_Attack_TA.EAttackType AttackType;
-var /*0x00010000-0x00000000*/ array<FXActorEvent_X> AttackEvents;
+var transient EAttackType AttackType;
+var array<FXActorEvent_X> AttackEvents;
 
 defaultproperties
 {

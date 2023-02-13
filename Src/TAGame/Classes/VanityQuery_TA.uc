@@ -8,7 +8,7 @@ class VanityQuery_TA extends Component;
 struct native VanityQueryRequest
 {
 	var GFxShell_X Shell;
-	var _Types_TA.EVanityType VanityType;
+	var EVanityType VanityType;
 	var array<UniqueNetId> PlayerIds;
 	var int NumIdsToQuery;
 	var int NumQueriesCompleted;
@@ -29,7 +29,7 @@ struct native VanityQueryRequest
 struct native VanityQuerySet
 {
 	var array<UniqueNetId> PlayerIds;
-	var _Types_TA.EVanityType VanityType;
+	var EVanityType VanityType;
 	var bool bForced;
 
 	structdefaultproperties

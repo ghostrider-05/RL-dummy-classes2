@@ -7,10 +7,10 @@ class GFxData_RocketPass_TA extends GFxDataSingleton_X;
 
 struct RocketPassReward
 {
-	var /*0x00010000-0x00000000*/ databinding int CurrencyID;
-	var /*0x00010000-0x00000000*/ databinding name Name;
-	var /*0x00010000-0x00000000*/ databinding float Amount;
-	var /*0x00010000-0x00000000*/ databinding int Tier;
+	var databinding int CurrencyID;
+	var databinding name Name;
+	var databinding float Amount;
+	var databinding int Tier;
 
 	structdefaultproperties
 	{
@@ -31,8 +31,8 @@ struct RocketPassCurrencyReward extends GFxData_RocketPass_TA.RocketPassReward
 
 struct RocketPassProduct
 {
-	var /*0x00010000-0x00000000*/ databinding ProductHashID HashID;
-	var /*0x00010000-0x00000000*/ databinding int Tier;
+	var databinding ProductHashID HashID;
+	var databinding int Tier;
 
 	structdefaultproperties
 	{
@@ -41,25 +41,24 @@ struct RocketPassProduct
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding array<RocketPassProduct> FreeRewards;
-var /*0x00010000-0x00000000*/ databinding array<RocketPassProduct> PremiumRewards;
-var /*0x00010000-0x00000000*/ databinding array<RocketPassProduct> PrestigeRewards;
-var /*0x00010000-0x00000000*/ databinding array<RocketPassXPReward> PremiumXPRewards;
-var /*0x00010000-0x00000000*/ databinding array<RocketPassCurrencyReward> PremiumCurrencyRewards;
-var /*0x00010000-0x00000000*/ databinding Qword StartTime;
-var /*0x00010000-0x00000000*/ databinding Qword EndTime;
-var /*0x00010000-0x00000000*/ export editinline transient OnlineProductStoreSet_TA RocketPassSet;
-var /*0x00010000-0x00000000*/ transient AsyncTask PendingMasterTask;
-var /*0x00010000-0x00000000*/ const localized string RegionRestrictedPurchaseTiers;
-var /*0x00010000-0x00000000*/ const name MainMenuName;
-var /*0x00010000-0x00000000*/ const name RocketPassMenuName;
-var /*0x00010000-0x00000000*/ databinding bool bHideMainMenuButton;
-var() /*0x00010000-0x00000000*/ transient RocketPass_TA RocketPass;
-var /*0x00018000-0x00000000*/ transient RocketPassConfig_TA RocketPassConfig;
+var databinding array<RocketPassProduct> FreeRewards;
+var databinding array<RocketPassProduct> PremiumRewards;
+var databinding array<RocketPassProduct> PrestigeRewards;
+var databinding array<RocketPassXPReward> PremiumXPRewards;
+var databinding array<RocketPassCurrencyReward> PremiumCurrencyRewards;
+var databinding Qword StartTime;
+var databinding Qword EndTime;
+var export editinline transient OnlineProductStoreSet_TA RocketPassSet;
+var transient AsyncTask PendingMasterTask;
+var const localized string RegionRestrictedPurchaseTiers;
+var const name MainMenuName;
+var const name RocketPassMenuName;
+var databinding bool bHideMainMenuButton;
+var() transient RocketPass_TA RocketPass;
+var transient RocketPassConfig_TA RocketPassConfig;
 
 defaultproperties
 {
-	RegionRestrictedPurchaseTiers="Sorry, your country’s regulations prevent Rocket Pass tier purchasing."
 	MainMenuName=RootMenuMovie
 	RocketPassMenuName=RocketPassMenuMovie
 	TableName=RocketPass

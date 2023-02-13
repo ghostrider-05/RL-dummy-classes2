@@ -49,7 +49,7 @@ var databinding array<CustomGameSetting> CustomGameSettings;
 var transient array<GameSettingCategory_X> GameSettingCategories;
 var int PresetCategoryIndex;
 var transient array<ModeMapPair> ModeMaps;
-var transient _Types_TA.ECustomMatchSettingsType SettingsType;
+var transient ECustomMatchSettingsType SettingsType;
 var transient Profile_TA Profile;
 var transient GameMode_TA GameModeObj;
 var GameTags_TA GameTags;

@@ -10,12 +10,12 @@ struct GFxChatMessage
 	var databinding int Team;
 	var databinding string PlayerName;
 	var databinding string Message;
-	var databinding _Types_TA.EChatChannel ChatChannel;
+	var databinding EChatChannel ChatChannel;
 	var databinding bool bLocalPlayer;
 	var bool bTransient;
 	var databinding UniqueNetId SenderId;
 	var databinding bool bPreset;
-	var databinding _Types_TA.EChatMessageType MessageType;
+	var databinding EChatMessageType MessageType;
 
 	structdefaultproperties
 	{
@@ -77,7 +77,7 @@ struct ChatPresetMessage
 
 struct ActiveChatTab
 {
-	var databinding _Types_TA.EChatChannel Channel;
+	var databinding EChatChannel Channel;
 	var databinding UniqueNetId PersonaId;
 
 	structdefaultproperties
@@ -94,7 +94,7 @@ var() databinding array<ChatPresetMessageGroup> PresetGroups;
 var() databinding array<ChatPresetMessage> PresetMessages;
 var databinding array<GFxChatMessage> Messages;
 var transient bool bPreMatchLobby;
-var PlatformAccountSettings.ECrossPlatformChatState LastMessagedCrossPlatformChatState;
+var ECrossPlatformChatState LastMessagedCrossPlatformChatState;
 var ChatHistory_TA ChatHistory;
 var const int MaxNumGroups;
 var const int MaxNumMessagesPerGroup;

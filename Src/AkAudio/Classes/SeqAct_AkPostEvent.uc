@@ -9,7 +9,7 @@ class SeqAct_AkPostEvent extends SeqAct_Latent
 
 var const transient array<int> PlayingIDs;
 var() AkSoundCue SoundCue;
-var() /*0x00010000-0x00000000*/ bool bHasSubtitles;
+var() bool bHasSubtitles;
 
 defaultproperties
 {

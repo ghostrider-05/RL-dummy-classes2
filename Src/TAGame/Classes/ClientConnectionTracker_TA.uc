@@ -15,9 +15,9 @@ enum EConnectionQualityState
 
 var databinding bool bDisconnectedFromServer;
 var databinding bool bShowConnectionQualityIndicators;
-var databinding ClientConnectionTracker_TA.EConnectionQualityState LatencyStatus;
-var databinding ClientConnectionTracker_TA.EConnectionQualityState JitterStatus;
-var databinding ClientConnectionTracker_TA.EConnectionQualityState PacketStatus;
+var databinding EConnectionQualityState LatencyStatus;
+var databinding EConnectionQualityState JitterStatus;
+var databinding EConnectionQualityState PacketStatus;
 var float LatencyLastUpdateTime;
 var float JitterRollingAverage;
 var float JitterLastUpdateTime;
@@ -30,6 +30,6 @@ var float PriorTotalPacketsLost;
 var float RollingBadPingTime;
 var float RollingBadJitterTime;
 var float RollingBadPacketLossTime;
-var() /*0x00008000-0x00000000*/ ConnectionQualityConfig_TA ConnectionQualityConfig;
+var() ConnectionQualityConfig_TA ConnectionQualityConfig;
 var PRI_TA TrackedPRI;
 var ConnectionQualitySave_TA ConnectionQualitySave;

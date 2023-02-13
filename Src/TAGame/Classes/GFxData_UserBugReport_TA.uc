@@ -17,9 +17,9 @@ enum EUserBugReportSubmitStatus
 
 struct GFxUserBugReportCategory
 {
-	var /*0x00010000-0x00000000*/ databinding name Id;
-	var /*0x00010000-0x00000000*/ databinding _UserBugReportTypes_TA.EUserBugReportCategoryType Type;
-	var /*0x00010000-0x00000000*/ databinding string Label;
+	var databinding name Id;
+	var databinding EUserBugReportCategoryType Type;
+	var databinding string Label;
 
 	structdefaultproperties
 	{
@@ -29,16 +29,16 @@ struct GFxUserBugReportCategory
 	}
 };
 
-var /*0x00018000-0x00000000*/ UserBugReportConfig_TA Config;
-var /*0x00010000-0x00000000*/ databinding bool bEnabled;
-var /*0x00010000-0x00000000*/ databinding array<GFxUserBugReportCategory> Categories;
-var /*0x00010000-0x00000000*/ databinding array<GFxUserBugReportCategory> SelectedCategories;
-var /*0x00010000-0x00000000*/ databinding string UserMessage;
-var /*0x00010000-0x00000000*/ databinding GFxData_UserBugReport_TA.EUserBugReportSubmitStatus Status;
-var /*0x00010000-0x00000000*/ databinding string SubmitError;
-var /*0x00010000-0x00000000*/ databinding string ConfirmationCode;
-var /*0x00010000-0x00000000*/ UserBugReportGeneratedData_TA PendingData;
-var /*0x00010000-0x00000000*/ TAsyncResult__UserBugReportUploadResult_TA UploadTask;
+var UserBugReportConfig_TA Config;
+var databinding bool bEnabled;
+var databinding array<GFxUserBugReportCategory> Categories;
+var databinding array<GFxUserBugReportCategory> SelectedCategories;
+var databinding string UserMessage;
+var databinding EUserBugReportSubmitStatus Status;
+var databinding string SubmitError;
+var databinding string ConfirmationCode;
+var UserBugReportGeneratedData_TA PendingData;
+var TAsyncResult__UserBugReportUploadResult_TA UploadTask;
 
 defaultproperties
 {

@@ -153,7 +153,7 @@ defaultproperties
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_TA.ReplayComponent0'
 	RegistryGroup=GroupComponent_ORS'Default__Ball_TA.DefaultRegistryGroup'
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__Ball_TA.CollisionCylinder'

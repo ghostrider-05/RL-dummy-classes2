@@ -8,7 +8,7 @@ class Wallet_TA extends Object within OnlinePlayer_X;
 var() array<Currency> Currencies;
 var export editinline OnlineProductStoreSet_TA CurrencyProductSet;
 var const int RocketBucksCurrencyID;
-var() /*0x00008000-0x00000000*/ SpecialEventConfig_TA SpecialEvent;
+var() SpecialEventConfig_TA SpecialEvent;
 
 defaultproperties
 {

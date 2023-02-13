@@ -13,7 +13,7 @@ defaultproperties
 	Goal=Goal_TA'Default__GoalVolume_TA.DefaultGoal'
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		ReplacementPrimitive=none
 		bAcceptsLights=false
 		BlockZeroExtent=true

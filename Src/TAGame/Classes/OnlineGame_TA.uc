@@ -6,10 +6,10 @@
 class OnlineGame_TA extends OnlineGame_X
 	config(Engine);
 
-var() /*0x00010000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var() /*0x00010000-0x00000000*/ OnlineGameTourMatchmaking_TA TourMatchmaking;
+var() OnlineGameTournaments_TA Tournaments;
+var() OnlineGameTourMatchmaking_TA TourMatchmaking;
 var Personas_TA Personas;
-var /*0x00010000-0x00000000*/ ClubPersonas_TA ClubPersonas;
+var ClubPersonas_TA ClubPersonas;
 
 defaultproperties
 {

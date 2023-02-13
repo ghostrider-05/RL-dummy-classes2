@@ -5,11 +5,11 @@
 *******************************************************************************/
 class GFxData_SupportACreator_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ databinding string CreatorCode;
-var /*0x00010000-0x00000000*/ databinding Qword ExpirationDate;
-var /*0x00010000-0x00000000*/ databinding _Types_TA.ESupportType SupportType;
-var /*0x00010000-0x00000000*/ transient GFxModal_X ProcessingModal;
-var /*0x00010000-0x00000000*/ array<string> CreatorIcons;
+var databinding string CreatorCode;
+var databinding Qword ExpirationDate;
+var databinding ESupportType SupportType;
+var transient GFxModal_X ProcessingModal;
+var array<string> CreatorIcons;
 
 defaultproperties
 {

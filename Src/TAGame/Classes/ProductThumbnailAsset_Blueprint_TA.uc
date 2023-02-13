@@ -5,4 +5,4 @@
 *******************************************************************************/
 class ProductThumbnailAsset_Blueprint_TA extends ProductThumbnailAsset_TA;
 
-var(Thumbnail) /*0x00030000-0x00000000*/ duplicatetransient const Texture2D RevealedThumbnail;
+var(Thumbnail) duplicatetransient const Texture2D RevealedThumbnail;

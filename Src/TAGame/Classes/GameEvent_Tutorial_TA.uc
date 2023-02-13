@@ -39,7 +39,7 @@ struct FieldSpawnInfo
 	var Vector Extent;
 	var float Speed;
 	var Rotator Rotation;
-	var GameEvent_Tutorial_TA.ERotationType RotationType;
+	var ERotationType RotationType;
 	var Vector MaxFieldExtentScale;
 	var bool bSpawnCannon;
 	var bool bDrawDebug;
@@ -111,8 +111,8 @@ var bool bRedoRound;
 var bool bAllowSuperBoost;
 var bool bDisplayedRedoPenaltyMessage;
 var bool bShowBoostMeter;
-var _Types_TA.EDifficulty Difficulty;
-var GameEvent_Tutorial_TA.ERotationType DebugRotationType;
+var EDifficulty Difficulty;
+var ERotationType DebugRotationType;
 /** Difficulty Settings */
 var() DifficultyInfo DifficultyList[3];
 var array<int> WaveIndexesLeft;
@@ -128,7 +128,7 @@ var transient int WaveIndex;
 var transient int WaveSpawnCount;
 var transient int RandomSpawnIndex;
 var Tutorial_TA Tutorial;
-var /*0x00000800-0x00000000*/ const string StartMessageArchetype;
+var const string StartMessageArchetype;
 var Vector BallSpawnLocation;
 var array<CarSpawnData> CarSpawns;
 var int PointsScoredThisRound;

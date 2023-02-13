@@ -11,7 +11,4 @@ var() const localized string JoiningGameFailedString;
 
 defaultproperties
 {
-	ConnectingTitleString="Friend Join"
-	ConnectingBodyString="Joining friend..."
-	JoiningGameFailedString="Failed to join friend."
 }

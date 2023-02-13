@@ -18,8 +18,8 @@ var() editinline ProductEquipProfileSlot_TA CustomFinish;
 var() editinline ProductEquipProfileSlot_TA EngineAudio;
 var() editinline ProductEquipProfileSlot_TA SupersonicTrail;
 var() editinline ProductEquipProfileSlot_TA GoalExplosion;
-var() editinline array<editinline _Types_TA.ELicenseGroup> LicenseWhitelist;
-var() editinline array<editinline _Types_TA.ELicenseGroup> LicenseBlacklist;
+var() editinline array<ELicenseGroup> LicenseWhitelist;
+var() editinline array<ELicenseGroup> LicenseBlacklist;
 var() editinline bool bWhitelistAll;
 var const array<ProductEquipProfileSlot_TA> AllSlots;
 

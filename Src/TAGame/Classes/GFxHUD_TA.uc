@@ -41,8 +41,8 @@ var transient GameEvent_Team_TA TeamGameEvent;
 var transient GFxData_GameEvent_TA GameEventData;
 var transient GFxData_LocalCar_TA CarData;
 var transient array<GFxData_PRI_TA> PRIData;
-var /*0x00010000-0x00000000*/ transient GFxData_MiniScoreboard_TA MiniScoreboard;
-var /*0x00010000-0x00000000*/ transient GFxData_EOSGameClipsMaskArea_TA EOSGameClipsMaskHandler;
+var transient GFxData_MiniScoreboard_TA MiniScoreboard;
+var transient GFxData_EOSGameClipsMaskArea_TA EOSGameClipsMaskHandler;
 var transient array<GFxData_PlayerRecord_TA> PlayerRecordData;
 var bool bAttackTargetActive;
 var transient bool bShowedDisconnectMessage;
@@ -53,24 +53,13 @@ var transient array<PRI_TA> PendingShowAddMessagePlayers;
 var transient Actor LastTarget;
 var transient float TestLastLogTime;
 var Car_TA CarDisplayingBoost;
-var /*0x00008000-0x00000000*/ AdHocBeacon_X AdHocBeacon;
+var AdHocBeacon_X AdHocBeacon;
 var const localized string ServerMigrationTitle;
 var const localized string ServerMigrationBody;
-var /*0x00010000-0x00000000*/ transient GFxData_Scoreboard_TA Scoreboard;
+var transient GFxData_Scoreboard_TA Scoreboard;
 
 defaultproperties
 {
 	GFxPRIClass=class'GFxData_PRI_TA'
-	PlayerJoinString="joined the match"
-	PlayerLeaveString="left the match"
-	PlayerTimedOutString="lost connection"
-	ChatTitle="Send Chat Message"
-	TeamChatTitle="Send Team Chat Message"
-	ChatDisabledMessage="Chat disabled for [Time] second(s)."
-	ReplayQueSaveMessage="A replay of this match will auto-save when the game ends. A keyframe will mark the current time."
-	ChatBannedMessage="Chat is restricted for [Hours] hour(s), [Minutes] minute(s)."
-	ChatBannedPermanentlyMessage="Chat is permanently restricted."
-	ServerMigrationTitle="Server Migration"
-	ServerMigrationBody="Server shutting down for maintenance, migrating to a new server."
 	PartyChatTitle="Send Party Chat Message"
 }

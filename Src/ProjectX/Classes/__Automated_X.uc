@@ -1,4 +1,8 @@
-class _Automated_X extends Object;
+class __Automated_X extends Object;
+
+enum EWordFilterUsage {
+	EWordFilterUsage_MAX,
+};
 
 struct ImageDecoder {};
 struct WordFilterPair {};
@@ -21,7 +25,6 @@ struct ReservationPlayerData {};
 struct UpdatedPlayerSkillRating {};
 struct ReplicatedReservationData {};
 struct BindingAction {};
-struct EWordFilterUsage {};
 struct AvatarSize {};
 struct AdHocAccessPointInfo {};
 struct RPCResponse {};

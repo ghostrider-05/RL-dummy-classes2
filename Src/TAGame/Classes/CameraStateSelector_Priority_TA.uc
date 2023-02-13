@@ -17,7 +17,7 @@ enum EStatePriority
 struct StateParams
 {
 	var() CameraState_X State;
-	var() CameraStateSelector_Priority_TA.EStatePriority Priority;
+	var() EStatePriority Priority;
 
 	structdefaultproperties
 	{

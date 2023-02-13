@@ -5,7 +5,7 @@
 *******************************************************************************/
 class NetMetrics_X extends MetricsGroup_X;
 
-var /*0x00008000-0x00000000*/ EventRecorderConfig_X Config;
+var EventRecorderConfig_X Config;
 var array<string> UnstableConnectionsQueue;
 
 defaultproperties

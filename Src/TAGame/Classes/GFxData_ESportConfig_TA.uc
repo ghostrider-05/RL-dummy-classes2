@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_ESportConfig_TA extends GFxDataSingleton_X;
 
-var /*0x00008000-0x00000000*/ ESportConfig_TA ESportEvents;
+var ESportConfig_TA ESportEvents;
 
 defaultproperties
 {

@@ -14,7 +14,7 @@ var databinding bool bShowGlobalLeaderboards;
 var transient bool bWordFilterError;
 var transient OnlineGameLeaderboards_X Leaderboards;
 var transient name PendingLeaderboardRequestID;
-var /*0x00008000-0x00000000*/ transient VanitySetManager_TA VanityManager;
+var transient VanitySetManager_TA VanityManager;
 
 defaultproperties
 {

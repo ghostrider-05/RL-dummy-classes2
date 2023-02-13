@@ -9,7 +9,7 @@ var array<PersonaDataId> RecentPlayers;
 var array<PersonaDataId> RecentTradingPartners;
 var array<PlayerGameID> RecentGameIDs;
 var array<PlayerLoadoutData> ObservedPlayerLoadouts;
-var /*0x00080000-0x00000000*/ OnlineSubsystem.EOnlineFriendState PresenceState;
+var EOnlineFriendState PresenceState;
 
 defaultproperties
 {

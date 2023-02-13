@@ -8,7 +8,7 @@ class OnlineGamePlaylists_X extends Online_X within OnlineGame_Base_X
 
 var() class PlaylistClass;
 var transient array<GameSettingPlaylist_X> DownloadedPlaylists;
-var() /*0x00008000-0x00000000*/ RankedConfig_X RankedConfig;
+var() RankedConfig_X RankedConfig;
 var const localized string CompetitiveCategory;
 var const localized string CasualCategory;
 var const localized string ExtraModeCategory;
@@ -16,7 +16,4 @@ var const localized string ExtraModeCategory;
 defaultproperties
 {
 	PlaylistClass=class'GameSettingPlaylist_X'
-	CompetitiveCategory="Competitive"
-	CasualCategory="Casual"
-	ExtraModeCategory="Extra Modes"
 }

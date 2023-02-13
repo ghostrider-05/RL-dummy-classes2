@@ -5,18 +5,18 @@
 *******************************************************************************/
 class CrowdSounds_TA extends CrowdSoundsBase_TA;
 
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds GoalScored;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds ShotAttempt;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds OpenGoal;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds Save;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds Aerial;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds LongTimeNearGoal;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds FastBreak;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds Hit0Second;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds AnyDemolition;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds RelevantDemolition;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds KickoffTouch;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds TenseClear;
+var() CrowdExcitementSounds GoalScored;
+var() CrowdExcitementSounds ShotAttempt;
+var() CrowdExcitementSounds OpenGoal;
+var() CrowdExcitementSounds Save;
+var() CrowdExcitementSounds Aerial;
+var() CrowdExcitementSounds LongTimeNearGoal;
+var() CrowdExcitementSounds FastBreak;
+var() CrowdExcitementSounds Hit0Second;
+var() CrowdExcitementSounds AnyDemolition;
+var() CrowdExcitementSounds RelevantDemolition;
+var() CrowdExcitementSounds KickoffTouch;
+var() CrowdExcitementSounds TenseClear;
 
 defaultproperties
 {

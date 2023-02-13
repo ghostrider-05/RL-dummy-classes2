@@ -9,7 +9,7 @@ class InterpTrackCameraShake_TA extends InterpTrackToggle
 
 var() editinline CameraShake Shake;
 var() float ShakeScale;
-var() Camera.ECameraAnimPlaySpace PlaySpace;
+var() ECameraAnimPlaySpace PlaySpace;
 var() Rotator PlaySpaceRotation;
 
 defaultproperties

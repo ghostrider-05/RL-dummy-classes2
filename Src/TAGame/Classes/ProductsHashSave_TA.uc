@@ -5,6 +5,6 @@
 *******************************************************************************/
 class ProductsHashSave_TA extends SaveObject_TA;
 
-var /*0x00080000-0x00000000*/ transient array<ProductHashID> HashIDs;
+var transient array<ProductHashID> HashIDs;
 var array<Qword> InstanceIDs;
 var array<ProductInstanceID> InstanceIDs128;

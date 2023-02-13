@@ -7,7 +7,7 @@ class GFxData_WebBrowser_TA extends GFxDataSingleton_X;
 
 var databinding string ActiveURL;
 var databinding string ActivePageTitle;
-var() /*0x00008000-0x00000000*/ UrlConfig_X UrlConfig;
+var() UrlConfig_X UrlConfig;
 
 defaultproperties
 {

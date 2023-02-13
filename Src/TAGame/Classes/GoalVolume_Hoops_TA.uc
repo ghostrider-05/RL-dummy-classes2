@@ -11,7 +11,7 @@ defaultproperties
 	Goal=Goal_Hoops_TA'Default__GoalVolume_Hoops_TA.DefaultHoopsGoal'
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		ReplacementPrimitive=none
 	end object
 	// Reference: BrushComponent'Default__GoalVolume_Hoops_TA.BrushComponent0'

@@ -6,4 +6,4 @@
 class PlaylistSkillCache_X extends Object;
 
 var transient array<UpdatedPlayerSkillRating> Players;
-var() /*0x00018000-0x00000000*/ RankedConfig_X RankedConfig;
+var() RankedConfig_X RankedConfig;

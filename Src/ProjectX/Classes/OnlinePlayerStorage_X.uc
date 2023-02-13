@@ -5,6 +5,6 @@
 *******************************************************************************/
 class OnlinePlayerStorage_X extends Online_X within OnlinePlayer_X;
 
-var /*0x00010000-0x00000000*/ OnlinePlayerStorageQueue_X Queue;
-var /*0x00010000-0x00000000*/ OnlinePlayerStorageSync_X Sync;
-var /*0x00010000-0x00000000*/ OnlinePlayerStorageManifest_X Manifest;
+var OnlinePlayerStorageQueue_X Queue;
+var OnlinePlayerStorageSync_X Sync;
+var OnlinePlayerStorageManifest_X Manifest;

@@ -7,15 +7,15 @@ class ShopAdsConfig_TA extends OnlineConfig_X;
 
 struct ShopAdData
 {
-	var /*0x00010000-0x00000000*/ string IdleImageURL;
-	var /*0x00010000-0x00000000*/ string HoverImageURL;
-	var /*0x00010000-0x00000000*/ string ClickImageURL;
-	var /*0x00010000-0x00000000*/ databinding Texture IdleImage;
-	var /*0x00010000-0x00000000*/ databinding Texture HoverImage;
-	var /*0x00010000-0x00000000*/ databinding Texture ClickImage;
-	var /*0x00010000-0x00000000*/ databinding bool bOpenURLInCoherent;
-	var /*0x00010000-0x00000000*/ databinding name Section;
-	var /*0x00010000-0x00000000*/ databinding string Link;
+	var string IdleImageURL;
+	var string HoverImageURL;
+	var string ClickImageURL;
+	var databinding Texture IdleImage;
+	var databinding Texture HoverImage;
+	var databinding Texture ClickImage;
+	var databinding bool bOpenURLInCoherent;
+	var databinding name Section;
+	var databinding string Link;
 
 	structdefaultproperties
 	{
@@ -31,7 +31,7 @@ struct ShopAdData
 	}
 };
 
-var() /*0x00010000-0x00000000*/ databinding array<ShopAdData> Ads;
+var() databinding array<ShopAdData> Ads;
 
 defaultproperties
 {

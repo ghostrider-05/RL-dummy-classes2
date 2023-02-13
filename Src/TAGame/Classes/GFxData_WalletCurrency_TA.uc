@@ -5,12 +5,12 @@
 *******************************************************************************/
 class GFxData_WalletCurrency_TA extends GFxDataRow_X;
 
-var() /*0x00010000-0x00000000*/ databinding int CurrencyID;
-var() /*0x00010000-0x00000000*/ databinding _Types_TA.ECurrency Type;
-var() /*0x00010000-0x00000000*/ databinding Texture SmallImage;
-var() /*0x00010000-0x00000000*/ databinding Texture LargeImage;
-var() /*0x00010000-0x00000000*/ databinding int Amount;
-var() /*0x00010000-0x00000000*/ databinding string LocalizedName;
+var() databinding int CurrencyID;
+var() databinding int /** _Types_TA.ECurrency*/ Type;
+var() databinding Texture SmallImage;
+var() databinding Texture LargeImage;
+var() databinding int Amount;
+var() databinding string LocalizedName;
 
 defaultproperties
 {

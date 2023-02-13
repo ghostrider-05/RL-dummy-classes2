@@ -7,8 +7,8 @@ class CrowdActorManager_TA extends Actor
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ transient array<CrowdActor_TA> CrowdActors;
-var /*0x00010000-0x00000000*/ transient CrowdSoundsBase_TA Sounds;
+var transient array<CrowdActor_TA> CrowdActors;
+var transient CrowdSoundsBase_TA Sounds;
 
 defaultproperties
 {

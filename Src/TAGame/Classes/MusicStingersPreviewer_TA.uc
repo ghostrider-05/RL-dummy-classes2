@@ -5,13 +5,13 @@
 *******************************************************************************/
 class MusicStingersPreviewer_TA extends Object;
 
-var() /*0x00010000-0x00000000*/ export editinline ProductLoader_TA ProductLoader;
-var() /*0x00010000-0x00000000*/ AkSoundCue StingerPreviewFadeCue;
-var() /*0x00010000-0x00000000*/ float PlayPreviewDelay;
-var /*0x00010000-0x00000000*/ transient ProductAsset_MusicStingers_TA AnthemAsset;
-var /*0x00010000-0x00000000*/ transient ProductInstanceID AnthemId;
-var /*0x00010000-0x00000000*/ transient bool bHoveringOverSlot;
-var /*0x00010000-0x00000000*/ transient bool bPlaying;
+var() export editinline ProductLoader_TA ProductLoader;
+var() AkSoundCue StingerPreviewFadeCue;
+var() float PlayPreviewDelay;
+var transient ProductAsset_MusicStingers_TA AnthemAsset;
+var transient ProductInstanceID AnthemId;
+var transient bool bHoveringOverSlot;
+var transient bool bPlaying;
 
 defaultproperties
 {

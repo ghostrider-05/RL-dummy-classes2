@@ -5,13 +5,13 @@
 *******************************************************************************/
 class OnlineGameTourServer_TA extends Online_X within OnlineGameDedicatedServer_TA;
 
-var /*0x00010000-0x00000000*/ transient TourServerSettings TourSettings;
-var /*0x00010000-0x00000000*/ transient TourServerSettings ReservationsTourSettings;
-var /*0x00010000-0x00000000*/ transient MapSet_TA MapSet;
-var /*0x00010000-0x00000000*/ transient TourGameUpdateDispatcher_TA GameUpdateDispatcher;
-var /*0x00010000-0x00000000*/ TourServerInfo_TA TourServerInfo;
-var /*0x00010000-0x00000000*/ transient array<Qword> TeamIDs;
-var /*0x00018000-0x00000000*/ transient TourServerConfig_TA TournamentServerConfig;
+var transient TourServerSettings TourSettings;
+var transient TourServerSettings ReservationsTourSettings;
+var transient MapSet_TA MapSet;
+var transient TourGameUpdateDispatcher_TA GameUpdateDispatcher;
+var TourServerInfo_TA TourServerInfo;
+var transient array<Qword> TeamIDs;
+var transient TourServerConfig_TA TournamentServerConfig;
 
 defaultproperties
 {

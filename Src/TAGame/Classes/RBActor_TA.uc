@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class RBActor_TA extends Pawn_X
+	native
 	nativereplication
 	config(Game)
 	hidecategories(Navigation)
@@ -115,7 +116,7 @@ var repnotify transient float ReplicatedGravityScale;
 var repnotify transient float ReplicatedCollisionScale;
 var native transient Pointer Constraint2D;
 var native transient Pointer BulletRigidBody;
-var /*0x00008000-0x00000000*/ PhysicsConfig_TA PhysicsConfig;
+var PhysicsConfig_TA PhysicsConfig;
 var repnotify transient byte TeleportCounter;
 
 defaultproperties
@@ -134,7 +135,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	Components(0)=none
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 		AlwaysCheckCollision=true
 		BlockActors=false

@@ -6,5 +6,5 @@
 class MatchmakingViewFilter_Unranked_TA extends Object
 	implements(IMatchmakingViewFilter_TA);
 
-var /*0x00008000-0x00000000*/ IMicroEventConfig_TA MicroEventConfig;
-var /*0x00008000-0x00000000*/ IOnlineGamePlaylists_X Playlists;
+var IMicroEventConfig_TA MicroEventConfig;
+var IOnlineGamePlaylists_X Playlists;

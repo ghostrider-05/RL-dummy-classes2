@@ -22,11 +22,11 @@ enum EMusicPlayerState
 };
 
 var transient MusicPlayerSave_TA MusicSave;
-var /*0x00008000-0x00000000*/ GameEvent_TA CurrentGameEvent;
+var GameEvent_TA CurrentGameEvent;
 var bool bMuted;
 var name LoadingScreenState;
 var name CurrentPlaylist;
-var GameplayMusicPlayer_TA.EMusicPlayerState MusicPlayerState;
+var EMusicPlayerState MusicPlayerState;
 var name LoadingScreenStateGroup;
 var name LoadingScreenState_MusicEnabled;
 var name LoadingScreenState_MusicDisabled;

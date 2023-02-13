@@ -7,9 +7,9 @@ class OnlinePlayerStorageSync_X extends Object within OnlinePlayerStorage_X;
 
 struct OnlinePlayerStorageSyncRequest
 {
-	var /*0x00010000-0x00000000*/ Object DataObj;
-	var /*0x00010000-0x00000000*/ int ClientTick;
-	var /*0x00010000-0x00000000*/ EncodeObject_X.EObjectEncoding Encoding;
+	var Object DataObj;
+	var int ClientTick;
+	var EObjectEncoding Encoding;
 
 	structdefaultproperties
 	{
@@ -21,12 +21,12 @@ struct OnlinePlayerStorageSyncRequest
 
 struct OnlinePlayerStorageSyncResult
 {
-	var /*0x00010000-0x00000000*/ class DataClass;
-	var /*0x00010000-0x00000000*/ Object RemoteData;
-	var /*0x00010000-0x00000000*/ int ServerTick;
-	var /*0x00010000-0x00000000*/ int Checksum;
-	var /*0x00010000-0x00000000*/ bool bChecksumMatch;
-	var /*0x00010000-0x00000000*/ EncodeObject_X.EObjectEncoding Encoding;
+	var class DataClass;
+	var Object RemoteData;
+	var int ServerTick;
+	var int Checksum;
+	var bool bChecksumMatch;
+	var EObjectEncoding Encoding;
 
 	structdefaultproperties
 	{

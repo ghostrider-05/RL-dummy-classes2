@@ -21,7 +21,7 @@ var WebImageCache_X WebImageCache;
 var export editinline PsyNetStaticData_X PsyNetStaticData;
 var transient bool bLockGameSettings;
 var config bool bUseEnvironmentZone;
-var transient OnlineSubsystem.EOnlineServerConnectionStatus CurrentConnectionStatus;
+var transient EOnlineServerConnectionStatus CurrentConnectionStatus;
 var transient string ServerName;
 var transient string CachedOptions;
 var transient OnlineConfigDispatcher_X OnlineConfigDispatcher;
@@ -30,5 +30,4 @@ var array<Online_X> OnlineComponents;
 
 defaultproperties
 {
-	OnlineSubGameInterfaceName="OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks_PsyNet"
 }

@@ -6,16 +6,15 @@
 class ShopAutoLoadHelper_TA extends Object within GFxData_ShopCatalogue_TA
 	config(Game);
 
-var /*0x00010000-0x00000000*/ config int SyncRequestRange;
-var /*0x00010000-0x00000000*/ export editinline RetryDelayer_X AutoLoadDelayer;
-var /*0x00010000-0x00000000*/ transient AsyncTask AutoLoadAsyncTask;
-var /*0x00010000-0x00000000*/ transient array<ShopItem> AutoLoadedItems;
-var /*0x00010000-0x00000000*/ ShopItemExpirationHelper_TA AutoLoadExpirationHelper;
-var /*0x00010000-0x00000000*/ Qword MinEndDateOffset;
-var /*0x00010000-0x00000000*/ Qword MaxEndDateOffset;
-var /*0x00010000-0x00000000*/ Qword RandomEndDateOffset;
+var config int SyncRequestRange;
+var export editinline RetryDelayer_X AutoLoadDelayer;
+var transient AsyncTask AutoLoadAsyncTask;
+var transient array<ShopItem> AutoLoadedItems;
+var ShopItemExpirationHelper_TA AutoLoadExpirationHelper;
+var Qword MinEndDateOffset;
+var Qword MaxEndDateOffset;
+var Qword RandomEndDateOffset;
 
 defaultproperties
 {
-	SyncRequestRange=100
 }

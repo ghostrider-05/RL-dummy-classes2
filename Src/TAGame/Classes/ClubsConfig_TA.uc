@@ -5,10 +5,10 @@
 *******************************************************************************/
 class ClubsConfig_TA extends OnlineConfig_X;
 
-var /*0x00010000-0x00000000*/ databinding int TagLengthMin;
-var /*0x00010000-0x00000000*/ databinding int TagLengthMax;
-var /*0x00010000-0x00000000*/ databinding int NameLengthMin;
-var /*0x00010000-0x00000000*/ databinding int NameLengthMax;
+var databinding int TagLengthMin;
+var databinding int TagLengthMax;
+var databinding int NameLengthMin;
+var databinding int NameLengthMax;
 
 defaultproperties
 {

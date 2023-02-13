@@ -5,6 +5,7 @@
 *******************************************************************************/
 class ProductAttribute_TA extends Object
 	abstract
+	native
 	collapsecategories
 	hidecategories(Object);
 

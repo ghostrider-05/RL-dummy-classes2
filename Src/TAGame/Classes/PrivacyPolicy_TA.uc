@@ -5,4 +5,4 @@
 *******************************************************************************/
 class PrivacyPolicy_TA extends LegalText_TA;
 
-var /*0x00008000-0x00000000*/ PrivacyPolicyConfig_TA Config;
+var PrivacyPolicyConfig_TA Config;

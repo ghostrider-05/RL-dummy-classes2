@@ -16,15 +16,11 @@ var() const localized string AlreadySearchingForPublicMessage;
 var() const localized string ServerNameLengthError;
 var() const localized string DuplicateLanServerMessage;
 var transient _Types_TA.SearchStatusOwner SearchStatusOwner;
-var const _Types_TA.ECustomMatchSettingsType SettingsType;
+var const ECustomMatchSettingsType SettingsType;
 
 defaultproperties
 {
 	MinServerNameLength=3
-	AlreadySearchingMessage="Already searching for a private match, please try again later."
-	AlreadySearchingForPublicMessage="Already matchmaking, please try again later."
-	ServerNameLengthError="The server name must have at least #MINLENGTH0 characters."
-	DuplicateLanServerMessage="A LAN match with this name already exits."
 	SearchStatusOwner=StatusOwner_PrivateMatch
 	TableName=PrivateMatch
 }

@@ -33,7 +33,7 @@ var const transient float LastBugReportTime;
 var float DebugClientCorrectionStartTime;
 var int DebugClientCorrectionCount;
 var export editinline StatGraphSystem_TA StatGraphs;
-var /*0x00008000-0x00000000*/ PhysicsConfig_TA PhysicsConfig;
+var PhysicsConfig_TA PhysicsConfig;
 var array<NetworkInputBuffer_TA> InputBuffers;
 var float LastPhysicsDeltaTimeScale;
 
@@ -46,7 +46,6 @@ defaultproperties
 	MaxUploadedClientFrames=30
 	DirtyPhysicsFrame=-1
 	TickNotifyIndex=-1
-	ShellArchetypePath="GFxShell.GFx.GFxShell"
 	ArchetypeString_OnlineGame="Archetypes.Online.OnlineGame"
 	ArchetypeString_OnlineGameDedicatedServer="Archetypes.Online.OnlineGameDedicatedServer"
 }

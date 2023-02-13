@@ -13,7 +13,7 @@ var() float EpicSaveMinSpeed;
 var() float EpicSaveArriveTime;
 var() byte TeamNum;
 var() FXActor_X ScoreFX;
-var() /*0x00000800-0x00000000*/ const string GoalIndicatorArchetype;
+var() const string GoalIndicatorArchetype;
 var() bool bNoGoalIndicator;
 var() bool bOnlyGoalsFromDirection;
 var() bool bAllowPostMatchLobbyReset;

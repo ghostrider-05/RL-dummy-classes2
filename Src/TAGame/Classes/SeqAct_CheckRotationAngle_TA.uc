@@ -24,7 +24,7 @@ var Vector CheckAxis;
 var Vector TurnAxis;
 var() float MaxRotationAngle;
 var() bool bResetOnDirectionChange;
-var() SeqAct_CheckRotationAngle_TA.ECheckAxis AxisDirection;
+var() ECheckAxis AxisDirection;
 
 defaultproperties
 {

@@ -5,7 +5,7 @@
 *******************************************************************************/
 class MatchType_AutoTournament_TA extends MatchType_Tournament_TA;
 
-var() /*0x00018000-0x00000000*/ AutoTourConfig_TA AutoTourConfig;
+var() AutoTourConfig_TA AutoTourConfig;
 
 defaultproperties
 {

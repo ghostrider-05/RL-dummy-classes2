@@ -7,7 +7,7 @@ class NetworkInputBuffer_CSTS_TA extends NetworkInputBuffer_TA
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00008000-0x00000000*/ PhysicsConfig_TA Config;
+var PhysicsConfig_TA Config;
 var float LastPacketReceiveTime;
 var float CurrentTimeDilation;
 var int SequentialMissedInputs;

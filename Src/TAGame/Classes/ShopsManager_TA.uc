@@ -5,10 +5,10 @@
 *******************************************************************************/
 class ShopsManager_TA extends Object within OnlinePlayer_X;
 
-var() /*0x00010000-0x00000000*/ ShopsService_TA ServiceArchetype;
-var() /*0x00010000-0x00000000*/ ShopsService_TA Service;
-var /*0x00010000-0x00000000*/ transient int ActiveShopID;
-var /*0x00010000-0x00000000*/ transient int ActiveCatalogID;
+var() ShopsService_TA ServiceArchetype;
+var() ShopsService_TA Service;
+var transient int ActiveShopID;
+var transient int ActiveCatalogID;
 
 defaultproperties
 {

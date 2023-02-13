@@ -5,22 +5,22 @@
 *******************************************************************************/
 class CrowdSoundManagerBase_TA extends ActorComponent_X within GameEvent_Soccar_TA;
 
-var /*0x00010000-0x00000000*/ CrowdSoundSettingsBase_TA BaseSettings;
-var /*0x00010000-0x00000000*/ CrowdActorManager_TA CrowdActorManager;
-var /*0x00010000-0x00000000*/ transient CrowdSoundsBase_TA Sounds;
-var /*0x00010000-0x00000000*/ transient bool bInitializedMods;
-var /*0x00010000-0x00000000*/ transient bool bIn0Seconds;
-var /*0x00010000-0x00000000*/ transient bool bLowEnergy;
-var /*0x00010000-0x00000000*/ transient string DebugLastExcitementSoundValue;
-var /*0x00010000-0x00000000*/ transient float DebugLastExcitementSoundTime;
-var /*0x00010000-0x00000000*/ transient float TimeSince0Seconds;
-var /*0x00010000-0x00000000*/ transient DynamicValueModifier_X Mod0Seconds;
-var /*0x00010000-0x00000000*/ transient float CurrentLowEnergyDuration;
-var /*0x00010000-0x00000000*/ transient float ChantLowEnergyDuration;
-var /*0x00010000-0x00000000*/ transient name LastExcitementState;
-var /*0x00010000-0x00000000*/ transient name LastTensionState;
-var /*0x00010800-0x00000000*/ const string AprilCrowdOverridePath;
-var /*0x00010000-0x00000000*/ Vector AprilCrowdLocation;
+var CrowdSoundSettingsBase_TA BaseSettings;
+var CrowdActorManager_TA CrowdActorManager;
+var transient CrowdSoundsBase_TA Sounds;
+var transient bool bInitializedMods;
+var transient bool bIn0Seconds;
+var transient bool bLowEnergy;
+var transient string DebugLastExcitementSoundValue;
+var transient float DebugLastExcitementSoundTime;
+var transient float TimeSince0Seconds;
+var transient DynamicValueModifier_X Mod0Seconds;
+var transient float CurrentLowEnergyDuration;
+var transient float ChantLowEnergyDuration;
+var transient name LastExcitementState;
+var transient name LastTensionState;
+var const string AprilCrowdOverridePath;
+var Vector AprilCrowdLocation;
 
 defaultproperties
 {

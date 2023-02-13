@@ -6,5 +6,5 @@
 class OnlinePlayerAuthentication_TA extends OnlinePlayerAuthentication_X within OnlinePlayer_X
 	config(Engine);
 
-var /*0x00008000-0x00000000*/ FreeToPlayConfig_TA FreeToPlayConfig;
+var FreeToPlayConfig_TA FreeToPlayConfig;
 var TwoFactorAuthentication_TA TwoFactorAuthentication;

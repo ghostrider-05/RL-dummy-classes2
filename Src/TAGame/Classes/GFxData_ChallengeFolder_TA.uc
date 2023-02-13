@@ -6,13 +6,13 @@
 class GFxData_ChallengeFolder_TA extends GFxDataRow_X
 	abstract;
 
-var /*0x00010000-0x00000000*/ databinding bool bSelected;
-var /*0x00010000-0x00000000*/ databinding bool bNotifyNewInfo;
-var /*0x00010000-0x00000000*/ databinding bool bNormalRewardsAvailable;
-var /*0x00010000-0x00000000*/ databinding bool bPremiumRewardsAvailable;
-var /*0x00010000-0x00000000*/ GFxData_ChallengeFolder_TA GFxParentFolder;
-var /*0x00010000-0x00000000*/ array<GFxData_ChallengeFolder_TA> GFxSubFolders;
-var /*0x00010000-0x00000000*/ class SubFolderClass;
+var databinding bool bSelected;
+var databinding bool bNotifyNewInfo;
+var databinding bool bNormalRewardsAvailable;
+var databinding bool bPremiumRewardsAvailable;
+var GFxData_ChallengeFolder_TA GFxParentFolder;
+var array<GFxData_ChallengeFolder_TA> GFxSubFolders;
+var class SubFolderClass;
 
 defaultproperties
 {

@@ -5,7 +5,7 @@
 *******************************************************************************/
 class AdHocBrowser_X extends LanBrowser_X;
 
-var /*0x00008000-0x00000000*/ AdHocBeacon_X AdHocBeacon;
+var AdHocBeacon_X AdHocBeacon;
 var array<AdHocAccessPointInfo> AdHocNodesOnNetwork;
 var() const float SearchTimeout;
 var TAsyncResult__array_LanServerRecord_X SearchTask;

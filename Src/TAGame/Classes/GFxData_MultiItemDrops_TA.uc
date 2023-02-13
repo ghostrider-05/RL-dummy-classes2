@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_MultiItemDrops_TA extends GFxDataSingleton_X;
 
-var /*0x00008000-0x00000000*/ MultiItemDropConfig_TA MultiItemDropConfig;
+var MultiItemDropConfig_TA MultiItemDropConfig;
 var GFxData_ItemDropGroup_TA ActiveGroup;
 var array<ItemDropGroup_TA> PendingGroups;
 var databinding int GroupsRemaining;

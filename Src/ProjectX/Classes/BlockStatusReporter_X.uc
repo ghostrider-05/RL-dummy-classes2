@@ -20,4 +20,4 @@ struct PlayerBlockListenData
 
 var array<PlayerBlockListenData> PlayerSubscriptions;
 var export editinline PlatformBlockListStatus PrimaryStatus;
-var /*0x00008000-0x00000000*/ BlockStatusReporterConfig_X Config;
+var BlockStatusReporterConfig_X Config;

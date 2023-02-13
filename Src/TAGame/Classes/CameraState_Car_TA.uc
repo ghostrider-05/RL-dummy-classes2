@@ -58,7 +58,7 @@ var int PitchMax;
 var float MouseCameraLockTimeWindow;
 var float TimeOfLastCameraInput;
 var float CameraStartDistance;
-var /*0x00008000-0x00000000*/ CameraConfig_TA Config;
+var CameraConfig_TA Config;
 var transient float ProximityDistance;
 var const float ProximityDetectionSpeedCap;
 var const float ProximityDistanceMultiplier;

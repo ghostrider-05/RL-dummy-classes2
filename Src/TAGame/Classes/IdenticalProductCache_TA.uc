@@ -3,6 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class IdenticalProductCache_TA extends Component;
+class IdenticalProductCache_TA extends Component
+	native;
 
 var native const transient Map_Mirror Products;

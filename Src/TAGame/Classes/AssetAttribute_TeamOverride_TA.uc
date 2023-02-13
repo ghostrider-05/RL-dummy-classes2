@@ -8,7 +8,7 @@ class AssetAttribute_TeamOverride_TA extends ProductAssetAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() _Types_TA.EPaintTeam Team;
+var() EPaintTeam Team;
 var() array<MaterialInterface> Materials;
 var() name AssetName;
 var() Texture Thumbnail;

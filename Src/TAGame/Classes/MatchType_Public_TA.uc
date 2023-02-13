@@ -5,7 +5,7 @@
 *******************************************************************************/
 class MatchType_Public_TA extends MatchType_TA;
 
-var() /*0x00008000-0x00000000*/ OnlineGameReservations_X Reservations;
+var() OnlineGameReservations_X Reservations;
 
 defaultproperties
 {

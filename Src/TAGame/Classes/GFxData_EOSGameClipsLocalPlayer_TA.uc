@@ -5,9 +5,9 @@
 *******************************************************************************/
 class GFxData_EOSGameClipsLocalPlayer_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ EOSGameClipsManager_TA GameClipsManager;
-var /*0x00018000-0x00000000*/ EOSGameClipsConfig_TA GameClipsConfig;
-var /*0x00018000-0x00000000*/ GameEvent_TA CurrentGameEvent;
+var EOSGameClipsManager_TA GameClipsManager;
+var EOSGameClipsConfig_TA GameClipsConfig;
+var GameEvent_TA CurrentGameEvent;
 
 defaultproperties
 {

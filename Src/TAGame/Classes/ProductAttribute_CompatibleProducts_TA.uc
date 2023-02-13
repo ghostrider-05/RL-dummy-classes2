@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ProductAttribute_CompatibleProducts_TA extends ProductAttribute_TA
+	native
 	editinlinenew
 	collapsecategories
 	hidecategories(Object)

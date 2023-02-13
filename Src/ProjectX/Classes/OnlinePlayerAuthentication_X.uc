@@ -15,7 +15,7 @@ var transient string Platform;
 var bool bLoggedIn;
 var transient bool bPlatformTokenAuthenticationFailed;
 var transient bool bPlatformAuthTicketFailed_Switch;
-var /*0x00010000-0x00000000*/ bool bSkipAuth;
+var bool bSkipAuth;
 var transient bool bLastChanceAuthBan;
 var Error AuthLoginError;
 var transient BanMessage_X BanMessage;
@@ -31,6 +31,5 @@ var Error PrimaryAccountNotSetError;
 defaultproperties
 {
 	
-	AuthRequestFailureMax=3
 	AuthRequestRetryTime=2
 }

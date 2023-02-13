@@ -39,22 +39,4 @@ defaultproperties
 	JoinCountdownTime=3
 	
 	ReservationBeacon=DefaultBeacon
-	WaitingForPlayersString="Waiting for more players..."
-	ReservationNotRespondingString="Game server failed to respond. (Error: 62)"
-	ReservationFullString="Game server is full. (Error: 63)"
-	PartyTeamReservationFullString="Party leader's team is full. (Error: 69)"
-	NoFriendJoinPrivateMatchString="Must be in the same party to join a friend in a private match. (Error: 70)"
-	BeaconTimedOutString="Connection to server timed out. (Error: 67)"
-	NotAllPlayersJoinedString="Not all players connected. (Error: 64)"
-	CanceledString="Canceled by user. (Error: 83)"
-	SecurityKeyAcquisitionFailed="Unable to connect to game server. (Error: 72)"
-	SecurityKeyVerificationFailed="Unable to connect to game server. (Error: 82)"
-	SendingReservationMessage="Sending reservation to game server"
-	JoiningPartyLeadersGame="Joining Party Leader's game"
-	InvalidPassword="Cannot join game. Password does not match."
-	WrongPlaylistString="Server is playing a different playlist. (Error: 86)"
-	WrongRankedMatchString="Server is playing a different ranked match. (Error: 93)"
-	MatchEndedString="The match has concluded. (Error: 85)"
-	CrossplayDisabled="Cross-Platform play is not permitted for some players on this server. (Error: 87)"
-	AnotherPlayerCanceled="Another player canceled. (Error: 92)"
 }

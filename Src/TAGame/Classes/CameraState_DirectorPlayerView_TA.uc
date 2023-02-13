@@ -5,36 +5,36 @@
 *******************************************************************************/
 class CameraState_DirectorPlayerView_TA extends CameraState_DirectorProxy_TA;
 
-var() /*0x00010000-0x00000000*/ CameraState_CarRef_TA BallCameraState;
-var() /*0x00010000-0x00000000*/ float MinimumHit;
-var() /*0x00010000-0x00000000*/ float MinimumHitSeparation;
-var() /*0x00010000-0x00000000*/ float StaleDistance;
-var() /*0x00010000-0x00000000*/ float MinimumTimeToBall;
-var() /*0x00010000-0x00000000*/ float CarChangeTimePadding;
-var() /*0x00010000-0x00000000*/ ViewTargetTransitionParams CarChangeBlendParams;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat CarChangeBlendTimeForDistance;
-var() /*0x00010000-0x00000000*/ float MinBlendContinuity;
-var() /*0x00010000-0x00000000*/ float MaxBlendDistance;
-var() /*0x00010000-0x00000000*/ float MaintainCurrentDistance;
-var() /*0x00010000-0x00000000*/ float MaintainCurrentHitBias;
-var() /*0x00010000-0x00000000*/ float MaintainBallScorability;
-var() /*0x00010000-0x00000000*/ float MaintainBallScorabilityViewRating;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat ContinuityBias;
-var() /*0x00010000-0x00000000*/ float MinimumViewRating;
-var() /*0x00010000-0x00000000*/ float AttackerBias;
-var() /*0x00010000-0x00000000*/ float AttackingGoalDistance;
-var() /*0x00010000-0x00000000*/ float BadFocusDistance;
-var() /*0x00010000-0x00000000*/ float BadFocusViewRating;
-var() /*0x00010000-0x00000000*/ float BadFocusViewRatingDuration;
-var /*0x00010000-0x00000000*/ transient Car_TA FocusCar;
-var /*0x00010000-0x00000000*/ transient float LastCarChangeTime;
-var /*0x00010000-0x00000000*/ transient bool bIsRelevant;
-var /*0x00010000-0x00000000*/ transient bool bBlending;
-var /*0x00010000-0x00000000*/ transient bool bExceptionallyBadFocus;
-var /*0x00010000-0x00000000*/ transient bool bBadViewRating;
-var /*0x00010000-0x00000000*/ transient float BlendTime;
-var /*0x00010000-0x00000000*/ transient CameraOrientation SnapshotPOV;
-var /*0x00010000-0x00000000*/ transient float BadViewRatingStart;
+var() CameraState_CarRef_TA BallCameraState;
+var() float MinimumHit;
+var() float MinimumHitSeparation;
+var() float StaleDistance;
+var() float MinimumTimeToBall;
+var() float CarChangeTimePadding;
+var() ViewTargetTransitionParams CarChangeBlendParams;
+var() InterpCurveFloat CarChangeBlendTimeForDistance;
+var() float MinBlendContinuity;
+var() float MaxBlendDistance;
+var() float MaintainCurrentDistance;
+var() float MaintainCurrentHitBias;
+var() float MaintainBallScorability;
+var() float MaintainBallScorabilityViewRating;
+var() InterpCurveFloat ContinuityBias;
+var() float MinimumViewRating;
+var() float AttackerBias;
+var() float AttackingGoalDistance;
+var() float BadFocusDistance;
+var() float BadFocusViewRating;
+var() float BadFocusViewRatingDuration;
+var transient Car_TA FocusCar;
+var transient float LastCarChangeTime;
+var transient bool bIsRelevant;
+var transient bool bBlending;
+var transient bool bExceptionallyBadFocus;
+var transient bool bBadViewRating;
+var transient float BlendTime;
+var transient CameraOrientation SnapshotPOV;
+var transient float BadViewRatingStart;
 
 defaultproperties
 {

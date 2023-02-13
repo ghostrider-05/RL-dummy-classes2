@@ -35,9 +35,9 @@ var() ProfileSliderLimits ForceFeedbackScaleLimits;
 var() ProfileSliderLimits TrainingGameSpeedLimits;
 var() ProfileSliderLimits FreeplayBoostFillDelayLimits;
 var const localized string LoadingString;
-var /*0x00008000-0x00000000*/ SettingsMenuConfig_TA SettingsConfig;
-var /*0x00008000-0x00000000*/ FreeplayConfig_TA FreeplayConfig;
-var /*0x00010000-0x00000000*/ const localized string ShowBindingsModal_ErrorMessage;
+var SettingsMenuConfig_TA SettingsConfig;
+var FreeplayConfig_TA FreeplayConfig;
+var const localized string ShowBindingsModal_ErrorMessage;
 var GFxData_UserSetting_TA CrossplaySetting;
 var transient array<GFxData_UserSetting_TA> UserSettings;
 var transient string OldResolution;
@@ -48,7 +48,7 @@ var transient bool bSettingCameraPreset;
 var transient Profile_TA Profile;
 var transient SaveData_TA SaveData;
 var transient GameViewportClient_X Viewport;
-var() /*0x00010000-0x00000000*/ export editinline UserSettingObserver_TA SettingObserver;
+var() export editinline UserSettingObserver_TA SettingObserver;
 var transient SoundSettingsSave_TA SoundSave;
 var transient SoundSettingsControllerSave_TA SoundSaveController;
 var transient GameplaySettingsSave_TA GameplaySave;
@@ -62,11 +62,11 @@ var transient MusicPlayerSave_TA MusicSave;
 var transient ProfileControlsSave_TA ProfileControlsSave;
 var transient NotificationSave_TA NotificationSave;
 var transient EpicAccountSave_TA EpicAccountSave;
-var /*0x00010000-0x00000000*/ transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
-var /*0x00010000-0x00000000*/ transient GFxData_UserSetting_TA SteamInputSettings;
-var /*0x00010000-0x00000000*/ transient int ControllerCount;
-var /*0x00010000-0x00000000*/ const string DefaultDeviceString;
-var /*0x00010000-0x00000000*/ const localized string PermissionLevelNotHighEnoughError;
+var transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
+var transient GFxData_UserSetting_TA SteamInputSettings;
+var transient int ControllerCount;
+var const string DefaultDeviceString;
+var const localized string PermissionLevelNotHighEnoughError;
 var const localized string TradePermissionNotHighEnoughError;
 var const localized string WarnCrossPlatformTournament;
 var const localized string WarnCrossPlatformTournamentAndParty;
@@ -91,15 +91,8 @@ defaultproperties
 	ForceFeedbackScaleLimits=(Min=0.0,Max=3.0,interval=0.10)
 	TrainingGameSpeedLimits=(Min=0.50,Max=1.0,interval=0.050)
 	FreeplayBoostFillDelayLimits=(Min=0.50,Max=3.0,interval=0.250)
-	ShowBindingsModal_ErrorMessage="Cannot open Big Picture Mode bindings. Make sure you have selected which controller you want to use."
 	
 	SettingObserver=SettingObserver0
 	DefaultDeviceString="DefaultAudio"
-	PermissionLevelNotHighEnoughError="Unable to enable voice chat. Epic parental restrictions prevent you from participating in voice chat."
-	TradePermissionNotHighEnoughError="You are not permitted to trade."
-	WarnCrossPlatformTournament="Disabling cross-platform play will remove you from your registered tournament. Are you sure you want to disable cross-platform play?"
-	WarnCrossPlatformTournamentAndParty="Disabling cross-platform play will remove you from your registered tournament and party. Are you sure you want to disable cross-platform play?"
-	DisableAndLeave="Disable and Leave"
-	WarnChangingScheduleRegion="This setting will be locked for 24 hours upon entering a tournament.\\n\\nAre you sure you want to change your schedule region?"
 	TableName=Settings
 }

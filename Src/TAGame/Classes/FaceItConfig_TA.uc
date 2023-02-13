@@ -7,8 +7,8 @@ class FaceItConfig_TA extends OnlineConfig_X;
 
 struct PartnerMapping
 {
-	var /*0x00010000-0x00000000*/ int Id;
-	var /*0x00010000-0x00000000*/ string Name;
+	var int Id;
+	var string Name;
 
 	structdefaultproperties
 	{
@@ -17,6 +17,6 @@ struct PartnerMapping
 	}
 };
 
-var /*0x00010000-0x00000000*/ bool bEnabled;
-var /*0x00010000-0x00000000*/ array<PartnerMapping> PartnerNames;
-var /*0x00010000-0x00000000*/ string DefaultPartnerName;
+var bool bEnabled;
+var array<PartnerMapping> PartnerNames;
+var string DefaultPartnerName;

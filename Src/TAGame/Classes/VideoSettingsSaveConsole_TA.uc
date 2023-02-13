@@ -5,4 +5,4 @@
 *******************************************************************************/
 class VideoSettingsSaveConsole_TA extends VideoSettingsSave_TA;
 
-var _Types_X.EConsoleQualityMode VideoQualityMode;
+var EConsoleQualityMode VideoQualityMode;

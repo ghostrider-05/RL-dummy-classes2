@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ClubPersonas_TA extends Object within Personas_TA;
 
-var /*0x00018000-0x00000000*/ export editinline OnlineClubCache_X ClubCache;
-var /*0x00018000-0x00000000*/ OnlineGameWordFilter_X WordFilter;
-var /*0x00010000-0x00000000*/ array<PersonaClubData> PersonaClubs;
-var /*0x00010000-0x00000000*/ export editinline ActionQueue_X ActionQueue;
+var export editinline OnlineClubCache_X ClubCache;
+var OnlineGameWordFilter_X WordFilter;
+var array<PersonaClubData> PersonaClubs;
+var export editinline ActionQueue_X ActionQueue;

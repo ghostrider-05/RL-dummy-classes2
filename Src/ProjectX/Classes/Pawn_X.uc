@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class Pawn_X extends Pawn
+	native
 	config(Game)
 	hidecategories(Navigation);
 

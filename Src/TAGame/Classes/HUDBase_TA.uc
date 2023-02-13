@@ -14,7 +14,7 @@ struct ChatMessage
 	var Team_TA Team;
 	var string PlayerName;
 	var string Message;
-	var _Types_TA.EChatChannel ChatChannel;
+	var EChatChannel ChatChannel;
 	var bool bPreset;
 	var UniqueNetId Recipient;
 
@@ -39,6 +39,4 @@ var transient GFxData_MultiItemDrops_TA MultiItemDropData;
 
 defaultproperties
 {
-	DisconnectedString="Disconnected"
-	ServerMaintString="Server went down for maintenance"
 }

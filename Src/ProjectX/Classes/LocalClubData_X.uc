@@ -7,8 +7,8 @@ class LocalClubData_X extends Object;
 
 struct PlayerClubPair
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-	var /*0x00010000-0x00000000*/ Qword ClubID;
+	var UniqueNetId PlayerID;
+	var Qword ClubID;
 
 	structdefaultproperties
 	{
@@ -17,9 +17,9 @@ struct PlayerClubPair
 	}
 };
 
-var /*0x00010000-0x00000000*/ array<ClubDetails_X> Clubs;
-var /*0x00010000-0x00000000*/ array<PlayerClubPair> Invites;
-var /*0x00010000-0x00000000*/ int NextClubID;
+var array<ClubDetails_X> Clubs;
+var array<PlayerClubPair> Invites;
+var int NextClubID;
 
 defaultproperties
 {

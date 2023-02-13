@@ -9,9 +9,9 @@ class PsyNetStaticData_X extends Component
 var() config string PsyConfigTemplateURL;
 var() config float LocalCacheTimeoutSeconds;
 var() config float SyncDataTimeoutSeconds;
-var /*0x00008000-0x00000000*/ PsyNet_X PsyNet;
-var /*0x00008000-0x00000000*/ OnlineSubsystem OnlineSub;
-var /*0x00008000-0x00000000*/ WebConfig_X WebConfig;
+var PsyNet_X PsyNet;
+var OnlineSubsystem OnlineSub;
+var WebConfig_X WebConfig;
 var() bool bDebug;
 var transient bool bLoaded;
 var() export editinline CacheTimer_X CacheTimer;
@@ -26,9 +26,6 @@ var float BlockingSyncStartTime;
 
 defaultproperties
 {
-	PsyConfigTemplateURL="https://config.psynet.gg/v2/Config/BattleCars/{BuildID}/{Environment}/{Platform}/{Language}/{QueryParams}"
-	LocalCacheTimeoutSeconds=6.0
-	SyncDataTimeoutSeconds=6.0
 	bDebug=true
 	CacheTimer=CacheTimer_X'Default__PsyNetStaticData_X.DefaultCacheTimer'
 	

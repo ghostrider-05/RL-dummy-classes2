@@ -25,7 +25,7 @@ var databinding transient string PlayerName;
 var databinding transient UniqueNetId PlayerID;
 var transient Profile_TA Profile;
 var transient PlayerVanitySave_TA VanitySaveObject;
-var const _Types_TA.EVanityType VanityType;
+var const EVanityType VanityType;
 
 defaultproperties
 {

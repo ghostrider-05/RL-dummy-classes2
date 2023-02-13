@@ -12,7 +12,7 @@ const MAX_REPLICATED_VOTERS = 8;
 struct native Voter
 {
 	var PRI_TA PRI;
-	var _Types_TA.EVoteStatus Status;
+	var EVoteStatus Status;
 
 	structdefaultproperties
 	{
@@ -21,7 +21,7 @@ struct native Voter
 	}
 };
 
-var() _Types_TA.EVoteSubject Subject;
+var() EVoteSubject Subject;
 var() int TimeRemaining;
 var() bool bUnanimousVote;
 var() bool bAllowSplitscreenVoters;

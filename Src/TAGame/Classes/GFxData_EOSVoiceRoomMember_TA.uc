@@ -5,17 +5,17 @@
 *******************************************************************************/
 class GFxData_EOSVoiceRoomMember_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding string EpicAccountId;
-var /*0x00010000-0x00000000*/ databinding UniqueNetId PlayerID;
-var /*0x00010000-0x00000000*/ databinding string RoomName;
-var /*0x00010000-0x00000000*/ databinding bool bLocal;
-var /*0x00010000-0x00000000*/ databinding bool bSpeaking;
-var /*0x00010000-0x00000000*/ databinding bool bSelfMuted;
-var /*0x00010000-0x00000000*/ databinding bool bLocalMuted;
-var /*0x00010000-0x00000000*/ databinding bool bAdminMuted;
-var /*0x00010000-0x00000000*/ databinding bool bBlocked;
-var /*0x00010000-0x00000000*/ transient Persona_TA Persona;
-var /*0x00010000-0x00000000*/ array<ActivePlayerVoice> PlayerActivity;
+var databinding string EpicAccountId;
+var databinding UniqueNetId PlayerID;
+var databinding string RoomName;
+var databinding bool bLocal;
+var databinding bool bSpeaking;
+var databinding bool bSelfMuted;
+var databinding bool bLocalMuted;
+var databinding bool bAdminMuted;
+var databinding bool bBlocked;
+var transient Persona_TA Persona;
+var array<ActivePlayerVoice> PlayerActivity;
 
 defaultproperties
 {

@@ -8,8 +8,8 @@ class GameEvent_FTE_TA extends GameEvent_Soccar_TA
 	notplaceable
 	hidecategories(Navigation,Actor,Object);
 
-var /*0x00010000-0x00000000*/ const int MaxTimeToShowInstructions;
-var /*0x00010000-0x00000000*/ const int InvalidTeamNum;
+var const int MaxTimeToShowInstructions;
+var const int InvalidTeamNum;
 
 defaultproperties
 {

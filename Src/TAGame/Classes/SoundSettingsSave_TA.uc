@@ -5,18 +5,18 @@
 *******************************************************************************/
 class SoundSettingsSave_TA extends SaveObject_TA;
 
-var /*0x00080000-0x00000000*/ float MasterVolume;
-var /*0x00080000-0x00000000*/ float SoundVolume;
-var /*0x00080000-0x00000000*/ float MusicVolume;
-var /*0x00080000-0x00000000*/ float GameplayMusicVolume;
-var /*0x00080000-0x00000000*/ float AmbientVolume;
-var /*0x00080000-0x00000000*/ float CrowdVolume;
-var /*0x00080000-0x00000000*/ float VoiceVolume;
-var /*0x00080000-0x00000000*/ bool bMuteOnFocusLost;
-var /*0x00080000-0x00000000*/ bool bStreamerSafeAudioEnabled;
-var /*0x00080000-0x00000000*/ AkDevice.EAkOutputType OutputType;
-var /*0x00090000-0x00000000*/ AkDevice.EAkDynamicRangeType DynamicRangeType;
-var /*0x00090000-0x00000000*/ _Types_TA.EMusicStingersSetting MusicStingersSetting;
+var float MasterVolume;
+var float SoundVolume;
+var float MusicVolume;
+var float GameplayMusicVolume;
+var float AmbientVolume;
+var float CrowdVolume;
+var float VoiceVolume;
+var bool bMuteOnFocusLost;
+var bool bStreamerSafeAudioEnabled;
+var EAkOutputType OutputType;
+var EAkDynamicRangeType DynamicRangeType;
+var EMusicStingersSetting MusicStingersSetting;
 
 defaultproperties
 {

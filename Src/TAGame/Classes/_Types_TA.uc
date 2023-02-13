@@ -1223,7 +1223,7 @@ struct native OnlineXPModifier
 {
 	var databinding name Name;
 	var databinding float Modifier;
-	var databinding _Types_TA.EOnlineXPModifierType ModifierType;
+	var databinding EOnlineXPModifierType ModifierType;
 	var databinding int Value;
 	var databinding string LocalizedText;
 	var databinding bool bPremium;
@@ -1367,7 +1367,7 @@ struct native CurrencyProductData
 
 struct native Currency
 {
-	var _Types_TA.ECurrency Type;
+	var int /** _Types_TA.ECurrency*/ Type;
 	var name Name;
 	var bool bCanBeTraded;
 	var int TradeHold;
@@ -1382,7 +1382,7 @@ struct native Currency
 
 	structdefaultproperties
 	{
-		Type=Currency_Soft
+		Type=0
 		Name=None
 		bCanBeTraded=false
 		TradeHold=0
@@ -1451,14 +1451,14 @@ struct native ProductFilter
 	var string Label;
 	var array<int> Slots;
 	var array<ProductSlot_TA> ProhibitedSlots;
-	var array<_Types_TA.EProductQuality> ExclusiveQualities;
-	var array<_Types_TA.EProductQuality> ProhibitedQualities;
-	var array<_Types_TA.EUnlockMethod> UnlockMethods;
-	var array<_Types_TA.EProductTradeRestriction> TradeRestrictions;
+	var array<EProductQuality> ExclusiveQualities;
+	var array<EProductQuality> ProhibitedQualities;
+	var array<EUnlockMethod> UnlockMethods;
+	var array<EProductTradeRestriction> TradeRestrictions;
 	var array<int> TradeHoldRestrictions;
 	var array< class > ExclusiveAttributes;
 	var array< class > ProhibitedAttributes;
-	var _Types_TA.EProductFilterSortType SortType;
+	var EProductFilterSortType SortType;
 	var array<int> SeriesIDs;
 	var ProductHashID PackHashID;
 	var bool bExcludePacks;
@@ -1469,11 +1469,11 @@ struct native ProductFilter
 	var array<int> Loadout;
 	var array<ProductHashID> EquippedHashIDs;
 	var byte LogLevel;
-	var _Types_TA.EArchiveProductFilter ArchivedProductFilter;
-	var array<_Types_TA.EBlueprintType> ProhibitedBlueprints;
-	var array<_Types_TA.EProductFilterSortType> ProhibitedSortTypes;
+	var EArchiveProductFilter ArchivedProductFilter;
+	var array<EBlueprintType> ProhibitedBlueprints;
+	var array<EProductFilterSortType> ProhibitedSortTypes;
 	var array< class > ProhibitedAttributeSortTypes;
-	var /*0x00010000-0x00000000*/ array<int> PaintIDs;
+	var array<int> PaintIDs;
 
 	structdefaultproperties
 	{
@@ -1673,8 +1673,8 @@ struct native VehicleInputs
 	var() bool bActivateBoost;
 	var() bool bHoldingBoost;
 	var bool bJumped;
-	var /*0x00010000-0x00000000*/ bool bGrab;
-	var /*0x00010000-0x00000000*/ bool bButtonMash;
+	var bool bGrab;
+	var bool bButtonMash;
 
 	structdefaultproperties
 	{
@@ -1755,7 +1755,7 @@ struct native BallHitInfo
 	var bool bDodging;
 	var bool bWheelsTouching;
 	var bool bWorldTouching;
-	var _Types_TA.EBallHitType HitType;
+	var EBallHitType HitType;
 	var int HitID;
 
 	structdefaultproperties
@@ -1848,7 +1848,7 @@ struct native ProductAttachment
 	var() float Scale;
 	var() Vector Translation;
 	var() Rotator Rotation;
-	var() _Types_TA.EProductAttachmentSocket Socket;
+	var() EProductAttachmentSocket Socket;
 	var() export editinline AntennaComponent_TA Antenna;
 	var() editinline array<editinline AttachmentBehavior_TA> Behaviors;
 	var() editinline ProductAttribute_InheritCarSetting_TA InheritCarAttribute;
@@ -2001,7 +2001,7 @@ struct native PlayerChatMessage
 {
 	var float MessageTimeStamp;
 	var UniqueNetId PlayerID;
-	var _Types_TA.EChatChannel ChatChannel;
+	var EChatChannel ChatChannel;
 	var int Team;
 	var string Message;
 
@@ -2174,7 +2174,7 @@ struct native SaveObjectResult
 {
 	var Object ObjectData;
 	var Error Error;
-	var _Types_TA.ESaveGameResult Code;
+	var ESaveGameResult Code;
 
 	structdefaultproperties
 	{
@@ -2189,7 +2189,7 @@ struct native LoadObjectResult
 	var string FilePath;
 	var Object ObjectData;
 	var Error Error;
-	var Engine.EBasicLoadResult Code;
+	var EBasicLoadResult Code;
 
 	structdefaultproperties
 	{
@@ -2241,7 +2241,7 @@ struct native SortedProductData
 struct ActorHistory
 {
 	var name Name;
-	var _Types_TA.EHistory Type;
+	var EHistory Type;
 	var string SerializedHistory;
 
 	structdefaultproperties
@@ -2286,7 +2286,7 @@ struct OnlinePlayerMatchData
 	var int MatchAssists;
 	var int MatchSaves;
 	var int MatchShots;
-	var /*0x00010000-0x00000000*/ int XPGained;
+	var int XPGained;
 	var array<OnlineProductData> Loadout;
 	var bool bCompletedMatch;
 	var bool bForfeit;
@@ -2303,8 +2303,8 @@ struct OnlinePlayerMatchData
 	var array<StatData> Stats;
 	var array<LoadoutData> TeamLoadouts;
 	var array<QuickChatGroup> QuickChat;
-	var /*0x00010000-0x00000000*/ bool ForceDrop;
-	var /*0x00010000-0x00000000*/ bool PreventDrop;
+	var bool ForceDrop;
+	var bool PreventDrop;
 
 	structdefaultproperties
 	{
@@ -2380,7 +2380,7 @@ struct native ProductLevelData
 
 struct native PaintAttributeParameter
 {
-	var() _Types_TA.EPaintColorVariant PaintVariant;
+	var() EPaintColorVariant PaintVariant;
 	var() name ParameterName;
 	var() bool bEnabled;
 	var() bool bGammaCorrect;
@@ -2592,7 +2592,7 @@ struct ProductTradeInFilter
 	var string Label;
 	var array<int> SeriesIDs;
 	var bool bBlueprint;
-	var array<_Types_TA.EProductQuality> TradeInQualities;
+	var array<EProductQuality> TradeInQualities;
 
 	structdefaultproperties
 	{
@@ -2672,7 +2672,7 @@ struct ActivePlayerVoice
 {
 	var Qword StartTimestamp;
 	var Qword EndTimestamp;
-	var _Types_TA.EActiveVoiceLocation Location;
+	var EActiveVoiceLocation Location;
 
 	structdefaultproperties
 	{
@@ -2709,7 +2709,7 @@ struct VoiceRoomPlayerActivity
 struct VoiceRoomDetails
 {
 	var string RoomName;
-	var _Types_TA.EVoiceRoomType RoomType;
+	var EVoiceRoomType RoomType;
 	var Qword CreatedTimestamp;
 	var Qword DestroyedTimestamp;
 

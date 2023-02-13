@@ -7,4 +7,4 @@ class MusicTracklistBuildStep_RemoveStreamerUnsafeTracks_TA extends Object
 	implements(IMusicTracklistBuilder);
 
 var IMusicTracklistBuilder Source;
-var /*0x00018000-0x00000000*/ StreamerSafeConfig_TA Config;
+var StreamerSafeConfig_TA Config;

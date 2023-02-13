@@ -7,29 +7,29 @@ class Ball_God_TA extends Ball_TA
 	config(Game)
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ const float WallBounceSpeed;
-var /*0x00010000-0x00000000*/ const float WallBounceBlend;
-var /*0x00010000-0x00000000*/ const float WallBounceBackDistance;
-var /*0x00010000-0x00000000*/ const float TargetBlendScaleXY;
-var /*0x00010000-0x00000000*/ const float TargetBlendScaleZ;
-var /*0x00010000-0x00000000*/ repnotify float TargetSpeed;
-var /*0x00010000-0x00000000*/ const float TargetSpeedIncrement;
-var /*0x00010000-0x00000000*/ const float TargetSpeedBlend;
-var /*0x00010000-0x00000000*/ const float MaxVelocityPitch;
-var /*0x00010000-0x00000000*/ float LastSpeedIncrementTime;
-var /*0x00010000-0x00000000*/ const float TargetSpeedIncrementTime;
-var /*0x00010000-0x00000000*/ const float MinGlowBrightness;
-var /*0x00010000-0x00000000*/ const float MaxGlowBrightness;
-var /*0x00010000-0x00000000*/ const float PulseSpeedScale;
-var /*0x00010000-0x00000000*/ const float PulseBrightnessScale;
-var /*0x00010000-0x00000000*/ const float PulseMinBrightness;
-var /*0x00010000-0x00000000*/ const float PulseLifetime;
-var /*0x00010000-0x00000000*/ const LinearColor GlowDefaultColor;
-var /*0x00010000-0x00000000*/ const LinearColor MaxSpeedColor;
-var /*0x00010000-0x00000000*/ const name AudioCurveName;
-var /*0x00010000-0x00000000*/ const name AudioIntensityName;
-var /*0x00010000-0x00000000*/ const FXActorEvent_X FXEvent_TeamChanged;
-var /*0x00010000-0x00000000*/ const FXActorEvent_X FXEvent_IntensityChanged;
+var const float WallBounceSpeed;
+var const float WallBounceBlend;
+var const float WallBounceBackDistance;
+var const float TargetBlendScaleXY;
+var const float TargetBlendScaleZ;
+var repnotify float TargetSpeed;
+var const float TargetSpeedIncrement;
+var const float TargetSpeedBlend;
+var const float MaxVelocityPitch;
+var float LastSpeedIncrementTime;
+var const float TargetSpeedIncrementTime;
+var const float MinGlowBrightness;
+var const float MaxGlowBrightness;
+var const float PulseSpeedScale;
+var const float PulseBrightnessScale;
+var const float PulseMinBrightness;
+var const float PulseLifetime;
+var const LinearColor GlowDefaultColor;
+var const LinearColor MaxSpeedColor;
+var const name AudioCurveName;
+var const name AudioIntensityName;
+var const FXActorEvent_X FXEvent_TeamChanged;
+var const FXActorEvent_X FXEvent_IntensityChanged;
 
 defaultproperties
 {
@@ -59,7 +59,7 @@ defaultproperties
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_God_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_God_TA.ReplayComponent0'
 	RegistryGroup=GroupComponent_ORS'Default__Ball_God_TA.DefaultRegistryGroup'
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__Ball_God_TA.CollisionCylinder'
@@ -70,7 +70,7 @@ defaultproperties
 	Components(2)=none
 	Components(3)=GroupComponent_ORS'Default__Ball_God_TA.DefaultRegistryGroup'
 	Components(4)=ReplayComponent_TA'Default__Ball_God_TA.ReplayComponent0'
-	begin object name=DefaultMesh class=StaticMeshComponent
+	begin object name=DefaultMesh
 		ReplacementPrimitive=none
 	end object
 	// Reference: StaticMeshComponent'Default__Ball_God_TA.DefaultMesh'

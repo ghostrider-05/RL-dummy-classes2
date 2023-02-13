@@ -3,9 +3,10 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class VanitySetManager_TA extends Object;
+class VanitySetManager_TA extends Object
+	native;
 
-var /*0x00008000-0x00000000*/ OnlineGame_X OnlineGame;
+var OnlineGame_X OnlineGame;
 var native Map_Mirror VanityMap;
 var export editinline VanityQuery_TA VanityQuery;
 

@@ -13,7 +13,7 @@ var() export editinline WheelAssetGenerator_TA Generator;
 var editoronly const export editinline WheelAssetGenerator_TA PrevGenerator;
 var() AkSoundCue CustomWheelDriveSound;
 var() AkSoundCue CustomWheelImpactSound;
-var const _Types_TA.EMeshMirrorMode MirrorMode;
+var const EMeshMirrorMode MirrorMode;
 var const StaticMesh StaticMesh;
 var const StaticMesh RearStaticMesh;
 var const SkeletalMesh SkeletalMesh;

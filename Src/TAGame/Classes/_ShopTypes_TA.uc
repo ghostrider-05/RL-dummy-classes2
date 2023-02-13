@@ -45,7 +45,7 @@ struct CurrencyProductData
 
 struct ShopCurrency
 {
-	var _Types_TA.ECurrency Type;
+	var int /** _Types_TA.ECurrency*/ Type;
 	var int Id;
 	var Texture SmallImage;
 	var Texture LargeImage;
@@ -58,7 +58,7 @@ struct ShopCurrency
 
 	structdefaultproperties
 	{
-		Type=Currency_Soft
+		Type=0
 		Id=0
 		SmallImage=none
 		LargeImage=none
@@ -111,7 +111,7 @@ struct ShopCost
 	var databinding Qword StartDate;
 	var databinding Qword EndDate;
 	var databinding array<ShopDiscount> BulkDiscounts;
-	var databinding _ShopTypes_TA.EItemDisplayType DisplayTypeID;
+	var databinding EItemDisplayType DisplayTypeID;
 
 	structdefaultproperties
 	{

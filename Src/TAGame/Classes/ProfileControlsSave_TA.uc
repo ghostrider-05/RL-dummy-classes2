@@ -12,12 +12,12 @@ enum EProfilePCSaveVersion
 };
 
 var const float WaveformScalar;
-var _Types_TA.EForceFeedbackType ForceFeedbackType;
-var _Types_TA.EForceFeedbackMode ForceFeedbackMode;
+var EForceFeedbackType ForceFeedbackType;
+var EForceFeedbackMode ForceFeedbackMode;
 var const transient float LegacyForceFeedbackScales[EForceFeedbackType];
 var float ForceFeedbackScale;
 var bool bPushToTalk;
-var /*0x00080000-0x00000000*/ name ControlPresetName;
+var name ControlPresetName;
 
 defaultproperties
 {

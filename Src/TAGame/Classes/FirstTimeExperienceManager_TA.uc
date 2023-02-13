@@ -75,7 +75,7 @@ struct FTEChallengeInfo
 var FirstTimeExperienceManager_TA.FTEVersioning Versioning;
 var array<FTEGroup> FTEGroups;
 var array<FTELevelData> FTELevelInfo;
-var /*0x00008000-0x00000000*/ FirstTimeExperienceRedefinition_TA FTERedefine;
+var FirstTimeExperienceRedefinition_TA FTERedefine;
 var transient FTEGroup CurrentActiveGroup;
 var transient int CurrentCheckpointIndex;
 var transient name CurrentCheckpoint;

@@ -5,4 +5,4 @@
 *******************************************************************************/
 class SaveLock_X extends Object;
 
-var /*0x00008000-0x00000000*/ GFxEngine_X GFxEngine;
+var GFxEngine_X GFxEngine;

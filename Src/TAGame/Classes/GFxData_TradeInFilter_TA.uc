@@ -5,11 +5,11 @@
 *******************************************************************************/
 class GFxData_TradeInFilter_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding int Id;
-var /*0x00010000-0x00000000*/ databinding string Label;
-var /*0x00010000-0x00000000*/ array<GFxData_PossibleTradeIn_TA> PossibleTradeIns;
-var /*0x00010000-0x00000000*/ transient ProductTradeInFilter TradeInFilter;
-var /*0x00010000-0x00000000*/ transient SaveData_TA SaveData;
+var databinding int Id;
+var databinding string Label;
+var array<GFxData_PossibleTradeIn_TA> PossibleTradeIns;
+var transient ProductTradeInFilter TradeInFilter;
+var transient SaveData_TA SaveData;
 
 defaultproperties
 {

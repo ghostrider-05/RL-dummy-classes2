@@ -5,8 +5,8 @@
 *******************************************************************************/
 class UserSettingObserver_TA extends Component;
 
-var() /*0x00010000-0x00000000*/ export editinline UserSettingObserverEventCache_TA Cache;
-var /*0x00010000-0x00000000*/ export editinline transient UserSettingMetrics_TA Metrics;
+var() export editinline UserSettingObserverEventCache_TA Cache;
+var export editinline transient UserSettingMetrics_TA Metrics;
 
 defaultproperties
 {

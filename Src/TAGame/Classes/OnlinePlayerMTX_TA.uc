@@ -13,5 +13,4 @@ var const config bool bAllowEntitlements;
 
 defaultproperties
 {
-	bAllowEntitlements=true
 }

@@ -29,7 +29,7 @@ defaultproperties
 	MICParamName=GhostBall_TimeInGoal
 	
 	StaticMeshComponent=StaticMeshComponent0
-	begin object name=StaticMeshComponent0 class=StaticMeshComponent
+	begin object name=StaticMeshComponent0
 		ReplacementPrimitive=none
 		HiddenGame=true
 		CollideActors=false

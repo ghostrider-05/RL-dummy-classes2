@@ -12,6 +12,6 @@ enum EPerConStatus
 	PerConStatus_MAX
 };
 
-var /*0x00008000-0x00000000*/ PsyNetConfig_X Config;
+var PsyNetConfig_X Config;
 var string URL;
-var PerCon_X.EPerConStatus Status;
+var EPerConStatus Status;

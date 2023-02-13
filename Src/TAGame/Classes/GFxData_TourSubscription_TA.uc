@@ -5,10 +5,10 @@
 *******************************************************************************/
 class GFxData_TourSubscription_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ TourSettings_TA TourSettings;
-var /*0x00010000-0x00000000*/ export editinline transient TourList_TA TourList;
-var /*0x00010000-0x00000000*/ databinding int Difficulty;
-var /*0x00010000-0x00000000*/ databinding int Placement;
+var TourSettings_TA TourSettings;
+var export editinline transient TourList_TA TourList;
+var databinding int Difficulty;
+var databinding int Placement;
 
 defaultproperties
 {

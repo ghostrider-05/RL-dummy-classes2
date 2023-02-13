@@ -35,7 +35,7 @@ var repnotify transient int ReplicatedCountDownNumber;
 var repnotify transient int ReplicatedRoundCountDownNumber;
 var transient float LastBallHitNoiseTime;
 var transient int LastBallHitNoiseLevel;
-var() /*0x00010000-0x00000000*/ CrowdSoundsBase_TA Sounds;
+var() CrowdSoundsBase_TA Sounds;
 
 defaultproperties
 {

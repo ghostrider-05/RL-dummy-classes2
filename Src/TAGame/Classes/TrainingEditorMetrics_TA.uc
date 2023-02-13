@@ -8,7 +8,7 @@ class TrainingEditorMetrics_TA extends MetricsGroup_X;
 struct TrainingNavigationEvent
 {
 	var Qword TimeStamp;
-	var _TrainingTypes_TA.ETrainingNavigationCommand CommandUsed;
+	var ETrainingNavigationCommand CommandUsed;
 	var int PrevPlaylistIndex;
 	var int NewPlaylistIndex;
 	var int PrevRoundNum;
@@ -30,7 +30,7 @@ struct TrainingNavigationEvent
 struct TrainingManipulationEvent
 {
 	var Qword TimeStamp;
-	var _TrainingTypes_TA.ETrainingManipulationCommand CommandUsed;
+	var ETrainingManipulationCommand CommandUsed;
 	var int RoundNum;
 	var bool bMirror;
 
@@ -43,7 +43,7 @@ struct TrainingManipulationEvent
 	}
 };
 
-var /*0x00008000-0x00000000*/ TrainingMetricsConfig_TA TrainingMetricsConfig;
+var TrainingMetricsConfig_TA TrainingMetricsConfig;
 var transient array<TrainingNavigationEvent> NavigationCommands;
 var transient array<TrainingManipulationEvent> ManipulationCommands;
 var transient int BatchThreshold;

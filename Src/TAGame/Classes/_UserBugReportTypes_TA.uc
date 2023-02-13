@@ -19,7 +19,7 @@ struct UserBugReportCategory
 {
 	var() name Id;
 	var() name ParentId;
-	var() _UserBugReportTypes_TA.EUserBugReportCategoryType Type;
+	var() EUserBugReportCategoryType Type;
 	var() string Label;
 
 	structdefaultproperties

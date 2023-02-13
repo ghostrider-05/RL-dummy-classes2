@@ -7,8 +7,8 @@ class OnlineClubProvider_X extends Object;
 
 struct PlayerClubSyncResult
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-	var /*0x00010000-0x00000000*/ Error Error;
+	var UniqueNetId PlayerID;
+	var Error Error;
 
 	structdefaultproperties
 	{
@@ -17,7 +17,7 @@ struct PlayerClubSyncResult
 	}
 };
 
-var /*0x00018000-0x00000000*/ export editinline OnlineClubCache_X Cache;
-var /*0x00010000-0x00000000*/ array<RPC_GetClubDetails_X> SyncingClubs;
-var /*0x00010000-0x00000000*/ array<RPC_GetPlayerClubDetails_X> SyncingPlayers;
-var /*0x00010000-0x00000000*/ array<PlayerClubSyncResult> PlayerClubSyncResults;
+var export editinline OnlineClubCache_X Cache;
+var array<RPC_GetClubDetails_X> SyncingClubs;
+var array<RPC_GetPlayerClubDetails_X> SyncingPlayers;
+var array<PlayerClubSyncResult> PlayerClubSyncResults;

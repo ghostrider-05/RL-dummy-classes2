@@ -5,7 +5,7 @@
 *******************************************************************************/
 class StayAsPartyLeader_TA extends Object;
 
-var /*0x00010000-0x00000000*/ UniqueNetId LeaderID;
+var UniqueNetId LeaderID;
 
 defaultproperties
 {

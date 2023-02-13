@@ -50,19 +50,18 @@ var databinding array<GFxPartyMember> Members;
 var databinding int MaxPartySize;
 var databinding name Processing;
 var transient OnlineGameParty_X OnlineParty;
-var /*0x00008000-0x00000000*/ transient Personas_TA PersonasData;
-var /*0x00018000-0x00000000*/ export editinline OnlineClubCache_X Clubs;
-var /*0x00008000-0x00000000*/ VanitySetManager_TA VanityManager;
-var databinding GFxData_Party_TA.EPsyNetPartyStatus PsyNetPartyStatus;
-var /*0x00010000-0x00000000*/ const localized string RegionRestrictedPlayerTrade;
+var transient Personas_TA PersonasData;
+var export editinline OnlineClubCache_X Clubs;
+var VanitySetManager_TA VanityManager;
+var databinding EPsyNetPartyStatus PsyNetPartyStatus;
+var const localized string RegionRestrictedPlayerTrade;
 var GFxModal_X PendingTradeInviteModal;
 var GFxModal_X PartyErrorModal;
 var bool bPendingAllowTrade;
-var /*0x00008000-0x00000000*/ CrossplayConfig_X CrossplayConfig;
+var CrossplayConfig_X CrossplayConfig;
 
 defaultproperties
 {
-	RegionRestrictedPlayerTrade="Sorry, your country’s regulations prevent player to player item trading."
 	TableName=Party
 	bLevelTransitionPersistent=true
 }

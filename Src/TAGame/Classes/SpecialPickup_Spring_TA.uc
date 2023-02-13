@@ -41,7 +41,7 @@ var() Vector HittingMeshOffset;
 var() Rotator HittingRotationOffset;
 var() float HitDistanceOffset;
 var() float AfterSpringDuration;
-var() _Types_TA.EBallHitType BallHitType;
+var() EBallHitType BallHitType;
 var() InterpCurveFloat AfterHitLengthCurve;
 var() FXActor_TA HitFXArchetype;
 var() FXActor_TA ShootFXArchetype;

@@ -11,7 +11,7 @@ var databinding string TitleText;
 var databinding Color TitleColor;
 var databinding Color TitleGlowColor;
 var export editinline transient OtherPlayerProfile_TA Profile;
-var /*0x00008000-0x00000000*/ OnlineGameParty_TA OnlineGameParty;
+var OnlineGameParty_TA OnlineGameParty;
 
 defaultproperties
 {

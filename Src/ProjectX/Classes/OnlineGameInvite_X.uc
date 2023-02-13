@@ -15,6 +15,4 @@ var transient name ActionRequired;
 defaultproperties
 {
 	
-	UnableToFindFriendsGameString="Unable to find friend's game, try again later"
-	AlreadyInSameServerString="You are already in a game with this friend"
 }

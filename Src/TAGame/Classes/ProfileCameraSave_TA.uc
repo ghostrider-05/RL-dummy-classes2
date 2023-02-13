@@ -13,18 +13,18 @@ var bool bInvertSpectatorPitch;
 var bool bLockSpectatorBallCam;
 var bool bFreecam;
 var bool bPrefersSecondaryCamera;
-var /*0x00080000-0x00000000*/ bool bToggleSecondaryCamera;
+var bool bToggleSecondaryCamera;
 var bool bToggleRearCamera;
 var bool bUseBallIndicator;
 var bool bUseBallCamIndicator;
 var bool bEnableCameraShake;
 var bool bDirectorAllowCameraBlending;
-var /*0x00080000-0x00000000*/ bool bHoldMouseCameraEnabled;
-var /*0x00080000-0x00000000*/ bool bMouseCameraSwivel;
-var config _Types_TA.ECameraSettingsPreset CameraSettingsPreset;
+var bool bHoldMouseCameraEnabled;
+var bool bMouseCameraSwivel;
+var config ECameraSettingsPreset CameraSettingsPreset;
 var float DirectorMinChangeTeamFocusTime;
 var float DirectorMinSameTeamFocusTime;
-var /*0x00080000-0x00000000*/ float MaxProximityDistance;
+var float MaxProximityDistance;
 
 defaultproperties
 {
@@ -38,7 +38,6 @@ defaultproperties
 	bDirectorAllowCameraBlending=true
 	bHoldMouseCameraEnabled=true
 	bMouseCameraSwivel=true
-	CameraSettingsPreset=CameraSettingsPreset_Custom
 	DirectorMinChangeTeamFocusTime=5.0
 	DirectorMinSameTeamFocusTime=4.0
 	MaxProximityDistance=500.0

@@ -24,9 +24,9 @@ enum CrumbRedefinitionType
 
 struct CrumbRedefinedInfo
 {
-	var /*0x00010000-0x00000000*/ CrumbTrailRedefinition_TA.CrumbRedefinitionType RedefinedType;
-	var /*0x00010000-0x00000000*/ CrumbTrailRedefinition_TA.CrumbAction RedefinedAction;
-	var /*0x00010000-0x00000000*/ CrumbTrailData CrumbData;
+	var CrumbTrailRedefinition_TA.CrumbRedefinitionType RedefinedType;
+	var CrumbTrailRedefinition_TA.CrumbAction RedefinedAction;
+	var CrumbTrailData CrumbData;
 
 	structdefaultproperties
 	{
@@ -36,4 +36,4 @@ struct CrumbRedefinedInfo
 	}
 };
 
-var() /*0x00010000-0x00000000*/ array<CrumbRedefinedInfo> CrumbRedefInfo;
+var() array<CrumbRedefinedInfo> CrumbRedefInfo;

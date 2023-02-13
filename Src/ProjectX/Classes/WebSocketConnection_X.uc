@@ -14,7 +14,6 @@ var const int ClosedCode;
 
 defaultproperties
 {
-	PingInterval=60.0
 	InitialConnectionTimeout=10.0
 	ConnectionTimeout=90.0
 }

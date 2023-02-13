@@ -6,7 +6,7 @@
 class GFxData_Privileges_TA extends GFxDataSingleton_X;
 
 var databinding bool bCheckingPrivileges;
-var /*0x00008000-0x00000000*/ transient OnlineGame_X OnlineGame;
+var transient OnlineGame_X OnlineGame;
 
 defaultproperties
 {

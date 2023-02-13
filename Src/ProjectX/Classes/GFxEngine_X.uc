@@ -24,4 +24,4 @@ var GFxShell_X ShellArchetype;
 var transient array<GFxShell_X> Shells;
 var transient array<DirtyObject> DirtyObjects;
 var transient bool bAnyShellHasInput;
-var const transient EngineTypes.EInputPlatformType AvailableGamepadType;
+var const transient EInputPlatformType AvailableGamepadType;

@@ -5,9 +5,9 @@
 *******************************************************************************/
 class GetPlayerStorageResultItem_X extends Object;
 
-var /*0x00010000-0x00000000*/ name Category;
-var /*0x00010000-0x00000000*/ int Tick;
-var /*0x00010000-0x00000000*/ string Data;
-var /*0x00010000-0x00000000*/ int Checksum;
-var /*0x00010000-0x00000000*/ bool bChecksumMatch;
-var /*0x00010000-0x00000000*/ EncodeObject_X.EObjectEncoding Encoding;
+var name Category;
+var int Tick;
+var string Data;
+var int Checksum;
+var bool bChecksumMatch;
+var EObjectEncoding Encoding;

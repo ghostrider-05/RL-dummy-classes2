@@ -9,13 +9,13 @@ class OnlinePlayer_X extends Online_X within LocalPlayer_X
 var() OnlinePlayerFriends_X Friends;
 var() OnlinePlayerAuthentication_X Authentication;
 var() PsyNetConnection_X PsyNetConnection;
-var() /*0x00010000-0x00000000*/ OnlinePlayerStorage_X Storage;
-var() /*0x00010000-0x00000000*/ OnlinePlayerRegionRestrictions_X RegionRestrictions;
-var() /*0x00010000-0x00000000*/ UserBugReportComponent_X BugReporter;
+var() OnlinePlayerStorage_X Storage;
+var() OnlinePlayerRegionRestrictions_X RegionRestrictions;
+var() UserBugReportComponent_X BugReporter;
 var transient string PlayerName;
 var transient UniqueNetId PlayerID;
 var transient UniqueNetId CleanPlayerID;
-var transient OnlineSubsystem.ELoginStatus LoginStatus;
+var transient ELoginStatus LoginStatus;
 var transient int LocalPlayerNum;
 var bool bLoggingIn;
 var bool bLoggingOut;

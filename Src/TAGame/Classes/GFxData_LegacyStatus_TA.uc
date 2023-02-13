@@ -14,8 +14,8 @@ enum ELegacyStatusSetState
 	LSSS_MAX
 };
 
-var databinding _Types_TA.ELegacyBoxStatus LegacyStatus;
-var databinding GFxData_LegacyStatus_TA.ELegacyStatusSetState LegacySetState;
+var databinding ELegacyBoxStatus LegacyStatus;
+var databinding ELegacyStatusSetState LegacySetState;
 
 defaultproperties
 {

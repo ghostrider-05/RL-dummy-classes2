@@ -36,7 +36,7 @@ var(Shake) bool bOnlyAffectPlayersWithPawns;
 var(Shake) bool bAttenuate;
 var transient bool bPlaying;
 var transient bool bStopping;
-var(Shake) ShakeComponent_X.EShakeReceiver Receiver;
+var(Shake) EShakeReceiver Receiver;
 var(Shake) float RadiusScale;
 var(Shake) float BlendInTime;
 var(Shake) float BlendOutTime;

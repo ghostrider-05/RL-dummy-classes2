@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_ConnectionStats_TA extends GFxDataSingleton_X;
 
-var() /*0x00008000-0x00000000*/ ConnectionQualityConfig_TA ConnectionQualityConfig;
+var() ConnectionQualityConfig_TA ConnectionQualityConfig;
 
 defaultproperties
 {

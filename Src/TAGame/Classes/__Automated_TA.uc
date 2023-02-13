@@ -1,5 +1,39 @@
-class _Automated_TA extends Object;
+class __Automated_TA extends Object;
 
+enum EForceMode {
+	EForceMode_MAX,
+};
+enum EWeatherVariant {
+	EWeatherVariant_MAX,
+};
+enum ESpecialEventState {
+	ESpecialEventState_MAX,
+};
+
+struct AIProxyData {};
+struct AngleSelectData {};
+struct ControllerLayoutStack {};
+struct CrumbTrailData {};
+struct DownloadedWorkshopData {};
+struct FriendHistoryKey {};
+struct GameClipsMaskArea {};
+struct GFxLevelThreshold {};
+struct GFxRegion {};
+struct GFxTournamentReward {};
+struct IEpochNow {};
+struct LoadingMovieMapInfo {};
+struct MTCatalogInfo {};
+struct OnlineProductData {};
+struct OnlinePurchaseInterface {};
+struct PlaneSelectData {};
+struct PlaylistTrack {};
+struct TourServerSettings {};
+struct ShopItem {};
+struct ShopCurrencyInfo {};
+struct SkeletalMeshLODDistanceInfo {};
+struct TournamentResult {};
+struct TourMatchPlayerStats {};
+struct TourPlacementInfo {};
 struct TourStatus_TA {};
 struct Achievement_TA {};
 struct Achievement_AG_FarFarAway_TA {};

@@ -7,7 +7,7 @@ class GFxData_TrainingModeConstants_TA extends GFxDataSingleton_X;
 
 struct TrainingModeTag
 {
-	var databinding _Types_TA.ETrainingTag Tag;
+	var databinding ETrainingTag Tag;
 
 	structdefaultproperties
 	{
@@ -17,7 +17,7 @@ struct TrainingModeTag
 
 struct TrainingModeDifficulty
 {
-	var databinding _Types_TA.EDifficulty Difficulty;
+	var databinding EDifficulty Difficulty;
 
 	structdefaultproperties
 	{
@@ -27,7 +27,7 @@ struct TrainingModeDifficulty
 
 struct TrainingModeType
 {
-	var databinding _Types_TA.ETrainingType Type;
+	var databinding ETrainingType Type;
 
 	structdefaultproperties
 	{

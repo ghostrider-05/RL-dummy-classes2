@@ -9,12 +9,12 @@ class DynamicSpawnPointMesh_TA extends GameEditor_Actor_TA
 
 defaultproperties
 {
-	begin object name=StaticComponent0 class=StaticMeshComponent
+	begin object name=StaticComponent0
 		ReplacementPrimitive=none
 	end object
 	// Reference: StaticMeshComponent'Default__DynamicSpawnPointMesh_TA.StaticComponent0'
 	Mesh=StaticComponent0
-	begin object name=DefaultCollisionCylinder class=CylinderComponent
+	begin object name=DefaultCollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__DynamicSpawnPointMesh_TA.DefaultCollisionCylinder'

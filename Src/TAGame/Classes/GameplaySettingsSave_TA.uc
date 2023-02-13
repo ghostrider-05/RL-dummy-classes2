@@ -16,28 +16,28 @@ var bool bFilterNonTacticalQuickChat;
 var bool bColorBlind;
 var bool bForceDefaultColors;
 var bool bEnableHorizontalSplitscreen;
-var /*0x00080000-0x00000000*/ bool bEnableFreeplayUnlimitedBoost;
-var /*0x00090000-0x00000000*/ bool bUseSteamInput;
-var /*0x00080000-0x00000000*/ bool bDisableFreeplayGoals;
-var /*0x00080000-0x00000000*/ bool bIsTradingEnabled;
+var bool bEnableFreeplayUnlimitedBoost;
+var bool bUseSteamInput;
+var bool bDisableFreeplayGoals;
+var bool bIsTradingEnabled;
 var bool bFirstTimeDefaultVoice;
 var bool bFirstTimeDefaultText;
 var bool bFirstTimeDefaultTrade;
-var /*0x00080000-0x00000000*/ _Types_TA.EChatFilter QuickChatFilter;
-var /*0x00080000-0x00000000*/ _Types_TA.EChatFilter MatchChatFilter;
-var /*0x00080000-0x00000000*/ _Types_TA.EChatFilter PartyChatFilter;
-var /*0x00080000-0x00000000*/ _Types_TA.EVoiceFilter DeprecatedVoiceFilter;
-var /*0x00080000-0x00000000*/ _Types_TA.EVoiceFilter ChatFilter;
-var _Types_TA.EEffectsIntensity EffectIntensity;
-var config _Types_TA.EStatEventDisplayLevels StatEventDisplayLevel;
-var /*0x00080000-0x00000000*/ _Types_TA.EBoostFillType FreeplayBoostFillType;
-var _Types_TA.EStatGraphLevel StatGraphLevel;
-var /*0x00080000-0x00000000*/ _Types_TA.EControlsVisibilityType TrainingControlsVisibility;
+var EChatFilter QuickChatFilter;
+var EChatFilter MatchChatFilter;
+var EChatFilter PartyChatFilter;
+var EVoiceFilter DeprecatedVoiceFilter;
+var EVoiceFilter ChatFilter;
+var EEffectsIntensity EffectIntensity;
+var config EStatEventDisplayLevels StatEventDisplayLevel;
+var EBoostFillType FreeplayBoostFillType;
+var EStatGraphLevel StatGraphLevel;
+var EControlsVisibilityType TrainingControlsVisibility;
 var float SafeZoneRatio;
 var float UIScale;
 var float NameplateScale;
-var /*0x00080000-0x00000000*/ float TrainingGameSpeed;
-var /*0x00080000-0x00000000*/ float FreeplayBoostFillDelay;
+var float TrainingGameSpeed;
+var float FreeplayBoostFillDelay;
 var string PreviousDefaultVoice;
 var string PreviousDefaultText;
 var string PreviousDefaultTrade;
@@ -48,7 +48,6 @@ defaultproperties
 	bIsTradingEnabled=true
 	QuickChatFilter=ChatFilter_Preset
 	DeprecatedVoiceFilter=VoiceFilter_None
-	StatEventDisplayLevel=SEDL_Primary
 	SafeZoneRatio=1.0
 	UIScale=1.0
 	NameplateScale=1.0

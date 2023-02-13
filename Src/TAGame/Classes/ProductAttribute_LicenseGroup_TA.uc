@@ -8,5 +8,5 @@ class ProductAttribute_LicenseGroup_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() _Types_TA.ELicenseGroup Group;
+var() ELicenseGroup Group;
 var() bool bRequireSameLicenseGroupOnBody;

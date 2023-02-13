@@ -5,8 +5,8 @@
 *******************************************************************************/
 class GFxData_ScoreboardStat_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding string PlayerIDString;
-var /*0x00010000-0x00000000*/ databinding string Values;
+var databinding string PlayerIDString;
+var databinding string Values;
 
 defaultproperties
 {

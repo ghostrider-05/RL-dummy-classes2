@@ -5,10 +5,10 @@
 *******************************************************************************/
 class GFxData_TourBracketTeam_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding Qword TeamID;
-var /*0x00010000-0x00000000*/ databinding string TeamName;
-var /*0x00010000-0x00000000*/ databinding int TeamColorID;
-var /*0x00010000-0x00000000*/ databinding int CustomColorID;
+var databinding Qword TeamID;
+var databinding string TeamName;
+var databinding int TeamColorID;
+var databinding int CustomColorID;
 
 defaultproperties
 {

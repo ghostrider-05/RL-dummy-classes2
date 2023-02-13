@@ -5,27 +5,25 @@
 *******************************************************************************/
 class GFxData_TourCreate_TA extends GFxData_PrivateMatch_TA;
 
-var /*0x00010000-0x00000000*/ const localized string PrivateNoPassword;
-var /*0x00010000-0x00000000*/ const localized string StartTimeTooSoon;
-var() /*0x00010000-0x00000000*/ databinding int MaxBracketSize;
-var() /*0x00010000-0x00000000*/ databinding int RankMin;
-var() /*0x00010000-0x00000000*/ databinding int RankMax;
-var() /*0x00010000-0x00000000*/ databinding int SeriesLength;
-var() /*0x00010000-0x00000000*/ databinding int FinalSeriesLength;
-var() /*0x00010000-0x00000000*/ databinding array<GFxTournamentReward> Rewards;
-var() /*0x00010000-0x00000000*/ databinding _TourTypes_TA.ETourSeedType SeedingType;
-var() /*0x00010000-0x00000000*/ databinding _Types_TA.EMatchTieBreaker TieBreaker;
-var() /*0x00018000-0x00000000*/ OnlineSubsystem OnlineSub;
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var() /*0x00018000-0x00000000*/ TourConfig_TA Config;
-var /*0x00010000-0x00000000*/ transient TourSettings_TA Settings;
-var /*0x00010000-0x00000000*/ transient TournamentSettingsSave_TA TournamentSave;
-var /*0x00010000-0x00000000*/ MapSet_TA DefaultMapSet;
+var const localized string PrivateNoPassword;
+var const localized string StartTimeTooSoon;
+var() databinding int MaxBracketSize;
+var() databinding int RankMin;
+var() databinding int RankMax;
+var() databinding int SeriesLength;
+var() databinding int FinalSeriesLength;
+var() databinding array<GFxTournamentReward> Rewards;
+var() databinding ETourSeedType SeedingType;
+var() databinding int /** _Types_TA.EMatchTieBreaker*/ TieBreaker;
+var() OnlineSubsystem OnlineSub;
+var() OnlineGameTournaments_TA Tournaments;
+var() TourConfig_TA Config;
+var transient TourSettings_TA Settings;
+var transient TournamentSettingsSave_TA TournamentSave;
+var MapSet_TA DefaultMapSet;
 
 defaultproperties
 {
-	PrivateNoPassword="Private Tournaments require a password"
-	StartTimeTooSoon="Tournament must start at least {Minutes} minutes in the future"
 	DefaultMapSet=MapSet_TA'MapList.Sets.Standard'
 	SettingsType=CustomMatchSettingsType_TourCreate
 	TableName=TournamentCreate

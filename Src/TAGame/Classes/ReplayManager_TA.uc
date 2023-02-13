@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ReplayManager_TA extends Object
+	native
 	config(Game);
 
 struct native ReplayIOTaskBase
@@ -100,5 +101,4 @@ var transient array<ReplayImportCallbackData> ImportCallbacks;
 
 defaultproperties
 {
-	ReplaysPath="..\\..\\TAGame\\Demos\\"
 }

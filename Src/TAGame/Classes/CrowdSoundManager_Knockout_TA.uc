@@ -5,4 +5,4 @@
 *******************************************************************************/
 class CrowdSoundManager_Knockout_TA extends CrowdSoundManagerBase_TA within GameEvent_Soccar_TA;
 
-var() /*0x00010000-0x00000000*/ export editinline CrowdSoundSettings_Knockout_TA Settings;
+var() export editinline CrowdSoundSettings_Knockout_TA Settings;

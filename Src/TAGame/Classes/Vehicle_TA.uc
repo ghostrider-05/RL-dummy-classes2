@@ -50,7 +50,7 @@ var transient CarComponent_DoubleJump_TA DoubleJumpComponent;
 var const export editinline PitchTekDrawingComponent_TA PitchTekComponent;
 var export editinline transient LocalPlayerAudioParamsComponent_TA LocalPlayerAudioParamsComponent;
 var transient float TimeBelowSupersonicSpeed;
-var /*0x00008000-0x00000000*/ NetworkConfig_TA NetworkConfig;
+var NetworkConfig_TA NetworkConfig;
 
 defaultproperties
 {
@@ -67,7 +67,7 @@ defaultproperties
 	LandMovementState=Driving
 	
 	CylinderComponent=CollisionCylinder
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__Vehicle_TA.CollisionCylinder'

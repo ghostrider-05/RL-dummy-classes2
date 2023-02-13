@@ -5,31 +5,31 @@
 *******************************************************************************/
 class CameraState_StadiumSide_TA extends CameraState_DirectorProxy_TA;
 
-var() /*0x00010000-0x00000000*/ Vector TrackOffset;
-var() /*0x00010000-0x00000000*/ Vector TrackSize;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat TrackProximityOffsetSide;
-var() /*0x00010000-0x00000000*/ float TrackProximityOffsetLerp;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat FocusLerp;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat TrackLerpSide;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat TrackLerpForward;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat CarDistWeight;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat GoalDistWeight;
-var() /*0x00010000-0x00000000*/ float BallPredictionTime;
-var() /*0x00010000-0x00000000*/ float MinFOV;
-var() /*0x00010000-0x00000000*/ float MaxFOV;
-var() /*0x00010000-0x00000000*/ float SmoothFOVLerp;
-var /*0x00010000-0x00000000*/ transient Vector TrackCenter;
-var /*0x00010000-0x00000000*/ transient Vector TrackRight;
-var /*0x00010000-0x00000000*/ transient Vector TrackForward;
-var /*0x00010000-0x00000000*/ transient Vector TrackStart;
-var /*0x00010000-0x00000000*/ transient Vector TrackEnd;
-var /*0x00010000-0x00000000*/ transient Vector FieldStart;
-var /*0x00010000-0x00000000*/ transient Vector FieldEnd;
-var /*0x00010000-0x00000000*/ transient Vector SmoothedFocus;
-var /*0x00010000-0x00000000*/ transient Vector SmoothedFieldPct;
-var /*0x00010000-0x00000000*/ transient float SmoothedFOV;
-var /*0x00010000-0x00000000*/ transient float SmoothedProximityOffsetSide;
-var /*0x00010000-0x00000000*/ transient bool bCut;
+var() Vector TrackOffset;
+var() Vector TrackSize;
+var() InterpCurveFloat TrackProximityOffsetSide;
+var() float TrackProximityOffsetLerp;
+var() InterpCurveFloat FocusLerp;
+var() InterpCurveFloat TrackLerpSide;
+var() InterpCurveFloat TrackLerpForward;
+var() InterpCurveFloat CarDistWeight;
+var() InterpCurveFloat GoalDistWeight;
+var() float BallPredictionTime;
+var() float MinFOV;
+var() float MaxFOV;
+var() float SmoothFOVLerp;
+var transient Vector TrackCenter;
+var transient Vector TrackRight;
+var transient Vector TrackForward;
+var transient Vector TrackStart;
+var transient Vector TrackEnd;
+var transient Vector FieldStart;
+var transient Vector FieldEnd;
+var transient Vector SmoothedFocus;
+var transient Vector SmoothedFieldPct;
+var transient float SmoothedFOV;
+var transient float SmoothedProximityOffsetSide;
+var transient bool bCut;
 
 defaultproperties
 {

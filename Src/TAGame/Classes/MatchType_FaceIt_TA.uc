@@ -5,8 +5,8 @@
 *******************************************************************************/
 class MatchType_FaceIt_TA extends MatchType_Tournament_TA;
 
-var /*0x00010000-0x00000000*/ int MinPlayersMetWaitTimeSeconds;
-var /*0x00010000-0x00000000*/ Qword WaitForPlayersExpirationTimeStamp;
+var int MinPlayersMetWaitTimeSeconds;
+var Qword WaitForPlayersExpirationTimeStamp;
 
 defaultproperties
 {

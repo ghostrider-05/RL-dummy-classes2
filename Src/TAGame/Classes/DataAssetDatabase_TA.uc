@@ -3,7 +3,8 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class DataAssetDatabase_TA extends Object;
+class DataAssetDatabase_TA extends Object
+	native;
 
 var() editconst class DataAssetClass;
 var() array<Object> DataAssets;

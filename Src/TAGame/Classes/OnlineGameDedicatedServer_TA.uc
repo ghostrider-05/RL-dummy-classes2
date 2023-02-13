@@ -6,13 +6,13 @@
 class OnlineGameDedicatedServer_TA extends OnlineGameDedicatedServer_X
 	config(Engine);
 
-var() /*0x00010000-0x00000000*/ OnlineGameTourServer_TA Tournaments;
+var() OnlineGameTourServer_TA Tournaments;
 var transient int LastPlaylistID;
 var transient array<Object> AllRelevantProducts;
 var Replay_TA ReplayToUpload;
-var /*0x00010000-0x00000000*/ RLBot_SessionRecorder_TA FlatbufferSession;
-var /*0x00010000-0x00000000*/ EOSVoiceTokenCache_TA VoiceTokenCache;
-var /*0x00008000-0x00000000*/ GameModesConfig_TA GameModesConfig;
+var RLBot_SessionRecorder_TA FlatbufferSession;
+var EOSVoiceTokenCache_TA VoiceTokenCache;
+var GameModesConfig_TA GameModesConfig;
 
 defaultproperties
 {

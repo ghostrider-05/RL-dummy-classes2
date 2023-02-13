@@ -3,7 +3,8 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class SaveObjectManager_TA extends Object;
+class SaveObjectManager_TA extends Object
+	native;
 
 struct native DingoContentCache
 {
@@ -33,14 +34,14 @@ struct native SaveDataExportTask extends SaveObjectManager_TA.SaveDataTask
 	var bool bExactFileMatch;
 	var bool bPlayerSaveData;
 	var bool bEncryptAndCRC;
-	var _Types_TA.ESaveGameResult Result;
+	var ESaveGameResult Result;
 	var int KeepNewestSaveFileCount;
 };
 
 struct native SaveDataImportTask extends SaveObjectManager_TA.SaveDataTask
 {
 	var init Object SaveDataObject;
-	var Engine.EBasicLoadResult Result;
+	var EBasicLoadResult Result;
 	var init array<init byte> Data;
 	var init bool bExactFileMatch;
 	var init bool bPlayerSaveData;
@@ -50,7 +51,7 @@ struct native SaveDataListFilesTask extends SaveObjectManager_TA.SaveDataTask
 {
 	var init string Pattern;
 	var init array<init string> Files;
-	var Engine.EBasicLoadResult Result;
+	var EBasicLoadResult Result;
 };
 
 struct native SaveDataDeleteTask extends SaveObjectManager_TA.SaveDataTask

@@ -12,8 +12,8 @@ var() export editinline EngineAudioComponent_TA EngineAudio;
 var() export editinline EngineAudioREVComponent_TA EngineAudioRev;
 var() export editinline ThrottleShakeComponent_TA ThrottleShake;
 var transient CarComponent_FlipCar_TA FlipComponent;
-var transient _Types_TA.EDemolishTarget DemolishTarget;
-var transient _Types_TA.EDemolishSpeed DemolishSpeed;
+var transient EDemolishTarget DemolishTarget;
+var transient EDemolishSpeed DemolishSpeed;
 var export editinline ProductLoader_TA Loadout;
 var bool bLoadoutSet;
 var transient bool bDemolishOnOpposingGround;
@@ -43,7 +43,7 @@ var PRI_TA AttackerPRI;
 var transient Vector MouseAccel;
 var transient Vector MouseAirAccel;
 var repnotify transient SpecialPickup_TA AttachedPickup;
-var /*0x00080000-0x00000000*/ RumblePickups_TA RumblePickups;
+var RumblePickups_TA RumblePickups;
 var transient Vector ReplayFocusOffset;
 var() float AddedBallForceMultiplier;
 var() float AddedCarForceMultiplier;
@@ -76,7 +76,7 @@ defaultproperties
 	Mesh=DefaultMesh
 	
 	CylinderComponent=CollisionCylinder
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		CollisionHeight=32.0
 		CollisionRadius=48.0
 		ReplacementPrimitive=none

@@ -87,7 +87,7 @@ struct native FileUploadData
 	var string BugID;
 	var string Folder;
 	var string FilePath;
-	var BugReport_X.EFileTruncateType TruncateType;
+	var EFileTruncateType TruncateType;
 
 	structdefaultproperties
 	{
@@ -133,6 +133,5 @@ var const transient bool bSubmitted;
 
 defaultproperties
 {
-	BugReportClassName="TAGame.BugReport_TA"
 	MaxFileSizeMegabytes=2
 }

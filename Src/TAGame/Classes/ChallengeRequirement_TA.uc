@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ChallengeRequirement_TA extends ListenObject_TA;
 
-var /*0x00010000-0x00000000*/ databinding string DisplayName;
-var /*0x00010000-0x00000000*/ databinding int RequiredCount;
-var /*0x00010000-0x00000000*/ databinding int ProgressCount;
-var /*0x00010000-0x00000000*/ databinding int ProgressChange;
+var databinding string DisplayName;
+var databinding int RequiredCount;
+var databinding int ProgressCount;
+var databinding int ProgressChange;

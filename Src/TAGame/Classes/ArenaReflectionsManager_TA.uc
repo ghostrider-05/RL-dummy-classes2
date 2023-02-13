@@ -8,7 +8,7 @@ class ArenaReflectionsManager_TA extends Object;
 struct native SlapbackActorSetup
 {
 	var name Bus;
-	var AkBusActor.EPinnedAxisType Axis;
+	var EPinnedAxisType Axis;
 	var Vector FieldLocation;
 
 	structdefaultproperties
@@ -19,7 +19,7 @@ struct native SlapbackActorSetup
 	}
 };
 
-var /*0x00008000-0x00000000*/ GameEvent_TA SoccarGame;
+var GameEvent_TA SoccarGame;
 var() array<SlapbackActorSetup> SlapbackSetups;
 var() array<SlapbackActorSetup> ArenaReverbSetups;
 var array<AkBusActor> SlapBackActors;

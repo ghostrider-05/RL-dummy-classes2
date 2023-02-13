@@ -17,7 +17,7 @@ enum EDataCallbackType
 var transient name Table;
 var transient int Row;
 var transient name Column;
-var transient GFxDataCallback_X.EDataCallbackType Type;
+var transient EDataCallbackType Type;
 
 defaultproperties
 {

@@ -7,15 +7,15 @@ class CrumbTrails_TA extends Object within OnlinePlayer_TA;
 
 struct CrumbTrailData
 {
-	var /*0x00010000-0x00000000*/ name CrumbTrailId;
-	var /*0x00010000-0x00000000*/ array<name> CrumbNames;
-	var /*0x00010000-0x00000000*/ array<TriggerClump_TA> ActivationTriggers;
-	var /*0x00010000-0x00000000*/ array<TriggerClump_TA> CompletionOverride;
-	var /*0x00010000-0x00000000*/ bool bCompleteOnlyWhenActive;
-	var /*0x00010000-0x00000000*/ bool bRepeatable;
-	var /*0x00010000-0x00000000*/ bool bManualStart;
-	var /*0x00010000-0x00000000*/ transient TriggerCondition_TA ActivationCondition;
-	var /*0x00010000-0x00000000*/ transient TriggerCondition_TA CompletionCondition;
+	var name CrumbTrailId;
+	var array<name> CrumbNames;
+	var array<TriggerClump_TA> ActivationTriggers;
+	var array<TriggerClump_TA> CompletionOverride;
+	var bool bCompleteOnlyWhenActive;
+	var bool bRepeatable;
+	var bool bManualStart;
+	var transient TriggerCondition_TA ActivationCondition;
+	var transient TriggerCondition_TA CompletionCondition;
 
 	structdefaultproperties
 	{
@@ -31,7 +31,7 @@ struct CrumbTrailData
 	}
 };
 
-var /*0x00010000-0x00000000*/ array<CrumbTrailData> CrumbTrails;
-var /*0x00018000-0x00000000*/ CrumbTrailRedefinition_TA CrumbRedefine;
-var /*0x00010000-0x00000000*/ CrumbTrailSave_TA CrumbSave;
-var /*0x00010000-0x00000000*/ transient bool bTrailSetup;
+var array<CrumbTrailData> CrumbTrails;
+var CrumbTrailRedefinition_TA CrumbRedefine;
+var CrumbTrailSave_TA CrumbSave;
+var transient bool bTrailSetup;

@@ -162,7 +162,7 @@ struct native NetStats
 struct PlayerPermissionsList
 {
 	var UniqueNetId PlayerID;
-	var array<_Types_X.EOnlinePlayerPermission> Permissions;
+	var array<EOnlinePlayerPermission> Permissions;
 
 	structdefaultproperties
 	{
@@ -213,7 +213,7 @@ struct native IntVector3
 
 struct native MetricsEvent
 {
-	var /*0x00200000-0x00000000*/ UniqueNetId PlayerID;
+	var UniqueNetId PlayerID;
 	var float TimeSeconds;
 	var int Version;
 	var string EventName;
@@ -316,14 +316,14 @@ struct PartyMember
 	var string MemberName;
 	var int MatchmakeRestrictions;
 	var int LocalControllerId;
-	var PlatformAccountSettings.ECrossPlatformChatState CrossChatState;
+	var ECrossPlatformChatState CrossChatState;
 	var bool bDisableCrossPlay;
 	var UniqueNetId TradingMemberId;
 	var Guid TradeId;
 	var bool bReadyToLockTrade;
 	var bool bReadyToConfirmTrade;
 	var PartyMemberServer Server;
-	var /*0x00010000-0x00000000*/ UniqueLobbyId PlatformParty;
+	var UniqueLobbyId PlatformParty;
 
 	structdefaultproperties
 	{
@@ -421,9 +421,9 @@ struct PlaylistTierSkillRating extends _Types_X.TierSkillRating
 
 struct PlayerPermissions
 {
-	var _Types_X.EChatPermissionLevel TextChat;
-	var _Types_X.EChatPermissionLevel VoiceChat;
-	var _Types_X.ETradePermissionLevel Trade;
+	var EChatPermissionLevel TextChat;
+	var EChatPermissionLevel VoiceChat;
+	var ETradePermissionLevel Trade;
 	var bool bRequirePinForFriends;
 
 	structdefaultproperties
@@ -440,7 +440,7 @@ struct native BindingAction
 	var databinding name Action;
 	var databinding name Category;
 	var databinding name Axis;
-	var databinding _Types_X.EAxisSign AxisSign;
+	var databinding EAxisSign AxisSign;
 	var string Command;
 	var bool bDisableRemapping;
 	var int Priority;
@@ -461,11 +461,11 @@ struct native PlayerBinding
 {
 	var databinding name Action;
 	var databinding name Key;
-	var databinding _Types_X.EAxisSign AxisSign;
-	var databinding _Types_X.EButtonPressType PressType;
+	var databinding EAxisSign AxisSign;
+	var databinding EButtonPressType PressType;
 	var databinding float Speed;
 	var databinding bool bRequired;
-	var _Types_X.ERemappable Remappable;
+	var ERemappable Remappable;
 	var transient float PressedTime;
 	var transient float ReleasedTime;
 	var transient bool bTapped;
@@ -544,7 +544,7 @@ struct ReservationPlayerData
 	var array<int> Loadout;
 	var array<name> MapLikes;
 	var array<name> MapDislikes;
-	var /*0x00010000-0x00000000*/ Qword ClubID;
+	var Qword ClubID;
 
 	structdefaultproperties
 	{
@@ -565,7 +565,7 @@ struct ReplicatedReservationData
 {
 	var UniqueNetId PlayerID;
 	var string PlayerName;
-	var _Types_X.EReservationStatus Status;
+	var EReservationStatus Status;
 
 	structdefaultproperties
 	{
@@ -615,7 +615,7 @@ struct native CustomMatchSettings
 	var string Password;
 	var bool bPublic;
 	var CustomMatchTeamSettings TeamSettings[2];
-	var /*0x00010000-0x00000000*/ bool bClubServer;
+	var bool bClubServer;
 
 	structdefaultproperties
 	{
@@ -634,7 +634,7 @@ struct native CustomMatchSettings
 
 struct JoinMatchSettings
 {
-	var _Types_X.EJoinMatchType MatchType;
+	var EJoinMatchType MatchType;
 	var int PlaylistId;
 	var bool bFriendJoin;
 	var bool bMigration;
@@ -866,7 +866,7 @@ struct native ReservationData
 	var UniqueNetId PlayerID;
 	var string PlayerName;
 	var UniqueNetId PartyID;
-	var _Types_X.EReservationStatus Status;
+	var EReservationStatus Status;
 	var float TimeoutTime;
 	var bool bDisableCrossPlay;
 	var PlayerReplicationInfo PRI;
@@ -902,7 +902,7 @@ struct MigrationReservationData
 	var UniqueNetId PlayerID;
 	var string PlayerName;
 	var UniqueNetId PartyID;
-	var _Types_X.EReservationStatus Status;
+	var EReservationStatus Status;
 	var bool bDisableCrossPlay;
 	var byte Team;
 	var SkillRating Skill;
@@ -1039,7 +1039,7 @@ struct native OnlineStatus
 {
 	var UniqueNetId PlayerID;
 	var string PresenceInfo;
-	var OnlineSubsystem.EOnlineFriendState PresenceState;
+	var EOnlineFriendState PresenceState;
 
 	structdefaultproperties
 	{

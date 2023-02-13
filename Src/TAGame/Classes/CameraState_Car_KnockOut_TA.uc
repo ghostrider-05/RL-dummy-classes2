@@ -5,7 +5,7 @@
 *******************************************************************************/
 class CameraState_Car_KnockOut_TA extends CameraState_BallCam_TA;
 
-var /*0x00010000-0x00000000*/ export editinline transient Target_TA PotentialTarget;
+var export editinline transient Target_TA PotentialTarget;
 
 defaultproperties
 {

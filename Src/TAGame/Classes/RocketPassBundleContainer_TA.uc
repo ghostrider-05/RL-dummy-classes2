@@ -5,12 +5,12 @@
 *******************************************************************************/
 class RocketPassBundleContainer_TA extends Component;
 
-var() /*0x00010000-0x00000000*/ const name RocketPassMenuName;
-var() /*0x00010000-0x00000000*/ const name ChallengeMenuName;
-var /*0x00010000-0x00000000*/ databinding array<RocketPassBundleInfo> Premium;
-var /*0x00010000-0x00000000*/ databinding array<RocketPassBundleInfo> Tier;
-var /*0x00010000-0x00000000*/ const string RocketPassPackageName;
-var /*0x00010000-0x00000000*/ const string TierBundleFileNameBase;
+var() const name RocketPassMenuName;
+var() const name ChallengeMenuName;
+var databinding array<RocketPassBundleInfo> Premium;
+var databinding array<RocketPassBundleInfo> Tier;
+var const string RocketPassPackageName;
+var const string TierBundleFileNameBase;
 
 defaultproperties
 {

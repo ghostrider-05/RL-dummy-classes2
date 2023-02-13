@@ -30,10 +30,10 @@ var databinding array<UseAction> UseActions;
 var databinding string TutorialTip;
 var databinding array<TrainingRoundProgress> ProgressPerShot;
 var databinding int CurrentPlaylistIndex;
-var databinding _Types_TA.EControlsVisibilityType ControlsVisibility;
-var /*0x00008000-0x00000000*/ GameEvent_TrainingEditor_TA TrainingEditor;
+var databinding EControlsVisibilityType ControlsVisibility;
+var GameEvent_TrainingEditor_TA TrainingEditor;
 var transient TrainingProgressTracker_TA ProgressTracker;
-var /*0x00008000-0x00000000*/ TrainingConfig_TA TrainingConfig;
+var TrainingConfig_TA TrainingConfig;
 
 defaultproperties
 {

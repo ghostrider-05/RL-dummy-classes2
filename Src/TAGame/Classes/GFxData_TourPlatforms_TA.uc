@@ -7,9 +7,9 @@ class GFxData_TourPlatforms_TA extends GFxDataSingleton_X;
 
 struct GFxTourPlatformGroup
 {
-	var /*0x00010000-0x00000000*/ transient array<_Types_Core.OnlinePlatform> Platforms;
-	var /*0x00010000-0x00000000*/ databinding string Label;
-	var /*0x00010000-0x00000000*/ databinding bool bSelected;
+	var transient array<_Types_Core.OnlinePlatform> Platforms;
+	var databinding string Label;
+	var databinding bool bSelected;
 
 	structdefaultproperties
 	{
@@ -19,8 +19,8 @@ struct GFxTourPlatformGroup
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding array<GFxTourPlatformGroup> Groups;
-var() /*0x00018000-0x00000000*/ OnlineSubsystem OnlineSub;
+var databinding array<GFxTourPlatformGroup> Groups;
+var() OnlineSubsystem OnlineSub;
 
 defaultproperties
 {

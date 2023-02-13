@@ -10,10 +10,10 @@ class LocalPlayer_TA extends LocalPlayer_X within Engine
 var SaveGameManager_TA SaveGameManager;
 var transient Profile_TA Profile;
 var export editinline transient ObjectProvider ProfileObjectProvider;
-var transient GFxData_LocalPlayer_TA.ESplitScreenPosition SplitScreenPosition;
+var transient ESplitScreenPosition SplitScreenPosition;
 var Qword SuspendingEventToken;
 var Qword SignoutStartedEventToken;
 var transient bool bOpenedStartMenu;
 var transient bool bPendingBroadcastLoadout;
 var transient bool bPendingBroadcastProfile;
-var /*0x00010000-0x00000000*/ ControllerLayoutStack ControllerLayouts;
+var ControllerLayoutStack ControllerLayouts;

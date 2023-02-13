@@ -5,6 +5,6 @@
 *******************************************************************************/
 class ChallengeNotification_TA extends Notification_TA;
 
-var /*0x00010000-0x00000000*/ databinding transient Texture Icon;
-var /*0x00010000-0x00000000*/ databinding transient Texture NotifyImage;
-var /*0x00010000-0x00000000*/ databinding int ChallengeID;
+var databinding transient Texture Icon;
+var databinding transient Texture NotifyImage;
+var databinding int ChallengeID;

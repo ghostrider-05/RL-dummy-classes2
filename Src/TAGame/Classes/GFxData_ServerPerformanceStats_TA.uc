@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_ServerPerformanceStats_TA extends GFxDataSingleton_X;
 
-var databinding ClientConnectionTracker_TA.EConnectionQualityState ServerPerformanceStatus;
+var databinding EConnectionQualityState ServerPerformanceStatus;
 var databinding bool bReportedServer;
 
 defaultproperties

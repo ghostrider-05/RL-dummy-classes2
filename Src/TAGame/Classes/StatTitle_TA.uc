@@ -22,4 +22,4 @@ var StatEvent_TA Stat;
 var bool bPerStat;
 var bool bInverseStat;
 var bool bClampStatToOne;
-var StatTitle_TA.EStatTrackingUnitType StatUnitType;
+var EStatTrackingUnitType StatUnitType;

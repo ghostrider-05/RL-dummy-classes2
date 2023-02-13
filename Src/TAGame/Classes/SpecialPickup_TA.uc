@@ -33,8 +33,8 @@ var() AkSoundCue ActivateSFX;
 var() AkSoundCue LocalActivateSFX;
 var FXActor_X PickupFX;
 var export editinline ShakeComponent_X ShakeComp;
-var /*0x00010000-0x00000000*/ int PickupSlot;
-var /*0x00010000-0x00000000*/ int CooldownSeconds;
+var int PickupSlot;
+var int CooldownSeconds;
 
 defaultproperties
 {

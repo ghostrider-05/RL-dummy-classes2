@@ -31,10 +31,10 @@ struct PlayerLoadoutData
 	}
 };
 
-var /*0x00080000-0x00000000*/ array<PersonaDataId> RecentList;
+var array<PersonaDataId> RecentList;
 var array<PersonaDataId> RecentTradingPartners;
 var array<PlayerGameID> RecentGameIDs;
-var /*0x00080000-0x00000000*/ array<PlayerLoadoutData> ObservedLoadouts;
+var array<PlayerLoadoutData> ObservedLoadouts;
 var transient PersonaSave_TA PersonaSave;
 var transient int MaxRecentPlayerCount;
 

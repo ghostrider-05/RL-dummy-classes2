@@ -19,7 +19,7 @@ struct native AssetLoadRequest
 	var AssetLoadResult Result;
 	var Product_TA Product;
 	var int LoadOrder;
-	var ProductAssetLoader_TA.EAssetLoadState LoadState;
+	var EAssetLoadState LoadState;
 	var bool bIsThumbnailRequest;
 
 	structdefaultproperties

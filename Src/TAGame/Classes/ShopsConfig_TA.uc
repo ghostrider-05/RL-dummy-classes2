@@ -5,10 +5,10 @@
 *******************************************************************************/
 class ShopsConfig_TA extends OnlineConfig_X;
 
-var /*0x00010000-0x00000000*/ int DebugShopID;
-var /*0x00010000-0x00000000*/ bool bEnableShopMetrics;
-var /*0x00010000-0x00000000*/ bool bHideMainMenuButton;
-var /*0x00010000-0x00000000*/ array<string> ShopTypesForOwnedTracking;
+var int DebugShopID;
+var bool bEnableShopMetrics;
+var bool bHideMainMenuButton;
+var array<string> ShopTypesForOwnedTracking;
 
 defaultproperties
 {

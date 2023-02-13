@@ -41,7 +41,7 @@ var transient int CurrentPartySize;
 var transient bool LastbSearchingStatus;
 var transient bool LastLockStatus;
 var transient bool bPendingIncomingTradeInvite;
-var /*0x00080000-0x00000000*/ bool bTradeLocked;
+var bool bTradeLocked;
 var transient name LastSearchState;
 var transient PartyJoinMatchSettings MatchSettings;
 var transient UniqueNetId PendingTradeInvite;
@@ -49,14 +49,14 @@ var transient OnlineGameParty_X.PartyProcessingStatus ProcessingStatus;
 var const localized string NotInSameOnlineGameError;
 var const localized string MissingLicenseAgreementError;
 var PartySequence_InvitedToPlatformParty_X SequenceInvitedToPlatformParty;
-var /*0x00010000-0x00000000*/ PartySequence_PsyNetPartyUpgrade_X SequencePsyNetPartyUpgrade;
-var /*0x00010000-0x00000000*/ PartySequence_InvitedToPsyNetParty_X SequenceInvitedToPsyNetParty;
-var() /*0x00008000-0x00000000*/ PartyConfig_X PartyConfig;
-var() /*0x00008000-0x00000000*/ PsyNetConfig_X Config;
+var PartySequence_PsyNetPartyUpgrade_X SequencePsyNetPartyUpgrade;
+var PartySequence_InvitedToPsyNetParty_X SequenceInvitedToPsyNetParty;
+var() PartyConfig_X PartyConfig;
+var() PsyNetConfig_X Config;
 var OnlineLobbyInterface PlatformLobbyInterface;
-var /*0x00010000-0x00000000*/ Parties_X PsyNetLobbyInterface;
+var Parties_X PsyNetLobbyInterface;
 var int CreatePartyLocalPlayerNum;
-var /*0x00008000-0x00000000*/ CrossplayConfig_X CrossplayConfig;
+var CrossplayConfig_X CrossplayConfig;
 var FindServerTask_X FindServerTask;
 var string JoinLobbyError;
 var array<int> LeaderPreferredPlaylists;
@@ -69,6 +69,4 @@ defaultproperties
 	NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_X.NullSearchStatus0'
 	PartyTimeout=300
 	
-	NotInSameOnlineGameError="[PlayerName] is in an online game."
-	MissingLicenseAgreementError="[PlayerName] has not accepted the license agreement."
 }

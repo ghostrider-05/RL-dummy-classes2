@@ -9,7 +9,7 @@ class MapData_TA extends Object
 
 var() Texture2D Thumbnail;
 var() MapData_TA VariantOf;
-var() GFxEngine.EWeatherVariant WeatherVariant;
+var() EWeatherVariant WeatherVariant;
 var() float RandomWeight;
 
 defaultproperties

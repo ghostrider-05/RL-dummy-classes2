@@ -45,7 +45,7 @@ struct DebugMicroEventPlaylistID
 
 var databinding array<SpecialEventStoreConfigs> StoreConfigs;
 var() databinding array<DebugMicroEventPlaylistID> DebugMicroEventPlaylistIDs;
-var() /*0x00080000-0x00000000*/ databinding int CurrencyID;
+var() databinding int CurrencyID;
 var() databinding int ShopID;
 var() databinding string Title;
 var() databinding string Subtitle;
@@ -67,10 +67,10 @@ var databinding transient Qword RedemptionEndTime;
 var databinding transient string RedemptionEndTimeString;
 var databinding string EventFolderName;
 var databinding transient Texture BackgroundImage;
-var /*0x00080000-0x00000000*/ databinding transient Texture CurrencyImage;
-var /*0x00080000-0x00000000*/ databinding transient Texture CurrencyImageLarge;
+var databinding transient Texture CurrencyImage;
+var databinding transient Texture CurrencyImageLarge;
 var databinding transient Texture LogoImage;
-var /*0x00080000-0x00000000*/ transient bool bApplied;
+var transient bool bApplied;
 
 defaultproperties
 {

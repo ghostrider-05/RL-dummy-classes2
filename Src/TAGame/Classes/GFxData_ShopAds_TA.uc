@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_ShopAds_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ transient ShopAdsConfig_TA Config;
+var transient ShopAdsConfig_TA Config;
 
 defaultproperties
 {

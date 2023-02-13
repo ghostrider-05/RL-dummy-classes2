@@ -5,21 +5,21 @@
 *******************************************************************************/
 class CameraState_DirectorProxy_TA extends CameraState_Replay_TA;
 
-var() /*0x00018000-0x00000000*/ GameEvent_Soccar_TA GameEvent;
-var() /*0x00018000-0x00000000*/ export editinline GameObserver_TA GameObserver;
-var() /*0x00010000-0x00000000*/ float MinimumStateTime;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat DistToBallWeight;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat PlayersInViewWeight;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat ViewPitchWeight;
-var() /*0x00010000-0x00000000*/ float GoalInViewWeight;
-var() /*0x00010000-0x00000000*/ float CanSeeNewViewContinuity;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat SimilarOrientationContinuity;
-var() /*0x00010000-0x00000000*/ InterpCurveFloat SimilarCarVelocityContinuity;
-var /*0x00010000-0x00000000*/ transient Vector FieldForward;
-var /*0x00010000-0x00000000*/ transient Vector FieldSide;
-var /*0x00010000-0x00000000*/ bool bActive;
-var /*0x00010000-0x00000000*/ transient CameraState_Director_TA Director;
-var /*0x00010000-0x00000000*/ transient ProfileCameraSave_TA CameraSave;
+var() GameEvent_Soccar_TA GameEvent;
+var() export editinline GameObserver_TA GameObserver;
+var() float MinimumStateTime;
+var() InterpCurveFloat DistToBallWeight;
+var() InterpCurveFloat PlayersInViewWeight;
+var() InterpCurveFloat ViewPitchWeight;
+var() float GoalInViewWeight;
+var() float CanSeeNewViewContinuity;
+var() InterpCurveFloat SimilarOrientationContinuity;
+var() InterpCurveFloat SimilarCarVelocityContinuity;
+var transient Vector FieldForward;
+var transient Vector FieldSide;
+var bool bActive;
+var transient CameraState_Director_TA Director;
+var transient ProfileCameraSave_TA CameraSave;
 
 defaultproperties
 {

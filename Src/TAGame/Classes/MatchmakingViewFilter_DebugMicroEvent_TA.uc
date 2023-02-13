@@ -6,5 +6,5 @@
 class MatchmakingViewFilter_DebugMicroEvent_TA extends Object
 	implements(IMatchmakingViewFilter_TA);
 
-var /*0x00008000-0x00000000*/ SpecialEventConfig_TA SpecialEventConfig;
-var /*0x00008000-0x00000000*/ IOnlineGamePlaylists_X Playlists;
+var SpecialEventConfig_TA SpecialEventConfig;
+var IOnlineGamePlaylists_X Playlists;

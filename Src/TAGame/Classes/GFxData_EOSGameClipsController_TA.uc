@@ -5,19 +5,15 @@
 *******************************************************************************/
 class GFxData_EOSGameClipsController_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ EOSGameClipsManager_TA GameClipsManager;
-var /*0x00010000-0x00000000*/ EOSGameClipsController_TA GameClipsController;
-var /*0x00010000-0x00000000*/ const localized string StartClippingMessage;
-var /*0x00010000-0x00000000*/ const localized string ClipUploadedMessage;
-var /*0x00010000-0x00000000*/ const localized string ClipFailedMessage;
-var /*0x00010000-0x00000000*/ const localized string ClipsUploadingMessage;
-var /*0x00010000-0x00000000*/ const localized string ClipAfterReplayMessage;
+var EOSGameClipsManager_TA GameClipsManager;
+var EOSGameClipsController_TA GameClipsController;
+var const localized string StartClippingMessage;
+var const localized string ClipUploadedMessage;
+var const localized string ClipFailedMessage;
+var const localized string ClipsUploadingMessage;
+var const localized string ClipAfterReplayMessage;
 
 defaultproperties
 {
-	StartClippingMessage="Capturing clip to save to Postparty..."
-	ClipUploadedMessage="A clip has been saved to Postparty!"
-	ClipsUploadingMessage="Uploading previous clips, try again in {x}s."
-	ClipAfterReplayMessage="A clip will be captured after this replay."
 	TableName=EOSGameClipsController
 }

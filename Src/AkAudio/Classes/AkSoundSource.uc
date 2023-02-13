@@ -46,6 +46,6 @@ var const transient Vector WorldLocation;
 var const transient Rotator WorldRotation;
 var const export editinline transient AkParamGroup Params;
 var const transient array<ActiveSound> ActiveSounds;
-var transient AkSoundSource.EAkEnvironmentType EnvironmentType;
-var array<AkSoundSource.EAkCallbackType> CallbackTypes;
+var transient EAkEnvironmentType EnvironmentType;
+var array<EAkCallbackType> CallbackTypes;
 var native transient Pointer SoundSourceId;

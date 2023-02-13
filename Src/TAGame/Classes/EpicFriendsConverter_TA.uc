@@ -9,7 +9,7 @@ var bool bCheckedToConvert;
 var EpicAccountSave_TA EpicSave;
 var array<UniqueNetId> InvitesToSend;
 var int LocalPlayerId;
-var /*0x00008000-0x00000000*/ EpicFriendsConverterConfig_TA EpicFriendsConverterConfig;
+var EpicFriendsConverterConfig_TA EpicFriendsConverterConfig;
 var OnlineSubsystem EOSSubsystem;
 var EpicFriendsPlugin_X FriendsPlugin;
 var float SecondsBetweenInvites;

@@ -13,16 +13,16 @@ enum ECameraLoopType
 	CLT_MAX
 };
 
-var() /*0x00010000-0x00000000*/ Vector StartOffset;
-var() /*0x00010000-0x00000000*/ Vector EndOffset;
-var() /*0x00010000-0x00000000*/ Rotator StartRotation;
-var() /*0x00010000-0x00000000*/ Rotator EndRotation;
-var() /*0x00010000-0x00000000*/ ViewTargetTransitionParams PanBlend;
-var() /*0x00010000-0x00000000*/ float StartFOV;
-var() /*0x00010000-0x00000000*/ float EndFOV;
-var() /*0x00010000-0x00000000*/ CameraState_DirectorMoving_TA.ECameraLoopType LoopType;
-var /*0x00010000-0x00000000*/ transient Vector CachedStart;
-var /*0x00010000-0x00000000*/ transient Vector CachedEnd;
+var() Vector StartOffset;
+var() Vector EndOffset;
+var() Rotator StartRotation;
+var() Rotator EndRotation;
+var() ViewTargetTransitionParams PanBlend;
+var() float StartFOV;
+var() float EndFOV;
+var() ECameraLoopType LoopType;
+var transient Vector CachedStart;
+var transient Vector CachedEnd;
 
 defaultproperties
 {

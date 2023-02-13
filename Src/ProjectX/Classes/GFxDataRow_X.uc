@@ -4,7 +4,8 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class GFxDataRow_X extends Object
-	abstract;
+	abstract
+	native;
 
 /** Name of the table to create */
 var() const name TableName;

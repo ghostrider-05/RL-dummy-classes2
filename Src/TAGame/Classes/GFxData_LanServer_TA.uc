@@ -12,10 +12,10 @@ var databinding string LocalizedMapName;
 var databinding string SanitizedServerName;
 var string ServerId;
 var int ServerBuildID;
-var /*0x00008000-0x00000000*/ OnlineGame_X OnlineGame;
-var /*0x00008000-0x00000000*/ OnlineSubsystem OnlineSubsystem;
-var /*0x00008000-0x00000000*/ OnlineGameWordFilter_X WorldFilter;
-var /*0x00008000-0x00000000*/ LanBrowser_X LanBrowser;
+var OnlineGame_X OnlineGame;
+var OnlineSubsystem OnlineSubsystem;
+var OnlineGameWordFilter_X WorldFilter;
+var LanBrowser_X LanBrowser;
 
 defaultproperties
 {

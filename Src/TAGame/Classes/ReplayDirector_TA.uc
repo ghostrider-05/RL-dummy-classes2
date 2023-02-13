@@ -91,7 +91,7 @@ var transient byte ScoredOnTeam;
 var repnotify transient ReplayScoreData ScoreData;
 var transient int PreviousScores[2];
 var transient int ForceCutToFocusActors;
-var /*0x00008000-0x00000000*/ CameraConfig_TA CameraConfig;
+var CameraConfig_TA CameraConfig;
 
 defaultproperties
 {

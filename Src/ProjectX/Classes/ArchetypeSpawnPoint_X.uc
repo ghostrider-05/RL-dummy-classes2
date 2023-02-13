@@ -10,7 +10,7 @@ class ArchetypeSpawnPoint_X extends Actor
 	implements(Interface_NavMeshPathObject);
 
 var string Invalid;
-var() /*0x00000800-0x00000000*/ const string ArchetypePath;
+var() const string ArchetypePath;
 var() bool bSeedNavMesh;
 var() bool bSpawnOnLevelStart;
 var() bool bOnlyAllowOneInstance;

@@ -7,8 +7,8 @@ class FreeplayCommands_TA extends Object;
 
 struct ActivateFreeplayCommandOutParams
 {
-	var /*0x00010000-0x00000000*/ FreeplayCommandsMetricsData PreActivationData;
-	var /*0x00010000-0x00000000*/ Error ExecutionError;
+	var FreeplayCommandsMetricsData PreActivationData;
+	var Error ExecutionError;
 
 	structdefaultproperties
 	{
@@ -17,6 +17,6 @@ struct ActivateFreeplayCommandOutParams
 	}
 };
 
-var /*0x00010000-0x00000000*/ GameEvent_Soccar_TA SoccarGame;
-var /*0x00018000-0x00000000*/ FreeplayCommandsConfig_TA FreeplayConfig;
-var /*0x00010000-0x00000000*/ array<FreeplayCommandEvent> ActivatedCommands;
+var GameEvent_Soccar_TA SoccarGame;
+var FreeplayCommandsConfig_TA FreeplayConfig;
+var array<FreeplayCommandEvent> ActivatedCommands;

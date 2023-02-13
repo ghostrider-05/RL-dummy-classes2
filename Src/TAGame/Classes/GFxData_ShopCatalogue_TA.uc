@@ -6,33 +6,32 @@
 class GFxData_ShopCatalogue_TA extends GFxDataRow_X
 	config(Game);
 
-var() /*0x00018000-0x00000000*/ ShopsManager_TA ShopManager;
-var /*0x00010000-0x00000000*/ databinding transient int ShopID;
-var /*0x00010000-0x00000000*/ databinding transient string ShopName;
-var /*0x00010000-0x00000000*/ databinding transient string Type;
-var /*0x00010000-0x00000000*/ databinding transient string Region;
-var /*0x00010000-0x00000000*/ databinding transient Qword StartDate;
-var /*0x00010000-0x00000000*/ databinding transient Qword EndDate;
-var /*0x00010000-0x00000000*/ databinding transient Texture ShopImage;
-var /*0x00010000-0x00000000*/ transient string ShopImageURL;
-var /*0x00090000-0x00000000*/ databinding transient bool bLoaded;
-var /*0x00010000-0x00000000*/ databinding transient bool bFailedToLoad;
-var /*0x00010000-0x00000000*/ databinding transient bool bShopItemExpired;
-var /*0x00090000-0x00000000*/ databinding transient bool bAutoReload;
-var /*0x00010000-0x00000000*/ databinding transient bool bNewCatalogue;
-var /*0x00010000-0x00000000*/ transient array<ShopItem> CachedItems;
-var /*0x00010000-0x00000000*/ config float CacheDuration;
-var /*0x00010000-0x00000000*/ transient float LastCacheTime;
-var /*0x00010000-0x00000000*/ transient float LastOwnedCacheTime;
-var /*0x00010000-0x00000000*/ transient AsyncTask ShopTask;
-var /*0x00010000-0x00000000*/ export editinline transient OnlineProductStoreSet_TA CatalogueSet;
-var /*0x00010000-0x00000000*/ transient ShopItemExpirationHelper_TA ExpirationHelper;
-var /*0x00010000-0x00000000*/ transient ShopAutoLoadHelper_TA AutoLoadHelper;
-var /*0x00018000-0x00000000*/ ShopsConfig_TA ShopsConfig;
+var() ShopsManager_TA ShopManager;
+var databinding transient int ShopID;
+var databinding transient string ShopName;
+var databinding transient string Type;
+var databinding transient string Region;
+var databinding transient Qword StartDate;
+var databinding transient Qword EndDate;
+var databinding transient Texture ShopImage;
+var transient string ShopImageURL;
+var databinding transient bool bLoaded;
+var databinding transient bool bFailedToLoad;
+var databinding transient bool bShopItemExpired;
+var databinding transient bool bAutoReload;
+var databinding transient bool bNewCatalogue;
+var transient array<ShopItem> CachedItems;
+var config float CacheDuration;
+var transient float LastCacheTime;
+var transient float LastOwnedCacheTime;
+var transient AsyncTask ShopTask;
+var export editinline transient OnlineProductStoreSet_TA CatalogueSet;
+var transient ShopItemExpirationHelper_TA ExpirationHelper;
+var transient ShopAutoLoadHelper_TA AutoLoadHelper;
+var ShopsConfig_TA ShopsConfig;
 
 defaultproperties
 {
-	CacheDuration=60.0
 	LastCacheTime=-1.0
 	TableName=ShopCatalogue
 }

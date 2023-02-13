@@ -10,7 +10,7 @@ class ProductAsset_TA extends Object
 
 struct native ProductReplacement
 {
-	var() array<WorldInfo.EConsoleType> Platforms;
+	var() array<EConsoleType> Platforms;
 	var() ProductAsset_TA Replacement;
 
 	structdefaultproperties
@@ -22,9 +22,9 @@ struct native ProductReplacement
 
 var(Product) editoronly editconst editinline ProductTemplate_TA Product;
 /** Texture to use for UI */
-var(Thumbnail) /*0x00020000-0x00000000*/ duplicatetransient editoronly const Texture2D Thumbnail;
-var(Thumbnail) /*0x00020000-0x00000000*/ ThumbnailRenderer_TA ThumbnailRenderer;
-var(Thumbnail) /*0x00020000-0x00000000*/ MaterialInterface ThumbnailMaterial;
+var(Thumbnail) duplicatetransient editoronly const Texture2D Thumbnail;
+var(Thumbnail) ThumbnailRenderer_TA ThumbnailRenderer;
+var(Thumbnail) MaterialInterface ThumbnailMaterial;
 var(Thumbnail) float ThumbnailKeyLightBrightnessScale;
 /** Offset for camera in thumbnail scene - X forward, Y right, Z up */
 var(Thumbnail) const Vector ThumbnailCameraTranslationOffset;

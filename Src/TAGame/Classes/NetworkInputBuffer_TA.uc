@@ -42,9 +42,9 @@ struct native InputBufferStats
 	}
 };
 
-var /*0x00008000-0x00000000*/ PhysicsConfig_TA PhysicsConfig;
-var /*0x00008000-0x00000000*/ NetworkJitterSettings_TA JitterSettings;
-var /*0x00008000-0x00000000*/ EngineShare_TA EngineShare;
+var PhysicsConfig_TA PhysicsConfig;
+var NetworkJitterSettings_TA JitterSettings;
+var EngineShare_TA EngineShare;
 var ClientInputData_TA PrimaryClient;
 var array<ClientInputData_TA> Clients;
 var float TimeSinceLastMovePacket;

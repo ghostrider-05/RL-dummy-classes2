@@ -6,8 +6,8 @@
 class DLCPack_TA extends Object
 	hidecategories(Object);
 
-var() array<WorldInfo.EConsoleType> UnlockedPlatforms;
-var() array<WorldInfo.EConsoleType> DiscUnlockedPlatforms;
+var() array<EConsoleType> UnlockedPlatforms;
+var() array<EConsoleType> DiscUnlockedPlatforms;
 var() ProductSlot_TA LabelSlot;
 var(Entitlements) int SteamID;
 var(Entitlements) string PS4ID;

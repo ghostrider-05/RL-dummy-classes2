@@ -28,4 +28,4 @@ var array<float> GamePings;
 var export editinline GameServerPinger_X Pinger;
 var array<float> PsyPings;
 var int PsyPacketsLost;
-var _Types_X.EConnectionType_X ConnectionType;
+var EConnectionType_X ConnectionType;

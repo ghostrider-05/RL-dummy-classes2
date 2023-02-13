@@ -18,7 +18,7 @@ defaultproperties
 	Loadout=ProductLoader_TA'Default__Car_Freeplay_TA.DefaultCarLoadout'
 	CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_Freeplay_TA.CarTrajectoryComponent0'
 	NameplateComponentCar=NameplateComponentCar_TA'Default__Car_Freeplay_TA.NameplateComponentCar0'
-	begin object name=DefaultMesh class=CarMeshComponent_TA
+	begin object name=DefaultMesh
 		ReplacementPrimitive=none
 	end object
 	// Reference: CarMeshComponent_TA'Default__Car_Freeplay_TA.DefaultMesh'
@@ -31,7 +31,7 @@ defaultproperties
 	Mesh=DefaultMesh
 	
 	CylinderComponent=CollisionCylinder
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__Car_Freeplay_TA.CollisionCylinder'

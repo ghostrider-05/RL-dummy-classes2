@@ -33,7 +33,7 @@ defaultproperties
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_Trajectory_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_Trajectory_TA.ReplayComponent0'
 	RegistryGroup=GroupComponent_ORS'Default__Ball_Trajectory_TA.DefaultRegistryGroup'
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 		CollideActors=false
 		BlockNonZeroExtent=false
@@ -46,7 +46,7 @@ defaultproperties
 	Components(2)=none
 	Components(3)=GroupComponent_ORS'Default__Ball_Trajectory_TA.DefaultRegistryGroup'
 	Components(4)=ReplayComponent_TA'Default__Ball_Trajectory_TA.ReplayComponent0'
-	begin object name=DefaultMesh class=StaticMeshComponent
+	begin object name=DefaultMesh
 		ReplacementPrimitive=none
 		CollideActors=false
 		BlockActors=false

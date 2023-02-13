@@ -23,7 +23,7 @@ var() bool bPaintParticles;
 var() bool bPaintBody;
 var() bool bGammaCorrect;
 var() name PaintParameterName;
-var() _Types_TA.EPaintColorVariant PaintType;
+var() EPaintColorVariant PaintType;
 var() array<PaintAttributeParameter> PaintAdditionalParameters;
 var() float PaintEmissiveMultiplier;
 var() editoronly editconst array<editoronly editconst MaterialInterface> PaintableMaterials;

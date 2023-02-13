@@ -3,7 +3,8 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class ExplosionHitHandler_TA extends ExplosionHitHandler_X;
+class ExplosionHitHandler_TA extends ExplosionHitHandler_X
+	native;
 
 struct native ExplosionPaintInfo
 {

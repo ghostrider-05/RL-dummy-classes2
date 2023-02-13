@@ -7,4 +7,4 @@ class GameEngine_TA extends GameEngine_X
 	transient
 	config(Engine);
 
-var /*0x00008000-0x00000000*/ ServerConfig_X ServerConfig;
+var ServerConfig_X ServerConfig;

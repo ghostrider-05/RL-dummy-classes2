@@ -15,7 +15,7 @@ enum EAkEnvironmentTarget
 };
 
 var() AkEnvironment Environment;
-var() SeqAct_AkEnvironment.EAkEnvironmentTarget Target;
+var() EAkEnvironmentTarget Target;
 
 defaultproperties
 {

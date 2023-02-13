@@ -59,7 +59,7 @@ var transient bool bWasBoostFlying;
 var transient bool bWasSuperSonic;
 var transient bool bWasOnWall;
 var bool bEnabled;
-var /*0x00010000-0x00000000*/ transient bool bPreferSimulatedState;
+var transient bool bPreferSimulatedState;
 var FXActorEvent_X ThrottleState;
 var FXActorEvent_X SuperSonicState;
 var FXActorEvent_X InAirState;

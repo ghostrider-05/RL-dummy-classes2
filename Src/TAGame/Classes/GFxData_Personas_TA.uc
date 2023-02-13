@@ -3,10 +3,11 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class GFxData_Personas_TA extends GFxDataSingleton_X;
+class GFxData_Personas_TA extends GFxDataSingleton_X
+	native;
 
 var native Map_Mirror PersonaMap;
-var /*0x00008000-0x00000000*/ transient Personas_TA PersonasData;
+var transient Personas_TA PersonasData;
 
 defaultproperties
 {

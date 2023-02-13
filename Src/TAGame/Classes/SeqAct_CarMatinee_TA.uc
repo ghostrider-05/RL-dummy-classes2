@@ -8,10 +8,10 @@ class SeqAct_CarMatinee_TA extends SeqAct_Interp
 	forcescriptorder(true)
 	hidecategories(Object);
 
-var() /*0x00010800-0x00000000*/ const string CinematicCarArchPath;
-var() /*0x00010000-0x00000000*/ bool bHideAfterPause;
-var() /*0x00010000-0x00000000*/ bool bHideAfterCompleted;
-var /*0x00010000-0x00000000*/ array< class > ClassesToNotShow;
+var() const string CinematicCarArchPath;
+var() bool bHideAfterPause;
+var() bool bHideAfterCompleted;
+var array< class > ClassesToNotShow;
 
 defaultproperties
 {

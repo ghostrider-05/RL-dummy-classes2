@@ -13,7 +13,7 @@ enum EUserSettingType
 	UserSettingType_MAX
 };
 
-var databinding GFxData_UserSetting_TA.EUserSettingType Type;
+var databinding EUserSettingType Type;
 var databinding name Group;
 var databinding name Id;
 var databinding string Label;

@@ -15,10 +15,4 @@ var config int PingsPerSecond;
 
 defaultproperties
 {
-	bUdpPingMetrics=true
-	MaxPingsPerAddress=3
-	MaxPingsWindowSeconds=1
-	StatsLogDelaySeconds=30
-	WaitForPongSeconds=1.0
-	PingsPerSecond=2
 }

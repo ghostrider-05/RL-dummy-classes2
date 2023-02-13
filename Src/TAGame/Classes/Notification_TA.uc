@@ -17,7 +17,7 @@ var databinding float PopUpDuration;
 var Qword Expiration;
 var transient NotificationManager_TA NotificationManager;
 var const class GFxDataClass;
-var /*0x00008000-0x00000000*/ CrossplayConfig_X CrossplayConfig;
+var CrossplayConfig_X CrossplayConfig;
 
 defaultproperties
 {

@@ -8,5 +8,5 @@ class ProductOverride_WheelOverrides_TA extends ProductOverride_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() array<_Types_TA.EWheelPosition> WheelsToChange;
+var() array<EWheelPosition> WheelsToChange;
 var() editinline array<editinline ProductOverride_TA> OverridesToApply;

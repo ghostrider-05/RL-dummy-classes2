@@ -7,8 +7,8 @@ class GFxData_PartyInvite_TA extends GFxDataSingleton_X;
 
 struct InviteDatabind
 {
-	var /*0x00010000-0x00000000*/ UniqueLobbyId LobbyId;
-	var /*0x00010000-0x00000000*/ databinding UniqueNetId FromUser;
+	var UniqueLobbyId LobbyId;
+	var databinding UniqueNetId FromUser;
 
 	structdefaultproperties
 	{
@@ -19,7 +19,7 @@ struct InviteDatabind
 
 struct InviteTarget
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId ToPlayer;
+	var UniqueNetId ToPlayer;
 
 	structdefaultproperties
 	{
@@ -28,13 +28,13 @@ struct InviteTarget
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding array<InviteDatabind> Invites;
-var /*0x00010000-0x00000000*/ transient array<InviteTarget> PendingInvites;
-var /*0x00010000-0x00000000*/ transient array<UniqueNetId> SilentSentInvites;
-var /*0x00018000-0x00000000*/ Parties_X PsyNetParty;
-var /*0x00018000-0x00000000*/ OnlineGameParty_X OnlineGameParty;
-var() /*0x00018000-0x00000000*/ CrossplayConfig_X CrossplayConfig;
-var /*0x00018000-0x00000000*/ transient Personas_TA PersonasData;
+var databinding array<InviteDatabind> Invites;
+var transient array<InviteTarget> PendingInvites;
+var transient array<UniqueNetId> SilentSentInvites;
+var Parties_X PsyNetParty;
+var OnlineGameParty_X OnlineGameParty;
+var() CrossplayConfig_X CrossplayConfig;
+var transient Personas_TA PersonasData;
 
 defaultproperties
 {

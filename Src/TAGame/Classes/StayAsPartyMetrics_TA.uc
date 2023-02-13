@@ -7,10 +7,10 @@ class StayAsPartyMetrics_TA extends MetricsGroup_X;
 
 struct PartyMergeResult
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-	var /*0x00010000-0x00000000*/ UniqueNetId LeaderID;
-	var /*0x00010000-0x00000000*/ bool bSuccess;
-	var /*0x00010000-0x00000000*/ name FailReason;
+	var UniqueNetId PlayerID;
+	var UniqueNetId LeaderID;
+	var bool bSuccess;
+	var name FailReason;
 
 	structdefaultproperties
 	{

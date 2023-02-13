@@ -7,7 +7,7 @@ class GFxData_PersonaGroup_TA extends GFxDataRow_X;
 
 var databinding string GroupTitle;
 var databinding int GroupId;
-var databinding _Types_TA.EPersonaInfoOrigin GroupOrigin;
+var databinding EPersonaInfoOrigin GroupOrigin;
 
 defaultproperties
 {

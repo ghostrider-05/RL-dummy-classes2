@@ -19,7 +19,7 @@ var() float KickOffActivationDelay;
 var export editinline transient StaticMeshComponent SMC;
 var transient Ball_TA WeldedBall;
 var transient float LastTouchCheckTime;
-var /*0x00080000-0x00000000*/ transient bool bBallWelded;
+var transient bool bBallWelded;
 
 defaultproperties
 {

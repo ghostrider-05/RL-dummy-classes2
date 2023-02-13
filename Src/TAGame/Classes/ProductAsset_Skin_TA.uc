@@ -39,7 +39,7 @@ var() MaterialInterface Skin;
 var() array<SkinBodySettings> BodySettings;
 var() array<BodyChassisOverride> BodyChassisOverrides;
 var() array<ProductAttachment> Attachments;
-var() _Types_TA.ESkinType SkinType;
+var() ESkinType SkinType;
 var(Thumbnail) LinearColor ThumbnailTeamColor;
 var(Thumbnail) LinearColor ThumbnailCustomColor;
 var() bool bTeamFinishDisabled;

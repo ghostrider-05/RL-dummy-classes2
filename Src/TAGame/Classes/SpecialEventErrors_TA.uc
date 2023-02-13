@@ -5,12 +5,12 @@
 *******************************************************************************/
 class SpecialEventErrors_TA extends ErrorList;
 
-var /*0x00010000-0x00000000*/ const ErrorType EventNotFound;
-var /*0x00010000-0x00000000*/ const ErrorType EventStoreCurrencyExpired;
-var /*0x00010000-0x00000000*/ const ErrorType EventStorePurchaseError;
-var /*0x00010000-0x00000000*/ const ErrorType EventStoreNotEnoughCurrency;
-var /*0x00010000-0x00000000*/ const ErrorType EventStoreLimitReached;
-var /*0x00010000-0x00000000*/ const ErrorType EventStoreDisabled;
+var const ErrorType EventNotFound;
+var const ErrorType EventStoreCurrencyExpired;
+var const ErrorType EventStorePurchaseError;
+var const ErrorType EventStoreNotEnoughCurrency;
+var const ErrorType EventStoreLimitReached;
+var const ErrorType EventStoreDisabled;
 
 defaultproperties
 {

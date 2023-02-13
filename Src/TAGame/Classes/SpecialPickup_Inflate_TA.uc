@@ -7,9 +7,9 @@ class SpecialPickup_Inflate_TA extends SpecialPickup_Targeted_TA
 	notplaceable
 	hidecategories(Navigation);
 
-var() /*0x00010000-0x00000000*/ float ScaleMultiplier;
-var() /*0x00010000-0x00000000*/ float GravityMultiplier;
-var /*0x00010000-0x00000000*/ transient Car_TA OtherCar;
+var() float ScaleMultiplier;
+var() float GravityMultiplier;
+var transient Car_TA OtherCar;
 
 defaultproperties
 {

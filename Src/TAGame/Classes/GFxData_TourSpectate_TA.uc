@@ -5,17 +5,14 @@
 *******************************************************************************/
 class GFxData_TourSpectate_TA extends GFxDataSingleton_X;
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var /*0x00010000-0x00000000*/ const localized string MatchNotAvailable;
-var /*0x00010000-0x00000000*/ const localized string SearchingTitle;
-var /*0x00010000-0x00000000*/ const localized string SearchingBody;
-var /*0x00010000-0x00000000*/ transient AsyncTask ActiveTask;
-var /*0x00010000-0x00000000*/ transient Qword PendingTourID;
+var() OnlineGameTournaments_TA Tournaments;
+var const localized string MatchNotAvailable;
+var const localized string SearchingTitle;
+var const localized string SearchingBody;
+var transient AsyncTask ActiveTask;
+var transient Qword PendingTourID;
 
 defaultproperties
 {
-	MatchNotAvailable="Tournament match has ended."
-	SearchingTitle="Searching"
-	SearchingBody="Finding server for match..."
 	TableName=TournamentSpectate
 }

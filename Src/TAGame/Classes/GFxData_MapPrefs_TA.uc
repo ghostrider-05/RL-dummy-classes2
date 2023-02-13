@@ -66,7 +66,7 @@ struct GFxMapPreference
 	var databinding name PlaylistId;
 	var databinding string Label;
 	var databinding Texture2D Thumbnail;
-	var databinding GFxData_MapPrefs_TA.EMapPrefType Preference;
+	var databinding EMapPrefType Preference;
 
 	structdefaultproperties
 	{
@@ -83,9 +83,9 @@ var() databinding array<GFxPlaylistType> PlaylistTypes;
 var() databinding array<GFxMapType> MapTypes;
 var() databinding array<GFxMapPlaylist> Playlists;
 var() databinding array<GFxMapPreference> Maps;
-var() /*0x00008000-0x00000000*/ MapPrefsConfig_X MapPrefsConfig;
+var() MapPrefsConfig_X MapPrefsConfig;
 var transient MapPrefsSave_TA MapPrefsSave;
-var /*0x00008000-0x00000000*/ transient MapsConfig_TA MapsConfig;
+var transient MapsConfig_TA MapsConfig;
 
 defaultproperties
 {

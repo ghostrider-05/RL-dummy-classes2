@@ -5,10 +5,10 @@
 *******************************************************************************/
 class AccountSettingsComponent_TA extends Component within OnlinePlayer_TA;
 
-var /*0x00080000-0x00000000*/ bool bCrossPlatformEnabled;
+var bool bCrossPlatformEnabled;
 var bool bPlatformAllowsCrossPlatform;
 var bool bPlatformAllowsInvites;
-var /*0x00080000-0x00000000*/ PlatformAccountSettings.ECrossPlatformChatState CrossPlatformChatState;
+var ECrossPlatformChatState CrossPlatformChatState;
 var NetworkSave_TA NetworkSave;
 var export editinline PlatformAccountSettings PlatformSettings;
 

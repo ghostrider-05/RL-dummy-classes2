@@ -5,9 +5,9 @@
 *******************************************************************************/
 class GFxData_ClubInvite_TA extends GFxData_ClubMember_TA;
 
-var /*0x00010000-0x00000000*/ databinding string ClubName;
-var /*0x00010000-0x00000000*/ databinding string ClubTag;
-var /*0x00010000-0x00000000*/ ClubInvite_X Invite;
+var databinding string ClubName;
+var databinding string ClubTag;
+var ClubInvite_X Invite;
 
 defaultproperties
 {

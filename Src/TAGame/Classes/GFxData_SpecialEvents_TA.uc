@@ -5,13 +5,13 @@
 *******************************************************************************/
 class GFxData_SpecialEvents_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ transient SpecialEventConfig_TA EventData;
-var /*0x00010000-0x00000000*/ databinding SpecialEventConfig_TA.ESpecialEventState EventState;
-var /*0x00010000-0x00000000*/ databinding int Currency;
-var /*0x00010000-0x00000000*/ databinding int SecondsRemaining;
-var /*0x00010000-0x00000000*/ transient array<GFxData_SpecialEventStore_TA> EventStores;
-var /*0x00010000-0x00000000*/ transient Wallet_TA Wallet;
-var /*0x00010000-0x00000000*/ databinding bool bSpecialEventButtonVisible;
+var transient SpecialEventConfig_TA EventData;
+var databinding ESpecialEventState EventState;
+var databinding int Currency;
+var databinding int SecondsRemaining;
+var transient array<GFxData_SpecialEventStore_TA> EventStores;
+var transient Wallet_TA Wallet;
+var databinding bool bSpecialEventButtonVisible;
 
 defaultproperties
 {

@@ -20,7 +20,7 @@ enum ECopyAxis
 struct native AxisConversion
 {
 	var() bool bEnabled;
-	var() SkelControlSingleBoneCopy_TA.ECopyAxis Source;
+	var() ECopyAxis Source;
 	var() float Scale;
 
 	structdefaultproperties

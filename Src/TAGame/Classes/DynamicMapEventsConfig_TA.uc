@@ -5,5 +5,5 @@
 *******************************************************************************/
 class DynamicMapEventsConfig_TA extends OnlineConfig_X;
 
-var() /*0x00010000-0x00000000*/ bool bEnabled;
-var() /*0x00010000-0x00000000*/ transient array<string> ActiveDynamicMapEvents;
+var() bool bEnabled;
+var() transient array<string> ActiveDynamicMapEvents;

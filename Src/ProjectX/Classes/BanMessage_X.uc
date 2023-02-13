@@ -6,8 +6,8 @@
 class BanMessage_X extends Object;
 
 var databinding UniqueNetId PlayerID;
-var databinding _Types_X.EBanType BanType;
-var databinding _Types_X.ESeverityType SeverityType;
+var databinding EBanType BanType;
+var databinding ESeverityType SeverityType;
 var databinding string Title;
 var databinding string Body;
 var databinding int BannedMinutes;

@@ -6,8 +6,8 @@
 class GFxData_EventsPageBrowser_TA extends GFxDataSingleton_X;
 
 var databinding bool bShowButton;
-var() /*0x00008000-0x00000000*/ UIConfig_TA UIConfig;
-var() /*0x00008000-0x00000000*/ EventsPageConfig_TA EventsConfig;
+var() UIConfig_TA UIConfig;
+var() EventsPageConfig_TA EventsConfig;
 
 defaultproperties
 {

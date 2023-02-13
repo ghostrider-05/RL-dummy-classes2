@@ -7,7 +7,7 @@ class StayAsPartyVoteYes_TA extends Actor
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ repnotify transient StayAsPartyVoter_TA Voter;
+var repnotify transient StayAsPartyVoter_TA Voter;
 
 defaultproperties
 {

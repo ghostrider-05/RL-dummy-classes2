@@ -5,7 +5,7 @@
 *******************************************************************************/
 class CameraState_DirectorCountdownTailPass_TA extends CameraState_Countdown_TA;
 
-var() /*0x00010000-0x00000000*/ float DistanceFromCar;
-var() /*0x00010000-0x00000000*/ Rotator InitialRotation;
-var() /*0x00010000-0x00000000*/ Rotator RotationSpeed;
-var() /*0x00010000-0x00000000*/ float FOV;
+var() float DistanceFromCar;
+var() Rotator InitialRotation;
+var() Rotator RotationSpeed;
+var() float FOV;

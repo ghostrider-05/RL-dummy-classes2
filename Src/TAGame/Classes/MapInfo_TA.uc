@@ -23,7 +23,7 @@ struct WorldColorData
 };
 
 var() WorldColorData WorldColors;
-var() _Types_TA.EMirrorFieldType MirrorFieldType;
+var() EMirrorFieldType MirrorFieldType;
 var() int MirrorFieldXYRotation;
 var() bool bCanMirrorTraining;
 var() bool bMirrorTrainingSwapsGoals;
@@ -41,7 +41,7 @@ var(AutoCam) float CountDownFOV;
 var(AutoCam) float BackAwayFromWallDistance;
 var(Spectator) Vector PylonExtentOverride;
 var(Sound) ArenaSoundSettings_TA ArenaSoundSettings;
-var(Sound) /*0x00010000-0x00000000*/ CrowdSoundsBase_TA CrowdSounds;
+var(Sound) CrowdSoundsBase_TA CrowdSounds;
 var(Sound) array<CrowdActor_TA> CrowdActors;
 
 defaultproperties

@@ -17,7 +17,7 @@ var() databinding bool bShowStarterBundles;
 var() databinding bool bPurchaseProTier;
 var databinding bool bShowAnthems;
 var int ClubInvitationLimit;
-var /*0x00080000-0x00000000*/ _Types_TA.EMainMenuBackground MainMenuBG;
+var EMainMenuBackground MainMenuBG;
 var array<TeamColor> MainMenuTeamColors;
 var array<int> XPDataRanges;
 var databinding int TradeConfirmationLockoutSeconds;

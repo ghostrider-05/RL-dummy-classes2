@@ -5,8 +5,8 @@
 *******************************************************************************/
 class FaceItFindServerTask_TA extends AsyncTask;
 
-var() /*0x00010000-0x00000000*/ float SearchTimeout;
-var /*0x00010000-0x00000000*/ RPC_X RPC;
+var() float SearchTimeout;
+var RPC_X RPC;
 
 defaultproperties
 {

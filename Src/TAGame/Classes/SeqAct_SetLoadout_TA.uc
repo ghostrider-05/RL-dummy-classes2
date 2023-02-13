@@ -25,7 +25,7 @@ var() bool bUseDefaultLoadout;
 var() bool bApplyToAllCars;
 var() LinearColor TeamColor;
 var() LinearColor AccentColor;
-var() SeqAct_SetLoadout_TA.EForcedTeamOverride ForcedTeamOverride;
+var() EForcedTeamOverride ForcedTeamOverride;
 var ProductPaint_TA BodyPaint;
 var ProductPaint_TA SkinPaint;
 var ProductPaint_TA WheelPaint;

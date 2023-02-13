@@ -5,4 +5,4 @@
 *******************************************************************************/
 class AntiAddiction_TA extends Object within OnlinePlayer_X;
 
-var /*0x00010000-0x00000000*/ int Hours;
+var int Hours;

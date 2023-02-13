@@ -21,16 +21,11 @@ var config float VerifyProductsDelay;
 var array<ProductInstanceID> RemovedProductsDuringVerify;
 var bool bIsVerifyingProducts;
 var Guid PendingTradeId;
-var /*0x00018000-0x00000000*/ EOSVoiceManager_TA VoiceManager;
+var EOSVoiceManager_TA VoiceManager;
 
 defaultproperties
 {
-	PlayerJoinPartyString="joined the party"
-	PlayerLeavePartyString="left the party"
-	LocalPlayerLeavePartyString="You left the party"
-	PlayerNewLeaderPartyString="is the new party leader"
 	AssetCache=ProductAssetCache_TA'Default__OnlineGameParty_TA.DefaultAssetCache'
-	VerifyProductsDelay=2.0
 	MessageComponent=OnlineMessageComponent_X'Default__OnlineGameParty_TA.DefaultMessageComponent'
 	NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_TA.NullSearchStatus0'
 }

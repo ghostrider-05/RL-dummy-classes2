@@ -15,5 +15,5 @@ enum EAxleToForce
 	EAxleToForce_MAX
 };
 
-var() AssetAttribute_ForceWheelAxle_TA.EAxleToForce AxleToForce;
+var() EAxleToForce AxleToForce;
 var() ProductAsset_Wheel_TA ForcedWheel;

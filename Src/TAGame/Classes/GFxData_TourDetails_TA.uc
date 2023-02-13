@@ -5,17 +5,17 @@
 *******************************************************************************/
 class GFxData_TourDetails_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ transient TourSettings_TA Settings;
-var /*0x00010000-0x00000000*/ export editinline transient OnlineProductStoreSet_TA OnlineProductSet;
-var /*0x00010000-0x00000000*/ TourDetailsSync_TA DetailsSync;
-var /*0x00010000-0x00000000*/ TourSettings_TA TourSettings;
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var() /*0x00010000-0x00000000*/ databinding array<GFxTournamentReward> Rewards;
-var /*0x00010000-0x00000000*/ databinding Texture CreatorAvatar;
-var /*0x00010000-0x00000000*/ databinding string CreatorPlatform;
-var /*0x00010000-0x00000000*/ databinding bool bRegistered;
-var /*0x00010000-0x00000000*/ databinding bool bAdmin;
-var /*0x00010000-0x00000000*/ databinding bool bCanCheckIn;
+var transient TourSettings_TA Settings;
+var export editinline transient OnlineProductStoreSet_TA OnlineProductSet;
+var TourDetailsSync_TA DetailsSync;
+var TourSettings_TA TourSettings;
+var() OnlineGameTournaments_TA Tournaments;
+var() databinding array<GFxTournamentReward> Rewards;
+var databinding Texture CreatorAvatar;
+var databinding string CreatorPlatform;
+var databinding bool bRegistered;
+var databinding bool bAdmin;
+var databinding bool bCanCheckIn;
 
 defaultproperties
 {

@@ -5,10 +5,10 @@
 *******************************************************************************/
 class GFxData_EOSGameClipsMaskArea_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ EOSGameClipsManager_TA GameClipsManager;
-var /*0x00010000-0x00000000*/ array<GameClipsMaskArea> ActiveMaskAreas;
-var /*0x00010000-0x00000000*/ Canvas DrawableCanvas;
-var /*0x00010000-0x00000000*/ const Color DebugDrawColor;
+var EOSGameClipsManager_TA GameClipsManager;
+var array<GameClipsMaskArea> ActiveMaskAreas;
+var Canvas DrawableCanvas;
+var const Color DebugDrawColor;
 
 defaultproperties
 {

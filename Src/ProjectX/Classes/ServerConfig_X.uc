@@ -22,15 +22,4 @@ var() config float MinSecondsUntilConnectionCheck;
 
 defaultproperties
 {
-	HeartbeatSeconds=300.0
-	HeartbeatRetrySeconds=20.0
-	bUploadLogFiles=true
-	bUploadReplays=true
-	bFlatbufferRecordInput=true
-	MaxUploadLogFileSize=1048576
-	NetServerMaxTickRate=57.0
-	IdleNetServerMaxTickRate=20.0
-	FlatbufferPacketSendRate=30
-	MinSecondsForUnstableConnection=20.0
-	MinSecondsUntilConnectionCheck=5.0
 }

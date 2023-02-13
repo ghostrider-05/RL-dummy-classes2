@@ -50,7 +50,7 @@ struct FilterProductQuality
 {
 	var databinding string Label;
 	var databinding bool bSelected;
-	var databinding _Types_TA.EProductQuality Quality;
+	var databinding EProductQuality Quality;
 	var databinding int PreviewQuantity;
 
 	structdefaultproperties
@@ -113,7 +113,7 @@ struct FilterProductPaint
 struct FilterProductSorting
 {
 	var databinding string Label;
-	var databinding _Types_TA.EProductFilterSortType SortType;
+	var databinding EProductFilterSortType SortType;
 
 	structdefaultproperties
 	{
@@ -128,21 +128,21 @@ var databinding string Label;
 var databinding array<FilterProductSlot> Slots;
 var databinding array<FilterProductQuality> Qualities;
 var databinding array<FilterProductAttribute> Attributes;
-var /*0x00010000-0x00000000*/ databinding array<FilterProductPaint> Paints;
+var databinding array<FilterProductPaint> Paints;
 var databinding array<FilterProductSeries> SeriesIDs;
 var databinding array<FilterProductSorting> SortingLabels;
 var databinding bool bIgnoreEquipped;
 var transient bool bTradeInScreenSelected;
 var() config bool bAllowDefaultProducts;
-var transient array<GFxData_ProductFilter_TA.EProductFilterType> FilterStack;
+var transient array<EProductFilterType> FilterStack;
 var transient ProductFilter Filters[EProductFilterType];
 var() config array<config string> ProductQualitiesToIgnore;
 var() config array<config string> ProductSortingToIgnore;
 var() config array<config string> ProductAttributesToIgnore;
 var() config string DefaultSorting;
 var transient GarageArchiveSlot_TA GarageArchiveSlot;
-var() /*0x00008000-0x00000000*/ MtxConfig_TA MtxConfig;
-var /*0x00008000-0x00000000*/ ProductsConfig_TA ProductsConfig;
+var() MtxConfig_TA MtxConfig;
+var ProductsConfig_TA ProductsConfig;
 
 defaultproperties
 {

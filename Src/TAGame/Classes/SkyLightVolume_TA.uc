@@ -7,8 +7,8 @@ class SkyLightVolume_TA extends Volume
 	hidecategories(Navigation,Object,Movement,Display,Volume);
 
 var() export editinline SkyLightVolumeComponent_TA SkyLight;
-var() _Types_TA.EPaintTeam UpperPaintTeam;
-var() _Types_TA.EPaintTeam LowerPaintTeam;
+var() EPaintTeam UpperPaintTeam;
+var() EPaintTeam LowerPaintTeam;
 
 defaultproperties
 {
@@ -21,7 +21,7 @@ defaultproperties
 	LowerPaintTeam=PaintTeam_None
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		ReplacementPrimitive=none
 		bAcceptsLights=false
 		CollideActors=false

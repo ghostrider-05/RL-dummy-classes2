@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class SeqAct_SpawnFXActor_TA extends SequenceAction
+	native
 	forcescriptorder(true)
 	hidecategories(Object);
 

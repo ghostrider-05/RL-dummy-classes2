@@ -41,7 +41,7 @@ var() CarColorSet_TA CarColorSet_v1;
 var() CarColorSet_TA CarColorSet_v2;
 var() LinearColor FontColor;
 var() LinearColor ColorBlindFontColor;
-var /*0x00008000-0x00000000*/ CrossplayConfig_X Crossplay;
+var CrossplayConfig_X Crossplay;
 var transient Color TeamControllerColor;
 var transient Color TeamScoreStrobeColor;
 var TeamColorScriptedTexture_TA TeamScriptedTexture;
@@ -53,16 +53,16 @@ var transient array<PRI_TA> Members;
 var transient array<PRI_TA> FormerMembers;
 var repnotify transient string CustomTeamName;
 var export editinline TeamNameComponent_TA TeamNameComponent;
-var /*0x00010000-0x00000000*/ repnotify Qword ClubID;
+var repnotify Qword ClubID;
 var ProductAsset_Logo_TA Logo;
 var repnotify transient ReplicatedLogoData LogoData;
-var /*0x00080000-0x00000000*/ repnotify transient ClubColorSet ClubColors;
+var repnotify transient ClubColorSet ClubColors;
 var() VoteActor_TA ForfeitVoteArchetype;
 var transient VoteActor_TA ForfeitVote;
 var transient VoteActor_TA PartyUpVote;
 var transient bool bForfeit;
 var transient array<TemporarySpawnSpot> TemporarySpawnSpots;
-var /*0x00080000-0x00000000*/ transient int Difficulty;
+var transient int Difficulty;
 
 defaultproperties
 {

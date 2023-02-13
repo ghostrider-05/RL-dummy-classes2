@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_LegalText_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ array<_Types_Core.OnlinePlatform> LegacyLegalPlatforms;
+var array<_Types_Core.OnlinePlatform> LegacyLegalPlatforms;
 
 defaultproperties
 {

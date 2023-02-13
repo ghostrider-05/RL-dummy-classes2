@@ -4,17 +4,17 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class RLBot_SessionRecorder_TA extends Actor
+	native
 	config(Game)
 	notplaceable
 	hidecategories(Navigation);
 
-var() /*0x00010000-0x00000000*/ config int MaxRecordSizeMB;
-var /*0x00010000-0x00000000*/ array<byte> Data;
-var /*0x00010000-0x00000000*/ native Pointer Archive;
-var /*0x00010000-0x00000000*/ array<PlayerActorIDPair> PlayerActorIDMap;
+var() config int MaxRecordSizeMB;
+var array<byte> Data;
+var native Pointer Archive;
+var array<PlayerActorIDPair> PlayerActorIDMap;
 
 defaultproperties
 {
-	MaxRecordSizeMB=10
 	CollisionType=COLLIDE_CustomDefault
 }

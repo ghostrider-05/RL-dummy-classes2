@@ -6,24 +6,23 @@
 class GFxData_Shops_TA extends GFxDataSingleton_X
 	config(Game);
 
-var() /*0x00018000-0x00000000*/ ShopsManager_TA ShopManager;
-var /*0x00018000-0x00000000*/ transient ShopsConfig_TA Config;
-var /*0x00010000-0x00000000*/ transient array<GFxData_ShopCatalogue_TA> Shops;
-var /*0x00010000-0x00000000*/ databinding int DebugShopID;
-var /*0x00010000-0x00000000*/ databinding bool bHideMainMenuButton;
-var /*0x00010000-0x00000000*/ databinding bool bNewCatalogues;
-var /*0x00010000-0x00000000*/ export editinline transient OnlineProductStoreSet_TA CrateShopSet;
-var /*0x00010000-0x00000000*/ config float CacheDuration;
-var /*0x00010000-0x00000000*/ transient float LastCacheTime;
-var /*0x00010000-0x00000000*/ transient AsyncTask ShopTask;
-var /*0x00010000-0x00000000*/ export editinline ShopMetrics_TA ShopMetrics;
-var /*0x00010000-0x00000000*/ export editinline ShopTabs_TA ShopTabs;
-var /*0x00010000-0x00000000*/ transient ShopCatalogueCacheSave_TA CatalogueCache;
+var() ShopsManager_TA ShopManager;
+var transient ShopsConfig_TA Config;
+var transient array<GFxData_ShopCatalogue_TA> Shops;
+var databinding int DebugShopID;
+var databinding bool bHideMainMenuButton;
+var databinding bool bNewCatalogues;
+var export editinline transient OnlineProductStoreSet_TA CrateShopSet;
+var config float CacheDuration;
+var transient float LastCacheTime;
+var transient AsyncTask ShopTask;
+var export editinline ShopMetrics_TA ShopMetrics;
+var export editinline ShopTabs_TA ShopTabs;
+var transient ShopCatalogueCacheSave_TA CatalogueCache;
 
 defaultproperties
 {
 	DebugShopID=-1
-	CacheDuration=1800.0
 	LastCacheTime=-1.0
 	
 	ShopTabs=DefaultShopTabs

@@ -5,6 +5,6 @@
 *******************************************************************************/
 class GFxTourList_TA extends Component;
 
-var /*0x00010000-0x00000000*/ transient GFxShell_X Shell;
-var /*0x00010000-0x00000000*/ export editinline transient TourList_TA TourList;
-var /*0x00010000-0x00000000*/ transient class GFxDataClass;
+var transient GFxShell_X Shell;
+var export editinline transient TourList_TA TourList;
+var transient class GFxDataClass;

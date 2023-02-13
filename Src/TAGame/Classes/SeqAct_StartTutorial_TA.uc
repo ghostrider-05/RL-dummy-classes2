@@ -8,7 +8,7 @@ class SeqAct_StartTutorial_TA extends SequenceAction
 	hidecategories(Object);
 
 var Actor Instigator;
-var() /*0x00000800-0x00000000*/ const string TutorialName;
+var() const string TutorialName;
 
 defaultproperties
 {

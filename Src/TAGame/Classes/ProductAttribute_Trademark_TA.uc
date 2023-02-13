@@ -16,4 +16,4 @@ enum ETrademarkGlyph
 	TrademarkGlyph_MAX
 };
 
-var() const ProductAttribute_Trademark_TA.ETrademarkGlyph Glyph;
+var() const ETrademarkGlyph Glyph;

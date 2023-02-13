@@ -54,9 +54,9 @@ struct native RPCResponse
 
 var native const noexport Pointer VfTable_FTickableObject;
 var() float AuthTimeoutSeconds;
-var() /*0x00008000-0x00000000*/ RPCConfig_X RPCConfig;
-var() /*0x00008000-0x00000000*/ PsyNetRetryConfig_X RetryConfig;
-var() /*0x00008000-0x00000000*/ PsyNetUrl_X PsyNetUrl;
+var() RPCConfig_X RPCConfig;
+var() PsyNetRetryConfig_X RetryConfig;
+var() PsyNetUrl_X PsyNetUrl;
 var const array<PendingRPC> PendingRPCs;
 var array<RPCBatch_X> PendingBatches;
 var native const Map_Mirror ServiceFailureDelayTimes;

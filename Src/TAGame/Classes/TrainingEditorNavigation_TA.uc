@@ -5,11 +5,11 @@
 *******************************************************************************/
 class TrainingEditorNavigation_TA extends Object;
 
-var /*0x00018000-0x00000000*/ TrainingEditorNavigationConfig_TA TrainingNavigationConfig;
-var /*0x00010000-0x00000000*/ IStartRound_TA RoundStarter;
-var /*0x00010000-0x00000000*/ IGetRoundNumber_TA RoundNumberGetter;
-var /*0x00010000-0x00000000*/ transient array<int> UnshuffledPlaylist;
-var /*0x00010000-0x00000000*/ transient array<int> ActivePlaylist;
-var /*0x00010000-0x00000000*/ transient int CurrentActivePlaylistIndex;
-var /*0x00090000-0x00000000*/ transient int CurrentUnshuffledPlaylistIndex;
-var /*0x00090000-0x00000000*/ transient bool bShufflePlay;
+var TrainingEditorNavigationConfig_TA TrainingNavigationConfig;
+var IStartRound_TA RoundStarter;
+var IGetRoundNumber_TA RoundNumberGetter;
+var transient array<int> UnshuffledPlaylist;
+var transient array<int> ActivePlaylist;
+var transient int CurrentActivePlaylistIndex;
+var transient int CurrentUnshuffledPlaylistIndex;
+var transient bool bShufflePlay;

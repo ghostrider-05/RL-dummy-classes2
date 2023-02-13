@@ -5,12 +5,12 @@
 *******************************************************************************/
 class GFxData_TourBracket_TA extends GFxDataSingleton_X;
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var /*0x00010000-0x00000000*/ databinding Qword PlayerTeamID;
-var /*0x00010000-0x00000000*/ databinding int TotalRounds;
-var /*0x00010000-0x00000000*/ databinding Qword Id;
-var /*0x00010000-0x00000000*/ databinding array<ShopCurrencyInfo> CurrentPayouts;
-var() /*0x00010000-0x00000000*/ export editinline TourBracketSync_TA BracketSync;
+var() OnlineGameTournaments_TA Tournaments;
+var databinding Qword PlayerTeamID;
+var databinding int TotalRounds;
+var databinding Qword Id;
+var databinding array<ShopCurrencyInfo> CurrentPayouts;
+var() export editinline TourBracketSync_TA BracketSync;
 
 defaultproperties
 {

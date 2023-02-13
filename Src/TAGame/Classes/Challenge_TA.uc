@@ -5,13 +5,13 @@
 *******************************************************************************/
 class Challenge_TA extends ChallengeDefault_TA within ChallengeManager_TA;
 
-var /*0x00010000-0x00000000*/ databinding bool bIsHidden;
-var /*0x00010000-0x00000000*/ databinding bool bRewardsAvailable;
-var /*0x00010000-0x00000000*/ databinding bool bNotifyNewInfo;
-var /*0x00010000-0x00000000*/ databinding bool bComplete;
-var /*0x00010000-0x00000000*/ databinding int CompleteCount;
-var /*0x00010000-0x00000000*/ databinding Qword ProgressResetTimeUTC;
-var /*0x00010000-0x00000000*/ array<ChallengeRequirement_TA> RequirementProgress;
+var databinding bool bIsHidden;
+var databinding bool bRewardsAvailable;
+var databinding bool bNotifyNewInfo;
+var databinding bool bComplete;
+var databinding int CompleteCount;
+var databinding Qword ProgressResetTimeUTC;
+var array<ChallengeRequirement_TA> RequirementProgress;
 
 defaultproperties
 {

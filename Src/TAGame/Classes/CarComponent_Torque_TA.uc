@@ -7,10 +7,10 @@ class CarComponent_Torque_TA extends CarComponent_TA
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ transient float TorqueScale;
-var /*0x00010000-0x00000000*/ transient Vector TorqueInput;
-var /*0x00010000-0x00000000*/ repnotify transient int ReplicatedTorqueInput;
-var /*0x00010000-0x00000000*/ const float TorqueTimeScale;
+var transient float TorqueScale;
+var transient Vector TorqueInput;
+var repnotify transient int ReplicatedTorqueInput;
+var const float TorqueTimeScale;
 
 defaultproperties
 {

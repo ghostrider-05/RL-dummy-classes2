@@ -11,6 +11,5 @@ var const localized string ItemRemoved;
 
 defaultproperties
 {
-	ItemRemoved="Removed from Steam Workshop by Author"
 	TableName=Workshop
 }

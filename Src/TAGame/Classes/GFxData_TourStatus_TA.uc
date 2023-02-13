@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_TourStatus_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ TourStatus_TA Status;
+var TourStatus_TA Status;
 
 defaultproperties
 {

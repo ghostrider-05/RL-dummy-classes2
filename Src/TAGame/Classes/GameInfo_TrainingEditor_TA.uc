@@ -7,7 +7,7 @@ class GameInfo_TrainingEditor_TA extends GameInfo_GameEditor_TA
 	config(Game)
 	hidecategories(Navigation,Movement,Collision);
 
-var /*0x00010000-0x00000000*/ transient bool bCanExportMatinee;
+var transient bool bCanExportMatinee;
 
 defaultproperties
 {

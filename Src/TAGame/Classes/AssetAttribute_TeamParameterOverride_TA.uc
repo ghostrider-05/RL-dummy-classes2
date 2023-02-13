@@ -8,5 +8,5 @@ class AssetAttribute_TeamParameterOverride_TA extends ProductAssetAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() _Types_TA.EPaintTeam Team;
+var() EPaintTeam Team;
 var() MaterialParams ParamOverrides;

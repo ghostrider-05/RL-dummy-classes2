@@ -12,11 +12,11 @@ enum EChallengeFilter
 	CF_MAX
 };
 
-var /*0x00010000-0x00000000*/ databinding string ActiveFolderCodeName;
-var /*0x00010000-0x00000000*/ databinding GFxData_ChallengeManager_TA.EChallengeFilter ActiveChallengeFilter;
-var /*0x00010000-0x00000000*/ ChallengeManager_TA ChallengeManager;
-var /*0x00010000-0x00000000*/ array<GFxData_ChallengePage_TA> GFxChallengePages;
-var /*0x00010000-0x00000000*/ array< class > ChallengeFilters;
+var databinding string ActiveFolderCodeName;
+var databinding EChallengeFilter ActiveChallengeFilter;
+var ChallengeManager_TA ChallengeManager;
+var array<GFxData_ChallengePage_TA> GFxChallengePages;
+var array< class > ChallengeFilters;
 
 defaultproperties
 {

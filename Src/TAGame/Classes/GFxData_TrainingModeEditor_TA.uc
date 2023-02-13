@@ -10,7 +10,7 @@ var databinding transient string SanitizedTrainingModeName;
 var databinding transient array<EditorRoundData> RoundData;
 var databinding transient int CurrentRound;
 var databinding transient array<TrainingModeTag> Tags;
-var databinding transient _Types_TA.EEditingType Editing;
+var databinding transient EEditingType Editing;
 var databinding transient float BallStartSpeed;
 var databinding transient float BallScreenPosX;
 var databinding transient float BallScreenPosY;

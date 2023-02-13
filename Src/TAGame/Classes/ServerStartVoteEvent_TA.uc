@@ -7,9 +7,9 @@ class ServerStartVoteEvent_TA extends Object;
 
 struct PartyInfo
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId LeaderID;
-	var /*0x00010000-0x00000000*/ array<UniqueNetId> FollowerIds;
-	var /*0x00010000-0x00000000*/ Actor VoterOwner;
+	var UniqueNetId LeaderID;
+	var array<UniqueNetId> FollowerIds;
+	var Actor VoterOwner;
 
 	structdefaultproperties
 	{
@@ -19,5 +19,5 @@ struct PartyInfo
 	}
 };
 
-var /*0x00010000-0x00000000*/ array<PartyInfo> Parties;
-var /*0x00010000-0x00000000*/ Actor VoteOwner;
+var array<PartyInfo> Parties;
+var Actor VoteOwner;

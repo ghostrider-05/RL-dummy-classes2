@@ -32,7 +32,7 @@ enum ETrainingRoundAttempt
 struct TrainingRoundProgress
 {
 	var databinding int RoundNumber;
-	var databinding _TrainingTypes_TA.ETrainingRoundAttempt Status;
+	var databinding ETrainingRoundAttempt Status;
 
 	structdefaultproperties
 	{

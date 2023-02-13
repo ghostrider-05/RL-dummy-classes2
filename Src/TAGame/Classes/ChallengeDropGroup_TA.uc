@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ChallengeDropGroup_TA extends CompleteTaskDropGroup_TA;
 
-var /*0x00010000-0x00000000*/ databinding bool bPremium;
+var databinding bool bPremium;
 
 defaultproperties
 {

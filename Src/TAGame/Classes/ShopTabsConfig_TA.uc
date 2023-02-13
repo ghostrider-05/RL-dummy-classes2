@@ -5,15 +5,15 @@
 *******************************************************************************/
 class ShopTabsConfig_TA extends OnlineConfig_X;
 
-var() /*0x00010000-0x00000000*/ array<string> EsportsShopValidRegions;
-var() /*0x00010000-0x00000000*/ string ShopType_Bundle;
-var() /*0x00010000-0x00000000*/ string ShopType_Featured;
-var() /*0x00010000-0x00000000*/ string ShopType_Tournament;
-var() /*0x00010000-0x00000000*/ string ShopType_EsportsTeam;
-var() /*0x00010000-0x00000000*/ bool bDisableItemsInCatalogCheck;
-var() /*0x00010000-0x00000000*/ bool bDebugShowIds;
-var() /*0x00010000-0x00000000*/ bool bDebugVerboseDebugging;
-var /*0x00010000-0x00000000*/ IEpochNow Time;
+var() array<string> EsportsShopValidRegions;
+var() string ShopType_Bundle;
+var() string ShopType_Featured;
+var() string ShopType_Tournament;
+var() string ShopType_EsportsTeam;
+var() bool bDisableItemsInCatalogCheck;
+var() bool bDebugShowIds;
+var() bool bDebugVerboseDebugging;
+var IEpochNow Time;
 
 defaultproperties
 {

@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_TourDependentMatch_TA extends GFxData_TourBracketMatch_TA;
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
+var() OnlineGameTournaments_TA Tournaments;
 
 defaultproperties
 {

@@ -8,10 +8,10 @@ class RLBot_Util_TA extends Object
 
 struct native BotLoadout
 {
-	var /*0x00010000-0x00000000*/ array<int> Products;
-	var /*0x00010000-0x00000000*/ array<int> Paints;
-	var /*0x00010000-0x00000000*/ Color PrimaryColor;
-	var /*0x00010000-0x00000000*/ Color SecondaryColor;
+	var array<int> Products;
+	var array<int> Paints;
+	var Color PrimaryColor;
+	var Color SecondaryColor;
 
 	structdefaultproperties
 	{
@@ -24,13 +24,13 @@ struct native BotLoadout
 
 struct native PlayerStats
 {
-	var /*0x00010000-0x00000000*/ int Score;
-	var /*0x00010000-0x00000000*/ int Goals;
-	var /*0x00010000-0x00000000*/ int OwnGoals;
-	var /*0x00010000-0x00000000*/ int Assists;
-	var /*0x00010000-0x00000000*/ int Saves;
-	var /*0x00010000-0x00000000*/ int Shots;
-	var /*0x00010000-0x00000000*/ int Demolitions;
+	var int Score;
+	var int Goals;
+	var int OwnGoals;
+	var int Assists;
+	var int Saves;
+	var int Shots;
+	var int Demolitions;
 
 	structdefaultproperties
 	{
@@ -44,14 +44,12 @@ struct native PlayerStats
 	}
 };
 
-var /*0x00010000-0x00000000*/ config string ControllerURL;
-var /*0x00010000-0x00000000*/ config string OutputFilePath;
-var /*0x00010000-0x00000000*/ config float PacketSendRate;
-var /*0x00010000-0x00000000*/ bool bRecordInput;
+var config string ControllerURL;
+var config string OutputFilePath;
+var config float PacketSendRate;
+var bool bRecordInput;
 
 defaultproperties
 {
-	ControllerURL="127.0.0.1:50000"
-	PacketSendRate=60.0
 	bRecordInput=true
 }

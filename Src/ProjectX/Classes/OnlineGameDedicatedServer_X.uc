@@ -13,7 +13,7 @@ var transient int EnvironmentZone;
 var transient OnlineGameStats_X GameStats;
 var() OnlineGameDedicatedServerRegistration_X Registration;
 var() OnlineGameReservations_X Reservations;
-var /*0x00010000-0x00000000*/ transient ClanforgeReservation_X Clanforge;
+var transient ClanforgeReservation_X Clanforge;
 var transient string Region;
 var transient string DataCenter;
 var int CurrentPlaylistId;
@@ -23,7 +23,7 @@ var transient float AverageConservativeMMR;
 var transient int MachineId;
 var transient CustomMatchSettings CustomMatch;
 var transient UniqueNetId CustomMatchOwner;
-var /*0x00010000-0x00000000*/ Qword CustomMatchClubID;
+var Qword CustomMatchClubID;
 var transient bool bQueuedShutdown;
 var transient bool bFindingReplacementServer;
 var bool bHasValidMigrationServer;
@@ -34,8 +34,8 @@ var export editinline ServerPlayerTracker_X PlayerTracker;
 var() class MatchRecorderClass;
 var MatchRecorder_X MatchRecorder;
 var MatchLog_X MatchLog;
-var() /*0x00008000-0x00000000*/ ServerConfig_X Config;
-var /*0x00008000-0x00000000*/ PsyNetConfig_X PsyNetConfig;
+var() ServerConfig_X Config;
+var PsyNetConfig_X PsyNetConfig;
 
 defaultproperties
 {

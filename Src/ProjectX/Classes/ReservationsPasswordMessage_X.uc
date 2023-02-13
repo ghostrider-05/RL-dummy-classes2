@@ -12,4 +12,4 @@ enum EPasswordFailureReason
 	PFR_MAX
 };
 
-var ReservationsPasswordMessage_X.EPasswordFailureReason Reason;
+var EPasswordFailureReason Reason;

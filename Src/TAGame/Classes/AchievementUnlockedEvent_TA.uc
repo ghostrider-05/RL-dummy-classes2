@@ -5,5 +5,5 @@
 *******************************************************************************/
 class AchievementUnlockedEvent_TA extends Object;
 
-var _Types_TA.EAchievementType Type;
+var EAchievementType Type;
 var int LocalId;

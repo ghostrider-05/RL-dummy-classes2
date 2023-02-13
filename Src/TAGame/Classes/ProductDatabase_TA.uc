@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ProductDatabase_TA extends Object
+	native
 	config(Game);
 
 struct native TemporaryProduct
@@ -40,5 +41,4 @@ var config bool bUseQualityToCheckForOnlineProduct;
 
 defaultproperties
 {
-	bUseQualityToCheckForOnlineProduct=true
 }

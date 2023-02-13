@@ -7,8 +7,8 @@ class GFxData_ClubServerBrowser_TA extends GFxDataSingleton_X;
 
 struct GFxClubServer
 {
-	var /*0x00010000-0x00000000*/ ClubServerResult_X Server;
-	var /*0x00010000-0x00000000*/ databinding string ServerName;
+	var ClubServerResult_X Server;
+	var databinding string ServerName;
 
 	structdefaultproperties
 	{
@@ -17,9 +17,9 @@ struct GFxClubServer
 	}
 };
 
-var /*0x00010000-0x00000000*/ OnlineClubServerList_X ServerList;
-var /*0x00010000-0x00000000*/ databinding array<GFxClubServer> Servers;
-var /*0x00010000-0x00000000*/ databinding bool bRefreshing;
+var OnlineClubServerList_X ServerList;
+var databinding array<GFxClubServer> Servers;
+var databinding bool bRefreshing;
 
 defaultproperties
 {

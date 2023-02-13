@@ -17,13 +17,13 @@ enum EBoostType
 
 var() float BoostAmount;
 var() AkSoundCue LocalPickupSound;
-var() VehiclePickup_Boost_TA.EBoostType BoostType;
+var() EBoostType BoostType;
 
 defaultproperties
 {
 	
 	CylinderComponent=DefaultCollisionCylinder
-	begin object name=DefaultCollisionCylinder class=CylinderComponent
+	begin object name=DefaultCollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__VehiclePickup_Boost_TA.DefaultCollisionCylinder'

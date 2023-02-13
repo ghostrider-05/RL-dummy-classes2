@@ -5,7 +5,7 @@
 *******************************************************************************/
 class PostProcessManager_TA extends PostProcessManager_X within PlayerControllerBase_TA;
 
-var transient UberPostProcessEffect.EPostProcessAAType PostProcessAAType;
+var transient EPostProcessAAType PostProcessAAType;
 var float DOF_DistanceLimit;
 var float DOF_InnerRadiusLimit;
 var float DOF_KernelDefault;

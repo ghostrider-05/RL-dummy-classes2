@@ -5,26 +5,24 @@
 *******************************************************************************/
 class GFxData_AutoTour_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ AutoTourConfig_TA Config;
-var /*0x00010000-0x00000000*/ databinding string ScheduleRegionLabel;
-var /*0x00010000-0x00000000*/ databinding int NumWeeksInCycle;
-var /*0x00010000-0x00000000*/ databinding int CycleScore;
-var /*0x00010000-0x00000000*/ databinding int CurrencyID;
-var /*0x00010000-0x00000000*/ databinding bool bDisplayCompletedTourResults;
-var /*0x00010000-0x00000000*/ transient array<GFxData_AutoTour_TourCard_TA> TourCards;
-var /*0x00010000-0x00000000*/ transient array<GFxData_AutoTour_Week_TA> Weeks;
-var /*0x00010000-0x00000000*/ transient GFxData_AutoTour_CompletedResults_TA EndOfTournamentResults;
-var /*0x00010000-0x00000000*/ const localized string TournamentBanMessage;
-var /*0x00010000-0x00000000*/ const localized string PartyMembersTournamentBanned;
-var /*0x00018000-0x00000000*/ PsyNet_X PsyNet;
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var /*0x00018000-0x00000000*/ AutoTourConfig_TA AutoTourConfig;
-var /*0x00010000-0x00000000*/ transient AutoTour_TA AutoTour;
+var AutoTourConfig_TA Config;
+var databinding string ScheduleRegionLabel;
+var databinding int NumWeeksInCycle;
+var databinding int CycleScore;
+var databinding int CurrencyID;
+var databinding bool bDisplayCompletedTourResults;
+var transient array<GFxData_AutoTour_TourCard_TA> TourCards;
+var transient array<GFxData_AutoTour_Week_TA> Weeks;
+var transient GFxData_AutoTour_CompletedResults_TA EndOfTournamentResults;
+var const localized string TournamentBanMessage;
+var const localized string PartyMembersTournamentBanned;
+var PsyNet_X PsyNet;
+var() OnlineGameTournaments_TA Tournaments;
+var AutoTourConfig_TA AutoTourConfig;
+var transient AutoTour_TA AutoTour;
 
 defaultproperties
 {
-	TournamentBanMessage="You have been banned from tournaments for leaving early or idling. The ban will be lifted in [PenaltyHours] hour(s), [PenaltyMinutes] minute(s)."
-	PartyMembersTournamentBanned="Your party cannot join this tournament. The following party members are banned from tournaments: {BannedPlayers}"
 	TableName=AutoTournament
 	ProxyClass=class'AutoTour_TA'
 	bLevelTransitionPersistent=true

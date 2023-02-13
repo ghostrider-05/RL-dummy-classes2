@@ -8,7 +8,7 @@ class PlayerController_Replay_TA extends PlayerControllerBase_TA
 	hidecategories(Navigation);
 
 var() HUD SplitscreenHUDArchetype;
-var /*0x00008000-0x00000000*/ transient GameEvent_TA GameEvent;
+var transient GameEvent_TA GameEvent;
 
 defaultproperties
 {
@@ -17,7 +17,7 @@ defaultproperties
 	ForceFeedbackManagerClassName=""
 	RegistryGroup=GroupComponent_ORS'Default__PlayerController_Replay_TA.DefaultRegistryGroup'
 	Components(0)=GroupComponent_ORS'Default__PlayerController_Replay_TA.DefaultRegistryGroup'
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__PlayerController_Replay_TA.CollisionCylinder'

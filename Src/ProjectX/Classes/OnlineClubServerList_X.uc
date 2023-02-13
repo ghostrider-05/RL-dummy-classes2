@@ -5,6 +5,6 @@
 *******************************************************************************/
 class OnlineClubServerList_X extends Object;
 
-var /*0x00010000-0x00000000*/ array<ClubServerResult_X> Servers;
-var /*0x00010000-0x00000000*/ RPC_GetClubPrivateMatches_X RPC;
-var /*0x00010000-0x00000000*/ Error Error;
+var array<ClubServerResult_X> Servers;
+var RPC_GetClubPrivateMatches_X RPC;
+var Error Error;

@@ -7,9 +7,9 @@ class CinematicIntroSequence_TA extends Object within GFxData_CinematicIntro_TA;
 
 struct PressedAxis
 {
-	var /*0x00010000-0x00000000*/ name Key;
-	var /*0x00010000-0x00000000*/ _Types_X.EAxisSign AxisSign;
-	var /*0x00010000-0x00000000*/ float PressTime;
+	var name Key;
+	var EAxisSign AxisSign;
+	var float PressTime;
 
 	structdefaultproperties
 	{
@@ -19,20 +19,20 @@ struct PressedAxis
 	}
 };
 
-var /*0x00010000-0x00000000*/ int SequenceIndex;
-var /*0x00010000-0x00000000*/ GFxModal_X MessageModal;
-var /*0x00010000-0x00000000*/ const array<name> ActionNames;
-var /*0x00010000-0x00000000*/ array<name> PressedKeys;
-var /*0x00010000-0x00000000*/ array<PressedAxis> PressedAxes;
-var /*0x00010000-0x00000000*/ const string LocalizationFile;
-var /*0x00010000-0x00000000*/ const string LocalizationGroup;
-var /*0x00010000-0x00000000*/ const string LocalizationKeyPrefix;
-var /*0x00010000-0x00000000*/ const float AxisDeadzone;
-var /*0x00010000-0x00000000*/ const float AxisPressTime;
-var /*0x00010000-0x00000000*/ const float AutoFinishTime;
-var /*0x00010000-0x00000000*/ array<PlayerBinding> TrackedBindingsPC;
-var /*0x00010000-0x00000000*/ array<PlayerBinding> TrackedBindingsGamepad;
-var /*0x00010000-0x00000000*/ Interaction InputInteraction;
+var int SequenceIndex;
+var GFxModal_X MessageModal;
+var const array<name> ActionNames;
+var array<name> PressedKeys;
+var array<PressedAxis> PressedAxes;
+var const string LocalizationFile;
+var const string LocalizationGroup;
+var const string LocalizationKeyPrefix;
+var const float AxisDeadzone;
+var const float AxisPressTime;
+var const float AutoFinishTime;
+var array<PlayerBinding> TrackedBindingsPC;
+var array<PlayerBinding> TrackedBindingsGamepad;
+var Interaction InputInteraction;
 
 defaultproperties
 {

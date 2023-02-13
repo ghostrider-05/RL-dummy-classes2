@@ -5,10 +5,10 @@
 *******************************************************************************/
 class PartyLeaderChangedEvent_TA extends Object;
 
-var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-var /*0x00010000-0x00000000*/ UniqueNetId NewLeaderID;
-var /*0x00010000-0x00000000*/ array<UniqueNetId> NewFollowerIds;
-var /*0x00010000-0x00000000*/ Actor VoterOwner;
+var UniqueNetId PlayerID;
+var UniqueNetId NewLeaderID;
+var array<UniqueNetId> NewFollowerIds;
+var Actor VoterOwner;
 
 defaultproperties
 {

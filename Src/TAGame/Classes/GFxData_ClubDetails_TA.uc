@@ -5,19 +5,19 @@
 *******************************************************************************/
 class GFxData_ClubDetails_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding Qword ClubID;
-var /*0x00010000-0x00000000*/ databinding string ClubName;
-var /*0x00010000-0x00000000*/ databinding string ClubTag;
-var /*0x00010000-0x00000000*/ databinding string ClubMotD;
-var /*0x00010000-0x00000000*/ databinding int PrimaryColorID;
-var /*0x00010000-0x00000000*/ databinding int AccentColorID;
-var /*0x00010000-0x00000000*/ databinding UniqueNetId OwnerId;
-var /*0x00010000-0x00000000*/ databinding bool bVerified;
-var /*0x00010000-0x00000000*/ databinding bool bCrossPlatformFiltered;
-var /*0x00010000-0x00000000*/ transient ClubDetails_X ClubDetails;
-var /*0x00010000-0x00000000*/ transient array<GFxData_ClubMember_TA> ClubMembers;
-var /*0x00018000-0x00000000*/ OnlineGameWordFilter_X WordFilter;
-var /*0x00018000-0x00000000*/ CrossplayConfig_X CrossplayConfig;
+var databinding Qword ClubID;
+var databinding string ClubName;
+var databinding string ClubTag;
+var databinding string ClubMotD;
+var databinding int PrimaryColorID;
+var databinding int AccentColorID;
+var databinding UniqueNetId OwnerId;
+var databinding bool bVerified;
+var databinding bool bCrossPlatformFiltered;
+var transient ClubDetails_X ClubDetails;
+var transient array<GFxData_ClubMember_TA> ClubMembers;
+var OnlineGameWordFilter_X WordFilter;
+var CrossplayConfig_X CrossplayConfig;
 
 defaultproperties
 {

@@ -12,8 +12,8 @@ enum EAdHocState
 	AHS_MAX
 };
 
-var databinding GFxData_AdHoc_TA.EAdHocState AdHocDesiredState;
-var databinding GFxData_AdHoc_TA.EAdHocState AdHocState;
+var databinding EAdHocState AdHocDesiredState;
+var databinding EAdHocState AdHocState;
 
 defaultproperties
 {

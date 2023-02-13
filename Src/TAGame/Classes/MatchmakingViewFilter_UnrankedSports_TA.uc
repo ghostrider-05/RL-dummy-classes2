@@ -6,4 +6,4 @@
 class MatchmakingViewFilter_UnrankedSports_TA extends Object
 	implements(IMatchmakingViewFilter_TA);
 
-var /*0x00008000-0x00000000*/ IOnlineGamePlaylists_X Playlists;
+var IOnlineGamePlaylists_X Playlists;

@@ -8,7 +8,7 @@ class EventRecorder_X extends Component
 	native;
 
 var native const noexport Pointer VfTable_FTickableObject;
-var /*0x00008000-0x00000000*/ EventRecorderConfig_X Config;
+var EventRecorderConfig_X Config;
 var() int MaxQueuedEvents;
 var() int MaxQueuedMinutes;
 var bool bPaused;

@@ -10,4 +10,4 @@ class GFxHUD_Soccar_TA extends GFxHUD_TA
 
 var transient GameEvent_Soccar_TA SoccarGame;
 var GFxData_ServerPerformanceStats_TA GFxServerPerformanceStats;
-var /*0x00010000-0x00000000*/ PreMatchLobby_TA PreMatchLobby;
+var PreMatchLobby_TA PreMatchLobby;

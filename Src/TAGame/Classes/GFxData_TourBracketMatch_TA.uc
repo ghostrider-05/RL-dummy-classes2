@@ -5,20 +5,20 @@
 *******************************************************************************/
 class GFxData_TourBracketMatch_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding int MatchID;
-var /*0x00010000-0x00000000*/ databinding int Round;
-var /*0x00010000-0x00000000*/ databinding int Order;
-var /*0x00010000-0x00000000*/ databinding int NextMatch;
-var /*0x00010000-0x00000000*/ databinding int PrevMatchA;
-var /*0x00010000-0x00000000*/ databinding int PrevMatchB;
-var /*0x00010000-0x00000000*/ databinding Qword TeamA;
-var /*0x00010000-0x00000000*/ databinding Qword TeamB;
-var /*0x00010000-0x00000000*/ databinding int TeamAWins;
-var /*0x00010000-0x00000000*/ databinding int TeamBWins;
-var /*0x00010000-0x00000000*/ databinding Qword WinnerTeam;
-var /*0x00010000-0x00000000*/ databinding bool bInProgress;
-var /*0x00010000-0x00000000*/ databinding bool bCanSpectate;
-var /*0x00010000-0x00000000*/ class GFxGameClass;
+var databinding int MatchID;
+var databinding int Round;
+var databinding int Order;
+var databinding int NextMatch;
+var databinding int PrevMatchA;
+var databinding int PrevMatchB;
+var databinding Qword TeamA;
+var databinding Qword TeamB;
+var databinding int TeamAWins;
+var databinding int TeamBWins;
+var databinding Qword WinnerTeam;
+var databinding bool bInProgress;
+var databinding bool bCanSpectate;
+var class GFxGameClass;
 
 defaultproperties
 {

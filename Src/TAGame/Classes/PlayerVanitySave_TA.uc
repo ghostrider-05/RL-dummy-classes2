@@ -8,4 +8,4 @@ class PlayerVanitySave_TA extends SaveObject_TA
 
 var ProductInstanceID InstanceID;
 var int ProductID;
-var /*0x00080000-0x00000000*/ int SelectedColorValue;
+var int SelectedColorValue;

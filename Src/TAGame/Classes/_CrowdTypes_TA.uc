@@ -17,8 +17,8 @@ enum ECrowdValueType
 
 struct CrowdExcitementSound
 {
-	var() /*0x00010000-0x00000000*/ AkSoundCue Sound;
-	var() /*0x00010000-0x00000000*/ float Value;
+	var() AkSoundCue Sound;
+	var() float Value;
 
 	structdefaultproperties
 	{
@@ -29,11 +29,11 @@ struct CrowdExcitementSound
 
 struct CrowdExcitementSounds
 {
-	var() /*0x00010000-0x00000000*/ name Name;
-	var() /*0x00010000-0x00000000*/ float Cooldown;
-	var() /*0x00010000-0x00000000*/ array<CrowdExcitementSound> Sounds;
-	var() /*0x00010000-0x00000000*/ _CrowdTypes_TA.ECrowdValueType CompareType;
-	var /*0x00010000-0x00000000*/ transient float LastPlayed;
+	var() name Name;
+	var() float Cooldown;
+	var() array<CrowdExcitementSound> Sounds;
+	var() ECrowdValueType CompareType;
+	var transient float LastPlayed;
 
 	structdefaultproperties
 	{
@@ -47,9 +47,9 @@ struct CrowdExcitementSounds
 
 struct CrowdDefense
 {
-	var() /*0x00010000-0x00000000*/ float DefenseZoneTime;
-	var() /*0x00010000-0x00000000*/ float DefenseZoneDistance;
-	var() /*0x00010000-0x00000000*/ float ReplayDelay;
+	var() float DefenseZoneTime;
+	var() float DefenseZoneDistance;
+	var() float ReplayDelay;
 
 	structdefaultproperties
 	{
@@ -61,9 +61,9 @@ struct CrowdDefense
 
 struct CrowdScoreState
 {
-	var() /*0x00010000-0x00000000*/ int MaxIncreaseScoreSeparation;
-	var() /*0x00010000-0x00000000*/ int MaxDecreaseScoreSeparation;
-	var() /*0x00010000-0x00000000*/ name StateName;
+	var() int MaxIncreaseScoreSeparation;
+	var() int MaxDecreaseScoreSeparation;
+	var() name StateName;
 
 	structdefaultproperties
 	{
@@ -75,8 +75,8 @@ struct CrowdScoreState
 
 struct CrowdValueState
 {
-	var() /*0x00010000-0x00000000*/ float Value;
-	var() /*0x00010000-0x00000000*/ name StateName;
+	var() float Value;
+	var() name StateName;
 
 	structdefaultproperties
 	{

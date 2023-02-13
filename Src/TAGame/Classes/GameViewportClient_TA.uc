@@ -14,8 +14,8 @@ var transient bool bDrawBuildInfo;
 var transient array<float> LastSplitJoinTryTimes;
 var float UIScaleModifier;
 var float NameplateScaleModifier;
-var /*0x00008000-0x00000000*/ GameEvent_TA GameEvent;
-var /*0x00008000-0x00000000*/ OnlineGame_X OnlineGame;
+var GameEvent_TA GameEvent;
+var OnlineGame_X OnlineGame;
 var const localized string SplitscreenPlayerLeftTournamentTitle;
 var const localized string SplitscreenPlayerLeftTournamentBody;
 
@@ -23,8 +23,6 @@ defaultproperties
 {
 	UIScaleModifier=1.0
 	NameplateScaleModifier=1.0
-	SplitscreenPlayerLeftTournamentTitle="Unsubscribed from Tournament"
-	SplitscreenPlayerLeftTournamentBody="You have been removed from the pending tournament because a splitscreen player left. Please rejoin if you would like to participate."
 	MaxSplitScreenPlayers=4
 	Default2PSplitType=eSST_2P_VERTICAL
 	Default3PSplitType=eSST_3P_FAVOR_SIDELEFT

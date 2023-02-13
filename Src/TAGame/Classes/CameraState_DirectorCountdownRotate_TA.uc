@@ -5,10 +5,10 @@
 *******************************************************************************/
 class CameraState_DirectorCountdownRotate_TA extends CameraState_Countdown_TA;
 
-var() /*0x00010000-0x00000000*/ float FOV;
-var() /*0x00010000-0x00000000*/ float Distance;
-var() /*0x00010000-0x00000000*/ Rotator InitialRotation;
-var() /*0x00010000-0x00000000*/ Rotator RotationSpeed;
+var() float FOV;
+var() float Distance;
+var() Rotator InitialRotation;
+var() Rotator RotationSpeed;
 
 defaultproperties
 {

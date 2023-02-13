@@ -19,9 +19,9 @@ var float TrappedHorizontalSpeed;
 var float TrappedVerticalSpeed;
 var float TrappedCaptureTime;
 var float HitPhysicsDuration;
-var /*0x00080000-0x00000000*/ byte ReplicatedBeamBrokenValue;
-var /*0x00080000-0x00000000*/ byte LastTeamTouch;
-var /*0x00080000-0x00000000*/ byte DeactivatedGoalIndex;
+var byte ReplicatedBeamBrokenValue;
+var byte LastTeamTouch;
+var byte DeactivatedGoalIndex;
 var transient byte TotalActiveBeams;
 var transient Vector SeekTarget;
 var transient float NextNeutralTime;
@@ -45,7 +45,7 @@ defaultproperties
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_Haunted_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_Haunted_TA.ReplayComponent0'
 	RegistryGroup=GroupComponent_ORS'Default__Ball_Haunted_TA.DefaultRegistryGroup'
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__Ball_Haunted_TA.CollisionCylinder'
@@ -56,7 +56,7 @@ defaultproperties
 	Components(2)=none
 	Components(3)=GroupComponent_ORS'Default__Ball_Haunted_TA.DefaultRegistryGroup'
 	Components(4)=ReplayComponent_TA'Default__Ball_Haunted_TA.ReplayComponent0'
-	begin object name=DefaultMesh class=StaticMeshComponent
+	begin object name=DefaultMesh
 		ReplacementPrimitive=none
 	end object
 	// Reference: StaticMeshComponent'Default__Ball_Haunted_TA.DefaultMesh'

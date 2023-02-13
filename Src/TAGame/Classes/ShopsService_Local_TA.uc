@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ShopsService_Local_TA extends ShopsService_TA;
 
-var() /*0x00010000-0x00000000*/ float ServiceDelay;
+var() float ServiceDelay;
 
 defaultproperties
 {

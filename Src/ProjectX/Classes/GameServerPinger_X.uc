@@ -5,6 +5,6 @@
 *******************************************************************************/
 class GameServerPinger_X extends Component;
 
-var /*0x00008000-0x00000000*/ BeaconConfig_X Config;
+var BeaconConfig_X Config;
 var name Address;
 var export editinline UdpPingBeaconClient_X PingBeacon;

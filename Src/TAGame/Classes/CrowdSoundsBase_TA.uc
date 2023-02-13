@@ -5,17 +5,17 @@
 *******************************************************************************/
 class CrowdSoundsBase_TA extends Object;
 
-var() /*0x00010000-0x00000000*/ AkSoundCue Sound;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds GameStart;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds RoundStart;
-var() /*0x00010000-0x00000000*/ array<CrowdExcitementSounds> MatchEndCountDown;
-var() /*0x00010000-0x00000000*/ AkSoundCue LowEnergyChant;
-var() /*0x00010000-0x00000000*/ AkSoundCue OvertimeStart;
-var() /*0x00010000-0x00000000*/ AkSoundCue Win;
-var() /*0x00010000-0x00000000*/ AkSoundCue Lose;
-var() /*0x00010000-0x00000000*/ AkSoundCue Forfeit;
-var() /*0x00010000-0x00000000*/ AkSoundCue MatchEndedEncore;
-var() /*0x00010000-0x00000000*/ float MatchEndedEncoreDelay;
+var() AkSoundCue Sound;
+var() CrowdExcitementSounds GameStart;
+var() CrowdExcitementSounds RoundStart;
+var() array<CrowdExcitementSounds> MatchEndCountDown;
+var() AkSoundCue LowEnergyChant;
+var() AkSoundCue OvertimeStart;
+var() AkSoundCue Win;
+var() AkSoundCue Lose;
+var() AkSoundCue Forfeit;
+var() AkSoundCue MatchEndedEncore;
+var() float MatchEndedEncoreDelay;
 
 defaultproperties
 {

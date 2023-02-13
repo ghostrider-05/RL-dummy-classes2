@@ -5,4 +5,4 @@
 *******************************************************************************/
 class OnlineClubCache_X extends Component;
 
-var /*0x00010000-0x00000000*/ array<ClubDetails_X> ClubDetailsCache;
+var array<ClubDetails_X> ClubDetailsCache;

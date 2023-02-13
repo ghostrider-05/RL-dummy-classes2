@@ -5,12 +5,12 @@
 *******************************************************************************/
 class ClubDetails_X extends ClubSettings_X;
 
-var /*0x00010000-0x00000000*/ Qword ClubID;
-var /*0x00010000-0x00000000*/ UniqueNetId OwnerPlayerID;
-var /*0x00010000-0x00000000*/ string MotD;
-var /*0x00010000-0x00000000*/ bool bVerified;
-var /*0x00010000-0x00000000*/ Qword LastUpdatedTime;
-var /*0x00010000-0x00000000*/ array<ClubMember> Members;
+var Qword ClubID;
+var UniqueNetId OwnerPlayerID;
+var string MotD;
+var bool bVerified;
+var Qword LastUpdatedTime;
+var array<ClubMember> Members;
 
 defaultproperties
 {

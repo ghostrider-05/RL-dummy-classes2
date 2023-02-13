@@ -5,13 +5,13 @@
 *******************************************************************************/
 class RocketPassConfig_TA extends OnlineConfig_X;
 
-var /*0x00010000-0x00000000*/ int RocketPassID;
-var /*0x00010000-0x00000000*/ Qword StartTime;
-var /*0x00010000-0x00000000*/ Qword EndTime;
-var /*0x00010000-0x00000000*/ int StartRangeSeconds;
-var /*0x00010000-0x00000000*/ Qword FinalStartTime;
-var /*0x00090000-0x00000000*/ transient bool bIsActive;
-var /*0x00010000-0x00000000*/ bool bHideMainMenuButton;
+var int RocketPassID;
+var Qword StartTime;
+var Qword EndTime;
+var int StartRangeSeconds;
+var Qword FinalStartTime;
+var transient bool bIsActive;
+var bool bHideMainMenuButton;
 
 defaultproperties
 {

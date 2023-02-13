@@ -9,7 +9,7 @@ var int ProductID;
 var ProductHashID HashID;
 var array<int> ReferencedViews;
 var OnlineProduct_TA OnlineProduct;
-var _Types_TA.EProductThumbnailSize ThumbnailSize;
+var EProductThumbnailSize ThumbnailSize;
 var ProductThumbnailAsset_TA ThumbnailAsset;
 var ProductAsset_TA Asset;
 var ProductThumbnail_TA Thumbnail;

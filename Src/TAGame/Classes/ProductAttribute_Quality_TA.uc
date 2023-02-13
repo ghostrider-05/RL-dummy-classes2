@@ -7,7 +7,7 @@ class ProductAttribute_Quality_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var _Types_TA.EProductQuality Quality;
+var EProductQuality Quality;
 
 defaultproperties
 {

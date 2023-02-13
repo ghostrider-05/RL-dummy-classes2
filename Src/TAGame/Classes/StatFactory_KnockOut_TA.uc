@@ -9,25 +9,25 @@ class StatFactory_KnockOut_TA extends StatFactory_TA
 
 struct StatEventCollection_KO
 {
-	var /*0x00010000-0x00000000*/ StatEvent_TA KnockOut;
-	var /*0x00010000-0x00000000*/ StatEvent_TA KnockoutAssist;
-	var /*0x00010000-0x00000000*/ StatEvent_TA Death;
-	var /*0x00010000-0x00000000*/ StatEvent_TA PlayerGrabbed;
-	var /*0x00010000-0x00000000*/ StatEvent_TA PlayerThrown;
-	var /*0x00010000-0x00000000*/ StatEvent_TA Grabbed;
-	var /*0x00010000-0x00000000*/ StatEvent_TA Thrown;
-	var /*0x00010000-0x00000000*/ StatEvent_TA HeavyHit;
-	var /*0x00010000-0x00000000*/ StatEvent_TA LightHit;
-	var /*0x00010000-0x00000000*/ StatEvent_TA AerialHeavyHit;
-	var /*0x00010000-0x00000000*/ StatEvent_TA AerialLightHit;
-	var /*0x00010000-0x00000000*/ StatEvent_TA HitTaken;
-	var /*0x00010000-0x00000000*/ StatEvent_TA HeavyBlock;
-	var /*0x00010000-0x00000000*/ StatEvent_TA LightBlock;
-	var /*0x00010000-0x00000000*/ StatEvent_TA BlockTaken;
-	var /*0x00010000-0x00000000*/ StatEvent_TA DoubleKO;
-	var /*0x00010000-0x00000000*/ StatEvent_TA TripleKO;
-	var /*0x00010000-0x00000000*/ StatEvent_TA MassKO;
-	var /*0x00010000-0x00000000*/ StatEvent_TA Winner;
+	var StatEvent_TA KnockOut;
+	var StatEvent_TA KnockoutAssist;
+	var StatEvent_TA Death;
+	var StatEvent_TA PlayerGrabbed;
+	var StatEvent_TA PlayerThrown;
+	var StatEvent_TA Grabbed;
+	var StatEvent_TA Thrown;
+	var StatEvent_TA HeavyHit;
+	var StatEvent_TA LightHit;
+	var StatEvent_TA AerialHeavyHit;
+	var StatEvent_TA AerialLightHit;
+	var StatEvent_TA HitTaken;
+	var StatEvent_TA HeavyBlock;
+	var StatEvent_TA LightBlock;
+	var StatEvent_TA BlockTaken;
+	var StatEvent_TA DoubleKO;
+	var StatEvent_TA TripleKO;
+	var StatEvent_TA MassKO;
+	var StatEvent_TA Winner;
 
 	structdefaultproperties
 	{
@@ -53,9 +53,9 @@ struct StatEventCollection_KO
 	}
 };
 
-var /*0x00010000-0x00000000*/ const StatEventCollection_KO Events_KO;
-var /*0x00010000-0x00000000*/ transient GameEvent_KnockOut_TA KnockOutGame;
-var /*0x00010000-0x00000000*/ const float AerialHitFloorDistance;
+var const StatEventCollection_KO Events_KO;
+var transient GameEvent_KnockOut_TA KnockOutGame;
+var const float AerialHitFloorDistance;
 
 defaultproperties
 {

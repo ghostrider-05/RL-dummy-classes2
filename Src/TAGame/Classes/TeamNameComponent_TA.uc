@@ -5,6 +5,6 @@
 *******************************************************************************/
 class TeamNameComponent_TA extends Component;
 
-var /*0x00080000-0x00000000*/ string SanitizedTeamName;
-var /*0x00080000-0x00000000*/ bool bHasCustomColor;
+var string SanitizedTeamName;
+var bool bHasCustomColor;
 var int TeamIndex;

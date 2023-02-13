@@ -9,7 +9,7 @@ class ProductPaint_TA extends Object
 
 var() const editconst localized string Label;
 var() LinearColor Colors[EPaintColorVariant];
-var() _Types_TA.EPaintFinishType FinishType;
+var() EPaintFinishType FinishType;
 var() bool bVisible;
 
 defaultproperties

@@ -8,13 +8,13 @@ class GameEvent_Football_TA extends GameEvent_Soccar_TA
 	notplaceable
 	hidecategories(Navigation,Actor,Object);
 
-var /*0x00010000-0x00000000*/ int LastScoredTeamIndex;
-var /*0x00010000-0x00000000*/ const Vector GoalPlayerSpawnOffset;
-var /*0x00010000-0x00000000*/ const Vector BallKickOffDirection;
-var /*0x00010000-0x00000000*/ const Vector BallKickOffTorque;
-var /*0x00010000-0x00000000*/ const float BallKickOffScale;
-var /*0x00010000-0x00000000*/ const float SpawnRadiusCheck;
-var /*0x00010000-0x00000000*/ const float KickoffDelay;
+var int LastScoredTeamIndex;
+var const Vector GoalPlayerSpawnOffset;
+var const Vector BallKickOffDirection;
+var const Vector BallKickOffTorque;
+var const float BallKickOffScale;
+var const float SpawnRadiusCheck;
+var const float KickoffDelay;
 
 defaultproperties
 {

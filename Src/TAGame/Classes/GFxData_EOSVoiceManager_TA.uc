@@ -5,22 +5,22 @@
 *******************************************************************************/
 class GFxData_EOSVoiceManager_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ array<GFxData_EOSVoiceRoom_TA> TrackedRooms;
-var /*0x00010000-0x00000000*/ transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
-var /*0x00010000-0x00000000*/ transient SoundSettingsSave_TA SoundSettingsSave;
-var /*0x00010000-0x00000000*/ transient UISavedValues_TA UISavedValues;
-var /*0x00010000-0x00000000*/ bool bPushToTalkActive;
-var /*0x00010000-0x00000000*/ bool bInMapTransition;
-var /*0x00010000-0x00000000*/ databinding bool bMainMenuNotifications;
-var /*0x00010000-0x00000000*/ databinding bool bMatchNotifications;
-var /*0x00010000-0x00000000*/ databinding bool bVoiceSettingEnabled;
-var /*0x00010000-0x00000000*/ databinding bool bDisplayVoiceTab;
-var /*0x00010000-0x00000000*/ databinding bool bVoiceFeatureEnabled;
-var /*0x00010000-0x00000000*/ const float InactivePTTVolume;
-var /*0x00010000-0x00000000*/ const float ActivePTTVolume;
-var /*0x00010000-0x00000000*/ transient GameViewportClient_X ViewportClient;
-var /*0x00018000-0x00000000*/ EOSVoiceManager_TA VoiceManager;
-var /*0x00018000-0x00000000*/ EOSVoiceConfig_TA VoiceConfig;
+var array<GFxData_EOSVoiceRoom_TA> TrackedRooms;
+var transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
+var transient SoundSettingsSave_TA SoundSettingsSave;
+var transient UISavedValues_TA UISavedValues;
+var bool bPushToTalkActive;
+var bool bInMapTransition;
+var databinding bool bMainMenuNotifications;
+var databinding bool bMatchNotifications;
+var databinding bool bVoiceSettingEnabled;
+var databinding bool bDisplayVoiceTab;
+var databinding bool bVoiceFeatureEnabled;
+var const float InactivePTTVolume;
+var const float ActivePTTVolume;
+var transient GameViewportClient_X ViewportClient;
+var EOSVoiceManager_TA VoiceManager;
+var EOSVoiceConfig_TA VoiceConfig;
 
 defaultproperties
 {

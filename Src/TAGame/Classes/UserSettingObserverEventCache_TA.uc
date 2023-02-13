@@ -7,9 +7,9 @@ class UserSettingObserverEventCache_TA extends Component;
 
 struct SettingEvent
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-	var /*0x00010000-0x00000000*/ name Id;
-	var /*0x00010000-0x00000000*/ string Value;
+	var UniqueNetId PlayerID;
+	var name Id;
+	var string Value;
 
 	structdefaultproperties
 	{
@@ -19,8 +19,8 @@ struct SettingEvent
 	}
 };
 
-var() /*0x00010000-0x00000000*/ float CacheTimeout;
-var /*0x00010000-0x00000000*/ transient array<SettingEvent> Events;
+var() float CacheTimeout;
+var transient array<SettingEvent> Events;
 
 defaultproperties
 {

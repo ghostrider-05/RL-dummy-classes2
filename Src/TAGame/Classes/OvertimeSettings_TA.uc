@@ -5,5 +5,5 @@
 *******************************************************************************/
 class OvertimeSettings_TA extends Object;
 
-var() _Types_TA.EMatchTieBreaker TieBreaker;
+var() int /** _Types_TA.EMatchTieBreaker*/ TieBreaker;
 var() int OvertimeGameTime;

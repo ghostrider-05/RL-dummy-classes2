@@ -28,7 +28,7 @@ var GFxModal_X ResetModal;
 var transient int ShotAttempt;
 var transient int RedoTotal;
 var transient int GoalieScore;
-var transient GameEvent_TrainingEditor_TA.EPlayTestType PlayTestType;
+var transient EPlayTestType PlayTestType;
 var transient array<Actor> GoalMeshBlockers;
 var Actor GoalMeshBlockerArchetype;
 var transient SaveData_GameEditor_Training_TA TrainingData;
@@ -36,10 +36,10 @@ var transient name PrePlaytestState;
 var float SaveDelayTime;
 var float SaveCooldown;
 var transient string TrainingFileName;
-var /*0x00008000-0x00000000*/ TrainingEditorNavigationConfig_TA TrainingNavigationConfig;
-var /*0x00008000-0x00000000*/ TrainingEditorManipulationConfig_TA TrainingManipulationConfig;
-var /*0x00010000-0x00000000*/ transient TrainingEditorNavigation_TA TrainingNavigator;
-var /*0x00010000-0x00000000*/ transient TrainingEditorMirror_TA TrainingMirror;
+var TrainingEditorNavigationConfig_TA TrainingNavigationConfig;
+var TrainingEditorManipulationConfig_TA TrainingManipulationConfig;
+var transient TrainingEditorNavigation_TA TrainingNavigator;
+var transient TrainingEditorMirror_TA TrainingMirror;
 
 defaultproperties
 {

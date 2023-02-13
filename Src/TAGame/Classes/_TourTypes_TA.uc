@@ -17,8 +17,8 @@ enum ETourSeedType
 
 struct TourReward
 {
-	var /*0x00010000-0x00000000*/ array<OnlineProductData> Rewards;
-	var /*0x00010000-0x00000000*/ int Placement;
+	var array<OnlineProductData> Rewards;
+	var int Placement;
 
 	structdefaultproperties
 	{
@@ -29,9 +29,9 @@ struct TourReward
 
 struct TourPlayer
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-	var /*0x00010000-0x00000000*/ string PlayerName;
-	var /*0x00010000-0x00000000*/ transient Texture Avatar;
+	var UniqueNetId PlayerID;
+	var string PlayerName;
+	var transient Texture Avatar;
 
 	structdefaultproperties
 	{
@@ -43,11 +43,11 @@ struct TourPlayer
 
 struct TourTeam
 {
-	var /*0x00010000-0x00000000*/ Qword TeamID;
-	var /*0x00010000-0x00000000*/ CustomMatchTeamSettings Settings;
-	var /*0x00010000-0x00000000*/ array<TourPlayer> Players;
-	var /*0x00010000-0x00000000*/ Qword Seed;
-	var /*0x00010000-0x00000000*/ int Difficulty;
+	var Qword TeamID;
+	var CustomMatchTeamSettings Settings;
+	var array<TourPlayer> Players;
+	var Qword Seed;
+	var int Difficulty;
 
 	structdefaultproperties
 	{
@@ -61,11 +61,11 @@ struct TourTeam
 
 struct TourMatchGame
 {
-	var /*0x00010000-0x00000000*/ int GameTimeSeconds;
-	var /*0x00010000-0x00000000*/ bool bOverTime;
-	var /*0x00010000-0x00000000*/ bool bAborted;
-	var /*0x00010000-0x00000000*/ Qword Winner;
-	var /*0x00010000-0x00000000*/ int Scores[2];
+	var int GameTimeSeconds;
+	var bool bOverTime;
+	var bool bAborted;
+	var Qword Winner;
+	var int Scores[2];
 
 	structdefaultproperties
 	{
@@ -80,13 +80,13 @@ struct TourMatchGame
 
 struct TourPlayerStats
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-	var /*0x00010000-0x00000000*/ int TeamNum;
-	var /*0x00010000-0x00000000*/ int Score;
-	var /*0x00010000-0x00000000*/ int Saves;
-	var /*0x00010000-0x00000000*/ int Shots;
-	var /*0x00010000-0x00000000*/ int Goals;
-	var /*0x00010000-0x00000000*/ int Assists;
+	var UniqueNetId PlayerID;
+	var int TeamNum;
+	var int Score;
+	var int Saves;
+	var int Shots;
+	var int Goals;
+	var int Assists;
 
 	structdefaultproperties
 	{
@@ -102,10 +102,10 @@ struct TourPlayerStats
 
 struct TourMatch
 {
-	var /*0x00010000-0x00000000*/ int MatchID;
-	var /*0x00010000-0x00000000*/ Qword Teams[2];
-	var /*0x00010000-0x00000000*/ Qword Winner;
-	var /*0x00010000-0x00000000*/ array<TourMatchGame> Games;
+	var int MatchID;
+	var Qword Teams[2];
+	var Qword Winner;
+	var array<TourMatchGame> Games;
 
 	structdefaultproperties
 	{
@@ -114,8 +114,8 @@ struct TourMatch
 
 struct IntPair
 {
-	var /*0x00010000-0x00000000*/ int A;
-	var /*0x00010000-0x00000000*/ int B;
+	var int A;
+	var int B;
 
 	structdefaultproperties
 	{
@@ -126,8 +126,8 @@ struct IntPair
 
 struct QWORDPair
 {
-	var /*0x00010000-0x00000000*/ Qword A;
-	var /*0x00010000-0x00000000*/ Qword B;
+	var Qword A;
+	var Qword B;
 
 	structdefaultproperties
 	{
@@ -138,12 +138,12 @@ struct QWORDPair
 
 struct TourMatchNode
 {
-	var /*0x00010000-0x00000000*/ int MatchID;
-	var /*0x00010000-0x00000000*/ int Round;
-	var /*0x00010000-0x00000000*/ int Order;
-	var /*0x00010000-0x00000000*/ QWORDPair Teams;
-	var /*0x00010000-0x00000000*/ int NextMatchID;
-	var /*0x00010000-0x00000000*/ IntPair PrevMatch;
+	var int MatchID;
+	var int Round;
+	var int Order;
+	var QWORDPair Teams;
+	var int NextMatchID;
+	var IntPair PrevMatch;
 
 	structdefaultproperties
 	{
@@ -158,11 +158,11 @@ struct TourMatchNode
 
 struct TourPlacementInfo
 {
-	var /*0x00010000-0x00000000*/ databinding int Placement;
-	var /*0x00010000-0x00000000*/ databinding string Name;
-	var /*0x00010000-0x00000000*/ databinding int Value;
-	var /*0x00010000-0x00000000*/ databinding Qword TeamID;
-	var /*0x00010000-0x00000000*/ databinding UniqueNetId PlayerID;
+	var databinding int Placement;
+	var databinding string Name;
+	var databinding int Value;
+	var databinding Qword TeamID;
+	var databinding UniqueNetId PlayerID;
 
 	structdefaultproperties
 	{
@@ -176,10 +176,10 @@ struct TourPlacementInfo
 
 struct TourLeaderboard
 {
-	var /*0x00010000-0x00000000*/ array<TourPlacementInfo> TeamGoals;
-	var /*0x00010000-0x00000000*/ array<TourPlacementInfo> PlayerGoals;
-	var /*0x00010000-0x00000000*/ array<TourPlacementInfo> PlayerAssists;
-	var /*0x00010000-0x00000000*/ array<TourPlacementInfo> PlayerSaves;
+	var array<TourPlacementInfo> TeamGoals;
+	var array<TourPlacementInfo> PlayerGoals;
+	var array<TourPlacementInfo> PlayerAssists;
+	var array<TourPlacementInfo> PlayerSaves;
 
 	structdefaultproperties
 	{
@@ -192,13 +192,13 @@ struct TourLeaderboard
 
 struct TourMatchPlayerStats
 {
-	var /*0x00010000-0x00000000*/ databinding name Name;
-	var /*0x00010000-0x00000000*/ databinding UniqueNetId Id;
-	var /*0x00010000-0x00000000*/ databinding int Score;
-	var /*0x00010000-0x00000000*/ databinding int Goals;
-	var /*0x00010000-0x00000000*/ databinding int Assists;
-	var /*0x00010000-0x00000000*/ databinding int Saves;
-	var /*0x00010000-0x00000000*/ databinding int Shots;
+	var databinding name Name;
+	var databinding UniqueNetId Id;
+	var databinding int Score;
+	var databinding int Goals;
+	var databinding int Assists;
+	var databinding int Saves;
+	var databinding int Shots;
 
 	structdefaultproperties
 	{
@@ -214,9 +214,9 @@ struct TourMatchPlayerStats
 
 struct TourMatchTeamDetails
 {
-	var /*0x00010000-0x00000000*/ Qword TeamID;
-	var /*0x00010000-0x00000000*/ array<int> GoalsPerGame;
-	var /*0x00010000-0x00000000*/ array<TourMatchPlayerStats> CumulativePlayerStats;
+	var Qword TeamID;
+	var array<int> GoalsPerGame;
+	var array<TourMatchPlayerStats> CumulativePlayerStats;
 
 	structdefaultproperties
 	{
@@ -228,11 +228,11 @@ struct TourMatchTeamDetails
 
 struct TourBracket
 {
-	var /*0x00010000-0x00000000*/ Qword TournamentID;
-	var /*0x00010000-0x00000000*/ array<TourTeam> Teams;
-	var /*0x00010000-0x00000000*/ array<TourMatch> Matches;
-	var /*0x00010000-0x00000000*/ TourLeaderboard Leaderboard;
-	var /*0x00010000-0x00000000*/ array<ShopCurrencyInfo> CurrentPayouts;
+	var Qword TournamentID;
+	var array<TourTeam> Teams;
+	var array<TourMatch> Matches;
+	var TourLeaderboard Leaderboard;
+	var array<ShopCurrencyInfo> CurrentPayouts;
 
 	structdefaultproperties
 	{
@@ -246,30 +246,30 @@ struct TourBracket
 
 struct TourServerSettings
 {
-	var /*0x00010000-0x00000000*/ Qword TournamentID;
-	var /*0x00010000-0x00000000*/ int MatchID;
-	var /*0x00010000-0x00000000*/ string GameTags;
-	var /*0x00010000-0x00000000*/ _Types_TA.EMatchTieBreaker TieBreaker;
-	var /*0x00010000-0x00000000*/ byte GameMode;
-	var /*0x00010000-0x00000000*/ array<name> DisabledMaps;
-	var /*0x00010000-0x00000000*/ name MapSetName;
-	var /*0x00010000-0x00000000*/ int SeriesLength;
-	var /*0x00010000-0x00000000*/ int TeamSize;
-	var /*0x00010000-0x00000000*/ array<TourTeam> Teams;
-	var /*0x00010000-0x00000000*/ array<Qword> BotTeams;
-	var /*0x00010000-0x00000000*/ array<TourMatchGame> Games;
-	var /*0x00010000-0x00000000*/ array<UniqueNetId> SpectatorPlayerIDs;
-	var /*0x00010000-0x00000000*/ UniqueNetId CreatorPlayerID;
-	var /*0x00010000-0x00000000*/ byte MinPlayersPerTeam;
-	var /*0x00010000-0x00000000*/ Qword MatchExpireTimestamp;
-	var /*0x00010000-0x00000000*/ int MinPlayersMetWaitTimeSeconds;
+	var Qword TournamentID;
+	var int MatchID;
+	var string GameTags;
+	var int /** _Types_TA.EMatchTieBreaker*/ TieBreaker;
+	var byte GameMode;
+	var array<name> DisabledMaps;
+	var name MapSetName;
+	var int SeriesLength;
+	var int TeamSize;
+	var array<TourTeam> Teams;
+	var array<Qword> BotTeams;
+	var array<TourMatchGame> Games;
+	var array<UniqueNetId> SpectatorPlayerIDs;
+	var UniqueNetId CreatorPlayerID;
+	var byte MinPlayersPerTeam;
+	var Qword MatchExpireTimestamp;
+	var int MinPlayersMetWaitTimeSeconds;
 
 	structdefaultproperties
 	{
 		
 		MatchID=-1
 		GameTags=""
-		TieBreaker=MatchTieBreaker_FirstScore
+		TieBreaker=0
 		GameMode=0
 		DisabledMaps.Empty
 		MapSetName=None
@@ -288,8 +288,8 @@ struct TourServerSettings
 
 struct TourPrivateCredentials
 {
-	var /*0x00010000-0x00000000*/ string Title;
-	var /*0x00010000-0x00000000*/ string Password;
+	var string Title;
+	var string Password;
 
 	structdefaultproperties
 	{
@@ -300,9 +300,9 @@ struct TourPrivateCredentials
 
 struct TourCreateSettings
 {
-	var /*0x00010000-0x00000000*/ TourSettings_TA Settings;
-	var /*0x00010000-0x00000000*/ TourPrivateCredentials PrivateSettings;
-	var /*0x00010000-0x00000000*/ array<TourReward> Rewards;
+	var TourSettings_TA Settings;
+	var TourPrivateCredentials PrivateSettings;
+	var array<TourReward> Rewards;
 
 	structdefaultproperties
 	{
@@ -314,18 +314,18 @@ struct TourCreateSettings
 
 struct TourSearchSettings
 {
-	var /*0x00010000-0x00000000*/ string Text;
-	var /*0x00010000-0x00000000*/ int RankMin;
-	var /*0x00010000-0x00000000*/ int RankMax;
-	var /*0x00010000-0x00000000*/ array<int> GameModes;
-	var /*0x00010000-0x00000000*/ array<string> Regions;
-	var /*0x00010000-0x00000000*/ int TeamSize;
-	var /*0x00010000-0x00000000*/ int BracketSize;
-	var /*0x00010000-0x00000000*/ bool bEnableCrossplay;
-	var /*0x00010000-0x00000000*/ Qword StartTime;
-	var /*0x00010000-0x00000000*/ Qword EndTime;
-	var /*0x00010000-0x00000000*/ bool bShowFull;
-	var /*0x00010000-0x00000000*/ bool bShowIneligibleRank;
+	var string Text;
+	var int RankMin;
+	var int RankMax;
+	var array<int> GameModes;
+	var array<string> Regions;
+	var int TeamSize;
+	var int BracketSize;
+	var bool bEnableCrossplay;
+	var Qword StartTime;
+	var Qword EndTime;
+	var bool bShowFull;
+	var bool bShowIneligibleRank;
 
 	structdefaultproperties
 	{
@@ -346,8 +346,8 @@ struct TourSearchSettings
 
 struct GFxTournamentReward
 {
-	var() /*0x00010000-0x00000000*/ databinding int Placement;
-	var() /*0x00010000-0x00000000*/ databinding ProductInstanceID InstanceID;
+	var() databinding int Placement;
+	var() databinding ProductInstanceID InstanceID;
 
 	structdefaultproperties
 	{
@@ -358,10 +358,10 @@ struct GFxTournamentReward
 
 struct TournamentResult
 {
-	var /*0x00010000-0x00000000*/ databinding int Difficulty;
-	var /*0x00010000-0x00000000*/ databinding int Placement;
-	var /*0x00010000-0x00000000*/ databinding int Score;
-	var /*0x00010000-0x00000000*/ databinding int ResultStanding;
+	var databinding int Difficulty;
+	var databinding int Placement;
+	var databinding int Score;
+	var databinding int ResultStanding;
 
 	structdefaultproperties
 	{
@@ -374,9 +374,9 @@ struct TournamentResult
 
 struct TourResult
 {
-	var /*0x00010000-0x00000000*/ databinding Qword TournamentID;
-	var /*0x00010000-0x00000000*/ databinding int Difficulty;
-	var /*0x00010000-0x00000000*/ databinding int Placement;
+	var databinding Qword TournamentID;
+	var databinding int Difficulty;
+	var databinding int Placement;
 
 	structdefaultproperties
 	{
@@ -388,14 +388,14 @@ struct TourResult
 
 struct TournamentEndData
 {
-	var /*0x00010000-0x00000000*/ Qword CycleID;
-	var /*0x00010000-0x00000000*/ int WeekIndex;
-	var /*0x00010000-0x00000000*/ array<TournamentResult> OldWeeklyResults;
-	var /*0x00010000-0x00000000*/ TournamentResult Result;
-	var /*0x00010000-0x00000000*/ array<ShopCurrencyInfo> CurrencyRewards;
-	var /*0x00010000-0x00000000*/ array<ShopCurrencyInfo> OldWeeklyCurrencies;
-	var /*0x00010000-0x00000000*/ array<ShopCurrencyInfo> WeeklyCurrencies;
-	var /*0x00010000-0x00000000*/ array<ShopCurrencyInfo> FinalCurrencies;
+	var Qword CycleID;
+	var int WeekIndex;
+	var array<TournamentResult> OldWeeklyResults;
+	var TournamentResult Result;
+	var array<ShopCurrencyInfo> CurrencyRewards;
+	var array<ShopCurrencyInfo> OldWeeklyCurrencies;
+	var array<ShopCurrencyInfo> WeeklyCurrencies;
+	var array<ShopCurrencyInfo> FinalCurrencies;
 
 	structdefaultproperties
 	{
@@ -412,9 +412,9 @@ struct TournamentEndData
 
 struct FaceItReservationMatchInfo
 {
-	var /*0x00010000-0x00000000*/ int PartnerID;
-	var /*0x00010000-0x00000000*/ int ServerId;
-	var /*0x00010000-0x00000000*/ bool bIsCrossPlatform;
+	var int PartnerID;
+	var int ServerId;
+	var bool bIsCrossPlatform;
 
 	structdefaultproperties
 	{
@@ -424,8 +424,8 @@ struct FaceItReservationMatchInfo
 	}
 };
 
-var /*0x00010000-0x00000000*/ const array<name> DisabledMutatorCategories;
-var /*0x00010000-0x00000000*/ const array<name> DisabledMutatorSettings;
+var const array<name> DisabledMutatorCategories;
+var const array<name> DisabledMutatorSettings;
 
 defaultproperties
 {

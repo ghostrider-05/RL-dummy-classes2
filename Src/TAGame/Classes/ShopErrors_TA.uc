@@ -5,10 +5,10 @@
 *******************************************************************************/
 class ShopErrors_TA extends ErrorList;
 
-var /*0x00010000-0x00000000*/ const ErrorType ShopItemBadData;
-var /*0x00010000-0x00000000*/ const ErrorType ShopItemDiscountBadData;
-var /*0x00010000-0x00000000*/ const ErrorType ShopSyncedBadData;
-var /*0x00010000-0x00000000*/ const ErrorType ShopNotEnoughCurrency;
+var const ErrorType ShopItemBadData;
+var const ErrorType ShopItemDiscountBadData;
+var const ErrorType ShopSyncedBadData;
+var const ErrorType ShopNotEnoughCurrency;
 
 defaultproperties
 {

@@ -8,8 +8,8 @@ class WheelAssetGenerator_RightWheels_TA extends WheelAssetGenerator_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() _Types_TA.EMeshMirrorMode MirrorMode;
-var() _Types_TA.EMeshMirrorMode ParticleMirrorMode;
+var() EMeshMirrorMode MirrorMode;
+var() EMeshMirrorMode ParticleMirrorMode;
 var() editconst export editinline WheelAssetSettings_TA FrontRight;
 var() editconst export editinline WheelAssetSettings_TA BackRight;
 

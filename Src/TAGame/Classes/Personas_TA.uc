@@ -4,15 +4,15 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class Personas_TA extends Object
+	native
 	config(Game);
 
 var native Map_Mirror PersonaMap;
 var const config bool bVerbosePresenceSort;
 var const localized string DeletedAccountDisplayName;
 var transient array<UniqueNetId> EpicIdRequests;
-var /*0x00008000-0x00000000*/ OnlineGame_X OnlineGame;
+var OnlineGame_X OnlineGame;
 
 defaultproperties
 {
-	DeletedAccountDisplayName="Deleted"
 }

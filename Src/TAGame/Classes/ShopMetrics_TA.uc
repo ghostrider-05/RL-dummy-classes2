@@ -7,8 +7,8 @@ class ShopMetrics_TA extends MetricsGroup_X;
 
 struct ShopItemData
 {
-	var /*0x00010000-0x00000000*/ int ShopItemID;
-	var /*0x00010000-0x00000000*/ int NumTimesPreviewed;
+	var int ShopItemID;
+	var int NumTimesPreviewed;
 
 	structdefaultproperties
 	{
@@ -19,13 +19,13 @@ struct ShopItemData
 
 struct ShopTabData
 {
-	var /*0x00010000-0x00000000*/ int FromShopID;
-	var /*0x00010000-0x00000000*/ int NewShopID;
-	var /*0x00010000-0x00000000*/ int FromCatalogID;
-	var /*0x00010000-0x00000000*/ int NewCatalogID;
-	var /*0x00010000-0x00000000*/ Qword StartTimestamp;
-	var /*0x00010000-0x00000000*/ Qword EndTimestamp;
-	var /*0x00010000-0x00000000*/ array<ShopItemData> ItemMetrics;
+	var int FromShopID;
+	var int NewShopID;
+	var int FromCatalogID;
+	var int NewCatalogID;
+	var Qword StartTimestamp;
+	var Qword EndTimestamp;
+	var array<ShopItemData> ItemMetrics;
 
 	structdefaultproperties
 	{
@@ -39,5 +39,5 @@ struct ShopTabData
 	}
 };
 
-var /*0x00010000-0x00000000*/ array<ShopTabData> CurrentShopTabMetrics;
-var /*0x00010000-0x00000000*/ int CurrentBrowseSourceID;
+var array<ShopTabData> CurrentShopTabMetrics;
+var int CurrentBrowseSourceID;

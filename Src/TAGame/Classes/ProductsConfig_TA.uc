@@ -24,7 +24,7 @@ struct ReplacementProduct
 struct SeriesGroup
 {
 	var int SeriesID;
-	var array<_Types_TA.EProductQuality> ExcludedQualities;
+	var array<EProductQuality> ExcludedQualities;
 
 	structdefaultproperties
 	{
@@ -36,8 +36,8 @@ struct SeriesGroup
 struct ProductTradeHoldOverride
 {
 	var int ProductID;
-	var array<_Types_TA.EProductTradeRestriction> TradeRestrictions;
-	var transient array<_Types_TA.EProductTradeRestriction> DefaultRestrictions;
+	var array<EProductTradeRestriction> TradeRestrictions;
+	var transient array<EProductTradeRestriction> DefaultRestrictions;
 
 	structdefaultproperties
 	{
@@ -48,7 +48,7 @@ struct ProductTradeHoldOverride
 };
 
 var array<ReplacementProduct> ProhibitedProducts;
-var /*0x00010000-0x00000000*/ transient array<ProductTradeInFilter> TradeInFilters;
+var transient array<ProductTradeInFilter> TradeInFilters;
 var array<SeriesGroup> ItemSeries_AllowTradeIn;
 var array<SeriesGroup> ItemSeries_PreventP2PTrade;
 var array<ProductTradeHoldOverride> ProductTradeHoldOverrides;

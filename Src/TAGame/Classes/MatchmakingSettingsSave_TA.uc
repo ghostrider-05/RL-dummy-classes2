@@ -5,7 +5,7 @@
 *******************************************************************************/
 class MatchmakingSettingsSave_TA extends SaveObject_TA;
 
-var _Types_TA.EMatchmakingViewTab MatchmakingViewTab;
+var EMatchmakingViewTab MatchmakingViewTab;
 var array<name> QuickMatchPlaylists;
 var array<string> QuickMatchRegions;
 var bool bMultiSelectEnabled;

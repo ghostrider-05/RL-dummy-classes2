@@ -24,7 +24,7 @@ var export editinline StringMap HandshakeHeaders;
 var string URL;
 var WebSocketConnection_X Connection;
 var array<QueuedPsyNetMessage> QueuedMessages;
-var /*0x00008000-0x00000000*/ PsyNetConfig_X PsyNetConfig;
+var PsyNetConfig_X PsyNetConfig;
 
 defaultproperties
 {

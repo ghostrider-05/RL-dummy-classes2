@@ -5,9 +5,9 @@
 *******************************************************************************/
 class ChatFilterManager_TA extends Object;
 
-var /*0x00080000-0x00000000*/ _Types_TA.EChatFilter MatchChatFilter;
-var /*0x00080000-0x00000000*/ _Types_TA.EChatFilter PartyChatFilter;
-var /*0x00080000-0x00000000*/ _Types_TA.EChatFilter VoiceChatFilter;
+var EChatFilter MatchChatFilter;
+var EChatFilter PartyChatFilter;
+var EChatFilter VoiceChatFilter;
 
 defaultproperties
 {

@@ -5,14 +5,14 @@
 *******************************************************************************/
 class GFxData_ClubMember_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding Qword ClubID;
-var /*0x00010000-0x00000000*/ databinding UniqueNetId MemberId;
-var /*0x00010000-0x00000000*/ databinding string MemberName;
-var /*0x00010000-0x00000000*/ databinding Texture Avatar;
-var /*0x00010000-0x00000000*/ transient string UnsanitizedName;
-var /*0x00018000-0x00000000*/ OnlineSubsystem OnlineSubsytem;
-var /*0x00018000-0x00000000*/ OnlineGameWordFilter_X WordFilter;
-var /*0x00018000-0x00000000*/ OnlineGame_X OnlineGame;
+var databinding Qword ClubID;
+var databinding UniqueNetId MemberId;
+var databinding string MemberName;
+var databinding Texture Avatar;
+var transient string UnsanitizedName;
+var OnlineSubsystem OnlineSubsytem;
+var OnlineGameWordFilter_X WordFilter;
+var OnlineGame_X OnlineGame;
 
 defaultproperties
 {

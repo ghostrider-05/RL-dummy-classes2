@@ -5,6 +5,6 @@
 *******************************************************************************/
 class PreMatchLobby_TA extends Object within OnlinePlayer_X;
 
-var /*0x00010000-0x00000000*/ Car_TA SelectedFocus;
-var /*0x00010000-0x00000000*/ Car_TA HighlightedFocus;
-var /*0x00010000-0x00000000*/ Vector LastHighlightLocation;
+var Car_TA SelectedFocus;
+var Car_TA HighlightedFocus;
+var Vector LastHighlightLocation;

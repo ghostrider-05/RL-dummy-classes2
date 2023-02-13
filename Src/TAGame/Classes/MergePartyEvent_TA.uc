@@ -9,17 +9,17 @@ const MAX_PARTY_FOLLOWERS = 7;
 
 struct MergePartyReplicatedData
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId LeaderID;
-	var /*0x00010000-0x00000000*/ UniqueNetId InviteeIDs[7];
+	var UniqueNetId LeaderID;
+	var UniqueNetId InviteeIDs[7];
 
 	structdefaultproperties
 	{
 	}
 };
 
-var /*0x00010000-0x00000000*/ UniqueNetId LeaderID;
-var /*0x00010000-0x00000000*/ array<UniqueNetId> InviteeIDs;
-var /*0x00010000-0x00000000*/ array<UniqueNetId> ConfirmedInvitees;
+var UniqueNetId LeaderID;
+var array<UniqueNetId> InviteeIDs;
+var array<UniqueNetId> ConfirmedInvitees;
 
 defaultproperties
 {

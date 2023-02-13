@@ -15,7 +15,7 @@ enum EEnableSlotCustomization
 	EnableSlotCustomization_MAX
 };
 
-var() ProductEquipProfileSlot_Custom_TA.EEnableSlotCustomization SlotCustomization;
+var() EEnableSlotCustomization SlotCustomization;
 var() editinline array<editinline ProductAssetReference_TA> WhitelistProducts;
 var() editinline array<editinline ProductAssetReference_TA> BlacklistProducts;
 var() bool bUseWhitelistAsDefault;

@@ -22,24 +22,24 @@ enum ETourEventStatus
 	TES_MAX
 };
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var() /*0x00018000-0x00000000*/ OnlineGameTourMatchmaking_TA TourMatchmaking;
-var() /*0x00018000-0x00000000*/ TourConfig_TA TourConfig;
-var /*0x00010000-0x00000000*/ databinding string Title;
-var /*0x00010000-0x00000000*/ databinding Qword Id;
-var /*0x00010000-0x00000000*/ databinding Qword ScheduleID;
-var /*0x00010000-0x00000000*/ databinding int SecondsRemaining;
-var /*0x00010000-0x00000000*/ databinding Qword GenerateBracketTime;
-var /*0x00010000-0x00000000*/ databinding GFxData_TourEvent_TA.ETourEventStatus Status;
-var /*0x00010000-0x00000000*/ databinding Qword LocalTeamID;
-var /*0x00010000-0x00000000*/ databinding int Round;
-var /*0x00010000-0x00000000*/ databinding int TotalRounds;
-var /*0x00010000-0x00000000*/ databinding string NextOpponent;
-var /*0x00010000-0x00000000*/ databinding Qword EndGameWarningEpochTime;
-var /*0x00010000-0x00000000*/ databinding Qword EndGameEpochTime;
-var /*0x00010000-0x00000000*/ databinding bool bTroubleJoining;
-var /*0x00010000-0x00000000*/ transient TourSettings_TA ActiveTournament;
-var /*0x00010000-0x00000000*/ transient int MatchID;
+var() OnlineGameTournaments_TA Tournaments;
+var() OnlineGameTourMatchmaking_TA TourMatchmaking;
+var() TourConfig_TA TourConfig;
+var databinding string Title;
+var databinding Qword Id;
+var databinding Qword ScheduleID;
+var databinding int SecondsRemaining;
+var databinding Qword GenerateBracketTime;
+var databinding ETourEventStatus Status;
+var databinding Qword LocalTeamID;
+var databinding int Round;
+var databinding int TotalRounds;
+var databinding string NextOpponent;
+var databinding Qword EndGameWarningEpochTime;
+var databinding Qword EndGameEpochTime;
+var databinding bool bTroubleJoining;
+var transient TourSettings_TA ActiveTournament;
+var transient int MatchID;
 
 defaultproperties
 {

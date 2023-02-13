@@ -20,8 +20,8 @@ struct native DynamicallyLoadedPackage
 
 var transient OnlineGame_Base_X OnlineGame;
 var transient LocalCache_X LocalCache;
-var() /*0x00000800-0x00000000*/ const string ArchetypeString_OnlineGame;
-var() /*0x00000800-0x00000000*/ const string ArchetypeString_OnlineGameDedicatedServer;
+var() const string ArchetypeString_OnlineGame;
+var() const string ArchetypeString_OnlineGameDedicatedServer;
 var transient bool bDisableSaving;
 var const transient bool bIsShowingLoadmapMovie;
 var const bool bUndocked;

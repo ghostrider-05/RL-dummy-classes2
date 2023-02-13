@@ -6,4 +6,4 @@
 class SaveObjectSerializer_TA extends Serializer_X;
 
 var() int Version;
-var const transient Engine.EBasicLoadResult Result;
+var const transient EBasicLoadResult Result;

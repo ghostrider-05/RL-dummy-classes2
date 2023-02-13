@@ -10,7 +10,7 @@ defaultproperties
 {
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		ReplacementPrimitive=none
 		bAcceptsLights=false
 		BlockZeroExtent=true

@@ -5,9 +5,9 @@
 *******************************************************************************/
 class GFxData_Scoreboard_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ databinding bool bSplitByTeams;
-var /*0x00010000-0x00000000*/ databinding string StatNames;
-var /*0x00010000-0x00000000*/ databinding string SortedPlayerIDs;
+var databinding bool bSplitByTeams;
+var databinding string StatNames;
+var databinding string SortedPlayerIDs;
 
 defaultproperties
 {

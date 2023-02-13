@@ -8,7 +8,7 @@ class GFxData_LanMatch_TA extends GFxDataSingleton_X;
 var databinding string ServerName;
 var databinding string Password;
 var databinding int SelectedMaxPlayerCount;
-var const _Types_TA.ECustomMatchSettingsType SettingsType;
+var const ECustomMatchSettingsType SettingsType;
 
 defaultproperties
 {

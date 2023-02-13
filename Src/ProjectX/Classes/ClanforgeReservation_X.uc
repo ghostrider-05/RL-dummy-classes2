@@ -13,12 +13,12 @@ enum EReserveState
 	ReserveState_MAX
 };
 
-var /*0x00010000-0x00000000*/ string ReserveURLs[EReserveState];
-var /*0x00010000-0x00000000*/ transient ClanforgeReservation_X.EReserveState ReserveState;
-var() /*0x00010000-0x00000000*/ array<float> RetryDelays;
-var /*0x00010000-0x00000000*/ transient int SendFailures;
-var /*0x00010000-0x00000000*/ transient array<WebRequest_X> QueuedRequests;
-var /*0x00010000-0x00000000*/ transient WebRequest_X PendingRequest;
+var string ReserveURLs[EReserveState];
+var transient EReserveState ReserveState;
+var() array<float> RetryDelays;
+var transient int SendFailures;
+var transient array<WebRequest_X> QueuedRequests;
+var transient WebRequest_X PendingRequest;
 
 defaultproperties
 {

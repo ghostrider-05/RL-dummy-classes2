@@ -3,6 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class QuickChatTracker_TA extends ActorComponent within PlayerController_TA;
+class QuickChatTracker_TA extends ActorComponent within PlayerController_TA
+	native;
 
-var /*0x00010000-0x00000000*/ native Map_Mirror GroupMessages;
+var native Map_Mirror GroupMessages;

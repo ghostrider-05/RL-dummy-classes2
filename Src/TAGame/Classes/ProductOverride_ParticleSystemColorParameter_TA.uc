@@ -11,7 +11,7 @@ class ProductOverride_ParticleSystemColorParameter_TA extends ProductOverride_TA
 struct PaintColorParameterOverride
 {
 	var() name PaintParameterName;
-	var() _Types_TA.EPaintColorVariant PaintType;
+	var() EPaintColorVariant PaintType;
 	var() ProductPaint_TA Paint;
 	var() LinearColor CustomColor;
 

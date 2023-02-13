@@ -5,6 +5,6 @@
 *******************************************************************************/
 class LocalPlayerSkillSync_TA extends Object;
 
-var /*0x00008000-0x00000000*/ OnlineGame_X OnlineGame;
-var /*0x00008000-0x00000000*/ OnlineGameSkill_X OnlineSkill;
-var /*0x00008000-0x00000000*/ PsyNet_X PsyNet;
+var OnlineGame_X OnlineGame;
+var OnlineGameSkill_X OnlineSkill;
+var PsyNet_X PsyNet;

@@ -33,10 +33,10 @@ struct PlaylistState
 };
 
 var array<PlaylistState> PlaylistsUpdate22_1;
-var MusicPlayerSave_TA.EGameplayMusicSetting GameplayMusicSetting;
-var /*0x00080000-0x00000000*/ bool bPlayMusicInMenu;
-var /*0x00080000-0x00000000*/ bool bPlayMusicInTraining;
-var /*0x00080000-0x00000000*/ bool bPlayMusicInGame;
+var EGameplayMusicSetting GameplayMusicSetting;
+var bool bPlayMusicInMenu;
+var bool bPlayMusicInTraining;
+var bool bPlayMusicInGame;
 
 defaultproperties
 {

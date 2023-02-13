@@ -7,8 +7,8 @@ class CameraState_Lobby_TA extends CameraState_X;
 
 struct CameraSettings
 {
-	var /*0x00010000-0x00000000*/ float XOffsetDistance;
-	var /*0x00010000-0x00000000*/ float CameraOffsetPitch;
+	var float XOffsetDistance;
+	var float CameraOffsetPitch;
 
 	structdefaultproperties
 	{
@@ -17,7 +17,7 @@ struct CameraSettings
 	}
 };
 
-var /*0x00010000-0x00000000*/ bool bInitDefaultPOV;
-var /*0x00010000-0x00000000*/ array<CameraSettings> TeamSettings;
-var /*0x00010000-0x00000000*/ float FadeInDuration;
-var /*0x00010000-0x00000000*/ transient CameraOrientation DefaultCamera;
+var bool bInitDefaultPOV;
+var array<CameraSettings> TeamSettings;
+var float FadeInDuration;
+var transient CameraOrientation DefaultCamera;

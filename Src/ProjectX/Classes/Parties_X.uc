@@ -8,10 +8,10 @@ class Parties_X extends Object
 
 struct PsyNetPartyInfo
 {
-	var /*0x00010000-0x00000000*/ string PartyID;
-	var /*0x00010000-0x00000000*/ Qword CreatedAt;
-	var /*0x00010000-0x00000000*/ UniqueNetId CreatedByUserId;
-	var /*0x00010000-0x00000000*/ string JoinID;
+	var string PartyID;
+	var Qword CreatedAt;
+	var UniqueNetId CreatedByUserId;
+	var string JoinID;
 
 	structdefaultproperties
 	{
@@ -24,11 +24,11 @@ struct PsyNetPartyInfo
 
 struct PsyNetPartyMember
 {
-	var /*0x00010000-0x00000000*/ string PartyID;
-	var /*0x00010000-0x00000000*/ UniqueNetId UserId;
-	var /*0x00010000-0x00000000*/ string Username;
-	var /*0x00010000-0x00000000*/ Qword JoinedAt;
-	var /*0x00010000-0x00000000*/ string Role;
+	var string PartyID;
+	var UniqueNetId UserId;
+	var string Username;
+	var Qword JoinedAt;
+	var string Role;
 
 	structdefaultproperties
 	{
@@ -42,11 +42,11 @@ struct PsyNetPartyMember
 
 struct PartyInvite
 {
-	var /*0x00010000-0x00000000*/ UniqueNetId UserId;
-	var /*0x00010000-0x00000000*/ string Username;
-	var /*0x00010000-0x00000000*/ string PartyID;
-	var /*0x00010000-0x00000000*/ Qword InvitedAt;
-	var /*0x00010000-0x00000000*/ Qword AcceptedAt;
+	var UniqueNetId UserId;
+	var string Username;
+	var string PartyID;
+	var Qword InvitedAt;
+	var Qword AcceptedAt;
 
 	structdefaultproperties
 	{
@@ -58,24 +58,24 @@ struct PartyInvite
 	}
 };
 
-var /*0x00010000-0x00000000*/ ActiveLobbyInfo ActiveLobby;
-var /*0x00010000-0x00000000*/ UniqueLobbyId LastActiveLobby;
-var /*0x00010000-0x00000000*/ UniqueNetId PartyLeaderID;
-var /*0x00018000-0x00000000*/ PsyNet_X PsyNet;
-var /*0x00018000-0x00000000*/ OnlineGameParty_X OnlineGameParty;
-var() /*0x00010000-0x00000000*/ export editinline PartyMessageQueue_X MessageQueue;
-var /*0x00010000-0x00000000*/ PsyNetConnection_X PsyNetConnection;
-var /*0x00010000-0x00000000*/ PsyNetChannel_X PsyNetChannel;
-var /*0x00010000-0x00000000*/ export editinline PsyNetServiceSubscriptions_X Subscriptions;
-var /*0x00010000-0x00000000*/ PartyPlatformSession_X PlatformSession;
-var /*0x00010000-0x00000000*/ PartySequence_CreateParty_X SequenceCreateParty;
-var /*0x00010000-0x00000000*/ PartySequence_JoinParty_X SequenceJoinParty;
-var /*0x00010000-0x00000000*/ PartySequence_LeaveParty_X SequenceLeaveParty;
-var /*0x00010000-0x00000000*/ PartySequence_InviteToParty_X SequenceInviteToParty;
-var /*0x00010000-0x00000000*/ bool bRejoiningParty;
-var() /*0x00010000-0x00000000*/ float SecondToWaitForPerConReconnect;
-var() /*0x00010000-0x00000000*/ string PartySetting_PsyNetPartyId;
-var() /*0x00010000-0x00000000*/ string PartySetting_JoinKey;
+var ActiveLobbyInfo ActiveLobby;
+var UniqueLobbyId LastActiveLobby;
+var UniqueNetId PartyLeaderID;
+var PsyNet_X PsyNet;
+var OnlineGameParty_X OnlineGameParty;
+var() export editinline PartyMessageQueue_X MessageQueue;
+var PsyNetConnection_X PsyNetConnection;
+var PsyNetChannel_X PsyNetChannel;
+var export editinline PsyNetServiceSubscriptions_X Subscriptions;
+var PartyPlatformSession_X PlatformSession;
+var PartySequence_CreateParty_X SequenceCreateParty;
+var PartySequence_JoinParty_X SequenceJoinParty;
+var PartySequence_LeaveParty_X SequenceLeaveParty;
+var PartySequence_InviteToParty_X SequenceInviteToParty;
+var bool bRejoiningParty;
+var() float SecondToWaitForPerConReconnect;
+var() string PartySetting_PsyNetPartyId;
+var() string PartySetting_JoinKey;
 
 defaultproperties
 {

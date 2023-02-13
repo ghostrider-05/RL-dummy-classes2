@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ClientJitterBuffer_TA extends Object;
 
-var /*0x00008000-0x00000000*/ NetworkJitterSettings_TA JitterSettings;
+var NetworkJitterSettings_TA JitterSettings;
 var float LastPacketTime;
 var float PacketTimeMu;
 var float PacketTimeVariance;

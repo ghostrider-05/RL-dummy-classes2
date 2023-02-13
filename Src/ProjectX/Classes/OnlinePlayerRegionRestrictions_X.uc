@@ -14,4 +14,4 @@ enum ERegionRestriction
 	RegionRestriction_MAX
 };
 
-var /*0x00010000-0x00000000*/ array<OnlinePlayerRegionRestrictions_X.ERegionRestriction> Restrictions;
+var array<ERegionRestriction> Restrictions;

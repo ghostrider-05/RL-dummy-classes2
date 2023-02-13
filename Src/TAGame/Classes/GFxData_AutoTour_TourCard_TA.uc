@@ -5,20 +5,20 @@
 *******************************************************************************/
 class GFxData_AutoTour_TourCard_TA extends GFxDataRow_X;
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA OnlineGameTournaments;
-var /*0x00010000-0x00000000*/ array<TourSettings_TA> Settings;
-var /*0x00010000-0x00000000*/ databinding Qword StartTime;
-var /*0x00010000-0x00000000*/ databinding Qword LastTournamentTime;
-var /*0x00010000-0x00000000*/ databinding string Title;
-var /*0x00010000-0x00000000*/ databinding string Description;
-var /*0x00010000-0x00000000*/ databinding Qword ScheduleID;
-var /*0x00010000-0x00000000*/ databinding int TeamSize;
-var /*0x00010000-0x00000000*/ databinding byte GameMode;
-var /*0x00010000-0x00000000*/ databinding bool bIsIneligible;
-var /*0x00010000-0x00000000*/ databinding bool bCanCheckIn;
-var /*0x00010000-0x00000000*/ databinding bool bRegistered;
-var /*0x00010000-0x00000000*/ databinding bool bUpdateSkill;
-var /*0x00010000-0x00000000*/ bool bIsInitialized;
+var() OnlineGameTournaments_TA OnlineGameTournaments;
+var array<TourSettings_TA> Settings;
+var databinding Qword StartTime;
+var databinding Qword LastTournamentTime;
+var databinding string Title;
+var databinding string Description;
+var databinding Qword ScheduleID;
+var databinding int TeamSize;
+var databinding byte GameMode;
+var databinding bool bIsIneligible;
+var databinding bool bCanCheckIn;
+var databinding bool bRegistered;
+var databinding bool bUpdateSkill;
+var bool bIsInitialized;
 
 defaultproperties
 {

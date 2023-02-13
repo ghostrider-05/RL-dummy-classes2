@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_PreMatchLobby_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ PreMatchLobby_TA PreMatchLobby;
+var PreMatchLobby_TA PreMatchLobby;
 
 defaultproperties
 {

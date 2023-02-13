@@ -18,8 +18,8 @@ enum EStateEvent
 	SE_MAX
 };
 
-var /*0x00010000-0x00000000*/ array<FXActorEvent_X> StateEvents;
-var /*0x00010000-0x00000000*/ FXActorEvent_X MVPEvent;
+var array<FXActorEvent_X> StateEvents;
+var FXActorEvent_X MVPEvent;
 
 defaultproperties
 {

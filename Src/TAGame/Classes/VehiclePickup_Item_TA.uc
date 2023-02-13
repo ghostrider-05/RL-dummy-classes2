@@ -15,7 +15,7 @@ defaultproperties
 	
 	CylinderComponent=DefaultCollisionCylinder
 	bNetRelevant=true
-	begin object name=DefaultCollisionCylinder class=CylinderComponent
+	begin object name=DefaultCollisionCylinder
 		CollisionHeight=120.0
 		CollisionRadius=160.0
 		ReplacementPrimitive=none

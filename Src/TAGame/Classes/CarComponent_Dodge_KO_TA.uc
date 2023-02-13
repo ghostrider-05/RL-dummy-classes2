@@ -7,10 +7,10 @@ class CarComponent_Dodge_KO_TA extends CarComponent_Dodge_TA
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ const float MaxForceToVelocityDegrees;
-var /*0x00010000-0x00000000*/ const float MaxForceToRotationDegrees;
-var /*0x00010000-0x00000000*/ const float MinVelocityTransferAlpha;
-var /*0x00010000-0x00000000*/ const float MaxVelocityTransferAlpha;
-var /*0x00010000-0x00000000*/ const float VelocityTransferBlend;
-var /*0x00010000-0x00000000*/ transient Rotator DodgeRotation;
-var /*0x00010000-0x00000000*/ repnotify transient int DodgeRotationCompressed;
+var const float MaxForceToVelocityDegrees;
+var const float MaxForceToRotationDegrees;
+var const float MinVelocityTransferAlpha;
+var const float MaxVelocityTransferAlpha;
+var const float VelocityTransferBlend;
+var transient Rotator DodgeRotation;
+var repnotify transient int DodgeRotationCompressed;

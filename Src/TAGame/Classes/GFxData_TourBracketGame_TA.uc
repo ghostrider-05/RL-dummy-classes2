@@ -5,13 +5,13 @@
 *******************************************************************************/
 class GFxData_TourBracketGame_TA extends GFxDataRow_X;
 
-var /*0x00010000-0x00000000*/ databinding int MatchID;
-var /*0x00010000-0x00000000*/ databinding int GameNum;
-var /*0x00010000-0x00000000*/ databinding int TeamScore0;
-var /*0x00010000-0x00000000*/ databinding int TeamScore1;
-var /*0x00010000-0x00000000*/ databinding int GameTimeSeconds;
-var /*0x00010000-0x00000000*/ databinding bool bOverTime;
-var /*0x00010000-0x00000000*/ databinding Qword WinnerTeam;
+var databinding int MatchID;
+var databinding int GameNum;
+var databinding int TeamScore0;
+var databinding int TeamScore1;
+var databinding int GameTimeSeconds;
+var databinding bool bOverTime;
+var databinding Qword WinnerTeam;
 
 defaultproperties
 {

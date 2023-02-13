@@ -4,4 +4,5 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class GFxDataSingleton_X extends GFxDataRow_X
-	abstract;
+	abstract
+	native;

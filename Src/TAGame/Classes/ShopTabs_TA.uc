@@ -15,9 +15,9 @@ enum EShopTabType
 
 struct ShopTab
 {
-	var /*0x00010000-0x00000000*/ databinding ShopTabs_TA.EShopTabType Type;
-	var /*0x00010000-0x00000000*/ databinding int Index;
-	var /*0x00010000-0x00000000*/ databinding string Label;
+	var databinding EShopTabType Type;
+	var databinding int Index;
+	var databinding string Label;
 
 	structdefaultproperties
 	{
@@ -27,9 +27,9 @@ struct ShopTab
 	}
 };
 
-var() /*0x00018000-0x00000000*/ ShopTabsConfig_TA Config;
-var() /*0x00010000-0x00000000*/ export editinline LoadedMtxCatalog_TA LoadedMtx;
-var /*0x00010000-0x00000000*/ transient string EsportsLabel;
+var() ShopTabsConfig_TA Config;
+var() export editinline LoadedMtxCatalog_TA LoadedMtx;
+var transient string EsportsLabel;
 
 defaultproperties
 {

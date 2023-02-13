@@ -5,5 +5,5 @@
 *******************************************************************************/
 class Mutator_Demolish_TA extends Mutator_TA;
 
-var() _Types_TA.EDemolishTarget DemolishTarget;
-var() _Types_TA.EDemolishSpeed DemolishSpeed;
+var() EDemolishTarget DemolishTarget;
+var() EDemolishSpeed DemolishSpeed;

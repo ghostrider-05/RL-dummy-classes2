@@ -19,9 +19,9 @@ var databinding float RightX;
 var databinding float RightY;
 var const transient array<GFxMoviePlayer_X> Movies;
 var const export editinline GFxDataStore_X DataStore;
-var const transient EngineTypes.EInputPlatformType InputType;
+var const transient EInputPlatformType InputType;
 var databinding _Types_Core.OnlinePlatform OnlinePlatformType;
-var() /*0x00008000-0x00000000*/ OnlineSubsystem OnlineSub;
+var() OnlineSubsystem OnlineSub;
 
 defaultproperties
 {

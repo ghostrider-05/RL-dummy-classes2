@@ -5,26 +5,26 @@
 *******************************************************************************/
 class GFxData_AutoTour_CompletedResults_TA extends GFxDataRow_X;
 
-var /*0x00018000-0x00000000*/ PsyNet_X PsyNet;
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var /*0x00018000-0x00000000*/ AutoTourConfig_TA Config;
-var /*0x00010000-0x00000000*/ AutoTour_TA AutoTour;
-var /*0x00010000-0x00000000*/ transient Qword CycleID;
-var /*0x00010000-0x00000000*/ transient int WeekIndex;
-var /*0x00010000-0x00000000*/ transient bool bEliminatedFirstRound;
-var /*0x00010000-0x00000000*/ databinding bool bWeeksResultsChanged;
-var /*0x00010000-0x00000000*/ databinding bool bReceivedResults;
-var /*0x00010000-0x00000000*/ databinding bool bFailedToRetrieveResults;
-var /*0x00010000-0x00000000*/ transient TournamentResult NewTournamentResult;
-var /*0x00010000-0x00000000*/ transient array<TournamentResult> OldWeeklyResults;
-var /*0x00010000-0x00000000*/ transient array<TournamentResult> NewWeeklyResults;
-var /*0x00010000-0x00000000*/ transient array<ShopCurrencyInfo> CurrencyRewards;
-var /*0x00010000-0x00000000*/ transient array<ShopCurrencyInfo> OldWeeklyCurrencies;
-var /*0x00010000-0x00000000*/ transient array<ShopCurrencyInfo> WeeklyCurrencies;
-var /*0x00010000-0x00000000*/ transient array<ShopCurrencyInfo> FinalCurrencies;
-var /*0x00010000-0x00000000*/ databinding Qword TournamentID;
-var /*0x00010000-0x00000000*/ databinding Qword ScheduleID;
-var /*0x00010000-0x00000000*/ databinding Qword RejoinTournamentTime;
+var PsyNet_X PsyNet;
+var() OnlineGameTournaments_TA Tournaments;
+var AutoTourConfig_TA Config;
+var AutoTour_TA AutoTour;
+var transient Qword CycleID;
+var transient int WeekIndex;
+var transient bool bEliminatedFirstRound;
+var databinding bool bWeeksResultsChanged;
+var databinding bool bReceivedResults;
+var databinding bool bFailedToRetrieveResults;
+var transient TournamentResult NewTournamentResult;
+var transient array<TournamentResult> OldWeeklyResults;
+var transient array<TournamentResult> NewWeeklyResults;
+var transient array<ShopCurrencyInfo> CurrencyRewards;
+var transient array<ShopCurrencyInfo> OldWeeklyCurrencies;
+var transient array<ShopCurrencyInfo> WeeklyCurrencies;
+var transient array<ShopCurrencyInfo> FinalCurrencies;
+var databinding Qword TournamentID;
+var databinding Qword ScheduleID;
+var databinding Qword RejoinTournamentTime;
 
 defaultproperties
 {

@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_EOSGameClipsConfig_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ EOSGameClipsConfig_TA GameClipsConfig;
+var EOSGameClipsConfig_TA GameClipsConfig;
 
 defaultproperties
 {

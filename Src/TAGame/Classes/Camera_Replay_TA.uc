@@ -9,7 +9,7 @@ class Camera_Replay_TA extends Camera_TA
 
 var() array<CameraState_X> OverrideStates;
 var transient string FocusActorString;
-var /*0x00080000-0x00000000*/ name CameraMode;
+var name CameraMode;
 var() name DefaultCameraMode;
 var() const ProfileSliderLimits DOFDistanceLimits;
 var() const ProfileSliderLimits DOFInfLimits;

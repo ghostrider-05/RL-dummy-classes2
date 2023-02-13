@@ -32,8 +32,8 @@ var native const noexport Pointer VfTable_IISetParameter;
 var const transient AkParamSet StoredParameters;
 var const export editinline transient array<export editinline AkSoundSource> SoundSources;
 var transient int ControllerId;
-var transient AkParamGroup.EReflectionSendType SendType;
-var transient AkParamGroup.EAttenuationType AttenuationType;
+var transient EReflectionSendType SendType;
+var transient EAttenuationType AttenuationType;
 
 defaultproperties
 {

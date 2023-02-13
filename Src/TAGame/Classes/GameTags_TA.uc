@@ -5,4 +5,4 @@
 *******************************************************************************/
 class GameTags_TA extends Object;
 
-var /*0x00080000-0x00000000*/ array<KeyValuePair> Tags;
+var array<KeyValuePair> Tags;

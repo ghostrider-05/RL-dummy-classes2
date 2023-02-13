@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_PlayerVanity_TA extends GFxDataSingleton_X;
 
-var /*0x00008000-0x00000000*/ transient VanitySetManager_TA VanityMgr;
+var transient VanitySetManager_TA VanityMgr;
 var transient GFxData_PlayerAvatarBorder_TA GFxPlayerAvatarBorder;
 var transient GFxData_PlayerBanner_TA GFxPlayerBanner;
 

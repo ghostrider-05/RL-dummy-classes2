@@ -9,7 +9,7 @@ class SeqAct_GetRarityColor_TA extends SequenceAction
 
 var array<Vector> RarityColorsPrime;
 var() bool bRandomize;
-var() _Types_TA.EProductQuality MinimumRandomQuality;
+var() EProductQuality MinimumRandomQuality;
 var int ColorIdx;
 var transient Vector OutColor;
 var transient int LastRandomIdx;

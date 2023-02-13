@@ -5,14 +5,14 @@
 *******************************************************************************/
 class CameraState_Countdown_TA extends CameraState_DirectorProxy_TA;
 
-var() /*0x00010000-0x00000000*/ int MaxCarsShown;
-var() /*0x00010000-0x00000000*/ float TimePerCar;
-var() /*0x00010000-0x00000000*/ bool bSwitchTeamsEveryCar;
-var /*0x00010000-0x00000000*/ transient array<Car_TA> ShownCars;
-var /*0x00010000-0x00000000*/ transient Car_TA CurrentCar;
-var /*0x00010000-0x00000000*/ transient Car_TA NextCar;
-var /*0x00010000-0x00000000*/ transient int LastTeam;
-var /*0x00010000-0x00000000*/ transient float LastChangeCarTime;
+var() int MaxCarsShown;
+var() float TimePerCar;
+var() bool bSwitchTeamsEveryCar;
+var transient array<Car_TA> ShownCars;
+var transient Car_TA CurrentCar;
+var transient Car_TA NextCar;
+var transient int LastTeam;
+var transient float LastChangeCarTime;
 
 defaultproperties
 {

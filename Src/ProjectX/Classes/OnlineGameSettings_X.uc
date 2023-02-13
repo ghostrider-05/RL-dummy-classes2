@@ -9,7 +9,7 @@ var int NumPublicConnections;
 var int NumOpenPublicConnections;
 var() array<GameSettingCategory_X> GameSettingCategories;
 var transient bool bOffline;
-var /*0x00010000-0x00000000*/ bool bIgnoreHiddenMutatorsOverride;
+var bool bIgnoreHiddenMutatorsOverride;
 var int MinimumPlayersRequired;
 var int NumSecondsWaitingForPlayers;
 var int SearchScore;

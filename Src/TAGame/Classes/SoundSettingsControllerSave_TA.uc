@@ -5,8 +5,8 @@
 *******************************************************************************/
 class SoundSettingsControllerSave_TA extends SaveObject_TA;
 
-var /*0x00080000-0x00000000*/ float Volume;
-var /*0x00080000-0x00000000*/ _Types_TA.EControllerSoundMode SoundMode;
+var float Volume;
+var EControllerSoundMode SoundMode;
 
 defaultproperties
 {

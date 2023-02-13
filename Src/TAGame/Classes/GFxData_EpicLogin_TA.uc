@@ -16,7 +16,7 @@ var databinding string ConfirmDisplayNameErrorMessage;
 var databinding string UnsupportedCorrectiveActionURL;
 var databinding string EpicPlayerName;
 var databinding string ParentalControlsURL;
-var /*0x00008000-0x00000000*/ EpicConfig_X EpicConfig;
+var EpicConfig_X EpicConfig;
 
 defaultproperties
 {

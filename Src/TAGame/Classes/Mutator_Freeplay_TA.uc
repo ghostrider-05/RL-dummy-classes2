@@ -23,8 +23,8 @@ var GameEvent_Soccar_TA SoccarGame;
 var array<RumbleItemIndex> PlayerRumbleItems;
 var float LastResetTime;
 var const float ResetCooldown;
-var /*0x00008000-0x00000000*/ FreeplayConfig_TA FreeplayConfig;
-var _Types_TA.EBoostFillType BoostFillType;
+var FreeplayConfig_TA FreeplayConfig;
+var EBoostFillType BoostFillType;
 var float BoostFillDelay;
 
 defaultproperties

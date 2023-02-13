@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_Freeplay_TA extends GFxDataSingleton_X;
 
-var /*0x00018000-0x00000000*/ FreeplayCommands_TA FreeplayCommands;
+var FreeplayCommands_TA FreeplayCommands;
 
 defaultproperties
 {

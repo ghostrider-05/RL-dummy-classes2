@@ -9,26 +9,26 @@ const PriorityLow = 0;
 const PriorityMed = 4;
 const PriorityHigh = 8;
 
-var(Tension) /*0x00010000-0x00000000*/ export editinline DynamicValue_X Tension;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValue_X Excitement;
-var(Upset) /*0x00010000-0x00000000*/ export editinline DynamicValue_X Upset;
-var(Anticipation) /*0x00010000-0x00000000*/ export editinline DynamicValue_X Anticipation;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementGameStart;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementRoundStart;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementOvertimeStart;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierCurve_X ExcitementTimeRemaining;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierCurve_X Excitement0Seconds;
-var(Anticipation) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierCurve_X Anticipation0Seconds;
-var(Anticipation) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierCurve_X AnticipationExcitementMultiplier;
-var(Defense) /*0x00010000-0x00000000*/ CrowdDefense DefenseChantSettings;
-var(Events) /*0x00010000-0x00000000*/ float LowEnergyMaxExcitement;
-var(Events) /*0x00010000-0x00000000*/ float LowEnergyMaxTension;
-var(Events) /*0x00010000-0x00000000*/ float ChantLowEnergyDuration;
-var(Events) /*0x00010000-0x00000000*/ float ChantLowEnergyRandomDuration;
-var(Events) /*0x00010000-0x00000000*/ float KickoffTimeRemaining;
-var(Excitement) /*0x00010000-0x00000000*/ float PostGameExcitement;
-var(State) /*0x00010000-0x00000000*/ array<CrowdValueState> ExcitementStates;
-var(State) /*0x00010000-0x00000000*/ array<CrowdValueState> TensionStates;
+var(Tension) export editinline DynamicValue_X Tension;
+var(Excitement) export editinline DynamicValue_X Excitement;
+var(Upset) export editinline DynamicValue_X Upset;
+var(Anticipation) export editinline DynamicValue_X Anticipation;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementGameStart;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementRoundStart;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementOvertimeStart;
+var(Excitement) export editinline DynamicValueModifierCurve_X ExcitementTimeRemaining;
+var(Excitement) export editinline DynamicValueModifierCurve_X Excitement0Seconds;
+var(Anticipation) export editinline DynamicValueModifierCurve_X Anticipation0Seconds;
+var(Anticipation) export editinline DynamicValueModifierCurve_X AnticipationExcitementMultiplier;
+var(Defense) CrowdDefense DefenseChantSettings;
+var(Events) float LowEnergyMaxExcitement;
+var(Events) float LowEnergyMaxTension;
+var(Events) float ChantLowEnergyDuration;
+var(Events) float ChantLowEnergyRandomDuration;
+var(Events) float KickoffTimeRemaining;
+var(Excitement) float PostGameExcitement;
+var(State) array<CrowdValueState> ExcitementStates;
+var(State) array<CrowdValueState> TensionStates;
 
 defaultproperties
 {

@@ -5,12 +5,12 @@
 *******************************************************************************/
 class GFxData_FaceIt_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ databinding bool bEnabled;
-var() /*0x00018000-0x00000000*/ transient FaceIt_TA FaceIt;
-var /*0x00018000-0x00000000*/ transient FaceItConfig_TA Config;
-var /*0x00018000-0x00000000*/ PsyNet_X PsyNet;
-var /*0x00010000-0x00000000*/ Qword LastSpectatorPopupTime;
-var /*0x00010000-0x00000000*/ Qword SpectatorPopupDelaySeconds;
+var databinding bool bEnabled;
+var() transient FaceIt_TA FaceIt;
+var transient FaceItConfig_TA Config;
+var PsyNet_X PsyNet;
+var Qword LastSpectatorPopupTime;
+var Qword SpectatorPopupDelaySeconds;
 
 defaultproperties
 {

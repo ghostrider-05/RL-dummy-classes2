@@ -6,10 +6,10 @@
 class GFxData_ChallengeBase_TA extends GFxData_ChallengeObject_TA
 	abstract;
 
-var /*0x00010000-0x00000000*/ GFxData_ChallengeReward_TA GFxReward;
-var /*0x00010000-0x00000000*/ array<GFxData_ChallengeCurrency_TA> GFxCurrency;
-var /*0x00010000-0x00000000*/ array<GFxData_ChallengeRequirement_TA> GFxRequirement;
-var /*0x00010000-0x00000000*/ transient GFxModal_X ModalProcessing;
+var GFxData_ChallengeReward_TA GFxReward;
+var array<GFxData_ChallengeCurrency_TA> GFxCurrency;
+var array<GFxData_ChallengeRequirement_TA> GFxRequirement;
+var transient GFxModal_X ModalProcessing;
 
 defaultproperties
 {

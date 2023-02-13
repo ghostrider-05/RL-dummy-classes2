@@ -5,13 +5,13 @@
 *******************************************************************************/
 class ChallengeConfig_TA extends OnlineConfig_X;
 
-var /*0x00010000-0x00000000*/ int MinSecondsDelayNewNotification;
-var /*0x00010000-0x00000000*/ int MaxSecondsDelayNewNotification;
-var /*0x00010000-0x00000000*/ transient int SecondsDelayNewNotification;
-var /*0x00010000-0x00000000*/ databinding string TrainingFolderName;
-var /*0x00010000-0x00000000*/ databinding string WeeklyFolderName;
-var /*0x00010000-0x00000000*/ databinding string SeasonFolderName;
-var /*0x00010000-0x00000000*/ databinding bool bHideChallengeUI;
+var int MinSecondsDelayNewNotification;
+var int MaxSecondsDelayNewNotification;
+var transient int SecondsDelayNewNotification;
+var databinding string TrainingFolderName;
+var databinding string WeeklyFolderName;
+var databinding string SeasonFolderName;
+var databinding bool bHideChallengeUI;
 
 defaultproperties
 {

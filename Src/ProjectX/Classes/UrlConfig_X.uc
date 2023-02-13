@@ -13,7 +13,4 @@ var config string LegalTextWebFolder;
 
 defaultproperties
 {
-	CDN="https://rl-cdn.psyonix.com/"
-	CrossPlatformSupportURL="https://support.rocketleague.com/hc/en-us/articles/360015502074-How-do-I-play-with-a-friend-that-is-on-a-different-platform-"
-	LegalTextWebFolder="Legal/"
 }

@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_TourConfig_TA extends GFxDataSingleton_X;
 
-var() /*0x00018000-0x00000000*/ TourConfig_TA Config;
+var() TourConfig_TA Config;
 
 defaultproperties
 {

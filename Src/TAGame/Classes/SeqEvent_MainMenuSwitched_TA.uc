@@ -7,7 +7,7 @@ class SeqEvent_MainMenuSwitched_TA extends SequenceEvent
 	forcescriptorder(true)
 	hidecategories(Object);
 
-var transient _Types_TA.EMainMenuBackground PrevBackground;
+var transient EMainMenuBackground PrevBackground;
 
 defaultproperties
 {

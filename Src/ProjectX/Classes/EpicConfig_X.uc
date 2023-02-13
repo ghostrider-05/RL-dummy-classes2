@@ -9,7 +9,7 @@ class EpicConfig_X extends OnlineConfig_X
 struct ChatPermissionPair
 {
 	var string PermissionLabel;
-	var _Types_X.EChatPermissionLevel Level;
+	var EChatPermissionLevel Level;
 
 	structdefaultproperties
 	{
@@ -21,7 +21,7 @@ struct ChatPermissionPair
 struct TradePermissionPair
 {
 	var string PermissionLabel;
-	var _Types_X.ETradePermissionLevel Level;
+	var ETradePermissionLevel Level;
 
 	structdefaultproperties
 	{
@@ -32,7 +32,7 @@ struct TradePermissionPair
 
 struct TradePermissionEnabledPair
 {
-	var _Types_X.ETradePermissionLevel Level;
+	var ETradePermissionLevel Level;
 	var bool bEnabled;
 
 	structdefaultproperties
@@ -67,8 +67,8 @@ var string EASAuthURL;
 var array<ChatPermissionPair> ChatPermissionPairs;
 var array<TradePermissionPair> TradePermissionPairs;
 var array<TradePermissionEnabledPair> TradePermissionEnabledPairs;
-var _Types_X.EChatPermissionLevel DefaultChatPermissionLevel;
-var _Types_X.ETradePermissionLevel DefaultTradePermissionLevel;
+var EChatPermissionLevel DefaultChatPermissionLevel;
+var ETradePermissionLevel DefaultTradePermissionLevel;
 var PlayerPermissions DefaultPermissions;
 var string ForgotPinURL;
 var string ParentalControlsURL;

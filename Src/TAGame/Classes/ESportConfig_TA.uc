@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ESportConfig_TA extends OnlineConfig_X;
 
-const SoonInSeconds = 10800q;
+const SoonInSeconds = 10800;
 
 struct ESportEventData
 {

@@ -14,8 +14,8 @@ enum EAvatarRequestTryGetResult
 	ARTGR_MAX
 };
 
-var /*0x00008000-0x00000000*/ OnlineGame_X OnlineGame;
-var /*0x00008000-0x00000000*/ EpicConfig_X EpicConfig;
+var OnlineGame_X OnlineGame;
+var EpicConfig_X EpicConfig;
 var array<RemoteAvatarPermissionsRequest_X> UnsentRequests;
 var array<RemoteAvatarPermissionsRequest_X> AllRequests;
 var native Map_Mirror PermissionCache;

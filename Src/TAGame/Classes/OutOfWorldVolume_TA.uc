@@ -13,14 +13,14 @@ enum EOutOfWorld
 	OOW_MAX
 };
 
-var() /*0x00010000-0x00000000*/ array< class > TouchTypes;
-var() /*0x00010000-0x00000000*/ OutOfWorldVolume_TA.EOutOfWorld OutOfWorldType;
+var() array< class > TouchTypes;
+var() EOutOfWorld OutOfWorldType;
 
 defaultproperties
 {
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		ReplacementPrimitive=none
 		bAcceptsLights=false
 		BlockZeroExtent=true

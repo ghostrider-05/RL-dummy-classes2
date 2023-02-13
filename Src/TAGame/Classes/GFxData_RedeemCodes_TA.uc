@@ -11,7 +11,5 @@ var const localized string RedeemingBodyString;
 
 defaultproperties
 {
-	RedeemingTitleString="Redeeming"
-	RedeemingBodyString="Redeeming..."
 	TableName=RedeemCodes
 }

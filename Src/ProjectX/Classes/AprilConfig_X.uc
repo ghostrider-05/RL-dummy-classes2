@@ -9,7 +9,7 @@ var() Qword StartTime;
 var() Qword EndTime;
 var() bool bChangeRankedIcons;
 var() bool bChangePlaylists;
-var() /*0x00010000-0x00000000*/ bool bChangeCrowd;
+var() bool bChangeCrowd;
 var() float HatScale;
 var() float AntennaScale;
 

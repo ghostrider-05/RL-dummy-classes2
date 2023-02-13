@@ -13,7 +13,7 @@ defaultproperties
 	Components(0)=none
 	Components(1)=none
 	Components(2)=none
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__PlayerStart_TA.CollisionCylinder'

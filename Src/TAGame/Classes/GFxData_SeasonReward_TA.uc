@@ -9,8 +9,8 @@ var databinding int Level;
 var databinding int Wins;
 var databinding int WinsRequired;
 var databinding bool bCanProgress;
-var /*0x00008000-0x00000000*/ RankedConfig_X RankedConfig;
-var /*0x00008000-0x00000000*/ OnlineGameSkill_X Skill;
+var RankedConfig_X RankedConfig;
+var OnlineGameSkill_X Skill;
 
 defaultproperties
 {

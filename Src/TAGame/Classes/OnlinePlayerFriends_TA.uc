@@ -6,7 +6,7 @@
 class OnlinePlayerFriends_TA extends OnlinePlayerFriends_X within OnlinePlayer_X
 	config(Game);
 
-var /*0x00008000-0x00000000*/ transient Personas_TA PersonasData;
+var transient Personas_TA PersonasData;
 
 defaultproperties
 {

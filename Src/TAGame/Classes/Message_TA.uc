@@ -15,7 +15,7 @@ var() const AkSoundCue PrimaryPlayerSound;
 var() const string Key;
 /** Which section in the localization file */
 var() const string Section;
-var() const _Types_TA.EHUDMessageLevel MessageLevel;
+var() const EHUDMessageLevel MessageLevel;
 var const transient string LocalizedMessage;
 var const transient array<name> ParamNames;
 var const transient array<string> ParamTokens;

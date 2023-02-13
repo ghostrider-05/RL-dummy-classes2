@@ -6,7 +6,7 @@
 class NotificationSave_TA extends SaveObject_TA;
 
 var array<Notification_TA> Notifications;
-var /*0x00080000-0x00000000*/ bool bShowInGameNotifications;
+var bool bShowInGameNotifications;
 
 defaultproperties
 {

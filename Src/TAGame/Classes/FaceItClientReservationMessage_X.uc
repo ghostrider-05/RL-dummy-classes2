@@ -6,10 +6,10 @@
 class FaceItClientReservationMessage_X extends BeaconMessage_X within ReservationBeacon_X
 	implements(InitialServerToClientMessage_X,QueuedOfflineMessage_X);
 
-var /*0x00010000-0x00000000*/ ServerReservationData Reservation;
-var /*0x00010000-0x00000000*/ FaceItMatchInfo MatchInfo;
-var /*0x00010000-0x00000000*/ Qword Expiration;
-var /*0x00010000-0x00000000*/ transient int OfflineTimeToLiveSeconds;
+var ServerReservationData Reservation;
+var FaceItMatchInfo MatchInfo;
+var Qword Expiration;
+var transient int OfflineTimeToLiveSeconds;
 
 defaultproperties
 {

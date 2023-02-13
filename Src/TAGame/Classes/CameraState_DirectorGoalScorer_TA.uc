@@ -5,6 +5,6 @@
 *******************************************************************************/
 class CameraState_DirectorGoalScorer_TA extends CameraState_DirectorProxy_TA;
 
-var() /*0x00010000-0x00000000*/ float Distance;
-var() /*0x00010000-0x00000000*/ float FOV;
-var /*0x00010000-0x00000000*/ transient Car_TA FocusCar;
+var() float Distance;
+var() float FOV;
+var transient Car_TA FocusCar;

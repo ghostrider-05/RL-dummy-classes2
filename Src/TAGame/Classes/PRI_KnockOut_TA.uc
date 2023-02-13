@@ -6,23 +6,23 @@
 class PRI_KnockOut_TA extends PRI_TA
 	hidecategories(Navigation,Movement,Collision);
 
-var /*0x00010000-0x00000000*/ transient GameEvent_KnockOut_TA GameEvent_KO;
-var /*0x00010000-0x00000000*/ transient bool bShowMatchPlacement;
-var /*0x00010000-0x00000000*/ transient bool bIsEliminated;
-var /*0x00010000-0x00000000*/ repnotify transient bool bIsActiveMVP;
-var /*0x00010000-0x00000000*/ transient int Knockouts;
-var /*0x00010000-0x00000000*/ transient int StackedKnockoutCount;
-var /*0x00010000-0x00000000*/ transient float LastKnockoutTime;
-var /*0x00010000-0x00000000*/ const float MaxKnockoutStackTime;
-var /*0x00010000-0x00000000*/ transient int KnockoutAssists;
-var /*0x00010000-0x00000000*/ repnotify transient int KnockoutDeaths;
-var /*0x00010000-0x00000000*/ transient int DamageCaused;
-var /*0x00010000-0x00000000*/ transient int Hits;
-var /*0x00010000-0x00000000*/ transient int Grabs;
-var /*0x00010000-0x00000000*/ transient int Blocks;
-var /*0x00010000-0x00000000*/ transient int EliminationOrder;
-var /*0x00010000-0x00000000*/ transient int MatchPlacement;
-var /*0x00010000-0x00000000*/ int SpectateDelaySeconds;
+var transient GameEvent_KnockOut_TA GameEvent_KO;
+var transient bool bShowMatchPlacement;
+var transient bool bIsEliminated;
+var repnotify transient bool bIsActiveMVP;
+var transient int Knockouts;
+var transient int StackedKnockoutCount;
+var transient float LastKnockoutTime;
+var const float MaxKnockoutStackTime;
+var transient int KnockoutAssists;
+var repnotify transient int KnockoutDeaths;
+var transient int DamageCaused;
+var transient int Hits;
+var transient int Grabs;
+var transient int Blocks;
+var transient int EliminationOrder;
+var transient int MatchPlacement;
+var int SpectateDelaySeconds;
 
 defaultproperties
 {

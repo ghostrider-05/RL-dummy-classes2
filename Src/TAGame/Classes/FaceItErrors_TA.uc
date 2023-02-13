@@ -5,17 +5,17 @@
 *******************************************************************************/
 class FaceItErrors_TA extends ErrorList;
 
-var /*0x00010000-0x00000000*/ const ErrorType MatchHasBeenCancelled;
-var /*0x00010000-0x00000000*/ const ErrorType CannotJoinCrossPlatformMatch;
-var /*0x00010000-0x00000000*/ const ErrorType CannotJoinWhileInParty;
-var /*0x00010000-0x00000000*/ const ErrorType CannotJoinWhilePlayingSplitscreen;
-var /*0x00010000-0x00000000*/ const ErrorType CannotJoinWhileOnline;
-var /*0x00010000-0x00000000*/ const ErrorType ReturnToMainMenuToJoin;
-var /*0x00010000-0x00000000*/ const ErrorType JoinGameFailed;
-var /*0x00010000-0x00000000*/ const ErrorType NoFaceItMatchFound;
-var /*0x00010000-0x00000000*/ const ErrorType FaceItGameServerPending;
-var /*0x00010000-0x00000000*/ const ErrorType ExternalMatchServerNotFound;
-var /*0x00010000-0x00000000*/ const ErrorType ReservationSentToIncorrectPlayer;
+var const ErrorType MatchHasBeenCancelled;
+var const ErrorType CannotJoinCrossPlatformMatch;
+var const ErrorType CannotJoinWhileInParty;
+var const ErrorType CannotJoinWhilePlayingSplitscreen;
+var const ErrorType CannotJoinWhileOnline;
+var const ErrorType ReturnToMainMenuToJoin;
+var const ErrorType JoinGameFailed;
+var const ErrorType NoFaceItMatchFound;
+var const ErrorType FaceItGameServerPending;
+var const ErrorType ExternalMatchServerNotFound;
+var const ErrorType ReservationSentToIncorrectPlayer;
 
 defaultproperties
 {

@@ -5,11 +5,11 @@
 *******************************************************************************/
 class OnlineGameTourMatchmaking_TA extends OnlineGameMatchmakingBase_X within OnlineGame_X;
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var() /*0x00018000-0x00000000*/ TourConfig_TA Config;
-var /*0x00010000-0x00000000*/ const localized string FoundServerString;
-var /*0x00010000-0x00000000*/ const localized string StartSearchFailString;
-var /*0x00010000-0x00000000*/ transient TourEvent_TA TourEvent;
-var /*0x00010000-0x00000000*/ transient Error Error;
-var /*0x00010000-0x00000000*/ transient bool bPlayerReadyForNextMatch;
-var /*0x00010000-0x00000000*/ transient byte JoinServerAttemptCounter;
+var() OnlineGameTournaments_TA Tournaments;
+var() TourConfig_TA Config;
+var const localized string FoundServerString;
+var const localized string StartSearchFailString;
+var transient TourEvent_TA TourEvent;
+var transient Error Error;
+var transient bool bPlayerReadyForNextMatch;
+var transient byte JoinServerAttemptCounter;

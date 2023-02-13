@@ -13,7 +13,4 @@ var() const localized string NotLoggedInToPsynet;
 
 defaultproperties
 {
-	StartSearchFailString="Unable to find server. Please try again later..."
-	NoResultsFound="Unable to find server."
-	NotLoggedInToPsynet="Unable to log in to server. Check your internet connection"
 }

@@ -7,9 +7,9 @@ class SetPlayerStorageResult_X extends Object;
 
 struct SetPlayerStorageResultItem
 {
-	var /*0x00010000-0x00000000*/ name Category;
-	var /*0x00010000-0x00000000*/ int Tick;
-	var /*0x00010000-0x00000000*/ bool bOutOfSync;
+	var name Category;
+	var int Tick;
+	var bool bOutOfSync;
 
 	structdefaultproperties
 	{
@@ -19,4 +19,4 @@ struct SetPlayerStorageResultItem
 	}
 };
 
-var /*0x00010000-0x00000000*/ array<SetPlayerStorageResultItem> Items;
+var array<SetPlayerStorageResultItem> Items;

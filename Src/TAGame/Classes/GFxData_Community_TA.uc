@@ -6,7 +6,7 @@
 class GFxData_Community_TA extends GFxDataSingleton_X;
 
 var transient array<GFxData_BlogTile_TA> GFxBlogTiles;
-var /*0x00008000-0x00000000*/ BlogConfig_X Config;
+var BlogConfig_X Config;
 var databinding string MotD;
 var transient BlogTileCache_TA Cache;
 

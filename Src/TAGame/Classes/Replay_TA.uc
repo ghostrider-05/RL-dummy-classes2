@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class Replay_TA extends Object
+	native
 	config(Game);
 
 enum EReplayVersion
@@ -168,7 +169,7 @@ var const transient bool bLoadedNetPackages;
 var() transient bool bDebug;
 var const transient array<byte> Data;
 var const transient array<ReplayKeyframe> KeyFrames;
-var const transient Replay_TA.EReplayState ReplayState;
+var const transient EReplayState ReplayState;
 var const transient int CurrentFrame;
 var const transient int NextKeyframe;
 var const transient float CurrentTime;
@@ -189,11 +190,6 @@ var transient CameraTrack_TA CameraTrack;
 
 defaultproperties
 {
-	ReserveMegabytes=4
-	RecordFPS=30.0
-	KeyframeDelay=10.0
-	MaxChannels=2047
-	MaxReplaySizeMB=10
 	PlaybackClasses(0)=class'RBActor_TA'
 	PlaybackClasses(1)=class'CarComponent_TA'
 	PlaybackClasses(2)=class'VehiclePickup_TA'

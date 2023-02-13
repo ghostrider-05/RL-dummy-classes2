@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GFxData_MicroEvent_TA extends GFxDataSingleton_X;
 
-var /*0x00008000-0x00000000*/ MicroEventConfig_TA MicroEventConfig;
+var MicroEventConfig_TA MicroEventConfig;
 var MicroEvent_TA MicroEvent;
 var databinding bool bIsActive;
 

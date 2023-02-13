@@ -5,11 +5,11 @@
 *******************************************************************************/
 class MatchType_Tournament_TA extends MatchType_PublicRanked_TA;
 
-var() /*0x00018000-0x00000000*/ OnlineGameDedicatedServer_TA DedicatedServer;
-var() /*0x00018000-0x00000000*/ OnlineGameTourServer_TA TourServer;
-var() /*0x00018000-0x00000000*/ TourServerConfig_TA TournamentServerConfig;
-var() /*0x00018000-0x00000000*/ MatchSeries_TA MatchSeries;
-var /*0x00010000-0x00000000*/ name PlaylistName;
+var() OnlineGameDedicatedServer_TA DedicatedServer;
+var() OnlineGameTourServer_TA TourServer;
+var() TourServerConfig_TA TournamentServerConfig;
+var() MatchSeries_TA MatchSeries;
+var name PlaylistName;
 
 defaultproperties
 {

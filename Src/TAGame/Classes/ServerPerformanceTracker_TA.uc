@@ -5,8 +5,8 @@
 *******************************************************************************/
 class ServerPerformanceTracker_TA extends ActorComponent_X within GameEvent_Soccar_TA;
 
-var() /*0x00008000-0x00000000*/ ServerPerformanceConfig_TA ServerPerformanceConfig;
-var() /*0x00008000-0x00000000*/ ConnectionQualityConfig_TA ConnectionQualityConfig;
+var() ServerPerformanceConfig_TA ServerPerformanceConfig;
+var() ConnectionQualityConfig_TA ConnectionQualityConfig;
 var float RollingFpsAverage;
 var float InternalLowFpsTime;
 var float ServerPerformanceLastUpdateTime;

@@ -7,4 +7,4 @@ class CarComponent_DoubleJump_KO_TA extends CarComponent_DoubleJump_TA
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ const float LimitVelocityToForceScale;
+var const float LimitVelocityToForceScale;

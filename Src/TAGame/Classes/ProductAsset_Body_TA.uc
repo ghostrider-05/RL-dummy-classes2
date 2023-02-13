@@ -70,8 +70,8 @@ struct native BoostAttachmentToggle
 /** Static mesh for vehicle body */
 var(Mesh) SkeletalMesh Mesh;
 /** Animation tree for frame/chassis */
-var(Mesh) /*0x00020000-0x00000000*/ AnimTree AnimTreeTemplate;
-var(Mesh) /*0x00020000-0x00000000*/ array<AnimSet> AnimSets;
+var(Mesh) AnimTree AnimTreeTemplate;
+var(Mesh) array<AnimSet> AnimSets;
 /** Physics asset */
 var(Physics) PhysicsAsset PhysicsAsset;
 var(Physics) HandlingPreset_TA HandlingPreset;
@@ -105,7 +105,7 @@ var(Sound) editoronly array<editoronly ProductAsset_EngineAudio_TA> EngineAudioA
 var editconst deprecated int EngineAudioProductID;
 var(Sound) editinline ProductAssetReference_TA EngineAudioReference;
 /** FX actor specific to this body (ambient effects) */
-var(FX) /*0x00020000-0x00000000*/ FXActor_X FXActor;
+var(FX) FXActor_X FXActor;
 /** Material index for skin */
 var(FX) int SkinMaterialIndex;
 /** Material index for brakelights */
@@ -124,20 +124,20 @@ var() Vector SupersonicTrailOffset;
 var() array<Product_TA> AdditionalUnlocks2;
 var() export editinline ProductEquipProfile_TA EquipProfile;
 /** Additional persistent attachments */
-var() /*0x00020000-0x00000000*/ array<ProductAttachment> Attachments;
+var() array<ProductAttachment> Attachments;
 /** Paramaters to set on the boost particles */
-var(FX) /*0x00020000-0x00000000*/ array<ParticleSysParam> BoostParticleParameters;
+var(FX) array<ParticleSysParam> BoostParticleParameters;
 /** Particle for supersonic wheel fx */
-var(FX) /*0x00020000-0x00000000*/ ParticleSystem SupersonicWheelTemplate;
+var(FX) ParticleSystem SupersonicWheelTemplate;
 /** FX Actor for demolish explosion */
-var(FX) /*0x00020000-0x00000000*/ FXActor_X DemolishFX;
+var(FX) FXActor_X DemolishFX;
 /** FX Actor for spawning */
-var(FX) /*0x00020000-0x00000000*/ FXActor_X SpawnFX;
-var(FX) /*0x00020000-0x00000000*/ FXActor_X ExitFX;
+var(FX) FXActor_X SpawnFX;
+var(FX) FXActor_X ExitFX;
 var(FX) float WheelPreviewAnimTranslateScale;
 var(FX) array<BoostAttachmentToggle> BoostAttachmentsToModify;
-var() /*0x00020000-0x00000000*/ MaterialParams SkinParameters;
-var(Thumbnail) /*0x00020000-0x00000000*/ editinline ProductAssetReferenceWheel_TA ThumbnailWheelAsset;
+var() MaterialParams SkinParameters;
+var(Thumbnail) editinline ProductAssetReferenceWheel_TA ThumbnailWheelAsset;
 var array<SkeletalMeshLODDistanceInfo> LODDistanceInfo;
 var() array<Object> MutatorArchetypes;
 

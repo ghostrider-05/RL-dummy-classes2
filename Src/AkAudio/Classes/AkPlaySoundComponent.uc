@@ -25,7 +25,7 @@ var const transient bool bWasAttached;
 var() const Vector Translation;
 var() const Rotator Rotation;
 var() float ReFireDelay;
-var() AkPlaySoundComponent.EAkPlaySoundReceiver Receiver;
+var() EAkPlaySoundReceiver Receiver;
 var() array<name> RestartSwitches;
 var const export editinline transient AkSoundSource SoundSource;
 var const transient float LastPlayTime;

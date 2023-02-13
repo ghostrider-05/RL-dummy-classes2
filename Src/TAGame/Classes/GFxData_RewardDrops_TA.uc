@@ -5,23 +5,23 @@
 *******************************************************************************/
 class GFxData_RewardDrops_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ databinding name RewardName;
-var /*0x00010000-0x00000000*/ databinding int Total;
-var /*0x00010000-0x00000000*/ databinding int Base;
-var /*0x00010000-0x00000000*/ databinding int BaseLevel;
-var /*0x00010000-0x00000000*/ databinding int Level;
-var /*0x00010000-0x00000000*/ databinding array<GFxLevelThreshold> LevelThresholds;
-var /*0x00010000-0x00000000*/ databinding array<OnlineXPModifier> Modifiers;
-var /*0x00010000-0x00000000*/ export editinline transient ObjectProvider RewardDrops;
-var() /*0x00010000-0x00000000*/ array<name> PremiumModifierNames;
-var() /*0x00010000-0x00000000*/ array<name> PenaltyModifierNames;
-var() /*0x00010000-0x00000000*/ const array<name> PromoModifierNames;
-var /*0x00010000-0x00000000*/ const name WeeklyCapReached;
-var /*0x00010000-0x00000000*/ const string RewardModifiers_SectionName;
-var /*0x00010000-0x00000000*/ const string RewardModifiers_PackageName;
-var /*0x00010000-0x00000000*/ const name WeeklyCap;
-var /*0x00010000-0x00000000*/ const name RestXP;
-var /*0x00010000-0x00000000*/ bool bCanDropOnlineRewards;
+var databinding name RewardName;
+var databinding int Total;
+var databinding int Base;
+var databinding int BaseLevel;
+var databinding int Level;
+var databinding array<GFxLevelThreshold> LevelThresholds;
+var databinding array<OnlineXPModifier> Modifiers;
+var export editinline transient ObjectProvider RewardDrops;
+var() array<name> PremiumModifierNames;
+var() array<name> PenaltyModifierNames;
+var() const array<name> PromoModifierNames;
+var const name WeeklyCapReached;
+var const string RewardModifiers_SectionName;
+var const string RewardModifiers_PackageName;
+var const name WeeklyCap;
+var const name RestXP;
+var bool bCanDropOnlineRewards;
 
 defaultproperties
 {

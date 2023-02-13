@@ -18,7 +18,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	Components(0)=none
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__GameEditor_Pawn_TA.CollisionCylinder'

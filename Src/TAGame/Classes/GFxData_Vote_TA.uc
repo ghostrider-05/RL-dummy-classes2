@@ -5,9 +5,9 @@
 *******************************************************************************/
 class GFxData_Vote_TA extends GFxDataRow_X;
 
-var databinding _Types_TA.EVoteSubject Subject;
-var databinding _Types_TA.EVoteStatus VoteStatus;
-var databinding _Types_TA.EVoteStatus LocalVoteStatus;
+var databinding EVoteSubject Subject;
+var databinding EVoteStatus VoteStatus;
+var databinding EVoteStatus LocalVoteStatus;
 var databinding int YesVotes;
 var databinding int NoVotes;
 var databinding int RequiredVotes;

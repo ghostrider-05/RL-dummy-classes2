@@ -23,11 +23,11 @@ struct PickupInfo_TA
 	}
 };
 
-var /*0x00080000-0x00000000*/ repretry transient PickupInfo_TA PickupInfo;
-var /*0x00080000-0x00000000*/ transient SpecialPickup_TA AttachedPickup;
-var /*0x00080000-0x00000000*/ transient int ConcurrentItemCount;
-var /*0x00080000-0x00000000*/ transient int SelectedIndex;
-var /*0x00080000-0x00000000*/ transient int PreviewTimeSeconds;
+var repretry transient PickupInfo_TA PickupInfo;
+var transient SpecialPickup_TA AttachedPickup;
+var transient int ConcurrentItemCount;
+var transient int SelectedIndex;
+var transient int PreviewTimeSeconds;
 
 defaultproperties
 {

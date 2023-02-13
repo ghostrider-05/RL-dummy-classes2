@@ -5,16 +5,16 @@
 *******************************************************************************/
 class CrowdSounds_Knockout_TA extends CrowdSoundsBase_TA;
 
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds HeavyHit;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds LightHit;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds AerialHeavyHit;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds AerialLightHit;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds HeavyBlock;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds LightBlock;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds KnockOut;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds Death;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds Throw;
-var() /*0x00010000-0x00000000*/ CrowdExcitementSounds Grab;
+var() CrowdExcitementSounds HeavyHit;
+var() CrowdExcitementSounds LightHit;
+var() CrowdExcitementSounds AerialHeavyHit;
+var() CrowdExcitementSounds AerialLightHit;
+var() CrowdExcitementSounds HeavyBlock;
+var() CrowdExcitementSounds LightBlock;
+var() CrowdExcitementSounds KnockOut;
+var() CrowdExcitementSounds Death;
+var() CrowdExcitementSounds Throw;
+var() CrowdExcitementSounds Grab;
 
 defaultproperties
 {

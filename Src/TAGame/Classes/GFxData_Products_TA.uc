@@ -52,7 +52,7 @@ var databinding bool bCanArchive;
 var() bool bDebugLoadingProducts;
 var databinding Color ProductPaintColor;
 var databinding string ProductPaintColorName;
-var databinding _Types_TA.EProductQuality ProductQuality;
+var databinding EProductQuality ProductQuality;
 var databinding int ProductQuantity;
 var databinding int TradeHold;
 var databinding int SeriesID;
@@ -65,8 +65,8 @@ var transient ProductsFavoriteSave_TA FavoriteSave;
 var transient ProductsArchiveSave_TA ArchiveSave;
 var transient ProfileLoadoutSave_TA LoadoutSave;
 var transient array< class > DynamicThumbnailsIgnorableOnlinePaintedProducts;
-var() /*0x00008000-0x00000000*/ MtxConfig_TA MtxConfig;
-var() /*0x00008000-0x00000000*/ ProductsConfig_TA ProductsConfig;
+var() MtxConfig_TA MtxConfig;
+var() ProductsConfig_TA ProductsConfig;
 
 defaultproperties
 {

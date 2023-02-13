@@ -37,8 +37,8 @@ struct GFxDLCData
 
 var databinding array<GFxDLCData> Packs;
 var transient bool bReturningFromStore;
-var() /*0x00008000-0x00000000*/ MtxConfig_TA MtxConfig;
-var() /*0x00008000-0x00000000*/ OnlineSubsystem OnlineSub;
+var() MtxConfig_TA MtxConfig;
+var() OnlineSubsystem OnlineSub;
 var OnlinePlayerMTX_TA MTX;
 var transient Qword TimeWhenClientLostFocus;
 

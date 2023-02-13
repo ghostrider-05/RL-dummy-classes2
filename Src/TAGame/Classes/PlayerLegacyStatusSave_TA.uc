@@ -5,8 +5,8 @@
 *******************************************************************************/
 class PlayerLegacyStatusSave_TA extends SaveObject_TA;
 
-var _Types_TA.ELegacyBoxStatus LegacyStatus;
-var /*0x00080000-0x00000000*/ bool bOnlineSet;
+var ELegacyBoxStatus LegacyStatus;
+var bool bOnlineSet;
 var array<OnlineProductData> OnlineProducts;
 
 defaultproperties

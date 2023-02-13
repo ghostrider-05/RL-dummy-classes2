@@ -14,7 +14,7 @@ defaultproperties
 	Loadout=ProductLoader_TA'Default__CinematicsCar_TA.DefaultCarLoadout'
 	CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__CinematicsCar_TA.CarTrajectoryComponent0'
 	NameplateComponentCar=NameplateComponentCar_TA'Default__CinematicsCar_TA.NameplateComponentCar0'
-	begin object name=DefaultMesh class=CarMeshComponent_TA
+	begin object name=DefaultMesh
 		ReplacementPrimitive=none
 	end object
 	// Reference: CarMeshComponent_TA'Default__CinematicsCar_TA.DefaultMesh'
@@ -27,7 +27,7 @@ defaultproperties
 	Mesh=DefaultMesh
 	
 	CylinderComponent=CollisionCylinder
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__CinematicsCar_TA.CollisionCylinder'

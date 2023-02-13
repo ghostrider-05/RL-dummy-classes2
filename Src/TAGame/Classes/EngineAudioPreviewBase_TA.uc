@@ -4,7 +4,8 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class EngineAudioPreviewBase_TA extends Object
-	abstract;
+	abstract
+	native;
 
 var() float StartDelay;
 var() float AccelerateDelay;

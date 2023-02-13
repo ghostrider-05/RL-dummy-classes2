@@ -5,8 +5,8 @@
 *******************************************************************************/
 class StayAsPartyVote_TA extends Object;
 
-var /*0x00010000-0x00000000*/ array<StayAsPartyVoter_TA> Voters;
-var /*0x00010000-0x00000000*/ array<StayAsPartyVoter_TA> VotedYes;
-var /*0x00010000-0x00000000*/ array<MergePartyEvent_TA> PendingMerges;
-var /*0x00010000-0x00000000*/ array<MergePartyEvent_TA> MergeRecord;
-var /*0x00010000-0x00000000*/ array<PartyUpMergeError> MergeErrors;
+var array<StayAsPartyVoter_TA> Voters;
+var array<StayAsPartyVoter_TA> VotedYes;
+var array<MergePartyEvent_TA> PendingMerges;
+var array<MergePartyEvent_TA> MergeRecord;
+var array<PartyUpMergeError> MergeErrors;

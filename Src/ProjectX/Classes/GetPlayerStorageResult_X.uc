@@ -5,4 +5,4 @@
 *******************************************************************************/
 class GetPlayerStorageResult_X extends Object;
 
-var /*0x00010000-0x00000000*/ array<GetPlayerStorageResultItem_X> Items;
+var array<GetPlayerStorageResultItem_X> Items;

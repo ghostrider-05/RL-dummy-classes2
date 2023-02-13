@@ -5,16 +5,14 @@
 *******************************************************************************/
 class GFxData_TourCheckIn_TA extends GFxDataSingleton_X;
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var /*0x00010000-0x00000000*/ databinding string TeamName;
-var /*0x00010000-0x00000000*/ transient CustomMatchTeamSettings TeamSettings;
-var /*0x00010000-0x00000000*/ transient TournamentSettingsSave_TA SaveData;
-var /*0x00010000-0x00000000*/ const localized string TournamentJoinTitle;
-var /*0x00010000-0x00000000*/ const localized string MatchmakingCancelledOnCheckIn;
+var() OnlineGameTournaments_TA Tournaments;
+var databinding string TeamName;
+var transient CustomMatchTeamSettings TeamSettings;
+var transient TournamentSettingsSave_TA SaveData;
+var const localized string TournamentJoinTitle;
+var const localized string MatchmakingCancelledOnCheckIn;
 
 defaultproperties
 {
-	TournamentJoinTitle="Joining Tournament"
-	MatchmakingCancelledOnCheckIn="You have been removed from matchmaking to join an upcoming tournament."
 	TableName=TournamentCheckIn
 }

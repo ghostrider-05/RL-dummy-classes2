@@ -5,27 +5,27 @@
 *******************************************************************************/
 class RocketPass_TA extends Object;
 
-var /*0x00090000-0x00000000*/ array<RocketPassRewardData> FreeRewards;
-var /*0x00090000-0x00000000*/ array<RocketPassRewardData> PremiumRewards;
-var /*0x00090000-0x00000000*/ array<RocketPassRewardData> PrestigeRewards;
-var /*0x00010000-0x00000000*/ databinding int TierCap;
-var /*0x00010000-0x00000000*/ databinding bool bIsPassActive;
-var /*0x00010000-0x00000000*/ databinding bool bOwnsPremium;
-var /*0x00010000-0x00000000*/ bool bPrestigeItemsDirtied;
-var /*0x00010000-0x00000000*/ databinding float XPMultiplier;
-var /*0x00010000-0x00000000*/ databinding int TierLevel;
-var /*0x00010000-0x00000000*/ databinding int SecondsRemaining;
-var /*0x00010000-0x00000000*/ export editinline RocketPassBundleContainer_TA Bundles;
-var /*0x00010000-0x00000000*/ transient AsyncTask SyncAllInfoTask;
-var /*0x00010000-0x00000000*/ transient AsyncTask PendingPlayerInfoTask;
-var /*0x00010000-0x00000000*/ transient AsyncTask PendingRewardsTask;
-var /*0x00010000-0x00000000*/ transient AsyncTask PendingPrestigeRewardsTask;
-var /*0x00010000-0x00000000*/ transient AsyncTask PurchasePremiumTask;
-var /*0x00010000-0x00000000*/ transient AsyncTask PurchaseTiersTask;
-var /*0x00010000-0x00000000*/ const int CodeRedemptionPurchasableID;
-var /*0x00018000-0x00000000*/ transient RocketPassConfig_TA RocketPassConfig;
-var /*0x00018000-0x00000000*/ transient OnlineGame_X OnlineGame;
-var /*0x00010000-0x00000000*/ transient Wallet_TA Wallet;
+var array<RocketPassRewardData> FreeRewards;
+var array<RocketPassRewardData> PremiumRewards;
+var array<RocketPassRewardData> PrestigeRewards;
+var databinding int TierCap;
+var databinding bool bIsPassActive;
+var databinding bool bOwnsPremium;
+var bool bPrestigeItemsDirtied;
+var databinding float XPMultiplier;
+var databinding int TierLevel;
+var databinding int SecondsRemaining;
+var export editinline RocketPassBundleContainer_TA Bundles;
+var transient AsyncTask SyncAllInfoTask;
+var transient AsyncTask PendingPlayerInfoTask;
+var transient AsyncTask PendingRewardsTask;
+var transient AsyncTask PendingPrestigeRewardsTask;
+var transient AsyncTask PurchasePremiumTask;
+var transient AsyncTask PurchaseTiersTask;
+var const int CodeRedemptionPurchasableID;
+var transient RocketPassConfig_TA RocketPassConfig;
+var transient OnlineGame_X OnlineGame;
+var transient Wallet_TA Wallet;
 
 defaultproperties
 {

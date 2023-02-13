@@ -15,9 +15,9 @@ enum ELoadoutSaveVersion
 
 var array<LoadoutSet_TA> LoadoutSets;
 var LoadoutSet_TA EquippedLoadoutSet;
-var /*0x00080000-0x00000000*/ name PlayerTitle;
+var name PlayerTitle;
 var int PreviewTeamIndex;
-var /*0x00080000-0x00000000*/ ProductInstanceID MusicStingerInstanceID;
+var ProductInstanceID MusicStingerInstanceID;
 
 defaultproperties
 {

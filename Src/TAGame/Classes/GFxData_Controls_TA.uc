@@ -50,10 +50,5 @@ var const localized string ClearKeybindDesc;
 
 defaultproperties
 {
-	CustomPresetOverwriteWarning="This action will overwrite your \\"Custom\\" control preset. Are you sure you want to continue?"
-	ClearButtonBindingTitle="Clear Button Binding"
-	ClearKeybindTitle="Clear Keybinding"
-	ClearButtonBindingDesc="Are you sure you want to clear the {Action} button binding?"
-	ClearKeybindDesc="Are you sure you want to clear the {Action} keybinding?"
 	TableName=Controls
 }

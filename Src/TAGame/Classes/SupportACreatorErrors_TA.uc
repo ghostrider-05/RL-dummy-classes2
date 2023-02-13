@@ -5,7 +5,7 @@
 *******************************************************************************/
 class SupportACreatorErrors_TA extends ErrorList;
 
-var /*0x00010000-0x00000000*/ const ErrorType InvalidSupportACreatorCode;
+var const ErrorType InvalidSupportACreatorCode;
 
 defaultproperties
 {

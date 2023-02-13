@@ -7,8 +7,8 @@ class PremiumSkin_TA extends Object
 	hidecategories(Object);
 
 var() MaterialInstanceConstant MIC;
-var() _Types_TA.EProductQuality Quality;
-var() _Types_TA.ESkinType SkinType;
+var() EProductQuality Quality;
+var() ESkinType SkinType;
 var() MaterialParams SkinParameters;
 var() editoronly Texture2D Thumbnail;
 var() bool bTeamFinishDisabled;

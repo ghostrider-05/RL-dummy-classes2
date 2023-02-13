@@ -7,9 +7,9 @@ class LoadedMtxCatalog_TA extends Component;
 
 struct LoadedMtxCatalog
 {
-	var /*0x00010000-0x00000000*/ int CatalogID;
-	var /*0x00010000-0x00000000*/ string Label;
-	var /*0x00010000-0x00000000*/ _Types_TA.EMTXCatalogCategory Category;
+	var int CatalogID;
+	var string Label;
+	var EMTXCatalogCategory Category;
 
 	structdefaultproperties
 	{
@@ -19,8 +19,8 @@ struct LoadedMtxCatalog
 	}
 };
 
-var() /*0x00010000-0x00000000*/ array<_Types_TA.EMTXCatalogCategory> ValidMtxShopTabs;
-var /*0x00010000-0x00000000*/ transient array<LoadedMtxCatalog> Catalogs;
+var() array<EMTXCatalogCategory> ValidMtxShopTabs;
+var transient array<LoadedMtxCatalog> Catalogs;
 
 defaultproperties
 {

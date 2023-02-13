@@ -5,11 +5,11 @@
 *******************************************************************************/
 class GFxData_TourBracketMatchDetails_TA extends GFxDataSingleton_X;
 
-var /*0x00010000-0x00000000*/ Qword TournamentID;
-var /*0x00010000-0x00000000*/ int MatchID;
-var /*0x00010000-0x00000000*/ float PollIntervalSeconds;
-var /*0x00010000-0x00000000*/ transient AsyncTask GetMatchDetailsTask;
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
+var Qword TournamentID;
+var int MatchID;
+var float PollIntervalSeconds;
+var transient AsyncTask GetMatchDetailsTask;
+var() OnlineGameTournaments_TA Tournaments;
 
 defaultproperties
 {

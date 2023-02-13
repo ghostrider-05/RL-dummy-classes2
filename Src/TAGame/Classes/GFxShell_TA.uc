@@ -31,7 +31,7 @@ var const localized string RankedReconnectBody;
 var const localized string BannedTimeRemainingMessage;
 var const localized string PermaBannedMessage;
 var transient array<GFxModal_X> ActiveModals;
-var transient PlayerController.EProgressMessageType PendingMessageType;
+var transient EProgressMessageType PendingMessageType;
 var transient string PendingErrorTitle;
 var transient string PendingErrorMessage;
 var transient float LastPsyNetReconnectTime;
@@ -41,18 +41,5 @@ var databinding string BuildEdition;
 defaultproperties
 {
 	BugReportDelay=60.0
-	bAllowOnlineStorageResyncModal=true
-	EOSReconnectMessage="You are not connected to Epic Online Services. Would you like to reconnect?"
-	EOSNotConnectedMessage="You are not connected to Epic Online Services. You will need to restart the game to use online features."
-	SaveReplayMessage="Would you like to save the replay?"
-	BugReportWaitMessage="Please wait a while before submitting feedback again."
-	DefaultDisconnectionTitle="Connection Lost"
-	PsyNetReconnectMessage="You are currently not connected to the Rocket League? servers. Would you like to reconnect?"
-	PSPlusTipTitle="PlayStation?Plus Required"
-	PSPlusTipMessage="To play online splitscreen, ALL players must be signed into the PlayStation™Network. The primary player must also have PlayStation®Plus with their PlayStation®4 designated as their primary system."
-	RankedReconnectTitle="Reconnect"
-	RankedReconnectBody="It appears you accidentally left a ranked match. Would you like to rejoin?"
-	BannedTimeRemainingMessage="[Hours] hour(s) [Minutes] minute(s) remaining."
-	PermaBannedMessage="This ban is permanent."
 	DataStore=GFxDataStore_X'Default__GFxShell_TA.DefaultDataStore'
 }

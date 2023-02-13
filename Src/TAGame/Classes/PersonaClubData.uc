@@ -5,6 +5,6 @@
 *******************************************************************************/
 class PersonaClubData extends Object;
 
-var /*0x00010000-0x00000000*/ Persona_TA Persona;
-var /*0x00010000-0x00000000*/ string ClubTagWithName;
-var /*0x00010000-0x00000000*/ Qword ClubID;
+var Persona_TA Persona;
+var string ClubTagWithName;
+var Qword ClubID;

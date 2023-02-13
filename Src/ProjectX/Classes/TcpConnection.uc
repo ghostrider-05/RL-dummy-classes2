@@ -30,8 +30,8 @@ var native const noexport Pointer VfTable_IIReservationConnection_X;
 var config float InitialConnectionTimeout;
 var config float ConnectionTimeout;
 var native const transient Pointer Socket;
-var const transient TcpConnection.ETcpConnectionState ConnectionState;
-var const transient TcpConnection.EWebSocketState WebSocketState;
+var const transient ETcpConnectionState ConnectionState;
+var const transient EWebSocketState WebSocketState;
 var const transient float LastReceiveTime;
 var const transient array<byte> InBytes;
 var const transient array<byte> OutBytes;
@@ -43,6 +43,4 @@ var const transient array<byte> BunchBytes;
 
 defaultproperties
 {
-	InitialConnectionTimeout=5.0
-	ConnectionTimeout=15.0
 }

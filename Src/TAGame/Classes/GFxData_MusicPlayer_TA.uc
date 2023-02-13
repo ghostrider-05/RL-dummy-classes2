@@ -23,7 +23,7 @@ struct GFxMusicPlaylist
 	}
 };
 
-var() /*0x00010000-0x00000000*/ MusicUrlConfig_TA UrlConfig;
+var() MusicUrlConfig_TA UrlConfig;
 var() bool bDebugMusicPlayer;
 var databinding bool bPlaylistsEnabled;
 var databinding bool bEnableMusicControls;
@@ -37,7 +37,7 @@ var databinding string TrackArtist;
 var databinding Texture TrackIcon;
 var databinding string TrackUrl;
 var databinding float StartupLogoDisplayDurationMS;
-var /*0x00080000-0x00000000*/ transient string CurrentTrackName;
+var transient string CurrentTrackName;
 var transient int CurrentTrackPlayingID;
 var transient MusicTrack_TA CurrentTrack;
 var transient array<PlaylistTrack> MasterTracklist;
@@ -47,7 +47,7 @@ var MusicTracklistBuildStep_RemoveTrack_TA MainRotationTracklistBuilder;
 var transient MusicTheme_TA MusicTheme;
 var transient MusicPlayerSave_TA MusicSave;
 var transient GameplayMusicPlayer_TA GameMusicPlayer;
-var /*0x00018000-0x00000000*/ StreamerSafeConfig_TA StreamerSafeConfig;
+var StreamerSafeConfig_TA StreamerSafeConfig;
 
 defaultproperties
 {

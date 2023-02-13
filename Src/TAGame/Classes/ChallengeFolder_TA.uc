@@ -3,7 +3,8 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class ChallengeFolder_TA extends Object;
+class ChallengeFolder_TA extends Object
+	native;
 
 enum EChallengeSort
 {
@@ -12,20 +13,20 @@ enum EChallengeSort
 	ECS_MAX
 };
 
-var /*0x00010000-0x00000000*/ databinding string CodeName;
-var /*0x00010000-0x00000000*/ databinding string DisplayName;
-var /*0x00010000-0x00000000*/ databinding int ChallengeID;
-var /*0x00010000-0x00000000*/ databinding int DefaultActiveIndex;
-var /*0x00010000-0x00000000*/ databinding Qword StartTime;
-var /*0x00010000-0x00000000*/ databinding Qword EndTime;
-var /*0x00010000-0x00000000*/ ChallengeFolder_TA.EChallengeSort ChallengeFolderSort;
-var /*0x00010000-0x00000000*/ array<int> ChallengeIDs;
-var /*0x00010000-0x00000000*/ array<ChallengeFolder_TA> SubFolders;
-var /*0x00010000-0x00000000*/ databinding string SubFolderNames;
-var /*0x00010000-0x00000000*/ databinding string LinkedFolderCodeName;
-var /*0x00010000-0x00000000*/ databinding Qword ActiveSubFolderStartTime;
-var /*0x00010000-0x00000000*/ databinding Qword ActiveSubFolderEndTime;
-var /*0x00010000-0x00000000*/ native Map_Mirror ChallengeCache;
+var databinding string CodeName;
+var databinding string DisplayName;
+var databinding int ChallengeID;
+var databinding int DefaultActiveIndex;
+var databinding Qword StartTime;
+var databinding Qword EndTime;
+var EChallengeSort ChallengeFolderSort;
+var array<int> ChallengeIDs;
+var array<ChallengeFolder_TA> SubFolders;
+var databinding string SubFolderNames;
+var databinding string LinkedFolderCodeName;
+var databinding Qword ActiveSubFolderStartTime;
+var databinding Qword ActiveSubFolderEndTime;
+var native Map_Mirror ChallengeCache;
 
 defaultproperties
 {

@@ -14,5 +14,5 @@ var() export editinline StringMap Headers;
 var transient CachedWebData_X CachedData;
 var transient int RetryCount;
 var transient float LastSyncTime;
-var /*0x00008000-0x00000000*/ PsyNetRetryConfig_X RetryConfig;
+var PsyNetRetryConfig_X RetryConfig;
 var const string ServiceName;

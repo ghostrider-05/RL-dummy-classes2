@@ -12,7 +12,7 @@ struct native JiggleCarData
 	var transient Vector JiggleAxis;
 	var transient Vector JiggleStartLocation;
 	var transient float JiggleStartTime;
-	var transient Actor.EPhysics OriginalPhysics;
+	var transient EPhysics OriginalPhysics;
 
 	structdefaultproperties
 	{

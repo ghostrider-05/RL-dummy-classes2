@@ -18,5 +18,5 @@ var() array<MenuSequence_TA> Sequences;
 var() name DefaultSequence;
 var MenuSequence_TA CurrentSequence;
 var MenuSequence_TA PendingSequence;
-var MenuSequencer_TA.ESequenceStatus Status;
+var ESequenceStatus Status;
 var array<MenuSequence_TA> PendingSequenceQueue;

@@ -10,9 +10,8 @@ var config float ConnectionTimeoutSeconds;
 var PsyNetConnection_X PsyNetConnection;
 var array<PsyNetBeaconConnection_X> Connections;
 var array<DSPendingMessage_X> PendingMessages;
-var /*0x00008000-0x00000000*/ PsyNetConfig_X PsyNetConfig;
+var PsyNetConfig_X PsyNetConfig;
 
 defaultproperties
 {
-	ConnectionTimeoutSeconds=15.0
 }

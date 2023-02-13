@@ -6,4 +6,4 @@
 class MatchBroadcastComponent_TA extends Component;
 
 var MatchBroadcastLog_TA MatchLog;
-var /*0x00008000-0x00000000*/ OnlineGame_Base_X OnlineGame;
+var OnlineGame_Base_X OnlineGame;

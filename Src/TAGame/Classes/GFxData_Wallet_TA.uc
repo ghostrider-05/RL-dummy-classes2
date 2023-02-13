@@ -5,8 +5,8 @@
 *******************************************************************************/
 class GFxData_Wallet_TA extends GFxDataSingleton_X;
 
-var() /*0x00010000-0x00000000*/ Wallet_TA Wallet;
-var() /*0x00010000-0x00000000*/ array<GFxData_WalletCurrency_TA> Currencies;
+var() Wallet_TA Wallet;
+var() array<GFxData_WalletCurrency_TA> Currencies;
 
 defaultproperties
 {

@@ -7,7 +7,7 @@ class GFxData_TourSubscriptions_TA extends GFxDataSingleton_X;
 
 struct SubscriptionInfo
 {
-	var /*0x00010000-0x00000000*/ databinding Qword Id;
+	var databinding Qword Id;
 
 	structdefaultproperties
 	{
@@ -15,11 +15,11 @@ struct SubscriptionInfo
 	}
 };
 
-var() /*0x00018000-0x00000000*/ OnlineGameTournaments_TA Tournaments;
-var /*0x00010000-0x00000000*/ transient TourSubscriptions_TA Subscriptions;
-var /*0x00010000-0x00000000*/ databinding array<SubscriptionInfo> Created;
-var /*0x00010000-0x00000000*/ databinding array<SubscriptionInfo> AdminOf;
-var /*0x00010000-0x00000000*/ databinding array<SubscriptionInfo> RegisteredTo;
+var() OnlineGameTournaments_TA Tournaments;
+var transient TourSubscriptions_TA Subscriptions;
+var databinding array<SubscriptionInfo> Created;
+var databinding array<SubscriptionInfo> AdminOf;
+var databinding array<SubscriptionInfo> RegisteredTo;
 
 defaultproperties
 {

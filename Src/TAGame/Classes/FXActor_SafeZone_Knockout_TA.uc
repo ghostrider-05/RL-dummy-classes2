@@ -15,10 +15,10 @@ enum EZoneEvent
 
 struct SafeZoneInfo
 {
-	var() /*0x00010000-0x00000000*/ int Size;
-	var() /*0x00010000-0x00000000*/ int StartTime;
-	var() /*0x00010000-0x00000000*/ int ReturnToZoneTime;
-	var() /*0x00010000-0x00000000*/ float BlendSpeed;
+	var() int Size;
+	var() int StartTime;
+	var() int ReturnToZoneTime;
+	var() float BlendSpeed;
 
 	structdefaultproperties
 	{
@@ -29,12 +29,12 @@ struct SafeZoneInfo
 	}
 };
 
-var /*0x00010000-0x00000000*/ transient array<SafeZoneInfo> SafeZones;
-var() /*0x00010000-0x00000000*/ const array<SafeZoneInfo> EliminationSafeZones;
-var() /*0x00010000-0x00000000*/ const array<SafeZoneInfo> NonEliminationSafeZones;
-var /*0x00010000-0x00000000*/ transient GameEvent_KnockOut_TA GameEvent;
-var /*0x00010000-0x00000000*/ transient int LastZoneIndex;
-var /*0x00010000-0x00000000*/ array<FXActorEvent_X> StateEvents;
+var transient array<SafeZoneInfo> SafeZones;
+var() const array<SafeZoneInfo> EliminationSafeZones;
+var() const array<SafeZoneInfo> NonEliminationSafeZones;
+var transient GameEvent_KnockOut_TA GameEvent;
+var transient int LastZoneIndex;
+var array<FXActorEvent_X> StateEvents;
 
 defaultproperties
 {

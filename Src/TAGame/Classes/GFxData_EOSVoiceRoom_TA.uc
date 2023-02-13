@@ -7,8 +7,8 @@ class GFxData_EOSVoiceRoom_TA extends GFxDataRow_X;
 
 struct NotificationCooldown
 {
-	var /*0x00010000-0x00000000*/ string EpicAccountId;
-	var /*0x00010000-0x00000000*/ Qword NotificationTime;
+	var string EpicAccountId;
+	var Qword NotificationTime;
 
 	structdefaultproperties
 	{
@@ -17,42 +17,32 @@ struct NotificationCooldown
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding string RoomName;
-var /*0x00010000-0x00000000*/ databinding _Types_TA.EVoiceRoomType RoomType;
-var /*0x00010000-0x00000000*/ databinding string RoomTitle;
-var /*0x00010000-0x00000000*/ const localized string PartyRoomTitle;
-var /*0x00010000-0x00000000*/ const localized string MatchRoomTitle;
-var /*0x00010000-0x00000000*/ const localized string SettingDisabledTitle;
-var /*0x00010000-0x00000000*/ const localized string SettingDisabledDesc;
-var /*0x00010000-0x00000000*/ const localized string MatchTypeTitle;
-var /*0x00010000-0x00000000*/ const localized string PartyTypeTitle;
-var /*0x00010000-0x00000000*/ const localized string SpectatorRoomTitle;
-var /*0x00010000-0x00000000*/ const localized string SpectatorTypeTitle;
-var /*0x00010000-0x00000000*/ const localized string RemotePlayerJoinedRoom;
-var /*0x00010000-0x00000000*/ const localized string PlayerJoinedRoom;
-var /*0x00010000-0x00000000*/ string RoomTypeString;
-var /*0x00010000-0x00000000*/ array<GFxData_EOSVoiceRoomMember_TA> RoomMembers;
-var /*0x00010000-0x00000000*/ transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
-var /*0x00010000-0x00000000*/ bool bManuallyJoined;
-var /*0x00010000-0x00000000*/ array<NotificationCooldown> NotificationCooldowns;
-var /*0x00010000-0x00000000*/ Qword CreatedTimestamp;
-var /*0x00010000-0x00000000*/ VoiceRoomPlayerActivity PlayerActivity;
-var /*0x00018000-0x00000000*/ EOSVoiceManager_TA VoiceManager;
-var /*0x00018000-0x00000000*/ Personas_TA Personas;
-var /*0x00018000-0x00000000*/ EOSVoiceConfig_TA VoiceConfig;
+var databinding string RoomName;
+var databinding EVoiceRoomType RoomType;
+var databinding string RoomTitle;
+var const localized string PartyRoomTitle;
+var const localized string MatchRoomTitle;
+var const localized string SettingDisabledTitle;
+var const localized string SettingDisabledDesc;
+var const localized string MatchTypeTitle;
+var const localized string PartyTypeTitle;
+var const localized string SpectatorRoomTitle;
+var const localized string SpectatorTypeTitle;
+var const localized string RemotePlayerJoinedRoom;
+var const localized string PlayerJoinedRoom;
+var string RoomTypeString;
+var array<GFxData_EOSVoiceRoomMember_TA> RoomMembers;
+var transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
+var bool bManuallyJoined;
+var array<NotificationCooldown> NotificationCooldowns;
+var Qword CreatedTimestamp;
+var VoiceRoomPlayerActivity PlayerActivity;
+var EOSVoiceManager_TA VoiceManager;
+var Personas_TA Personas;
+var EOSVoiceConfig_TA VoiceConfig;
 
 defaultproperties
 {
-	PartyRoomTitle="Party Channel"
-	MatchRoomTitle="Team Channel"
-	SettingDisabledTitle="Voice Disabled"
-	SettingDisabledDesc="Voice chat is currently disabled in your settings."
-	MatchTypeTitle="Team"
-	PartyTypeTitle="Party"
-	SpectatorRoomTitle="Spectator Channel"
-	SpectatorTypeTitle="Spectator"
-	RemotePlayerJoinedRoom="[PlayerName] has joined the [VoiceRoomType] Voice Channel"
-	PlayerJoinedRoom="You have joined the [VoiceRoomType] Voice Channel"
 	TableName=EOSVoiceRoom
 	bLevelTransitionPersistent=true
 }

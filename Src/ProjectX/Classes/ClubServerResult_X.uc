@@ -5,8 +5,8 @@
 *******************************************************************************/
 class ClubServerResult_X extends Object;
 
-var /*0x00010000-0x00000000*/ string Host;
-var /*0x00010000-0x00000000*/ int Port;
-var /*0x00010000-0x00000000*/ string ServerName;
-var /*0x00010000-0x00000000*/ string CustomServerName;
-var /*0x00010000-0x00000000*/ string CustomServerPassword;
+var string Host;
+var int Port;
+var string ServerName;
+var string CustomServerName;
+var string CustomServerPassword;

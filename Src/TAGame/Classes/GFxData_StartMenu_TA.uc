@@ -5,13 +5,12 @@
 *******************************************************************************/
 class GFxData_StartMenu_TA extends GFxDataSingleton_X;
 
-var() /*0x00008000-0x00000000*/ OnlineGame_X OnlineGame;
+var() OnlineGame_X OnlineGame;
 var const localized string SigningInText;
 var transient GFxModal_X SignInModal;
 var transient int ClickedControllerIndex;
 
 defaultproperties
 {
-	SigningInText="Signing in to Rocket League? servers..."
 	TableName=StartMenu
 }

@@ -5,8 +5,8 @@
 *******************************************************************************/
 class GFxData_TourMatchmaking_TA extends GFxDataSingleton_X;
 
-var() /*0x00018000-0x00000000*/ OnlineGameTourMatchmaking_TA TourMatchmaking;
-var() /*0x00018000-0x00000000*/ OnlineGameVersion_X GameVersion;
+var() OnlineGameTourMatchmaking_TA TourMatchmaking;
+var() OnlineGameVersion_X GameVersion;
 
 defaultproperties
 {

@@ -5,8 +5,8 @@
 *******************************************************************************/
 class FaceItMatchNotification_TA extends Notification_TA;
 
-var /*0x00010000-0x00000000*/ ServerReservationData ReservationData;
-var /*0x00010000-0x00000000*/ FaceItMatchInfo MatchInfo;
+var ServerReservationData ReservationData;
+var FaceItMatchInfo MatchInfo;
 
 defaultproperties
 {

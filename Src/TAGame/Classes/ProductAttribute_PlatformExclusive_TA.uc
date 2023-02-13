@@ -8,7 +8,7 @@ class ProductAttribute_PlatformExclusive_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() array<WorldInfo.EConsoleType> InclusiveConsoles;
+var() array<EConsoleType> InclusiveConsoles;
 var() Product_TA ReplacementProduct;
 
 defaultproperties

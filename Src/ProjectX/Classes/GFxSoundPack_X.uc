@@ -19,4 +19,4 @@ struct native SoundPackSoundRef
 
 var() string ExportClassName;
 var() const array<SoundPackSoundRef> Sounds;
-var() /*0x00010000-0x00000000*/ bool bHasSubtitles;
+var() bool bHasSubtitles;

@@ -7,7 +7,7 @@ class GFxData_ViewMetrics_TA extends GFxDataSingleton_X;
 
 var databinding bool bRecordingMetrics;
 var databinding int ActiveViewID;
-var /*0x00008000-0x00000000*/ transient ViewMetricsConfig_TA Config;
+var transient ViewMetricsConfig_TA Config;
 
 defaultproperties
 {

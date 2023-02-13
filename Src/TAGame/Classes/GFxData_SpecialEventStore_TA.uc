@@ -7,12 +7,12 @@ class GFxData_SpecialEventStore_TA extends GFxDataRow_X;
 
 struct GFxSpecialEventReward
 {
-	var /*0x00010000-0x00000000*/ int ProductID;
-	var /*0x00010000-0x00000000*/ databinding ProductHashID HashID;
-	var /*0x00010000-0x00000000*/ databinding int StoreProductID;
-	var /*0x00010000-0x00000000*/ databinding int Cost;
-	var /*0x00010000-0x00000000*/ databinding int Remaining;
-	var /*0x00010000-0x00000000*/ databinding XPRewardData XPReward;
+	var int ProductID;
+	var databinding ProductHashID HashID;
+	var databinding int StoreProductID;
+	var databinding int Cost;
+	var databinding int Remaining;
+	var databinding XPRewardData XPReward;
 
 	structdefaultproperties
 	{
@@ -25,9 +25,9 @@ struct GFxSpecialEventReward
 	}
 };
 
-var /*0x00010000-0x00000000*/ databinding int EventID;
-var /*0x00010000-0x00000000*/ transient array<GFxSpecialEventReward> Rewards;
-var /*0x00010000-0x00000000*/ export editinline transient OnlineProductStoreSet_TA SpecialEventsSet;
+var databinding int EventID;
+var transient array<GFxSpecialEventReward> Rewards;
+var export editinline transient OnlineProductStoreSet_TA SpecialEventsSet;
 
 defaultproperties
 {

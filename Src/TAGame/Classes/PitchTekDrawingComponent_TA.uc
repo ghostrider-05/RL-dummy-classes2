@@ -25,6 +25,6 @@ struct native PitchTekCarBodyContactData
 };
 
 var transient Vector PreviousOwnerPosition;
-var PitchTekDrawingComponent_TA.EPitchTekDecalType DecalType;
+var EPitchTekDecalType DecalType;
 var transient array<WheelContactData> WheelContacts;
 var transient PitchTekCarBodyContactData CarBodyContactData;

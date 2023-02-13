@@ -5,5 +5,5 @@
 *******************************************************************************/
 class ContentSave_TA extends SaveObject_TA;
 
-var /*0x00008000-0x00000000*/ transient ContentConfig_TA Config;
+var transient ContentConfig_TA Config;
 var array<ContentPair> ContentMap2;

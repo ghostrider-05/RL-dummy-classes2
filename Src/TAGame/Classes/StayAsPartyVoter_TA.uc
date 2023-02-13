@@ -7,11 +7,11 @@ class StayAsPartyVoter_TA extends Actor
 	notplaceable
 	hidecategories(Navigation);
 
-var /*0x00010000-0x00000000*/ UniqueNetId PlayerID;
-var /*0x00010000-0x00000000*/ array<UniqueNetId> Followers;
-var /*0x00010000-0x00000000*/ StayAsPartyVoteYes_TA YesVote;
-var /*0x00010000-0x00000000*/ bool bSentPartyInvites;
-var /*0x00010000-0x00000000*/ repnotify transient PRI_TA PRI;
+var UniqueNetId PlayerID;
+var array<UniqueNetId> Followers;
+var StayAsPartyVoteYes_TA YesVote;
+var bool bSentPartyInvites;
+var repnotify transient PRI_TA PRI;
 
 defaultproperties
 {

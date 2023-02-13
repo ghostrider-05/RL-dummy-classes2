@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ProductThumbnailQueue_TA extends Object
+	native
 	config(Engine);
 
 struct native RenderThumbnailScene
@@ -59,6 +60,4 @@ defaultproperties
 	ThumbnailSizes(1)=1024
 	ThumbnailSizes(2)=64
 	ThumbnailSizes(3)=512
-	RenderDelay=0.10
-	RenderCountMax=5
 }

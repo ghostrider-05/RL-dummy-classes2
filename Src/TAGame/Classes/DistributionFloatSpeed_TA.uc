@@ -18,7 +18,7 @@ enum ESpeedDistributionSpace
 };
 
 var() Vector VelocityScale;
-var() DistributionFloatSpeed_TA.ESpeedDistributionSpace VelocitySpace;
+var() ESpeedDistributionSpace VelocitySpace;
 
 defaultproperties
 {

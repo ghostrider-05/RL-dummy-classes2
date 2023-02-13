@@ -5,4 +5,4 @@
 *******************************************************************************/
 class OnlinePlayerStorageConfig_X extends OnlineConfig_X;
 
-var() /*0x00010000-0x00000000*/ float QueueBatchDelay;
+var() float QueueBatchDelay;

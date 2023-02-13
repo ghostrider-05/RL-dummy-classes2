@@ -17,11 +17,11 @@ var transient int SwivelPitchDir;
 var transient SpectatorVolume_TA SpectatorVolume;
 var const float FullRotationScalar;
 var const float FullRotationMax;
-var /*0x00008000-0x00000000*/ VanitySetManager_TA VanityMgr;
+var VanitySetManager_TA VanityMgr;
 var bool bVanityInitialized;
-var /*0x00080000-0x00000000*/ export editinline PlayerBanner_TA PlayerBanner;
+var export editinline PlayerBanner_TA PlayerBanner;
 var export editinline PlayerAvatar_TA PlayerAvatar;
-var /*0x00080000-0x00000000*/ export editinline PlayerAvatarBorder_TA PlayerBorder;
+var export editinline PlayerAvatarBorder_TA PlayerBorder;
 var export editinline AudioSpectatorMixComponent_TA AudioSpectatorMixComponent;
 var export editinline AudioFieldSideComponent_TA AudioFieldSideComponent;
 
@@ -36,7 +36,7 @@ defaultproperties
 	CylinderComponent=CollisionCylinder
 	RegistryGroup=GroupComponent_ORS'Default__PlayerControllerBase_TA.DefaultRegistryGroup'
 	Components(0)=GroupComponent_ORS'Default__PlayerControllerBase_TA.DefaultRegistryGroup'
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object
 	// Reference: CylinderComponent'Default__PlayerControllerBase_TA.CollisionCylinder'

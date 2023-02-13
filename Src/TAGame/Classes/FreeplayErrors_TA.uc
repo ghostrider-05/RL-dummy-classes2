@@ -5,12 +5,12 @@
 *******************************************************************************/
 class FreeplayErrors_TA extends ErrorList;
 
-var /*0x00010000-0x00000000*/ const ErrorType NoCar;
-var /*0x00010000-0x00000000*/ const ErrorType NoBall;
-var /*0x00010000-0x00000000*/ const ErrorType NoClosestGoal;
-var /*0x00010000-0x00000000*/ const ErrorType TeleportFailed;
-var /*0x00010000-0x00000000*/ const ErrorType InvalidHoopsGoal;
-var /*0x00010000-0x00000000*/ const ErrorType InvalidBreakoutGame;
+var const ErrorType NoCar;
+var const ErrorType NoBall;
+var const ErrorType NoClosestGoal;
+var const ErrorType TeleportFailed;
+var const ErrorType InvalidHoopsGoal;
+var const ErrorType InvalidBreakoutGame;
 
 defaultproperties
 {

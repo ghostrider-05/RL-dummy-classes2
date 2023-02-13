@@ -5,16 +5,16 @@
 *******************************************************************************/
 class CrowdSoundSettings_Knockout_TA extends CrowdSoundSettingsBase_TA;
 
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementHeavyHit;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementLightHit;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementAerialHeavyHit;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementAerialLightHit;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementHeavyBlock;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementLightBlock;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementKnockout;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementDeath;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementThrow;
-var(Excitement) /*0x00010000-0x00000000*/ export editinline DynamicValueModifierDuration_X ExcitementGrab;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementHeavyHit;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementLightHit;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementAerialHeavyHit;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementAerialLightHit;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementHeavyBlock;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementLightBlock;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementKnockout;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementDeath;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementThrow;
+var(Excitement) export editinline DynamicValueModifierDuration_X ExcitementGrab;
 
 defaultproperties
 {

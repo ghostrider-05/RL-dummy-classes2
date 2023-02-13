@@ -5,15 +5,15 @@
 *******************************************************************************/
 class CameraState_Director_TA extends CameraState_Replay_TA;
 
-var() /*0x00018000-0x00000000*/ GameEvent_Soccar_TA GameEvent;
-var() /*0x00010000-0x00000000*/ export editinline CameraStateSelector_TA IdleSelector;
-var() /*0x00010000-0x00000000*/ export editinline CameraStateSelector_TA CountdownSelector;
-var() /*0x00010000-0x00000000*/ export editinline CameraStateSelector_TA KickoffSelector;
-var() /*0x00010000-0x00000000*/ export editinline CameraStateSelector_TA DefaultSelector;
-var() /*0x00010000-0x00000000*/ const ProfileSliderLimits MinTransitionTimeLimits;
-var /*0x00010000-0x00000000*/ export editinline CameraStateSelector_TA CurrentSelector;
-var /*0x00010000-0x00000000*/ CameraState_X CurrentState;
-var /*0x00010000-0x00000000*/ bool bInitialized;
+var() GameEvent_Soccar_TA GameEvent;
+var() export editinline CameraStateSelector_TA IdleSelector;
+var() export editinline CameraStateSelector_TA CountdownSelector;
+var() export editinline CameraStateSelector_TA KickoffSelector;
+var() export editinline CameraStateSelector_TA DefaultSelector;
+var() const ProfileSliderLimits MinTransitionTimeLimits;
+var export editinline CameraStateSelector_TA CurrentSelector;
+var CameraState_X CurrentState;
+var bool bInitialized;
 
 defaultproperties
 {

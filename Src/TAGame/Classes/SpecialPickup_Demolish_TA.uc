@@ -7,7 +7,7 @@ class SpecialPickup_Demolish_TA extends SpecialPickup_TA
 	notplaceable
 	hidecategories(Navigation);
 
-var() _Types_TA.EDemolishTarget DemolishTarget;
-var() _Types_TA.EDemolishSpeed DemolishSpeed;
-var transient _Types_TA.EDemolishTarget OldTarget;
-var transient _Types_TA.EDemolishSpeed OldSpeed;
+var() EDemolishTarget DemolishTarget;
+var() EDemolishSpeed DemolishSpeed;
+var transient EDemolishTarget OldTarget;
+var transient EDemolishSpeed OldSpeed;

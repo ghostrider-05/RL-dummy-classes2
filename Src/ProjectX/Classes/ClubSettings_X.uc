@@ -5,7 +5,7 @@
 *******************************************************************************/
 class ClubSettings_X extends Object;
 
-var /*0x00010000-0x00000000*/ string ClubName;
-var /*0x00010000-0x00000000*/ string ClubTag;
-var /*0x00010000-0x00000000*/ int PrimaryColor;
-var /*0x00010000-0x00000000*/ int AccentColor;
+var string ClubName;
+var string ClubTag;
+var int PrimaryColor;
+var int AccentColor;

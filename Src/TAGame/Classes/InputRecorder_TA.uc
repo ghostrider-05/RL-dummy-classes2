@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class InputRecorder_TA extends Actor
+	native
 	notplaceable
 	hidecategories(Navigation)
 	implements(ITickNotify_TA);

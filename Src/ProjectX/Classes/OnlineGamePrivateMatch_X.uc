@@ -17,11 +17,5 @@ var() const float SearchTimeout;
 
 defaultproperties
 {
-	SearchingString="Searching for Private Match in: [Region]"
-	StartSearchFailString="Unable to contact server. Please try again later... (Error: 88)"
-	FoundServerString="Found game server! Connecting to [GameServerName] for Private Match..."
-	AlreadyJoiningGameString="Already trying to join another game, try again later... (Error: 89)"
-	TimeoutString="Unable to find a game server.  Please try again later... (Error: 90)"
-	WrongRegionString="Server is from the wrong region. Please try again later... (Error: 91)"
 	SearchTimeout=30.0
 }

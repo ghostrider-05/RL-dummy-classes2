@@ -5,12 +5,12 @@
 *******************************************************************************/
 class NetworkSave_TA extends SaveObject_TA;
 
-var /*0x00080000-0x00000000*/ bool bEnableCrossPlatform;
+var bool bEnableCrossPlatform;
 var bool bDisableCrossPlay;
-var _Types_TA.ENetworkValue IncomingPacketFrequency;
-var _Types_TA.ENetworkValue OutgoingPacketFrequency;
-var _Types_TA.ENetworkValue IncomingBandwidth;
-var /*0x00080000-0x00000000*/ _Types_TA.ENetworkInputBuffer NetworkInputBuffer;
+var ENetworkValue IncomingPacketFrequency;
+var ENetworkValue OutgoingPacketFrequency;
+var ENetworkValue IncomingBandwidth;
+var ENetworkInputBuffer NetworkInputBuffer;
 
 defaultproperties
 {
