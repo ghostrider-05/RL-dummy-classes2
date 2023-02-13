@@ -1,0 +1,514 @@
+# Use these descriptions for any property
+# [_ApplyToAll_DummyClass.Variables]
+
+[AnimateParametersComponent_X.Variables]
+FloatParameters="Float parameters to animate"
+VectorParameters="Vector parameters to animate"
+bResetMaterialsOnComplete="Perf: reset materials to default when this animation completes"
+
+[DamageComponent_X.Variables]
+Damage="how much damage to do"
+InstigatorDamageScale="how much damage to do to the instigator of the damage. If zero, won't even call TakeDamage if trying to damage instigator"
+LegacyDamageType="the unreal damage type to use if damaging an actor that does not implement ITakeDamage_X"
+
+[GFxDataRow_X.Variables]
+TableName="Name of the table to create"
+ProxyClass="Act as a proxy for the databinding properties for this class (pretend we have the same properties as him, as far as exporting ActionScript)"
+bLevelTransitionPersistent="If true, keep this data during level transitions. Otherwise it gets cleared."
+
+[GFxShell_X.Variables]
+bGamePaused="Whether game is paused"
+LeftX="Cache gamepad analog values for radial menus"
+LeftY="Cache gamepad analog values for radial menus"
+
+[OnlineGameParty_X.Variables]
+PartyTimeout="The amount of time in seconds that it takes for a party of size 1 to timeout and get destroyed"
+SkillCacheTime="How long to cache skills for our party"
+
+[TickableStateObject_X.Variables]
+bTickWhenGamePaused="if true, this object will continue ticking even if the game is paused"
+bAutoTick="if true, will use FTickableObject to call the native tick. if false, NativeTick must be called manually"
+
+[TickComponent_X.Variables]
+bTickWhenGamePaused="if true, will tick even when game paused"
+
+# [_Types_TA.Structs.SeasonPlayer.Variables]
+# Team="Which team this player belongs to"
+# Name="Player's name"
+# Id="Players ID"
+# bBot="Bot or human?"
+
+# TODO: add more structures from _Types_TA
+
+[AIController_Soccar_TA.Variables]
+BallProxyType="Targets used by the behavior tree"
+BallLandingProxyType="Targets used by the behavior tree"
+BallTeamGoalLineProxyType="Targets used by the behavior tree"
+BallEnemyGoalLineProxyType="Targets used by the behavior tree"
+BallProjectedProxyType="Targets used by the behavior tree"
+
+[AIController_TA.Variables]
+BT="Targets used by the behavior tree"
+SelfProxyType="Targets used by the behavior tree"
+NoneProxyType="Targets used by the behavior tree"
+DebugProxyType="Targets used by the behavior tree"
+Locks="Locks local to this AI"
+SkillSteerError="Steer accuracy given the bot's skill level"
+SkillSteerSpeed="Steer speed given the bot's skill level"
+SkillThrottleSpeed="Throttle speed given the bot's skill level"
+
+[AIManager_TA.Variables]
+Locks="global AI locks"
+
+[AntennaComponent_TA.Variables]
+TopperSocket="Bone or socket on antenna to attach topper to"
+AntennaMesh="Mesh to use as the bendable antenna"
+AntennaMaterial="Override topper mesh material"
+AnimTreeTemplate="Antenna anim tree (for skeletal controllers)"
+BendyBoneControllers="Name of skeletal controllers for bending the antenna"
+BendScale="Overall scaler for how much each bone in the antenna can rotate"
+
+[Ball_TA.Variables]
+StaticMesh="visual mesh"
+EndOfGameFXArchetype="FX to replace the ball with when the game ends"
+ExplosionArchetype="explosion to spawn"
+PredictionTimestep="Timestep when predicting our next position(s)"
+
+[BallCamTarget_TA.Variables]
+LocalTranslation="Offset the focal point from our owner's location, transformed by owner's rotation"
+WorldTranslation="Offset the focal point from our owner's location, in world space"
+PitchMin="Min and Max pitch for pulling the camera to the focal point"
+PitchMax="Min and Max pitch for pulling the camera to the focal point"
+YawMin="Min and Max yaw for pulling the camera to the focal point"
+YawMax="Min and Max yaw for pulling the camera to the focal point"
+Group="Group that this ball cam target belongs to, so the player can focus on certain types of ball cam targets"
+bDrawFocus="draw a green box around the focal point in world space"
+
+[BTComponent.Variables]
+Root="Topmost node of the tree"
+bPrintStatusLogs="Print our status logs to the console when something changes"
+
+[BTDecorator.Variables]
+Child="The node we decorate"
+
+[BTDynamicLink.Variables]
+LinkName="Name to identify this node by"
+bUnlinkedSuccess="If our link is not set, return success instead of failure"
+
+[BTNode.Variables]
+Decorators="Decorators that must be traversed to enter this node. Using this array is an optional shortcut for having lots of nested decorators."
+bDebugPause="Pause the game when this node gets evaluated"
+
+[BTProxyType.Variables]
+bStatic="This target never moves so we never have to update his data"
+
+[BTTarget.Variables]
+Type="Actor to get initial data from"
+LocalOffset="Local-space offset from actor location (along target rotation)"
+WorldOffset="World-space offset from actor location"
+Filters="Only iterate actors that pass these conditions. If any of these conditions fail, the actor will be treated as if he doesn't exist. The condition's context is set to the iterated actor."
+
+[CarColorSet_TA.Variables]
+Grayscales="Grayscale values to include"
+H="Hues"
+SV="Brightness + Saturation pairs"
+DefaultId="Default Color ID (index into Colors table)"
+HueCount="How many hues we have (+1 for grayscale)"
+ValueCount="How many values we have of each hue"
+Colors="Generated list of colors"
+
+[CarComponent_Boost_TA.Variables]
+MaxBoostAmount="maximum amount of boost (in seconds) this car can hold"
+StartBoostAmount="how much boost the car starts with"
+CurrentBoostAmount="how much boost (in seconds) the car currently has"
+BoostForce="Overall boost force"
+MinBoostTime="when someone presses boost, don't cut off unless this amount of time has passed: prevents annoying on/off boosting"
+
+[CarComponent_Dodge_TA.Variables]
+DodgeInputThreshold="Range of 0...1 where the car's input decides if we can do a directional dodge"
+SideDodgeImpulse="How much sideways impulse to apply"
+SideDodgeImpulseMaxSpeedScale="Scale sideways impulse when going max forward speed"
+ForwardDodgeImpulse="How much forward impulse to apply"
+ForwardDodgeImpulseMaxSpeedScale="Scale forward impulse when going max forward speed"
+BackwardDodgeImpulse="How much backward impulse to apply"
+BackwardDodgeImpulseMaxSpeedScale="Scale backward impulse when going max forward speed"
+SideDodgeTorque="Torque force to apply over time when dodging to the side"
+ForwardDodgeTorque="Torque force to apply over time when dodging forward"
+DodgeTorqueTime="How long we should apply torque forces for"
+DodgeZDamping="Reduce the car's Z velocity by this % when dodging"
+DodgeZDampingDelay="Delay before we turn on the DodgeZDamping"
+DodgeZDampingUpTime="Delay before we turn on the DodgeZDamping"
+JumpEvent="FX actor events"
+DoubleJumpEvent="FX actor events"
+DodgeEvent="FX actor events"
+
+[CarComponent_DoubleJump_TA.Variables]
+JumpImpulse="The impulse that is added to the car as soon as it jumps"
+ImpulseScale="Modifier jump impulse"
+
+[CarComponent_FlipCar_TA.Variables]
+FlipCarImpulse="Upward force to give when doing FlipCar"
+FlipCarTorque="Torque to use when doing FlipCar"
+FlipCarTime="How much time to flip car if doing a 180 degree flip"
+
+[CarComponent_Jump_TA.Variables]
+MinJumpTime="Force jump to stay active for this amount of time (mouse button taps have significantly variable hold time)"
+JumpImpulse="The impulse that is added to the car as soon as it jumps"
+JumpForce="The force that is applied to the car over time as it jumps"
+JumpForceTime="Fade out the jump force over this amount of time"
+PodiumJumpForceTime="Fade out the jump force over this amount of time when in podium mode"
+
+[CarComponent_TA.Variables]
+FXActorArchetype="FXActor in charge of our visuals"
+FXEvent="Event to toggle when we activate/deactivate"
+bAutoActivate="Automatically activate after we are created for a car"
+bSimulateComponent="If true the client will fire ApplyForces will be called on SimulatedProxy clients, as well as active time being corrected/simulated to attempt to match the server time."
+
+[CarDemoActor_TA.Variables]
+StaticMeshComponent="The mesh that will demo the player on touch"
+
+[CarMeshComponent_TA.Variables]
+BoostBlendInTime="Conversion of product attachment socket to actual socket"
+
+[CrowdActorSettings_TA.Variables]
+NoiseRiseRate="Rate at which NoiseLevel rises to TargetNoiseLevel"
+NoiseFallRate="Rate at which NoiseLevel falls to zero"
+IdleNoise="Min and Max values to randomly fluctuate the base noise level to"
+IdleNoiseDuration="How often we pick a new idle noise level"
+CountdownStartNoise="Noise to add at the start of countdown"
+CountdownEndNoise="Noise to add on 'Go!'"
+OvertimeStartNoise="Noise to add when we start overtime"
+TimeAlmostOutNoise="Noise to add when we are almost out of time"
+StatNoises="Noise modifiers for each stat event"
+RandomChantsSound="Random chants"
+RandomChantsDelay="Random delay between chants"
+UpdateStatNoises="Check this to update the StatNoises array with new stats"
+BallGoalDistanceNoiseCurve="Increase base crowd noise level as the ball gets closer to the goal (input is distance to goal)"
+BallHitNoises="Increase base crowd noise level when a car hits the ball (input is relative speed of hit)"
+BallHitNoiseDelay="Minimum time between ball hit noises (unless a harder hit overrides)"
+CountDownSoundList="count down sound list"
+CrowdStingerWin="Crowd stinger sounds"
+CrowdStingerLose="Crowd stinger sounds"
+CrowdStingerForfeit="Crowd stinger sounds"
+CrowdStartOverTimeSound="Played when overtime starts"
+MatchEndedEncore="Played after match ended"
+MatchEndedEncoreDelay="Time to wait after match ended before playing Encore sound"
+DefenseChant="Defense chant settings"
+
+[CrowdNoiseModifier_TA.Variables]
+ValueMin="Set the minimum crowd noise value to this"
+ValueMax="Set the maximum crowd noise value to this"
+DurationMin="Maintain the value for this amount of time"
+DurationMax="Maintain the value for this amount of time"
+OneShotSound="Extra crowd sound"
+
+[FXActor_Ball_TA.Variables]
+SuperSonicSpeed="Speed at which the ball is supersonic (show ball trail)"
+ShockwaveParamMin="Shockwave param bounds and time"
+ShockwaveParamMax="Shockwave param bounds and time"
+ShockwaveParamTime="Shockwave param bounds and time"
+
+[GameEvent_Soccar_TA.Variables]
+TestCarArchetype="For comparing different car settings"
+BallArchetype="Ball to spawn for this level"
+Pylon="Precalculated data for this arena. If not specified, uses closest one"
+BallSpawnPoint="Where to spawn the ball. If not set will spawn the ball at center"
+StatFactoryArchetype="Handles giving XP to players"
+InitialEventState="Initial State Game Event goes to OnInit"
+MatchGames="How many games to play per match"
+GameTime="How long a game is"
+WaitForPlayersTime="How long to wait for players to connect"
+WarmupTime=" Min time to do warmup camera"
+MaxScore="A team wins if they reach this score"
+ScoreSlomoCurve="Slomo when goal scored"
+ReplayDirectorArchetype="handles replay recording and playback"
+PostGoalTime="Delay between goal score and replay/round restart"
+SecondsRemainingCountdown="When to start doing second-by-second countdown before the game is over"
+KickIdleReplayOffset="Amount of idle time to add to all players after a replay"
+AssistMaxTime="Only give assists if assisted within this amount of time"
+SkillGameArchetype="Keeps track of players for skill reasons"
+LowFPSRate="Framerate that should be considered low FPS while active"
+LowFPSTimeThreshold="Report this server if its LowFPSTime exceeds this threshold"
+
+[GameEvent_TA.Variables]
+EventType="Editor ID for identifying this type of game event (Soccar, Knockout)"
+MatchType="Type of match for this game event (online, private, season)"
+CarArchetype="What type of car to spawn"
+CountdownTime="How long of a countdown to do"
+FinishTime="How long we should stay in the finished(match ended) state"
+bMultiplayer="If true, multiple players participate in this event"
+bFillWithAI="Fill teams with AI?"
+MinPlayers="If multiplayer, limits on how many people can play this event"
+MaxPlayers="If multiplayer, limits on how many people can play this event"
+SpawnPoints="Starting points for this event"
+AIManagerArchetype="AI manager to spawn"
+BotArchetype="AI controller to use for bots"
+RespawnTime="The amount of time it takes a car to respawn after being killed"
+HUDArchetype="HUD Archetype for this game event"
+KickIdleTime="Kick client when they have been idle for this long"
+MaxPlayerSkillForMaxBotSkill="Player skill value that should match max bot skill value (before UI conversion)"
+
+[GameEvent_Team_TA.Variables]
+TeamArchetypes="Teams to create"
+bPreAssignedTeams="True if players specify which team they want to be on"
+RematchVoteArchetype="Archetype for the rematch vote actor"
+
+[GameEvent_Tutorial_TA.Variables]
+DifficultyList="Difficulty Settings"
+GameEventRounds="GameEvent rounds that have been played"
+SpawnIndexTypeOverride="Spawn Type Override"
+
+[GameInfo_Soccar_TA.Variables]
+SoccarArchetype="Archetype for the soccar game event"
+SoccarPrivateArchetype="Archetype for the soccar private match game event"
+SoccarSplitscreenArchetype="Archetype for the soccar splitscreen match game event"
+PostGameLobbyArchetype="Archetype for the Post lobby game event that can turn into New Game event"
+
+[GameInfo_TA.Variables]
+PlayerExtraPrematchTime="how much time to wait for a player to choose car, etc. before starting match"
+MinPrematchTime="minimum amount of time to spend in prematch - gives players a chance to connect before starting"
+
+[GameShare_TA.Variables]
+GameEventList="Every spawned game event"
+
+[GFxData_LocalPlayer_TA.Variables]
+bOpenedStartMenu="Set to notify when a player is in a shared UI state. Once all players clear SharedUIState, System.SharedUIState gets cleared."
+bInSharedUIState="True if we have opened the start screen already"
+bSaveDataLoaded="True if save data loaded successfully"
+bSpectator="Is a spectator"
+bBadConnection="True if our connection is bad right now"
+bBallcam="Currently using ballcam"
+bUseBallCamIndicator="We want to show the ballcam indicator on the hud when in ballcam"
+bMetric="Whether to use metric or standard units for distance"
+bPrimaryPlayer="We are the primary splitscreen player"
+bPartyLeader="Is Party Leader"
+bIsInParty="Is in party"
+bDemoBuild="Is this a demo build?"
+bForceSplitScreenUI="We are forcing the world to draw full screen but the UI split screen"
+bPrivateMatchGameOwner="Has authority over match settings at end of game"
+bAgeRestricted="This player is age-restricted"
+SaveDataError="Localized error received if savedata was unable to load"
+OnlineError="Localized error received if something went wrong during the signin process"
+PlayerName="Name of player"
+PlayerAvatarTexture="Player avatar texture"
+XpLevel="Player's XP Level"
+XPTitle="Player's XP Title"
+XPTotal="Player's Total XP"
+XPProgressInCurrentLevel="Current XP in level"
+XPRequiredForNextLevel="XP required for next level"
+Team="Player team"
+CameraYaw="Worldspace camera yaw (degrees, range -180...180)"
+SplitScreenPosition="Player's Splitscreen position"
+ControllerId="Controller id of this player"
+LocalPlayerIndex="Index in the local players array. May not be the same as ControllerId"
+LastMatchType="Store Last match type here for UI use on return to menu"
+SafeZoneRatio="Controls how far from the edge of the screen essential UI is allowed to display"
+
+[GFxShell_TA.Variables]
+BugReportDelay="How often can we submit bug reports"
+bDisableStartupMovies="Disable movies that play on startup"
+bTrial="True if this is the trial version of the game"
+TrialMinutesRemaining="The number of minutes remaining in the initial trial"
+TrialAdditionalGamesRemaining="After initial trial is over, how many games are remaining for that day ( Gets reset each day )"
+TrialHoursRemainingUntilNextGame="The time remaining ( in hours 1 - 24 ) until more games are available"
+
+[GroundStaticMeshActor_TA.Variables]
+HideLocationOffset="Hide this mesh when the camera drops below our location Z + this offset;"
+
+[LightCurveType_TA.Variables]
+ParameterValue="Value for the \"Type\" scalar parameter for the material"
+
+[MaxActorsGroup_TA.Variables]
+MaxActors="Don't allow more than this many active actors"
+UpdateDelay="Delay between updating actor distances to local viewers"
+
+[Message_TA.Variables]
+Type="The type of message this is (decides where to display it)"
+Sound="Sound to play when displayed"
+Key="The key to look up in the localization file"
+Section="Which section in the localization file"
+
+[PlayerTitle_TA.Variables]
+Source="Whether this title is given by the user or by Psyonix"
+
+# [ProductAsset_Body_TA.Structs.VehicleWheelSettings.Variables]
+# BoneName="Bone on mesh to attach the wheel to"
+
+# [ProductAsset_Body_TA.Structs.TeamPaintFinish.Variables]
+# TeamFinish="Team finish product ID"
+# CustomFinish="Custom finish product ID"
+
+[ProductAsset_Body_TA.Variables]
+Mesh="Static mesh for vehicle body"
+AnimTreeTemplate="Animation tree for frame/chassis"
+PhysicsAsset="Physics asset"
+FrontAxle="Settings for front axle"
+BackAxle="Settings for rear axle"
+MassScale="Scale from default vehicle mass"
+BallHitZDamping="Z-damping to apply to ball hits"
+ChassisSpring="Spring settings for bouncy chassis"
+ChassisRotationScale="Overall scaler for bouncy chassis rotation"
+ChassisTranslationScale="Overall scaler for bouncy chassis translation"
+SuspensionTravelMax="Max suspension travel for wheels"
+SuspensionTravelMin="Min suspension travel for wheels"
+EngineSound="Engine and exhaust sounds"
+ExhaustSound="Engine and exhaust sounds"
+FXActor="FX actor specific to this body (ambient effects)"
+SkinMaterialIndex="Material index for skin"
+BrakelightMaterialIndex="Material index for brakelights"
+ChassisMaterialIndex="Material index for chassis"
+BoostEmitterSockets="Override sockets to spawn boost emitters from. If not specified, will kep the one emitter at RocketBoost socket"
+BoostFlapsAngle="How far the boost flaps turn (degrees)"
+ForcedProducts="Force the player to use these attachments when using this body"
+ForcedPaintFinishes="Force the player to use these paint finishes when using this body"
+ForcedCustomColor="Force player to use this custom color when using this body"
+AdditionalUnlocks="Additional products unlocked when this asset is unlocked"
+Attachments="Additional persistent attachments"
+BoostParticleParameters="Paramaters to set on the boost particles"
+SupersonicWheelTemplate="Particle for supersonic wheel fx"
+DemolishFX="FX Actor for demolish explosion"
+SpawnFX="FX Actor for spawning"
+
+[ProductAsset_Bot_TA.Variables]
+LoadoutProducts="Products to give this bot"
+BlueTeamColorID="Team color per team"
+OrangeTeamColorID="Team color per team"
+CustomColorID="Accent color"
+Traits="Personality traits"
+
+[ProductAsset_Logo_TA.Variables]
+Bots="If this is a bot team, these are the bots associated with this team"
+
+[ProductAsset_PaintFinish_TA.Variables]
+LightCurveType="Light falloff curve type selector"
+DetailNormal="Tiling detail normal, for stuff like carbon fiber, brushed metal, wood etc."
+
+[ProductAsset_TA.Variables]
+Slot="Make sure we don't link up a product with an asset it doesn't support"
+StatClass="Stat to track"
+UnlockMethod="The method to which this product can be unlocked"
+RequiredProduct="Don't allow this product to be equipped unless this product is selected in the loadout already TODO Should this be editor only so we don't load bodies when being given a skin?"
+PlatformReplacement="Replace this product depending on the platform"
+Thumbnail="Texture to use for UI"
+ThumbnailCameraTranslationOffset="Offset for camera in thumbnail scene - X forward, Y right, Z up"
+ThumbnailCameraRotationOffset="Offset for camera rotation in thumbnail scene"
+ThumbnailProductRotation="Offset for product rotation in thumbnail scene"
+bForceRebuildThumbnail="Check to force the thumbnail to rebuild"
+bPublic="Ready for public use?"
+bLocalized="If false, force INT name for this product"
+bDedicatedServerRelevant="This product should be loaded on dedicated servers (when loading loadout)"
+
+[ProductAsset_Wheel_TA.Variables]
+CollisionMesh="Mesh to use as collision when the car explodes"
+
+[ProductReference_TA.Variables]
+Product="Editor reference to Product"
+ProductName="Saved Product guid"
+
+[ProductReferenceArray_TA.Variables]
+Products="Editor reference to Product"
+ProductNames="Saved Product guid"
+
+[ProductSlot_TA.Variables]
+DefaultProduct="Default product to use for this slot in loadouts"
+DefaultProductTemplate="Default product asset to create"
+Icon="Icon to use for UI"
+bReplicated="Replicate this slot when replicating client loadouts"
+bAlwaysCooked="Always cook products of this slot, even if bDefaultProductsOnly"
+DropWeight="Weight for dropping this item"
+
+[PSC_Constrained_TA.Variables]
+WorldZ="Have the particle follow its owner on XY but stay here on Z"
+bAttachedRotation="Match the owner's rotation"
+
+[Pylon_Soccar_TA.Variables]
+FieldOrientation="Direction the field is facing"
+FieldSize="Size of the field (in FieldOriention space)"
+FieldExtent="Half size of the field (in FieldOriention space)"
+FieldCenter="Floating center of field"
+Goals="Goals contained in this field"
+SpawnPoints="PlayerStarts contained in this field"
+
+# [RBActor_TA.Structs.NetworkSyncSettingsData.Variables]
+# LocationFixRate="How fast to blend out location errors over time"
+# AngularFixRate="How fast to blend out angular errors over time"
+# MinDeltaLocation="Don't apply correction if the location difference is less than this"
+# MinDeltaRotation="Don't apply correction if the rotation difference is less than this"
+# MinDeltaLinearVelocity="Don't apply correction if the velocity difference is less than this"
+
+[RBActor_TA.Variables]
+MaxLinearSpeed="Don't exceed this linear speed"
+MaxAngularSpeed="Don't exceed this angular speed"
+bDisableSleeping="Don't let this RB actor sleep, ever"
+NetworkSyncSettings="Adjust how we interpolate updates from the server"
+FXActorArchetype="FXActor to create"
+ImpactEffectsComponent="Handles playing collision FX"
+RBHistoryClass="Saves and restores vehicle history for networking"
+
+[Replay_Soccar_TA.Variables]
+TeamSize="Number of players per team (1v2, 2v2, etc)"
+PrimaryPlayerTeam="Team of primary player"
+Team0Score="Match score for team 0"
+Team1Score="Match score for team 1"
+
+[ReplayDirector_TA.Variables]
+SlomoPreScoreTime="Turn on slomo at this time before and after the scoring hit"
+SlomoPostScoreTime="Turn on slomo at this time before and after the scoring hit"
+SlomoDefendTime="Turn on slomo for this amount of time before the goal is scored, if a defender was nearby"
+SlomoDefendDistance="Turn on slomo for this amount of time before the goal is scored, if a defender was nearby"
+SlomoTimeDilation="how much to slomo to"
+MinReplayTime="minimum and maximum amount of time the replay should show"
+MaxReplayTime="minimum and maximum amount of time the replay should show"
+ReplayPadding="Base amount of time to add to replay length to account for replication and focus time"
+
+[SaveData_TA.Variables]
+bShownControllerRecommendationMessage="True if we have shown the controller recommendation message"
+SoundVolume="Desired sound volume"
+MusicVolume="Desired music volume"
+AmbientVolume="Desired crowd/ambient volume"
+VoiceVolume="Desired voice volume"
+OutputType="Output type (speakers/headphones)"
+VoiceFilter="Voice filtering"
+ChatFilter="Voice filtering"
+SplitScreenType2P="Splitscreen type for 2 players"
+SplitScreenType3P="Splitscreen type for 3 players"
+SkillCache="Remember the skill of various players that play on this machine"
+SafeZoneRatio="Desired screen safe area ratio"
+AccountID="Unique online ID for this account (only serialized on PC, may change between sessions on console)"
+LocalProfileIDs="Local profiles that we know of"
+LastUsedProfileIDs="Last know profiles id's used by a controller id"
+UnlockedProducts="Cache which products we have acquired"
+NewProducts="Products we have acquired but not previewed yet"
+Profiles="Loaded profiles"
+AchievementData="Achievement Save data"
+PlayerTitles="Titles this player has received"
+
+[Season_TA.Variables]
+NumTeams="# of teams participating"
+TeamSize="1v1, 2v2, etc"
+Difficulty="AI difficulty (0, 1, 2)"
+NumRegularWeeks="# of games in the regular season"
+NumPlayoffsWeeks="# of games in the playoffs"
+NumPlayoffsTeams="# of teams that make it to the playoffs"
+Teams="Info on teams participating in this season"
+Players="Info on players participating in this season"
+PlayerStats="Player Stats for Season"
+Year="Which year this season is"
+CurrentWeek="How many weeks into the season we are. This will exceed NumRegularWeeks as we enter the playoffs."
+
+[SkeletalMeshComponent_TA.Variables]
+FOVOverride="Override the FOV we render with"
+
+[StatEvent_TA.Variables]
+Points="How many points to give"
+bAddToScore="True if we contribute to the score, otherwise we're just for XP"
+bIsLeaderboardStat="True if it is a leaderboard stat"
+bNotifyTicker="Should this stat notify the stat ticker"
+MedalThreshold="Number of times event needs to be awarded per match before getting a medal"
+TrophyThreshold="Number of times event needs to be awarded in the player's lifetime before getting a trophy"
+Group="XP group we belong to."
+Texture="UI Icon"
+UISound="UI sound name (found in GFxSoundPack)"
+
+[VehiclePickup_Boost_TA.Variables]
+SpawnSpriteTexture="Texture to display in the editor when this point is being used as a spawn point"
