@@ -9,7 +9,7 @@ class GameInfo_Cinematic_TA extends GameInfoBase_TA
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_Cinematic_TA.DefaultRegistryGroup'
+	
 	PlayerControllerClass=class'PlayerController_Cinematic_TA'
 	Components(0)=GroupComponent_ORS'Default__GameInfo_Cinematic_TA.DefaultRegistryGroup'
 }

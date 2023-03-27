@@ -12,6 +12,6 @@ var transient string NewDedicatedServerIP;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GRI_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__GRI_TA.DefaultRegistryGroup'
 }

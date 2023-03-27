@@ -95,11 +95,7 @@ var transient PauseStaticDataSync_X PauseInstance;
 
 defaultproperties
 {
-	begin object name=DefaultRegistryGroup class=GroupComponent_ORS
-		bGlobalGroup=true
-	end object
-	// Reference: GroupComponent_ORS'Default__GameEvent_TA.DefaultRegistryGroup'
-	RegistryGroup=DefaultRegistryGroup
+	
 	CountdownTime=3
 	bAllowQueueSaveReplay=true
 	bAwardAchievements=true

@@ -22,7 +22,7 @@ defaultproperties
 	UIStateNames[0]="StartMenu"
 	UIStateNames[1]="MainMenu"
 	UISoundState_MainMenu=MainMenu
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_GFxMenu_TA.DefaultRegistryGroup'
+	
 	PlayerControllerClass=class'PlayerController_Menu_TA'
 	Components(0)=GroupComponent_ORS'Default__GameInfo_GFxMenu_TA.DefaultRegistryGroup'
 }

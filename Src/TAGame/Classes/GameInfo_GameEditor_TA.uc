@@ -10,7 +10,7 @@ class GameInfo_GameEditor_TA extends GameInfo_Soccar_TA
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_GameEditor_TA.DefaultRegistryGroup'
+	
 	BulletScenesCount=2
 	Components(0)=GroupComponent_ORS'Default__GameInfo_GameEditor_TA.DefaultRegistryGroup'
 }

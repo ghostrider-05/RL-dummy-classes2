@@ -9,6 +9,6 @@ class GameInfo_GodBall_TA extends GameInfo_Soccar_TA
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_GodBall_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__GameInfo_GodBall_TA.DefaultRegistryGroup'
 }

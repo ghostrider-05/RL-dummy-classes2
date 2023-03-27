@@ -9,7 +9,7 @@ class GameEditor_Pawn_TA extends Pawn_X
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameEditor_Pawn_TA.DefaultRegistryGroup'
+	
 	bJumpCapable=false
 	bCanJump=false
 	bCanWalk=false

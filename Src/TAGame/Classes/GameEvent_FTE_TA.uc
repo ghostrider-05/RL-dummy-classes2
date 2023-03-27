@@ -17,7 +17,7 @@ defaultproperties
 	InvalidTeamNum=255
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_FTE_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_FTE_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_FTE_TA.DefaultRegistryGroup'
+	
 	GameFullMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultOtherActiveMessage'
 	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultNotEnoughPlayersMessage'

@@ -152,7 +152,7 @@ defaultproperties
 	PodiumTagOffsetZ=-20.0
 	BallSpacing=50.0
 	PreMatchPlayersReadyStartDelay=5.0
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Soccar_TA.DefaultRegistryGroup'
+	
 	bMultiplayer=true
 	GameFullMessage=Message_TA'Default__GameEvent_Soccar_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_Soccar_TA.DefaultOtherActiveMessage'

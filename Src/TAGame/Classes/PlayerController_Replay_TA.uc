@@ -15,7 +15,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	ForceFeedbackManagerClassName=""
-	RegistryGroup=GroupComponent_ORS'Default__PlayerController_Replay_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__PlayerController_Replay_TA.DefaultRegistryGroup'
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=none

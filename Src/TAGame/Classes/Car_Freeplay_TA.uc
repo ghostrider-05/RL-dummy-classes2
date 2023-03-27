@@ -26,7 +26,7 @@ defaultproperties
 	VehicleSim=VehicleSim_TA'Default__Car_Freeplay_TA.DefaultVehicleSim'
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Car_Freeplay_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Car_Freeplay_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__Car_Freeplay_TA.DefaultRegistryGroup'
+	
 	
 	Mesh=DefaultMesh
 	

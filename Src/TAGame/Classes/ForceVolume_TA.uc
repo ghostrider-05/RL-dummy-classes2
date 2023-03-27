@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ForceVolume_TA extends Volume
+	placeable
 	native
 	hidecategories(Navigation,Object,Movement,Display)
 	implements(ITickNotify_TA);

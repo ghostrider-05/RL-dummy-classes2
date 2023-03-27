@@ -27,7 +27,7 @@ defaultproperties
 {
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_KnockOut_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_KnockOut_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_KnockOut_TA.DefaultRegistryGroup'
+	
 	bAllowTeamVoiceChat=false
 	GameFullMessage=Message_TA'Default__GameEvent_KnockOut_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_KnockOut_TA.DefaultOtherActiveMessage'

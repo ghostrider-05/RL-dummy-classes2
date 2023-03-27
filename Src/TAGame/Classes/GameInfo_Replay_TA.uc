@@ -16,7 +16,7 @@ var transient string ReplayKismetLevelName;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_Replay_TA.DefaultRegistryGroup'
+	
 	PlayerReplicationInfoClass=class'PRI_TA'
 	Components(0)=GroupComponent_ORS'Default__GameInfo_Replay_TA.DefaultRegistryGroup'
 }

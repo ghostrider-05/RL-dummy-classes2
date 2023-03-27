@@ -50,7 +50,7 @@ defaultproperties
 	MaxRounds=50
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_TrainingEditor_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_TrainingEditor_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_TrainingEditor_TA.DefaultRegistryGroup'
+	
 	MatchTypeClass=class'MatchType_Tutorial_TA'
 	bAwardAchievements=false
 	GameFullMessage=Message_TA'Default__GameEvent_TrainingEditor_TA.DefaultGameFullMessage'

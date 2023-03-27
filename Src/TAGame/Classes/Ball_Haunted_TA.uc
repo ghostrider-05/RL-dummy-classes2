@@ -44,7 +44,7 @@ defaultproperties
 	BallCamTarget=BallCamTarget_TA'Default__Ball_Haunted_TA.DefaultBallCamTarget'
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_Haunted_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_Haunted_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__Ball_Haunted_TA.DefaultRegistryGroup'
+	
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object

@@ -6,22 +6,17 @@
 class GFxShell_TA extends GFxShell_X
 	config(UI);
 
-/** How often can we submit bug reports */
-var() float BugReportDelay;
 var() ChampionshipTrophy_TA ChampionshipTrophyArchetype;
 var transient LocalPlayer_TA TAPlayer;
 var transient GFxData_System_TA SystemData;
 var transient GFxData_LocalPlayer_TA LocalPlayerData;
-var databinding string BugReportEmail;
 var databinding bool bEnableFocusDebugger;
 /** Disable movies that play on startup */
 var databinding bool bDisableStartupMovies;
 var const config bool bAllowOnlineStorageResyncModal;
-var transient BugReport_X CurrentBugReport;
 var const localized string EOSReconnectMessage;
 var const localized string EOSNotConnectedMessage;
 var const localized string SaveReplayMessage;
-var const localized string BugReportWaitMessage;
 var const localized string DefaultDisconnectionTitle;
 var const localized string PsyNetReconnectMessage;
 var const localized string PSPlusTipTitle;
@@ -40,6 +35,5 @@ var databinding string BuildEdition;
 
 defaultproperties
 {
-	BugReportDelay=60.0
 	DataStore=GFxDataStore_X'Default__GFxShell_TA.DefaultDataStore'
 }

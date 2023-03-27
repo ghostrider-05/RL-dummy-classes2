@@ -63,7 +63,7 @@ defaultproperties
 	PitchTekComponent=DefaultPTDComponent
 	RBHistoryClass=class'RBVehicleHistory_TA'
 	Replay=ReplayComponent_TA'Default__Vehicle_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__Vehicle_TA.DefaultRegistryGroup'
+	
 	LandMovementState=Driving
 	
 	CylinderComponent=CollisionCylinder

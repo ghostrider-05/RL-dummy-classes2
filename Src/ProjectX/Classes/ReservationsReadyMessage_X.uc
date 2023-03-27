@@ -6,7 +6,6 @@
 class ReservationsReadyMessage_X extends BeaconMessage_X within ReservationBeacon_X;
 
 var string ServerAddress;
-var string BeaconAddress;
 var string PingAddress;
 var array<int> ProductIDs;
 var NetworkEncryptionKey Keys;

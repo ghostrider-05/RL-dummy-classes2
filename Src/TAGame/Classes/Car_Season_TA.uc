@@ -22,7 +22,7 @@ defaultproperties
 	VehicleSim=VehicleSim_TA'Default__Car_Season_TA.DefaultVehicleSim'
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Car_Season_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Car_Season_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__Car_Season_TA.DefaultRegistryGroup'
+	
 	
 	Mesh=DefaultMesh
 	

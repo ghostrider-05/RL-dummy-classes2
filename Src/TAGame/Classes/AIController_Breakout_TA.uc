@@ -13,6 +13,6 @@ defaultproperties
 {
 	DefaultSoccarSize=10240
 	Locks=BTLockCollection'Default__AIController_Breakout_TA.DefaultLocks'
-	RegistryGroup=GroupComponent_ORS'Default__AIController_Breakout_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__AIController_Breakout_TA.DefaultRegistryGroup'
 }

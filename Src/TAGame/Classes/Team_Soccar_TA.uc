@@ -12,6 +12,6 @@ var transient array<Actor> SecondaryStarts;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__Team_Soccar_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__Team_Soccar_TA.DefaultRegistryGroup'
 }

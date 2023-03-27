@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class SkyLightVolume_TA extends Volume
+	placeable
 	hidecategories(Navigation,Object,Movement,Display,Volume);
 
 var() export editinline SkyLightVolumeComponent_TA SkyLight;

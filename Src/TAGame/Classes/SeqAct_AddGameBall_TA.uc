@@ -11,7 +11,13 @@ var Ball_TA SpawnedBall;
 var Actor Instigator;
 var Actor SpawnTransform;
 var Actor PlacedBall;
+/** Causes the ball to be unmoveable */
 var() bool bWake;
+/**
+A custom archetype for the ball to spawn: Ball_TA'{Package}.Group.My_ball'.
+Repeat multiple Add Game Ball with possible packages for map swapping
+Example:https://github.com/RocketLeagueMapmaking/Kismet/blob/master/general/AddCustomGameBall.txt
+*/
 var() const string BallArchetype;
 
 defaultproperties

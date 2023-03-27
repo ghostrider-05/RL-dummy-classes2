@@ -11,6 +11,6 @@ var() GameEvent_Soccar_TA SoccarArchetype;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_Season_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__GameInfo_Season_TA.DefaultRegistryGroup'
 }

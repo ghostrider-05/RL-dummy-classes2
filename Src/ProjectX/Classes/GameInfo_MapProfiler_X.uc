@@ -9,7 +9,7 @@ class GameInfo_MapProfiler_X extends GameInfo_X
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_MapProfiler_X.DefaultRegistryGroup'
+	
 	PlayerControllerClass=class'PlayerController_X'
 	Components(0)=GroupComponent_ORS'Default__GameInfo_MapProfiler_X.DefaultRegistryGroup'
 }

@@ -28,6 +28,6 @@ defaultproperties
 {
 	MaxKnockoutStackTime=7.0
 	SpectateDelaySeconds=3
-	RegistryGroup=GroupComponent_ORS'Default__PRI_KnockOut_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__PRI_KnockOut_TA.DefaultRegistryGroup'
 }

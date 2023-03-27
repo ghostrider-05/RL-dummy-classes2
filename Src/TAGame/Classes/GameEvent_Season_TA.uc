@@ -29,7 +29,7 @@ defaultproperties
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Season_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Season_TA.DefaultInactiveFpsRecorder'
 	bAlwaysAutoSelectTeam=true
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Season_TA.DefaultRegistryGroup'
+	
 	bFillWithAI=true
 	GameFullMessage=Message_TA'Default__GameEvent_Season_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_Season_TA.DefaultOtherActiveMessage'

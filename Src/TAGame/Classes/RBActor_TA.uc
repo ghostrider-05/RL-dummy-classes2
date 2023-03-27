@@ -28,11 +28,16 @@ struct native WorldContactData
 
 struct native NetworkSyncSettingsData
 {
+	/** How fast to blend out location errors over time */
 	var() float LocationFixRate;
+	/** How fast to blend out angular errors over time */
 	var() float AngularFixRate;
+	/** Don't apply correction if the location difference is less than this */
 	var() float MinDeltaLocation;
 	var() float WeldedLerpRate;
+	/** Don't apply correction if the rotation difference is less than this */
 	var() const int MinDeltaRotation;
+	/** Don't apply correction if the velocity difference is less than this */
 	var() float MinDeltaLinearVelocity;
 	var() float ForceReplicationDelay;
 	var() bool bDebug;
@@ -128,7 +133,7 @@ defaultproperties
 	ReplicatedRBState=(Quaternion=(X=0.0,Y=0.0,Z=0.0,W=1.0),Location=(X=0.0,Y=0.0,Z=0.0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),Time=0.0,bSleeping=false,bNewData=false)
 	RBHistoryClass=class'RBHistory_TA'
 	Replay=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__RBActor_TA.DefaultRegistryGroup'
+	
 	bSimulateGravity=false
 	bCanBeBaseForPawns=true
 	bDontPossess=true

@@ -23,7 +23,7 @@ defaultproperties
 	
 	StaticMesh=DefaultMesh
 	Replay=ReplayComponent_TA'Default__SpecialAttachment_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__SpecialAttachment_TA.DefaultRegistryGroup'
+	
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object

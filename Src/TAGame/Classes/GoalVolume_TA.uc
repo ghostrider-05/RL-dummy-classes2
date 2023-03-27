@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class GoalVolume_TA extends Volume
+	placeable
 	hidecategories(Navigation,Object,Movement,Display);
 
 var() export editinline Goal_TA Goal;

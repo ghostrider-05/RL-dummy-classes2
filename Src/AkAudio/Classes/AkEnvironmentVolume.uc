@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class AkEnvironmentVolume extends Volume
+	placeable
 	hidecategories(Navigation,Object,Movement,Display);
 
 var() AkEnvironment Environment;

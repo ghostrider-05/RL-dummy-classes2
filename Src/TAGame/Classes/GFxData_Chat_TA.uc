@@ -100,6 +100,7 @@ var const int MaxNumGroups;
 var const int MaxNumMessagesPerGroup;
 var const ChatPresetGroupOverride PostGameGroupOverride;
 var const ChatPresetGroupOverride PreGameGroupOverride;
+var AprilConfig_X AprilConfig;
 
 defaultproperties
 {

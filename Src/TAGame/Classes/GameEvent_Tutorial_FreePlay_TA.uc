@@ -12,7 +12,7 @@ defaultproperties
 {
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Tutorial_FreePlay_TA.DefaultRegistryGroup'
+	
 	bMultiplayer=true
 	GameFullMessage=Message_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultOtherActiveMessage'

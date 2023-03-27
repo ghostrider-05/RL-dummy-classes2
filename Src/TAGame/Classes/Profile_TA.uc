@@ -22,7 +22,6 @@ var string ProfileName;
 var transient SaveData_TA SaveData;
 var transient int ControllerId;
 var bool bShouldRandomizeLoadoutEachGame;
-var string BugReportEmail;
 var int ProfileVersion;
 var transient int EditLoadoutSetIndex;
 var export editinline transient ObjectProvider SaveObjectProvider;

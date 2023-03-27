@@ -3,9 +3,15 @@ class __Automated_X extends Object;
 enum EWordFilterUsage {
 	EWordFilterUsage_MAX,
 };
+enum ECrossPlatformChatState {
+	ECrossPlatformChatState_MAX,
+};
 
 struct ImageDecoder {};
+struct ReservationData {};
+struct TimeWindow {};
 struct WordFilterPair {};
+struct MigrationReservationData {};
 struct PlayerPermissions {};
 struct PlayerBinding {};
 struct PlayerSeasonRewardProgress {};
@@ -21,6 +27,7 @@ struct ServerConnectionInfo {};
 struct ServerReservationData {};
 struct PendingRPC {};
 struct NetPacketStats {};
+struct NetworkEncryptionKey {};
 struct ReservationPlayerData {};
 struct UpdatedPlayerSkillRating {};
 struct ReplicatedReservationData {};
@@ -64,6 +71,7 @@ struct PartyMessage_PlayerTradeComplete_X {};
 struct PartyMessage_ReadyToConfirmTrade_X {};
 struct PartyMessage_ReadyToLockTrade_X {};
 struct PartyMessage_SetPlatformParty_X {};
+struct PartyMessage_TradingEnabled_X {};
 struct PendingAvatarRequest_X {};
 struct PlayerInput_X {};
 struct PrivilegeCheck_X {};

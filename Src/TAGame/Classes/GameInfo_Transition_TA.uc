@@ -9,7 +9,7 @@ class GameInfo_Transition_TA extends GameInfoBase_TA
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_Transition_TA.DefaultRegistryGroup'
+	
 	bRestartLevel=false
 	bWaitingToStartMatch=true
 	bKeepingLoadingMovieOpen=true

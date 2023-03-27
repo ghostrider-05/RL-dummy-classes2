@@ -25,7 +25,7 @@ var transient array<ProductAsset_TA> PreloadedBotAssets;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Team_TA.DefaultRegistryGroup'
+	
 	GameFullMessage=Message_TA'Default__GameEvent_Team_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_Team_TA.DefaultOtherActiveMessage'
 	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Team_TA.DefaultNotEnoughPlayersMessage'

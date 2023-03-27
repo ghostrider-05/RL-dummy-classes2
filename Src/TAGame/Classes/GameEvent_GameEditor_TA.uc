@@ -42,7 +42,7 @@ defaultproperties
 	BallHasBeenHitStartDelay=0.0
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GameEditor_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GameEditor_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_GameEditor_TA.DefaultRegistryGroup'
+	
 	bMultiplayer=false
 	GameFullMessage=Message_TA'Default__GameEvent_GameEditor_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_GameEditor_TA.DefaultOtherActiveMessage'

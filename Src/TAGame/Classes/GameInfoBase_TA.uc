@@ -12,6 +12,6 @@ var() array<GFxSoundPack_X> SoundPacks;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfoBase_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__GameInfoBase_TA.DefaultRegistryGroup'
 }

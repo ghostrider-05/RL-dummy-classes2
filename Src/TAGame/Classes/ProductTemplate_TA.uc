@@ -43,5 +43,5 @@ var() int SortPriority;
 defaultproperties
 {
 	UnlockMethod=UnlockMethod_Online
-	ProductIP(0)=202
+	ProductIP(0)=206
 }

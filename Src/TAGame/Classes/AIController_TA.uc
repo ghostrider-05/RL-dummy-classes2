@@ -138,7 +138,7 @@ defaultproperties
 	Locks=BTLockCollection'Default__AIController_TA.DefaultLocks'
 	FieldScalar=1.0
 	ForcedTeam=255
-	RegistryGroup=GroupComponent_ORS'Default__AIController_TA.DefaultRegistryGroup'
+	
 	bIsPlayer=true
 	NavigationHandleClass=class'NavigationHandle_TA'
 	Components(0)=GroupComponent_ORS'Default__AIController_TA.DefaultRegistryGroup'

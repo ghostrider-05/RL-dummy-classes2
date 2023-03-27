@@ -10,7 +10,6 @@ var() config bool bAllowPerCon;
 var config bool bRequiresPerCon;
 var() bool bAllowPsyNetParty;
 var() config bool bSendPingMessage;
-var() bool bUploadServerBugReports;
 var() bool bAllowServerBacktraceUploads;
 var() bool bAllowServerBacktraceLogUploads;
 var() bool bAllowClientBacktraceUploads;

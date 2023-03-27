@@ -22,7 +22,7 @@ defaultproperties
 	VehicleSim=VehicleSim_TA'Default__CinematicsCar_TA.DefaultVehicleSim'
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__CinematicsCar_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__CinematicsCar_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__CinematicsCar_TA.DefaultRegistryGroup'
+	
 	
 	Mesh=DefaultMesh
 	

@@ -14,7 +14,7 @@ var transient Controller PreviousController;
 defaultproperties
 {
 	GravityScale=1.0
-	RegistryGroup=GroupComponent_ORS'Default__Pawn_X.DefaultRegistryGroup'
+	
 	
 	CylinderComponent=CollisionCylinder
 	Components(0)=none

@@ -219,6 +219,7 @@ enum ELicenseGroup
 	LicenseGroup_Ferrari,
 	LicenseGroup_Honda,
 	LicenseGroup_Bugatti,
+	LicenseGroup_Volkswagen,
 	LicenseGroup_MAX
 };
 
@@ -731,6 +732,7 @@ enum EMainMenuBackground
 	MMBG_UtopiaLux,
 	MMBG_Street,
 	MMBG_FireAndIce,
+	MMBG_Oasis,
 	MMBG_MAX
 };
 
@@ -1085,9 +1087,13 @@ struct SeasonTeamRank
 
 struct SeasonPlayer
 {
+	/** Which team this player belongs to */
 	var databinding int Team;
+	/** Player's name */
 	var databinding string Name;
+	/** Players ID */
 	var databinding string Id;
+	/** Bot or human? */
 	var databinding bool bBot;
 
 	structdefaultproperties
@@ -2600,7 +2606,7 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=67
+		TradeInQualities(0)=73
 		TradeInQualities(1)=57
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0

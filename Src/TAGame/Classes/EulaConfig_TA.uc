@@ -6,11 +6,13 @@
 class EulaConfig_TA extends OnlineConfig_X;
 
 var() bool bRequiresAcceptance;
+var() bool bAllowEulaReset;
 var() array<_Types_Core.OnlinePlatform> ExcludedPlatforms;
 
 defaultproperties
 {
 	bRequiresAcceptance=true
-	ExcludedPlatforms(0)=224
+	bAllowEulaReset=true
+	ExcludedPlatforms(0)=231
 	ExcludedPlatforms(1)=104
 }

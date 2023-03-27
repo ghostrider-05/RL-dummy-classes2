@@ -15,7 +15,7 @@ defaultproperties
 	InputClass=class'PlayerInput_Menu_TA'
 	
 	CylinderComponent=CollisionCylinder
-	RegistryGroup=GroupComponent_ORS'Default__PlayerController_Menu_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__PlayerController_Menu_TA.DefaultRegistryGroup'
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=none

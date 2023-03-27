@@ -11,6 +11,6 @@ var transient bool bCanExportMatinee;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_TrainingEditor_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__GameInfo_TrainingEditor_TA.DefaultRegistryGroup'
 }

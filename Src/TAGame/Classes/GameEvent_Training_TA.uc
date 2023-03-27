@@ -13,7 +13,7 @@ defaultproperties
 {
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Training_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Training_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Training_TA.DefaultRegistryGroup'
+	
 	GameFullMessage=Message_TA'Default__GameEvent_Training_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_Training_TA.DefaultOtherActiveMessage'
 	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Training_TA.DefaultNotEnoughPlayersMessage'

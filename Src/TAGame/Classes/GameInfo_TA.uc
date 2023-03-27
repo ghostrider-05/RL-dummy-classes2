@@ -30,7 +30,7 @@ var ServerConnectionInfo ReplacementServerInfo;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_TA.DefaultRegistryGroup'
+	
 	bRestartLevel=false
 	bWaitingToStartMatch=true
 	PlayerReplicationInfoClass=class'PRI_TA'

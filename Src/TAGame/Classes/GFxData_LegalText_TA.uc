@@ -9,7 +9,7 @@ var array<_Types_Core.OnlinePlatform> LegacyLegalPlatforms;
 
 defaultproperties
 {
-	LegacyLegalPlatforms(0)=223
+	LegacyLegalPlatforms(0)=230
 	LegacyLegalPlatforms(1)=104
 	LegacyLegalPlatforms(2)=0
 	LegacyLegalPlatforms(3)=0

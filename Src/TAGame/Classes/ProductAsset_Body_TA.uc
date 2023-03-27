@@ -9,6 +9,7 @@ class ProductAsset_Body_TA extends ProductAsset_TA
 
 struct native VehicleWheelSettings
 {
+	/** Bone on mesh to attach the wheel to */
 	var() name BoneName;
 
 	structdefaultproperties
@@ -43,7 +44,9 @@ struct native VehicleAxleSettings
 
 struct native TeamPaintFinish
 {
+	/** Team finish product ID */
 	var() ProductAsset_PaintFinish_TA TeamFinish;
+	/** Custom finish product ID */
 	var() ProductAsset_PaintFinish_TA CustomFinish;
 
 	structdefaultproperties

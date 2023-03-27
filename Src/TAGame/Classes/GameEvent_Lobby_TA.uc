@@ -13,7 +13,7 @@ var transient Ball_TA Ball;
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Lobby_TA.DefaultRegistryGroup'
+	
 	bMultiplayer=true
 	GameFullMessage=Message_TA'Default__GameEvent_Lobby_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_Lobby_TA.DefaultOtherActiveMessage'

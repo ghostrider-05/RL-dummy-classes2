@@ -13,3 +13,4 @@ var transient array<int> ActivePlaylist;
 var transient int CurrentActivePlaylistIndex;
 var transient int CurrentUnshuffledPlaylistIndex;
 var transient bool bShufflePlay;
+var transient bool bPlaytestStarted;

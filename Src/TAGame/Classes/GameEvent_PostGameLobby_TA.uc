@@ -10,7 +10,7 @@ class GameEvent_PostGameLobby_TA extends GameEvent_Lobby_TA
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_PostGameLobby_TA.DefaultRegistryGroup'
+	
 	GameFullMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultOtherActiveMessage'
 	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultNotEnoughPlayersMessage'

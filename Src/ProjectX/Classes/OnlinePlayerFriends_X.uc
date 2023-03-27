@@ -23,6 +23,7 @@ var bool bFetchingLinkedAccounts;
 var export editinline OnlineFriendMap_X CachedFriends;
 var export editinline PlatformFriends_X PlatformFriends;
 var export editinline EpicFriends_X EpicFriends;
+var array<OnlineFriend> EpicInvites;
 var export editinline OnlineFriendMap_X BlockedPlayers;
 var export editinline OnlineFriendMap_X EpicBlockList;
 var export editinline OnlineFriendMap_X PlatformBlockList;

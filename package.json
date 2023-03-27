@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prestart": "tsc && node ./dist/prestart.js"
+    "prestart": "tsc && node ./dist/prestart.js",
+    "start": "node -r dotenv/config ./dist/start.js"
   },
   "dependencies": {
-    "@iarna/toml": "2.2.5"
+    "@iarna/toml": "2.2.5",
+    "@kismet.ts/parsers-node": "file:../../../../../kismet/packages/parsers-node",
+    "dotenv": "16.0.3"
   },
   "devDependencies": {
     "@types/node": "16.18.12",

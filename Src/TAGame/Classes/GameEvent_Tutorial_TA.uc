@@ -156,7 +156,7 @@ defaultproperties
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_TA.DefaultInactiveFpsRecorder'
 	bAlwaysAutoSelectTeam=true
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Tutorial_TA.DefaultRegistryGroup'
+	
 	MatchTypeClass=class'MatchType_Tutorial_TA'
 	bMultiplayer=false
 	bAwardAchievements=false

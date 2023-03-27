@@ -292,7 +292,6 @@ struct PlayerTitleData
 struct PartyMemberServer
 {
 	var string ServerName;
-	var string BeaconAddress;
 	var string CustomPassword;
 	var string JoinName;
 	var string JoinPassword;
@@ -301,7 +300,6 @@ struct PartyMemberServer
 	structdefaultproperties
 	{
 		ServerName=""
-		BeaconAddress=""
 		CustomPassword=""
 		JoinName=""
 		JoinPassword=""
@@ -318,6 +316,7 @@ struct PartyMember
 	var int LocalControllerId;
 	var ECrossPlatformChatState CrossChatState;
 	var bool bDisableCrossPlay;
+	var bool bTradingEnabled;
 	var UniqueNetId TradingMemberId;
 	var Guid TradeId;
 	var bool bReadyToLockTrade;
@@ -334,11 +333,12 @@ struct PartyMember
 		LocalControllerId=-1
 		CrossChatState=PCCS_Everybody
 		bDisableCrossPlay=false
+		bTradingEnabled=false
 		
 		TradeId=(A=0,B=0,C=0,D=0)
 		bReadyToLockTrade=false
 		bReadyToConfirmTrade=false
-		Server=(ServerName="",BeaconAddress="",CustomPassword="",JoinName="",JoinPassword="",PlaylistId=0)
+		Server=(ServerName="",CustomPassword="",JoinName="",JoinPassword="",PlaylistId=0)
 		
 	}
 };
@@ -655,7 +655,6 @@ struct JoinMatchSettings
 struct PartyJoinMatchSettings
 {
 	var string ServerName;
-	var string BeaconAddress;
 	var int PlaylistId;
 	var bool bFriendJoin;
 	var string CustomPassword;
@@ -666,7 +665,6 @@ struct PartyJoinMatchSettings
 	structdefaultproperties
 	{
 		ServerName=""
-		BeaconAddress=""
 		PlaylistId=0
 		bFriendJoin=false
 		CustomPassword=""
@@ -680,6 +678,7 @@ struct SkillMatchPlayer
 {
 	var UniqueNetId PlayerID;
 	var float PctTimePlayed;
+	var float TimePlayed;
 	var bool bQuitter;
 	var int PartyID;
 	var int Score;
@@ -689,6 +688,7 @@ struct SkillMatchPlayer
 	{
 		
 		PctTimePlayed=0.0
+		TimePlayed=0.0
 		bQuitter=false
 		PartyID=0
 		Score=0
@@ -754,14 +754,12 @@ struct SkillMatchPartyRating extends _Types_X.TierSkillRating
 struct ServerConnectionInfo
 {
 	var string ServerAddress;
-	var string BeaconAddress;
 	var string PingAddress;
 	var string ServerName;
 
 	structdefaultproperties
 	{
 		ServerAddress=""
-		BeaconAddress=""
 		PingAddress=""
 		ServerName=""
 	}
@@ -819,7 +817,6 @@ struct CheckReservationResponse
 
 struct ServerReservationData
 {
-	var string BeaconURL;
 	var string ServerName;
 	var int Playlist;
 	var string Region;
@@ -831,7 +828,6 @@ struct ServerReservationData
 
 	structdefaultproperties
 	{
-		BeaconURL=""
 		ServerName=""
 		Playlist=0
 		Region=""
@@ -846,15 +842,13 @@ struct ServerReservationData
 struct ActiveServerData
 {
 	var ServerReservationData Reservation;
-	var string BeaconURL;
 	var string PingURL;
 	var string GameURL;
 	var string JoinCredentials;
 
 	structdefaultproperties
 	{
-		Reservation=(BeaconURL="",ServerName="",Playlist=0,Region="",ReservationID="",DSRToken="",Keys=none,JoinName="",JoinPassword="")
-		BeaconURL=""
+		Reservation=(ServerName="",Playlist=0,Region="",ReservationID="",DSRToken="",Keys=none,JoinName="",JoinPassword="")
 		PingURL=""
 		GameURL=""
 		JoinCredentials=""

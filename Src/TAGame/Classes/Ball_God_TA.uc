@@ -58,7 +58,7 @@ defaultproperties
 	BallCamTarget=BallCamTarget_TA'Default__Ball_God_TA.DefaultBallCamTarget'
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_God_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_God_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__Ball_God_TA.DefaultRegistryGroup'
+	
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=none
 	end object

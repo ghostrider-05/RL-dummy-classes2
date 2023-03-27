@@ -5,11 +5,24 @@
 *******************************************************************************/
 class AprilConfig_X extends OnlineConfig_X;
 
+struct QuickChatOverridePair
+{
+	var string Id;
+	var string Override;
+
+	structdefaultproperties
+	{
+		Id=""
+		Override=""
+	}
+};
+
 var() Qword StartTime;
 var() Qword EndTime;
 var() bool bChangeRankedIcons;
 var() bool bChangePlaylists;
 var() bool bChangeCrowd;
+var() array<QuickChatOverridePair> QuickChatDisplayOverrides;
 var() float HatScale;
 var() float AntennaScale;
 

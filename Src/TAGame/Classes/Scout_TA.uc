@@ -17,7 +17,7 @@ defaultproperties
 	NavMeshGen_MaxDropHeight=400.0
 	NavMeshGen_MaxPolyHeight=180.0
 	NavMeshGen_MaxGroundCheckSize=20.0
-	RegistryGroup=GroupComponent_ORS'Default__Scout_TA.DefaultRegistryGroup'
+	
 	WalkableFloorZ=0.7070
 	
 	CylinderComponent=CollisionCylinder

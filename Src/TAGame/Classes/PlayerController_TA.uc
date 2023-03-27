@@ -51,7 +51,6 @@ var bool bHandbrakePressed;
 var bool bHasPitchedOrRolled;
 var bool bAirPitchSafetyEnabled;
 var config bool bAllowAsymmetricalMute;
-var transient bool bResetCamera;
 var transient string LoginURL;
 var transient EVoiceFilter DeprecatedVoiceFilter;
 var transient EChatFilter QuickChatFilter;
@@ -105,13 +104,6 @@ var VehicleInputs LastInputs;
 var transient PRI_TA PendingViewPRI;
 var export editinline transient ClientConnectionTracker_TA ConnectionTracker;
 var transient ProfileCameraSave_TA CameraSave;
-var transient float LastInputPitchUp;
-var transient float LastInputPitchDown;
-var transient float LastInputYawLeft;
-var transient float LastInputYawRight;
-var transient float LastInputPitch;
-var transient float LastInputYaw;
-var const float MouseInputMax;
 var EngineShare_TA EngineShare;
 var repnotify NetworkInputBuffer_TA InputBuffer;
 var CrossplayConfig_X CrossplayConfig;
@@ -134,11 +126,10 @@ defaultproperties
 	CrosshairTraceExtents(1)=(Extent=(X=100.0,Y=100.0,Z=100.0),minDot=0.70)
 	CrosshairTraceExtents(2)=(Extent=(X=500.0,Y=500.0,Z=500.0),minDot=0.990)
 	RotateActorCameraSide=-1
-	MouseInputMax=1000.0
 	CheatClass=class'CheatManager_TA'
 	InputClass=class'PlayerInput_Game_TA'
 	CylinderComponent=none
-	RegistryGroup=GroupComponent_ORS'Default__PlayerController_TA.DefaultRegistryGroup'
+	
 	NavigationHandleClass=none
 	Components(0)=GroupComponent_ORS'Default__PlayerController_TA.DefaultRegistryGroup'
 	CollisionComponent=none

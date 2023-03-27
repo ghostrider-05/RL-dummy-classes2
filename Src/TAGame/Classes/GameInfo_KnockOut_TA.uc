@@ -9,7 +9,7 @@ class GameInfo_KnockOut_TA extends GameInfo_Soccar_TA
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_KnockOut_TA.DefaultRegistryGroup'
+	
 	PlayerReplicationInfoClass=class'PRI_KnockOut_TA'
 	Components(0)=GroupComponent_ORS'Default__GameInfo_KnockOut_TA.DefaultRegistryGroup'
 }

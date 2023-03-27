@@ -24,7 +24,7 @@ defaultproperties
 	SpawnRadiusCheck=100.0
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GodBall_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GodBall_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_GodBall_TA.DefaultRegistryGroup'
+	
 	GameFullMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultOtherActiveMessage'
 	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultNotEnoughPlayersMessage'

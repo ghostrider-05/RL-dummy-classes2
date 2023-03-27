@@ -26,7 +26,7 @@ defaultproperties
 	KickoffDelay=0.80
 	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Football_TA.DefaultActiveFpsRecorder'
 	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Football_TA.DefaultInactiveFpsRecorder'
-	RegistryGroup=GroupComponent_ORS'Default__GameEvent_Football_TA.DefaultRegistryGroup'
+	
 	GameFullMessage=Message_TA'Default__GameEvent_Football_TA.DefaultGameFullMessage'
 	OtherActiveMessage=Message_TA'Default__GameEvent_Football_TA.DefaultOtherActiveMessage'
 	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Football_TA.DefaultNotEnoughPlayersMessage'

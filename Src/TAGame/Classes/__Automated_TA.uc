@@ -1,5 +1,11 @@
 class __Automated_TA extends Object;
 
+enum EBasicLoadResult {
+	EBasicLoadResult_MAX,
+};
+enum EImageFilterOptions {
+	EImageFilterOptions_MAX,
+};
 enum EForceMode {
 	EForceMode_MAX,
 };
@@ -13,19 +19,25 @@ enum ESpecialEventState {
 struct AIProxyData {};
 struct AngleSelectData {};
 struct ControllerLayoutStack {};
+struct ComponentTemplate {};
+struct CrossplayGroup {};
 struct CrumbTrailData {};
 struct DownloadedWorkshopData {};
 struct FriendHistoryKey {};
 struct GameClipsMaskArea {};
+struct GroupComponent_ORS {};
 struct GFxLevelThreshold {};
 struct GFxRegion {};
 struct GFxTournamentReward {};
 struct IEpochNow {};
+struct JoinMatchSettings {};
 struct LoadingMovieMapInfo {};
 struct MTCatalogInfo {};
 struct OnlineProductData {};
 struct OnlinePurchaseInterface {};
+struct PartyJoinMatchSettings {};
 struct PlaneSelectData {};
+struct PlatformAccountSettings {};
 struct PlaylistTrack {};
 struct TourServerSettings {};
 struct ShopItem {};

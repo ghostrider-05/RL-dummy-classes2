@@ -29,7 +29,6 @@ var const transient array<ITickNotify_TA> TickNotifies;
 var const transient int TickNotifyIndex;
 var config string ShellArchetypePath;
 var transient SystemSettingsManager_TA SystemSettingsManager;
-var const transient float LastBugReportTime;
 var float DebugClientCorrectionStartTime;
 var int DebugClientCorrectionCount;
 var export editinline StatGraphSystem_TA StatGraphs;

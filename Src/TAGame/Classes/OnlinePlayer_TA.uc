@@ -8,8 +8,6 @@ class OnlinePlayer_TA extends OnlinePlayer_X within LocalPlayer_TA;
 var AchievementManager_TA AchievementManagerArchetype;
 var AchievementManager_TA AchievementManager;
 var NotificationManager_TA NotificationManager;
-var PlayerProgressionManager_TA PlayerProgressionManager;
-var PlayerProgressionManager_TA PlayerProgressionManagerArchetype;
 var FirstTimeExperienceManager_TA FirstTimeManagerArchetype;
 var FirstTimeExperienceManager_TA FTEManager;
 var StatusTriggerManager_TA TriggerManager;

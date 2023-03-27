@@ -19,8 +19,6 @@ var bool bUseBallIndicator;
 var bool bUseBallCamIndicator;
 var bool bEnableCameraShake;
 var bool bDirectorAllowCameraBlending;
-var bool bHoldMouseCameraEnabled;
-var bool bMouseCameraSwivel;
 var config ECameraSettingsPreset CameraSettingsPreset;
 var float DirectorMinChangeTeamFocusTime;
 var float DirectorMinSameTeamFocusTime;
@@ -36,8 +34,6 @@ defaultproperties
 	bUseBallCamIndicator=true
 	bEnableCameraShake=true
 	bDirectorAllowCameraBlending=true
-	bHoldMouseCameraEnabled=true
-	bMouseCameraSwivel=true
 	DirectorMinChangeTeamFocusTime=5.0
 	DirectorMinSameTeamFocusTime=4.0
 	MaxProximityDistance=500.0

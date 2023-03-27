@@ -1,5 +1,4 @@
-# Use these descriptions for any property
-# [_ApplyToAll_DummyClass.Variables]
+[_ApplyToAll_DummyClass.Variables]
 
 [AnimateParametersComponent_X.Variables]
 FloatParameters="Float parameters to animate"
@@ -32,11 +31,11 @@ bAutoTick="if true, will use FTickableObject to call the native tick. if false, 
 [TickComponent_X.Variables]
 bTickWhenGamePaused="if true, will tick even when game paused"
 
-# [_Types_TA.Structs.SeasonPlayer.Variables]
-# Team="Which team this player belongs to"
-# Name="Player's name"
-# Id="Players ID"
-# bBot="Bot or human?"
+[_Types_TA.Structures.SeasonPlayer]
+Team="Which team this player belongs to"
+Name="Player's name"
+Id="Players ID"
+bBot="Bot or human?"
 
 # TODO: add more structures from _Types_TA
 
@@ -331,12 +330,12 @@ Section="Which section in the localization file"
 [PlayerTitle_TA.Variables]
 Source="Whether this title is given by the user or by Psyonix"
 
-# [ProductAsset_Body_TA.Structs.VehicleWheelSettings.Variables]
-# BoneName="Bone on mesh to attach the wheel to"
+[ProductAsset_Body_TA.Structures.VehicleWheelSettings]
+BoneName="Bone on mesh to attach the wheel to"
 
-# [ProductAsset_Body_TA.Structs.TeamPaintFinish.Variables]
-# TeamFinish="Team finish product ID"
-# CustomFinish="Custom finish product ID"
+[ProductAsset_Body_TA.Structures.TeamPaintFinish]
+TeamFinish="Team finish product ID"
+CustomFinish="Custom finish product ID"
 
 [ProductAsset_Body_TA.Variables]
 Mesh="Static mesh for vehicle body"
@@ -429,12 +428,12 @@ FieldCenter="Floating center of field"
 Goals="Goals contained in this field"
 SpawnPoints="PlayerStarts contained in this field"
 
-# [RBActor_TA.Structs.NetworkSyncSettingsData.Variables]
-# LocationFixRate="How fast to blend out location errors over time"
-# AngularFixRate="How fast to blend out angular errors over time"
-# MinDeltaLocation="Don't apply correction if the location difference is less than this"
-# MinDeltaRotation="Don't apply correction if the rotation difference is less than this"
-# MinDeltaLinearVelocity="Don't apply correction if the velocity difference is less than this"
+[RBActor_TA.Structures.NetworkSyncSettingsData]
+LocationFixRate="How fast to blend out location errors over time"
+AngularFixRate="How fast to blend out angular errors over time"
+MinDeltaLocation="Don't apply correction if the location difference is less than this"
+MinDeltaRotation="Don't apply correction if the rotation difference is less than this"
+MinDeltaLinearVelocity="Don't apply correction if the velocity difference is less than this"
 
 [RBActor_TA.Variables]
 MaxLinearSpeed="Don't exceed this linear speed"
@@ -495,6 +494,10 @@ Players="Info on players participating in this season"
 PlayerStats="Player Stats for Season"
 Year="Which year this season is"
 CurrentWeek="How many weeks into the season we are. This will exceed NumRegularWeeks as we enter the playoffs."
+
+[SeqAct_AddGameBall_TA.Variables]
+bWake="Causes the ball to be unmoveable"
+BallArchetype="A custom archetype for the ball to spawn: Ball_TA'{Package}.Group.My_ball'.\nRepeat multiple Add Game Ball with possible packages for map swapping\nExample:https://github.com/RocketLeagueMapmaking/Kismet/blob/master/general/AddCustomGameBall.txt"
 
 [SkeletalMeshComponent_TA.Variables]
 FOVOverride="Override the FOV we render with"

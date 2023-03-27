@@ -29,7 +29,7 @@ defaultproperties
 	BallCamTarget=BallCamTarget_TA'Default__Ball_GameEditor_TA.DefaultBallCamTarget'
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_GameEditor_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_GameEditor_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__Ball_GameEditor_TA.DefaultRegistryGroup'
+	
 	begin object name=CollisionCylinder
 		CollisionHeight=50.0
 		CollisionRadius=50.0

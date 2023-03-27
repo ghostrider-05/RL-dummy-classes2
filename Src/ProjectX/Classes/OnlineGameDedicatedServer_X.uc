@@ -23,19 +23,19 @@ var transient float AverageConservativeMMR;
 var transient int MachineId;
 var transient CustomMatchSettings CustomMatch;
 var transient UniqueNetId CustomMatchOwner;
-var Qword CustomMatchClubID;
+var transient Qword CustomMatchClubID;
 var transient bool bQueuedShutdown;
 var transient bool bFindingReplacementServer;
 var bool bHasValidMigrationServer;
 var transient bool bDisableMatchmakingBan;
 var transient bool bBotTest;
 var transient string ReplacementServerID;
-var export editinline ServerPlayerTracker_X PlayerTracker;
+var export editinline transient ServerPlayerTracker_X PlayerTracker;
 var() class MatchRecorderClass;
-var MatchRecorder_X MatchRecorder;
-var MatchLog_X MatchLog;
-var() ServerConfig_X Config;
-var PsyNetConfig_X PsyNetConfig;
+var transient MatchRecorder_X MatchRecorder;
+var transient MatchLog_X MatchLog;
+var() transient ServerConfig_X Config;
+var transient PsyNetConfig_X PsyNetConfig;
 
 defaultproperties
 {

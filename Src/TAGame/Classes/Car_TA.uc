@@ -71,7 +71,7 @@ defaultproperties
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Car_TA.DefaultPTDComponent'
 	bAutoInitFXEffects=false
 	Replay=ReplayComponent_TA'Default__Car_TA.ReplayComponent0'
-	RegistryGroup=GroupComponent_ORS'Default__Car_TA.DefaultRegistryGroup'
+	
 	
 	Mesh=DefaultMesh
 	

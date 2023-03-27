@@ -9,6 +9,6 @@ class GameInfo_PerfTest_TA extends GameInfoBase_TA
 
 defaultproperties
 {
-	RegistryGroup=GroupComponent_ORS'Default__GameInfo_PerfTest_TA.DefaultRegistryGroup'
+	
 	Components(0)=GroupComponent_ORS'Default__GameInfo_PerfTest_TA.DefaultRegistryGroup'
 }

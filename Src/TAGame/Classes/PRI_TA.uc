@@ -183,6 +183,7 @@ var transient int TimeTillItem;
 var transient int MaxTimeTillItem;
 var ProductsConfig_TA ProductsConfig;
 var repnotify string CurrentVoiceRoom;
+var transient ServerSetLoadoutParams PendingLoadout;
 
 defaultproperties
 {
@@ -195,7 +196,8 @@ defaultproperties
 	DodgeInputThreshold=0.50
 	SteeringSensitivity=1.0
 	AirControlSensitivity=1.0
-	RegistryGroup=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'
+	PendingLoadout=(Title=XP,Loadouts=(Products=none,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),Loadouts[1]=(Products=none,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)))
+	
 	Components(0)=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'
 	TickGroup=TG_PreAsyncWork
 }
