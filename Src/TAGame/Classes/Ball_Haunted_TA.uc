@@ -65,3 +65,10 @@ defaultproperties
 	
 	CollisionComponent=DefaultMesh
 }
+replication
+{
+	 if(bNetInitial)
+		DeactivatedGoalIndex, LastTeamTouch, 
+		ReplicatedBeamBrokenValue, TotalActiveBeams, 
+		bIsBallBeamed;
+}

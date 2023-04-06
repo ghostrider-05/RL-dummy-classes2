@@ -161,3 +161,17 @@ defaultproperties
 	
 	CollisionComponent=CollisionCylinder
 }
+replication
+{
+	 if(bNetInitial)
+		ReplicatedRBState;
+
+	 if(bNetInitial/**Empty key for position: 1.*/)
+		MaxAngularSpeed, MaxLinearSpeed, 
+		bReplayActor;
+
+	 if(bNetInitial/**Empty key for position: 11.*/)
+		ReplicatedCollisionScale, ReplicatedGravityScale, 
+		TeleportCounter, WeldedInfo, 
+		bFrozen, bIgnoreSyncing;
+}

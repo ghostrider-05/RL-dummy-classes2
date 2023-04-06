@@ -14,3 +14,9 @@ var const float MaxVelocityTransferAlpha;
 var const float VelocityTransferBlend;
 var transient Rotator DodgeRotation;
 var repnotify transient int DodgeRotationCompressed;
+
+replication
+{
+	 if(bNetInitial)
+		DodgeRotationCompressed;
+}

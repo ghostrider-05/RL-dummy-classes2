@@ -52,3 +52,8 @@ defaultproperties
 	DodgeTorqueScale=1.0
 	FXEvent=FXActorEvent_X'FXActorEvents.Dodge'
 }
+replication
+{
+	 if(bNetInitial)
+		DodgeTorque;
+}

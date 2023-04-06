@@ -201,3 +201,43 @@ defaultproperties
 	Components(0)=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'
 	TickGroup=TG_PreAsyncWork
 }
+replication
+{
+	 if(bNetInitial)
+		ClientLoadout, ClientLoadoutOnline, 
+		ClientLoadouts, ClientLoadoutsOnline, 
+		ClubID, CurrentVoiceRoom, 
+		PawnType, ReplicatedGameEvent, 
+		SkillTier, StayAsPartyVoteYes, 
+		StayAsPartyVoter, SteeringSensitivity, 
+		Title, bIdleBanned, 
+		bIsDistracted, bOnlineLoadoutSet, 
+		bReady;
+
+	 if(bNetDirty)
+		PartyLeader, bIsInSplitScreen;
+
+	 if(bNetInitial && Role==ROLE_Authority)
+		MatchAssists, MatchBreakoutDamage, 
+		MatchGoals, MatchSaves, 
+		MatchScore, MatchShots, 
+		bMatchMVP, bUsingItems;
+
+	 if(bNetInitial/**Empty key for position: 47.*/)
+		PrimaryTitle, SecondaryTitle;
+
+	 if(bNetInitial/**Empty key for position: 57.*/)
+		PlayerHistoryKey, PlayerHistoryValid;
+
+	 if(bNetInitial/**Empty key for position: 67.*/)
+		ReplicatedWorstNetQualityBeyondLatency, SpectatorShortcut;
+
+	 if(bNetInitial/**Empty key for position: 77.*/)
+		PickupTimer, QuitSeverity, 
+		ReplacingBotPRI, bMatchAdmin, 
+		bStartVoteToForfeitDisabled;
+
+	 if(bNetInitial/**Empty key for position: 102.*/)
+		BotAvatarProductID, BotBannerProductID, 
+		BotProductName, PersistentCamera;
+}

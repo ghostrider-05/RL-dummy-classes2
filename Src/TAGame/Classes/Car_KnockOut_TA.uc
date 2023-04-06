@@ -142,3 +142,9 @@ defaultproperties
 	
 	CollisionComponent=CollisionCylinder
 }
+replication
+{
+	 if(bNetInitial)
+		ReplicatedImpulse, ReplicatedStateChanged, 
+		ReplicatedStateName, UsedAttackComponent;
+}

@@ -16,8 +16,9 @@ Current warning count: 2409
 Fill the [`descriptions.toml`](./description.toml) configuration with the class descriptions.
 When running the CI this file will be merged with the classes to combine the descriptions.
 
-The first class defined is a special class: `_ApplyToAll_DummyClass`.
-All properties listed in this class will be applied to all classes that have that property. Specify that property on a class to overwite the descriptions or set it to empty to remove it.
+The first class defined is a special class: `_DummyClass`. This will hold some descriptions commonly used in extracting the classes.
+Another special class is `_ApplyToAll_DummyClass`.
+All properties listed in this class will be applied to all classes that have that property. Specify that property on a class to overwrite the descriptions or set it to empty to remove it.
 
 Descriptions are defined for:
 
@@ -31,3 +32,19 @@ Example:
 [MyClass.Variables]
 PropertyName="Something interesting"
 ```
+
+## Replication blocks
+
+> **Warning** These replication statements may not be correct. Please check the official documentation or ask help in the Rocket League modding discord server.
+
+If a class has replicated variables, there will be a `replicated` block at the bottom of the class.
+
+```c++
+replicated
+{
+    if (statementCode) // The replication condition
+        Location; // The variables that will be replicated when the condition is true
+}
+```
+
+If a statement is not known, a comment will be placed behind the default statement.

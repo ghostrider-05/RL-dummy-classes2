@@ -43,3 +43,14 @@ defaultproperties
 	NetUpdateFrequency=30.0
 	NetPriority=5.0
 }
+replication
+{
+	 if(bNetInitial)
+		Vehicle;
+
+	 if(bNetDirty)
+		ReplicatedActive;
+
+	 if(bNetInitial/**Missing key for position: 42.*/)
+		ReplicatedActivityTime;
+}

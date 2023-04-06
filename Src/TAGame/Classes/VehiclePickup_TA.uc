@@ -70,3 +70,9 @@ defaultproperties
 	
 	CollisionComponent=DefaultCollisionCylinder
 }
+replication
+{
+	 if(bNetInitial)
+		NewReplicatedPickupData, ReplicatedPickupData, 
+		bNoPickup;
+}

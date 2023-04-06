@@ -14,3 +14,9 @@ var() float FlipCarTorque;
 /** How much time to flip car if doing a 180 degree flip */
 var() float FlipCarTime;
 var transient bool bFlipRight;
+
+replication
+{
+	 if(bNetInitial)
+		FlipCarTime, bFlipRight;
+}

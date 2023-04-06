@@ -80,3 +80,12 @@ defaultproperties
 	
 	CollisionComponent=CollisionCylinder
 }
+replication
+{
+	 if(bNetInitial)
+		bDriving, bPodiumMode;
+
+	 if(bNetDirty)
+		ReplicatedSteer, ReplicatedThrottle, 
+		bReplicatedHandbrake;
+}

@@ -37,3 +37,18 @@ defaultproperties
 	BoostModifier=1.0
 	BoostShakeState=FXActorEvent_X'FXActorEvents.BoostShake'
 }
+replication
+{
+	 if(bNetInitial)
+		BoostModifier, bNoBoost;
+
+	 if(bNetDirty)
+		CurrentBoostAmount, StartBoostAmount;
+
+	 if(bNetInitial/**Missing key for position: 35.*/)
+		ReplicatedBoostAmount;
+
+	 if(bNetInitial/**Missing key for position: 62.*/)
+		RechargeDelay, RechargeRate, 
+		UnlimitedBoostRefCount, bRechargeGroundOnly;
+}

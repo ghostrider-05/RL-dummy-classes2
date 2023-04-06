@@ -36,3 +36,11 @@ defaultproperties
 	bAlwaysRelevant=true
 	NetUpdateFrequency=15.0
 }
+replication
+{
+	 if(bNetInitial)
+		ConcurrentItemCount, PickupInfo;
+
+	 if(bNetDirty)
+		PreviewTimeSeconds;
+}

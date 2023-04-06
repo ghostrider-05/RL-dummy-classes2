@@ -48,3 +48,8 @@ defaultproperties
 	
 	CollisionComponent=DefaultMesh
 }
+replication
+{
+	 if(bNetInitial)
+		AttachedCar;
+}

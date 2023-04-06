@@ -27,3 +27,8 @@ defaultproperties
 	
 	CollisionComponent=DefaultCollisionCylinder
 }
+replication
+{
+	 if(bNetInitial)
+		ReplicatedFXActorArchetype;
+}

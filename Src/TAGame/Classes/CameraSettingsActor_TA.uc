@@ -30,3 +30,13 @@ defaultproperties
 	bTickIsDisabled=true
 	NetUpdateFrequency=30.0
 }
+replication
+{
+	 if(bNetInitial)
+		PRI;
+
+	 if(bNetDirty)
+		CameraPitch, CameraYaw, 
+		ProfileSettings, bUsingBehindView, 
+		bUsingFreecam, bUsingSecondaryCamera;
+}

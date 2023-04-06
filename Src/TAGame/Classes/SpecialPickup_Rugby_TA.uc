@@ -25,3 +25,8 @@ defaultproperties
 {
 	CheckLastTouchRate=0.50
 }
+replication
+{
+	 if(bNetInitial)
+		bBallWelded;
+}

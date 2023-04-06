@@ -49,3 +49,8 @@ defaultproperties
 	
 	CollisionComponent=StaticMeshComponent0
 }
+replication
+{
+	 if(bNetInitial)
+		bActive;
+}

@@ -28,3 +28,12 @@ defaultproperties
 	NetUpdateFrequency=30.0
 	NetPriority=5.0
 }
+replication
+{
+	 if(bNetInitial)
+		Car;
+
+	 if(bNetDirty)
+		MashTime, MaxStunTime, 
+		StunTimeRemaining;
+}

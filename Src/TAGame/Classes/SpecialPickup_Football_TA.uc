@@ -68,3 +68,8 @@ defaultproperties
 	CheckLastTouchRate=0.50
 	OutOfBoundsZ=800.0
 }
+replication
+{
+	 if(bNetInitial)
+		WeldedBall;
+}

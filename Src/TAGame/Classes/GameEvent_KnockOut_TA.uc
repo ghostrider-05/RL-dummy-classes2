@@ -37,3 +37,11 @@ defaultproperties
 	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_KnockOut_TA.DefaultPauseInstance'
 	Components(0)=GroupComponent_ORS'Default__GameEvent_KnockOut_TA.DefaultRegistryGroup'
 }
+replication
+{
+	 if(bNetInitial)
+		PlayerLives;
+
+	 if(bNetDirty)
+		PodiumSpawnLocationZ;
+}

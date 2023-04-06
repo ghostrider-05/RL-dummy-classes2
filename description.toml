@@ -1,3 +1,19 @@
+[_DummyClass.Variables]
+Replication_0="bNetInitial"
+Replication_1=""
+Replication_10="bNetDirty"
+Replication_11=""
+Replication_20=""
+Replication_27=""
+Replication_37="bNetInitial && Role==ROLE_Authority"
+Replication_47=""
+Replication_57=""
+Replication_67=""
+Replication_75="bNetDirty && !bNetOwner && Role==ROLE_Authority"
+Replication_77=""
+Replication_102=""
+Replication_110="!bNetOwner && Role==ROLE_Authority"
+
 [_ApplyToAll_DummyClass.Variables]
 
 [AnimateParametersComponent_X.Variables]

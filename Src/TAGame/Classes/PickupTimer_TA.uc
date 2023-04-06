@@ -14,3 +14,8 @@ defaultproperties
 {
 	NetUpdateFrequency=0.10
 }
+replication
+{
+	 if(bNetInitial)
+		MaxTimeTillItem, TimeTillItem;
+}

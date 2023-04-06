@@ -72,3 +72,12 @@ defaultproperties
 	Components(0)=GroupComponent_ORS'Default__Team_TA.DefaultRegistryGroup'
 	bTickIsDisabled=true
 }
+replication
+{
+	 if(bNetInitial)
+		ClubColors, CustomTeamName, 
+		GameEvent, LogoData;
+
+	 if(bNetDirty)
+		ClubID, Difficulty;
+}

@@ -17,3 +17,8 @@ defaultproperties
 	TorqueTimeScale=0.750
 	bSimulateComponent=true
 }
+replication
+{
+	 if(bNetInitial)
+		ReplicatedTorqueInput, TorqueScale;
+}

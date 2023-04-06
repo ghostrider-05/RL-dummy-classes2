@@ -19,3 +19,13 @@ var repnotify string MatchGuid;
 defaultproperties
 {
 }
+replication
+{
+	 if(bNetInitial)
+		ReplicatedServerRegion;
+
+	 if(bNetDirty)
+		GameServerID, MatchGuid, 
+		ReplicatedGameMutatorIndex, ReplicatedGamePlaylist, 
+		Reservations, bGameStarted;
+}

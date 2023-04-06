@@ -38,3 +38,8 @@ defaultproperties
 {
 	bCanTargetBall=true
 }
+replication
+{
+	 if(bNetInitial)
+		RepOrigSpeed;
+}

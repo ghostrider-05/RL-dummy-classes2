@@ -32,3 +32,9 @@ defaultproperties
 {
 	CheckLastTouchRate=0.50
 }
+replication
+{
+	 if(bNetInitial)
+		AttachTime, BreakTime, 
+		bBroken, bHit;
+}

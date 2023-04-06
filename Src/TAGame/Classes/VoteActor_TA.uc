@@ -38,3 +38,8 @@ defaultproperties
 	bSkipActorPropertyReplication=true
 	bOnlyDirtyReplication=true
 }
+replication
+{
+	 if(bNetInitial)
+		ReplicatedVoters, bFinished;
+}

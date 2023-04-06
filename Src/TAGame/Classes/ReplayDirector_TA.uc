@@ -110,3 +110,14 @@ defaultproperties
 	NetUpdateFrequency=60.0
 	NetPriority=100.0
 }
+replication
+{
+	 if(bNetInitial)
+		SoccarGame;
+
+	 if(bNetDirty)
+		FocusBall, FocusCar, 
+		ForceCutToFocusActors, PreviousScores, 
+		ScoreData, ScoredGoal, 
+		bReplicatedSlomo;
+}

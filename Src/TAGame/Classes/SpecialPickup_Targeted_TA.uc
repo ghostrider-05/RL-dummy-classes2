@@ -18,3 +18,9 @@ var() float Range;
 var() float DirectionalTargetingAccuracy;
 var transient RBActor_TA ClientTarget;
 var repnotify transient RBActor_TA Targeted;
+
+replication
+{
+	 if(bNetInitial)
+		Targeted;
+}

@@ -93,3 +93,17 @@ defaultproperties
 	
 	CollisionComponent=CollisionCylinder
 }
+replication
+{
+	 if(bNetInitial)
+		ClubColors, ReplicatedCarMaxLinearSpeedScale, 
+		ReplicatedCarScale, TeamPaint;
+
+	 if(bNetDirty)
+		AddedBallForceMultiplier, AddedCarForceMultiplier, 
+		AttachedPickup, ReplicatedDemolish, 
+		ReplicatedDemolishGoalExplosion, RumblePickups;
+
+	 if(bNetInitial/**Empty key for position: 20.*/)
+		bOverrideBoostOn, bOverrideHandbrakeOn;
+}

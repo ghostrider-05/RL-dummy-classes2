@@ -71,3 +71,9 @@ defaultproperties
 	
 	CollisionComponent=DefaultMesh
 }
+replication
+{
+	 if(bNetInitial)
+		AppliedDamage, DamageIndex, 
+		LastTeamTouch;
+}

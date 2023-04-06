@@ -15,3 +15,8 @@ defaultproperties
 	
 	Components(0)=GroupComponent_ORS'Default__Team_Soccar_TA.DefaultRegistryGroup'
 }
+replication
+{
+	 if(bNetInitial)
+		GameScore;
+}

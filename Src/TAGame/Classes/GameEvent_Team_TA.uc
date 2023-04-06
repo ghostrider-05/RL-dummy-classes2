@@ -34,3 +34,11 @@ defaultproperties
 	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Team_TA.DefaultPauseInstance'
 	Components(0)=GroupComponent_ORS'Default__GameEvent_Team_TA.DefaultRegistryGroup'
 }
+replication
+{
+	 if(bNetInitial)
+		MaxTeamSize;
+
+	 if(bNetDirty)
+		bDisableMutingOtherTeam, bForfeit;
+}

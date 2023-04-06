@@ -46,3 +46,10 @@ defaultproperties
 	bAlwaysRelevant=true
 	bOnlyDirtyReplication=true
 }
+replication
+{
+	 if(bNetInitial)
+		GameEvent, ModifiedNoise, 
+		ReplicatedCountDownNumber, ReplicatedOneShotSound, 
+		ReplicatedRoundCountDownNumber;
+}

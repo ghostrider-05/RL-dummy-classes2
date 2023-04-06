@@ -179,3 +179,16 @@ defaultproperties
 	
 	CollisionComponent=DefaultMesh
 }
+replication
+{
+	 if(bNetInitial)
+		BallHitSpinScale, GameEvent, 
+		MagnusCoefficient, ReplicatedAddedCarBounceScale, 
+		ReplicatedBallGravityScale, ReplicatedBallMaxLinearSpeedScale, 
+		ReplicatedBallMesh, ReplicatedBallScale, 
+		ReplicatedPhysMatOverride, ReplicatedWorldBounceScale;
+
+	 if(bNetDirty)
+		HitTeamNum, ReplicatedExplosionData, 
+		ReplicatedExplosionDataExtended, bEndOfGameHidden;
+}

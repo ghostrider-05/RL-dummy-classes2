@@ -41,3 +41,8 @@ defaultproperties
 	CooldownSeconds=10
 	bTickIsDisabled=false
 }
+replication
+{
+	 if(bNetInitial)
+		CooldownSeconds;
+}

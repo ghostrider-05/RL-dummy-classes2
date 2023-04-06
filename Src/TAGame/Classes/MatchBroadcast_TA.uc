@@ -20,3 +20,8 @@ defaultproperties
 	bAlwaysRelevant=true
 	bOnlyDirtyReplication=true
 }
+replication
+{
+	 if(bNetInitial)
+		GameEvent;
+}

@@ -18,3 +18,8 @@ defaultproperties
 	ImpulseScale=1.0
 	FXEvent=FXActorEvent_X'FXActorEvents.DoubleJump'
 }
+replication
+{
+	 if(bNetInitial)
+		DoubleJumpImpulse;
+}

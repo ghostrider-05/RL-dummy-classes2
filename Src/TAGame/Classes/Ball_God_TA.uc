@@ -79,3 +79,8 @@ defaultproperties
 	
 	CollisionComponent=DefaultMesh
 }
+replication
+{
+	 if(bNetInitial)
+		TargetSpeed;
+}

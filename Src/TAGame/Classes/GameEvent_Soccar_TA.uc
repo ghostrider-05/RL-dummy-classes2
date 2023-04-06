@@ -162,3 +162,24 @@ defaultproperties
 	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Soccar_TA.DefaultPauseInstance'
 	Components(0)=GroupComponent_ORS'Default__GameEvent_Soccar_TA.DefaultRegistryGroup'
 }
+replication
+{
+	 if(bNetInitial)
+		MaxScore, SeriesLength, 
+		bClubMatch, bUnlimitedTime;
+
+	 if(bNetDirty)
+		GameTime, GameWinner, 
+		MVP, MatchWinner, 
+		ReplayDirector, ReplicatedScoredOnTeam, 
+		ReplicatedStatEvent, RoundNum, 
+		SecondsRemaining, SubRulesArchetype, 
+		TieBreakDecision, WaitTimeRemaining, 
+		bAllowHonorDuels, bBallHasBeenHit, 
+		bCanDropOnlineRewards, bMatchEnded, 
+		bNoContest, bOverTime, 
+		bShowIntroScene;
+
+	 if(bNetInitial/**Empty key for position: 20.*/)
+		ReplicatedServerPerformanceState;
+}

@@ -20,3 +20,8 @@ defaultproperties
 	CollisionType=COLLIDE_CustomDefault
 	bAlwaysRelevant=true
 }
+replication
+{
+	 if(bNetInitial)
+		PRI, PlayerID;
+}

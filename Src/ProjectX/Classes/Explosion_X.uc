@@ -19,3 +19,8 @@ defaultproperties
 	CollisionType=COLLIDE_CustomDefault
 	LifeSpan=5.0
 }
+replication
+{
+	 if(bNetInitial)
+		FXActorArchetype;
+}

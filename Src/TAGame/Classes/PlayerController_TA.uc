@@ -134,3 +134,8 @@ defaultproperties
 	Components(0)=GroupComponent_ORS'Default__PlayerController_TA.DefaultRegistryGroup'
 	CollisionComponent=none
 }
+replication
+{
+	 if(bNetInitial)
+		InputBuffer;
+}

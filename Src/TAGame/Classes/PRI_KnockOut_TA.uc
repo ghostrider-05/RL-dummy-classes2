@@ -31,3 +31,14 @@ defaultproperties
 	
 	Components(0)=GroupComponent_ORS'Default__PRI_KnockOut_TA.DefaultRegistryGroup'
 }
+replication
+{
+	 if(bNetInitial)
+		bIsActiveMVP, bIsEliminated;
+
+	 if(bNetDirty)
+		Blocks, DamageCaused, 
+		EliminationOrder, Grabs, 
+		Hits, KnockoutDeaths, 
+		Knockouts, MatchPlacement;
+}

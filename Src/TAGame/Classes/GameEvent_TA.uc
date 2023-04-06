@@ -136,3 +136,21 @@ defaultproperties
 	bAlwaysRelevant=true
 	NetPriority=10.0
 }
+replication
+{
+	 if(bNetInitial)
+		MatchSettings;
+
+	 if(bNetInitial/**Empty key for position: 27.*/)
+		ActivatorCar, BotSkill, 
+		MatchTypeClass, bIsBotMatch;
+
+	 if(bNetInitial && Role==ROLE_Authority)
+		GameOwner, ReplicatedGameStateTimeRemaining, 
+		ReplicatedRoundCountDownNumber, ReplicatedStateName, 
+		bAllowReadyUp, bCanVoteToForfeit, 
+		bHasLeaveMatchPenalty;
+
+	 if(bNetInitial/**Empty key for position: 47.*/)
+		ReplicatedStateIndex;
+}

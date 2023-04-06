@@ -34,3 +34,8 @@ defaultproperties
 {
 	BufferSizeLowWatermark=-1
 }
+replication
+{
+	 if(bNetInitial)
+		ReplicatedInputBufferSize;
+}
