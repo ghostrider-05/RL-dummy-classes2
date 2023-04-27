@@ -23,6 +23,7 @@ var databinding bool bNoEpicAccountIdFound;
 var databinding bool bNameSanitized;
 var databinding bool bCanShowAvatar;
 var bool bAvatarPermissionDownloaded;
+var databinding bool bHidden;
 var databinding int GroupId;
 var databinding Qword LastActive;
 var databinding string PlayerNote;

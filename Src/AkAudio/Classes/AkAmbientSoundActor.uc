@@ -15,7 +15,7 @@ defaultproperties
 	end object
 	// Reference: AkPlaySoundComponent'Default__AkAmbientSoundActor.DefaultPlaySoundComponent'
 	PlaySoundComponent=DefaultPlaySoundComponent
-	Components(0)=none
+	Components(0)=None
 	
 	Components(1)=DefaultPlaySoundComponent
 }

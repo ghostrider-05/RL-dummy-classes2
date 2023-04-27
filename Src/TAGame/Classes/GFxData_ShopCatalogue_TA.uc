@@ -32,6 +32,7 @@ var ShopsConfig_TA ShopsConfig;
 
 defaultproperties
 {
+	/**CacheDuration=60.0*/
 	LastCacheTime=-1.0
 	TableName=ShopCatalogue
 }

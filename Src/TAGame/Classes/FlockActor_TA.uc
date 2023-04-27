@@ -25,7 +25,7 @@ struct native FlockAgent
 		Position=(X=0.0,Y=0.0,Z=0.0)
 		Velocity=(X=0.0,Y=0.0,Z=0.0)
 		NormalizedSplineOffset=(X=0.0,Y=0.0,Z=0.0)
-		CurrentSplineActor=none
+		CurrentSplineActor=None
 	}
 };
 
@@ -51,7 +51,7 @@ var Vector AverageAgentPosition;
 defaultproperties
 {
 	begin object name=FlockInstancedMeshComp class=InstancedStaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		bCastDynamicShadow=false
 		bAcceptsDynamicDominantLightShadows=false
 		AbsoluteTranslation=true
@@ -61,7 +61,7 @@ defaultproperties
 	UpdateFlockMovement=true
 	MinAgentScale=1.0
 	MaxAgentScale=1.0
-	Components(0)=none
+	Components(0)=None
 	
 	Components(1)=FlockInstancedMeshComp
 	bNoDelete=true

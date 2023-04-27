@@ -8,5 +8,5 @@ class GFxData_ItemDropGroup_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=ItemDropGroup
-	ProxyClass=class'ItemDropGroup_TA'
+	
 }

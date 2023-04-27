@@ -13,6 +13,7 @@ var bool bForceAllUsedMipsResident;
 var Texture2D Background;
 var native const transient Pointer RenderScene;
 var float CameraFOV;
+var int TeamID;
 
 defaultproperties
 {

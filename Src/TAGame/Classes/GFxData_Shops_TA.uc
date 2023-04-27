@@ -7,6 +7,7 @@ class GFxData_Shops_TA extends GFxDataSingleton_X
 	config(Game);
 
 var() ShopsManager_TA ShopManager;
+var() OnlineImageDownloaderWeb ImageDownloader;
 var transient ShopsConfig_TA Config;
 var transient array<GFxData_ShopCatalogue_TA> Shops;
 var databinding int DebugShopID;
@@ -23,6 +24,7 @@ var transient ShopCatalogueCacheSave_TA CatalogueCache;
 defaultproperties
 {
 	DebugShopID=-1
+	/**CacheDuration=1800.0*/
 	LastCacheTime=-1.0
 	
 	ShopTabs=DefaultShopTabs

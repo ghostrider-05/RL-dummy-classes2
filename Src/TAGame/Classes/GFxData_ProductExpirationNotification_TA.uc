@@ -8,5 +8,5 @@ class GFxData_ProductExpirationNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=ProductExpirationNotification
-	ProxyClass=class'ProductExpirationNotification_TA'
+	
 }

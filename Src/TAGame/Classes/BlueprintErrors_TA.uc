@@ -10,7 +10,7 @@ var const ErrorType BlueprintPriceMismatch;
 
 defaultproperties
 {
-	BlueprintNotEnoughCurrency=ErrorType'Default__BlueprintErrors_TA.BlueprintNotEnoughCurrency'
-	BlueprintPriceMismatch=ErrorType'Default__BlueprintErrors_TA.BlueprintPriceMismatch'
+	
+	
 	LocalizationPackage="TAErrors"
 }

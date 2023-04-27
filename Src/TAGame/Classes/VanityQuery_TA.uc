@@ -16,7 +16,7 @@ struct native VanityQueryRequest
 
 	structdefaultproperties
 	{
-		Shell=none
+		Shell=None
 		VanityType=VT_None
 		PlayerIds.Empty
 		
@@ -47,8 +47,8 @@ var transient array<VanityQueryRequest> QueuedRequests;
 defaultproperties
 {
 	MaxNumberQueriesAllowed=10
-	ActiveQueries(0)=(PlayerIds=none,VanityType=VT_None,bForced=false)
-	ActiveQueries(1)=(PlayerIds=none,VanityType=VT_Banner,bForced=false)
-	ActiveQueries(2)=(PlayerIds=none,VanityType=VT_Avatar,bForced=false)
-	ActiveQueries(3)=(PlayerIds=none,VanityType=VT_AvatarBorder,bForced=false)
+	/**ActiveQueries(0)=(PlayerIds=None,VanityType=VT_None,bForced=false)
+	ActiveQueries(1)=(PlayerIds=None,VanityType=VT_Banner,bForced=false)
+	ActiveQueries(2)=(PlayerIds=None,VanityType=VT_Avatar,bForced=false)
+	ActiveQueries(3)=(PlayerIds=None,VanityType=VT_AvatarBorder,bForced=false)*/
 }

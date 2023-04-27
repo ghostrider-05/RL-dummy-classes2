@@ -26,31 +26,20 @@ defaultproperties
 	BallResetTime=-1.0
 	
 	StaticMesh=DefaultMesh
-	BallCamTarget=BallCamTarget_TA'Default__Ball_GameEditor_TA.DefaultBallCamTarget'
-	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_GameEditor_TA.DefaultPTDComponent'
-	Replay=ReplayComponent_TA'Default__Ball_GameEditor_TA.ReplayComponent0'
+	
+	
+	
 	
 	begin object name=CollisionCylinder
 		CollisionHeight=50.0
 		CollisionRadius=50.0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		BlockActors=true
 		BlockZeroExtent=true
 	end object
 	// Reference: CylinderComponent'Default__Ball_GameEditor_TA.CollisionCylinder'
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
 	
-	Components(1)=CollisionCylinder
-	Components(2)=none
-	Components(3)=GroupComponent_ORS'Default__Ball_GameEditor_TA.DefaultRegistryGroup'
-	Components(4)=ReplayComponent_TA'Default__Ball_GameEditor_TA.ReplayComponent0'
-	begin object name=DefaultMesh
-		ReplacementPrimitive=none
-	end object
-	// Reference: StaticMeshComponent'Default__Ball_GameEditor_TA.DefaultMesh'
-	Components(5)=DefaultMesh
-	Components(6)=PitchTekDrawingComponent_TA'Default__Ball_GameEditor_TA.DefaultPTDComponent'
 	bCollideWorld=false
 	
 	CollisionComponent=DefaultMesh

@@ -18,9 +18,9 @@ struct native GFxMapData
 	{
 		Name=None
 		FriendlyName=""
-		Thumbnail=none
-		LargeImage=none
-		Data=none
+		Thumbnail=None
+		LargeImage=None
+		Data=None
 		GameMode=0
 	}
 };
@@ -35,8 +35,8 @@ var const name RandomStandardMapName;
 
 defaultproperties
 {
-	RandomMapData=(Name=None,FriendlyName="",Thumbnail=Texture2D'MapList.MapThumb_Random',LargeImage=Texture2D'MapList.MapImage_Random',Data=none,GameMode=0)
-	RandomStandardMapData=(Name=None,FriendlyName="",Thumbnail=Texture2D'MapList.MapThumb_Random',LargeImage=Texture2D'MapList.MapImage_Random',Data=none,GameMode=0)
+	RandomMapData=(Name=None,FriendlyName="",Thumbnail=,LargeImage=,Data=None,GameMode=0)
+	RandomStandardMapData=(Name=None,FriendlyName="",Thumbnail=,LargeImage=,Data=None,GameMode=0)
 	RandomMapName=Random
 	RandomStandardMapName=RandomStandard
 	TableName=Maps

@@ -6,13 +6,13 @@
 class ShopTabsConfig_TA extends OnlineConfig_X;
 
 var() array<string> EsportsShopValidRegions;
-var() string ShopType_Bundle;
-var() string ShopType_Featured;
-var() string ShopType_Tournament;
-var() string ShopType_EsportsTeam;
+var string ShopType_Esports;
+var string ShopType_EsportsTeam;
+var string ShopType_MTX;
 var() bool bDisableItemsInCatalogCheck;
 var() bool bDebugShowIds;
 var() bool bDebugVerboseDebugging;
+var() array<string> DisabledTypes;
 var IEpochNow Time;
 
 defaultproperties
@@ -23,9 +23,9 @@ defaultproperties
 	EsportsShopValidRegions(3)="SAM"
 	EsportsShopValidRegions(4)="APAC"
 	EsportsShopValidRegions(5)="MENA"
-	ShopType_Bundle="Bundle"
-	ShopType_Featured="Featured"
-	ShopType_Tournament="Tournament"
+	ShopType_Esports="Esports"
 	ShopType_EsportsTeam="EsportsTeam"
+	ShopType_MTX="MTX"
 	bDisableItemsInCatalogCheck=true
+	DisabledTypes(0)="Tournament"
 }

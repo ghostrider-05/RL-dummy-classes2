@@ -8,6 +8,6 @@ class ProductStat_BicycleGoals_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Bicycle Goals"
-	Description="When equipped, this item keeps track of how many bicycle goals you score."
+	/**Label="Bicycle Goals"*/
+	/**Description="When equipped, this item keeps track of how many bicycle goals you score."*/
 }

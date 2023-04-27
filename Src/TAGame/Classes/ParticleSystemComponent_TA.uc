@@ -14,5 +14,5 @@ defaultproperties
 {
 	PreviewFakeVelocity=(X=-1000.0,Y=0.0,Z=0.0)
 	PodiumFakeVelocity=(X=-450.0,Y=0.0,Z=0.0)
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 }

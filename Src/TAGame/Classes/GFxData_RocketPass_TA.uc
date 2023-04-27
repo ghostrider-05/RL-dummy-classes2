@@ -59,8 +59,9 @@ var transient RocketPassConfig_TA RocketPassConfig;
 
 defaultproperties
 {
+	/**RegionRestrictedPurchaseTiers="Sorry, your country’s regulations prevent Rocket Pass tier purchasing."*/
 	MainMenuName=RootMenuMovie
 	RocketPassMenuName=RocketPassMenuMovie
 	TableName=RocketPass
-	ProxyClass=class'RocketPass_TA'
+	
 }

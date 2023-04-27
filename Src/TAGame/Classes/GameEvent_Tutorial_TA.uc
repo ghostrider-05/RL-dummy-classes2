@@ -27,7 +27,7 @@ struct CarSpawnData
 
 	structdefaultproperties
 	{
-		Controller=none
+		Controller=None
 		Location=(X=0.0,Y=0.0,Z=0.0)
 		Rotation=(Pitch=0,Yaw=0,Roll=0)
 	}
@@ -148,23 +148,23 @@ defaultproperties
 {
 	TotalFieldExtent=(X=5120.0,Y=4065.0,Z=750.0)
 	bShowBoostMeter=true
-	DifficultyList[0]=(FieldSetupList=none,TotalGameEventRounds=0,TotalGameEventRoundsToWin=0,ResetCheckTime=-1.0,ResetCheckTimeAfterBallTouch=-1.0,MinBallVelocityForDestroy=100.0,BallStartTime=1.0)
-	DifficultyList[1]=(FieldSetupList=none,TotalGameEventRounds=0,TotalGameEventRoundsToWin=0,ResetCheckTime=-1.0,ResetCheckTimeAfterBallTouch=-1.0,MinBallVelocityForDestroy=100.0,BallStartTime=1.0)
-	DifficultyList[2]=(FieldSetupList=none,TotalGameEventRounds=0,TotalGameEventRoundsToWin=0,ResetCheckTime=-1.0,ResetCheckTimeAfterBallTouch=-1.0,MinBallVelocityForDestroy=100.0,BallStartTime=1.0)
+	DifficultyList[0]=(FieldSetupList=None,TotalGameEventRounds=0,TotalGameEventRoundsToWin=0,ResetCheckTime=-1.0,ResetCheckTimeAfterBallTouch=-1.0,MinBallVelocityForDestroy=100.0,BallStartTime=1.0)
+	DifficultyList[1]=(FieldSetupList=None,TotalGameEventRounds=0,TotalGameEventRoundsToWin=0,ResetCheckTime=-1.0,ResetCheckTimeAfterBallTouch=-1.0,MinBallVelocityForDestroy=100.0,BallStartTime=1.0)
+	DifficultyList[2]=(FieldSetupList=None,TotalGameEventRounds=0,TotalGameEventRoundsToWin=0,ResetCheckTime=-1.0,ResetCheckTimeAfterBallTouch=-1.0,MinBallVelocityForDestroy=100.0,BallStartTime=1.0)
 	BallSpawnInfo=(ExtentLoc=(X=0.0,Y=0.0,Z=0.0),Extent=(X=0.0,Y=0.0,Z=0.0),Speed=0.0,Rotation=(Pitch=0,Yaw=0,Roll=0),RotationType=Rot_Auto,MaxFieldExtentScale=(X=0.840,Y=0.840,Z=0.870),bSpawnCannon=true,bDrawDebug=false)
 	BallHasBeenHitStartDelay=0.0
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_TA.DefaultInactiveFpsRecorder'
+	
+	
 	bAlwaysAutoSelectTeam=true
 	
-	MatchTypeClass=class'MatchType_Tutorial_TA'
+	
 	bMultiplayer=false
 	bAwardAchievements=false
-	GameFullMessage=Message_TA'Default__GameEvent_Tutorial_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Tutorial_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Tutorial_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Tutorial_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Tutorial_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Tutorial_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Tutorial_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }

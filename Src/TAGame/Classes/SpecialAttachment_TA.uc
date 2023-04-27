@@ -25,18 +25,18 @@ defaultproperties
 	Replay=ReplayComponent_TA'Default__SpecialAttachment_TA.ReplayComponent0'
 	
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__SpecialAttachment_TA.CollisionCylinder'
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
+	Components(0)=None
 	
 	Components(1)=CollisionCylinder
-	Components(2)=none
+	Components(2)=None
 	Components(3)=GroupComponent_ORS'Default__SpecialAttachment_TA.DefaultRegistryGroup'
 	Components(4)=ReplayComponent_TA'Default__SpecialAttachment_TA.ReplayComponent0'
 	begin object name=DefaultMesh class=StaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		RBChannel=RBCC_Vehicle
 		BlockRigidBody=true
 		bNotifyRigidBodyCollision=true

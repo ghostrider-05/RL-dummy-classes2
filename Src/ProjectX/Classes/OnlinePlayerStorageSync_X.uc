@@ -13,7 +13,7 @@ struct OnlinePlayerStorageSyncRequest
 
 	structdefaultproperties
 	{
-		DataObj=none
+		DataObj=None
 		ClientTick=0
 		Encoding=OPSE_UObject
 	}
@@ -30,8 +30,8 @@ struct OnlinePlayerStorageSyncResult
 
 	structdefaultproperties
 	{
-		DataClass=none
-		RemoteData=none
+		DataClass=None
+		RemoteData=None
 		ServerTick=0
 		Checksum=0
 		bChecksumMatch=false

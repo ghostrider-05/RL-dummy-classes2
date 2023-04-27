@@ -16,5 +16,5 @@ var ProductAsset_Attachment_TA HatAsset;
 defaultproperties
 {
 	bLocalPlayer=true
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 }

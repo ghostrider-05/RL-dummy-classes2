@@ -134,8 +134,8 @@ defaultproperties
 	TeamArchetypes(1)=Team_Soccar_TA'Archetypes.Teams.Team1'
 	GameModeListPath="Archetypes.GameInfo.GameModes"
 	GameModeList=GameModeList_TA'Archetypes.GameInfo.GameModes'
-	DefaultLoadouts[0]=(TeamPaint=(TeamFinishID=270,CustomFinishID=270,Team=0,TeamColorID=35,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
-	DefaultLoadouts[1]=(TeamPaint=(TeamFinishID=270,CustomFinishID=270,Team=1,TeamColorID=33,CustomColorID=0,bSet=false),Title=XP,TeamIndex=1,OnlineProducts=none,Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
+	DefaultLoadouts[0]=(TeamPaint=(TeamFinishID=270,CustomFinishID=270,Team=0,TeamColorID=35,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
+	DefaultLoadouts[1]=(TeamPaint=(TeamFinishID=270,CustomFinishID=270,Team=1,TeamColorID=33,CustomColorID=0,bSet=false),Title=XP,TeamIndex=1,OnlineProducts=None,Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
 	DefaultClientLoadout=(Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
 	CustomColorSet=CarColorSet_TA'CarColors.Accent'
 	ClubColorSet=CarColorSet_TA'CarColors.Clubs'

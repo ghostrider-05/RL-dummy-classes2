@@ -16,7 +16,7 @@ struct native PickupData
 
 	structdefaultproperties
 	{
-		Instigator=none
+		Instigator=None
 		bPickedUp=false
 	}
 };
@@ -28,7 +28,7 @@ struct native PickupData2
 
 	structdefaultproperties
 	{
-		Instigator=none
+		Instigator=None
 		PickedUp=0
 	}
 };
@@ -53,7 +53,7 @@ defaultproperties
 	begin object name=DefaultCollisionCylinder class=CylinderComponent
 		CollisionHeight=100.0
 		CollisionRadius=100.0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		CollideActors=true
 	end object
 	// Reference: CylinderComponent'Default__VehiclePickup_TA.DefaultCollisionCylinder'

@@ -8,6 +8,6 @@ class ProductStat_Demolishes_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Demolishes"
-	Description="When equipped, this item keeps track of how many demolishes you get."
+	/**Label="Demolishes"*/
+	/**Description="When equipped, this item keeps track of how many demolishes you get."*/
 }

@@ -10,5 +10,5 @@ var ESportConfig_TA ESportEvents;
 defaultproperties
 {
 	TableName=ESportEvents
-	ProxyClass=class'ESportConfig_TA'
+	
 }

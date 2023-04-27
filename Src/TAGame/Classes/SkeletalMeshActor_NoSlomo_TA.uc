@@ -17,7 +17,7 @@ defaultproperties
 	begin object name=SkeletalMeshComponent1 class=SkeletalMeshComponent_NoSlomo_TA
 		Animations=AnimNodeSequence'Engine.Default__SkeletalMeshActor.AnimNodeSeq0'
 		bUpdateSkelWhenNotRendered=false
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActor_NoSlomo_TA.MyLightEnvironment'
 		RBChannel=RBCC_GameplayPhysics
 		CollideActors=true

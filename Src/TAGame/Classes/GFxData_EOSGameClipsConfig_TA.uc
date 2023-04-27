@@ -10,6 +10,6 @@ var EOSGameClipsConfig_TA GameClipsConfig;
 defaultproperties
 {
 	TableName=EOSGameClipsConfig
-	ProxyClass=class'EOSGameClipsConfig_TA'
+	
 	bLevelTransitionPersistent=true
 }

@@ -20,16 +20,16 @@ var() CrowdExcitementSounds TenseClear;
 
 defaultproperties
 {
-	GoalScored=(Name=GoalScored,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	ShotAttempt=(Name=ShotAttempt,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	OpenGoal=(Name=OpenGoal,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	Save=(Name=Save,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	Aerial=(Name=Aerial,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	LongTimeNearGoal=(Name=LongTimeNearGoal,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	FastBreak=(Name=FastBreak,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	Hit0Second=(Name=Hit0Second,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	AnyDemolition=(Name=AnyDemolition,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	RelevantDemolition=(Name=RelevantDemolition,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	KickoffTouch=(Name=KickoffTouch,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	TenseClear=(Name=TenseClear,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
+	GoalScored=(Name=GoalScored,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	ShotAttempt=(Name=ShotAttempt,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	OpenGoal=(Name=OpenGoal,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	Save=(Name=Save,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	Aerial=(Name=Aerial,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	LongTimeNearGoal=(Name=LongTimeNearGoal,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	FastBreak=(Name=FastBreak,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	Hit0Second=(Name=Hit0Second,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	AnyDemolition=(Name=AnyDemolition,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	RelevantDemolition=(Name=RelevantDemolition,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	KickoffTouch=(Name=KickoffTouch,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	TenseClear=(Name=TenseClear,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
 }

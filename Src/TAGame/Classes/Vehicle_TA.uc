@@ -14,7 +14,7 @@ struct native CarInteractionData
 
 	structdefaultproperties
 	{
-		LastHitCar=none
+		LastHitCar=None
 		LastHitTime=0.0
 	}
 };
@@ -68,7 +68,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__Vehicle_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder

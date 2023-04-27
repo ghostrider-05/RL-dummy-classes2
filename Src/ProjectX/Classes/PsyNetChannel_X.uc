@@ -14,9 +14,9 @@ struct PendingChannelService
 
 	structdefaultproperties
 	{
-		Service=none
+		Service=None
 		MessageId=0
-		Task=none
+		Task=None
 		ReceiveTime=0.0
 	}
 };

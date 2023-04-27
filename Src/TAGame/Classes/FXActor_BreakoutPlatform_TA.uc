@@ -14,7 +14,7 @@ struct native PlatformParam
 	structdefaultproperties
 	{
 		ParamName=None
-		ValueOverTime=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		ValueOverTime=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
 	}
 };
 

@@ -16,7 +16,7 @@ struct PendingHit
 
 	structdefaultproperties
 	{
-		Attacker=none
+		Attacker=None
 		HitDirection=(X=0.0,Y=0.0,Z=0.0)
 		HitSpeed=0.0
 		bHeavyAttack=false
@@ -117,7 +117,7 @@ defaultproperties
 	CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_KnockOut_TA.CarTrajectoryComponent0'
 	NameplateComponentCar=NameplateComponentCar_TA'Default__Car_KnockOut_TA.NameplateComponentCar0'
 	begin object name=DefaultMesh
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CarMeshComponent_TA'Default__Car_KnockOut_TA.DefaultMesh'
 	CarMesh=DefaultMesh
@@ -130,7 +130,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__Car_KnockOut_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder

@@ -20,16 +20,16 @@ struct native CollisionEffectData
 
 	structdefaultproperties
 	{
-		PhysMat=none
-		PhysMatProp=none
-		ImpactEffects=(PhysicalMaterial=none,Particle=none)
+		PhysMat=None
+		PhysMatProp=None
+		ImpactEffects=(PhysicalMaterial=None,Particle=None)
 		HitLocation=(X=0.0,Y=0.0,Z=0.0)
 		HitNormal=(X=0.0,Y=0.0,Z=0.0)
 		Momentum=(X=0.0,Y=0.0,Z=0.0)
 		ImpactMomentum=0.0
 		SlideMomentum=0.0
 		PhysicsFrame=0
-		HitActor=none
+		HitActor=None
 	}
 };
 

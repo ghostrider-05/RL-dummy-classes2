@@ -11,5 +11,5 @@ defaultproperties
 	BlendTime=0.10
 	bRebuildChildren=false
 	bPlayActiveChild=true
-	Children(0)=(Name=Child1,Anim=none,Weight=1.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
+	Children(0)=(Name=Child1,Anim=None,Weight=1.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
 }

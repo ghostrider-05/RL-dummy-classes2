@@ -29,25 +29,25 @@ defaultproperties
 	LastCalculateTime=-1.0
 	
 	StaticMesh=DefaultMesh
-	BallCamTarget=none
+	BallCamTarget=None
 	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_Trajectory_TA.DefaultPTDComponent'
 	Replay=ReplayComponent_TA'Default__Ball_Trajectory_TA.ReplayComponent0'
 	
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		CollideActors=false
 		BlockNonZeroExtent=false
 	end object
 	// Reference: CylinderComponent'Default__Ball_Trajectory_TA.CollisionCylinder'
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
+	Components(0)=None
 	
 	Components(1)=CollisionCylinder
-	Components(2)=none
+	Components(2)=None
 	Components(3)=GroupComponent_ORS'Default__Ball_Trajectory_TA.DefaultRegistryGroup'
 	Components(4)=ReplayComponent_TA'Default__Ball_Trajectory_TA.ReplayComponent0'
 	begin object name=DefaultMesh
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		CollideActors=false
 		BlockActors=false
 		BlockZeroExtent=false

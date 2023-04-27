@@ -7,15 +7,13 @@ class SeqAct_GetWeatherEnabled_TA extends SequenceAction
 	forcescriptorder(true)
 	hidecategories(Object);
 
-var bool bEnabled;
-
 defaultproperties
 {
 	bCallHandler=false
 	bAutoActivateOutputLinks=false
-	OutputLinks(0)=(LinkDesc="Enabled",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-	OutputLinks(1)=(LinkDesc="Disabled",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-	VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Bool',LinkDesc="Enabled",LinkVar=None,PropertyName=bEnabled,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	OutputLinks(0)=(LinkDesc="Enabled",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
+	OutputLinks(1)=(LinkDesc="Disabled",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
+	VariableLinks.Empty
 	ObjName="Get Weather Enabled"
 	ObjCategory="TAGame"
 }

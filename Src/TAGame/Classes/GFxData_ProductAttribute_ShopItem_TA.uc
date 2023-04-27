@@ -10,6 +10,6 @@ var databinding Texture ItemLogo;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_ShopItem_TA'
+	
 	TableName=ProductAttribute_ShopItem
 }

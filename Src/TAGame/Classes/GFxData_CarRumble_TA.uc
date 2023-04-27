@@ -15,11 +15,11 @@ struct RumblePickupData
 
 	structdefaultproperties
 	{
-		ActiveIcon=none
-		InactiveIcon=none
+		ActiveIcon=None
+		InactiveIcon=None
 		PickupName=""
 		CooldownSeconds=0
-		Item=none
+		Item=None
 	}
 };
 

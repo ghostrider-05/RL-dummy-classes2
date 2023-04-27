@@ -18,4 +18,12 @@ var config string AccountSummaryURL;
 
 defaultproperties
 {
+	/**ProductionServerURL="https://api.epicgames.dev/epic/friends"*/
+	/**AddFriendURL="/v1/{AccountId}/friends/{FriendId}"*/
+	/**RemoveFriendURL="/v1/{AccountId}/friends/{FriendId}"*/
+	/**OutgoingFriendRequestsURL="/v1/{AccountId}/outgoing"*/
+	/**IncomingFriendRequestsURL="/v1/{AccountId}/incoming"*/
+	/**BlockPlayerURL="/v1/{AccountId}/blocklist/{UserId}"*/
+	/**BlockListURL="/v1/{AccountId}/blocklist"*/
+	/**AccountSummaryURL="/v1/{AccountId}"*/
 }

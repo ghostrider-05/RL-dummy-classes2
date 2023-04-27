@@ -10,6 +10,6 @@ var() float BlendTime;
 
 defaultproperties
 {
-	Children(0)=(Name=Idle,Anim=none,Weight=1.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
-	Children(1)=(Name=Boosting,Anim=none,Weight=0.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
+	Children(0)=(Name=Idle,Anim=None,Weight=1.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
+	Children(1)=(Name=Boosting,Anim=None,Weight=0.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
 }

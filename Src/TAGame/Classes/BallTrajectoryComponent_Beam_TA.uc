@@ -11,7 +11,7 @@ struct native TrajectoryFX
 
 	structdefaultproperties
 	{
-		Particle=none
+		Particle=None
 	}
 };
 

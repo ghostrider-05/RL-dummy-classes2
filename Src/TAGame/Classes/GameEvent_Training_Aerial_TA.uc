@@ -10,14 +10,14 @@ class GameEvent_Training_Aerial_TA extends GameEvent_Training_TA
 
 defaultproperties
 {
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Training_Aerial_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Training_Aerial_TA.DefaultInactiveFpsRecorder'
 	
-	GameFullMessage=Message_TA'Default__GameEvent_Training_Aerial_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Training_Aerial_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Training_Aerial_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Training_Aerial_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Training_Aerial_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Training_Aerial_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Training_Aerial_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

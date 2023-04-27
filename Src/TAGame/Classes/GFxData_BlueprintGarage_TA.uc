@@ -16,7 +16,7 @@ struct BlueprintPreviewProduct
 	{
 		BlueprintProductID=0
 		BlueprintHashID=(Id=0)
-		OnlineProduct=none
+		OnlineProduct=None
 		PossibleHashIDsForThisProduct.Empty
 	}
 };

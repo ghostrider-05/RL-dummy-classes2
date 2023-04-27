@@ -12,7 +12,7 @@ defaultproperties
 	BrushComponent=BrushComponent0
 	begin object name=BrushComponent0
 		bBlockComplexCollisionTrace=true
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		bAcceptsLights=false
 		CollideActors=false
 		BlockZeroExtent=true

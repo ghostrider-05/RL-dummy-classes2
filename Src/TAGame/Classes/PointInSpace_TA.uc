@@ -12,8 +12,8 @@ var() export editinline ArrowComponent Arrow;
 
 defaultproperties
 {
-	Components(0)=none
-	Components(1)=none
+	Components(0)=None
+	Components(1)=None
 	CollisionType=COLLIDE_CustomDefault
 	bStatic=true
 	bNoDelete=true

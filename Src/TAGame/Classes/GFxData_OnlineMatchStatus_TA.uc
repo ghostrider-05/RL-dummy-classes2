@@ -21,6 +21,7 @@ var const localized string PartyLeaderSearchingMessage;
 
 defaultproperties
 {
+	/**PartyLeaderSearchingMessage="Party leader is searching for a match."*/
 	TableName=OnlineMatchStatus
 	bLevelTransitionPersistent=true
 }

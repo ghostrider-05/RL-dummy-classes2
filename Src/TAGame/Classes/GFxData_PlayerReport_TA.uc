@@ -8,5 +8,5 @@ class GFxData_PlayerReport_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=PlayerReport
-	ProxyClass=class'PlayerReportConfig_TA'
+	
 }

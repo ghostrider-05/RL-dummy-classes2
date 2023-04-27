@@ -11,7 +11,7 @@ struct native TrajectorySplineFX
 
 	structdefaultproperties
 	{
-		Spline=none
+		Spline=None
 	}
 };
 

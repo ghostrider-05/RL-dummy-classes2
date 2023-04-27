@@ -16,7 +16,7 @@ struct native ProductReplacement
 	structdefaultproperties
 	{
 		Platforms.Empty
-		Replacement=none
+		Replacement=None
 	}
 };
 

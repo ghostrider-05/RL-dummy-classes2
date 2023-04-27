@@ -19,7 +19,7 @@ struct native LensFlareFloatParamCurve
 	{
 		MaterialParamName=None
 		MaterialParamIndex=0
-		ValueOverTime=(Distribution=none,Type=0,Op=0,LookupTableNumElements=0,LookupTableChunkSize=0,LookupTable=none,LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
+		ValueOverTime=(Distribution=None,Type=0,Op=0,LookupTableNumElements=0,LookupTableChunkSize=0,LookupTable=None,LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
 	}
 };
 
@@ -35,5 +35,5 @@ defaultproperties
 {
 	SourceColorParamName=SourceColor
 	SourceColorAlphaParamName=SourceColorAlpha
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 }

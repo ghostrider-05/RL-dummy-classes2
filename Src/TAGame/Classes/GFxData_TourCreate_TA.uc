@@ -24,7 +24,9 @@ var MapSet_TA DefaultMapSet;
 
 defaultproperties
 {
-	DefaultMapSet=MapSet_TA'MapList.Sets.Standard'
+	/**PrivateNoPassword="Private Tournaments require a password"*/
+	/**StartTimeTooSoon="Tournament must start at least {Minutes} minutes in the future"*/
+	
 	SettingsType=CustomMatchSettingsType_TourCreate
 	TableName=TournamentCreate
 }

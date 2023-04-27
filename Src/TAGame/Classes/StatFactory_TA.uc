@@ -31,10 +31,10 @@ struct BallInfo
 
 	structdefaultproperties
 	{
-		Ball=none
-		ShotGoal=none
-		RedZoneGoal=none
-		RedZonePRI=none
+		Ball=None
+		ShotGoal=None
+		RedZoneGoal=None
+		RedZonePRI=None
 		RedZoneHitID=0
 		GroundHitTime=0.0
 		JuggleTime=0.0
@@ -56,12 +56,12 @@ struct StatGroupCollection
 
 	structdefaultproperties
 	{
-		Wins=none
-		Losses=none
-		Goals=none
-		Saves=none
-		Shots=none
-		Assists=none
+		Wins=None
+		Losses=None
+		Goals=None
+		Saves=None
+		Shots=None
+		Assists=None
 	}
 };
 
@@ -113,49 +113,49 @@ struct StatEventCollection
 
 	structdefaultproperties
 	{
-		Win=none
-		Loss=none
-		TimePlayed=none
-		Shot=none
-		Assist=none
-		Center=none
-		Clear=none
-		PoolShot=none
-		Goal=none
-		AerialGoal=none
-		BicycleGoal=none
-		BulletGoal=none
-		BackwardsGoal=none
-		LongGoal=none
-		OvertimeGoal=none
-		TurtleGoal=none
-		AerialHit=none
-		BicycleHit=none
-		BulletHit=none
-		JuggleHit=none
-		FirstTouch=none
-		BallHit=none
-		Save=none
-		EpicSave=none
-		FreezeSave=none
-		HatTrick=none
-		Savior=none
-		Playmaker=none
-		MVP=none
-		FastestGoal=none
-		SlowestGoal=none
-		FurthestGoal=none
-		OwnGoal=none
-		MostBallTouches=none
-		FewestBallTouches=none
-		MostBoostPickups=none
-		FewestBoostPickups=none
-		BoostPickups=none
-		CarTouches=none
-		Demolition=none
-		Demolish=none
-		LowFive=none
-		HighFive=none
+		Win=None
+		Loss=None
+		TimePlayed=None
+		Shot=None
+		Assist=None
+		Center=None
+		Clear=None
+		PoolShot=None
+		Goal=None
+		AerialGoal=None
+		BicycleGoal=None
+		BulletGoal=None
+		BackwardsGoal=None
+		LongGoal=None
+		OvertimeGoal=None
+		TurtleGoal=None
+		AerialHit=None
+		BicycleHit=None
+		BulletHit=None
+		JuggleHit=None
+		FirstTouch=None
+		BallHit=None
+		Save=None
+		EpicSave=None
+		FreezeSave=None
+		HatTrick=None
+		Savior=None
+		Playmaker=None
+		MVP=None
+		FastestGoal=None
+		SlowestGoal=None
+		FurthestGoal=None
+		OwnGoal=None
+		MostBallTouches=None
+		FewestBallTouches=None
+		MostBoostPickups=None
+		FewestBoostPickups=None
+		BoostPickups=None
+		CarTouches=None
+		Demolition=None
+		Demolish=None
+		LowFive=None
+		HighFive=None
 	}
 };
 

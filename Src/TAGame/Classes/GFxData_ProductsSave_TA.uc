@@ -8,5 +8,5 @@ class GFxData_ProductsSave_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=ProductsSave
-	ProxyClass=class'ProductsSave_TA'
+	
 }

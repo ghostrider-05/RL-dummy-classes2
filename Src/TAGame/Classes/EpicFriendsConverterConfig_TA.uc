@@ -5,13 +5,11 @@
 *******************************************************************************/
 class EpicFriendsConverterConfig_TA extends OnlineConfig_X;
 
-var() float DaysBetweenPrompts;
 var() float SecondsBetweenInvites;
 var() int MaxNumberOfAttemptsPerUser;
 
 defaultproperties
 {
-	DaysBetweenPrompts=14.0
 	SecondsBetweenInvites=4.0
 	MaxNumberOfAttemptsPerUser=3
 }

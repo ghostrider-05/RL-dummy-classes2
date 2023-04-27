@@ -26,5 +26,5 @@ defaultproperties
 	DeprecatedPermanentFeatures(14)=FreePlayMapSelection
 	DeprecatedPermanentFeatures(15)=MusicStingers
 	TableName=Features
-	ProxyClass=Class'Core.FeatureSystem'
+	
 }

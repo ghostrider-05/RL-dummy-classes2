@@ -38,8 +38,8 @@ struct native BoostMeshOverride
 
 	structdefaultproperties
 	{
-		Mesh=none
-		CarType=none
+		Mesh=None
+		CarType=None
 		CarTypePath=""
 	}
 };
@@ -59,13 +59,13 @@ struct native AnimatedMaterialMesh
 	structdefaultproperties
 	{
 		MeshAttachmentName=None
-		Material=none
+		Material=None
 		MaterialIndex=0
 		MeshOverrides.Empty
 		FloatParams.Empty
 		VectorParams.Empty
 		ColorParams.Empty
-		Mesh=none
+		Mesh=None
 		ElapsedTime=0.0
 	}
 };

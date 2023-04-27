@@ -9,6 +9,6 @@ class WheelStaticMeshMAT_TA extends StaticMeshComponent
 
 defaultproperties
 {
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	LightingChannels=(BSP=true,Static=true,Dynamic=true)
 }

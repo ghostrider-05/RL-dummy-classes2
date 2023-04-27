@@ -14,8 +14,8 @@ struct native DirtyObject
 
 	structdefaultproperties
 	{
-		Object=none
-		Property=none
+		Object=None
+		Property=None
 		Index=0
 	}
 };

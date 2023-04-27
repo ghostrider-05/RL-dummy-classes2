@@ -1,0 +1,14 @@
+name: main
+on: [workflow_dispatch]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+    steps:
+      - name: Annotate
+        uses: yuzutech/annotations-action@v0.4.0
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          title: 'annotate'
+          input: './ci/annotations.json'

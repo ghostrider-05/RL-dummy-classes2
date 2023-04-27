@@ -8,5 +8,5 @@ class GFxData_ChallengeCompleteNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=ChallengeCompleteNotifications
-	ProxyClass=class'ChallengeCompleteNotification_TA'
+	
 }

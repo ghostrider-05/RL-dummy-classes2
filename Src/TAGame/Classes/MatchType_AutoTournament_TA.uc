@@ -10,7 +10,7 @@ var() AutoTourConfig_TA AutoTourConfig;
 defaultproperties
 {
 	PlaylistName=AutoTournament
-	Components(0)=
+	
 	WaitForPlayersTime=30
 	LobbyTime=150.0
 	LobbyIntroTime=7.0

@@ -11,5 +11,5 @@ var databinding Texture PlayerAvatar;
 defaultproperties
 {
 	TableName=PersonaInfo
-	ProxyClass=class'Persona_TA'
+	
 }

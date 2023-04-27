@@ -8,5 +8,5 @@ class GFxData_Notification_AntiAddiction_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=AntiAddictionNotification
-	ProxyClass=class'Notification_AntiAddiction_TA'
+	
 }

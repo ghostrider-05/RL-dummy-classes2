@@ -20,6 +20,7 @@ enum EDropGroupDisplayOrder
 var databinding array<Currency> Currency;
 var databinding array<ProductDrop> Products;
 var databinding int XP;
+var databinding string Message;
 var const class GFxDataClass;
 var EDropGroupDisplayOrder DisplayOrder;
 

@@ -15,7 +15,7 @@ struct native ProductReplacement2
 	structdefaultproperties
 	{
 		Platforms.Empty
-		Replacement=none
+		Replacement=None
 	}
 };
 
@@ -43,5 +43,5 @@ var() int SortPriority;
 defaultproperties
 {
 	UnlockMethod=UnlockMethod_Online
-	ProductIP(0)=206
+	ProductIP(0)=149
 }

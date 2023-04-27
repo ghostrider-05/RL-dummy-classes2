@@ -48,5 +48,5 @@ defaultproperties
 	Slomo=1.0
 	PendingSkipToFrame=-1
 	TableName=ReplayViewer
-	ProxyClass=class'Replay_Soccar_TA'
+	
 }

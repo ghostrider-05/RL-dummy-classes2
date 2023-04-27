@@ -11,6 +11,6 @@ var databinding bool bGiftbox;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Container_TA'
+	
 	TableName=ProductAttribute_Container
 }

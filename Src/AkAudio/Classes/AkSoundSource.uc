@@ -30,7 +30,7 @@ struct native ActiveSound
 
 	structdefaultproperties
 	{
-		Sound=none
+		Sound=None
 		PlayId=0
 		StopId=0
 	}

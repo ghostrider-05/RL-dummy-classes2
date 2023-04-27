@@ -26,16 +26,16 @@ var transient string TeamOverrides[2];
 defaultproperties
 {
 	Match=(Week=0,Team0=-1,Team1=-1,Score0=0,Score1=0,Winner=-1,bBye=false)
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Season_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Season_TA.DefaultInactiveFpsRecorder'
+	
+	
 	bAlwaysAutoSelectTeam=true
 	
 	bFillWithAI=true
-	GameFullMessage=Message_TA'Default__GameEvent_Season_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Season_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Season_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Season_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Season_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Season_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Season_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }

@@ -11,11 +11,11 @@ class GameEvent_PostGameLobby_TA extends GameEvent_Lobby_TA
 defaultproperties
 {
 	
-	GameFullMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_PostGameLobby_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_PostGameLobby_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_PostGameLobby_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }

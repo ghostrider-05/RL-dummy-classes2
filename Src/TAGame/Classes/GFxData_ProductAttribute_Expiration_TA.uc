@@ -9,6 +9,6 @@ var databinding Qword ExpirationTime;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Expiration_TA'
+	
 	TableName=ProductAttribute_Expiration
 }

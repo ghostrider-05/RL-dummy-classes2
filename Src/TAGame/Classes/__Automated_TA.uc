@@ -16,6 +16,7 @@ enum ESpecialEventState {
 	ESpecialEventState_MAX,
 };
 
+struct AdInfo {};
 struct AIProxyData {};
 struct AngleSelectData {};
 struct ControllerLayoutStack {};
@@ -186,6 +187,7 @@ struct PsyNetService_ClubsOwnerChanged_TA {};
 struct PsyNetService_ClubsUpdate_TA {};
 struct PsyNetService_CreateExternalMatch_X {};
 struct PsyNetService_CreateTournament_X {};
+struct PsyNetService_CrewUnknownStatus_TA {};
 struct PsyNetService_CurrencyAdded_TA {};
 struct PsyNetService_FaceItMatchCancelled_TA {};
 struct PsyNetService_FaceItMatchComplete_TA {};

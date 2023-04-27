@@ -23,7 +23,7 @@ defaultproperties
 	
 	BrushComponent=BrushComponent0
 	begin object name=BrushComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		bAcceptsLights=false
 		CollideActors=false
 		BlockNonZeroExtent=false

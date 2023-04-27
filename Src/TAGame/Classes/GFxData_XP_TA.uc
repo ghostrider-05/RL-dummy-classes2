@@ -8,5 +8,5 @@ class GFxData_XP_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=XP
-	ProxyClass=class'ClientXPSave_TA'
+	
 }

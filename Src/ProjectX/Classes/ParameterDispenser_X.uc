@@ -63,7 +63,7 @@ struct native ActorParamPair
 	structdefaultproperties
 	{
 		Key=None
-		Value=none
+		Value=None
 	}
 };
 

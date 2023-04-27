@@ -5,5 +5,29 @@
 *******************************************************************************/
 class PlatformMetrics_TA extends MetricsGroup_X;
 
-var transient bool bDroveWithGP;
-var transient bool bDroveWithKBM;
+struct PlatformMetricData
+{
+	var Qword Marker;
+	var int Type;
+
+	structdefaultproperties
+	{
+		
+		Type=0
+	}
+};
+
+struct PlatformMetric
+{
+	var PlayerController_TA PC;
+	var array<PlatformMetricData> MetricData;
+
+	structdefaultproperties
+	{
+		PC=None
+		MetricData.Empty
+	}
+};
+
+var GameEvent_Soccar_TA SoccarGame;
+var transient array<PlatformMetric> Metrics;

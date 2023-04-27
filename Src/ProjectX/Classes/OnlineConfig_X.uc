@@ -12,7 +12,7 @@ struct native ModifierSubscription
 
 	structdefaultproperties
 	{
-		ObjClass=none
+		ObjClass=None
 		
 		
 	}

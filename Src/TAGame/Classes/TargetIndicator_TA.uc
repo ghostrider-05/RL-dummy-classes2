@@ -18,7 +18,7 @@ var transient Actor TargetActor;
 
 defaultproperties
 {
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	HiddenGame=true
 	bOnlyOwnerSee=true
 	AbsoluteRotation=true

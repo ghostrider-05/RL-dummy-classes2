@@ -10,6 +10,6 @@ var() ConnectionQualityConfig_TA ConnectionQualityConfig;
 defaultproperties
 {
 	TableName=ConnectionStats
-	ProxyClass=class'ClientConnectionTracker_TA'
+	
 	bLevelTransitionPersistent=true
 }

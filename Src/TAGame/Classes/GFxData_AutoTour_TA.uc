@@ -23,7 +23,9 @@ var transient AutoTour_TA AutoTour;
 
 defaultproperties
 {
+	/**TournamentBanMessage="You have been banned from tournaments for leaving early or idling. The ban will be lifted in [PenaltyHours] hour(s), [PenaltyMinutes] minute(s)."*/
+	/**PartyMembersTournamentBanned="Your party cannot join this tournament. The following party members are banned from tournaments: {BannedPlayers}"*/
 	TableName=AutoTournament
-	ProxyClass=class'AutoTour_TA'
+	
 	bLevelTransitionPersistent=true
 }

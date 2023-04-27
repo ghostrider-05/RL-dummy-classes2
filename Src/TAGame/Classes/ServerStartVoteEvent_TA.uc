@@ -15,7 +15,7 @@ struct PartyInfo
 	{
 		
 		FollowerIds.Empty
-		VoterOwner=none
+		VoterOwner=None
 	}
 };
 

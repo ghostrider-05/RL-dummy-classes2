@@ -16,9 +16,9 @@ struct native InheritedObjects
 
 	structdefaultproperties
 	{
-		Asset=none
-		ObjectToEdit=none
-		InheritSetting=none
+		Asset=None
+		ObjectToEdit=None
+		InheritSetting=None
 	}
 };
 
@@ -60,6 +60,6 @@ defaultproperties
 	ProductAttachmentSockets(2)=AntennaSocket
 	ProductAttachmentSockets(3)=Underglow
 	ProductAttachmentSockets(4)=chassis_jnt
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	LightingChannels=(BSP=true,Static=true,Dynamic=true)
 }

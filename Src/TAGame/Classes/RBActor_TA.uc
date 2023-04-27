@@ -139,16 +139,16 @@ defaultproperties
 	bDontPossess=true
 	
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
+	Components(0)=None
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		AlwaysCheckCollision=true
 		BlockActors=false
 		BlockZeroExtent=false
 	end object
 	// Reference: CylinderComponent'Default__RBActor_TA.CollisionCylinder'
 	Components(1)=CollisionCylinder
-	Components(2)=none
+	Components(2)=None
 	Components(3)=GroupComponent_ORS'Default__RBActor_TA.DefaultRegistryGroup'
 	Components(4)=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
 	Physics=PHYS_RigidBody

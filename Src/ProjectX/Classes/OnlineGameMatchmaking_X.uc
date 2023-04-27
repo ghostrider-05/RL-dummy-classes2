@@ -35,5 +35,11 @@ var transient string LastReservationID;
 
 defaultproperties
 {
+	/**SearchingString="Searching for [Playlists] in: [Regions]"*/
+	/**StartSearchFailString="Unable to contact matchmaking server, trying again... (Error: 68)"*/
+	/**FoundServerString="Found game server! Connecting to [GameServerName] for [PlaylistName]..."*/
+	/**PlaylistsHaveChangedString="Playlists have changed, restarting matchmaking... (Error: 66)"*/
+	/**RegionsHaveChangedString="Regions have changed, restarting matchmaking... (Error: 91)"*/
+	/**MatchmakingAttemptString="Matchmaking attempt: "*/
 	MatchmakingDisabledDuration=60.0
 }

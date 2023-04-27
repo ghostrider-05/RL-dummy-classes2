@@ -8,6 +8,6 @@ class GFxData_RocketPassBundleContainer_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=RocketPassBundles
-	ProxyClass=class'RocketPassBundleContainer_TA'
+	
 	bLevelTransitionPersistent=true
 }

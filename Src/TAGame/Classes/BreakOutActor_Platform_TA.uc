@@ -7,6 +7,9 @@ class BreakOutActor_Platform_TA extends Actor
 	placeable
 	hidecategories(Navigation);
 
+const FULL_SIZE_NEIGHBORS = 6;
+const HALF_SIZE_NEIGHBORS = 4;
+
 enum EBreakoutDamageState
 {
 	DamageState_Start,
@@ -26,14 +29,14 @@ struct native BreakoutDamageState
 	structdefaultproperties
 	{
 		State=255
-		Causer=none
+		Causer=None
 		DamageLocation=(X=0.0,Y=0.0,Z=0.0)
 		bDirectDamage=false
 		bImmediate=false
 	}
 };
 
-var() int Sides;
+var() bool bHalfSize;
 var() bool bPrimaryPlayerStart;
 var() int TeamIndex;
 var() int MaxDamage;
@@ -42,33 +45,39 @@ var() const editconst export editinline DynamicLightEnvironmentComponent LightEn
 var() FXActor_X FXArchetype;
 var() float NeighborRadius;
 var() editconst array<editconst BreakOutActor_Platform_TA> Neighbors;
+var() StaticMesh ConnectedCollisionMesh;
+var() StaticMesh ConnectedCollisionMesh_HalfSize;
+var() StaticMesh DisconnectedCollisionMesh;
+var() StaticMesh DisconnectedCollisionMesh_HalfSize;
+var export editinline transient array<export editinline StaticMeshComponent> CollisionComponents;
 var float LastHitTime;
 var repnotify BreakoutDamageState DamageState;
 var FXActor_X FXActor;
 var transient BreakoutDamageState PreReplayState;
+var const editconst Vector HalfSizeFirstTileScale;
 
 defaultproperties
 {
-	Sides=6
 	MaxDamage=2
 	
 	StaticMeshComponent=StaticMeshComponent0
 	LightEnvironment=DynamicLightEnvironmentComponent'Default__BreakOutActor_Platform_TA.MyLightEnvironment'
 	NeighborRadius=700.0
-	DamageState=(State=255,Causer=none,DamageLocation=(X=0.0,Y=0.0,Z=0.0),bDirectDamage=false,bImmediate=false)
-	PreReplayState=(State=255,Causer=none,DamageLocation=(X=0.0,Y=0.0,Z=0.0),bDirectDamage=false,bImmediate=false)
+	DamageState=(State=255,Causer=None,DamageLocation=(X=0.0,Y=0.0,Z=0.0),bDirectDamage=false,bImmediate=false)
+	PreReplayState=(State=255,Causer=None,DamageLocation=(X=0.0,Y=0.0,Z=0.0),bDirectDamage=false,bImmediate=false)
+	HalfSizeFirstTileScale=(X=1.0,Y=-1.0,Z=1.0)
 	begin object name=StaticMeshComponent0 class=StaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		LightEnvironment=DynamicLightEnvironmentComponent'Default__BreakOutActor_Platform_TA.MyLightEnvironment'
 		BlockRigidBody=true
-		RBCollideWithChannels=(Vehicle=true,GameplayPhysics=true,EffectPhysics=true,Ball=true)
+		RBCollideWithChannels=(GameplayPhysics=true,EffectPhysics=true,Ball=true)
 	end object
 	// Reference: StaticMeshComponent'Default__BreakOutActor_Platform_TA.StaticMeshComponent0'
 	Components(0)=StaticMeshComponent0
 	RemoteRole=ROLE_SimulatedProxy
 	CollisionType=COLLIDE_CustomDefault
-	bStatic=true
 	bNoDelete=true
+	bTickIsDisabled=true
 	bWorldGeometry=true
 	bAlwaysRelevant=true
 	bGameRelevant=true

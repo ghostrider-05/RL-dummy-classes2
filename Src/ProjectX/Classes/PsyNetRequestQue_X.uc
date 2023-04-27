@@ -15,7 +15,7 @@ struct native PsyNetRequest
 	structdefaultproperties
 	{
 		Id=None
-		Task=none
+		Task=None
 		TimeoutTime=0.0
 		SendTime=0.0
 	}

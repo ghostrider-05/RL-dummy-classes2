@@ -17,7 +17,7 @@ struct ReplacementProduct
 		ProhibitedID=0
 		bShowForOwningClient=false
 		
-		ReplacementInstance=none
+		ReplacementInstance=None
 	}
 };
 
@@ -55,7 +55,7 @@ var array<ProductTradeHoldOverride> ProductTradeHoldOverrides;
 
 defaultproperties
 {
-	ItemSeries_AllowTradeIn(0)=(SeriesID=1,ExcludedQualities=none)
-	ItemSeries_AllowTradeIn(1)=(SeriesID=855,ExcludedQualities=none)
-	ItemSeries_PreventP2PTrade(0)=(SeriesID=855,ExcludedQualities=none)
+	ItemSeries_AllowTradeIn(0)=(SeriesID=1,ExcludedQualities=None)
+	ItemSeries_AllowTradeIn(1)=(SeriesID=855,ExcludedQualities=None)
+	ItemSeries_PreventP2PTrade(0)=(SeriesID=855,ExcludedQualities=None)
 }

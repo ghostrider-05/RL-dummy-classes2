@@ -12,5 +12,5 @@ var const transient bool bIgnoreScriptAttach;
 defaultproperties
 {
 	WireframeColor=(R=64,G=255,B=255,A=255)
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 }

@@ -38,8 +38,8 @@ struct CurrencyProductData
 
 	structdefaultproperties
 	{
-		Product=none
-		OnlineProduct=none
+		Product=None
+		OnlineProduct=None
 	}
 };
 
@@ -60,14 +60,14 @@ struct ShopCurrency
 	{
 		Type=0
 		Id=0
-		SmallImage=none
-		LargeImage=none
+		SmallImage=None
+		LargeImage=None
 		Amount=0
 		Name=""
 		LocalizedName=""
 		bCanBeTraded=false
 		TradeHold=0
-		ProductData=(Product=none,OnlineProduct=none)
+		ProductData=(Product=None,OnlineProduct=None)
 	}
 };
 
@@ -206,7 +206,7 @@ struct ShopItem
 		Description=""
 		Attributes.Empty
 		ImageURL=""
-		ItemTexture=none
+		ItemTexture=None
 		bOwnsAllUntradeableProducts=false
 	}
 };

@@ -13,7 +13,7 @@ struct GFxPlayerAvatarRef
 	structdefaultproperties
 	{
 		HashID=(Id=0)
-		PlayerAvatar=none
+		PlayerAvatar=None
 	}
 };
 

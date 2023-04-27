@@ -8,6 +8,6 @@ class ProductStat_GamesPlayed_TA extends ProductStat_TA
 
 defaultproperties
 {
-	Label="Matches"
-	Description="When equipped, this item keeps track of how many matches you play."
+	/**Label="Matches"*/
+	/**Description="When equipped, this item keeps track of how many matches you play."*/
 }

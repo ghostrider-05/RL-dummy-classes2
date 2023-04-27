@@ -16,7 +16,7 @@ struct native CachedNavMeshLocation
 
 	structdefaultproperties
 	{
-		Actor=none
+		Actor=None
 		NavMeshLocation=(X=0.0,Y=0.0,Z=0.0)
 		OldActorLocation=(X=0.0,Y=0.0,Z=0.0)
 	}

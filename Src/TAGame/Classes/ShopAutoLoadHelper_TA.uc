@@ -17,4 +17,5 @@ var Qword RandomEndDateOffset;
 
 defaultproperties
 {
+	/**SyncRequestRange=100*/
 }

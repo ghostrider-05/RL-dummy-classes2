@@ -709,6 +709,7 @@ enum EPersonaInfoOrigin
 	PersonaOrigin_Platform,
 	PersonaOrigin_PsyNet,
 	PersonaOrigin_Epic,
+	PersonaOrigin_All,
 	PersonaOrigin_MAX
 };
 
@@ -798,7 +799,7 @@ struct native PaintWithOverride
 
 	structdefaultproperties
 	{
-		PaintToOverride=none
+		PaintToOverride=None
 		Overrides.Empty
 	}
 };
@@ -859,7 +860,7 @@ struct PartyUpMergeError
 	{
 		
 		
-		Error=none
+		Error=None
 	}
 };
 
@@ -870,8 +871,8 @@ struct native BodyToEngineAudioPair
 
 	structdefaultproperties
 	{
-		Body=none
-		EngineAudio=none
+		Body=None
+		EngineAudio=None
 	}
 };
 
@@ -952,8 +953,8 @@ struct native DemolishData
 
 	structdefaultproperties
 	{
-		Attacker=none
-		Victim=none
+		Attacker=None
+		Victim=None
 		AttackerVelocity=(X=0.0,Y=0.0,Z=0.0)
 		VictimVelocity=(X=0.0,Y=0.0,Z=0.0)
 	}
@@ -1058,8 +1059,8 @@ struct native ReplayHeaderLoadResult
 
 	structdefaultproperties
 	{
-		Header=none
-		Error=none
+		Header=None
+		Error=None
 	}
 };
 
@@ -1187,7 +1188,7 @@ struct native ThumbnailComponent
 
 	structdefaultproperties
 	{
-		Component=none
+		Component=None
 		BaseTransform=(XPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),YPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),ZPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),WPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0))
 		Tag=None
 	}
@@ -1316,7 +1317,7 @@ struct RocketPassBundleInfo
 		CurrencyCost=0
 		Tiers=0
 		Savings=0
-		Image=none
+		Image=None
 		ImageURL=""
 	}
 };
@@ -1366,8 +1367,8 @@ struct native CurrencyProductData
 
 	structdefaultproperties
 	{
-		Product=none
-		OnlineProduct=none
+		Product=None
+		OnlineProduct=None
 	}
 };
 
@@ -1392,12 +1393,12 @@ struct native Currency
 		Name=None
 		bCanBeTraded=false
 		TradeHold=0
-		ProductData=(Product=none,OnlineProduct=none)
+		ProductData=(Product=None,OnlineProduct=None)
 		CurrencyID=0
 		Id=0
 		Amount=0
-		LargeImage=none
-		SmallImage=none
+		LargeImage=None
+		SmallImage=None
 		LocalizedName=""
 		
 	}
@@ -1640,8 +1641,8 @@ struct native ServerSetLoadoutParams
 	structdefaultproperties
 	{
 		Title=XP
-		Loadouts[0]=(Products=none,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false))
-		Loadouts[1]=(Products=none,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false))
+		Loadouts[0]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false))
+		Loadouts[1]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false))
 	}
 };
 
@@ -1727,7 +1728,7 @@ struct native MessageValue
 	{
 		StringValue=""
 		IntValue=0
-		ObjectValue=none
+		ObjectValue=None
 		NameValue=None
 		ValueType=0
 	}
@@ -1740,7 +1741,7 @@ struct native MessagePacket
 
 	structdefaultproperties
 	{
-		Message=none
+		Message=None
 		Values.Empty
 	}
 };
@@ -1766,8 +1767,8 @@ struct native BallHitInfo
 
 	structdefaultproperties
 	{
-		PRI=none
-		AttackerPRI=none
+		PRI=None
+		AttackerPRI=None
 		CarName=None
 		TeamNum=0
 		PreHitCarPhysics=(Quaternion=(X=0.0,Y=0.0,Z=0.0,W=0.0),Location=(X=0.0,Y=0.0,Z=0.0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),Time=0.0,bSleeping=false,bNewData=false)
@@ -1792,7 +1793,7 @@ struct TAPlayerStat
 
 	structdefaultproperties
 	{
-		StatEvent=none
+		StatEvent=None
 		Count=0
 	}
 };
@@ -1829,9 +1830,9 @@ struct native AccumulatedRigidBodyCollision
 
 	structdefaultproperties
 	{
-		Actor=none
-		Component=none
-		PhysMat=none
+		Actor=None
+		Component=None
+		PhysMat=None
 		Velocity=(X=0.0,Y=0.0,Z=0.0)
 		OtherVelocity=(X=0.0,Y=0.0,Z=0.0)
 		Location=(X=0.0,Y=0.0,Z=0.0)
@@ -1863,19 +1864,19 @@ struct native ProductAttachment
 
 	structdefaultproperties
 	{
-		StaticMesh=none
-		SkeletalMesh=none
-		ParticleSystem=none
-		Material=none
+		StaticMesh=None
+		SkeletalMesh=None
+		ParticleSystem=None
+		Material=None
 		Scale=1.0
 		Translation=(X=0.0,Y=0.0,Z=0.0)
 		Rotation=(Pitch=0,Yaw=0,Roll=0)
 		Socket=PAS_Hat
-		Antenna=none
+		Antenna=None
 		Behaviors.Empty
-		InheritCarAttribute=none
-		Component=none
-		FXActor=none
+		InheritCarAttribute=None
+		Component=None
+		FXActor=None
 	}
 };
 
@@ -1888,7 +1889,7 @@ struct native WheelAttachment
 
 	structdefaultproperties
 	{
-		Component=none
+		Component=None
 		Behaviors.Empty
 		Socket=None
 		PaintableMaterials.Empty
@@ -1913,13 +1914,13 @@ struct native WheelContactData
 		bHasContact=false
 		bHasContactWithWorldGeometry=false
 		HasContactChangeTime=0.0
-		Actor=none
-		Component=none
+		Actor=None
+		Component=None
 		Location=(X=0.0,Y=0.0,Z=0.0)
 		Normal=(X=0.0,Y=0.0,Z=0.0)
 		LatDirection=(X=0.0,Y=0.0,Z=0.0)
 		LongDirection=(X=0.0,Y=0.0,Z=0.0)
-		PhysMatProp=none
+		PhysMatProp=None
 	}
 };
 
@@ -1959,9 +1960,9 @@ struct UIProductSlotData
 
 	structdefaultproperties
 	{
-		Slot=none
-		Texture=none
-		Sound=none
+		Slot=None
+		Texture=None
+		Sound=None
 	}
 };
 
@@ -2050,7 +2051,7 @@ struct native MaterialTextureParam
 	structdefaultproperties
 	{
 		Name=None
-		Value=none
+		Value=None
 	}
 };
 
@@ -2099,8 +2100,8 @@ struct native AssociativeMaterialParams
 
 	structdefaultproperties
 	{
-		Material=none
-		Params=(TextureParameters=none,VectorParameters=none,ScalarParameters=none)
+		Material=None
+		Params=(TextureParameters=None,VectorParameters=None,ScalarParameters=None)
 	}
 };
 
@@ -2115,8 +2116,8 @@ struct native AssetLoadResult
 	{
 		ProductID=0
 		AssetName=None
-		Asset=none
-		ThumbnailAsset=none
+		Asset=None
+		ThumbnailAsset=None
 	}
 };
 
@@ -2128,9 +2129,9 @@ struct native ProductThumbnailResult
 
 	structdefaultproperties
 	{
-		Asset=none
-		OnlineProduct=none
-		Thumbnail=none
+		Asset=None
+		OnlineProduct=None
+		Thumbnail=None
 	}
 };
 
@@ -2141,7 +2142,7 @@ struct native MapImageLoadResult
 
 	structdefaultproperties
 	{
-		Image=none
+		Image=None
 		MapName=None
 	}
 };
@@ -2155,7 +2156,7 @@ struct native WeldingInfo
 
 	structdefaultproperties
 	{
-		RBActor=none
+		RBActor=None
 		Offset=(X=0.0,Y=0.0,Z=0.0)
 		Mass=0.0
 		Rotation=(Pitch=0,Yaw=0,Roll=0)
@@ -2170,7 +2171,7 @@ struct RandomWeight
 
 	structdefaultproperties
 	{
-		Obj=none
+		Obj=None
 		Weight=1.0
 		OrigWeight=0.0
 	}
@@ -2184,8 +2185,8 @@ struct native SaveObjectResult
 
 	structdefaultproperties
 	{
-		ObjectData=none
-		Error=none
+		ObjectData=None
+		Error=None
 		Code=SaveGameResult_Pending
 	}
 };
@@ -2200,8 +2201,8 @@ struct native LoadObjectResult
 	structdefaultproperties
 	{
 		FilePath=""
-		ObjectData=none
-		Error=none
+		ObjectData=None
+		Error=None
 		Code=BasicLoadResult_Pending
 	}
 };
@@ -2234,8 +2235,8 @@ struct native SortedProductData
 	{
 		
 		HashID=(Id=0)
-		Product=none
-		OnlineProduct=none
+		Product=None
+		OnlineProduct=None
 		BlueprintSortWeight=0
 		Quantity=0
 		bUnlocked=false
@@ -2314,7 +2315,7 @@ struct OnlinePlayerMatchData
 
 	structdefaultproperties
 	{
-		PRI=none
+		PRI=None
 		
 		GameSecondsPlayed=0.0
 		GameScore=0
@@ -2550,8 +2551,8 @@ struct native SkinBodySettings
 
 	structdefaultproperties
 	{
-		Body=none
-		Parameters=(TextureParameters=none,VectorParameters=none,ScalarParameters=none)
+		Body=None
+		Parameters=(TextureParameters=None,VectorParameters=None,ScalarParameters=None)
 		AdditionalBodyParameters.Empty
 	}
 };
@@ -2606,7 +2607,7 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=73
+		TradeInQualities(0)=181
 		TradeInQualities(1)=57
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0
@@ -2622,9 +2623,9 @@ struct native ProductWithSettings
 
 	structdefaultproperties
 	{
-		Product=none
-		Paint=none
-		ESportsTeam=none
+		Product=None
+		Paint=None
+		ESportsTeam=None
 	}
 };
 

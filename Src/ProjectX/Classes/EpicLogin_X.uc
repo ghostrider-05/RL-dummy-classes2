@@ -48,4 +48,6 @@ var const localized string Unknown;
 
 defaultproperties
 {
+	/**CreateAccountURL="https://api.epicgames.dev/epic/id/v1/accounts"*/
+	/**Unknown="Unknown"*/
 }

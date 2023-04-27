@@ -21,7 +21,7 @@ struct native SteamWebRequestData
 
 	structdefaultproperties
 	{
-		Request=none
+		Request=None
 		
 	}
 };
@@ -60,7 +60,7 @@ struct native SteamJsonResponseGetPublisherAppOwnership
 
 	structdefaultproperties
 	{
-		AppOwnership=(Apps=none)
+		AppOwnership=(Apps=None)
 	}
 };
 

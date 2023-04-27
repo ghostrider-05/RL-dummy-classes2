@@ -16,18 +16,18 @@ defaultproperties
 	StaticMeshComponent=StaticMeshComponent0
 	HideTime=5.0
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__PlayerStart_Platform_TA.CollisionCylinder'
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
-	Components(1)=none
-	Components(2)=none
+	Components(0)=None
+	Components(1)=None
+	Components(2)=None
 	
 	Components(3)=CollisionCylinder
-	Components(4)=none
+	Components(4)=None
 	begin object name=StaticMeshComponent0 class=StaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		bAcceptsDynamicLights=false
 		bUsePrecomputedShadows=true
 		BlockRigidBody=true

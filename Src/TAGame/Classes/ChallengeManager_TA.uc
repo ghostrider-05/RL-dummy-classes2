@@ -19,4 +19,9 @@ var const localized string MixedChallengesDesc;
 
 defaultproperties
 {
+	/**NewChallengesTitle="New Challenges"*/
+	/**NewChallengesDesc="New challenges are now available!"*/
+	/**ExpiredChallengesTitle="Expired Challenges"*/
+	/**ExpiredChallengesDesc="Some of your unclaimed, completed challenge rewards have expired and will be added to your inventory."*/
+	/**MixedChallengesDesc="New challenges are now available! Any unclaimed, completed challenge rewards that have expired will be added to your inventory."*/
 }

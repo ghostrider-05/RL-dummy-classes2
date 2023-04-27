@@ -14,7 +14,7 @@ struct native GFxDataStoreRow
 	structdefaultproperties
 	{
 		Values.Empty
-		BoundObject=none
+		BoundObject=None
 	}
 };
 

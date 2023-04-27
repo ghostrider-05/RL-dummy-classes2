@@ -24,8 +24,8 @@ struct native AssetLoadRequest
 
 	structdefaultproperties
 	{
-		Result=(ProductID=0,AssetName=None,Asset=none,ThumbnailAsset=none)
-		Product=none
+		Result=(ProductID=0,AssetName=None,Asset=None,ThumbnailAsset=None)
+		Product=None
 		LoadOrder=0
 		LoadState=AssetLoadState_New
 		bIsThumbnailRequest=false

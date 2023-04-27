@@ -10,7 +10,7 @@ var const ErrorType MicrotransactionFulfillmentRestrictedDaily;
 
 defaultproperties
 {
-	MicrotransactionFulfillmentRestrictedWallet=ErrorType'Default__MtxErrors_TA.MicrotransactionFulfillmentRestrictedWallet'
-	MicrotransactionFulfillmentRestrictedDaily=ErrorType'Default__MtxErrors_TA.MicrotransactionFulfillmentRestrictedDaily'
+	
+	
 	LocalizationPackage="TAErrors"
 }

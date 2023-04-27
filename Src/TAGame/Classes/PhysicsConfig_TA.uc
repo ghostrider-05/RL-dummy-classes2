@@ -57,6 +57,7 @@ var bool bBackupVehicleInputs;
 var bool bUseNEQ;
 var() bool bExtrapolateRendering;
 var bool bEnableCustomExplosionPhysics;
+var bool bLegacyDropshotTileCollision;
 var float JumpLeaveGroundTime;
 var SimTimeScaleSettings STS;
 var ContinuousSimTimeScaleSettings CSTS;

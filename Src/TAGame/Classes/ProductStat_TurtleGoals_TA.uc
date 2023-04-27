@@ -8,6 +8,6 @@ class ProductStat_TurtleGoals_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Upside Down Goals"
-	Description="When equipped, this item keeps track of how many upside down goals you score."
+	/**Label="Upside Down Goals"*/
+	/**Description="When equipped, this item keeps track of how many upside down goals you score."*/
 }

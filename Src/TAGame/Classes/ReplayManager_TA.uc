@@ -16,9 +16,9 @@ struct native ReplayIOTaskBase
 
 	structdefaultproperties
 	{
-		Replay=none
+		Replay=None
 		Path=""
-		Error=none
+		Error=None
 	}
 };
 
@@ -86,7 +86,7 @@ struct native ReplayHeadersCountTask
 		Path=""
 		FileNameFilters.Empty
 		Replays.Empty
-		Error=none
+		Error=None
 	}
 };
 
@@ -101,4 +101,5 @@ var transient array<ReplayImportCallbackData> ImportCallbacks;
 
 defaultproperties
 {
+	/**ReplaysPath="..\\..\\TAGame\\Demos\\"*/
 }

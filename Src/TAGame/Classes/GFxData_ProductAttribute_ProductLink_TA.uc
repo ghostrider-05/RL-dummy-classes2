@@ -9,6 +9,6 @@ var databinding int ProductID;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_ProductLink_TA'
+	
 	TableName=ProductAttribute_ProductLink
 }

@@ -12,7 +12,7 @@ struct native OnlineMessageHandler
 
 	structdefaultproperties
 	{
-		MessageClass=none
+		MessageClass=None
 		Delegates.Empty
 	}
 };

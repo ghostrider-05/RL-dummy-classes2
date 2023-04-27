@@ -11,4 +11,5 @@ var const localized string AnimatedLabel;
 
 defaultproperties
 {
+	/**AnimatedLabel="Animated Decal"*/
 }

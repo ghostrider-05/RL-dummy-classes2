@@ -19,5 +19,5 @@ defaultproperties
 	bIgnoreControllersWhenNotRendered=true
 	bTickAnimNodesWhenNotRendered=false
 	bUpdateKinematicBonesFromAnimation=false
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 }

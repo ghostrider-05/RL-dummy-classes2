@@ -17,14 +17,7 @@ defaultproperties
 	bSimulateGravity=false
 	
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
-	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
-	end object
-	// Reference: CylinderComponent'Default__GameEditor_Pawn_TA.CollisionCylinder'
-	Components(1)=CollisionCylinder
-	Components(2)=none
-	Components(3)=GroupComponent_ORS'Default__GameEditor_Pawn_TA.DefaultRegistryGroup'
+	
 	bShouldBaseAtStartup=false
 	bCanTeleport=false
 	

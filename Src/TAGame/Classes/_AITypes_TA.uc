@@ -30,7 +30,7 @@ struct native BTDynamicLinkData
 	structdefaultproperties
 	{
 		LinkName=None
-		Node=none
+		Node=None
 	}
 };
 
@@ -53,8 +53,8 @@ struct native AIProxyData
 		Rotation=(Pitch=0,Yaw=0,Roll=0)
 		Radius=0.0
 		Bounce=0.0
-		Actor=none
-		Vehicle=none
+		Actor=None
+		Vehicle=None
 	}
 };
 
@@ -65,7 +65,7 @@ struct native AICachedGoalInfo
 
 	structdefaultproperties
 	{
-		Goal=none
+		Goal=None
 		FieldSize=(X=0.0,Y=0.0,Z=0.0)
 	}
 };

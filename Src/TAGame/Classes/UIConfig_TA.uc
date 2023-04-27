@@ -15,6 +15,7 @@ var bool bUseCoherentBrowser;
 var databinding bool bRankedSportsEnabled;
 var() databinding bool bShowStarterBundles;
 var() databinding bool bPurchaseProTier;
+var databinding bool bUse1LVLIcon;
 var databinding bool bShowAnthems;
 var int ClubInvitationLimit;
 var EMainMenuBackground MainMenuBG;

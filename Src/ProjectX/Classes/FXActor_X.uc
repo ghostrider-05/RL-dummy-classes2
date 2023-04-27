@@ -53,7 +53,7 @@ struct native FXEventSubscription
 
 	structdefaultproperties
 	{
-		Event=none
+		Event=None
 		
 		
 	}
@@ -116,7 +116,7 @@ struct native FXAttachment
 		DetachDelay=0.0
 		LifeTime=0.0
 		Target=FXComponentTarget_All
-		Component=none
+		Component=None
 		AttachAny.Empty
 		DetachAny.Empty
 		AttachAll.Empty
@@ -135,10 +135,10 @@ struct native FXAttachment
 		AttachedTime=0.0
 		State=FXComponentState_Detached
 		WantsAttachmentChangeTime=0.0
-		AttachedToMesh=none
+		AttachedToMesh=None
 		RelativeTransform=(XPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),YPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),ZPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),WPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0))
 		BoneIndex=0
-		AttachToActor=none
+		AttachToActor=None
 		OffsetToAttachActor=(X=0.0,Y=0.0,Z=0.0)
 	}
 };
@@ -150,7 +150,7 @@ struct native FXActorEventCheck
 
 	structdefaultproperties
 	{
-		Event=none
+		Event=None
 		bHasTicked=false
 	}
 };

@@ -15,10 +15,10 @@ struct native CacheIOTaskBase
 
 	structdefaultproperties
 	{
-		CacheObject=none
+		CacheObject=None
 		Data.Empty
 		Path=""
-		Error=none
+		Error=None
 	}
 };
 

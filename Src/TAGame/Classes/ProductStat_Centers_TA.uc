@@ -8,6 +8,6 @@ class ProductStat_Centers_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Centers"
-	Description="When equipped, this item keeps track of how many times you center the ball on offense."
+	/**Label="Centers"*/
+	/**Description="When equipped, this item keeps track of how many times you center the ball on offense."*/
 }

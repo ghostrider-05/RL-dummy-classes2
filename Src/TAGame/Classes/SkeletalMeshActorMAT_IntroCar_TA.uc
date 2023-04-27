@@ -22,7 +22,7 @@ defaultproperties
 	FacialAudioComp=AudioComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.FaceAudioComponent'
 	Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
 	begin object name=SkeletalMeshComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
 	end object
 	// Reference: SkeletalMeshComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.SkeletalMeshComponent0'

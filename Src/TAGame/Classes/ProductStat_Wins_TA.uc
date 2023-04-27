@@ -8,6 +8,6 @@ class ProductStat_Wins_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Wins"
-	Description="When equipped, this item keeps track of how many wins you get."
+	/**Label="Wins"*/
+	/**Description="When equipped, this item keeps track of how many wins you get."*/
 }

@@ -21,6 +21,6 @@ var EpicConfig_X EpicConfig;
 defaultproperties
 {
 	TableName=EpicLogin
-	ProxyClass=Class'ProjectX.EpicLogin_X'
+	
 	bLevelTransitionPersistent=true
 }

@@ -18,7 +18,7 @@ struct CachedPlayerData
 		
 		Titles.Empty
 		CacheTime=0.0
-		RPC=none
+		RPC=None
 		Callbacks.Empty
 	}
 };

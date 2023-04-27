@@ -10,12 +10,12 @@ class GameEditor_Switch_TA extends GameEditor_Trigger_TA
 defaultproperties
 {
 	begin object name=StaticComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__GameEditor_Switch_TA.StaticComponent0'
 	Mesh=StaticComponent0
 	begin object name=DefaultCollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__GameEditor_Switch_TA.DefaultCollisionCylinder'
 	Components(0)=DefaultCollisionCylinder

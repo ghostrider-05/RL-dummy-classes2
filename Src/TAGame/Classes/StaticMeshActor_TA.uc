@@ -14,7 +14,7 @@ defaultproperties
 	
 	StaticMeshComponent=StaticMeshComponent0
 	begin object name=StaticMeshComponent0 class=StaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		bAllowApproximateOcclusion=true
 		bForceDirectLightMap=true
 		bUsePrecomputedShadows=true

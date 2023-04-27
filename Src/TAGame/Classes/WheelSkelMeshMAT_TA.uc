@@ -10,6 +10,6 @@ class WheelSkelMeshMAT_TA extends SkeletalMeshComponent
 
 defaultproperties
 {
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	LightingChannels=(BSP=true,Static=true,Dynamic=true)
 }

@@ -35,7 +35,7 @@ struct native SoundStateItem
 	structdefaultproperties
 	{
 		StateName=None
-		Shell=none
+		Shell=None
 		Priority=SSP_None
 	}
 };

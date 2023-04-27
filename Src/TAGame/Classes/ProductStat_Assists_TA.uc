@@ -8,6 +8,6 @@ class ProductStat_Assists_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Assists"
-	Description="When equipped, this item keeps track of how many assists you make."
+	/**Label="Assists"*/
+	/**Description="When equipped, this item keeps track of how many assists you make."*/
 }

@@ -11,6 +11,6 @@ var databinding string ItemShopLabel;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_TeamEdition_TA'
+	
 	TableName=ProductAttribute_TeamEdition
 }

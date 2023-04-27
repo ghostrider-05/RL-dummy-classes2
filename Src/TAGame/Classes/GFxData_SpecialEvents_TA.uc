@@ -16,5 +16,5 @@ var databinding bool bSpecialEventButtonVisible;
 defaultproperties
 {
 	TableName=SpecialEvents
-	ProxyClass=class'SpecialEventConfig_TA'
+	
 }

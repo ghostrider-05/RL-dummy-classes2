@@ -32,5 +32,7 @@ var AkSoundCue MusicAnalysisSilentLoop;
 
 defaultproperties
 {
+	/**AttackSpeed=1.0*/
+	/**ReleaseSpeed=1.0*/
 	MusicAnalysisSilentLoop=AkSoundCue'MX_MainMenu.MusicAnalysis_Silent_Loop'
 }

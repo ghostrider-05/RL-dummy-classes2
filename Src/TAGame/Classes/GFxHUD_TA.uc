@@ -61,5 +61,16 @@ var transient GFxData_Scoreboard_TA Scoreboard;
 defaultproperties
 {
 	GFxPRIClass=class'GFxData_PRI_TA'
-	PartyChatTitle="Send Party Chat Message"
+	/**PlayerJoinString="joined the match"*/
+	/**PlayerLeaveString="left the match"*/
+	/**PlayerTimedOutString="lost connection"*/
+	/**ChatTitle="Send Chat Message"*/
+	/**TeamChatTitle="Send Team Chat Message"*/
+	/**ChatDisabledMessage="Chat disabled for [Time] second(s)."*/
+	/**ReplayQueSaveMessage="A replay of this match will auto-save when the game ends. A keyframe will mark the current time."*/
+	/**ChatBannedMessage="Chat is restricted for [Hours] hour(s), [Minutes] minute(s)."*/
+	/**ChatBannedPermanentlyMessage="Chat is permanently restricted."*/
+	/**ServerMigrationTitle="Server Migration"*/
+	/**ServerMigrationBody="Server shutting down for maintenance, migrating to a new server."*/
+	/**PartyChatTitle="Send Party Chat Message"*/
 }

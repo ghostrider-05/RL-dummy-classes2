@@ -42,7 +42,7 @@ struct native AkActorEnvironment
 	structdefaultproperties
 	{
 		Environments.Empty
-		TargetActor=none
+		TargetActor=None
 	}
 };
 

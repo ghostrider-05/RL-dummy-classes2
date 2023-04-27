@@ -12,4 +12,6 @@ var() config float PsyNetStaticDataCacheMinutes;
 
 defaultproperties
 {
+	/**bCacheWebImages=true*/
+	/**PsyNetStaticDataCacheMinutes=5.0*/
 }

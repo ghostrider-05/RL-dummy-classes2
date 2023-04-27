@@ -22,14 +22,14 @@ defaultproperties
 	BallKickOffDirection=(X=0.10,Y=0.0,Z=1.0)
 	BallKickOffScale=650.0
 	SpawnRadiusCheck=100.0
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GodBall_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GodBall_TA.DefaultInactiveFpsRecorder'
 	
-	GameFullMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_GodBall_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_GodBall_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_GodBall_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

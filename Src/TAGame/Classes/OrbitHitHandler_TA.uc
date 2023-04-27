@@ -30,7 +30,7 @@ struct native OrbitCarData
 
 	structdefaultproperties
 	{
-		CarHit=none
+		CarHit=None
 		OrbitAxis=(X=0.0,Y=0.0,Z=0.0)
 		OrbitLocation=(X=0.0,Y=0.0,Z=0.0)
 		RotationAngleRadians=0.0

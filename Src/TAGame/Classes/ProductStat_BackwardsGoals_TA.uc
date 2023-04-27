@@ -8,6 +8,6 @@ class ProductStat_BackwardsGoals_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Backwards Goals"
-	Description="When equipped, this item keeps track of how many backwards goals you score."
+	/**Label="Backwards Goals"*/
+	/**Description="When equipped, this item keeps track of how many backwards goals you score."*/
 }

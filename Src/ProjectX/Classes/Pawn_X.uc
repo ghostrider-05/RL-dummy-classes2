@@ -17,13 +17,13 @@ defaultproperties
 	
 	
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
+	Components(0)=None
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__Pawn_X.CollisionCylinder'
 	Components(1)=CollisionCylinder
-	Components(2)=none
+	Components(2)=None
 	Components(3)=GroupComponent_ORS'Default__Pawn_X.DefaultRegistryGroup'
 	bCanStepUpOn=false
 	

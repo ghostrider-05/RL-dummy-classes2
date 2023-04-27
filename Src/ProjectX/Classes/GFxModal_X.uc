@@ -13,4 +13,5 @@ var() const localized string ConfirmString;
 defaultproperties
 {
 	ActionScriptModalName="ModalPopupMessage"
+	/**ConfirmString="Ok"*/
 }

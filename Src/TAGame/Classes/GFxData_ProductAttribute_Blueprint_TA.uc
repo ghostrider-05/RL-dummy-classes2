@@ -13,6 +13,6 @@ var databinding ProductHashID PreviewProductHashID;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Blueprint_TA'
+	
 	TableName=ProductAttribute_Blueprint
 }

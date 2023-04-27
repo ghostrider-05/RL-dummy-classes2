@@ -14,7 +14,7 @@ struct SpawnCarColorSet
 
 	structdefaultproperties
 	{
-		ColorSet=none
+		ColorSet=None
 		bRender=true
 	}
 };
@@ -34,10 +34,10 @@ var transient float BaseOffsetY;
 
 defaultproperties
 {
-	AccentColors=(ColorSet=none,bRender=true)
+	AccentColors=(ColorSet=None,bRender=true)
 	AccentTeamColor=(R=0.0,G=0.0,B=0.0,A=1.0)
-	BlueTeamColors=(ColorSet=none,bRender=true)
-	OrangeTeamColors=(ColorSet=none,bRender=true)
+	BlueTeamColors=(ColorSet=None,bRender=true)
+	OrangeTeamColors=(ColorSet=None,bRender=true)
 	TeamAccentColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 	CarYaw=-90
 	CarOffsetX=100.0

@@ -12,7 +12,7 @@ var string CheckpointName;
 defaultproperties
 {
 	bCallHandler=false
-	VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_String',LinkDesc="CheckpointName",LinkVar=None,PropertyName=CheckpointName,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_String',LinkDesc="CheckpointName",LinkVar=None,PropertyName=CheckpointName,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=None,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	ObjName="Complete FTE Checkpoint"
 	ObjCategory="TAGame"
 }

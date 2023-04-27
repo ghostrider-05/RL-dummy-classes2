@@ -6,3 +6,4 @@
 class PrivacyPolicyConfig_TA extends OnlineConfig_X;
 
 var int Version;
+var() array<int> IgnoredHashIds;

@@ -12,5 +12,5 @@ var transient CameraState_GameEditor_TA CurrentCameraState;
 
 defaultproperties
 {
-	Blender=CameraStateBlender_X'Default__Camera_GameEditor_TA.StateBlender0'
+	
 }

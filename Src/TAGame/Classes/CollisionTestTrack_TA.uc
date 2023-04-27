@@ -12,7 +12,7 @@ var() export editinline CollisionTestComponent_TA CollisionTestComponent;
 defaultproperties
 {
 	CollisionTestComponent=CollisionTestComponent_TA'Default__CollisionTestTrack_TA.DefaultCollisionTestComponent'
-	Components(0)=none
+	Components(0)=None
 	Components(1)=CollisionTestComponent_TA'Default__CollisionTestTrack_TA.DefaultCollisionTestComponent'
 	bDedicatedServerRelevant=false
 }

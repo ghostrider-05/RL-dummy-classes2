@@ -22,5 +22,5 @@ var transient GFxModal_X ModalProcessing;
 defaultproperties
 {
 	TableName=TrainingModeEditor
-	ProxyClass=class'TrainingEditorData_TA'
+	
 }

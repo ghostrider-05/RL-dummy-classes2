@@ -46,18 +46,18 @@ defaultproperties
 	MinRoundTime=1.0
 	MaxRoundTime=59.0
 	SaveDelayTime=0.50
-	SaveDataClass=class'SaveData_GameEditor_Training_TA'
-	MaxRounds=50
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_TrainingEditor_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_TrainingEditor_TA.DefaultInactiveFpsRecorder'
 	
-	MatchTypeClass=class'MatchType_Tutorial_TA'
+	MaxRounds=50
+	
+	
+	
+	
 	bAwardAchievements=false
-	GameFullMessage=Message_TA'Default__GameEvent_TrainingEditor_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_TrainingEditor_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_TrainingEditor_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_TrainingEditor_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_TrainingEditor_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_TrainingEditor_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_TrainingEditor_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }

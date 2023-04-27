@@ -18,7 +18,7 @@ struct BeamTraceProps
 		NextTraceTime=0.0
 		LastWorldLocation=(X=0.0,Y=0.0,Z=0.0)
 		LastWorldHit=false
-		PSC=none
+		PSC=None
 	}
 };
 

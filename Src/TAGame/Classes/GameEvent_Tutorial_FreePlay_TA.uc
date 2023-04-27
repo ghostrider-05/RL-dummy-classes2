@@ -10,15 +10,15 @@ class GameEvent_Tutorial_FreePlay_TA extends GameEvent_Tutorial_TA
 
 defaultproperties
 {
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultInactiveFpsRecorder'
+	
+	
 	
 	bMultiplayer=true
-	GameFullMessage=Message_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Tutorial_FreePlay_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Tutorial_FreePlay_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Tutorial_FreePlay_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }

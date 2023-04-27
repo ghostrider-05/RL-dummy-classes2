@@ -31,5 +31,6 @@ var Error PrimaryAccountNotSetError;
 defaultproperties
 {
 	
+	/**AuthRequestFailureMax=3*/
 	AuthRequestRetryTime=2
 }

@@ -14,9 +14,9 @@ struct native ExplosionPaintInfo
 
 	structdefaultproperties
 	{
-		Asset=none
-		PaintSettings=none
-		Paint=none
+		Asset=None
+		PaintSettings=None
+		Paint=None
 	}
 };
 

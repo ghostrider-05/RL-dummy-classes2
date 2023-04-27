@@ -25,8 +25,8 @@ defaultproperties
 	GreenScreenColor=(R=0.0,G=1.0,B=0.0,A=1.0)
 	ImageFilterIntensity=1.0
 	bCallHandler=false
-	InputLinks(0)=(LinkDesc="On",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=none,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-	InputLinks(1)=(LinkDesc="Off",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=none,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	InputLinks(0)=(LinkDesc="On",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	InputLinks(1)=(LinkDesc="Off",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	VariableLinks.Empty
 	ObjName="Set Replay FX"
 	ObjCategory="TAGame"

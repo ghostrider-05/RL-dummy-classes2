@@ -8,6 +8,6 @@ class ProductStat_TimePlayed_TA extends ProductStat_TA
 
 defaultproperties
 {
-	Label="Time Played"
-	Description="When equipped, this item keeps track of how much time you have played."
+	/**Label="Time Played"*/
+	/**Description="When equipped, this item keeps track of how much time you have played."*/
 }

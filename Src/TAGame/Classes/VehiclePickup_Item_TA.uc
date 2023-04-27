@@ -18,11 +18,11 @@ defaultproperties
 	begin object name=DefaultCollisionCylinder
 		CollisionHeight=120.0
 		CollisionRadius=160.0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__VehiclePickup_Item_TA.DefaultCollisionCylinder'
 	Components(0)=DefaultCollisionCylinder
-	Components(1)=none
+	Components(1)=None
 	RemoteRole=ROLE_SimulatedProxy
 	
 	CollisionComponent=DefaultCollisionCylinder

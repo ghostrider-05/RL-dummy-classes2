@@ -26,8 +26,8 @@ struct native PendingReservation
 
 	structdefaultproperties
 	{
-		Connection=none
-		Message=none
+		Connection=None
+		Message=None
 	}
 };
 

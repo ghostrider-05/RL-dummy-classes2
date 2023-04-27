@@ -16,7 +16,7 @@ struct native TeamEditionOverrides
 
 	structdefaultproperties
 	{
-		ESportsTeam=none
+		ESportsTeam=None
 		Overrides.Empty
 		PaintOverrides.Empty
 	}

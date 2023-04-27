@@ -16,9 +16,9 @@ struct PickupInfo_TA
 
 	structdefaultproperties
 	{
-		AvailablePickups[0]=none
-		AvailablePickups[1]=none
-		AvailablePickups[2]=none
+		AvailablePickups[0]=None
+		AvailablePickups[1]=None
+		AvailablePickups[2]=None
 		bItemsArePreview=false
 	}
 };

@@ -14,5 +14,8 @@ var transient Qword PendingTourID;
 
 defaultproperties
 {
+	/**MatchNotAvailable="Tournament match has ended."*/
+	/**SearchingTitle="Searching"*/
+	/**SearchingBody="Finding server for match..."*/
 	TableName=TournamentSpectate
 }

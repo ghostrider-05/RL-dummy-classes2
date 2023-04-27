@@ -13,6 +13,6 @@ var databinding int Placement;
 defaultproperties
 {
 	TableName=TournamentSubscription
-	ProxyClass=class'TourSettings_TA'
+	
 	bLevelTransitionPersistent=true
 }

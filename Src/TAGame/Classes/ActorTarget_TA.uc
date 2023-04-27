@@ -11,8 +11,8 @@ var() class TargetClass;
 
 defaultproperties
 {
-	Components(0)=none
-	Components(1)=none
+	Components(0)=None
+	Components(1)=None
 	bStatic=true
 	bNoDelete=true
 }

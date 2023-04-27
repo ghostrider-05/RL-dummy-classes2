@@ -20,8 +20,8 @@ struct ChatMessage
 
 	structdefaultproperties
 	{
-		PRI=none
-		Team=none
+		PRI=None
+		Team=None
 		PlayerName=""
 		Message=""
 		ChatChannel=EChatChannel_Match
@@ -39,4 +39,6 @@ var transient GFxData_MultiItemDrops_TA MultiItemDropData;
 
 defaultproperties
 {
+	/**DisconnectedString="Disconnected"*/
+	/**ServerMaintString="Server went down for maintenance"*/
 }

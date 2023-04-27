@@ -11,6 +11,7 @@ var float DOF_InnerRadiusLimit;
 var float DOF_KernelDefault;
 var float DOF_MaxFarDefault;
 var float DOF_DistanceExtent;
+var bool bPostProcessedSettingsCached;
 
 defaultproperties
 {

@@ -10,5 +10,5 @@ var export editinline transient PlayerBanner_TA PlayerBanner;
 defaultproperties
 {
 	TableName=PlayerBanner
-	ProxyClass=class'PlayerBanner_TA'
+	
 }

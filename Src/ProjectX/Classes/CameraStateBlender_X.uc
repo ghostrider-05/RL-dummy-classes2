@@ -15,7 +15,7 @@ struct CameraTransition
 
 	structdefaultproperties
 	{
-		CameraState=none
+		CameraState=None
 		BlendParams=(BlendTime=0.0,BlendFunction=VTBlend_Cubic,BlendExp=2.0,bLockOutgoing=false)
 		RemainingTime=0.0
 		SnapshotPOV=(Focus=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),Distance=0.0,FOV=0.0,CalculatedLocation=(X=0.0,Y=0.0,Z=0.0))
@@ -29,5 +29,5 @@ var transient CameraState_X CameraState;
 
 defaultproperties
 {
-	Transition=(CameraState=none,BlendParams=(BlendTime=0.0,BlendFunction=VTBlend_Cubic,BlendExp=2.0,bLockOutgoing=false),RemainingTime=0.0,SnapshotPOV=(Focus=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),Distance=0.0,FOV=0.0,CalculatedLocation=(X=0.0,Y=0.0,Z=0.0)),bStarted=false)
+	Transition=(CameraState=None,BlendParams=(BlendTime=0.0,BlendFunction=VTBlend_Cubic,BlendExp=2.0,bLockOutgoing=false),RemainingTime=0.0,SnapshotPOV=(Focus=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),Distance=0.0,FOV=0.0,CalculatedLocation=(X=0.0,Y=0.0,Z=0.0)),bStarted=false)
 }

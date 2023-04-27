@@ -9,6 +9,6 @@ var class ChallengeFilter;
 
 defaultproperties
 {
-	SubFolderClass=class'GFxData_ChallengeTab_TA'
+	
 	TableName=ChallengePage
 }

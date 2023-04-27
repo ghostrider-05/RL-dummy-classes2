@@ -17,7 +17,7 @@ struct GFxLogoData
 	structdefaultproperties
 	{
 		AssetName=None
-		Logo=none
+		Logo=None
 		TeamColor=0
 		CustomColor=0
 		DefaultTeamName=""
@@ -49,15 +49,6 @@ var transient int CurrentTeamSize;
 
 defaultproperties
 {
-	PlayerBots(0)=Product_TA'ProductsDB.Products.Bot_Duke'
-	PlayerBots(1)=Product_TA'ProductsDB.Products.Bot_Hunter'
-	PlayerBots(2)=Product_TA'ProductsDB.Products.Bot_Phoenix'
-	PlayerBots(3)=Product_TA'ProductsDB.Products.Bot_Retro'
-	PlayerBots(4)=Product_TA'ProductsDB.Products.Bot_Shadow'
-	PlayerBots(5)=Product_TA'ProductsDB.Products.Bot_Devil'
-	PlayerBots(6)=Product_TA'ProductsDB.Products.Bot_Lucky'
-	PlayerBots(7)=Product_TA'ProductsDB.Products.Bot_Astro'
-	PlayerBots(8)=Product_TA'ProductsDB.Products.Bot_Captain'
-	PlayerBots(9)=Product_TA'ProductsDB.Products.Bot_Dotty'
+	
 	TableName=SeasonMode
 }

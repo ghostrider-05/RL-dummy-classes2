@@ -21,6 +21,10 @@ var const ECustomMatchSettingsType SettingsType;
 defaultproperties
 {
 	MinServerNameLength=3
+	/**AlreadySearchingMessage="Already searching for a private match, please try again later."*/
+	/**AlreadySearchingForPublicMessage="Already matchmaking, please try again later."*/
+	/**ServerNameLengthError="The server name must have at least #MINLENGTH0 characters."*/
+	/**DuplicateLanServerMessage="A LAN match with this name already exits."*/
 	SearchStatusOwner=StatusOwner_PrivateMatch
 	TableName=PrivateMatch
 }

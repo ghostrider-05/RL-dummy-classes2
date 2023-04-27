@@ -9,5 +9,5 @@ class ProductAttribute_Archived_TA extends ProductAttribute_TA
 
 defaultproperties
 {
-	Label="Show Archived"
+	/**Label="Show Archived"*/
 }

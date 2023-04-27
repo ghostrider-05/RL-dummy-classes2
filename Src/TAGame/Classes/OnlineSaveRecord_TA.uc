@@ -15,7 +15,7 @@ struct native OnlineSaveObject
 	{
 		Path=""
 		Data=""
-		DataObj=none
+		DataObj=None
 	}
 };
 

@@ -9,6 +9,6 @@ var databinding string CertifiedStatLabel;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Certified_TA'
+	
 	TableName=ProductAttribute_Certified
 }

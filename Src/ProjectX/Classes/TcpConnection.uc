@@ -43,4 +43,6 @@ var const transient array<byte> BunchBytes;
 
 defaultproperties
 {
+	/**InitialConnectionTimeout=5.0*/
+	/**ConnectionTimeout=15.0*/
 }

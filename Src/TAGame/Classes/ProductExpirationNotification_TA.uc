@@ -12,6 +12,8 @@ var transient OnlineProduct_TA OnlineProduct;
 
 defaultproperties
 {
+	/**ExpiredTitle="Product Expired"*/
+	/**ExpiredBody="{ProductName} has expired."*/
 	bSave=true
 	GFxDataClass=class'GFxData_ProductExpirationNotification_TA'
 }

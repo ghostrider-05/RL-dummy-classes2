@@ -12,6 +12,6 @@ var transient float DesiredPosition;
 
 defaultproperties
 {
-	Children(0)=(Name=Child1,Anim=none,Weight=1.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
-	Children(1)=(Name=Child2,Anim=none,Weight=0.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
+	Children(0)=(Name=Child1,Anim=None,Weight=1.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
+	Children(1)=(Name=Child2,Anim=None,Weight=0.0,BlendWeight=0.0,bMirrorSkeleton=false,bIsAdditive=false,DrawY=0)
 }

@@ -21,6 +21,11 @@ var const localized string CurrencyDelimeter;
 defaultproperties
 {
 	bAllowMicroTransactions=true
+	/**bAllowCurrencyTrading=true*/
 	MaxCurrencyWalletAmount=1000000
 	MaxCurrencyDailyAmount=200000
+	/**FulfillmentRestrictedWalletMessage="Your account inventory is limited to a total of {WalletMax} Credits and Esports Tokens.  Your purchases will be added to your account once you use enough Credits or Esports Tokens to get below the limit and relaunch Rocket League."*/
+	/**FulfillmentRestrictedDailyMessage="Purchases are limited to a total of {DailyMax} Credits and Esports Tokens per day."*/
+	/**FulfillmentRestrictedTitle="Transaction Delayed"*/
+	/**CurrencyDelimeter=","*/
 }

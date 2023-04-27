@@ -23,7 +23,7 @@ struct GFxMapType
 	{
 		MapTypeID=None
 		Label=""
-		MapSet=none
+		MapSet=None
 	}
 };
 
@@ -74,7 +74,7 @@ struct GFxMapPreference
 		MapTypeID=None
 		PlaylistId=None
 		Label=""
-		Thumbnail=none
+		Thumbnail=None
 		Preference=MapPrefType_None
 	}
 };
@@ -92,6 +92,6 @@ defaultproperties
 	PlaylistTypes(0)=(PlaylistTypeID=Global,Label="")
 	PlaylistTypes(1)=(PlaylistTypeID=Casual,Label="")
 	PlaylistTypes(2)=(PlaylistTypeID=Competitive,Label="")
-	MapTypes(0)=(MapTypeID=Standard,Label="",MapSet=MapSet_TA'MapList.Sets.Standard')
+	MapTypes(0)=(MapTypeID=Standard,Label="",MapSet=)
 	TableName=MapPrefs
 }

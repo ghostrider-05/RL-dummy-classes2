@@ -21,9 +21,9 @@ struct DragonEntry
 
 	structdefaultproperties
 	{
-		AnimState=none
+		AnimState=None
 		TeamIndex=0
-		AimOffsetNode=none
+		AimOffsetNode=None
 		DesiredAim=(Pitch=0,Yaw=0,Roll=0)
 		CurrentAim=(Pitch=0,Yaw=0,Roll=0)
 	}
@@ -40,11 +40,8 @@ var transient bool bViewingReplayFile;
 
 defaultproperties
 {
-	AimOffsets(0)=
-	AimOffsets(1)=
-	MaxAims(0)=
-	MaxAims(1)=
-	MinAims(0)=
-	MinAims(1)=
+	
+	
+	
 	bAutoTick=false
 }

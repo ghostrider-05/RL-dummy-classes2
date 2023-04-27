@@ -8,5 +8,5 @@ class GFxData_ChallengeAvaliableNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=ChallengeAvailableNotifications
-	ProxyClass=class'ChallengeAvailableNotification_TA'
+	
 }

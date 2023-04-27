@@ -46,18 +46,18 @@ defaultproperties
 	Replay=ReplayComponent_TA'Default__Ball_Haunted_TA.ReplayComponent0'
 	
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__Ball_Haunted_TA.CollisionCylinder'
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
+	Components(0)=None
 	
 	Components(1)=CollisionCylinder
-	Components(2)=none
+	Components(2)=None
 	Components(3)=GroupComponent_ORS'Default__Ball_Haunted_TA.DefaultRegistryGroup'
 	Components(4)=ReplayComponent_TA'Default__Ball_Haunted_TA.ReplayComponent0'
 	begin object name=DefaultMesh
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__Ball_Haunted_TA.DefaultMesh'
 	Components(5)=DefaultMesh

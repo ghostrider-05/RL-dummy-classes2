@@ -15,8 +15,8 @@ struct native SpecialEditionConfig
 
 	structdefaultproperties
 	{
-		SpecialEdition=none
-		SpecialEditionProductAsset=none
+		SpecialEdition=None
+		SpecialEditionProductAsset=None
 	}
 };
 

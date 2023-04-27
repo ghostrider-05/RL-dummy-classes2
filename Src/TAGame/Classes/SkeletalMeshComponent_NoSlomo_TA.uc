@@ -10,5 +10,5 @@ class SkeletalMeshComponent_NoSlomo_TA extends SkeletalMeshComponent
 
 defaultproperties
 {
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 }

@@ -14,6 +14,6 @@ var() export editinline TourBracketSync_TA BracketSync;
 
 defaultproperties
 {
-	BracketSync=TourBracketSync_TA'Default__GFxData_TourBracket_TA.BracketSync0'
+	
 	TableName=TournamentBracket
 }

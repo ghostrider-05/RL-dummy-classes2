@@ -14,5 +14,5 @@ defaultproperties
 	Typename=TeamEdition
 	bReplicated=true
 	bRequiresDynamicThumbnail=true
-	Label="Team Edition"
+	/**Label="Team Edition"*/
 }

@@ -62,7 +62,7 @@ defaultproperties
 	CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
 	NameplateComponentCar=NameplateComponentCar_TA'Default__Car_TA.NameplateComponentCar0'
 	begin object name=DefaultMesh class=CarMeshComponent_TA
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		LightingChannels=(BSP=false,Static=false)
 	end object
 	// Reference: CarMeshComponent_TA'Default__Car_TA.DefaultMesh'
@@ -79,7 +79,7 @@ defaultproperties
 	begin object name=CollisionCylinder
 		CollisionHeight=32.0
 		CollisionRadius=48.0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		BlockNonZeroExtent=false
 	end object
 	// Reference: CylinderComponent'Default__Car_TA.CollisionCylinder'

@@ -51,5 +51,7 @@ var bool bRecordInput;
 
 defaultproperties
 {
+	/**ControllerURL="127.0.0.1:50000"*/
+	/**PacketSendRate=60.0*/
 	bRecordInput=true
 }

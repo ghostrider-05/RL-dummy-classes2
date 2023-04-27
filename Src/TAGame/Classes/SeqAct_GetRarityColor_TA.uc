@@ -16,19 +16,13 @@ var transient int LastRandomIdx;
 
 defaultproperties
 {
-	RarityColorsPrime(0)=
-	RarityColorsPrime(1)=
-	RarityColorsPrime(2)=
-	RarityColorsPrime(3)=
-	RarityColorsPrime(4)=
-	RarityColorsPrime(5)=
-	RarityColorsPrime(6)=
+	
 	MinimumRandomQuality=EPQ_Rare
 	LastRandomIdx=-1
 	bCallHandler=false
-	VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Int',LinkDesc="Rarity Index",LinkVar=None,PropertyName=ColorIdx,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-	VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Bool',LinkDesc="Random",LinkVar=None,PropertyName=bRandomize,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-	VariableLinks(2)=(ExpectedType=Class'Engine.SeqVar_Vector',LinkDesc="Color",LinkVar=None,PropertyName=OutColor,bWriteable=true,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Int',LinkDesc="Rarity Index",LinkVar=None,PropertyName=ColorIdx,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=None,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Bool',LinkDesc="Random",LinkVar=None,PropertyName=bRandomize,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=None,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	VariableLinks(2)=(ExpectedType=Class'Engine.SeqVar_Vector',LinkDesc="Color",LinkVar=None,PropertyName=OutColor,bWriteable=true,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=None,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	ObjName="Get Rarity Color"
 	ObjCategory="TAGame"
 }

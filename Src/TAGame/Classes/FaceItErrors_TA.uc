@@ -19,16 +19,16 @@ var const ErrorType ReservationSentToIncorrectPlayer;
 
 defaultproperties
 {
-	MatchHasBeenCancelled=ErrorType'Default__FaceItErrors_TA.MatchHasBeenCancelled'
-	CannotJoinCrossPlatformMatch=ErrorType'Default__FaceItErrors_TA.CannotJoinCrossPlatformMatch'
-	CannotJoinWhileInParty=ErrorType'Default__FaceItErrors_TA.CannotJoinWhileInParty'
-	CannotJoinWhilePlayingSplitscreen=ErrorType'Default__FaceItErrors_TA.CannotJoinWhilePlayingSplitscreen'
-	CannotJoinWhileOnline=ErrorType'Default__FaceItErrors_TA.CannotJoinWhileOnline'
-	ReturnToMainMenuToJoin=ErrorType'Default__FaceItErrors_TA.ReturnToMainMenuToJoin'
-	JoinGameFailed=ErrorType'Default__FaceItErrors_TA.JoinGameFailed'
-	NoFaceItMatchFound=ErrorType'Default__FaceItErrors_TA.NoFaceItMatchFound'
-	FaceItGameServerPending=ErrorType'Default__FaceItErrors_TA.FaceItGameServerPending'
-	ExternalMatchServerNotFound=ErrorType'Default__FaceItErrors_TA.ExternalMatchServerNotFound'
-	ReservationSentToIncorrectPlayer=ErrorType'Default__FaceItErrors_TA.ReservationSentToIncorrectPlayer'
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	LocalizationPackage="TAErrors"
 }

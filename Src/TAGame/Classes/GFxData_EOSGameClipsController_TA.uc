@@ -15,5 +15,9 @@ var const localized string ClipAfterReplayMessage;
 
 defaultproperties
 {
+	/**StartClippingMessage="Capturing clip to save to Postparty..."*/
+	/**ClipUploadedMessage="A clip has been saved to Postparty!"*/
+	/**ClipsUploadingMessage="Uploading previous clips, try again in {x}s."*/
+	/**ClipAfterReplayMessage="A clip will be captured after this replay."*/
 	TableName=EOSGameClipsController
 }

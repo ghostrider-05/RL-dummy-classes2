@@ -22,7 +22,7 @@ struct native ShakeReceiver
 
 	structdefaultproperties
 	{
-		Player=none
+		Player=None
 		Scale=0.0
 	}
 };

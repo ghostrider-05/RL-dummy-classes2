@@ -13,9 +13,9 @@ var const ErrorType InvalidItemsInCart;
 
 defaultproperties
 {
-	MtxConfigDisabled=ErrorType'Default__CheckoutErrors_TA.MtxConfigDisabled'
-	SystemOverlayDisabled=ErrorType'Default__CheckoutErrors_TA.SystemOverlayDisabled'
-	TransactionInProgress=ErrorType'Default__CheckoutErrors_TA.TransactionInProgress'
-	InvalidNumberOfItemsInCart=ErrorType'Default__CheckoutErrors_TA.InvalidNumberOfItemsInCart'
-	InvalidItemsInCart=ErrorType'Default__CheckoutErrors_TA.InvalidItemsInCart'
+	
+	
+	
+	
+	
 }

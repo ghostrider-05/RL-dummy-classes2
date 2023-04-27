@@ -8,5 +8,5 @@ class GFxData_Notification_AchievementUnlocked_TA extends GFxData_Notification_T
 defaultproperties
 {
 	TableName=AchievementNotificationUnlocked
-	ProxyClass=class'Notification_AchievementUnlocked_TA'
+	
 }

@@ -14,7 +14,7 @@ var() bool bAttachedRotation;
 
 defaultproperties
 {
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	AbsoluteTranslation=true
 	AbsoluteRotation=true
 }

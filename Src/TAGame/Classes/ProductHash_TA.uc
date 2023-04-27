@@ -15,6 +15,6 @@ struct ProductHashSource
 	{
 		ProductID=0
 		
-		OnlineProduct=none
+		OnlineProduct=None
 	}
 };

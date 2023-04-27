@@ -20,4 +20,8 @@ var transient bool bSearching;
 
 defaultproperties
 {
+	/**NoRegionsMessage="Unable to contact Rocket League? servers, please try again later."*/
+	/**NotLoggedInPsynetMessage="Not logged in to Rocket League? servers."*/
+	/**BannedMessage="You are banned from playing online."*/
+	/**NotPartyLeaderMsg="Only the party leader can start and cancel matchmaking."*/
 }

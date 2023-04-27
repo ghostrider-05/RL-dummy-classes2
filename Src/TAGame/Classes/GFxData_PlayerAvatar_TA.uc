@@ -11,5 +11,5 @@ defaultproperties
 {
 	TableName=Avatars
 	PrimaryKeyName=PlayerID
-	ProxyClass=class'PlayerAvatar_TA'
+	
 }

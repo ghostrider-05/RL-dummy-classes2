@@ -22,6 +22,6 @@ var array<SeriesTeam> Teams;
 
 defaultproperties
 {
-	Teams(0)=(Players=none,GamesWon=0)
-	Teams(1)=(Players=none,GamesWon=0)
+	Teams(0)=(Players=None,GamesWon=0)
+	Teams(1)=(Players=None,GamesWon=0)
 }

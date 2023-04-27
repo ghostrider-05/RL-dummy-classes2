@@ -8,6 +8,6 @@ class ProductStat_MVPs_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="MVPs"
-	Description="When equipped, this item keeps track of how many MVP awards you receive."
+	/**Label="MVPs"*/
+	/**Description="When equipped, this item keeps track of how many MVP awards you receive."*/
 }

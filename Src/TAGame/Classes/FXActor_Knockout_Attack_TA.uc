@@ -19,7 +19,7 @@ var array<FXActorEvent_X> AttackEvents;
 
 defaultproperties
 {
-	AttackEvents(0)=none
+	AttackEvents(0)=None
 	AttackEvents(1)=FXActorEvent_X'FXActorEvents.KO_AttackLight'
 	AttackEvents(2)=FXActorEvent_X'FXActorEvents.KO_AttackHeavy'
 	Parameters=ParameterDispenser_X'Default__FXActor_Knockout_Attack_TA.DefaultParameters'

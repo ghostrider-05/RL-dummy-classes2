@@ -8,5 +8,5 @@ class GFxData_ChallengeReward_TA extends GFxData_ChallengeObject_TA;
 defaultproperties
 {
 	TableName=ChallengeRewards
-	ProxyClass=class'ChallengeReward_TA'
+	
 }

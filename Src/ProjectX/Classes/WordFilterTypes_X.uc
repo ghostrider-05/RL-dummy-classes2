@@ -41,7 +41,7 @@ struct native WordFilterPair
 		Usage=WordFilterUsage_PlayerName
 		bPending=false
 		LastRequestTime=0.0
-		Error=none
+		Error=None
 		
 		
 	}

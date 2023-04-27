@@ -25,6 +25,8 @@ var ProductsConfig_TA ProductsConfig;
 
 defaultproperties
 {
+	/**InvalidProductString="One (or more) products was invalid. Re-enter the menu if your products are not synced "*/
+	/**NotEnoughProductsSelected="Not enough products are selected for a trade-in."*/
 	NumProductsRequiredForTradeIn=5
 	TableName=ProductTradeIn
 }

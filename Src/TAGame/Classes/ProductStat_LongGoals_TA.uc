@@ -8,6 +8,6 @@ class ProductStat_LongGoals_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Long Goals"
-	Description="When equipped, this item keeps track of how many long goals you score."
+	/**Label="Long Goals"*/
+	/**Description="When equipped, this item keeps track of how many long goals you score."*/
 }

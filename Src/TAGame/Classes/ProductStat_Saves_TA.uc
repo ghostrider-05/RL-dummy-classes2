@@ -8,6 +8,6 @@ class ProductStat_Saves_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Saves"
-	Description="When equipped, this item keeps track of how many saves you get."
+	/**Label="Saves"*/
+	/**Description="When equipped, this item keeps track of how many saves you get."*/
 }

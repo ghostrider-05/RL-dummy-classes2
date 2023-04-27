@@ -12,5 +12,5 @@ var databinding bool bAprilFoolsPlaylistImages;
 defaultproperties
 {
 	TableName=UIConfig
-	ProxyClass=class'UIConfig_TA'
+	
 }

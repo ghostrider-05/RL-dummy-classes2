@@ -21,7 +21,7 @@ struct native SkeletalMeshMaterialCache
 
 	structdefaultproperties
 	{
-		TargetMesh=none
+		TargetMesh=None
 		Materials.Empty
 	}
 };

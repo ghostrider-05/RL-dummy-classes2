@@ -11,7 +11,16 @@ enum EAvatarRequestTryGetResult
 	ARTGR_NotFound,
 	ARTGR_False,
 	ARTGR_True,
+	ARTGR_Hidden,
 	ARTGR_MAX
+};
+
+enum EAvatarPermission
+{
+	AP_True,
+	AP_False,
+	AP_Hidden,
+	AP_MAX
 };
 
 var OnlineGame_X OnlineGame;

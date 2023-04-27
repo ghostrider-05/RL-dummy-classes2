@@ -5,20 +5,33 @@
 *******************************************************************************/
 class EpicAccountSave_TA extends SaveObject_TA;
 
+enum EProfilePCSaveVersion
+{
+	EpicAccountSaveVersion_bPrompted,
+	EpicAccountSaveVersion_MAX
+};
+
 struct EpicConvertFriendsSaveData
 {
 	var _Types_Core.OnlinePlatform Platform;
 	var Qword LastPromptTime;
 	var bool bConvertPlatformFriends;
+	var bool bPromptedForConversion;
 
 	structdefaultproperties
 	{
 		Platform=OnlinePlatform_Unknown
 		
 		bConvertPlatformFriends=false
+		bPromptedForConversion=false
 	}
 };
 
 var array<_Types_Core.OnlinePlatform> LinkedPlatforms;
 var array<EpicConvertFriendsSaveData> ConvertFriendsData;
 var array<string> SentEOSFriendInvites;
+
+defaultproperties
+{
+	Version=0
+}

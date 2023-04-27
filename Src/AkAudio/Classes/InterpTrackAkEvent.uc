@@ -15,7 +15,7 @@ struct native AkEventTrackKey
 	structdefaultproperties
 	{
 		Time=0.0
-		Event=none
+		Event=None
 	}
 };
 

@@ -7,6 +7,7 @@ class NotificationSave_TA extends SaveObject_TA;
 
 var array<Notification_TA> Notifications;
 var bool bShowInGameNotifications;
+var bool bShowItemShopNotifications;
 
 defaultproperties
 {

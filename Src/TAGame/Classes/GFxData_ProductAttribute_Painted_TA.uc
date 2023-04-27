@@ -14,6 +14,6 @@ var databinding float ProductPaintDiffLightness;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Painted_TA'
+	
 	TableName=ProductAttribute_Painted
 }

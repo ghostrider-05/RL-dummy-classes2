@@ -8,5 +8,5 @@ class GFxData_ClubsConfig_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=ClubsConfig
-	ProxyClass=class'ClubsConfig_TA'
+	
 }

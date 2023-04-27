@@ -37,7 +37,7 @@ struct FilterProductSlot
 		SlotName=None
 		Label=""
 		PluralLabel=""
-		Icon=none
+		Icon=None
 		bSelected=false
 		bHasNewItems=false
 		SlotIndex=0
@@ -74,7 +74,7 @@ struct FilterProductAttribute
 	{
 		Label=""
 		bSelected=false
-		AttributeClass=none
+		AttributeClass=None
 		PreviewQuantity=0
 		bHidden=false
 	}
@@ -134,6 +134,7 @@ var databinding array<FilterProductSorting> SortingLabels;
 var databinding bool bIgnoreEquipped;
 var transient bool bTradeInScreenSelected;
 var() config bool bAllowDefaultProducts;
+var transient float BatchPreviewQuantityTimer;
 var transient array<EProductFilterType> FilterStack;
 var transient ProductFilter Filters[EProductFilterType];
 var() config array<config string> ProductQualitiesToIgnore;

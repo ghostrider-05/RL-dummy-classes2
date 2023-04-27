@@ -8,6 +8,6 @@ class GFxData_ClubInviteNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=ClubInviteNotifications
-	ProxyClass=class'ClubInviteNotification_TA'
+	
 	bLevelTransitionPersistent=true
 }

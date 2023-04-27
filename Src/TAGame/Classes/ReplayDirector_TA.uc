@@ -33,8 +33,8 @@ struct ReplayScoreData
 
 	structdefaultproperties
 	{
-		ScoredBy=none
-		AssistedBy=none
+		ScoredBy=None
+		AssistedBy=None
 		Speed=0.0
 		Time=0.0
 		ScoreTeam=0

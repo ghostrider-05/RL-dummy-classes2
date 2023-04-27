@@ -7,6 +7,6 @@ class MatchType_PublicRanked_TA extends MatchType_Public_TA;
 
 defaultproperties
 {
-	Components(0)=
+	
 	ForfeitVoteWaitGameTime=90
 }

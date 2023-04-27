@@ -21,7 +21,7 @@ struct StateParams
 
 	structdefaultproperties
 	{
-		State=none
+		State=None
 		Priority=SP_Default
 	}
 };

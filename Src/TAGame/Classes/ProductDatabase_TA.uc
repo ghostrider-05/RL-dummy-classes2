@@ -14,8 +14,8 @@ struct native TemporaryProduct
 
 	structdefaultproperties
 	{
-		AssetPath=""
-		SlotName=None
+		/**AssetPath=""*/
+		/**SlotName=None*/
 	}
 };
 
@@ -41,4 +41,5 @@ var config bool bUseQualityToCheckForOnlineProduct;
 
 defaultproperties
 {
+	/**bUseQualityToCheckForOnlineProduct=true*/
 }

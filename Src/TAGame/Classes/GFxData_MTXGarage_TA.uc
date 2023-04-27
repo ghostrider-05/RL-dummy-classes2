@@ -27,7 +27,7 @@ struct MTXPurchaseInfo
 		Title=""
 		Description=""
 		TabTitle=""
-		Image=none
+		Image=None
 		PurchasePrice=""
 		OriginalPrice=""
 		DiscountPercentage=0
@@ -79,6 +79,7 @@ defaultproperties
 	CatalogCacheDuration=300.0
 	PurchaseTimeoutTime=60.0
 	GetPriceTimeoutTime=10.0
+	/**RegionRestrictedOpenCrate="Sorry, your country’s regulations do not allow for you to open Crates with keys."*/
 	TableName=MTXGarage
 	bLevelTransitionPersistent=true
 }

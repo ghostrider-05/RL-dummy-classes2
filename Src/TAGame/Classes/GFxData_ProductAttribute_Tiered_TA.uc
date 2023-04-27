@@ -9,6 +9,6 @@ var databinding int ProductTier;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Tiered_TA'
+	
 	TableName=ProductAttribute_Tiered
 }

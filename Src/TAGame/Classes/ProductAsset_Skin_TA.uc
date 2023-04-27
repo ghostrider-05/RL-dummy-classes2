@@ -16,7 +16,7 @@ struct native ParameterInformation
 
 	structdefaultproperties
 	{
-		PaintFinishToApply=none
+		PaintFinishToApply=None
 		TextureParameterValues.Empty
 		ScalarParameterValues.Empty
 		VectorParameterValues.Empty
@@ -30,8 +30,8 @@ struct native BodyChassisOverride
 
 	structdefaultproperties
 	{
-		Body=none
-		MaterialOverride=none
+		Body=None
+		MaterialOverride=None
 	}
 };
 

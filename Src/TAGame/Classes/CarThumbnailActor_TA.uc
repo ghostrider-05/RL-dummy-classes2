@@ -12,7 +12,7 @@ var() export editinline CarMeshComponent_TA Mesh;
 defaultproperties
 {
 	begin object name=DefaultCarMesh class=CarMeshComponent_TA
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		LightingChannels=(BSP=false,Static=false)
 	end object
 	// Reference: CarMeshComponent_TA'Default__CarThumbnailActor_TA.DefaultCarMesh'

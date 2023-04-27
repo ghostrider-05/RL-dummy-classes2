@@ -19,7 +19,7 @@ struct PaintColorParameterOverride
 	{
 		PaintParameterName=None
 		PaintType=PaintColorVariant_Primary
-		Paint=none
+		Paint=None
 		CustomColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 	}
 };

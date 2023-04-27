@@ -22,6 +22,6 @@ var class GFxGameClass;
 
 defaultproperties
 {
-	GFxGameClass=class'GFxData_TourBracketGame_TA'
+	
 	TableName=TournamentBracketMatch
 }

@@ -24,5 +24,5 @@ var transient Season_TA Season;
 defaultproperties
 {
 	TableName=Season
-	ProxyClass=class'Season_TA'
+	
 }

@@ -12,5 +12,6 @@ var transient int ClickedControllerIndex;
 
 defaultproperties
 {
+	/**SigningInText="Signing in to Rocket League? servers..."*/
 	TableName=StartMenu
 }

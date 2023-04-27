@@ -9,6 +9,6 @@ var databinding int CurrencyID;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Currency_TA'
+	
 	TableName=ProductAttribute_Currency
 }

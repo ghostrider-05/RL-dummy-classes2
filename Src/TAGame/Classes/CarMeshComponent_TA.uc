@@ -17,10 +17,10 @@ struct native WheelSkelControlSet
 
 	structdefaultproperties
 	{
-		Wheel=none
-		TranslationControl=none
-		SteerControl=none
-		RollControl=none
+		Wheel=None
+		TranslationControl=None
+		SteerControl=None
+		RollControl=None
 	}
 };
 
@@ -52,7 +52,7 @@ defaultproperties
 	BoostFlyHeight=200.0
 	bWantsBoostCameraAdjustment=true
 	bUseSingleBodyPhysics=1
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	RBChannel=RBCC_Vehicle
 	CollideActors=true
 	BlockActors=true

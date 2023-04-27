@@ -7,6 +7,7 @@ class GFxData_Friends_TA extends GFxDataSingleton_X
 	config(Game);
 
 const PartyGroupID = 10;
+const HiddenGroupId = 11;
 
 enum ENameDisplayRelationshipProxy
 {
@@ -35,12 +36,15 @@ var databinding bool bPromptForPin;
 var databinding bool bRequirePinForFriends;
 var const config bool bUsePresenceGroups;
 var bool bCrossplayEnabled;
+var bool bPermissionsInitialized;
 var databinding string ForgotPinURL;
+var GFxData_FriendsHiddenManager_TA HiddenManager;
 var transient Personas_TA PersonasData;
 var transient OnlineGame_X OnlineGame;
 var export editinline transient AccountSettingsComponent_TA AccountSettings;
 var const config array<EPresenceGroup> DefaultPlatformFriendGroups;
 var const config array<EPresenceGroup> DefaultEpicFriendGroups;
+var const config array<EPresenceGroup> DefaultAllFriendGroups;
 var transient OnlineGameParty_X Party;
 var array<Persona_TA> PartyMemberPersonas;
 var GFxData_PersonaGroup_TA PlatformPartyPresenceGroup;
@@ -51,8 +55,14 @@ var int PinGrantPlatform;
 
 defaultproperties
 {
-	RecentPlayers=RecentPlayers_TA'Default__GFxData_Friends_TA.DefaultRecentPlayers'
-	ObservedProfile=OtherPlayerProfile_TA'Default__GFxData_Friends_TA.DefaultObservedProfile'
+	
+	/**bUsePresenceGroups=true*/
+	/**DefaultPlatformFriendGroups(0)=84
+	DefaultPlatformFriendGroups(1)=57*/
+	/**DefaultEpicFriendGroups(0)=84
+	DefaultEpicFriendGroups(1)=57*/
+	/**DefaultAllFriendGroups(0)=83*/
+	
 	TableName=Personas
 	bLevelTransitionPersistent=true
 }

@@ -8,6 +8,6 @@ class ProductStat_Clears_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Clears"
-	Description="When equipped, this item keeps track of how many times you clear the ball on defense."
+	/**Label="Clears"*/
+	/**Description="When equipped, this item keeps track of how many times you clear the ball on defense."*/
 }

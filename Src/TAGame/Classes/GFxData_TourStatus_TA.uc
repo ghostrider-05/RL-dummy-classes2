@@ -10,5 +10,5 @@ var TourStatus_TA Status;
 defaultproperties
 {
 	TableName=TournamentStatus
-	ProxyClass=class'TourStatus_TA'
+	
 }

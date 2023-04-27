@@ -16,7 +16,7 @@ struct native Voter
 
 	structdefaultproperties
 	{
-		PRI=none
+		PRI=None
 		Status=VOTE_Pending
 	}
 };

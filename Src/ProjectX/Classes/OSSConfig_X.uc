@@ -7,3 +7,9 @@ class OSSConfig_X extends OnlineConfig_X
 	config(Engine);
 
 var() config bool bEnablePresence;
+var() float EosInitTimeoutSeconds;
+
+defaultproperties
+{
+	EosInitTimeoutSeconds=15.0
+}

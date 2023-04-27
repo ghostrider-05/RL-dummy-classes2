@@ -14,8 +14,8 @@ struct native EffectsMapping
 
 	structdefaultproperties
 	{
-		PhysicalMaterial=none
-		Particle=none
+		PhysicalMaterial=None
+		Particle=None
 	}
 };
 

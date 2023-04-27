@@ -8,6 +8,6 @@ class ProductStat_AerialGoals_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Aerial Goals"
-	Description="When equipped, this item keeps track of how many aerial goals you score."
+	/**Label="Aerial Goals"*/
+	/**Description="When equipped, this item keeps track of how many aerial goals you score."*/
 }

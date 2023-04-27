@@ -12,5 +12,5 @@ var databinding bool bIsActive;
 defaultproperties
 {
 	TableName=MicroEvent
-	ProxyClass=class'MicroEvent_TA'
+	
 }

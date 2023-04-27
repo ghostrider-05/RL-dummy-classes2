@@ -14,11 +14,11 @@ var const ErrorType EventStoreDisabled;
 
 defaultproperties
 {
-	EventNotFound=ErrorType'Default__SpecialEventErrors_TA.EventNotFound'
-	EventStoreCurrencyExpired=ErrorType'Default__SpecialEventErrors_TA.EventStoreCurrencyExpired'
-	EventStorePurchaseError=ErrorType'Default__SpecialEventErrors_TA.EventStorePurchaseError'
-	EventStoreNotEnoughCurrency=ErrorType'Default__SpecialEventErrors_TA.EventStoreNotEnoughCurrency'
-	EventStoreLimitReached=ErrorType'Default__SpecialEventErrors_TA.EventStoreLimitReached'
-	EventStoreDisabled=ErrorType'Default__SpecialEventErrors_TA.EventStoreDisabled'
+	
+	
+	
+	
+	
+	
 	LocalizationPackage="TAErrors"
 }

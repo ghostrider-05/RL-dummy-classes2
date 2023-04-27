@@ -8,6 +8,6 @@ class ProductStat_Goals_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Goals"
-	Description="When equipped, this item keeps track of how many goals you get."
+	/**Label="Goals"*/
+	/**Description="When equipped, this item keeps track of how many goals you get."*/
 }

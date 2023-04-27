@@ -32,9 +32,9 @@ struct native EngineAudioNativeState
 
 	structdefaultproperties
 	{
-		Component=none
-		Profile=none
-		Car=none
+		Component=None
+		Profile=None
+		Car=None
 		OldCarState=(Throttle=0.0,WheelSpeed=0.0,EngineRPM=0.0,EngineLoad=0.0)
 		CarState=(Throttle=0.0,WheelSpeed=0.0,EngineRPM=0.0,EngineLoad=0.0)
 	}

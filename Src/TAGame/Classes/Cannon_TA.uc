@@ -20,7 +20,7 @@ var repnotify byte FireCount;
 defaultproperties
 {
 	begin object name=SkelComponent0 class=SkeletalMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: SkeletalMeshComponent'Default__Cannon_TA.SkelComponent0'
 	Mesh=SkelComponent0

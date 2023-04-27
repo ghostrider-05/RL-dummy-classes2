@@ -9,7 +9,7 @@ var() OnlineGameReservations_X Reservations;
 
 defaultproperties
 {
-	Components(0)=
+	
 	ForfeitVoteWaitGameTime=60
 	WaitForPlayersTime=30
 	MatchTypeName=Online

@@ -10,8 +10,8 @@ class DebugInput_TA extends PlayerInput within PlayerController_X
 
 defaultproperties
 {
-	MouseSensitivity=10.0
-	Bindings(0)=(Name=Fire,Command="Button bFire | StartFire | OnRelease StopFire",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
+	/**MouseSensitivity=10.0*/
+	/**Bindings(0)=(Name=Fire,Command="Button bFire | StartFire | OnRelease StopFire",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
 	Bindings(1)=(Name=AltFire,Command="StartAltFire | OnRelease StopAltFire",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
 	Bindings(2)=(Name=MoveForward,Command="Axis aBaseY Speed=1.0",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
 	Bindings(3)=(Name=MoveBackward,Command="Axis aBaseY Speed=-1.0",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
@@ -131,5 +131,5 @@ defaultproperties
 	Bindings(117)=(Name=Backslash,Command="Slomo 2",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
 	Bindings(118)=(Name=BackSpace,Command="AI_TogglePausing",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
 	Bindings(119)=(Name=Q,Command="QueryCrosshair",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
-	Bindings(120)=(Name=Escape,Command="OpenMidgameMenu",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)
+	Bindings(120)=(Name=Escape,Command="OpenMidgameMenu",Control=false,Shift=false,Alt=false,bIgnoreCtrl=false,bIgnoreShift=false,bIgnoreAlt=false)*/
 }

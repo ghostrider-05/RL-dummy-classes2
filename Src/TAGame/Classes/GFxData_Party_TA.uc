@@ -34,7 +34,7 @@ struct GFxPartyMember
 		
 		PlayerName=""
 		ProfileId=""
-		PlayerAvatarTexture=none
+		PlayerAvatarTexture=None
 		
 		bSplitScreen=false
 		bLocalSplitScreen=false
@@ -62,6 +62,7 @@ var CrossplayConfig_X CrossplayConfig;
 
 defaultproperties
 {
+	/**RegionRestrictedPlayerTrade="Sorry, your country’s regulations prevent player to player item trading."*/
 	TableName=Party
 	bLevelTransitionPersistent=true
 }

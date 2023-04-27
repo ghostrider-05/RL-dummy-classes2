@@ -14,5 +14,6 @@ defaultproperties
 {
 	DebugShopID=-1
 	bEnableShopMetrics=true
-	ShopTypesForOwnedTracking(0)="Bundle"
+	ShopTypesForOwnedTracking(0)="Featured"
+	ShopTypesForOwnedTracking(1)="Bundle"
 }

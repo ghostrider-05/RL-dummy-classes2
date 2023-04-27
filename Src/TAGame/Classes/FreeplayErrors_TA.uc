@@ -14,10 +14,10 @@ var const ErrorType InvalidBreakoutGame;
 
 defaultproperties
 {
-	NoCar=ErrorType'Default__FreeplayErrors_TA.NoCar'
-	NoBall=ErrorType'Default__FreeplayErrors_TA.NoBall'
-	NoClosestGoal=ErrorType'Default__FreeplayErrors_TA.NoClosestGoal'
-	TeleportFailed=ErrorType'Default__FreeplayErrors_TA.TeleportFailed'
-	InvalidHoopsGoal=ErrorType'Default__FreeplayErrors_TA.InvalidHoopsGoal'
-	InvalidBreakoutGame=ErrorType'Default__FreeplayErrors_TA.InvalidBreakoutGame'
+	
+	
+	
+	
+	
+	
 }

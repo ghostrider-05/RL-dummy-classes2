@@ -12,6 +12,5 @@ var private const export editinline array<private export editinline ParticleSyst
 defaultproperties
 {
     ParticleSystemComponent=none
-    Components=none
     bMovable=false
 }

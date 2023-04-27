@@ -11,7 +11,7 @@ defaultproperties
 	
 	ConstraintSetup=MyConstraintSetup
 	ConstraintInstance=RB_ConstraintInstance'Default__Constraint2D_TA.MyConstraintInstance'
-	Components(0)=none
+	Components(0)=None
 	
 	Components(1)=MyConDrawComponent
 	bNoDelete=false

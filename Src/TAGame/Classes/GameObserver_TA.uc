@@ -15,10 +15,10 @@ struct native BallData
 
 	structdefaultproperties
 	{
-		Ball=none
+		Ball=None
 		Altitude=0.0
 		AerialSkill=0.0
-		LastHitBy=none
+		LastHitBy=None
 		LastHitTime=0.0
 	}
 };
@@ -56,7 +56,7 @@ struct native CarData
 
 	structdefaultproperties
 	{
-		Car=none
+		Car=None
 		Dot=0.0
 		DistToBall=0.0
 		SpeedTowardsBall=0.0
@@ -91,7 +91,7 @@ struct native GoalData
 
 	structdefaultproperties
 	{
-		Goal=none
+		Goal=None
 		GoalFront=(X=0.0,Y=0.0,Z=0.0)
 		GoalForward=(X=0.0,Y=0.0,Z=0.0)
 		DotToBall=0.0

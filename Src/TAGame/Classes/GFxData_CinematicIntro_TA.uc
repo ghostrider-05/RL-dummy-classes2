@@ -8,5 +8,5 @@ class GFxData_CinematicIntro_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=CinematicIntro
-	ProxyClass=class'CinematicIntroSequence_TA'
+	
 }

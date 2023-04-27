@@ -24,11 +24,11 @@ defaultproperties
 	
 	CylinderComponent=DefaultCollisionCylinder
 	begin object name=DefaultCollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__VehiclePickup_Boost_TA.DefaultCollisionCylinder'
 	Components(0)=DefaultCollisionCylinder
-	Components(1)=none
+	Components(1)=None
 	
 	CollisionComponent=DefaultCollisionCylinder
 }

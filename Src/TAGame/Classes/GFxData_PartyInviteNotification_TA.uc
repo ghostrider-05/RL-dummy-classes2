@@ -8,5 +8,5 @@ class GFxData_PartyInviteNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=PartyInviteNotifications
-	ProxyClass=class'PartyInviteNotification_TA'
+	
 }

@@ -41,6 +41,14 @@ var MatchmakingViewFilters_TA TabFilters;
 
 defaultproperties
 {
+	/**NoPlaylistSelectedMessage="Please select a playlist."*/
+	/**NoRegionSelectedMessage="Please select a region."*/
+	/**PartyTooBigMessage="Your party is too large to play online. Try private match instead."*/
+	/**LeavePenaltyMessage="You are banned from matchmaking for [PenaltyHours] hour(s), [PenaltyMinutes] minute(s). Leaving matches creates an unfair match for your teammates, hurts your rank, and will cause increasingly severe punishments."*/
+	/**MatchmakingBanMessage="You are banned from matchmaking for [PenaltyHours] hour(s), [PenaltyMinutes] minute(s)."*/
+	/**PartySkillTooDistant="Party skills must be within [TierCount] tiers to search for a competitive match. [HighPlayerName] is [TierGap] tiers above [LowPlayerName]."*/
+	/**PartyMemberNotOriginalAppOwner="\\"Family Sharing\\" accounts are not eligible for competitive matches. [PlayerName] must own Rocket League? to gain access."*/
+	/**PartyMemberNotLoggedIn="[PlayerName], or one of their splitscreen players, is not logged in to Rocket League? servers."*/
 	TableName=Matchmaking
 	bLevelTransitionPersistent=true
 }

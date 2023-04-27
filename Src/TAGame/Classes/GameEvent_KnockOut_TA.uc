@@ -25,17 +25,17 @@ var float PodiumSpawnLocationZ;
 
 defaultproperties
 {
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_KnockOut_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_KnockOut_TA.DefaultInactiveFpsRecorder'
+	
+	
 	
 	bAllowTeamVoiceChat=false
-	GameFullMessage=Message_TA'Default__GameEvent_KnockOut_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_KnockOut_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_KnockOut_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_KnockOut_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_KnockOut_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_KnockOut_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_KnockOut_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }
 replication
 {

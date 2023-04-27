@@ -44,7 +44,7 @@ struct native BoostMeshMaterialOverride
 
 	structdefaultproperties
 	{
-		Material=none
+		Material=None
 		Index.Empty
 	}
 };
@@ -56,7 +56,7 @@ struct native PreviewParticleOverride
 
 	structdefaultproperties
 	{
-		Template=none
+		Template=None
 		FXAttachmentName=None
 	}
 };

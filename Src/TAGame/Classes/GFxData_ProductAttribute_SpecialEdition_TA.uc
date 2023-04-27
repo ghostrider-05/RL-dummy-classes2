@@ -9,6 +9,6 @@ var databinding string EditionLabel;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_SpecialEdition_TA'
+	
 	TableName=ProductAttribute_SpecialEdition
 }

@@ -12,8 +12,8 @@ struct PlaylistTrack
 
 	structdefaultproperties
 	{
-		Track=none
-		Icon=none
+		Track=None
+		Icon=None
 	}
 };
 

@@ -24,11 +24,11 @@ var transient Actor SpawnedActor;
 defaultproperties
 {
 	bSpawnOnLevelStart=true
-	Components(0)=none
+	Components(0)=None
 	Components(1)=DynamicLightEnvironmentComponent'Default__ArchetypeSpawnPoint_X.MyLightEnvironment'
-	Components(2)=none
-	Components(3)=none
-	Components(4)=none
+	Components(2)=None
+	Components(3)=None
+	Components(4)=None
 	bStatic=true
 	bHidden=true
 	bNoDelete=true

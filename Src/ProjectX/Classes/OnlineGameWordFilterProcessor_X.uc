@@ -13,7 +13,7 @@ struct WordFilterRequest
 
 	structdefaultproperties
 	{
-		Request=none
+		Request=None
 		Comment=""
 		Sanitized=""
 		

@@ -42,6 +42,7 @@ var array<EpicSocialTaskData> UnblockPlayerCallbacks;
 
 defaultproperties
 {
+	/**bRepeatFriendsListDownloadsUntilSuccess=true*/
 	CachedFriends=OnlineFriendMap_X'Default__OnlinePlayerFriends_X.DefaultCachedFriends'
 	PlatformFriends=PlatformFriends_X'Default__OnlinePlayerFriends_X.DefaultPlatformFriends'
 	EpicFriends=EpicFriends_X'Default__OnlinePlayerFriends_X.DefaultEpicFriends'

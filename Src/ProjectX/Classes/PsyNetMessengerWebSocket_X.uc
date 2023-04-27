@@ -13,8 +13,8 @@ struct native QueuedPsyNetMessage
 
 	structdefaultproperties
 	{
-		Message=none
-		Task=none
+		Message=None
+		Task=None
 		TimeoutTime=0.0
 	}
 };

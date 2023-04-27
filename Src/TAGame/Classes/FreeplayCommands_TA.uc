@@ -13,7 +13,7 @@ struct ActivateFreeplayCommandOutParams
 	structdefaultproperties
 	{
 		PreActivationData=(BallLocation=(X=0.0,Y=0.0,Z=0.0),BallVelocity=(X=0.0,Y=0.0,Z=0.0),CarLocation=(X=0.0,Y=0.0,Z=0.0),CarVelocity=(X=0.0,Y=0.0,Z=0.0),CarRotation=(Pitch=0.0,Yaw=0.0,Roll=0.0),MapName="",bCarOnGround=false)
-		ExecutionError=none
+		ExecutionError=None
 	}
 };
 

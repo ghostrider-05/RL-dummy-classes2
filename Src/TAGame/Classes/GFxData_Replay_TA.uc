@@ -10,5 +10,5 @@ var databinding string FriendlyMapName;
 defaultproperties
 {
 	TableName=Replays
-	ProxyClass=class'Replay_Soccar_TA'
+	
 }

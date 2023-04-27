@@ -12,7 +12,7 @@ struct SkillSyncRequest
 
 	structdefaultproperties
 	{
-		RPC=none
+		RPC=None
 		
 		
 	}

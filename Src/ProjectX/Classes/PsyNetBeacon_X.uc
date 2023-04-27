@@ -14,4 +14,5 @@ var PsyNetConfig_X PsyNetConfig;
 
 defaultproperties
 {
+	/**ConnectionTimeoutSeconds=15.0*/
 }

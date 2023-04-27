@@ -26,6 +26,9 @@ var float BlockingSyncStartTime;
 
 defaultproperties
 {
+	/**PsyConfigTemplateURL="https://config.psynet.gg/v2/Config/BattleCars/{BuildID}/{Environment}/{Platform}/{Language}/{QueryParams}"*/
+	/**LocalCacheTimeoutSeconds=6.0*/
+	/**SyncDataTimeoutSeconds=6.0*/
 	bDebug=true
 	CacheTimer=CacheTimer_X'Default__PsyNetStaticData_X.DefaultCacheTimer'
 	

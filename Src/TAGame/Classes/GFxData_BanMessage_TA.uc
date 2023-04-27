@@ -8,6 +8,6 @@ class GFxData_BanMessage_TA extends GFxDataRow_X;
 defaultproperties
 {
 	TableName=BanMessage
-	ProxyClass=Class'ProjectX.BanMessage_X'
+	
 	bLevelTransitionPersistent=true
 }

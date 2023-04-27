@@ -10,5 +10,5 @@ var transient ShopAdsConfig_TA Config;
 defaultproperties
 {
 	TableName=ShopAds
-	ProxyClass=class'ShopAdsConfig_TA'
+	
 }

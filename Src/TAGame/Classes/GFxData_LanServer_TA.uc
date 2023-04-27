@@ -20,5 +20,5 @@ var LanBrowser_X LanBrowser;
 defaultproperties
 {
 	TableName=LanServer
-	ProxyClass=class'LanServerMetaData_TA'
+	
 }

@@ -28,6 +28,12 @@ var const localized string NameHasInvalidCharacters;
 
 defaultproperties
 {
+	/**TagTooShort="Club tag is too short."*/
+	/**TagTooLong="Club tag is too long."*/
+	/**TagHasInvalidCharacters="Club tag contains invalid characters."*/
+	/**NameTooShort="Club name is too short."*/
+	/**NameTooLong="Club name is too long."*/
+	/**NameHasInvalidCharacters="Club name contains invalid characters."*/
 	TableName=Clubs
 	bLevelTransitionPersistent=true
 }

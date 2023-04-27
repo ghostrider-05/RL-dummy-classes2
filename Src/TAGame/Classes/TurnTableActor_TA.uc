@@ -25,7 +25,7 @@ defaultproperties
 	DelayedPreviewSlot=-1
 	TurntableRiseDelay=5.0
 	begin object name=PreviewMesh class=SkeletalMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		CollideActors=true
 		BlockActors=true
 		BlockZeroExtent=true
@@ -37,7 +37,7 @@ defaultproperties
 	Components(0)=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
 	begin object name=SkeletalMeshComponent0
 		Animations=AnimNodeSequence'Default__TurnTableActor_TA.SkeletalMeshComponent0.AnimNodeSeq0'
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		LightEnvironment=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
 	end object
 	// Reference: SkeletalMeshComponent'Default__TurnTableActor_TA.SkeletalMeshComponent0'

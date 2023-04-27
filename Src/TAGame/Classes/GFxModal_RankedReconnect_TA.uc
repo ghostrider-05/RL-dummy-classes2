@@ -11,4 +11,6 @@ var FindServerTask_X Task;
 
 defaultproperties
 {
+	/**ConnectingTitleString="Reconnect"*/
+	/**ConnectingBodyString="Reconnecting..."*/
 }

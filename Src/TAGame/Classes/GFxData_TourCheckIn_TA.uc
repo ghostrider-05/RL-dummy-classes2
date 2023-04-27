@@ -14,5 +14,7 @@ var const localized string MatchmakingCancelledOnCheckIn;
 
 defaultproperties
 {
+	/**TournamentJoinTitle="Joining Tournament"*/
+	/**MatchmakingCancelledOnCheckIn="You have been removed from matchmaking to join an upcoming tournament."*/
 	TableName=TournamentCheckIn
 }

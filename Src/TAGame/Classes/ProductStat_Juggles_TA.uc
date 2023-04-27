@@ -8,6 +8,6 @@ class ProductStat_Juggles_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Juggles"
-	Description="When equipped, this item keeps track of how many juggles you make."
+	/**Label="Juggles"*/
+	/**Description="When equipped, this item keeps track of how many juggles you make."*/
 }

@@ -13,5 +13,5 @@ var transient GFxModal_X ModalProcessing;
 
 defaultproperties
 {
-	ProxyClass=class'Challenge_TA'
+	
 }

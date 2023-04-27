@@ -31,25 +31,25 @@ struct StatEventCollection_KO
 
 	structdefaultproperties
 	{
-		KnockOut=none
-		KnockoutAssist=none
-		Death=none
-		PlayerGrabbed=none
-		PlayerThrown=none
-		Grabbed=none
-		Thrown=none
-		HeavyHit=none
-		LightHit=none
-		AerialHeavyHit=none
-		AerialLightHit=none
-		HitTaken=none
-		HeavyBlock=none
-		LightBlock=none
-		BlockTaken=none
-		DoubleKO=none
-		TripleKO=none
-		MassKO=none
-		Winner=none
+		KnockOut=None
+		KnockoutAssist=None
+		Death=None
+		PlayerGrabbed=None
+		PlayerThrown=None
+		Grabbed=None
+		Thrown=None
+		HeavyHit=None
+		LightHit=None
+		AerialHeavyHit=None
+		AerialLightHit=None
+		HitTaken=None
+		HeavyBlock=None
+		LightBlock=None
+		BlockTaken=None
+		DoubleKO=None
+		TripleKO=None
+		MassKO=None
+		Winner=None
 	}
 };
 

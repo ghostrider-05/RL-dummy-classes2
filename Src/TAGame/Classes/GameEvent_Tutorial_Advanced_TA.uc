@@ -10,14 +10,14 @@ class GameEvent_Tutorial_Advanced_TA extends GameEvent_Tutorial_Basic_TA
 
 defaultproperties
 {
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_Advanced_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Tutorial_Advanced_TA.DefaultInactiveFpsRecorder'
 	
-	GameFullMessage=Message_TA'Default__GameEvent_Tutorial_Advanced_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Tutorial_Advanced_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Tutorial_Advanced_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Tutorial_Advanced_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Tutorial_Advanced_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Tutorial_Advanced_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Tutorial_Advanced_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

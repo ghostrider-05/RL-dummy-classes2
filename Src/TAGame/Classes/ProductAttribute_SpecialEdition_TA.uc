@@ -13,5 +13,5 @@ defaultproperties
 {
 	Typename=SpecialEdition
 	bReplicated=true
-	Label="Special Edition"
+	/**Label="Special Edition"*/
 }

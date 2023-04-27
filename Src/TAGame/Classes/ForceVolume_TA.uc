@@ -31,7 +31,7 @@ defaultproperties
 	
 	BrushComponent=BrushComponent0
 	begin object name=BrushComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		bAcceptsLights=false
 		BlockZeroExtent=true
 		AlwaysLoadOnClient=false

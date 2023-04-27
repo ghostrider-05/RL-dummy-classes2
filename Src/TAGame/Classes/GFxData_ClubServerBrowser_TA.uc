@@ -12,7 +12,7 @@ struct GFxClubServer
 
 	structdefaultproperties
 	{
-		Server=none
+		Server=None
 		ServerName=""
 	}
 };

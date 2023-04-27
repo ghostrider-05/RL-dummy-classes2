@@ -12,9 +12,9 @@ struct PendingError
 
 	structdefaultproperties
 	{
-		Error=none
+		Error=None
 		
-		ModalClass=none
+		ModalClass=None
 	}
 };
 

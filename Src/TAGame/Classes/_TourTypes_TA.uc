@@ -37,7 +37,7 @@ struct TourPlayer
 	{
 		
 		PlayerName=""
-		Avatar=none
+		Avatar=None
 	}
 };
 
@@ -239,7 +239,7 @@ struct TourBracket
 		
 		Teams.Empty
 		Matches.Empty
-		Leaderboard=(TeamGoals=none,PlayerGoals=none,PlayerAssists=none,PlayerSaves=none)
+		Leaderboard=(TeamGoals=None,PlayerGoals=None,PlayerAssists=None,PlayerSaves=None)
 		CurrentPayouts.Empty
 	}
 };
@@ -306,7 +306,7 @@ struct TourCreateSettings
 
 	structdefaultproperties
 	{
-		Settings=none
+		Settings=None
 		PrivateSettings=(Title="",Password="")
 		Rewards.Empty
 	}

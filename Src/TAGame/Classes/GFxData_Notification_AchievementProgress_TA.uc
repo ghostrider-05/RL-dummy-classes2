@@ -8,5 +8,5 @@ class GFxData_Notification_AchievementProgress_TA extends GFxData_Notification_T
 defaultproperties
 {
 	TableName=AchievementNotificationProgress
-	ProxyClass=class'Notification_AchievementProgress_TA'
+	
 }

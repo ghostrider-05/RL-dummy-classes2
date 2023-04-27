@@ -12,7 +12,7 @@ struct native PremiumSkinSetItem
 
 	structdefaultproperties
 	{
-		PremiumSkin=none
+		PremiumSkin=None
 	}
 };
 

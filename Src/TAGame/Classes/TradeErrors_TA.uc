@@ -19,16 +19,16 @@ var const ErrorType TradePlayerNotInParty;
 
 defaultproperties
 {
-	AttemptedCurrencyGifting=ErrorType'Default__TradeErrors_TA.AttemptedCurrencyGifting'
-	AttemptedCurrencyExchange=ErrorType'Default__TradeErrors_TA.AttemptedCurrencyExchange'
-	UserTradeBanned=ErrorType'Default__TradeErrors_TA.UserTradeBanned'
-	TradeNotAllowed=ErrorType'Default__TradeErrors_TA.TradeNotAllowed'
-	OtherPlayerTradeNotAllowed=ErrorType'Default__TradeErrors_TA.OtherPlayerTradeNotAllowed'
-	OtherPlayerBanned=ErrorType'Default__TradeErrors_TA.OtherPlayerBanned'
-	TradeMinLevelNotReached=ErrorType'Default__TradeErrors_TA.TradeMinLevelNotReached'
-	TradeMinPlayTimeNotReached=ErrorType'Default__TradeErrors_TA.TradeMinPlayTimeNotReached'
-	TradeDailyLimitReached=ErrorType'Default__TradeErrors_TA.TradeDailyLimitReached'
-	TradeExceedCurrencyLimit=ErrorType'Default__TradeErrors_TA.TradeExceedCurrencyLimit'
-	TradePlayerNotInParty=ErrorType'Default__TradeErrors_TA.TradePlayerNotInParty'
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	LocalizationPackage="TAErrors"
 }

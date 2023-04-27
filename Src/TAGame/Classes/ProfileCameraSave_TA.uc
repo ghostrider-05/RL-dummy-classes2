@@ -34,6 +34,7 @@ defaultproperties
 	bUseBallCamIndicator=true
 	bEnableCameraShake=true
 	bDirectorAllowCameraBlending=true
+	/**CameraSettingsPreset=CameraSettingsPreset_Custom*/
 	DirectorMinChangeTeamFocusTime=5.0
 	DirectorMinSameTeamFocusTime=4.0
 	MaxProximityDistance=500.0

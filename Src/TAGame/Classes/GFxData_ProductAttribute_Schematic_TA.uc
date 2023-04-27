@@ -7,6 +7,6 @@ class GFxData_ProductAttribute_Schematic_TA extends GFxData_ProductAttribute_TA;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Schematic_TA'
+	
 	TableName=ProductAttribute_Schematic
 }

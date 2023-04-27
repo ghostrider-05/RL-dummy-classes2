@@ -16,14 +16,14 @@ var transient array<BreakOutActor_Platform_TA> Platforms;
 defaultproperties
 {
 	LastScoredOnTeam=255
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Breakout_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Breakout_TA.DefaultInactiveFpsRecorder'
 	
-	GameFullMessage=Message_TA'Default__GameEvent_Breakout_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Breakout_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Breakout_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Breakout_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Breakout_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Breakout_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Breakout_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -16,6 +16,6 @@ var OnlineGameParty_TA OnlineGameParty;
 defaultproperties
 {
 	
-	Profile=OtherPlayerProfile_TA'Default__GFxData_PartyMemberProfile_TA.DefaultProfile'
+	
 	TableName=PartyMemberProfile
 }

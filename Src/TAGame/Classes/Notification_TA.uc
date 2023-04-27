@@ -6,13 +6,14 @@
 class Notification_TA extends Object
 	abstract;
 
-var databinding int NotificationID;
+var databinding int NotificationId;
 var databinding string Title;
 var databinding string Body;
 var databinding bool bPopUp;
 var databinding bool bRemoveAfterDisplayed;
 var databinding bool bPopUpShown;
 var const bool bSave;
+var bool bPauseWhenModalsActive;
 var databinding float PopUpDuration;
 var Qword Expiration;
 var transient NotificationManager_TA NotificationManager;

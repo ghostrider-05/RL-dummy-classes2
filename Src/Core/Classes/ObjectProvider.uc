@@ -13,7 +13,7 @@ struct native ObjectProviderSubscription
 
 	structdefaultproperties
 	{
-		ObjClass=none
+		ObjClass=None
 		
 		bFireOnce=false
 	}
@@ -26,8 +26,8 @@ struct native ObjectPropertyInjection
 
 	structdefaultproperties
 	{
-		Subscriber=none
-		Property=none
+		Subscriber=None
+		Property=None
 	}
 };
 
@@ -38,8 +38,8 @@ struct native InterfacePropertyInjection
 
 	structdefaultproperties
 	{
-		Subscriber=none
-		Property=none
+		Subscriber=None
+		Property=None
 	}
 };
 
@@ -50,7 +50,7 @@ struct native ObjectProviderPendingCallback
 	structdefaultproperties
 	{
 		
-		Value=none
+		Value=None
 	}
 };
 

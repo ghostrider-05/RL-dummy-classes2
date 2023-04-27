@@ -9,6 +9,6 @@ var const ErrorType InvalidSupportACreatorCode;
 
 defaultproperties
 {
-	InvalidSupportACreatorCode=ErrorType'Default__SupportACreatorErrors_TA.InvalidSupportACreatorCode'
+	
 	LocalizationPackage="TAErrors"
 }

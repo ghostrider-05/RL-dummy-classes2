@@ -48,6 +48,7 @@ defaultproperties
 	bIsTradingEnabled=true
 	QuickChatFilter=ChatFilter_Preset
 	DeprecatedVoiceFilter=VoiceFilter_None
+	/**StatEventDisplayLevel=SEDL_Primary*/
 	SafeZoneRatio=1.0
 	UIScale=1.0
 	NameplateScale=1.0

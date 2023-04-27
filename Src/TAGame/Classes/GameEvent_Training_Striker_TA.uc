@@ -10,14 +10,14 @@ class GameEvent_Training_Striker_TA extends GameEvent_Training_TA
 
 defaultproperties
 {
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Training_Striker_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Training_Striker_TA.DefaultInactiveFpsRecorder'
 	
-	GameFullMessage=Message_TA'Default__GameEvent_Training_Striker_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Training_Striker_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Training_Striker_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Training_Striker_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Training_Striker_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Training_Striker_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Training_Striker_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -69,4 +69,6 @@ defaultproperties
 	NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_X.NullSearchStatus0'
 	PartyTimeout=300
 	
+	/**NotInSameOnlineGameError="[PlayerName] is in an online game."*/
+	/**MissingLicenseAgreementError="[PlayerName] has not accepted the license agreement."*/
 }

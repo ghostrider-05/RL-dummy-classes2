@@ -12,5 +12,5 @@ var() string StateName;
 
 defaultproperties
 {
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 }

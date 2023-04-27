@@ -70,8 +70,8 @@ struct native ReplayActorChannel
 
 	structdefaultproperties
 	{
-		Actor=none
-		ActorClass=none
+		Actor=None
+		ActorClass=None
 		actorName=None
 		Recent.Empty
 		StillDirty.Empty
@@ -93,7 +93,7 @@ struct native CarFrameSettings
 	structdefaultproperties
 	{
 		PlayerName=""
-		CarLoadout=(Products=none)
+		CarLoadout=(Products=None)
 		TeamColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 		AccentColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 		PaintIDs.Empty
@@ -190,6 +190,11 @@ var transient CameraTrack_TA CameraTrack;
 
 defaultproperties
 {
+	/**ReserveMegabytes=4*/
+	/**RecordFPS=30.0*/
+	/**KeyframeDelay=10.0*/
+	/**MaxChannels=2047*/
+	/**MaxReplaySizeMB=10*/
 	PlaybackClasses(0)=class'RBActor_TA'
 	PlaybackClasses(1)=class'CarComponent_TA'
 	PlaybackClasses(2)=class'VehiclePickup_TA'

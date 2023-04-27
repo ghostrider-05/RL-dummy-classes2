@@ -8,6 +8,6 @@ class GFxData_ChallengeConfig_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=ChallengeConfig
-	ProxyClass=class'ChallengeConfig_TA'
+	
 	bLevelTransitionPersistent=true
 }

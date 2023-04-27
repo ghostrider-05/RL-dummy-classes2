@@ -12,5 +12,5 @@ defaultproperties
 {
 	
 	BulletScenesCount=2
-	Components(0)=GroupComponent_ORS'Default__GameInfo_GameEditor_TA.DefaultRegistryGroup'
+	
 }

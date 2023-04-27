@@ -9,6 +9,6 @@ var() databinding name TitleId;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_TitleID_TA'
+	
 	TableName=ProductAttribute_Title
 }

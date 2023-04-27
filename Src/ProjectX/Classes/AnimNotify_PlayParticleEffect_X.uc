@@ -9,4 +9,3 @@ class AnimNotify_PlayParticleEffect_X extends AnimNotify_PlayParticleEffect
 	hidecategories(Object);
 
 var export editinline ParticleSystemComponent PSC;
-var AnimNodeSequence CachedAnimSequence;

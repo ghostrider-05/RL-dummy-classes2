@@ -9,6 +9,6 @@ var databinding bool bIndestructible;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Indestructible_TA'
+	
 	TableName=ProductAttribute_Indestructible
 }

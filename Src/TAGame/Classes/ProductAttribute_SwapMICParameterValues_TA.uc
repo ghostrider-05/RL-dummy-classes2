@@ -16,7 +16,7 @@ struct MICSwapParameters
 
 	structdefaultproperties
 	{
-		MICToChange=none
+		MICToChange=None
 		FirstParameter=None
 		SecondParameter=None
 	}

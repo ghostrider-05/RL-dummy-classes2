@@ -16,5 +16,5 @@ defaultproperties
 {
 	ValueKeyName=CertifiedValue
 	Typename=Certified
-	Label="Certified"
+	/**Label="Certified"*/
 }

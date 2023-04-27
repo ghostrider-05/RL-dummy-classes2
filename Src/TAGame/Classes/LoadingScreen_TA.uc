@@ -18,5 +18,29 @@ var bool bComingFromEntry;
 
 defaultproperties
 {
-	LoadingScreenInfo=(InputType=IPT_PC,MapBaseName="",PlaylistName="",MapVariantName="",MaximumPlayerCounts="",ProtipMessage="",Language="",BuildEdition="",ProtipTitle="Pro Tip",WeatherVariant=WeatherVariant_None,LargeMapImage=none,bSetBackgroundVisible=false,bDisplayGenericBackground=false)
+	/**ProtipMessages(0)="You can jump higher by holding down [Jump]."
+	ProtipMessages(1)="Use [ToggleRoll] when falling to land cleanly on your wheels."
+	ProtipMessages(2)="Tap or \\"feather\\" your [Boost] in the air to maintain altitude efficiently."
+	ProtipMessages(3)="Use [Handbrake] to turn more quickly than normal."
+	ProtipMessages(4)="Use your forward Dodge to gain speed without having to use Boost."
+	ProtipMessages(5)="Dodge into the ball at the last moment before impact for extra power on your shots."
+	ProtipMessages(6)="The ball bounces softer off of your car's wheels than the body."
+	ProtipMessages(7)="Holding [Jump] and [Boost] at the same time is the quickest way to gain aerial altitude."
+	ProtipMessages(8)="You can create multiple Car Presets in the Garage to quickly switch between your favorite looks."
+	ProtipMessages(9)="Check out the Custom Training menu to develop your skills using drills created by community members."
+	ProtipMessages(10)="You can build your own practice drills in the Custom Training menu."
+	ProtipMessages(11)="Free Play Training is a great place to warm up while you search for an online game."
+	ProtipMessages(12)="Make sure to save a replay of an awesome moment by holding the \\"Save Replay\\" button."
+	ProtipMessages(13)="Check out all of your saved Replays in the \\"Profile\\" section of the Main Menu."
+	ProtipMessages(14)="Use the \\"Equip to Blue\\" and \\"Equip to Orange\\" buttons in the Garage to customize your car differently per team!"
+	ProtipMessages(15)="Tired of trash talk? Change your Text Chat settings to \\"Team Only\\" in the Options Menu."
+	ProtipMessages(16)="Adjust the appearance of player names above cars with the \\"Nameplate Mode\\" option in the Options menu."
+	ProtipMessages(17)="Gain a wider view of the field by increasing your \\"Field of View\\" setting in the Options menu."
+	ProtipMessages(18)="If you prefer a smoother experience, try toggling off the \\"Camera Shake\\" setting in the Options menu."
+	ProtipMessages(19)="You can re-bind almost any button in the game in the \\"Controls\\" section of the Options menu."
+	ProtipMessages(20)="The \\"Controller Deadzone\\" option lets you make your steering and aerial controls more or less sensitive."
+	ProtipMessages(21)="Get creative with a variety of custom Quick Chat options in the \\"Chat\\" section of the Options menu."
+	ProtipMessages(22)="Reduce how far your camera zooms out when hitting supersonic speeds by increasing \\"Camera Stiffness\\" in the Options Menu."
+	ProtipMessages(23)="Great game? Use the Party Up button after a match to keep playing with the same teammates."*/
+	LoadingScreenInfo=(InputType=IPT_PC,MapBaseName="",PlaylistName="",MapVariantName="",MaximumPlayerCounts="",ProtipMessage="",Language="",BuildEdition="",ProtipTitle="Pro Tip",WeatherVariant=WeatherVariant_None,LargeMapImage=None,bSetBackgroundVisible=false,bDisplayGenericBackground=false)
 }

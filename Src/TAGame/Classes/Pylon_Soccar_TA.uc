@@ -25,18 +25,18 @@ defaultproperties
 	bUseRecast=true
 	
 	CylinderComponent=CollisionCylinder
-	Components(0)=none
-	Components(1)=none
-	Components(2)=none
+	Components(0)=None
+	Components(1)=None
+	Components(2)=None
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__Pylon_Soccar_TA.CollisionCylinder'
 	Components(3)=CollisionCylinder
-	Components(4)=none
-	Components(5)=none
-	Components(6)=none
-	Components(7)=none
+	Components(4)=None
+	Components(5)=None
+	Components(6)=None
+	Components(7)=None
 	
 	CollisionComponent=CollisionCylinder
 }

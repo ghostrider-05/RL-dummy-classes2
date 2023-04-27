@@ -17,12 +17,12 @@ struct native PendingRPC
 
 	structdefaultproperties
 	{
-		RPC=none
+		RPC=None
 		UniqueId=0
 		CreationTime=0.0
 		Failures=0
 		NextSendTime=0.0
-		PendingError=none
+		PendingError=None
 	}
 };
 
@@ -48,7 +48,7 @@ struct native RPCResponse
 	{
 		Id=0
 		Error=(Type="",Message="")
-		Result=none
+		Result=None
 	}
 };
 

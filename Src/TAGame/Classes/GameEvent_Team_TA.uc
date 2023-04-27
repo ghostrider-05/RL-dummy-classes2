@@ -26,13 +26,13 @@ var transient array<ProductAsset_TA> PreloadedBotAssets;
 defaultproperties
 {
 	
-	GameFullMessage=Message_TA'Default__GameEvent_Team_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Team_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Team_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Team_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Team_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Team_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Team_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }
 replication
 {

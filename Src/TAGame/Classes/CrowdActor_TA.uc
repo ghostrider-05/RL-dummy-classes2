@@ -39,7 +39,7 @@ var() CrowdSoundsBase_TA Sounds;
 
 defaultproperties
 {
-	Components(0)=none
+	Components(0)=None
 	RemoteRole=ROLE_SimulatedProxy
 	CollisionType=COLLIDE_CustomDefault
 	bNoDelete=true

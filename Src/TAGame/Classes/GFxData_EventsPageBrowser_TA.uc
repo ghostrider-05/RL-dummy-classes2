@@ -12,5 +12,5 @@ var() EventsPageConfig_TA EventsConfig;
 defaultproperties
 {
 	TableName=EventsPageBrowser
-	ProxyClass=class'EventsPageConfig_TA'
+	
 }

@@ -14,5 +14,5 @@ defaultproperties
 	Typename=Painted
 	bReplicated=true
 	bRequiresDynamicThumbnail=true
-	Label="Painted"
+	/**Label="Painted"*/
 }

@@ -10,5 +10,5 @@ var() TourConfig_TA Config;
 defaultproperties
 {
 	TableName=TournamentConfig
-	ProxyClass=class'TourConfig_TA'
+	
 }

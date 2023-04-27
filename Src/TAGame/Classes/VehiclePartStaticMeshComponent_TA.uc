@@ -11,7 +11,7 @@ var RB_BodySetup BodySetupOverride;
 
 defaultproperties
 {
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	RBChannel=RBCC_EffectPhysics
 	CastShadow=false
 	CollideActors=false

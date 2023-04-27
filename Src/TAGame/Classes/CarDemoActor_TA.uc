@@ -15,7 +15,7 @@ defaultproperties
 	
 	StaticMeshComponent=StaticMeshComponent0
 	begin object name=StaticMeshComponent0 class=StaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		BlockActors=false
 		BlockRigidBody=true
 		AlwaysLoadOnClient=false

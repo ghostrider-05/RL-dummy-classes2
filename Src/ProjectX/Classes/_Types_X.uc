@@ -193,7 +193,7 @@ struct native DownloadedImage
 	structdefaultproperties
 	{
 		URL=""
-		Texture=none
+		Texture=None
 	}
 };
 
@@ -810,7 +810,7 @@ struct CheckReservationResponse
 		Port=0
 		ReservationID=""
 		DSConnectToken=""
-		Keys=none
+		Keys=None
 		IsServerKey=false
 	}
 };
@@ -833,7 +833,7 @@ struct ServerReservationData
 		Region=""
 		ReservationID=""
 		DSRToken=""
-		Keys=none
+		Keys=None
 		JoinName=""
 		JoinPassword=""
 	}
@@ -848,7 +848,7 @@ struct ActiveServerData
 
 	structdefaultproperties
 	{
-		Reservation=(ServerName="",Playlist=0,Region="",ReservationID="",DSRToken="",Keys=none,JoinName="",JoinPassword="")
+		Reservation=(ServerName="",Playlist=0,Region="",ReservationID="",DSRToken="",Keys=None,JoinName="",JoinPassword="")
 		PingURL=""
 		GameURL=""
 		JoinCredentials=""
@@ -880,10 +880,10 @@ struct native ReservationData
 		Status=ReservationStatus_None
 		TimeoutTime=0.0
 		bDisableCrossPlay=false
-		PRI=none
+		PRI=None
 		Team=255
-		ReservationMessage=none
-		Connection=none
+		ReservationMessage=None
+		Connection=None
 		bIgnoreBeaconDisconnect=false
 		Skill=(Mu=25.0,Sigma=8.3330)
 		MapLikes.Empty
@@ -915,7 +915,7 @@ struct MigrationReservationData
 		Skill=(Mu=25.0,Sigma=8.3330)
 		MapLikes.Empty
 		MapDislikes.Empty
-		SecurityKey=none
+		SecurityKey=None
 	}
 };
 
@@ -962,10 +962,10 @@ struct native BumpAngleCurveCheckConfig
 	structdefaultproperties
 	{
 		bEnabled=false
-		BumpAngleCurveYaw=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
-		BumpAngleCurvePitch=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
-		DemolishAngleCurveYaw=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
-		DemolishAngleCurvePitch=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		BumpAngleCurveYaw=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		BumpAngleCurvePitch=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		DemolishAngleCurveYaw=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		DemolishAngleCurvePitch=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
 	}
 };
 
@@ -987,14 +987,14 @@ struct native CarInteractionConfig
 	structdefaultproperties
 	{
 		PushFactor=0.0
-		BumperPushFactorCurveGround=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
-		BumperPushFactorCurveAir=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
-		ZPushFactorCurve=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		BumperPushFactorCurveGround=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		BumperPushFactorCurveAir=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		ZPushFactorCurve=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
 		BumpInterval=0.0
 		COMAngleCheck=(bEnabled=false,BumpAngleYaw=0.0,BumpAnglePitch=0.0,DemolishAngleYaw=0.0,DemolishAnglePitch=0.0)
 		VictimHitAngleCheck=(bEnabled=false,BumpAngleYaw=0.0,BumpAnglePitch=0.0,DemolishAngleYaw=0.0,DemolishAnglePitch=0.0)
 		AttackerHitAngleCheck=(bEnabled=false,BumpAngleYaw=0.0,BumpAnglePitch=0.0,DemolishAngleYaw=0.0,DemolishAnglePitch=0.0)
-		VictimHitAngleCurveCheck=(bEnabled=false,BumpAngleCurveYaw=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents),BumpAngleCurvePitch=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents),DemolishAngleCurveYaw=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents),DemolishAngleCurvePitch=(Points=none,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents))
+		VictimHitAngleCurveCheck=(bEnabled=false,BumpAngleCurveYaw=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents),BumpAngleCurvePitch=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents),DemolishAngleCurveYaw=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents),DemolishAngleCurvePitch=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents))
 		bCheckImpactNormal=false
 		ImpactNormalDotProductDemo=0.0
 		ImpactNormalDotProductBump=0.0
@@ -1074,7 +1074,7 @@ struct PsyNetBeaconPlayerReservation
 	structdefaultproperties
 	{
 		
-		Keys=none
+		Keys=None
 		DSConnectToken=""
 	}
 };

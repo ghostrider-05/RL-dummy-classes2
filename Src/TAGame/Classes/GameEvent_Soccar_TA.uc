@@ -18,11 +18,11 @@ struct MemberTitleStat
 
 	structdefaultproperties
 	{
-		Category=none
-		Title=none
+		Category=None
+		Title=None
 		PointsEarned=0
 		StatCount=0
-		MemberPRI=none
+		MemberPRI=None
 	}
 };
 
@@ -146,21 +146,21 @@ defaultproperties
 	ReplicatedScoredOnTeam=255
 	SlowestGoalSpeed=-1.0
 	BallHasBeenHitStartDelay=5.0
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Soccar_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_Soccar_TA.DefaultInactiveFpsRecorder'
+	
+	
 	LobbyTagOffsetZ=100.0
 	PodiumTagOffsetZ=-20.0
 	BallSpacing=50.0
 	PreMatchPlayersReadyStartDelay=5.0
 	
 	bMultiplayer=true
-	GameFullMessage=Message_TA'Default__GameEvent_Soccar_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Soccar_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Soccar_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Soccar_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Soccar_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Soccar_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Soccar_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }
 replication
 {

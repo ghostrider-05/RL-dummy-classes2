@@ -12,8 +12,8 @@ struct native StatCrowdNoise
 
 	structdefaultproperties
 	{
-		StatEvent=none
-		Noise=none
+		StatEvent=None
+		Noise=None
 	}
 };
 
@@ -25,7 +25,7 @@ struct native BallHitCrowdNoise
 	structdefaultproperties
 	{
 		RelativeSpeed=0.0
-		Noise=none
+		Noise=None
 	}
 };
 
@@ -40,7 +40,7 @@ struct native CrowdDefenseSettings
 	{
 		DefenseZoneTime=0.0
 		DefenseZoneDistance=0.0
-		Sound=none
+		Sound=None
 		ReplayDelay=0.0
 	}
 };

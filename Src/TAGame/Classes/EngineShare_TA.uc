@@ -45,6 +45,7 @@ defaultproperties
 	MaxUploadedClientFrames=30
 	DirtyPhysicsFrame=-1
 	TickNotifyIndex=-1
+	/**ShellArchetypePath="GFxShell.GFx.GFxShell"*/
 	ArchetypeString_OnlineGame="Archetypes.Online.OnlineGame"
 	ArchetypeString_OnlineGameDedicatedServer="Archetypes.Online.OnlineGameDedicatedServer"
 }

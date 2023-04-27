@@ -12,6 +12,6 @@ var transient float LeftoverTime;
 
 defaultproperties
 {
-	Label="Boost Time"
-	Description="When equipped, this item keeps track of how much time you spend boosting."
+	/**Label="Boost Time"*/
+	/**Description="When equipped, this item keeps track of how much time you spend boosting."*/
 }

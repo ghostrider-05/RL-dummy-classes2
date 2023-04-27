@@ -15,8 +15,8 @@ struct MaterialAndMaterialOverride
 
 	structdefaultproperties
 	{
-		MICToOverride=none
-		MICTOOverrideWith=none
+		MICToOverride=None
+		MICTOOverrideWith=None
 	}
 };
 

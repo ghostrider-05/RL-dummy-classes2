@@ -129,7 +129,7 @@ defaultproperties
 	TooManyPlayersMessage=DefaultTooManyPlayersMessage
 	
 	NotPartyLeaderMessage=DefaultNotPartyLeaderMessage
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_TA.DefaultPauseInstance'
+	
 	
 	Components(0)=DefaultRegistryGroup
 	CollisionType=COLLIDE_CustomDefault

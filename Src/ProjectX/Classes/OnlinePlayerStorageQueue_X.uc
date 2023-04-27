@@ -13,8 +13,8 @@ struct PendingStorage
 
 	structdefaultproperties
 	{
-		Data=none
-		DataClass=none
+		Data=None
+		DataClass=None
 		Tick=0
 	}
 };

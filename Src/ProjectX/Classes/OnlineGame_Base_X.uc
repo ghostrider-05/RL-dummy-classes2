@@ -30,4 +30,5 @@ var array<Online_X> OnlineComponents;
 
 defaultproperties
 {
+	/**OnlineSubGameInterfaceName="OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks_PsyNet"*/
 }

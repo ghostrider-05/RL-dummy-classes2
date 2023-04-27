@@ -8,6 +8,6 @@ class ProductStat_ShotsOnGoal_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Shots on Goal"
-	Description="When equipped, this item keeps track of how many times you make a shot on goal."
+	/**Label="Shots on Goal"*/
+	/**Description="When equipped, this item keeps track of how many times you make a shot on goal."*/
 }

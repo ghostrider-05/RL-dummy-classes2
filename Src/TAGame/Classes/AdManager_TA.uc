@@ -15,7 +15,7 @@ struct CachedAdImageData
 	{
 		ImageURL=""
 		
-		ImageTexture=none
+		ImageTexture=None
 	}
 };
 
@@ -31,7 +31,7 @@ struct BillboardUpdateRequestData
 		ZoneID=0
 		MaterialIndex=0
 		MaterialName=""
-		Mesh=none
+		Mesh=None
 	}
 };
 
@@ -53,7 +53,8 @@ var array<BillboardData> BillboardZoneMapping;
 var transient array<BillboardUpdateRequestData> BillboardMeshUpdateRequests;
 var transient OnlineImageDownloaderWeb ImageDownloader;
 var transient int CurrentAdIndex;
-var transient RPC_AdsGet_TA CurrentRPC;
+var AdManagerConfig_TA AdConfig;
+var transient array<AdInfo> Ads;
 
 defaultproperties
 {

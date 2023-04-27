@@ -16,7 +16,7 @@ struct native FXAttachmentSoundOverride
 	structdefaultproperties
 	{
 		FXName=None
-		SoundCue=none
+		SoundCue=None
 	}
 };
 

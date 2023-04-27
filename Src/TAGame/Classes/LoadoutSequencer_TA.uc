@@ -13,10 +13,9 @@ struct SequenceData
 
 	structdefaultproperties
 	{
-		Slot=none
+		Slot=None
 		AnimDelay=0.0
 		bAssetLoaded=false
-	ObjCategory="TAGame"
 	}
 };
 
@@ -28,6 +27,6 @@ var LoadoutData CurrentLoadout;
 
 defaultproperties
 {
-	FinalLoadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
-	CurrentLoadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
+	FinalLoadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	CurrentLoadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 }

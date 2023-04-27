@@ -53,7 +53,7 @@ struct FTELevelData
 	structdefaultproperties
 	{
 		LevelId=""
-		SequenceClass=none
+		SequenceClass=None
 		MapName=""
 		MatchType=""
 		AddedInfo.Empty
@@ -87,7 +87,7 @@ var bool bEnabled;
 
 defaultproperties
 {
-	CurrentActiveGroup=(GroupName=None,RequirementInfo="",TriggerClumps=none,bCanBeDoneAgain=false,GroupUserType=LGT_All,GroupVersion=1,Checkpoints=none)
+	CurrentActiveGroup=(GroupName=None,RequirementInfo="",TriggerClumps=None,bCanBeDoneAgain=false,GroupUserType=LGT_All,GroupVersion=1,Checkpoints=None)
 	CurrentCheckpointIndex=-1
 	bEnabled=true
 }

@@ -16,7 +16,7 @@ struct SpawnArchetypeData
 
 	structdefaultproperties
 	{
-		Archetype=none
+		Archetype=None
 		MaxSpawnCount=0
 	}
 };
@@ -40,15 +40,15 @@ defaultproperties
 	MaxUndoHistory=1000
 	bShowNoScorerGoalMessage=false
 	BallHasBeenHitStartDelay=0.0
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GameEditor_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_GameEditor_TA.DefaultInactiveFpsRecorder'
+	
+	
 	
 	bMultiplayer=false
-	GameFullMessage=Message_TA'Default__GameEvent_GameEditor_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_GameEditor_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_GameEditor_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_GameEditor_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_GameEditor_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_GameEditor_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_GameEditor_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }

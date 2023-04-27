@@ -12,7 +12,7 @@ struct OnlineMapData
 
 	structdefaultproperties
 	{
-		Map=none
+		Map=None
 		Frequency=1.0
 	}
 };
@@ -27,7 +27,7 @@ struct OnlineMapSet
 	{
 		SetName=None
 		Maps.Empty
-		MapSet=none
+		MapSet=None
 	}
 };
 

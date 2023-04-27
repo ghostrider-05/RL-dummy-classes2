@@ -11,7 +11,7 @@ struct native ServiceSubscription
 
 	structdefaultproperties
 	{
-		Class=none
+		Class=None
 		
 	}
 };

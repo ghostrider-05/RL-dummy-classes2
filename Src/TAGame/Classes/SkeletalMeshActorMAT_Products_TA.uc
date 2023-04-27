@@ -13,8 +13,8 @@ struct native BothWheelAssets
 
 	structdefaultproperties
 	{
-		Left=none
-		Right=none
+		Left=None
+		Right=None
 	}
 };
 
@@ -26,6 +26,9 @@ var() ProductAsset_Wheel_TA WheelAsset;
 var() ProductAsset_Boost_TA BoostAsset;
 var() ProductAsset_Attachment_TA AntennaAsset;
 var() ProductAsset_Attachment_TA HatAsset;
+var() ProductPaint_TA BodyPaint;
+var() ProductPaint_TA SkinPaint;
+var() ProductPaint_TA WheelPaint;
 var() bool bInitBoostFX;
 var() bool bUseInGameColors;
 var() LinearColor TeamColor;
@@ -61,7 +64,7 @@ defaultproperties
 	FacialAudioComp=AudioComponent'Default__SkeletalMeshActorMAT_Products_TA.FaceAudioComponent'
 	Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
 	begin object name=SkeletalMeshComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
 	end object
 	// Reference: SkeletalMeshComponent'Default__SkeletalMeshActorMAT_Products_TA.SkeletalMeshComponent0'

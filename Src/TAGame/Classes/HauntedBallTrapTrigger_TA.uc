@@ -30,7 +30,7 @@ defaultproperties
 	
 	StaticMeshComponent=StaticMeshComponent0
 	begin object name=StaticMeshComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		HiddenGame=true
 		CollideActors=false
 		BlockRigidBody=true

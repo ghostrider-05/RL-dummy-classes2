@@ -31,7 +31,7 @@ struct OnlineProductStat
 	structdefaultproperties
 	{
 		
-		ProductStat=none
+		ProductStat=None
 	}
 };
 
@@ -55,8 +55,8 @@ struct ClientLoadoutOnlineDatas
 
 	structdefaultproperties
 	{
-		Loadouts[0]=(Products=none)
-		Loadouts[1]=(Products=none)
+		Loadouts[0]=(Products=None)
+		Loadouts[1]=(Products=None)
 		bLoadoutSet=false
 		bDeprecated=false
 	}
@@ -68,8 +68,8 @@ struct ClientLoadoutDatas
 
 	structdefaultproperties
 	{
-		Loadouts[0]=(Products=none)
-		Loadouts[1]=(Products=none)
+		Loadouts[0]=(Products=None)
+		Loadouts[1]=(Products=None)
 	}
 };
 
@@ -80,7 +80,7 @@ struct StatCooldown
 
 	structdefaultproperties
 	{
-		Stat=none
+		Stat=None
 		UnlockWorldTime=0.0
 	}
 };
@@ -187,8 +187,8 @@ var transient ServerSetLoadoutParams PendingLoadout;
 
 defaultproperties
 {
-	FullLoadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
-	FullLoadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
+	FullLoadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	FullLoadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	CameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0)
 	CameraPitch=128
 	CameraYaw=128
@@ -196,7 +196,7 @@ defaultproperties
 	DodgeInputThreshold=0.50
 	SteeringSensitivity=1.0
 	AirControlSensitivity=1.0
-	PendingLoadout=(Title=XP,Loadouts=(Products=none,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),Loadouts[1]=(Products=none,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)))
+	PendingLoadout=(Title=XP,Loadouts=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),Loadouts[1]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)))
 	
 	Components(0)=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'
 	TickGroup=TG_PreAsyncWork

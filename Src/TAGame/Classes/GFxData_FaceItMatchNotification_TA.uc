@@ -8,5 +8,5 @@ class GFxData_FaceItMatchNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=FaceItNotifications
-	ProxyClass=class'FaceItMatchNotification_TA'
+	
 }

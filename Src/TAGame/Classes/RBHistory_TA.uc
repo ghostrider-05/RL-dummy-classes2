@@ -15,7 +15,7 @@ struct native RBPhysicsSnapshot
 	{
 		RBState=(Quaternion=(X=0.0,Y=0.0,Z=0.0,W=0.0),Location=(X=0.0,Y=0.0,Z=0.0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),Time=0.0,bSleeping=false,bNewData=false)
 		WorldContact=(bHasContact=false,Location=(X=0.0,Y=0.0,Z=0.0),Velocity=(X=0.0,Y=0.0,Z=0.0),Normal=(X=0.0,Y=0.0,Z=0.0))
-		PhysicsVolume=none
+		PhysicsVolume=None
 	}
 };
 

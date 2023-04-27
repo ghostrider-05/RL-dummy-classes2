@@ -12,7 +12,7 @@ struct native SoundPackSoundRef
 
 	structdefaultproperties
 	{
-		Sound=none
+		Sound=None
 		Name=None
 	}
 };

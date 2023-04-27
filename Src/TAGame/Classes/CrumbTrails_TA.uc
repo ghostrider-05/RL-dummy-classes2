@@ -26,8 +26,8 @@ struct CrumbTrailData
 		bCompleteOnlyWhenActive=false
 		bRepeatable=false
 		bManualStart=false
-		ActivationCondition=none
-		CompletionCondition=none
+		ActivationCondition=None
+		CompletionCondition=None
 	}
 };
 

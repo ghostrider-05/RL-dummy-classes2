@@ -9,6 +9,6 @@ var databinding string CreatorName;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_CreatorDetails_TA'
+	
 	TableName=ProductAttribute_CreatorDetails
 }

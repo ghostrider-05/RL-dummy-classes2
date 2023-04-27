@@ -10,5 +10,5 @@ var databinding bool bCanDropOnlineRewards;
 defaultproperties
 {
 	TableName=XPDrops
-	ProxyClass=class'RewardDrop_XP_TA'
+	
 }

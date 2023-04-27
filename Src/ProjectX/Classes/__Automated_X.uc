@@ -4,6 +4,7 @@ enum EWordFilterUsage {
 	EWordFilterUsage_MAX,
 };
 enum ECrossPlatformChatState {
+	PCCS_Everybody,
 	ECrossPlatformChatState_MAX,
 };
 

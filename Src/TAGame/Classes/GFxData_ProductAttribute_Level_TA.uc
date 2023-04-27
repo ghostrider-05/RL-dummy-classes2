@@ -9,6 +9,6 @@ var databinding bool bProductUpgradable;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Level_TA'
+	
 	TableName=ProductAttribute_Level
 }

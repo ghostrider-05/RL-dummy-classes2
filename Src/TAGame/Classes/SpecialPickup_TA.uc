@@ -14,8 +14,8 @@ struct native PickupReplacement
 
 	structdefaultproperties
 	{
-		Body=none
-		Pickup=none
+		Body=None
+		Pickup=None
 	}
 };
 

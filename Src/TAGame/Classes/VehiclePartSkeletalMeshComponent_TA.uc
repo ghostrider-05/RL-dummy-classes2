@@ -13,7 +13,7 @@ defaultproperties
 	bForceRefpose=1
 	bNoSkeletonUpdate=true
 	bUseSingleBodyPhysics=1
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	RBChannel=RBCC_EffectPhysics
 	CastShadow=false
 	BlockRigidBody=true

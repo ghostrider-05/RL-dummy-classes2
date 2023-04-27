@@ -15,7 +15,7 @@ defaultproperties
 {
 	StaticMesh=StaticMesh'GFx_Meshes.NameplatePlane'
 	Materials(0)=Material'GFx_Meshes.PlaneMat_Masked'
-	ReplacementPrimitive=none
+	ReplacementPrimitive=None
 	MotionBlurInstanceScale=0.0
 	bOwnerNoSee=true
 	CastShadow=false

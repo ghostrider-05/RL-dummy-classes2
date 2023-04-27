@@ -16,10 +16,10 @@ struct GFxMusicPlaylist
 	structdefaultproperties
 	{
 		Label=""
-		Icon=none
+		Icon=None
 		bSelected=false
 		PlaylistName=None
-		Playlist=none
+		Playlist=None
 	}
 };
 

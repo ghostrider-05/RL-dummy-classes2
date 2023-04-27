@@ -22,7 +22,7 @@ var transient TournamentSettingsSave_TA TournamentSave;
 
 defaultproperties
 {
-	GFxTourList=GFxTourList_TA'Default__GFxData_TourSearch_TA.GFxTourList0'
-	TourList=TourList_TA'Default__GFxData_TourSearch_TA.TourList0'
+	
+	
 	TableName=TournamentSearch
 }

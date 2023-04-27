@@ -31,6 +31,9 @@ var transient GFxModal_X ModalProcessing;
 defaultproperties
 {
 	OpenTrainingMapBaseCmd="Start $0?Game=TAGame.GameInfo_TrainingEditor_TA?Offline"
+	/**OutOfDateMessage="Local Version Modified"*/
+	/**DownloadingTrainingModeTitleMessage="Downloading"*/
+	/**DownloadingTrainingModeBodyMessage="Downloading Training Sequence"*/
 	TableName=TrainingMode
-	ProxyClass=class'TrainingEditorData_TA'
+	
 }

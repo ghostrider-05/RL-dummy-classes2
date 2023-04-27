@@ -8,5 +8,5 @@ class GFxData_Notification_TA extends GFxDataRow_X
 
 defaultproperties
 {
-	PrimaryKeyName=NotificationID
+	PrimaryKeyName=NotificationId
 }

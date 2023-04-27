@@ -13,7 +13,7 @@ struct native PriorityCandidate
 
 	structdefaultproperties
 	{
-		Candidate=none
+		Candidate=None
 		Priority=0
 		BonusReasons.Empty
 	}

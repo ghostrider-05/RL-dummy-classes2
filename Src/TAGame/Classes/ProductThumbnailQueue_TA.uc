@@ -15,18 +15,20 @@ struct native RenderThumbnailScene
 	var const ThumbnailScene_TA Scene;
 	var const int TextureWidth;
 	var const int TextureHeight;
+	var const int TeamID;
 	var const float NextRenderTime;
 	var const bool bBeingRendered;
 	var const bool bCanceled;
 
 	structdefaultproperties
 	{
-		Thumbnail=none
-		Asset=none
-		OnlineProduct=none
-		Scene=none
+		Thumbnail=None
+		Asset=None
+		OnlineProduct=None
+		Scene=None
 		TextureWidth=0
 		TextureHeight=0
+		TeamID=0
 		NextRenderTime=0.0
 		bBeingRendered=false
 		bCanceled=false
@@ -39,7 +41,7 @@ struct native RenderThumbnailRequest
 
 	structdefaultproperties
 	{
-		Result=(Asset=none,OnlineProduct=none,Thumbnail=none)
+		Result=(Asset=None,OnlineProduct=None,Thumbnail=None)
 		
 	}
 };
@@ -60,4 +62,6 @@ defaultproperties
 	ThumbnailSizes(1)=1024
 	ThumbnailSizes(2)=64
 	ThumbnailSizes(3)=512
+	/**RenderDelay=0.10*/
+	/**RenderCountMax=5*/
 }

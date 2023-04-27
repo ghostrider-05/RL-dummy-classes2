@@ -15,11 +15,11 @@ defaultproperties
 {
 	
 	bMultiplayer=true
-	GameFullMessage=Message_TA'Default__GameEvent_Lobby_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_Lobby_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_Lobby_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_Lobby_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_Lobby_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_Lobby_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_Lobby_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
 }

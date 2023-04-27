@@ -17,10 +17,10 @@ struct native WheelFX
 
 	structdefaultproperties
 	{
-		PSC=none
+		PSC=None
 		Velocity=(X=0.0,Y=0.0,Z=0.0)
 		bHasContact=false
-		SupersonicFXActor=none
+		SupersonicFXActor=None
 		BoneName=None
 		BoneOffset=(X=0.0,Y=0.0,Z=0.0)
 	}

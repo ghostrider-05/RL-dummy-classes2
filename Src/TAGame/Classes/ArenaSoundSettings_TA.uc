@@ -12,8 +12,8 @@ struct native ArenaStatSound
 
 	structdefaultproperties
 	{
-		StatEvent=none
-		Sound=none
+		StatEvent=None
+		Sound=None
 	}
 };
 

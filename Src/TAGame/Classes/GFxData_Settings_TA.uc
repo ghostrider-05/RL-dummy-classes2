@@ -37,6 +37,7 @@ var() ProfileSliderLimits FreeplayBoostFillDelayLimits;
 var const localized string LoadingString;
 var SettingsMenuConfig_TA SettingsConfig;
 var FreeplayConfig_TA FreeplayConfig;
+var ItemShopNotificationsConfig_TA ItemShopNotificationsConfig;
 var const localized string ShowBindingsModal_ErrorMessage;
 var GFxData_UserSetting_TA CrossplaySetting;
 var transient array<GFxData_UserSetting_TA> UserSettings;
@@ -91,8 +92,15 @@ defaultproperties
 	ForceFeedbackScaleLimits=(Min=0.0,Max=3.0,interval=0.10)
 	TrainingGameSpeedLimits=(Min=0.50,Max=1.0,interval=0.050)
 	FreeplayBoostFillDelayLimits=(Min=0.50,Max=3.0,interval=0.250)
+	/**ShowBindingsModal_ErrorMessage="Cannot open Big Picture Mode bindings. Make sure you have selected which controller you want to use."*/
 	
 	SettingObserver=SettingObserver0
 	DefaultDeviceString="DefaultAudio"
+	/**PermissionLevelNotHighEnoughError="Unable to enable voice chat. Epic parental restrictions prevent you from participating in voice chat."*/
+	/**TradePermissionNotHighEnoughError="You are not permitted to trade."*/
+	/**WarnCrossPlatformTournament="Disabling cross-platform play will remove you from your registered tournament. Are you sure you want to disable cross-platform play?"*/
+	/**WarnCrossPlatformTournamentAndParty="Disabling cross-platform play will remove you from your registered tournament and party. Are you sure you want to disable cross-platform play?"*/
+	/**DisableAndLeave="Disable and Leave"*/
+	/**WarnChangingScheduleRegion="This setting will be locked for 24 hours upon entering a tournament.\\n\\nAre you sure you want to change your schedule region?"*/
 	TableName=Settings
 }

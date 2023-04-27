@@ -1,16 +1,19 @@
+import { existsSync } from 'node:fs';
 import { writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 type AnnotationLevel = 'warning' | 'notice' | 'failure'
 
+interface Annotation {
+    file: string
+    line: number
+    message: string
+    title: string
+    annotation_level: AnnotationLevel
+}
+
 export class UnrealFrontendAnnotations {
-    public annotations: {
-        file: string,
-        line: number,
-        message: string,
-        title: string,
-        annotation_level: AnnotationLevel
-    }[] = []
+    public annotations: Annotation[] = []
 
     public lastInvalidLines: string[]
 
@@ -30,13 +33,32 @@ export class UnrealFrontendAnnotations {
         }
     }
 
-    private toAnnotation (type: string): AnnotationLevel | null {
-        const levels: Record<string, AnnotationLevel> = {
-            'warning': 'warning',
-            'error': 'failure'
+    private addAnnotation (annotation: Annotation): void {
+        const filter = (a: Annotation) => {
+            return a.file === annotation.file 
+                && a.line === annotation.line 
+                && a.annotation_level === annotation.annotation_level
         }
 
-        return levels[type.toLowerCase()] ?? null
+        if (this.annotations.some(filter)) {
+            this.annotations.find(filter)!.message += '\n' + annotation.message;
+        } else {
+            this.annotations.push(annotation)
+        }
+    }
+
+    private levels: Record<string, AnnotationLevel> = {
+        'warning': 'warning',
+        'error': 'failure'
+    }
+
+    private getTitle (level: AnnotationLevel): string {
+        const msg = Object
+            .entries(this.levels)
+            .find(([, lvl]) => lvl === level)?.[0]
+            ?? level
+
+        return `Decompile ${msg}`
     }
 
     public log (line: string, options?: { logInvalid?: boolean; prefix?: string }): void {
@@ -45,23 +67,29 @@ export class UnrealFrontendAnnotations {
             return this.addInvalidLine(line);
         }
 
-        const [, file] = line.split(':', 2)
-        const msg = line.slice(file.length + this.drive.length + ': '.length)
+        const [, filePart] = line.split(':', 2)
+        const msg = line.slice(filePart.length + this.drive.length + ': '.length)
 
-        const [pathPart, msgLine] = file.split('Development\\Src\\', 2)[1].split('.uc')
+        const [pathPart, msgLine] = filePart.split('Development\\Src\\', 2)[1].split('.uc')
         const [type, message] = msg.trim().split(', ', 2)
-        const annotation_level = this.toAnnotation(type);
+        const annotation_level = this.levels[type.toLowerCase()] ?? null;
+        const file = ['./Src', ...pathPart.split('\\')].join('/') + '.uc'
 
-        if (annotation_level) this.annotations.push({
+        if (!existsSync(resolve('.', file))) {
+            return console.log(`New annotation on missing file ${file}: ${message}` )
+        }
+
+        if (annotation_level) this.addAnnotation({
             annotation_level,
             line: Number(msgLine.trim().slice(1, -1)),
-            title: `Decompile ${annotation_level !== 'warning' ? 'error' : 'warning'}`,
+            title: this.getTitle(annotation_level),
             message,
-            file: ['./Src', ...pathPart.split('\\')].join('/') + '.uc'
+            file,
         })
     }
 
     public async write (): Promise<void> {
+        console.log(`Writing ${this.annotations.length} annotations`)
         await writeFile(resolve('.', './ci/annotations.json'), JSON.stringify(this.annotations))
     }
 }

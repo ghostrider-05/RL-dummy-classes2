@@ -16,7 +16,7 @@ struct GameEventData
 
 	structdefaultproperties
 	{
-		Archetype=none
+		Archetype=None
 		LaunchOption=""
 		bDestroyCurrentGame=true
 		bAddAllPlayers=true

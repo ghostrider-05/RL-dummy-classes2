@@ -35,32 +35,32 @@ var const ErrorType MatchHasConcluded;
 
 defaultproperties
 {
-	ReplayImport=ErrorType'Default__Errors_TA.ReplayImport'
-	ReplayExport=ErrorType'Default__Errors_TA.ReplayExport'
-	ReplayNoReplay=ErrorType'Default__Errors_TA.ReplayNoReplay'
-	ReplayExportNoSpace=ErrorType'Default__Errors_TA.ReplayExportNoSpace'
-	UpdateRequired=ErrorType'Default__Errors_TA.UpdateRequired'
-	TradeInMaxed=ErrorType'Default__Errors_TA.TradeInMaxed'
-	TransactionInProgress=ErrorType'Default__Errors_TA.TransactionInProgress'
-	OrderNotFound=ErrorType'Default__Errors_TA.OrderNotFound'
-	InventoryOutOfSync=ErrorType'Default__Errors_TA.InventoryOutOfSync'
-	TimedOut=ErrorType'Default__Errors_TA.TimedOut'
-	TrainingModeNotFound=ErrorType'Default__Errors_TA.TrainingModeNotFound'
-	TrainingModeDownloadFailed=ErrorType'Default__Errors_TA.TrainingModeDownloadFailed'
-	TrainingModeInvalidFavoritedCodes=ErrorType'Default__Errors_TA.TrainingModeInvalidFavoritedCodes'
-	TrainingModeListPlayerTrainingFailed=ErrorType'Default__Errors_TA.TrainingModeListPlayerTrainingFailed'
-	TrainingModeAddFailed=ErrorType'Default__Errors_TA.TrainingModeAddFailed'
-	TrainingModeUpdateFailed=ErrorType'Default__Errors_TA.TrainingModeUpdateFailed'
-	TrainingNameInvalid=ErrorType'Default__Errors_TA.TrainingNameInvalid'
-	CodeIsNotValid=ErrorType'Default__Errors_TA.CodeIsNotValid'
-	CodeHasBeenRedeemed=ErrorType'Default__Errors_TA.CodeHasBeenRedeemed'
-	CodeMaxIncorrectAttempts=ErrorType'Default__Errors_TA.CodeMaxIncorrectAttempts'
-	PlayerAlreadyLinked=ErrorType'Default__Errors_TA.PlayerAlreadyLinked'
-	InvalidPlayerPlatformAuth=ErrorType'Default__Errors_TA.InvalidPlayerPlatformAuth'
-	OnlineAchievementsSaveDataNotFound=ErrorType'Default__Errors_TA.OnlineAchievementsSaveDataNotFound'
-	ShopItemPlayerPurchaseMax=ErrorType'Default__Errors_TA.ShopItemPlayerPurchaseMax'
-	MicrotransactionProductPurchaseLimitReached=ErrorType'Default__Errors_TA.MicrotransactionProductPurchaseLimitReached'
-	TwoFactorAuthenticationRequired=ErrorType'Default__Errors_TA.TwoFactorAuthenticationRequired'
-	MatchHasConcluded=ErrorType'Default__Errors_TA.MatchHasConcluded'
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	LocalizationPackage="TAErrors"
 }

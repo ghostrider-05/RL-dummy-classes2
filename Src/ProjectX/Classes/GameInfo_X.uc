@@ -14,7 +14,7 @@ struct native PauserData
 
 	structdefaultproperties
 	{
-		PC=none
+		PC=None
 		PauseNum=0
 	}
 };

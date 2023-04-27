@@ -26,16 +26,15 @@ var() export editinline ProductLoader_TA RandomLoadoutLoader;
 var() export editinline ProductLoader_TA PreviousLoadoutSetLoader;
 var() export editinline ProductLoader_TA NextLoadoutSetLoader;
 var transient LoadoutSequencer_TA LoadoutSequencer;
-var transient ProductSlot_TA SavedSlot;
 var transient int PreviousBodyProductID;
 var transient ProfileLoadoutSave_TA LoadoutSave;
 
 defaultproperties
 {
-	RandomLoadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
-	RandomLoadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
-	RandomLoadoutLoader=ProductLoader_TA'Default__GFxData_LoadoutSets_TA.DefaultLoader0'
-	PreviousLoadoutSetLoader=ProductLoader_TA'Default__GFxData_LoadoutSets_TA.DefaultLoader1'
-	NextLoadoutSetLoader=ProductLoader_TA'Default__GFxData_LoadoutSets_TA.DefaultLoader2'
+	RandomLoadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	RandomLoadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	
+	
+	
 	TableName=LoadoutSets
 }

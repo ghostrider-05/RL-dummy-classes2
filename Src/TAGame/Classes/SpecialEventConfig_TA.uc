@@ -26,7 +26,7 @@ struct SpecialEventStoreConfigs
 	{
 		EventID=0
 		TabTitle=""
-		TabIconTexture=none
+		TabIconTexture=None
 		
 		
 		TabIconImageURL=""

@@ -15,7 +15,7 @@ defaultproperties
 	
 	StaticMeshComponent=StaticMeshComponent0
 	begin object name=StaticMeshComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__GroundStaticMeshActor_TA.StaticMeshComponent0'
 	Components(0)=StaticMeshComponent0

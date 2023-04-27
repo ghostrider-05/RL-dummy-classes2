@@ -9,7 +9,7 @@ var() OnlineGameTournaments_TA Tournaments;
 
 defaultproperties
 {
-	GFxGameClass=class'GFxData_TourDependentGame_TA'
+	
 	TableName=TournamentDependentMatch
 	bLevelTransitionPersistent=true
 }

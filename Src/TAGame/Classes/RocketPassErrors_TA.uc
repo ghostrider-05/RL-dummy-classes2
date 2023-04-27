@@ -14,11 +14,11 @@ var const ErrorType PurchasableNotFound;
 
 defaultproperties
 {
-	InvalidRocketPass=ErrorType'Default__RocketPassErrors_TA.InvalidRocketPass'
-	RocketPassNotActive=ErrorType'Default__RocketPassErrors_TA.RocketPassNotActive'
-	InvalidKey=ErrorType'Default__RocketPassErrors_TA.InvalidKey'
-	PlayerAlreadyPremium=ErrorType'Default__RocketPassErrors_TA.PlayerAlreadyPremium'
-	DoesNotOwnPremium=ErrorType'Default__RocketPassErrors_TA.DoesNotOwnPremium'
-	PurchasableNotFound=ErrorType'Default__RocketPassErrors_TA.PurchasableNotFound'
+	
+	
+	
+	
+	
+	
 	LocalizationPackage="TAErrors"
 }

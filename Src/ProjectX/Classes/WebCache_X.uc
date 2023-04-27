@@ -17,8 +17,8 @@ struct CachedDataRequest
 	{
 		URL=""
 		Path=""
-		Headers=none
-		CachedWebData=none
+		Headers=None
+		CachedWebData=None
 		bZipResponse=false
 		
 	}

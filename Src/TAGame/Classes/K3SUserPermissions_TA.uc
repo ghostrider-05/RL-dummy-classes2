@@ -124,7 +124,7 @@ struct K3SSetting
 
 	structdefaultproperties
 	{
-		Definition=(Options=none,Translations=(en=(Label="",UserNotice="",ParentNotice="")),AgeBracket=(ConsentTypeRequired="",ConsentTypeUnderParentalControl="",DefaultValue="",DefaultParentLimit="",EnforcedLimit=""),PreviousAgeBracket=(ConsentTypeRequired="",ConsentTypeUnderParentalControl="",DefaultValue="",DefaultParentLimit="",EnforcedLimit=""),OrgId="",ProductID="",Namespace="",SettingName="",ValueType="",NumericValueFormat="",AllowProductOverrides="",RestrictiveOrder="",NumberOfDecimals=0,Min=0,Max=0,IncrementOrDecrementBy=0,InheritFromOrg=false,UserHidden=false,UserReadOnly=false,Required=false)
+		Definition=(Options=None,Translations=(en=(Label="",UserNotice="",ParentNotice="")),AgeBracket=(ConsentTypeRequired="",ConsentTypeUnderParentalControl="",DefaultValue="",DefaultParentLimit="",EnforcedLimit=""),PreviousAgeBracket=(ConsentTypeRequired="",ConsentTypeUnderParentalControl="",DefaultValue="",DefaultParentLimit="",EnforcedLimit=""),OrgId="",ProductID="",Namespace="",SettingName="",ValueType="",NumericValueFormat="",AllowProductOverrides="",RestrictiveOrder="",NumberOfDecimals=0,Min=0,Max=0,IncrementOrDecrementBy=0,InheritFromOrg=false,UserHidden=false,UserReadOnly=false,Required=false)
 		
 		
 		Namespace=""

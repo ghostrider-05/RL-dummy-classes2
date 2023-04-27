@@ -8,5 +8,5 @@ class GFxData_FriendRequestNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=FriendRequestNotifications
-	ProxyClass=class'FriendRequestNotification_TA'
+	
 }

@@ -72,6 +72,7 @@ var ETradePermissionLevel DefaultTradePermissionLevel;
 var PlayerPermissions DefaultPermissions;
 var string ForgotPinURL;
 var string ParentalControlsURL;
+var string PrivacyPolicyURL;
 var() config string SandboxId;
 var() config string DeploymentId;
 
@@ -97,4 +98,5 @@ defaultproperties
 	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true)
 	ForgotPinURL="https://rocketleague.com/pin-reset/"
 	ParentalControlsURL="https://rl.gg/cabinedAccounts"
+	PrivacyPolicyURL="https://www.epicgames.com/site/privacypolicy"
 }

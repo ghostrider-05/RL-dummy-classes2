@@ -16,5 +16,5 @@ var class SubFolderClass;
 
 defaultproperties
 {
-	ProxyClass=class'ChallengeFolder_TA'
+	
 }

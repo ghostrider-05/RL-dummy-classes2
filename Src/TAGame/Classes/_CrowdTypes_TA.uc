@@ -22,7 +22,7 @@ struct CrowdExcitementSound
 
 	structdefaultproperties
 	{
-		Sound=none
+		Sound=None
 		Value=0.0
 	}
 };

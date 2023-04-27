@@ -10,5 +10,5 @@ var export editinline transient PlayerAvatarBorder_TA PlayerBorder;
 defaultproperties
 {
 	TableName=PlayerBorders
-	ProxyClass=class'PlayerAvatarBorder_TA'
+	
 }

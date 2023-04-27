@@ -51,8 +51,8 @@ struct native TeamPaintFinish
 
 	structdefaultproperties
 	{
-		TeamFinish=none
-		CustomFinish=none
+		TeamFinish=None
+		CustomFinish=None
 	}
 };
 

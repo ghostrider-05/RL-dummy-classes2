@@ -13,7 +13,7 @@ struct GFxPlayerBannerRef
 	structdefaultproperties
 	{
 		HashID=(Id=0)
-		PlayerBanner=none
+		PlayerBanner=None
 	}
 };
 

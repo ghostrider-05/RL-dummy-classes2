@@ -22,7 +22,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	begin object name=CollisionCylinder
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__Scout_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder

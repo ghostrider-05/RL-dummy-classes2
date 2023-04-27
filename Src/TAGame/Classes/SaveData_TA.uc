@@ -55,11 +55,20 @@ var transient OnlineProductExpirationHelper_TA ExpirationHelper;
 var transient CachedUnlockedProducts_TA CachedUnlockedProducts;
 var transient OnlineDLCProductCache_TA OnlineDLCProductCache;
 var transient array<OnlineProduct_TA> NewProductNotificationQueue;
+var const string RPRewardForCurrentSeason;
+var const string RPRewardForOldSeasons;
+var const string CreditRefundForCurrentSeason;
+var const string CreditRefundForOldSeasons;
 
 defaultproperties
 {
+	/**bEnableOnlineData=true*/
 	ProductTransactions=ProductTransactions_TA'Default__SaveData_TA.DefaultProductTransactions'
 	XPGainPercentage(0)=1.0
 	XPGainPercentage(1)=0.50
 	XPGainPercentage(2)=0.0
+	RPRewardForCurrentSeason="CrewSubscriptionCurrentSeasonReward"
+	RPRewardForOldSeasons="CrewSubscriptionOldSeasonReward"
+	CreditRefundForCurrentSeason="CrewSubscriptionCurrentSeasonRefund"
+	CreditRefundForOldSeasons="CrewSubscriptionOldSeasonRefund"
 }

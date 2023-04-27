@@ -126,13 +126,18 @@ defaultproperties
 	CrosshairTraceExtents(1)=(Extent=(X=100.0,Y=100.0,Z=100.0),minDot=0.70)
 	CrosshairTraceExtents(2)=(Extent=(X=500.0,Y=500.0,Z=500.0),minDot=0.990)
 	RotateActorCameraSide=-1
+	/**MinClientInputRate=20*/
+	/**MedianClientInputRate=40*/
+	/**MaxClientInputRate=60*/
+	/**ConfiguredClientInputRate=60*/
+	/**PlayerReportedMessage="REPORT RECEIVED\\nYour report is being reviewed for disciplinary action.\\nThank you"*/
 	CheatClass=class'CheatManager_TA'
 	InputClass=class'PlayerInput_Game_TA'
-	CylinderComponent=none
+	CylinderComponent=None
 	
-	NavigationHandleClass=none
+	NavigationHandleClass=None
 	Components(0)=GroupComponent_ORS'Default__PlayerController_TA.DefaultRegistryGroup'
-	CollisionComponent=none
+	CollisionComponent=None
 }
 replication
 {

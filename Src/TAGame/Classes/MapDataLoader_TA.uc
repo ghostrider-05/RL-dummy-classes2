@@ -12,8 +12,8 @@ struct native MapSelectorPair
 
 	structdefaultproperties
 	{
-		MapSet=none
-		Selector=none
+		MapSet=None
+		Selector=None
 	}
 };
 
@@ -25,7 +25,7 @@ struct native MapImageLoadRequest
 
 	structdefaultproperties
 	{
-		MapData=none
+		MapData=None
 		PackageName=None
 		AssetPath=""
 		

@@ -22,9 +22,9 @@ struct ShopAdData
 		IdleImageURL=""
 		HoverImageURL=""
 		ClickImageURL=""
-		IdleImage=none
-		HoverImage=none
-		ClickImage=none
+		IdleImage=None
+		HoverImage=None
+		ClickImage=None
 		bOpenURLInCoherent=false
 		Section=None
 		Link=""

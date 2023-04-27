@@ -16,7 +16,7 @@ struct native MaxActorCallback
 
 	structdefaultproperties
 	{
-		Actor=none
+		Actor=None
 		EnabledDelegates.Empty
 		DisabledDelegates.Empty
 		bEnabled=false

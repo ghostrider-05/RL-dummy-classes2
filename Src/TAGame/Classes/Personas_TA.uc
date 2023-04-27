@@ -15,4 +15,5 @@ var OnlineGame_X OnlineGame;
 
 defaultproperties
 {
+	/**DeletedAccountDisplayName="Deleted"*/
 }

@@ -21,12 +21,12 @@ var array<LensFlare> LensFlareTeamList;
 defaultproperties
 {
 	begin object name=LensFlareComponent0 class=LensFlareComponent_X
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: LensFlareComponent_X'Default__GoalIndicator_TA.LensFlareComponent0'
 	LensFlareComponent=LensFlareComponent0
 	begin object name=StaticMeshComponent0 class=StaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__GoalIndicator_TA.StaticMeshComponent0'
 	StaticMeshComponent=StaticMeshComponent0

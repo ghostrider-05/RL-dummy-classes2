@@ -10,5 +10,7 @@ var() const localized string SuccessBody;
 
 defaultproperties
 {
+	/**SuccessTitle="Success"*/
+	/**SuccessBody="Your accounts are now linked!"*/
 	TableName=PlatformAuth
 }

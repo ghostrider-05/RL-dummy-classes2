@@ -12,7 +12,7 @@ struct native BeaconMessageHandler
 
 	structdefaultproperties
 	{
-		MessageClass=none
+		MessageClass=None
 		Delegates.Empty
 	}
 };

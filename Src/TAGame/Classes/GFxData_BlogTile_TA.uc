@@ -13,5 +13,5 @@ var databinding bool bNewInfo;
 defaultproperties
 {
 	TableName=BlogTiles
-	ProxyClass=Class'ProjectX.BlogTile_X'
+	
 }

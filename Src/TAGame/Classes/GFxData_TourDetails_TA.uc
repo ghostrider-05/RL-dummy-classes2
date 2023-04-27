@@ -20,5 +20,5 @@ var databinding bool bCanCheckIn;
 defaultproperties
 {
 	TableName=TournamentDetails
-	ProxyClass=class'TourSettings_TA'
+	
 }

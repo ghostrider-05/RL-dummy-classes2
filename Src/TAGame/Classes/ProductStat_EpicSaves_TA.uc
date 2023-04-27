@@ -8,6 +8,6 @@ class ProductStat_EpicSaves_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Epic Saves"
-	Description="When equipped, this item keeps track of how many epic saves you make."
+	/**Label="Epic Saves"*/
+	/**Description="When equipped, this item keeps track of how many epic saves you make."*/
 }

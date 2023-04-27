@@ -43,6 +43,16 @@ var EOSVoiceConfig_TA VoiceConfig;
 
 defaultproperties
 {
+	/**PartyRoomTitle="Party Channel"*/
+	/**MatchRoomTitle="Team Channel"*/
+	/**SettingDisabledTitle="Voice Disabled"*/
+	/**SettingDisabledDesc="Voice chat is currently disabled in your settings."*/
+	/**MatchTypeTitle="Team"*/
+	/**PartyTypeTitle="Party"*/
+	/**SpectatorRoomTitle="Spectator Channel"*/
+	/**SpectatorTypeTitle="Spectator"*/
+	/**RemotePlayerJoinedRoom="[PlayerName] has joined the [VoiceRoomType] Voice Channel"*/
+	/**PlayerJoinedRoom="You have joined the [VoiceRoomType] Voice Channel"*/
 	TableName=EOSVoiceRoom
 	bLevelTransitionPersistent=true
 }

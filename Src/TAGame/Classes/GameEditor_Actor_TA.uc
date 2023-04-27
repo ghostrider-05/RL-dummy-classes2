@@ -19,7 +19,7 @@ var transient FXActor_X FXActor;
 defaultproperties
 {
 	begin object name=StaticComponent0 class=StaticMeshComponent
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__GameEditor_Actor_TA.StaticComponent0'
 	Mesh=StaticComponent0
@@ -30,7 +30,7 @@ defaultproperties
 	begin object name=DefaultCollisionCylinder class=CylinderComponent
 		CollisionHeight=50.0
 		CollisionRadius=50.0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		CollideActors=true
 		BlockActors=true
 	end object

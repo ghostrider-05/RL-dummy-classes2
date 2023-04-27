@@ -8,5 +8,5 @@ class GFxData_GarageSlotDropGroup_TA extends GFxData_ItemDropGroup_TA;
 defaultproperties
 {
 	TableName=GarageSlotDropGroup
-	ProxyClass=class'GarageSlotDropGroup_TA'
+	
 }

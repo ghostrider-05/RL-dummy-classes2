@@ -8,6 +8,6 @@ class ProductStat_Baskets_TA extends ProductStat_SoccarEventBase_TA
 
 defaultproperties
 {
-	Label="Dunks"
-	Description="When equipped, this item keeps track of how many dunks you get."
+	/**Label="Dunks"*/
+	/**Description="When equipped, this item keeps track of how many dunks you get."*/
 }

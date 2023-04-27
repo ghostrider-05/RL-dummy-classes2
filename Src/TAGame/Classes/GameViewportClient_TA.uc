@@ -23,7 +23,9 @@ defaultproperties
 {
 	UIScaleModifier=1.0
 	NameplateScaleModifier=1.0
-	MaxSplitScreenPlayers=4
+	/**SplitscreenPlayerLeftTournamentTitle="Unsubscribed from Tournament"*/
+	/**SplitscreenPlayerLeftTournamentBody="You have been removed from the pending tournament because a splitscreen player left. Please rejoin if you would like to participate."*/
+	/**MaxSplitScreenPlayers=4*/
 	Default2PSplitType=eSST_2P_VERTICAL
 	Default3PSplitType=eSST_3P_FAVOR_SIDELEFT
 	

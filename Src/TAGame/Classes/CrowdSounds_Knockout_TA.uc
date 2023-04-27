@@ -18,14 +18,14 @@ var() CrowdExcitementSounds Grab;
 
 defaultproperties
 {
-	HeavyHit=(Name=HeavyHit,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	LightHit=(Name=LightHit,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	AerialHeavyHit=(Name=AerialHeavyHit,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	AerialLightHit=(Name=AerialLightHit,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	HeavyBlock=(Name=HeavyBlock,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	LightBlock=(Name=LightBlock,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	KnockOut=(Name=KnockOut,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	Death=(Name=Death,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	Throw=(Name=Throw,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
-	Grab=(Name=Grab,Cooldown=5.0,Sounds=none,CompareType=CVT_Excitement,LastPlayed=0.0)
+	HeavyHit=(Name=HeavyHit,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	LightHit=(Name=LightHit,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	AerialHeavyHit=(Name=AerialHeavyHit,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	AerialLightHit=(Name=AerialLightHit,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	HeavyBlock=(Name=HeavyBlock,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	LightBlock=(Name=LightBlock,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	KnockOut=(Name=KnockOut,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	Death=(Name=Death,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	Throw=(Name=Throw,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	Grab=(Name=Grab,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
 }

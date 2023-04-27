@@ -9,6 +9,6 @@ var databinding bool bMagicKey;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Key_TA'
+	
 	TableName=ProductAttribute_ContainerKey
 }

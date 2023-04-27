@@ -16,5 +16,6 @@ var array<PlayerActorIDPair> PlayerActorIDMap;
 
 defaultproperties
 {
+	/**MaxRecordSizeMB=10*/
 	CollisionType=COLLIDE_CustomDefault
 }

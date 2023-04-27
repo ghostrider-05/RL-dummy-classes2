@@ -8,5 +8,5 @@ class GFxData_RewardDropGroup_TA extends GFxData_ItemDropGroup_TA;
 defaultproperties
 {
 	TableName=RewardDropGroup
-	ProxyClass=class'RewardDropGroup_TA'
+	
 }

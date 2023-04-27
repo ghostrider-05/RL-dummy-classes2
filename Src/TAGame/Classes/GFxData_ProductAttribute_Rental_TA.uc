@@ -9,6 +9,6 @@ var databinding int RentalLength;
 
 defaultproperties
 {
-	AttributeClass=class'ProductAttribute_Rental_TA'
+	
 	TableName=ProductAttribute_Rental
 }

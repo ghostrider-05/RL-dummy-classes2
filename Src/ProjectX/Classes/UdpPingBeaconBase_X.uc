@@ -16,4 +16,5 @@ var BeaconConfig_X Config;
 
 defaultproperties
 {
+	/**SocketErrorLogDelaySeconds=5*/
 }

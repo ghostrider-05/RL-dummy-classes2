@@ -6,3 +6,9 @@
 class MultiItemDropConfig_TA extends OnlineConfig_X;
 
 var() bool bDropChallengeRewardsAsGroup;
+var() Texture CrewRocketPassDropIcon;
+
+defaultproperties
+{
+	CrewRocketPassDropIcon=Texture2D'ItemContainer_Thumbnails.Icon_RPPremium_Large'
+}

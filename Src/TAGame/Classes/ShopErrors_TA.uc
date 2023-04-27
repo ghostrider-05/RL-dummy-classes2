@@ -12,9 +12,9 @@ var const ErrorType ShopNotEnoughCurrency;
 
 defaultproperties
 {
-	ShopItemBadData=ErrorType'Default__ShopErrors_TA.ShopItemBadData'
-	ShopItemDiscountBadData=ErrorType'Default__ShopErrors_TA.ShopItemDiscountBadData'
-	ShopSyncedBadData=ErrorType'Default__ShopErrors_TA.ShopSyncedBadData'
-	ShopNotEnoughCurrency=ErrorType'Default__ShopErrors_TA.ShopNotEnoughCurrency'
+	
+	
+	
+	
 	LocalizationPackage="TAErrors"
 }

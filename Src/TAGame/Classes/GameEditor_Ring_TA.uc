@@ -21,7 +21,7 @@ struct ActorTouchRecordData
 
 	structdefaultproperties
 	{
-		Actor=none
+		Actor=None
 		TouchDirection=(X=0.0,Y=0.0,Z=0.0)
 	}
 };
@@ -34,7 +34,7 @@ defaultproperties
 {
 	MaxRadius=425.0
 	begin object name=StaticComponent0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		BlockRigidBody=true
 		RBCollideWithChannels=(Vehicle=true,GameplayPhysics=true,EffectPhysics=true,Ball=true)
 	end object
@@ -44,7 +44,7 @@ defaultproperties
 	begin object name=DefaultCollisionCylinder
 		CollisionHeight=335.0
 		CollisionRadius=335.0
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		BlockActors=false
 		BlockZeroExtent=false
 		BlockNonZeroExtent=false

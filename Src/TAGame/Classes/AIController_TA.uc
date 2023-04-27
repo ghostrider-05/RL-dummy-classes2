@@ -16,9 +16,9 @@ struct native CachedTargetData
 
 	structdefaultproperties
 	{
-		Target=none
+		Target=None
 		Index=0
-		Data=(Location=(X=0.0,Y=0.0,Z=0.0),Velocity=(X=0.0,Y=0.0,Z=0.0),Gravity=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),Radius=0.0,Bounce=0.0,Actor=none,Vehicle=none)
+		Data=(Location=(X=0.0,Y=0.0,Z=0.0),Velocity=(X=0.0,Y=0.0,Z=0.0),Gravity=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),Radius=0.0,Bounce=0.0,Actor=None,Vehicle=None)
 		CacheTime=0.0
 	}
 };
@@ -32,9 +32,9 @@ struct native CachedProxyData
 
 	structdefaultproperties
 	{
-		Type=none
+		Type=None
 		Index=0
-		Data=(Location=(X=0.0,Y=0.0,Z=0.0),Velocity=(X=0.0,Y=0.0,Z=0.0),Gravity=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),Radius=0.0,Bounce=0.0,Actor=none,Vehicle=none)
+		Data=(Location=(X=0.0,Y=0.0,Z=0.0),Velocity=(X=0.0,Y=0.0,Z=0.0),Gravity=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),Radius=0.0,Bounce=0.0,Actor=None,Vehicle=None)
 		CacheTime=0.0
 	}
 };

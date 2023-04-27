@@ -36,7 +36,7 @@ struct ESportEventData
 		UTCEndTime=""
 		bStartingSoon=false
 		bLiveNow=false
-		ImageTexture=none
+		ImageTexture=None
 		ImageTextureSizeX=0
 		ImageTextureSizeY=0
 		StartTime=""

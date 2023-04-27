@@ -17,7 +17,7 @@ defaultproperties
 	begin object name=PreviewRadius0 class=DrawSphereComponent
 		SphereColor=(R=173,G=239,B=231,A=255)
 		SphereSides=32
-		ReplacementPrimitive=none
+		ReplacementPrimitive=None
 		AbsoluteScale=true
 	end object
 	// Reference: DrawSphereComponent'Default__BallRadiusVolume_TA.PreviewRadius0'

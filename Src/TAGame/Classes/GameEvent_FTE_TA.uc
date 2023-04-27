@@ -15,14 +15,14 @@ defaultproperties
 {
 	MaxTimeToShowInstructions=30
 	InvalidTeamNum=255
-	ActiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_FTE_TA.DefaultActiveFpsRecorder'
-	InactiveFpsRecorder=FpsBucketRecorder_TA'Default__GameEvent_FTE_TA.DefaultInactiveFpsRecorder'
 	
-	GameFullMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultGameFullMessage'
-	OtherActiveMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultOtherActiveMessage'
-	NotEnoughPlayersMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultNotEnoughPlayersMessage'
-	TooManyPlayersMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultTooManyPlayersMessage'
-	NotPartyLeaderMessage=Message_TA'Default__GameEvent_FTE_TA.DefaultNotPartyLeaderMessage'
-	PauseInstance=PauseStaticDataSync_X'Default__GameEvent_FTE_TA.DefaultPauseInstance'
-	Components(0)=GroupComponent_ORS'Default__GameEvent_FTE_TA.DefaultRegistryGroup'
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

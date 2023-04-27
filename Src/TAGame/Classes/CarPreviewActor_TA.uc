@@ -45,13 +45,13 @@ defaultproperties
 	
 	CarMesh=DefaultCarMesh
 	SupersonicFakeSpeed=-2000.0
-	Loadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
-	OldLoadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=none,Products=none)
+	Loadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	OldLoadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	bAddToCarPreviewList=true
 	PreviewTeam=-1
 	Ak=AkParamGroup'Default__CarPreviewActor_TA.DefaultAkParamGroup'
-	Components(0)=none
-	Components(1)=none
+	Components(0)=None
+	Components(1)=None
 	Components(2)=AkParamGroup'Default__CarPreviewActor_TA.DefaultAkParamGroup'
 	CollisionType=COLLIDE_CustomDefault
 }

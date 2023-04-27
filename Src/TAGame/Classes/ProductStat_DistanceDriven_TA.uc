@@ -10,6 +10,6 @@ var transient Vector OldLocation;
 
 defaultproperties
 {
-	Label="Distance Driven"
-	Description="When equipped, this item keeps track of how much distance you cover on the ground."
+	/**Label="Distance Driven"*/
+	/**Description="When equipped, this item keeps track of how much distance you cover on the ground."*/
 }

@@ -13,7 +13,7 @@ struct PlayerClubSyncResult
 	structdefaultproperties
 	{
 		
-		Error=none
+		Error=None
 	}
 };
 

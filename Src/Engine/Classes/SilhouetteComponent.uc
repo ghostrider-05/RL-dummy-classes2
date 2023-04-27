@@ -17,5 +17,5 @@ defaultproperties
     FadeDistance=500.0
     SilhouetteColor=(R=0.0,G=0.0,B=0.0,A=1.0)
     ReplacementPrimitive=none
-    DepthPriorityGroup=ESceneDepthPriorityGroup.SDPG_Foreground
+    DepthPriorityGroup=SDPG_Foreground
 }

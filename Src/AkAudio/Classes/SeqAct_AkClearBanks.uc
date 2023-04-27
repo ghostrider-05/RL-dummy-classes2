@@ -9,7 +9,7 @@ class SeqAct_AkClearBanks extends SequenceAction
 
 defaultproperties
 {
-	InputLinks(0)=(LinkDesc="ClearBanks",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=none,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+	InputLinks(0)=(LinkDesc="ClearBanks",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	VariableLinks.Empty
 	ObjName="AkClearBanks"
 	ObjCategory="AkAudio"

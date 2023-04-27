@@ -16,4 +16,7 @@ var const localized string ExtraModeCategory;
 defaultproperties
 {
 	PlaylistClass=class'GameSettingPlaylist_X'
+	/**CompetitiveCategory="Competitive"*/
+	/**CasualCategory="Casual"*/
+	/**ExtraModeCategory="Extra Modes"*/
 }

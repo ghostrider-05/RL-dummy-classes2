@@ -17,6 +17,7 @@ var const int MaxPacketSize;
 
 defaultproperties
 {
+	/**LanAnnouncePort=14001*/
 	MessageComponent=OnlineMessageComponent_X'Default__LanBeacon_X.DefaultMessageComponent'
 	MaxPacketSize=1024
 }

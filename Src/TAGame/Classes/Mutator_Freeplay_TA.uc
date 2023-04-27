@@ -12,7 +12,7 @@ struct RumbleItemIndex
 
 	structdefaultproperties
 	{
-		PC=none
+		PC=None
 		ItemIndex=0
 	}
 };

@@ -8,5 +8,5 @@ class GFxData_GenericNotification_TA extends GFxData_Notification_TA;
 defaultproperties
 {
 	TableName=GenericNotifications
-	ProxyClass=class'GenericNotification_TA'
+	
 }

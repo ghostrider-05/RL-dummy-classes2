@@ -16,7 +16,7 @@ struct native JiggleCarData
 
 	structdefaultproperties
 	{
-		HitVehicle=none
+		HitVehicle=None
 		JiggleAxis=(X=0.0,Y=0.0,Z=0.0)
 		JiggleStartLocation=(X=0.0,Y=0.0,Z=0.0)
 		JiggleStartTime=0.0
