@@ -62,88 +62,55 @@ var() const DataAssetDatabase_ESportsTeam_TA ESportsTeamDB;
 
 defaultproperties
 {
-	Products=ProductDatabase_TA'ProductsDB.Database.ProductsDB'
-	XPManager=XPManager_TA'XPManager.XPManager'
+	
+	
 	MaxTeamSize=3
-	ProductSlots(0)=ProductSlot_TA'ProductSlots.Body'
-	ProductSlots(1)=ProductSlot_TA'ProductSlots.Skin'
-	ProductSlots(2)=ProductSlot_TA'ProductSlots.Wheels'
-	ProductSlots(3)=ProductSlot_TA'ProductSlots.Boost'
-	ProductSlots(4)=ProductSlot_TA'ProductSlots.Antenna'
-	ProductSlots(5)=ProductSlot_TA'ProductSlots.Hat'
-	ProductSlots(6)=ProductSlot_TA'ProductSlots.Front'
-	ProductSlots(7)=ProductSlot_TA'ProductSlots.PaintFinish'
-	ProductSlots(8)=ProductSlot_TA'ProductSlots.Bot'
-	ProductSlots(9)=ProductSlot_TA'ProductSlots.Logo'
-	ProductSlots(10)=ProductSlot_TA'ProductSlots.Underglow'
-	ProductSlots(11)=ProductSlot_TA'ProductSlots.PremiumInventory'
-	ProductSlots(12)=ProductSlot_TA'ProductSlots.CustomFinish'
-	ProductSlots(13)=ProductSlot_TA'ProductSlots.EngineAudio'
-	ProductSlots(14)=ProductSlot_TA'ProductSlots.SupersonicTrail'
-	ProductSlots(15)=ProductSlot_TA'ProductSlots.GoalExplosion'
-	ProductSlots(16)=ProductSlot_TA'ProductSlots.PlayerBanner'
-	ProductSlots(17)=ProductSlot_TA'ProductSlots.GarageComplexRow'
-	ProductSlots(18)=ProductSlot_TA'ProductSlots.MusicStingers'
-	ProductSlots(19)=ProductSlot_TA'ProductSlots.PlayerAvatar'
-	ProductSlots(20)=ProductSlot_TA'ProductSlots.PlayerAvatarBorder'
-	ProductSlots(21)=ProductSlot_TA'ProductSlots.PlayerTitle'
-	ProductSlots(22)=ProductSlot_TA'ProductSlots.ESportsTeam'
-	ProductSlots(23)=ProductSlot_TA'ProductSlots.Archive'
-	ProductSlots(24)=ProductSlot_TA'ProductSlots.Blueprint'
-	ProductSlots(25)=ProductSlot_TA'ProductSlots.ShopItem'
-	ProductSlots(26)=ProductSlot_TA'ProductSlots.Currency'
-	ProductSlots(27)=ProductSlot_TA'ProductSlots.GiftPack'
-	SlotLoadOrder(0)=ProductSlot_TA'ProductSlots.Body'
-	SlotLoadOrder(1)=ProductSlot_TA'ProductSlots.Wheels'
-	SlotLoadOrder(2)=ProductSlot_TA'ProductSlots.Skin'
-	SlotLoadOrder(3)=ProductSlot_TA'ProductSlots.Boost'
-	SlotLoadOrder(4)=ProductSlot_TA'ProductSlots.Hat'
-	SlotLoadOrder(5)=ProductSlot_TA'ProductSlots.Antenna'
-	BodySlot=ProductSlot_TA'ProductSlots.Body'
-	SkinSlot=ProductSlot_TA'ProductSlots.Skin'
-	WheelSlot=ProductSlot_TA'ProductSlots.Wheels'
-	BoostSlot=ProductSlot_TA'ProductSlots.Boost'
-	AntennaSlot=ProductSlot_TA'ProductSlots.Antenna'
-	HatSlot=ProductSlot_TA'ProductSlots.Hat'
-	FrontSlot=ProductSlot_TA'ProductSlots.Front'
-	PaintFinishSlot=ProductSlot_TA'ProductSlots.PaintFinish'
-	BotSlot=ProductSlot_TA'ProductSlots.Bot'
-	LogoSlot=ProductSlot_TA'ProductSlots.Logo'
-	UnderGlowSlot=ProductSlot_TA'ProductSlots.Underglow'
-	PremiumInventorySlot=ProductSlot_TA'ProductSlots.PremiumInventory'
-	CustomFinishSlot=ProductSlot_TA'ProductSlots.CustomFinish'
-	EngineAudioSlot=ProductSlot_TA'ProductSlots.EngineAudio'
-	SupersonicTrailSlot=ProductSlot_TA'ProductSlots.SupersonicTrail'
-	GoalExplosionSlot=ProductSlot_TA'ProductSlots.GoalExplosion'
-	PlayerBannerSlot=ProductSlot_TA'ProductSlots.PlayerBanner'
-	PlayerTitleSlot=ProductSlot_TA'ProductSlots.PlayerTitle'
-	ESportsTeamSlot=ProductSlot_TA'ProductSlots.ESportsTeam'
-	ArchiveSlot=ProductSlot_TA'ProductSlots.Archive'
-	AllSlot=ProductSlot_TA'ProductSlots.All'
-	ShopItemSlot=ProductSlot_TA'ProductSlots.ShopItem'
-	CurrencySlot=ProductSlot_TA'ProductSlots.Currency'
-	PlayerAvatarSlot=ProductSlot_TA'ProductSlots.PlayerAvatar'
-	PlayerAvatarBorderSlot=ProductSlot_TA'ProductSlots.PlayerAvatarBorder'
-	GiftPackSlot=ProductSlot_TA'ProductSlots.GiftPack'
-	BlueprintSlot=ProductSlot_TA'ProductSlots.Blueprint'
-	MusicStingersSlot=ProductSlot_TA'ProductSlots.MusicStingers'
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	AlwaysLoadedContentArchetype="Archetypes.Misc.AlwaysLoadedContent"
 	TeamArchetypePaths(0)="Archetypes.Teams.Team0"
 	TeamArchetypePaths(1)="Archetypes.Teams.Team1"
-	TeamArchetypes(0)=Team_Soccar_TA'Archetypes.Teams.Team0'
-	TeamArchetypes(1)=Team_Soccar_TA'Archetypes.Teams.Team1'
+	
 	GameModeListPath="Archetypes.GameInfo.GameModes"
-	GameModeList=GameModeList_TA'Archetypes.GameInfo.GameModes'
+	
 	DefaultLoadouts[0]=(TeamPaint=(TeamFinishID=270,CustomFinishID=270,Team=0,TeamColorID=35,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
 	DefaultLoadouts[1]=(TeamPaint=(TeamFinishID=270,CustomFinishID=270,Team=1,TeamColorID=33,CustomColorID=0,bSet=false),Title=XP,TeamIndex=1,OnlineProducts=None,Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
 	DefaultClientLoadout=(Products=(23,0,376,63,0,0,0,270,0,0,0,0,270,0,1948,1903,0,0,0,0,0,0,0,0,0,0,0,0))
-	CustomColorSet=CarColorSet_TA'CarColors.Accent'
-	ClubColorSet=CarColorSet_TA'CarColors.Clubs'
-	ClubColorSet_v1=CarColorSet_TA'CarColors.CustomTeam'
-	PlayerBannerColorSet=CarColorSet_TA'CarColors.PlayerBanners'
-	PlayerVanityColorSet=CarColorSet_TA'CarColors.PlayerVanity'
-	MapList=MapList_TA'MapList.MapList'
-	GlobalLookupTexture=GlobalLookupTexture_TA'CustomColors.GlobalColorLookup'
+	
+	
+	
+	
+	
+	
+	
 	OnlineProductAttributes(0)=class'ProductAttribute_Certified_TA'
 	OnlineProductAttributes(1)=class'ProductAttribute_Painted_TA'
 	OnlineProductAttributes(2)=class'ProductAttribute_Quality_TA'
@@ -162,8 +129,8 @@ defaultproperties
 	OnlineProductAttributes(15)=class'ProductAttribute_BlueprintCost_TA'
 	OnlineProductAttributes(16)=class'ProductAttribute_Currency_TA'
 	OnlineProductAttributes(17)=class'ProductAttribute_NoNotify_TA'
-	PaintDB=PaintDatabase_TA'ProductPaint.Database.PaintDB'
-	CertifiedStatDB=CertifiedStatDatabase_TA'CertifiedStat.Database.CertifiedStatDB'
-	SpecialEditionDB=SpecialEditionDatabase_TA'ProductSpecialEdition.Database.SpecialEditionDB'
-	ESportsTeamDB=DataAssetDatabase_ESportsTeam_TA'ESportsTeamDatabase.Database.ESportsTeamDB'
+	
+	
+	
+	
 }

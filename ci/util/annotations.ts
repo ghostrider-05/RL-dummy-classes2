@@ -41,7 +41,7 @@ export class UnrealFrontendAnnotations {
         }
 
         if (this.annotations.some(filter)) {
-            this.annotations.find(filter)!.message += '\n' + annotation.message;
+            return;
         } else {
             this.annotations.push(annotation)
         }
@@ -73,7 +73,7 @@ export class UnrealFrontendAnnotations {
         const [pathPart, msgLine] = filePart.split('Development\\Src\\', 2)[1].split('.uc')
         const [type, message] = msg.trim().split(', ', 2)
         const annotation_level = this.levels[type.toLowerCase()] ?? null;
-        const file = ['./Src', ...pathPart.split('\\')].join('/') + '.uc'
+        const file = ['Src', ...pathPart.split('\\')].join('/') + '.uc'
 
         if (!existsSync(resolve('.', file))) {
             return console.log(`New annotation on missing file ${file}: ${message}` )
