@@ -11,4 +11,5 @@ jobs:
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           title: 'annotate'
-          input: './annotations.json'
+          input: annotations.json
+          ignore-missing-file: false
