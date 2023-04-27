@@ -90,6 +90,6 @@ export class UnrealFrontendAnnotations {
 
     public async write (): Promise<void> {
         console.log(`Writing ${this.annotations.length} annotations`)
-        await writeFile(resolve('.', './ci/annotations.json'), JSON.stringify(this.annotations))
+        await writeFile(resolve('.', './annotations.json'), JSON.stringify(this.annotations))
     }
 }
