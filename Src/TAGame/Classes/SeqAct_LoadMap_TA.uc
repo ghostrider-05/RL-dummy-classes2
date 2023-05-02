@@ -7,6 +7,7 @@ class SeqAct_LoadMap_TA extends SequenceAction
 	forcescriptorder(true)
 	hidecategories(Object);
 
+/** The in-game file name to load. Example: "Park_P" for Beckwith Park */
 var() string Map;
 
 defaultproperties

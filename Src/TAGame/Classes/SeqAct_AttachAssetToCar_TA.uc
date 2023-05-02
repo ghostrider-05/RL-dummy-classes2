@@ -10,6 +10,14 @@ class SeqAct_AttachAssetToCar_TA extends SequenceAction
 var() StaticMesh StaticMeshToAttach;
 var() SkeletalMesh SkeletalMeshToAttach;
 var() ParticleSystem ParticleSystemToAttach;
+/**
+Available car bones:
+- HatSocket
+- FrontSocket
+- AntennaSocket
+- Underglow
+- chassis_jnt
+*/
 var() name BoneToAttachTo;
 
 defaultproperties

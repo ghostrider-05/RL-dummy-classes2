@@ -53,7 +53,36 @@ Name="Player's name"
 Id="Players ID"
 bBot="Bot or human?"
 
-# TODO: add more structures from _Types_TA
+[_Types_TA.Structures.SeasonPlayerStat]
+PlayerIndex="Players Index"
+StatName="Stat name"
+StatValue="Stat value"
+
+[_Types_TA.Structures.SeasonTeam]
+Name="Team's name"
+LogoAsset="Team's logo (name of logo asset, not texture path)"
+EliminationWeek="Week when this team got eliminated from playoffs"
+
+[_Types_TA.Structures.SeasonMatch]
+Week="Which week this match will take place"
+Team0="The two teams playing in this match. -1 if not determined yet"
+Team1="The two teams playing in this match. -1 if not determined yet"
+Score0="Final score of the match. 0 if not played yet."
+Score1="Final score of the match. 0 if not played yet."
+Winner="Who won this match. -1 if it hasn't been played yet."
+
+[_Types_TA.Structures.CycleButtonItem]
+Label="Value to display to user"
+Value="Value used internally"
+
+[_Types_TA.Structures.StoredProductData]
+SlotIndex="Product data stored on disk. Avoid direct object references to speed up loading and GC ProductSlot we belong to"
+Name="name of the asset"
+RequiredProductID="This product must be equipped for us to be equipped"
+PackID="The pack we belong to"
+UnlockMethod="How we get unlocked"
+bPublic="Cook for public builds"
+bPack="This is a pack(folder) of products"
 
 [AIController_Soccar_TA.Variables]
 BallProxyType="Targets used by the behavior tree"
@@ -514,6 +543,28 @@ CurrentWeek="How many weeks into the season we are. This will exceed NumRegularW
 [SeqAct_AddGameBall_TA.Variables]
 bWake="Causes the ball to be unmoveable"
 BallArchetype="A custom archetype for the ball to spawn: Ball_TA'{Package}.Group.My_ball'.\nRepeat multiple Add Game Ball with possible packages for map swapping\nExample:https://github.com/RocketLeagueMapmaking/Kismet/blob/master/general/AddCustomGameBall.txt"
+
+[SeqAct_AttachAssetToCar_TA.Variables]
+# TODO: add descriptions on where the bone is located
+BoneToAttachTo="Available car bones:\n- HatSocket\n- FrontSocket\n- AntennaSocket\n- Underglow\n- chassis_jnt"
+
+[SeqAct_ConcatenateStrings_TA.Variables]
+ConcatenateWithSpace="Concatenate with a space between the values"
+
+[SeqAct_GiveBoost_TA.Variables]
+BoostAmount="The amount of boost to give, a float between 0.0 and 1.0.\nTo remove boost, teleport a player to a boostpad with negative boost and back.\nTo give infinite boost, use the give super boost input."
+
+[SeqAct_IsActionPressed_TA.Variables]
+ActionName="The name of the action to check. Check My Games > Rocket League > TAGame > TAInput.ini for a list of actions"
+
+[SeqAct_LoadMap_TA.Variables]
+Map="The in-game file name to load. Example: \"Park_P\" for Beckwith Park"
+
+[SeqAct_SetTutorialGameEvent_TA.Variables]
+TutorialType="See the output links of SeqAct_GetTutorialType_TA for all valid types"
+
+[SeqEvent_GameEventStateChanged_TA.Variables]
+StateName="Names:\n- WaitingForPlayers\n- Countdown\n- Active\n- PostGoalScored\n- ReplayPlayback\n- PrePodiumSpotligh\n- PodiumSpotlight\n- Finished"
 
 [SkeletalMeshComponent_TA.Variables]
 FOVOverride="Override the FOV we render with"

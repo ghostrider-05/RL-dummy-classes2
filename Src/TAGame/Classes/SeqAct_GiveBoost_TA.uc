@@ -8,6 +8,11 @@ class SeqAct_GiveBoost_TA extends SequenceAction
 	hidecategories(Object);
 
 var Actor Instigator;
+/**
+The amount of boost to give, a float between 0.0 and 1.0.
+To remove boost, teleport a player to a boostpad with negative boost and back.
+To give infinite boost, use the give super boost input.
+*/
 var() float BoostAmount;
 
 defaultproperties
