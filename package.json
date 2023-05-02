@@ -4,8 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "decompile": "node -r dotenv/config ./dist/decompile.js",
+    "extract": "node -r dotenv/config ./dist/extract.js",
     "prestart": "tsc && node ./dist/prestart.js",
-    "start": "node -r dotenv/config ./dist/start.js"
+    "start": "npm run extract && npm run decompile"
   },
   "dependencies": {
     "@iarna/toml": "2.2.5",
