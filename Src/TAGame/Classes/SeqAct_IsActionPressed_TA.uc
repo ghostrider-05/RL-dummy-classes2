@@ -8,6 +8,7 @@ class SeqAct_IsActionPressed_TA extends SequenceAction
 	hidecategories(Object);
 
 var Actor Instigator;
+/** The name of the action to check. Check My Games > Rocket League > TAGame > TAInput.ini for a list of actions */
 var() name ActionName;
 
 defaultproperties

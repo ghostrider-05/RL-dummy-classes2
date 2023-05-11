@@ -7,6 +7,7 @@ class SeqAct_SetTutorialGameEvent_TA extends SequenceAction
 	forcescriptorder(true)
 	hidecategories(Object);
 
+/** See the output links of SeqAct_GetTutorialType_TA for all valid types */
 var() string TutorialType;
 
 defaultproperties

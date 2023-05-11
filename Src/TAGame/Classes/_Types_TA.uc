@@ -1108,8 +1108,11 @@ struct SeasonPlayer
 
 struct SeasonPlayerStat
 {
+	/** Players Index */
 	var databinding int PlayerIndex;
+	/** Stat name */
 	var databinding string StatName;
+	/** Stat value */
 	var databinding int StatValue;
 
 	structdefaultproperties
@@ -1122,8 +1125,11 @@ struct SeasonPlayerStat
 
 struct SeasonTeam
 {
+	/** Team's name */
 	var databinding string Name;
+	/** Team's logo (name of logo asset, not texture path) */
 	var databinding name LogoAsset;
+	/** Week when this team got eliminated from playoffs */
 	var databinding int EliminationWeek;
 
 	structdefaultproperties
@@ -1136,11 +1142,17 @@ struct SeasonTeam
 
 struct SeasonMatch
 {
+	/** Which week this match will take place */
 	var databinding int Week;
+	/** The two teams playing in this match. -1 if not determined yet */
 	var databinding int Team0;
+	/** The two teams playing in this match. -1 if not determined yet */
 	var databinding int Team1;
+	/** Final score of the match. 0 if not played yet. */
 	var databinding int Score0;
+	/** Final score of the match. 0 if not played yet. */
 	var databinding int Score1;
+	/** Who won this match. -1 if it hasn't been played yet. */
 	var databinding int Winner;
 	var bool bBye;
 

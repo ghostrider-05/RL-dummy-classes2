@@ -7,6 +7,17 @@ class SeqEvent_GameEventStateChanged_TA extends SequenceEvent
 	forcescriptorder(true)
 	hidecategories(Object);
 
+/**
+Names:
+- WaitingForPlayers
+- Countdown
+- Active
+- PostGoalScored
+- ReplayPlayback
+- PrePodiumSpotligh
+- PodiumSpotlight
+- Finished
+*/
 var string StateName;
 
 defaultproperties
