@@ -1,5 +1,6 @@
 import { spawn } from 'node:child_process'
-import { writeFile } from 'node:fs/promises';
+import { createInterface } from 'node:readline'
+import { writeFile } from 'node:fs/promises'
 
 import { LocalClassesInstallation } from '@kismet.ts/parsers-node'
 
@@ -60,7 +61,7 @@ export async function writeChangelog (src: string) {
     })
 
     const diff = local.compare(src)
-    const commit = '5792da090da1951ceec8ed6a71ff3acd6c4eda45'
+    const commit = process.env.DUMMY_CLASSES_SHA
 
     const content = LocalClassesInstallation.createChangelog(diff, {
         difference: { 
@@ -72,4 +73,15 @@ export async function writeChangelog (src: string) {
     await writeFile('./ci/changelog/kismet.json', local.formatClasses(diff, 'kismet'))
     await writeFile('./ci/changelog/classes.json', local.formatClasses(diff))
     await writeFile('./CHANGELOG.md', content)
+}
+
+export async function askInput (query: string): Promise<string> {
+    const rl = createInterface({
+        input: process.stdin,
+        output: process.stdout,
+    })
+
+    return new Promise<string>(resolve => {
+        rl.question(query, (answer) => resolve(answer))
+    })
 }

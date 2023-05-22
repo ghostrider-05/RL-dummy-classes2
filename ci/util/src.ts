@@ -32,7 +32,6 @@ export async function searchSrc (...fileNames: string[]) {
     for (const pkg of packages) {
         const files = await readdir(resolve('.', `./Src/${pkg}/Classes`));
         for (const cls of files) {
-            console.log(cls)
             const name = cls.split('.')[0]
 
             if (fileNames.includes(name) && !found.some(([, cls]) => name === cls)) {
