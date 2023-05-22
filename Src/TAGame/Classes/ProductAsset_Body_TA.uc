@@ -25,9 +25,9 @@ struct native VehicleAxleSettings
 	var() float WheelMeshOffsetSide;
 	var() VehicleWheelSettings LeftWheel;
 	var() VehicleWheelSettings RightWheel;
-	var() editconst float WheelRadius;
-	var() editconst float WheelOffsetForward;
-	var() editconst float WheelOffsetSide;
+	var() float WheelRadius;
+	var() float WheelOffsetForward;
+	var() float WheelOffsetSide;
 
 	structdefaultproperties
 	{
@@ -88,9 +88,9 @@ var(Wheels) float SteerScale;
 /** Spring settings for bouncy chassis */
 var(Physics) SimpleSpringSettings ChassisSpring;
 /** Overall scaler for bouncy chassis rotation */
-var(Physics) duplicatetransient editconst float ChassisRotationScale;
+var(Physics) duplicatetransient float ChassisRotationScale;
 /** Overall scaler for bouncy chassis translation */
-var(Physics) duplicatetransient editconst float ChassisTranslationScale;
+var(Physics) duplicatetransient float ChassisTranslationScale;
 /** Max suspension travel for wheels */
 var(Physics) float SuspensionTravelMax;
 /** Min suspension travel for wheels */
@@ -105,7 +105,7 @@ var deprecated AkSoundCue BlowoffSound;
 var deprecated EngineAudioProfile_TA EngineAudioProfile;
 var editoronly deprecated ProductAsset_EngineAudio_TA EngineAudioAsset;
 var(Sound) editoronly array<editoronly ProductAsset_EngineAudio_TA> EngineAudioAssets;
-var editconst deprecated int EngineAudioProductID;
+var deprecated int EngineAudioProductID;
 var(Sound) editinline ProductAssetReference_TA EngineAudioReference;
 /** FX actor specific to this body (ambient effects) */
 var(FX) FXActor_X FXActor;

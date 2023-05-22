@@ -7,7 +7,8 @@
     "decompile": "node -r dotenv/config ./dist/decompile.js",
     "extract": "node -r dotenv/config ./dist/extract.js",
     "prestart": "tsc && node ./dist/prestart.js",
-    "start": "npm run extract && npm run decompile"
+    "start": "npm run extract && npm run decompile",
+    "merge": "npm run prestart && node -r dotenv/config ./dist/merge.js"
   },
   "dependencies": {
     "@iarna/toml": "2.2.5",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "16.18.12",
+    "octokit": "^2.0.16",
     "typescript": "5.0.4"
   }
 }

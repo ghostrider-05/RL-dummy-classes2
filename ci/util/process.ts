@@ -1,13 +1,15 @@
 import { spawn } from 'node:child_process'
-import { resolve } from 'node:path';
-import { existsSync } from 'node:fs';
-import { copyFile, mkdir, readdir, writeFile } from 'node:fs/promises';
+import { createInterface } from 'node:readline'
+import { writeFile } from 'node:fs/promises'
 
 import { LocalClassesInstallation } from '@kismet.ts/parsers-node'
 
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
+            DUMMY_CLASSES_SHA: string;
+            DUMMY_CLASSES_FORK_SHA: string;
+            GITHUB_TOKEN: string;
             VERSION: string;
             EXTRACTED_SRC: string;
             UDK_SRC: string;
@@ -59,7 +61,7 @@ export async function writeChangelog (src: string) {
     })
 
     const diff = local.compare(src)
-    const commit = '5792da090da1951ceec8ed6a71ff3acd6c4eda45'
+    const commit = process.env.DUMMY_CLASSES_SHA
 
     const content = LocalClassesInstallation.createChangelog(diff, {
         difference: { 
@@ -73,21 +75,13 @@ export async function writeChangelog (src: string) {
     await writeFile('./CHANGELOG.md', content)
 }
 
-export async function copySrc () {
-    const packages = await readdir(resolve('.', './Src/'))
-    for (const pkg of packages) {
-        const files = await readdir(resolve('.', `./Src/${pkg}/Classes`));
+export async function askInput (query: string): Promise<string> {
+    const rl = createInterface({
+        input: process.stdin,
+        output: process.stdout,
+    })
 
-        for (const file of files) {
-            const folder = resolve(process.env.UDK_SRC, `./${pkg}/Classes/`)
-            if(!existsSync(folder)) {
-                mkdir(folder, { recursive: true})
-            }
-
-            await copyFile(
-                resolve('.', `./Src/${pkg}/Classes/${file}`),
-                resolve(process.env.UDK_SRC, `./${pkg}/Classes/${file}`)
-            )
-        }
-    }
+    return new Promise<string>(resolve => {
+        rl.question(query, (answer) => resolve(answer))
+    })
 }

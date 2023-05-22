@@ -8,7 +8,7 @@ class CarDemoActor_TA extends Actor
 	hidecategories(Navigation);
 
 /** The mesh that will demo the player on touch */
-var() const editconst export editinline StaticMeshComponent StaticMeshComponent;
+var() const export editinline StaticMeshComponent StaticMeshComponent;
 
 defaultproperties
 {

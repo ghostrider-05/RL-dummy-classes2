@@ -1,6 +1,7 @@
 import { resolve } from 'node:path'
 
-import { copySrc, createProcess, writeChangelog } from './util/process.js';
+import { createProcess, writeChangelog } from './util/process.js';
+import { copySrc } from './util/src.js';
 
 await createProcess('AssetExtraction', ['-a', '--steam'], {
     cwd: resolve('.', '../'),

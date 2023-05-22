@@ -2107,7 +2107,7 @@ struct native MaterialParams
 
 struct native AssociativeMaterialParams
 {
-	var() editconst MaterialInterface Material;
+	var() MaterialInterface Material;
 	var() MaterialParams Params;
 
 	structdefaultproperties

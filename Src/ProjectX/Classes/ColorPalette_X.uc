@@ -18,6 +18,6 @@ struct native ColorPosition
 };
 
 var() int DefaultId;
-var() const editconst int HueCount;
-var() const editconst int ValueCount;
-var() const editconst array<editconst LinearColor> Colors;
+var() const int HueCount;
+var() const int ValueCount;
+var() const array<LinearColor> Colors;

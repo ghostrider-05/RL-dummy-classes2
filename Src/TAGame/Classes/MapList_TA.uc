@@ -7,15 +7,15 @@ class MapList_TA extends Object
 	collapsecategories
 	hidecategories(Object);
 
-var() editconst array<editconst MapData_TA> AllMaps;
+var() array<MapData_TA> AllMaps;
 var const transient array<MapData_TA> AllMaps_Pristine;
 var() array<MapData_TA> SortedMaps;
 var const transient array<MapData_TA> SortedMaps_Pristine;
 var() array<name> AdditionalCookedMaps;
 var() editoronly array<editoronly MapGroup> MapGroups;
-var() editconst array<editconst MapGroup> GeneratedMapGroups;
+var() array<MapGroup> GeneratedMapGroups;
 var const transient array<MapGroup> GeneratedMapGroups_Pristine;
 var() MapSet_TA SelectableMaps;
 var() MapSet_TA SeasonMaps;
 var() MapSet_TA SeasonPlayoffsMaps;
-var() editconst array<editconst MapSet_TA> AllMapSets;
+var() array<MapSet_TA> AllMapSets;

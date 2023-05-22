@@ -8,7 +8,7 @@ class ProductAttribute_UnlockMethod_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() editconst EUnlockMethod UnlockMethod;
+var() EUnlockMethod UnlockMethod;
 
 defaultproperties
 {

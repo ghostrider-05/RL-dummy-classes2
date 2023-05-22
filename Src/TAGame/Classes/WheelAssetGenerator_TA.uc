@@ -9,4 +9,4 @@ class WheelAssetGenerator_TA extends Component
 	collapsecategories
 	hidecategories(Object);
 
-var() editconst export editinline array<editconst export editinline WheelAssetSettings_TA> Wheels;
+var() export editinline array<export editinline WheelAssetSettings_TA> Wheels;

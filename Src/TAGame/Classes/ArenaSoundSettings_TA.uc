@@ -7,7 +7,7 @@ class ArenaSoundSettings_TA extends Object;
 
 struct native ArenaStatSound
 {
-	var() editconst StatEvent_TA StatEvent;
+	var() StatEvent_TA StatEvent;
 	var() AkSoundCue Sound;
 
 	structdefaultproperties

@@ -6,6 +6,6 @@
 class PaintDatabase_TA extends Object
 	native;
 
-var() const editconst array<editconst ProductPaint_TA> Paints;
+var() const array<ProductPaint_TA> Paints;
 var native const Map_Mirror PaintNameToPaintID;
 var() bool bClickToRebuild;

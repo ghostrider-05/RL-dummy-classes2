@@ -14,7 +14,7 @@ var() editoronly Texture2D Thumbnail;
 var() bool bTeamFinishDisabled;
 var() bool bCustomFinishDisabled;
 var() editinline array<editinline ProductAssetAttribute_TA> Attributes;
-var() editoronly editconst array<editoronly editconst PremiumSkinSet_TA> SkinSets;
+var() editoronly array<editoronly PremiumSkinSet_TA> SkinSets;
 var editoronly export editinline ProductAsset_Skin_TA AssetTemplate;
 var editoronly export editinline ProductTemplate_TA ProductTemplate;
 

@@ -9,4 +9,4 @@ class ProductAssetReferenceBase_TA extends Object
 	hidecategories(Object);
 
 var editoronly ProductAsset_TA ProductAsset;
-var() editconst int ProductID;
+var() int ProductID;

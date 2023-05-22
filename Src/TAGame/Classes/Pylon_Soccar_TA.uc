@@ -7,17 +7,17 @@ class Pylon_Soccar_TA extends Pylon
 	hidecategories(Navigation,Lighting,LightColor,Force,Lighting,LightColor,Force);
 
 /** Direction the field is facing */
-var() editconst Rotator FieldOrientation;
+var() Rotator FieldOrientation;
 /** Size of the field (in FieldOriention space) */
-var() editconst Vector FieldSize;
+var() Vector FieldSize;
 /** Half size of the field (in FieldOriention space) */
-var() editconst Vector FieldExtent;
+var() Vector FieldExtent;
 /** Floating center of field */
-var() editconst Vector FieldCenter;
+var() Vector FieldCenter;
 /** Goals contained in this field */
-var() editconst export editinline array<editconst export editinline Goal_TA> Goals;
+var() export editinline array<export editinline Goal_TA> Goals;
 /** PlayerStarts contained in this field */
-var() editconst array<editconst PlayerStart> SpawnPoints;
+var() array<PlayerStart> SpawnPoints;
 var const float GroundZ;
 
 defaultproperties

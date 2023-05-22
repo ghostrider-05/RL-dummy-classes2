@@ -10,7 +10,7 @@ class WheelAssetGenerator_1Wheel_TA extends WheelAssetGenerator_TA
 
 var() EMeshMirrorMode MirrorMode;
 var() EMeshMirrorMode ParticleMirrorMode;
-var() editconst export editinline WheelAssetSettings_TA FrontRight;
+var() export editinline WheelAssetSettings_TA FrontRight;
 
 defaultproperties
 {

@@ -6,6 +6,6 @@
 class SpecialEditionDatabase_TA extends Object
 	native;
 
-var() const editconst array<editconst ProductSpecialEdition_TA> SpecialEditions;
+var() const array<ProductSpecialEdition_TA> SpecialEditions;
 var native const Map_Mirror EditionNameToEditionID;
 var() bool bClickToRebuild;

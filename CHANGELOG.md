@@ -3317,7 +3317,7 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 + (49): var() StaticMesh DisconnectedCollisionMesh
 + (50): var() StaticMesh DisconnectedCollisionMesh_HalfSize
 + (51): var export editinline transient array<export editinline StaticMeshComponent> CollisionComponents
-+ (56): var const editconst Vector HalfSizeFirstTileScale
++ (56): var const Vector HalfSizeFirstTileScale
 - (35): var() private int Sides
 ```
 
@@ -5436,8 +5436,8 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 + (85): var(Wheels) array<VehicleAxleSettings> AdditionalAxles
 + (86): var(Wheels) float SteerScale
 + (88): var(Physics) SimpleSpringSettings ChassisSpring
-+ (90): var(Physics) duplicatetransient editconst float ChassisRotationScale
-+ (92): var(Physics) duplicatetransient editconst float ChassisTranslationScale
++ (90): var(Physics) duplicatetransient float ChassisRotationScale
++ (92): var(Physics) duplicatetransient float ChassisTranslationScale
 + (94): var(Physics) float SuspensionTravelMax
 + (96): var(Physics) float SuspensionTravelMin
 + (97): var bool bUseLegacySuspensionOffsets
@@ -5448,7 +5448,7 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 + (104): var deprecated EngineAudioProfile_TA EngineAudioProfile
 + (105): var editoronly deprecated ProductAsset_EngineAudio_TA EngineAudioAsset
 + (106): var(Sound) editoronly array<editoronly ProductAsset_EngineAudio_TA> EngineAudioAssets
-+ (107): var editconst deprecated int EngineAudioProductID
++ (107): var deprecated int EngineAudioProductID
 + (108): var(Sound) editinline ProductAssetReference_TA EngineAudioReference
 + (110): var(FX) FXActor_X FXActor
 + (112): var(FX) int SkinMaterialIndex
@@ -5488,9 +5488,9 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 + (74): var() SimpleSpringSettings ChassisSpring
 - (88): var(Physics) SimpleSpringSettings ChassisSpring
 + (76): var() float ChassisRotationScale
-- (90): var(Physics) duplicatetransient editconst float ChassisRotationScale
+- (90): var(Physics) duplicatetransient float ChassisRotationScale
 + (78): var() float ChassisTranslationScale
-- (92): var(Physics) duplicatetransient editconst float ChassisTranslationScale
+- (92): var(Physics) duplicatetransient float ChassisTranslationScale
 + (80): var() float SuspensionTravelMax
 - (94): var(Physics) float SuspensionTravelMax
 + (82): var() float SuspensionTravelMin
@@ -5635,7 +5635,7 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 ### variables
 
 ```diff
-+ (22): var(Product) editoronly editconst editinline ProductTemplate_TA Product
++ (22): var(Product) editoronly editinline ProductTemplate_TA Product
 + (24): var(Thumbnail) duplicatetransient editoronly const Texture2D Thumbnail
 + (25): var(Thumbnail) ThumbnailRenderer_TA ThumbnailRenderer
 + (26): var(Thumbnail) MaterialInterface ThumbnailMaterial
@@ -5756,7 +5756,7 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 ### variables
 
 ```diff
-- (9): var() const editconst localized string Label
+- (9): var() const localized string Label
 - (10): var() LinearColor Colors[EPaintColorVariant]
 - (11): var() EPaintFinishType FinishType
 - (12): var() bool bVisible

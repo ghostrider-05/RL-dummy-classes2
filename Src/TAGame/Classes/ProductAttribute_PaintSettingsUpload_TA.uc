@@ -7,5 +7,5 @@ class ProductAttribute_PaintSettingsUpload_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() editoronly editconst array<editoronly editconst int> ExcludePaints;
-var() editoronly editconst array<editoronly editconst int> ShopExclusivePaints;
+var() editoronly array<editoronly int> ExcludePaints;
+var() editoronly array<editoronly int> ShopExclusivePaints;

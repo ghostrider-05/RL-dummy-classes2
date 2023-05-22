@@ -35,7 +35,7 @@ struct native PickupData2
 
 var() float RespawnDelay;
 var() FXActor_X FXActorArchetype;
-var() duplicatetransient editconst FXActor_X FXActor;
+var() duplicatetransient FXActor_X FXActor;
 var FXActorEvent_X PickedUpEvent;
 var FXActorEvent_X LocalPickedUpEvent;
 var export editinline CylinderComponent CylinderComponent;
