@@ -1,13 +1,14 @@
 import { spawn } from 'node:child_process'
-import { resolve } from 'node:path';
-import { existsSync } from 'node:fs';
-import { copyFile, mkdir, readdir, writeFile } from 'node:fs/promises';
+import { writeFile } from 'node:fs/promises';
 
 import { LocalClassesInstallation } from '@kismet.ts/parsers-node'
 
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
+            DUMMY_CLASSES_SHA: string;
+            DUMMY_CLASSES_FORK_SHA: string;
+            GITHUB_TOKEN: string;
             VERSION: string;
             EXTRACTED_SRC: string;
             UDK_SRC: string;
@@ -71,23 +72,4 @@ export async function writeChangelog (src: string) {
     await writeFile('./ci/changelog/kismet.json', local.formatClasses(diff, 'kismet'))
     await writeFile('./ci/changelog/classes.json', local.formatClasses(diff))
     await writeFile('./CHANGELOG.md', content)
-}
-
-export async function copySrc () {
-    const packages = await readdir(resolve('.', './Src/'))
-    for (const pkg of packages) {
-        const files = await readdir(resolve('.', `./Src/${pkg}/Classes`));
-
-        for (const file of files) {
-            const folder = resolve(process.env.UDK_SRC, `./${pkg}/Classes/`)
-            if(!existsSync(folder)) {
-                mkdir(folder, { recursive: true})
-            }
-
-            await copyFile(
-                resolve('.', `./Src/${pkg}/Classes/${file}`),
-                resolve(process.env.UDK_SRC, `./${pkg}/Classes/${file}`)
-            )
-        }
-    }
 }
