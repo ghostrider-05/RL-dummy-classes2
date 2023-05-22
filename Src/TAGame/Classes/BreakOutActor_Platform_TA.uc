@@ -40,11 +40,11 @@ var() bool bHalfSize;
 var() bool bPrimaryPlayerStart;
 var() int TeamIndex;
 var() int MaxDamage;
-var() const editconst export editinline StaticMeshComponent StaticMeshComponent;
-var() const editconst export editinline DynamicLightEnvironmentComponent LightEnvironment;
+var() const export editinline StaticMeshComponent StaticMeshComponent;
+var() const export editinline DynamicLightEnvironmentComponent LightEnvironment;
 var() FXActor_X FXArchetype;
 var() float NeighborRadius;
-var() editconst array<editconst BreakOutActor_Platform_TA> Neighbors;
+var() array<BreakOutActor_Platform_TA> Neighbors;
 var() StaticMesh ConnectedCollisionMesh;
 var() StaticMesh ConnectedCollisionMesh_HalfSize;
 var() StaticMesh DisconnectedCollisionMesh;
@@ -54,7 +54,7 @@ var float LastHitTime;
 var repnotify BreakoutDamageState DamageState;
 var FXActor_X FXActor;
 var transient BreakoutDamageState PreReplayState;
-var const editconst Vector HalfSizeFirstTileScale;
+var const Vector HalfSizeFirstTileScale;
 
 defaultproperties
 {

@@ -6,6 +6,6 @@
 class CertifiedStatDatabase_TA extends Object
 	native;
 
-var() const editconst array<editconst CertifiedStat_TA> Stats;
+var() const array<CertifiedStat_TA> Stats;
 var native const Map_Mirror StatNameToStatID;
 var() bool bClickToRebuild;

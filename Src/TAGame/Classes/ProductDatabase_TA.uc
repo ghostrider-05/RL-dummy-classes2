@@ -25,14 +25,14 @@ struct native GarageFolderData
 	var native Map_Mirror ProductIDToFolderID;
 };
 
-var() const editconst array<editconst Product_TA> Products_New;
+var() const array<Product_TA> Products_New;
 var const transient array<Product_TA> Products_Pristine;
-var() editconst array<editconst DLCPack_TA> DLCPacks;
+var() array<DLCPack_TA> DLCPacks;
 var const transient array<DLCPack_TA> DLCPacks_Pristine;
-var() editconst array<editconst ProductAsset_TA> AlwaysLoadedAssets;
-var() editconst array<editconst BodyToEngineAudioPair> BodyToEngineAudioMap;
+var() array<ProductAsset_TA> AlwaysLoadedAssets;
+var() array<BodyToEngineAudioPair> BodyToEngineAudioMap;
 var const transient array<BodyToEngineAudioPair> BodyToEngineAudioMap_Pristine;
-var() editconst GarageFolderData GarageFolderInfo;
+var() GarageFolderData GarageFolderInfo;
 var native const Map_Mirror ProductNameToProductID;
 var native const transient Map_Mirror ProductNameToProductID_Pristine;
 var native const Map_Mirror DuplicateToAssetSourceMap;

@@ -7,7 +7,7 @@ class CarColorSet_TA extends ColorPalette_X;
 
 struct native DebugColor
 {
-	var() editconst LinearColor Color;
+	var() LinearColor Color;
 	var() bool bPreview;
 
 	structdefaultproperties

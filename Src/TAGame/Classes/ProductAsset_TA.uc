@@ -20,7 +20,7 @@ struct native ProductReplacement
 	}
 };
 
-var(Product) editoronly editconst editinline ProductTemplate_TA Product;
+var(Product) editoronly editinline ProductTemplate_TA Product;
 /** Texture to use for UI */
 var(Thumbnail) duplicatetransient editoronly const Texture2D Thumbnail;
 var(Thumbnail) ThumbnailRenderer_TA ThumbnailRenderer;

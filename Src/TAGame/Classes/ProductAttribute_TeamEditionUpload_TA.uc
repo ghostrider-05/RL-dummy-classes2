@@ -7,4 +7,4 @@ class ProductAttribute_TeamEditionUpload_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() editoronly editconst array<editoronly editconst int> SupportedTeamEditions;
+var() editoronly array<editoronly int> SupportedTeamEditions;

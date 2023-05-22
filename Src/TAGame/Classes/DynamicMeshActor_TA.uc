@@ -7,7 +7,7 @@ class DynamicMeshActor_TA extends Actor
 	placeable
 	hidecategories(Navigation);
 
-var() const editconst export editinline StaticMeshComponent StaticMeshComponent;
+var() const export editinline StaticMeshComponent StaticMeshComponent;
 
 defaultproperties
 {

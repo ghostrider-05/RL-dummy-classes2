@@ -8,4 +8,4 @@ class ProductAttribute_QualityProductDBOverride_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() editconst EProductQuality QualityOverride;
+var() EProductQuality QualityOverride;

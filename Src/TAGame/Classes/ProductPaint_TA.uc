@@ -7,7 +7,7 @@ class ProductPaint_TA extends Object
 	collapsecategories
 	hidecategories(Object);
 
-var() const editconst localized string Label;
+var() const localized string Label;
 var() LinearColor Colors[EPaintColorVariant];
 var() EPaintFinishType FinishType;
 var() bool bVisible;

@@ -76,7 +76,7 @@ struct native FXAttachment
 	var() name Name;
 	var() name SkeletalMeshAttachName;
 	var() name SocketOrBoneName;
-	var() editconst name AttachToParameter;
+	var() name AttachToParameter;
 	var() float AttachDelay;
 	var() float DetachDelay;
 	var() float LifeTime;
@@ -173,7 +173,7 @@ var transient array<FXActorEventCheck> FXEvents;
 var() float DestroyWaitTime;
 var float DestroyTime;
 var() export editinline ParameterDispenser_X Parameters;
-var() editoronly const editconst int EditID;
+var() editoronly const int EditID;
 var const transient array<FXEventSubscription> EventSubscriptions;
 var FXActorEvent_X AnimationEndState;
 

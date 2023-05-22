@@ -6,7 +6,7 @@
 class PlayerStart_Platform_TA extends PlayerStart
 	hidecategories(Navigation,Lighting,LightColor,Force,Collision);
 
-var() const editconst export editinline StaticMeshComponent StaticMeshComponent;
+var() const export editinline StaticMeshComponent StaticMeshComponent;
 var() const float HideTime;
 var repnotify transient bool bActive;
 

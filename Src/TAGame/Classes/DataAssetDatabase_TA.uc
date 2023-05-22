@@ -6,7 +6,7 @@
 class DataAssetDatabase_TA extends Object
 	native;
 
-var() editconst class DataAssetClass;
+var() class DataAssetClass;
 var() array<Object> DataAssets;
 var native const Map_Mirror NameToId;
 var() bool bClickToRebuild;

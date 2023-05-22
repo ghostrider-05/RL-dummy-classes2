@@ -8,8 +8,8 @@ class WheelAssetGenerator_FrontWheels_TA extends WheelAssetGenerator_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() editconst export editinline WheelAssetSettings_TA FrontRight;
-var() editconst export editinline WheelAssetSettings_TA FrontLeft;
+var() export editinline WheelAssetSettings_TA FrontRight;
+var() export editinline WheelAssetSettings_TA FrontLeft;
 
 defaultproperties
 {

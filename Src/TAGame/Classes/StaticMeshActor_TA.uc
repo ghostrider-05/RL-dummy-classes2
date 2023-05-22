@@ -7,7 +7,7 @@ class StaticMeshActor_TA extends Actor
 	notplaceable
 	hidecategories(Navigation);
 
-var() const editconst export editinline StaticMeshComponent StaticMeshComponent;
+var() const export editinline StaticMeshComponent StaticMeshComponent;
 
 defaultproperties
 {

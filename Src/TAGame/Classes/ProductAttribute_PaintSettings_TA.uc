@@ -26,11 +26,11 @@ var() name PaintParameterName;
 var() EPaintColorVariant PaintType;
 var() array<PaintAttributeParameter> PaintAdditionalParameters;
 var() float PaintEmissiveMultiplier;
-var() editoronly editconst array<editoronly editconst MaterialInterface> PaintableMaterials;
-var() editoronly editconst array<editoronly editconst MaterialInterface> PaintableMaterialsMetallic;
+var() editoronly array<editoronly MaterialInterface> PaintableMaterials;
+var() editoronly array<editoronly MaterialInterface> PaintableMaterialsMetallic;
 var() editoronly const transient array<editoronly ProductPaint_TA> IncludePaints;
-var() editoronly editconst array<editoronly editconst ProductPaint_TA> ExcludePaints;
-var() editoronly editconst array<editoronly editconst ProductPaint_TA> UnsupportedPaints;
+var() editoronly array<editoronly ProductPaint_TA> ExcludePaints;
+var() editoronly array<editoronly ProductPaint_TA> UnsupportedPaints;
 var() editoronly const array<editoronly ProductPaint_TA> ShopExclusivePaints;
 var() array<PaintWithOverride> PaintsToOverride;
 

@@ -7,4 +7,4 @@ class ProductSpecialEdition_TA extends Object
 	collapsecategories
 	hidecategories(Object);
 
-var() const editconst localized string Label;
+var() const localized string Label;

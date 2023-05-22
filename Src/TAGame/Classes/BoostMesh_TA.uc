@@ -34,7 +34,7 @@ struct native BoostMeshOverride
 {
 	var() export editinline ActorComponent Mesh;
 	var() editoronly FXActor_X CarType;
-	var() editconst string CarTypePath;
+	var() string CarTypePath;
 
 	structdefaultproperties
 	{

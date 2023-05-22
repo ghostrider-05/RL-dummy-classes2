@@ -7,7 +7,7 @@ class CrowdActorSettings_TA extends Object;
 
 struct native StatCrowdNoise
 {
-	var() editconst StatEvent_TA StatEvent;
+	var() StatEvent_TA StatEvent;
 	var() editinline CrowdNoiseModifier_TA Noise;
 
 	structdefaultproperties
