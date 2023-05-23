@@ -51,6 +51,6 @@ replication
 	 if(bNetDirty)
 		ReplicatedActive;
 
-	 if(bNetInitial/**Missing key for position: 42.*/)
+	 if(bNetInitial/**Empty key for position: 42.*/)
 		ReplicatedActivityTime;
 }

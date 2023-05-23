@@ -16,7 +16,7 @@ Available car bones:
 - FrontSocket
 - AntennaSocket
 - Underglow
-- chassis_jnt
+- chassis_jnt (default bone)
 */
 var() name BoneToAttachTo;
 

@@ -5,9 +5,12 @@ Replication_10="bNetDirty"
 Replication_11=""
 Replication_20=""
 Replication_27=""
+Replication_35=""
 Replication_37="bNetInitial && Role==ROLE_Authority"
+Replication_42=""
 Replication_47=""
 Replication_57=""
+Replication_62=""
 Replication_67=""
 Replication_75="bNetDirty && !bNetOwner && Role==ROLE_Authority"
 Replication_77=""
@@ -15,6 +18,9 @@ Replication_102=""
 Replication_110="!bNetOwner && Role==ROLE_Authority"
 
 [_ApplyToAll_DummyClass.Variables]
+
+[_ApplyToAll_DummyClass.DefaultVariables]
+MaxTriggerCount="The maximum number of times this event can be triggered, 0 for always"
 
 [AnimateParametersComponent_X.Variables]
 FloatParameters="Float parameters to animate"
@@ -117,6 +123,7 @@ StaticMesh="visual mesh"
 EndOfGameFXArchetype="FX to replace the ball with when the game ends"
 ExplosionArchetype="explosion to spawn"
 PredictionTimestep="Timestep when predicting our next position(s)"
+HitTeamNum="Team index that last hit the ball"
 
 [BallCamTarget_TA.Variables]
 LocalTranslation="Offset the focal point from our owner's location, transformed by owner's rotation"
@@ -151,6 +158,9 @@ Type="Actor to get initial data from"
 LocalOffset="Local-space offset from actor location (along target rotation)"
 WorldOffset="World-space offset from actor location"
 Filters="Only iterate actors that pass these conditions. If any of these conditions fail, the actor will be treated as if he doesn't exist. The condition's context is set to the iterated actor."
+
+[CameraSettingsActor_TA.Variables]
+bUsingSecondaryCamera="the player is using ballcam"
 
 [CarColorSet_TA.Variables]
 Grayscales="Grayscale values to include"
@@ -375,6 +385,9 @@ Section="Which section in the localization file"
 [PlayerTitle_TA.Variables]
 Source="Whether this title is given by the user or by Psyonix"
 
+[PRI_TA.Variables]
+PawnType="type to check if the player is spectating, in editor or a normal player"
+
 [ProductAsset_Body_TA.Structures.VehicleWheelSettings]
 BoneName="Bone on mesh to attach the wheel to"
 
@@ -461,6 +474,10 @@ bReplicated="Replicate this slot when replicating client loadouts"
 bAlwaysCooked="Always cook products of this slot, even if bDefaultProductsOnly"
 DropWeight="Weight for dropping this item"
 
+[ProfileCameraSave_TA.Variables]
+bUseBallIndicator="User settings > Interface > Ball arrow is enabled"
+bUseBallCamIndicator="User settings > Interface > Use ball cam indicator is enabled"
+
 [PSC_Constrained_TA.Variables]
 WorldZ="Have the particle follow its owner on XY but stay here on Z"
 bAttachedRotation="Match the owner's rotation"
@@ -541,12 +558,15 @@ Year="Which year this season is"
 CurrentWeek="How many weeks into the season we are. This will exceed NumRegularWeeks as we enter the playoffs."
 
 [SeqAct_AddGameBall_TA.Variables]
-bWake="Causes the ball to be unmoveable"
-BallArchetype="A custom archetype for the ball to spawn: Ball_TA'{Package}.Group.My_ball'.\nRepeat multiple Add Game Ball with possible packages for map swapping\nExample:https://github.com/RocketLeagueMapmaking/Kismet/blob/master/general/AddCustomGameBall.txt"
+bWake="When disabled, causes the ball to be unmoveable"
+BallArchetype="A custom archetype for the ball to spawn: Ball_TA'{Package}.Group.My_ball'.\nRepeat multiple Add Game Ball with possible packages for map swapping\nExample: https://github.com/RocketLeagueMapmaking/Kismet/blob/master/general/AddCustomGameBall.txt"
+
+[SeqAct_AddGameBall_TA.NodeInputs]
+3="Make the ball moveable again"
 
 [SeqAct_AttachAssetToCar_TA.Variables]
 # TODO: add descriptions on where the bone is located
-BoneToAttachTo="Available car bones:\n- HatSocket\n- FrontSocket\n- AntennaSocket\n- Underglow\n- chassis_jnt"
+BoneToAttachTo="Available car bones:\n- HatSocket\n- FrontSocket\n- AntennaSocket\n- Underglow\n- chassis_jnt (default bone)"
 
 [SeqAct_ConcatenateStrings_TA.Variables]
 ConcatenateWithSpace="Concatenate with a space between the values"

@@ -67,12 +67,20 @@ Descriptions can be defined for:
 - `Variables`
 - `Structures.{Structure name}`
 - `Enums`
+- `DefaultVariables`
+- `NodeInputs`
+- `NodeOutputs`
+- `NodeVariables`
 
+All types use the property name as the key, except for the `Node*` types. These use the index of the link.
 Example:
 
 ```toml
 [MyClass.Variables]
 PropertyName="Something interesting"
+
+[MyKismetNode.NodeInputs]
+0="The first input link"
 ```
 
 ## Replication blocks

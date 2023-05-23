@@ -45,10 +45,10 @@ replication
 	 if(bNetDirty)
 		CurrentBoostAmount, StartBoostAmount;
 
-	 if(bNetInitial/**Missing key for position: 35.*/)
+	 if(bNetInitial/**Empty key for position: 35.*/)
 		ReplicatedBoostAmount;
 
-	 if(bNetInitial/**Missing key for position: 62.*/)
+	 if(bNetInitial/**Empty key for position: 62.*/)
 		RechargeDelay, RechargeRate, 
 		UnlimitedBoostRefCount, bRechargeGroundOnly;
 }
