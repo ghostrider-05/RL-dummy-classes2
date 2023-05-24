@@ -1,0 +1,19 @@
+name: Descriptions
+description: Suggest new / edits for class descriptions
+labels:
+  - "descriptions"
+body:
+  - type: input
+    id: classes
+    attributes:
+      label: Classes
+      description: The class(es) for the description(s)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: The description to add / edit
+    validations:
+      required: true
