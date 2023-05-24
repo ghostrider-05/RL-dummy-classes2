@@ -1,0 +1,35 @@
+name: Bug report
+description: Report an incorrect class
+labels:
+  - "bug"
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Incorrect classes
+      description: The classes that are not working correctly
+      placeholder: Car_TA,Goal_TA,etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      description: The reason why it might be working incorrectly
+      multiple: false
+      options:
+        - "New version available"
+        - "Compile issue (warning / error)"
+        - "Incorrect description(s)"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Recompile logs, errors, etc.
+    validations:
+      required: true
+  
+  

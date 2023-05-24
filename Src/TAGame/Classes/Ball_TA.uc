@@ -121,6 +121,7 @@ var float ReplicatedAddedCarBounceScale;
 var float AdditionalCarGroundBounceScaleZ;
 var float AdditionalCarGroundBounceScaleXY;
 var repnotify PhysicalMaterial ReplicatedPhysMatOverride;
+/** Team index that last hit the ball */
 var repnotify transient byte HitTeamNum;
 var repnotify transient GameEvent_Soccar_TA GameEvent;
 var repnotify transient ExplosionData ReplicatedExplosionData;

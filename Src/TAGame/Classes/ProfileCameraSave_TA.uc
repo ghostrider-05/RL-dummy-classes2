@@ -15,7 +15,9 @@ var bool bFreecam;
 var bool bPrefersSecondaryCamera;
 var bool bToggleSecondaryCamera;
 var bool bToggleRearCamera;
+/** User settings > Interface > Ball arrow is enabled */
 var bool bUseBallIndicator;
+/** User settings > Interface > Use ball cam indicator is enabled */
 var bool bUseBallCamIndicator;
 var bool bEnableCameraShake;
 var bool bDirectorAllowCameraBlending;

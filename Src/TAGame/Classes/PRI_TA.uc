@@ -145,6 +145,7 @@ var transient CameraSettingsActor_TA Camera;
 var transient ProfileCameraSettings CameraSettings;
 var transient byte CameraPitch;
 var transient byte CameraYaw;
+/** type to check if the player is spectating, in editor or a normal player */
 var repnotify EPawnType PawnType;
 var repnotify byte PlayerHistoryKey[64];
 var EConnectionQualityState ReplicatedWorstNetQualityBeyondLatency;

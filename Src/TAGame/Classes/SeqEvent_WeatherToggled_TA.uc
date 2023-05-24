@@ -9,6 +9,7 @@ class SeqEvent_WeatherToggled_TA extends SequenceEvent
 
 defaultproperties
 {
+	/** The maximum number of times this event can be triggered, 0 for always */
 	MaxTriggerCount=0
 	bAutoActivateOutputLinks=true
 	ObjName="Weather Toggled"
