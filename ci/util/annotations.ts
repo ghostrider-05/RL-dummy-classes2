@@ -1,10 +1,10 @@
 import { existsSync } from 'node:fs';
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 type AnnotationLevel = 'warning' | 'notice' | 'failure'
 
-interface Annotation {
+export interface Annotation {
     file: string
     line: number
     message: string
@@ -13,6 +13,7 @@ interface Annotation {
 }
 
 export class UnrealFrontendAnnotations {
+    private _annotations: Annotation[] = []
     public annotations: Annotation[] = []
 
     public lastInvalidLines: string[]
@@ -40,6 +41,7 @@ export class UnrealFrontendAnnotations {
                 && a.annotation_level === annotation.annotation_level
         }
 
+        this._annotations.push(annotation)
         if (this.annotations.some(filter)) {
             return;
         } else {
@@ -90,6 +92,97 @@ export class UnrealFrontendAnnotations {
 
     public async write (): Promise<void> {
         console.log(`Writing ${this.annotations.length} annotations`)
-        await writeFile(resolve('.', './annotations.json'), JSON.stringify(this.annotations))
+        await writeFile(resolve('.', './out/annotations.json'), JSON.stringify(this.annotations))
+        await writeFile(resolve('.', './out/recompile.json'), JSON.stringify(this.getCounts()))
+        this.writeUsage()
+    }
+
+    public getCounts (): Record<'warnings' | 'errors', number> {
+        const line = this.lastInvalidLines.at(-1)
+
+        const warnings = line?.match(/\d+(?= warning\(s\))/)?.[0]
+        const errors = line?.match(/\d+(?= error\(s\))/)?.[0]
+        if (!warnings || !errors) throw new Error('Invalid counts input ' + this.lastInvalidLines.join(''))
+
+        return {
+            warnings: parseInt(warnings),
+            errors: parseInt(errors),
+        }
+    }
+
+    public getUsage (): Record<string, Annotation[]> {
+        const messages: Record<string, Annotation[]> = {
+            'Missing opening parenthesis': [],
+            'Invalid property value in defaults': [],
+            'unresolved reference to': [],
+            'Unknown property in defaults': [],
+            'Unknown member': [],
+            unknown: [],
+        }
+
+        for (const annotation of this._annotations) {
+            const key = Object
+                .keys(messages)
+                .find(key => annotation.message.includes(key))
+
+            if (key) {
+                messages[key].push(annotation)
+            } else {
+                messages['unknown'].push(annotation)
+            }
+        }
+
+        return messages
+    }
+
+    public async commentUsage (keys: string[]) {
+        await new UnrealFrontendPatcher(this.getUsage(), keys)
+            .fix()
+    }
+
+    public writeUsage (logAnnotations?: boolean): void {
+        const dash = '-'.repeat(42)
+        const usage = this.getUsage()
+
+        for (const key of Object.keys(usage)) {
+            console.log(key + ': ' + usage[key].length)
+            if (logAnnotations) {
+                console.log(dash)
+
+                for (const msg of usage[key]) {
+                    console.log(msg.message)
+                }
+    
+                console.log(dash)
+            }
+        }       
+    }
+}
+
+class UnrealFrontendPatcher {
+    public constructor (
+        private usage: Record<string, Annotation[]>,
+        private fixableKeys: string[],
+    ) {}
+
+    public async fix () {
+        for (const key of this.fixableKeys) {
+            const annotations = this.usage[key]
+            if (!annotations) continue;
+            console.log(`Commenting ${annotations.length} annotations for: ${key}`)
+
+            for (const annotation of annotations) {
+                const content = await readFile(resolve('.', annotation.file), { encoding: 'utf8' });
+                const lines = content.split('\r\n'), index = annotation.line - 1
+
+                if (lines[index].startsWith('\t')) {
+                    lines[index] = lines[index].replace('\t', '\t//')
+                } else {
+                    lines[index] = '//' + lines[index]
+                }
+
+                await writeFile(resolve('.', annotation.file), lines.join('\r\n'))
+            }
+        }
     }
 }

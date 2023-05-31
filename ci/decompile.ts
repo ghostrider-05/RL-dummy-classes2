@@ -12,5 +12,5 @@ await createProcess(process.env.UDK_CMD!, ['make', '-full'], {
     error: { message: 'Failed to compile classes' }
 })
         
-console.log(annotator.lastInvalidLines.join('\n'))
+console.log(annotator.lastInvalidLines.join(''))
 await annotator.write()

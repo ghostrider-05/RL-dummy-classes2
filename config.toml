@@ -1,2 +1,5 @@
+Version="2.27"
+
 [AssetExtraction]
 IgnoredFlags="editconst"
+IgnoredDefaultProperties="Default__"

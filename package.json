@@ -8,16 +8,18 @@
     "extract": "node -r dotenv/config ./dist/extract.js",
     "prestart": "tsc && node ./dist/prestart.js",
     "start": "npm run extract && npm run decompile",
+    "poststart": "node ./dist/poststart.js",
+    "changelog": "npm run prestart && node -r dotenv/config ./dist/changelog.js",
     "merge": "npm run prestart && node -r dotenv/config ./dist/merge.js"
   },
   "dependencies": {
     "@iarna/toml": "2.2.5",
     "@kismet.ts/parsers-node": "file:../../../../../kismet/packages/parsers-node",
-    "dotenv": "16.0.3"
+    "dotenv": "16.1.3"
   },
   "devDependencies": {
     "@types/node": "16.18.12",
-    "octokit": "^2.0.16",
+    "octokit": "^2.0.19",
     "typescript": "5.0.4"
   }
 }
