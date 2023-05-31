@@ -11,6 +11,6 @@ var() ObjectSerializer_X ObjectSerializer;
 
 defaultproperties
 {
-	JsonSerializer=JSONSerializer_X'Default__EncodeObjectFactory_X.DefaultSerializerJson'
-	ObjectSerializer=ObjectSerializer_X'Default__EncodeObjectFactory_X.DefaultSerializerObject'
+	//JsonSerializer=JSONSerializer_X'Default__EncodeObjectFactory_X.DefaultSerializerJson'
+	//ObjectSerializer=ObjectSerializer_X'Default__EncodeObjectFactory_X.DefaultSerializerObject'
 }

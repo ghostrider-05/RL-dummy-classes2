@@ -10,15 +10,15 @@ defaultproperties
 {
 	
 	SkeletalMeshComponent=SkeletalMeshComponent1
-	LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActor_NoSlomo_TA.MyLightEnvironment'
-	FacialAudioComp=AudioComponent'Default__SkeletalMeshActor_NoSlomo_TA.FaceAudioComponent'
-	Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActor_NoSlomo_TA.MyLightEnvironment'
-	Components(1)=AudioComponent'Default__SkeletalMeshActor_NoSlomo_TA.FaceAudioComponent'
+	//LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActor_NoSlomo_TA.MyLightEnvironment'
+	//FacialAudioComp=AudioComponent'Default__SkeletalMeshActor_NoSlomo_TA.FaceAudioComponent'
+	//Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActor_NoSlomo_TA.MyLightEnvironment'
+//	Components(1)=AudioComponent'Default__SkeletalMeshActor_NoSlomo_TA.FaceAudioComponent'
 	begin object name=SkeletalMeshComponent1 class=SkeletalMeshComponent_NoSlomo_TA
-		Animations=AnimNodeSequence'Engine.Default__SkeletalMeshActor.AnimNodeSeq0'
+//		Animations=AnimNodeSequence'Engine.Default__SkeletalMeshActor.AnimNodeSeq0'
 		bUpdateSkelWhenNotRendered=false
 		ReplacementPrimitive=None
-		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActor_NoSlomo_TA.MyLightEnvironment'
+//		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActor_NoSlomo_TA.MyLightEnvironment'
 		RBChannel=RBCC_GameplayPhysics
 		CollideActors=true
 		BlockZeroExtent=true

@@ -64,7 +64,7 @@ var native const transient Pointer NativeState;
 
 defaultproperties
 {
-	BlowoffComponent=EngineAudioBlowoffComponent_TA'Default__EngineAudioComponent_TA.BlowoffDefault'
-	WheelSpeed=WheelSpeedComponent_TA'Default__EngineAudioComponent_TA.WheelSpeedDefault'
-	ThrottleComponent=ThrottleStateComponent_TA'Default__EngineAudioComponent_TA.ThrottleStateDefault'
+	//BlowoffComponent=EngineAudioBlowoffComponent_TA'Default__EngineAudioComponent_TA.BlowoffDefault'
+	//WheelSpeed=WheelSpeedComponent_TA'Default__EngineAudioComponent_TA.WheelSpeedDefault'
+	//ThrottleComponent=ThrottleStateComponent_TA'Default__EngineAudioComponent_TA.ThrottleStateDefault'
 }

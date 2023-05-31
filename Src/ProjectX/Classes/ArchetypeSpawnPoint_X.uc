@@ -25,7 +25,7 @@ defaultproperties
 {
 	bSpawnOnLevelStart=true
 	Components(0)=None
-	Components(1)=DynamicLightEnvironmentComponent'Default__ArchetypeSpawnPoint_X.MyLightEnvironment'
+//	Components(1)=DynamicLightEnvironmentComponent'Default__ArchetypeSpawnPoint_X.MyLightEnvironment'
 	Components(2)=None
 	Components(3)=None
 	Components(4)=None

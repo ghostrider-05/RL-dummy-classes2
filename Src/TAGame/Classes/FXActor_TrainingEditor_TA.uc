@@ -21,5 +21,5 @@ defaultproperties
 	SimulatingBallState=FXActorEvent_X'FXActorEvents.Simulating'
 	AdjustingSpeedState=FXActorEvent_X'FXActorEvents.Editing'
 	PlaytestingState=FXActorEvent_X'FXActorEvents.Active'
-	Parameters=ParameterDispenser_X'Default__FXActor_TrainingEditor_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_TrainingEditor_TA.DefaultParameters'
 }

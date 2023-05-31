@@ -22,5 +22,5 @@ var export editinline PsyNetBeacon_X PsyNetBeacon;
 
 defaultproperties
 {
-	PsyNetBeacon=PsyNetBeacon_X'Default__ReservationBeacon_X.DefaultPsyNetBeacon'
+	//PsyNetBeacon=PsyNetBeacon_X'Default__ReservationBeacon_X.DefaultPsyNetBeacon'
 }

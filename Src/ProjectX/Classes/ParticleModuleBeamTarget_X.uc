@@ -9,7 +9,7 @@ class ParticleModuleBeamTarget_X extends ParticleModuleBeamTarget
 
 defaultproperties
 {
-	Target=(Distribution=DistributionVectorConstant'Default__ParticleModuleBeamTarget_X.DistributionTarget')
-	TargetTangent=(Distribution=DistributionVectorConstant'Default__ParticleModuleBeamTarget_X.DistributionTargetTangent')
-	TargetStrength=(Distribution=DistributionFloatConstant'Default__ParticleModuleBeamTarget_X.DistributionTargetStrength')
+	//Target=(Distribution=DistributionVectorConstant'Default__ParticleModuleBeamTarget_X.DistributionTarget')
+	//TargetTangent=(Distribution=DistributionVectorConstant'Default__ParticleModuleBeamTarget_X.DistributionTargetTangent')
+	//TargetStrength=(Distribution=DistributionFloatConstant'Default__ParticleModuleBeamTarget_X.DistributionTargetStrength')
 }

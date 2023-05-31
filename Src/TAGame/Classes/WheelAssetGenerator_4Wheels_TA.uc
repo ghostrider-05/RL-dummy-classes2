@@ -15,7 +15,7 @@ var() export editinline WheelAssetSettings_TA BackRight;
 
 defaultproperties
 {
-	FrontLeft=WheelAssetSettings_TA'Default__WheelAssetGenerator_4Wheels_TA.DefaultFrontLeft'
-	BackLeft=WheelAssetSettings_TA'Default__WheelAssetGenerator_4Wheels_TA.DefaultBackLeft'
-	BackRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_4Wheels_TA.DefaultBackRight'
+	//FrontLeft=WheelAssetSettings_TA'Default__WheelAssetGenerator_4Wheels_TA.DefaultFrontLeft'
+	//BackLeft=WheelAssetSettings_TA'Default__WheelAssetGenerator_4Wheels_TA.DefaultBackLeft'
+	//BackRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_4Wheels_TA.DefaultBackRight'
 }

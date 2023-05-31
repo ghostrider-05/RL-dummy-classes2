@@ -68,6 +68,12 @@ struct native SceNpOnlineId
 
 	structdefaultproperties
 	{
+		
+		
+		Term=0
+		Dummy[0]=0
+		Dummy[1]=0
+		Dummy[2]=0
 	}
 };
 

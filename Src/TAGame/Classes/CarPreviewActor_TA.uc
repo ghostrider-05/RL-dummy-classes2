@@ -41,7 +41,7 @@ var export editinline AkParamGroup Ak;
 
 defaultproperties
 {
-	ProductLoader=ProductLoader_TA'Default__CarPreviewActor_TA.DefaultLoader'
+	//ProductLoader=ProductLoader_TA'Default__CarPreviewActor_TA.DefaultLoader'
 	
 	CarMesh=DefaultCarMesh
 	SupersonicFakeSpeed=-2000.0
@@ -49,9 +49,9 @@ defaultproperties
 	OldLoadout=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	bAddToCarPreviewList=true
 	PreviewTeam=-1
-	Ak=AkParamGroup'Default__CarPreviewActor_TA.DefaultAkParamGroup'
+	//Ak=AkParamGroup'Default__CarPreviewActor_TA.DefaultAkParamGroup'
 	Components(0)=None
 	Components(1)=None
-	Components(2)=AkParamGroup'Default__CarPreviewActor_TA.DefaultAkParamGroup'
+//	Components(2)=AkParamGroup'Default__CarPreviewActor_TA.DefaultAkParamGroup'
 	CollisionType=COLLIDE_CustomDefault
 }

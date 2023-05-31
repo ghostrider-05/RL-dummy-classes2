@@ -11,11 +11,11 @@ var() PostProcessManager_X PostProcessManagerArchetype;
 
 defaultproperties
 {
-	PostProcessManagerArchetype=PostProcessManager_X'Default__PlayerController_Cinematic_TA.DefaultPostProcessManager'
+	//PostProcessManagerArchetype=PostProcessManager_X'Default__PlayerController_Cinematic_TA.DefaultPostProcessManager'
 	
 	CylinderComponent=CollisionCylinder
 	
-	Components(0)=GroupComponent_ORS'Default__PlayerController_Cinematic_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PlayerController_Cinematic_TA.DefaultRegistryGroup'
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=None
 	end object

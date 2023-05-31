@@ -30,7 +30,7 @@ var transient float LastBallHitTime;
 
 defaultproperties
 {
-	Locks=BTLockCollection'Default__AIController_Soccar_TA.DefaultLocks'
+	//Locks=BTLockCollection'Default__AIController_Soccar_TA.DefaultLocks'
 	
-	Components(0)=GroupComponent_ORS'Default__AIController_Soccar_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__AIController_Soccar_TA.DefaultRegistryGroup'
 }

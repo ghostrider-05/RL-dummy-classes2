@@ -9,5 +9,5 @@ class PRI_Breakout_TA extends PRI_TA
 defaultproperties
 {
 	
-	Components(0)=GroupComponent_ORS'Default__PRI_Breakout_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PRI_Breakout_TA.DefaultRegistryGroup'
 }

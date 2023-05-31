@@ -25,5 +25,5 @@ var export editinline StringMap EventToBankMap;
 
 defaultproperties
 {
-	EventToBankMap=StringMap'Default__AkSoundBanksInfo.DefaultEventToBankMap'
+	//EventToBankMap=StringMap'Default__AkSoundBanksInfo.DefaultEventToBankMap'
 }

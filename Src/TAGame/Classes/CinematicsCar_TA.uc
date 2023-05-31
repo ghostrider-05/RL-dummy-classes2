@@ -11,17 +11,17 @@ defaultproperties
 {
 	
 	EngineAudio=DefaultEngineAudio
-	Loadout=ProductLoader_TA'Default__CinematicsCar_TA.DefaultCarLoadout'
-	CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__CinematicsCar_TA.CarTrajectoryComponent0'
-	NameplateComponentCar=NameplateComponentCar_TA'Default__CinematicsCar_TA.NameplateComponentCar0'
+	//Loadout=ProductLoader_TA'Default__CinematicsCar_TA.DefaultCarLoadout'
+	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__CinematicsCar_TA.CarTrajectoryComponent0'
+	//NameplateComponentCar=NameplateComponentCar_TA'Default__CinematicsCar_TA.NameplateComponentCar0'
 	begin object name=DefaultMesh
 		ReplacementPrimitive=None
 	end object
 	// Reference: CarMeshComponent_TA'Default__CinematicsCar_TA.DefaultMesh'
 	CarMesh=DefaultMesh
-	VehicleSim=VehicleSim_TA'Default__CinematicsCar_TA.DefaultVehicleSim'
-	PitchTekComponent=PitchTekDrawingComponent_TA'Default__CinematicsCar_TA.DefaultPTDComponent'
-	Replay=ReplayComponent_TA'Default__CinematicsCar_TA.ReplayComponent0'
+	//VehicleSim=VehicleSim_TA'Default__CinematicsCar_TA.DefaultVehicleSim'
+	//PitchTekComponent=PitchTekDrawingComponent_TA'Default__CinematicsCar_TA.DefaultPTDComponent'
+	//Replay=ReplayComponent_TA'Default__CinematicsCar_TA.ReplayComponent0'
 	
 	
 	Mesh=DefaultMesh
@@ -32,10 +32,10 @@ defaultproperties
 	end object
 	// Reference: CylinderComponent'Default__CinematicsCar_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder
-	Components(1)=GroupComponent_ORS'Default__CinematicsCar_TA.DefaultRegistryGroup'
-	Components(2)=ReplayComponent_TA'Default__CinematicsCar_TA.ReplayComponent0'
-	Components(3)=PitchTekDrawingComponent_TA'Default__CinematicsCar_TA.DefaultPTDComponent'
-	Components(4)=CarTrajectoryComponent_TA'Default__CinematicsCar_TA.CarTrajectoryComponent0'
+//	Components(1)=GroupComponent_ORS'Default__CinematicsCar_TA.DefaultRegistryGroup'
+//	Components(2)=ReplayComponent_TA'Default__CinematicsCar_TA.ReplayComponent0'
+//	Components(3)=PitchTekDrawingComponent_TA'Default__CinematicsCar_TA.DefaultPTDComponent'
+//	Components(4)=CarTrajectoryComponent_TA'Default__CinematicsCar_TA.CarTrajectoryComponent0'
 	
 	CollisionComponent=CollisionCylinder
 }

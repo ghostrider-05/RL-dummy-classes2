@@ -33,5 +33,5 @@ var transient string EsportsLabel;
 
 defaultproperties
 {
-	LoadedMtx=LoadedMtxCatalog_TA'Default__ShopTabs_TA.DefaultLoadedMtx'
+	//LoadedMtx=LoadedMtxCatalog_TA'Default__ShopTabs_TA.DefaultLoadedMtx'
 }

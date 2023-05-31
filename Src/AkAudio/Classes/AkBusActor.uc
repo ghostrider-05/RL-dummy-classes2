@@ -30,7 +30,7 @@ var EPinnedAxisType PinnedAxis;
 
 defaultproperties
 {
-	SoundSource=AkSoundSource'Default__AkBusActor.AkBusActor0'
-	Components(0)=AkSoundSource'Default__AkBusActor.AkBusActor0'
+	//SoundSource=AkSoundSource'Default__AkBusActor.AkBusActor0'
+	//Components(0)=AkSoundSource'Default__AkBusActor.AkBusActor0'
 	CollisionType=COLLIDE_CustomDefault
 }

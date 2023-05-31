@@ -49,6 +49,6 @@ defaultproperties
 	LastZoneIndex=-1
 	StateEvents(0)=FXActorEvent_X'FXActorEvents.SafeZone_Active'
 	StateEvents(1)=FXActorEvent_X'FXActorEvents.SafeZone_FinalZone'
-	Parameters=ParameterDispenser_X'Default__FXActor_SafeZone_Knockout_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_SafeZone_Knockout_TA.DefaultParameters'
 	TickGroup=TG_PostUpdateWork
 }

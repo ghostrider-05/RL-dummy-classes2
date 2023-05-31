@@ -14,5 +14,5 @@ var() export editinline EngineAudioRevSimLimiter_TA RevLimiter;
 defaultproperties
 {
 	Controls=(Weight=900.0,EngineTorque=2500.0,BreakingHorsePower=6000.0,GearRatios=(3.50,2.0,1.40,1.0,0.70))
-	RevLimiter=EngineAudioRevSimLimiter_TA'Default__EngineAudioProfileREV_TA.RevLimiter0'
+	//RevLimiter=EngineAudioRevSimLimiter_TA'Default__EngineAudioProfileREV_TA.RevLimiter0'
 }

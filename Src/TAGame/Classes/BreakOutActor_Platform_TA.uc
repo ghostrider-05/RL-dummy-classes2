@@ -61,14 +61,14 @@ defaultproperties
 	MaxDamage=2
 	
 	StaticMeshComponent=StaticMeshComponent0
-	LightEnvironment=DynamicLightEnvironmentComponent'Default__BreakOutActor_Platform_TA.MyLightEnvironment'
+	//LightEnvironment=DynamicLightEnvironmentComponent'Default__BreakOutActor_Platform_TA.MyLightEnvironment'
 	NeighborRadius=700.0
 	DamageState=(State=255,Causer=None,DamageLocation=(X=0.0,Y=0.0,Z=0.0),bDirectDamage=false,bImmediate=false)
 	PreReplayState=(State=255,Causer=None,DamageLocation=(X=0.0,Y=0.0,Z=0.0),bDirectDamage=false,bImmediate=false)
 	HalfSizeFirstTileScale=(X=1.0,Y=-1.0,Z=1.0)
 	begin object name=StaticMeshComponent0 class=StaticMeshComponent
 		ReplacementPrimitive=None
-		LightEnvironment=DynamicLightEnvironmentComponent'Default__BreakOutActor_Platform_TA.MyLightEnvironment'
+//		LightEnvironment=DynamicLightEnvironmentComponent'Default__BreakOutActor_Platform_TA.MyLightEnvironment'
 		BlockRigidBody=true
 		RBCollideWithChannels=(GameplayPhysics=true,EffectPhysics=true,Ball=true)
 	end object

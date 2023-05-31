@@ -15,19 +15,19 @@ defaultproperties
 	ViewIndex=-1
 	AngleOffset=(Pitch=0,Yaw=-4096,Roll=0)
 	IntroCarsTemplates=IntroCarTemplates_TA'IntroCarTemplates.IntroCarTemplates_TA'
-	ProductLoader=ProductLoader_TA'Default__SkeletalMeshActorMAT_IntroCar_TA.DefaultLoader'
+	//ProductLoader=ProductLoader_TA'Default__SkeletalMeshActorMAT_IntroCar_TA.DefaultLoader'
 	
 	SkeletalMeshComponent=SkeletalMeshComponent0
-	LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
-	FacialAudioComp=AudioComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.FaceAudioComponent'
-	Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
+	//LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
+	//FacialAudioComp=AudioComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.FaceAudioComponent'
+	//Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
 	begin object name=SkeletalMeshComponent0
 		ReplacementPrimitive=None
-		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
+//		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.MyLightEnvironment'
 	end object
 	// Reference: SkeletalMeshComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.SkeletalMeshComponent0'
 	Components(1)=SkeletalMeshComponent0
-	Components(2)=AudioComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.FaceAudioComponent'
+//	Components(2)=AudioComponent'Default__SkeletalMeshActorMAT_IntroCar_TA.FaceAudioComponent'
 	
 	CollisionComponent=SkeletalMeshComponent0
 }

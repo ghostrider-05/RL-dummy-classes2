@@ -159,7 +159,7 @@ defaultproperties
 	ForcedTeamColors[0]=(R=0.0,G=0.0,B=0.0,A=1.0)
 	ForcedTeamColors[1]=(R=0.0,G=0.0,B=0.0,A=1.0)
 	ForcedCustomColor=(R=0.0,G=0.0,B=0.0,A=1.0)
-	EquipProfile=ProductEquipProfile_TA'Default__ProductAsset_Body_TA.DefaultEquipProfile'
+	//EquipProfile=ProductEquipProfile_TA'Default__ProductAsset_Body_TA.DefaultEquipProfile'
 	WheelPreviewAnimTranslateScale=1.0
 	LODDistanceInfo(0)=(DisplayFactor=0.0,LODHysteresis=0.020)
 	LODDistanceInfo(1)=(DisplayFactor=0.150,LODHysteresis=0.020)

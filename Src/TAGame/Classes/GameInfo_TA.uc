@@ -34,5 +34,5 @@ defaultproperties
 	bRestartLevel=false
 	bWaitingToStartMatch=true
 	PlayerReplicationInfoClass=class'PRI_TA'
-	Components(0)=GroupComponent_ORS'Default__GameInfo_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_TA.DefaultRegistryGroup'
 }

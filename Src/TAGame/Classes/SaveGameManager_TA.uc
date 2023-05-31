@@ -26,7 +26,7 @@ var config string EpicSaveFolderPath;
 defaultproperties
 {
 	SaveDataID="SaveData"
-	SaveData=SaveData_TA'Default__SaveGameManager_TA.SaveData0'
+	//SaveData=SaveData_TA'Default__SaveGameManager_TA.SaveData0'
 	/**MinTimeBetweenSaves=3.0*/
 	/**SaveFolderPath="..\\..\\TAGame\\SaveData\\"*/
 	/**EpicSaveFolderPath="..\\..\\TAGame\\SaveDataEpic\\"*/

@@ -44,5 +44,5 @@ defaultproperties
 	SuperSonicState=FXActorEvent_X'FXActorEvents.SuperSonic'
 	MaxTrailDilation=4.0
 	TrailIntensityName=TrailIntensity
-	Parameters=ParameterDispenser_X'Default__FXActor_Ball_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_Ball_TA.DefaultParameters'
 }

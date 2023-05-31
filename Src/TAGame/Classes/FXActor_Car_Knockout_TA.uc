@@ -31,5 +31,5 @@ defaultproperties
 	StateEvents(5)=FXActorEvent_X'FXActorEvents.KO_IsBeingGrabbed'
 	StateEvents(6)=FXActorEvent_X'FXActorEvents.KO_Respawning'
 	MVPEvent=FXActorEvent_X'FXActorEvents.KO_ActiveMVP'
-	Parameters=ParameterDispenser_X'Default__FXActor_Car_Knockout_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_Car_Knockout_TA.DefaultParameters'
 }

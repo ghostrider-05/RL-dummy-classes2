@@ -39,7 +39,7 @@ var float LastPhysicsDeltaTimeScale;
 defaultproperties
 {
 	bEnableClientPrediction=true
-	OnlineProductStore=OnlineProductStore_TA'Default__EngineShare_TA.DefaultOnlineProductStore'
+	//OnlineProductStore=OnlineProductStore_TA'Default__EngineShare_TA.DefaultOnlineProductStore'
 	PhysicsFramerate=120.0
 	MaxPhysicsSubsteps=5
 	MaxUploadedClientFrames=30

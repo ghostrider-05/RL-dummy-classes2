@@ -11,9 +11,9 @@ defaultproperties
 {
 	
 	StaticMesh=DefaultMesh
-	BallCamTarget=BallCamTarget_TA'Default__Ball_Tutorial_TA.DefaultBallCamTarget'
-	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_Tutorial_TA.DefaultPTDComponent'
-	Replay=ReplayComponent_TA'Default__Ball_Tutorial_TA.ReplayComponent0'
+	//BallCamTarget=BallCamTarget_TA'Default__Ball_Tutorial_TA.DefaultBallCamTarget'
+	//PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_Tutorial_TA.DefaultPTDComponent'
+	//Replay=ReplayComponent_TA'Default__Ball_Tutorial_TA.ReplayComponent0'
 	
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=None
@@ -24,14 +24,14 @@ defaultproperties
 	
 	Components(1)=CollisionCylinder
 	Components(2)=None
-	Components(3)=GroupComponent_ORS'Default__Ball_Tutorial_TA.DefaultRegistryGroup'
-	Components(4)=ReplayComponent_TA'Default__Ball_Tutorial_TA.ReplayComponent0'
+//	Components(3)=GroupComponent_ORS'Default__Ball_Tutorial_TA.DefaultRegistryGroup'
+//	Components(4)=ReplayComponent_TA'Default__Ball_Tutorial_TA.ReplayComponent0'
 	begin object name=DefaultMesh
 		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__Ball_Tutorial_TA.DefaultMesh'
 	Components(5)=DefaultMesh
-	Components(6)=PitchTekDrawingComponent_TA'Default__Ball_Tutorial_TA.DefaultPTDComponent'
+//	Components(6)=PitchTekDrawingComponent_TA'Default__Ball_Tutorial_TA.DefaultPTDComponent'
 	
 	CollisionComponent=DefaultMesh
 }

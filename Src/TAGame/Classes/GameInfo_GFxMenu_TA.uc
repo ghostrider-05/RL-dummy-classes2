@@ -24,5 +24,5 @@ defaultproperties
 	UISoundState_MainMenu=MainMenu
 	
 	PlayerControllerClass=class'PlayerController_Menu_TA'
-	Components(0)=GroupComponent_ORS'Default__GameInfo_GFxMenu_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_GFxMenu_TA.DefaultRegistryGroup'
 }

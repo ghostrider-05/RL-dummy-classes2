@@ -31,5 +31,5 @@ defaultproperties
 	GreenScreenLimits=(Min=0.0,Max=2.0,interval=1.0)
 	BloomScaleLimits=(Min=1.0,Max=10.0,interval=1.0)
 	FilterOverlayLimits=(Min=0.0,Max=1.0,interval=0.050)
-	Blender=CameraStateBlender_X'Default__Camera_Replay_TA.StateBlender0'
+	//Blender=CameraStateBlender_X'Default__Camera_Replay_TA.StateBlender0'
 }

@@ -10,5 +10,5 @@ var array<byte> Body;
 
 defaultproperties
 {
-	Headers=StringMap'Default__PsyNetMessage_X.DefaultHeaders'
+	//Headers=StringMap'Default__PsyNetMessage_X.DefaultHeaders'
 }

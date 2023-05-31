@@ -11,8 +11,8 @@ var export editinline AkSoundSource SoundSource;
 
 defaultproperties
 {
-	SoundSource=AkSoundSource'Default__ArenaSoundPlayer_TA.ArenaSoundSource'
-	Components(0)=AkSoundSource'Default__ArenaSoundPlayer_TA.ArenaSoundSource'
+	//SoundSource=AkSoundSource'Default__ArenaSoundPlayer_TA.ArenaSoundSource'
+	//Components(0)=AkSoundSource'Default__ArenaSoundPlayer_TA.ArenaSoundSource'
 	CollisionType=COLLIDE_CustomDefault
 	bTickIsDisabled=true
 	bMovable=false

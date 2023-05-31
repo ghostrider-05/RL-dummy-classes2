@@ -18,7 +18,7 @@ var() RawDistributionFloat SlomoCurve;
 
 defaultproperties
 {
-	SlomoCurve=(Distribution=DistributionFloatConstantCurve'Default__SeqAct_SetTimeDilation_TA.DistributionVelOverLife',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.0,0.0,0.0,0.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
+	//SlomoCurve=(Distribution=DistributionFloatConstantCurve'Default__SeqAct_SetTimeDilation_TA.DistributionVelOverLife',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.0,0.0,0.0,0.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
 	bCallHandler=false
 	ObjName="Set Time Dilation"
 	ObjCategory="TAGame"

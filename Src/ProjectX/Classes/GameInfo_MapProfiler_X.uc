@@ -11,5 +11,5 @@ defaultproperties
 {
 	
 	PlayerControllerClass=class'PlayerController_X'
-	Components(0)=GroupComponent_ORS'Default__GameInfo_MapProfiler_X.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_MapProfiler_X.DefaultRegistryGroup'
 }

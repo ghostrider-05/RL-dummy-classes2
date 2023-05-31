@@ -9,5 +9,5 @@ class ParticleModuleVelocitySurfaceNormalStatic_X extends ParticleModuleVelocity
 
 defaultproperties
 {
-	VelocityMultiplier=(Distribution=DistributionFloatConstant'Default__ParticleModuleVelocitySurfaceNormalStatic_X.DistributionVelocityMultiplier')
+	//VelocityMultiplier=(Distribution=DistributionFloatConstant'Default__ParticleModuleVelocitySurfaceNormalStatic_X.DistributionVelocityMultiplier')
 }

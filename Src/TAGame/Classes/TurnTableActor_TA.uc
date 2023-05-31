@@ -21,7 +21,7 @@ var transient OnlineProduct_TA RevealProduct;
 
 defaultproperties
 {
-	RotateComponent=RotateComponent_TA'Default__TurnTableActor_TA.RotateComp'
+	//RotateComponent=RotateComponent_TA'Default__TurnTableActor_TA.RotateComp'
 	DelayedPreviewSlot=-1
 	TurntableRiseDelay=5.0
 	begin object name=PreviewMesh class=SkeletalMeshComponent
@@ -32,20 +32,20 @@ defaultproperties
 	end object
 	// Reference: SkeletalMeshComponent'Default__TurnTableActor_TA.PreviewMesh'
 	SkeletalMeshComponent=PreviewMesh
-	LightEnvironment=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
-	FacialAudioComp=AudioComponent'Default__TurnTableActor_TA.FaceAudioComponent'
-	Components(0)=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
+	//LightEnvironment=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
+	//FacialAudioComp=AudioComponent'Default__TurnTableActor_TA.FaceAudioComponent'
+	//Components(0)=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
 	begin object name=SkeletalMeshComponent0
-		Animations=AnimNodeSequence'Default__TurnTableActor_TA.SkeletalMeshComponent0.AnimNodeSeq0'
+//		Animations=AnimNodeSequence'Default__TurnTableActor_TA.SkeletalMeshComponent0.AnimNodeSeq0'
 		ReplacementPrimitive=None
-		LightEnvironment=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
+//		LightEnvironment=DynamicLightEnvironmentComponent'Default__TurnTableActor_TA.MyLightEnvironment'
 	end object
 	// Reference: SkeletalMeshComponent'Default__TurnTableActor_TA.SkeletalMeshComponent0'
 	Components(1)=SkeletalMeshComponent0
-	Components(2)=AudioComponent'Default__TurnTableActor_TA.FaceAudioComponent'
+//	Components(2)=AudioComponent'Default__TurnTableActor_TA.FaceAudioComponent'
 	
 	Components(3)=PreviewMesh
-	Components(4)=RotateComponent_TA'Default__TurnTableActor_TA.RotateComp'
+//	Components(4)=RotateComponent_TA'Default__TurnTableActor_TA.RotateComp'
 	CollisionType=COLLIDE_CustomDefault
 	bNoDelete=false
 	

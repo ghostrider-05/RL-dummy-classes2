@@ -13,6 +13,6 @@ var() export editinline WheelAssetSettings_TA FrontLeft;
 
 defaultproperties
 {
-	FrontRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_FrontWheels_TA.DefaultFrontRight'
-	FrontLeft=WheelAssetSettings_TA'Default__WheelAssetGenerator_FrontWheels_TA.DefaultFrontLeft'
+	//FrontRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_FrontWheels_TA.DefaultFrontRight'
+	//FrontLeft=WheelAssetSettings_TA'Default__WheelAssetGenerator_FrontWheels_TA.DefaultFrontLeft'
 }

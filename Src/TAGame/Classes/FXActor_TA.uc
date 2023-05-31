@@ -25,5 +25,5 @@ defaultproperties
 	TeamStates(1)=FXActorEvent_X'FXActorEvents.Team1'
 	SpawnState=FXActorEvent_X'FXActorEvents.Spawned'
 	ActivationState=FXActorEvent_X'FXActorEvents.Active'
-	Parameters=ParameterDispenser_X'Default__FXActor_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_TA.DefaultParameters'
 }

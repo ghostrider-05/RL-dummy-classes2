@@ -30,7 +30,7 @@ defaultproperties
 	/**LocalCacheTimeoutSeconds=6.0*/
 	/**SyncDataTimeoutSeconds=6.0*/
 	bDebug=true
-	CacheTimer=CacheTimer_X'Default__PsyNetStaticData_X.DefaultCacheTimer'
+	//CacheTimer=CacheTimer_X'Default__PsyNetStaticData_X.DefaultCacheTimer'
 	
 	WebData=DefaultWebData
 	PsyConfigSecret="secret="

@@ -34,6 +34,6 @@ var transient FileLog AILogFile;
 
 defaultproperties
 {
-	Locks=BTLockCollection'Default__AIManager_TA.DefaultLocks'
+	//Locks=BTLockCollection'Default__AIManager_TA.DefaultLocks'
 	CollisionType=COLLIDE_CustomDefault
 }

@@ -27,5 +27,5 @@ var transient array<PauserData> PCPausers;
 defaultproperties
 {
 	
-	Components(0)=GroupComponent_ORS'Default__GameInfo_X.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_X.DefaultRegistryGroup'
 }

@@ -11,5 +11,5 @@ defaultproperties
 {
 	
 	PlayerReplicationInfoClass=class'PRI_KnockOut_TA'
-	Components(0)=GroupComponent_ORS'Default__GameInfo_KnockOut_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_KnockOut_TA.DefaultRegistryGroup'
 }

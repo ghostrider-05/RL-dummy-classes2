@@ -8,8 +8,8 @@ class SplineLoftActorSpawnable_TA extends SplineLoftActorMovable
 
 defaultproperties
 {
-	MeshLightEnvironment=DynamicLightEnvironmentComponent'Default__SplineLoftActorSpawnable_TA.MyMeshLightEnvironment'
+	//MeshLightEnvironment=DynamicLightEnvironmentComponent'Default__SplineLoftActorSpawnable_TA.MyMeshLightEnvironment'
 	Components(0)=None
-	Components(1)=DynamicLightEnvironmentComponent'Default__SplineLoftActorSpawnable_TA.MyMeshLightEnvironment'
+//	Components(1)=DynamicLightEnvironmentComponent'Default__SplineLoftActorSpawnable_TA.MyMeshLightEnvironment'
 	bNoDelete=false
 }

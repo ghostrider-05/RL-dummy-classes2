@@ -57,20 +57,20 @@ defaultproperties
 {
 	
 	EngineAudio=DefaultEngineAudio
-	Loadout=ProductLoader_TA'Default__Car_TA.DefaultCarLoadout'
+	//Loadout=ProductLoader_TA'Default__Car_TA.DefaultCarLoadout'
 	bTeamBumpsUseCarForceMultiplier=true
-	CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
-	NameplateComponentCar=NameplateComponentCar_TA'Default__Car_TA.NameplateComponentCar0'
+	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
+	//NameplateComponentCar=NameplateComponentCar_TA'Default__Car_TA.NameplateComponentCar0'
 	begin object name=DefaultMesh class=CarMeshComponent_TA
 		ReplacementPrimitive=None
 		LightingChannels=(BSP=false,Static=false)
 	end object
 	// Reference: CarMeshComponent_TA'Default__Car_TA.DefaultMesh'
 	CarMesh=DefaultMesh
-	VehicleSim=VehicleSim_TA'Default__Car_TA.DefaultVehicleSim'
-	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Car_TA.DefaultPTDComponent'
+	//VehicleSim=VehicleSim_TA'Default__Car_TA.DefaultVehicleSim'
+	//PitchTekComponent=PitchTekDrawingComponent_TA'Default__Car_TA.DefaultPTDComponent'
 	bAutoInitFXEffects=false
-	Replay=ReplayComponent_TA'Default__Car_TA.ReplayComponent0'
+	//Replay=ReplayComponent_TA'Default__Car_TA.ReplayComponent0'
 	
 	
 	Mesh=DefaultMesh
@@ -84,10 +84,10 @@ defaultproperties
 	end object
 	// Reference: CylinderComponent'Default__Car_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder
-	Components(1)=GroupComponent_ORS'Default__Car_TA.DefaultRegistryGroup'
-	Components(2)=ReplayComponent_TA'Default__Car_TA.ReplayComponent0'
-	Components(3)=PitchTekDrawingComponent_TA'Default__Car_TA.DefaultPTDComponent'
-	Components(4)=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
+//	Components(1)=GroupComponent_ORS'Default__Car_TA.DefaultRegistryGroup'
+//	Components(2)=ReplayComponent_TA'Default__Car_TA.ReplayComponent0'
+//	Components(3)=PitchTekDrawingComponent_TA'Default__Car_TA.DefaultPTDComponent'
+//	Components(4)=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
 	NetUpdateFrequency=15.0
 	NetPriority=6.0
 	

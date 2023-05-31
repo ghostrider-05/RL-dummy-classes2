@@ -21,7 +21,7 @@ defaultproperties
 	SpringToPitch=(X=1.0,Y=0.0,Z=0.0)
 	SpringToYaw=(X=0.0,Y=1.0,Z=0.0)
 	SpringToRoll=(X=0.0,Y=0.0,Z=1.0)
-	SpringComponent=SimpleSpringComponent_TA'Default__SkelControlRotationSpring_TA.DefaultSpring'
+	//SpringComponent=SimpleSpringComponent_TA'Default__SkelControlRotationSpring_TA.DefaultSpring'
 	bApplyRotation=true
 	bAddRotation=true
 	BoneRotationSpace=BCS_BoneSpace

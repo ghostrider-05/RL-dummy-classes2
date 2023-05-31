@@ -12,5 +12,5 @@ var bool bAutoEntered;
 defaultproperties
 {
 	
-	Components(0)=GroupComponent_ORS'Default__GameInfo_Tutorial_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_Tutorial_TA.DefaultRegistryGroup'
 }

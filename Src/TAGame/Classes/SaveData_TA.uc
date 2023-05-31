@@ -63,7 +63,7 @@ var const string CreditRefundForOldSeasons;
 defaultproperties
 {
 	/**bEnableOnlineData=true*/
-	ProductTransactions=ProductTransactions_TA'Default__SaveData_TA.DefaultProductTransactions'
+	//ProductTransactions=ProductTransactions_TA'Default__SaveData_TA.DefaultProductTransactions'
 	XPGainPercentage(0)=1.0
 	XPGainPercentage(1)=0.50
 	XPGainPercentage(2)=0.0

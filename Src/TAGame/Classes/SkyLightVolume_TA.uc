@@ -14,7 +14,7 @@ var() EPaintTeam LowerPaintTeam;
 defaultproperties
 {
 	begin object name=DefaultSkyLight class=SkyLightVolumeComponent_TA
-		BrushComponent=BrushComponent'Default__SkyLightVolume_TA.BrushComponent0'
+//		BrushComponent=BrushComponent'Default__SkyLightVolume_TA.BrushComponent0'
 	end object
 	// Reference: SkyLightVolumeComponent_TA'Default__SkyLightVolume_TA.DefaultSkyLight'
 	SkyLight=DefaultSkyLight

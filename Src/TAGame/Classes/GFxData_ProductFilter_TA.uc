@@ -147,4 +147,15 @@ var ProductsConfig_TA ProductsConfig;
 
 defaultproperties
 {
+	UIAttributes(0)=class'ProductAttribute_Certified_TA'
+	UIAttributes(1)=class'ProductAttribute_Painted_TA'
+	UIAttributes(2)=class'ProductAttribute_SpecialEdition_TA'
+	UIAttributes(3)=class'ProductAttribute_TeamEdition_TA'
+	
+	/**bAllowDefaultProducts=true*/
+	BatchPreviewQuantityTimer=0.010
+	
+	
+	
+	TableName=ProductFilter
 }

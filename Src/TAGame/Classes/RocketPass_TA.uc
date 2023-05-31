@@ -29,5 +29,5 @@ var transient Wallet_TA Wallet;
 
 defaultproperties
 {
-	Bundles=RocketPassBundleContainer_TA'Default__RocketPass_TA.RPBundles'
+	//Bundles=RocketPassBundleContainer_TA'Default__RocketPass_TA.RPBundles'
 }

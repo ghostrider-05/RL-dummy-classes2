@@ -65,8 +65,8 @@ defaultproperties
 {
 	
 	MaxPartySize=8
-	MessageComponent=OnlineMessageComponent_X'Default__OnlineGameParty_X.DefaultMessageComponent'
-	NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_X.NullSearchStatus0'
+	//MessageComponent=OnlineMessageComponent_X'Default__OnlineGameParty_X.DefaultMessageComponent'
+	//NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_X.NullSearchStatus0'
 	PartyTimeout=300
 	
 	/**NotInSameOnlineGameError="[PlayerName] is in an online game."*/

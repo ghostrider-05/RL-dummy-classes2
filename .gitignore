@@ -3,5 +3,6 @@ node_modules
 .env
 
 dist
+out
 config.json
 description.json

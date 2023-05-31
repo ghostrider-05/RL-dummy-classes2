@@ -10,7 +10,7 @@ defaultproperties
 {
 	
 	ConstraintSetup=MyConstraintSetup
-	ConstraintInstance=RB_ConstraintInstance'Default__Constraint2D_TA.MyConstraintInstance'
+	//ConstraintInstance=RB_ConstraintInstance'Default__Constraint2D_TA.MyConstraintInstance'
 	Components(0)=None
 	
 	Components(1)=MyConDrawComponent

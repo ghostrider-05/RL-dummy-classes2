@@ -92,6 +92,6 @@ var transient bool bSnapNextTransition;
 
 defaultproperties
 {
-	Blender=CameraStateBlender_X'Default__Camera_X.StateBlender0'
+	//Blender=CameraStateBlender_X'Default__Camera_X.StateBlender0'
 	CameraShakeCamModClass=class'CameraModifier_CameraShake_X'
 }

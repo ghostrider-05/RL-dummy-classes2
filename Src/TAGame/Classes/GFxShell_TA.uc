@@ -47,5 +47,5 @@ defaultproperties
 	/**RankedReconnectBody="It appears you accidentally left a ranked match. Would you like to rejoin?"*/
 	/**BannedTimeRemainingMessage="[Hours] hour(s) [Minutes] minute(s) remaining."*/
 	/**PermaBannedMessage="This ban is permanent."*/
-	DataStore=GFxDataStore_X'Default__GFxShell_TA.DefaultDataStore'
+	//DataStore=GFxDataStore_X'Default__GFxShell_TA.DefaultDataStore'
 }

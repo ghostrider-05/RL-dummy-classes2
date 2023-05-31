@@ -55,5 +55,5 @@ var transient AsyncTask SyncScheduleTask;
 defaultproperties
 {
 	DataRefreshTime=900.0
-	TourList=TourList_TA'Default__AutoTour_TA.TourList0'
+	//TourList=TourList_TA'Default__AutoTour_TA.TourList0'
 }

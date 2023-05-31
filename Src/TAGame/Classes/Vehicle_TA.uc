@@ -62,7 +62,7 @@ defaultproperties
 	// Reference: PitchTekDrawingComponent_TA'Default__Vehicle_TA.DefaultPTDComponent'
 	PitchTekComponent=DefaultPTDComponent
 	RBHistoryClass=class'RBVehicleHistory_TA'
-	Replay=ReplayComponent_TA'Default__Vehicle_TA.ReplayComponent0'
+	//Replay=ReplayComponent_TA'Default__Vehicle_TA.ReplayComponent0'
 	
 	LandMovementState=Driving
 	
@@ -72,8 +72,8 @@ defaultproperties
 	end object
 	// Reference: CylinderComponent'Default__Vehicle_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder
-	Components(1)=GroupComponent_ORS'Default__Vehicle_TA.DefaultRegistryGroup'
-	Components(2)=ReplayComponent_TA'Default__Vehicle_TA.ReplayComponent0'
+//	Components(1)=GroupComponent_ORS'Default__Vehicle_TA.DefaultRegistryGroup'
+//	Components(2)=ReplayComponent_TA'Default__Vehicle_TA.ReplayComponent0'
 	
 	Components(3)=DefaultPTDComponent
 	Physics=PHYS_None

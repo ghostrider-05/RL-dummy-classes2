@@ -10,5 +10,5 @@ var export editinline transient UserSettingMetrics_TA Metrics;
 
 defaultproperties
 {
-	Cache=UserSettingObserverEventCache_TA'Default__UserSettingObserver_TA.Cache0'
+	//Cache=UserSettingObserverEventCache_TA'Default__UserSettingObserver_TA.Cache0'
 }

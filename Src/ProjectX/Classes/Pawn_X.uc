@@ -24,7 +24,7 @@ defaultproperties
 	// Reference: CylinderComponent'Default__Pawn_X.CollisionCylinder'
 	Components(1)=CollisionCylinder
 	Components(2)=None
-	Components(3)=GroupComponent_ORS'Default__Pawn_X.DefaultRegistryGroup'
+//	Components(3)=GroupComponent_ORS'Default__Pawn_X.DefaultRegistryGroup'
 	bCanStepUpOn=false
 	
 	CollisionComponent=CollisionCylinder

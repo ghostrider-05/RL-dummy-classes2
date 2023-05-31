@@ -18,6 +18,17 @@ var repnotify string MatchGuid;
 
 defaultproperties
 {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//Components(0)=GroupComponent_ORS'Default__GRI_X.DefaultRegistryGroup'
+	bTickIsDisabled=true
 }
 replication
 {

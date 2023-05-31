@@ -109,21 +109,21 @@ var transient Car_KnockOut_TA CarPendingThrow;
 
 defaultproperties
 {
-	AttachedTarget=Target_Knockout_TA'Default__Car_KnockOut_TA.DefaultTarget'
+	//AttachedTarget=Target_Knockout_TA'Default__Car_KnockOut_TA.DefaultTarget'
 	ResetAttackPRIDelay=1.0
 	
 	EngineAudio=DefaultEngineAudio
-	Loadout=ProductLoader_TA'Default__Car_KnockOut_TA.DefaultCarLoadout'
-	CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_KnockOut_TA.CarTrajectoryComponent0'
-	NameplateComponentCar=NameplateComponentCar_TA'Default__Car_KnockOut_TA.NameplateComponentCar0'
+	//Loadout=ProductLoader_TA'Default__Car_KnockOut_TA.DefaultCarLoadout'
+	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_KnockOut_TA.CarTrajectoryComponent0'
+	//NameplateComponentCar=NameplateComponentCar_TA'Default__Car_KnockOut_TA.NameplateComponentCar0'
 	begin object name=DefaultMesh
 		ReplacementPrimitive=None
 	end object
 	// Reference: CarMeshComponent_TA'Default__Car_KnockOut_TA.DefaultMesh'
 	CarMesh=DefaultMesh
-	VehicleSim=VehicleSim_TA'Default__Car_KnockOut_TA.DefaultVehicleSim'
-	PitchTekComponent=PitchTekDrawingComponent_TA'Default__Car_KnockOut_TA.DefaultPTDComponent'
-	Replay=ReplayComponent_TA'Default__Car_KnockOut_TA.ReplayComponent0'
+	//VehicleSim=VehicleSim_TA'Default__Car_KnockOut_TA.DefaultVehicleSim'
+	//PitchTekComponent=PitchTekDrawingComponent_TA'Default__Car_KnockOut_TA.DefaultPTDComponent'
+	//Replay=ReplayComponent_TA'Default__Car_KnockOut_TA.ReplayComponent0'
 	
 	
 	Mesh=DefaultMesh
@@ -134,11 +134,11 @@ defaultproperties
 	end object
 	// Reference: CylinderComponent'Default__Car_KnockOut_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder
-	Components(1)=GroupComponent_ORS'Default__Car_KnockOut_TA.DefaultRegistryGroup'
-	Components(2)=ReplayComponent_TA'Default__Car_KnockOut_TA.ReplayComponent0'
-	Components(3)=PitchTekDrawingComponent_TA'Default__Car_KnockOut_TA.DefaultPTDComponent'
-	Components(4)=CarTrajectoryComponent_TA'Default__Car_KnockOut_TA.CarTrajectoryComponent0'
-	Components(5)=Target_Knockout_TA'Default__Car_KnockOut_TA.DefaultTarget'
+//	Components(1)=GroupComponent_ORS'Default__Car_KnockOut_TA.DefaultRegistryGroup'
+//	Components(2)=ReplayComponent_TA'Default__Car_KnockOut_TA.ReplayComponent0'
+//	Components(3)=PitchTekDrawingComponent_TA'Default__Car_KnockOut_TA.DefaultPTDComponent'
+//	Components(4)=CarTrajectoryComponent_TA'Default__Car_KnockOut_TA.CarTrajectoryComponent0'
+//	Components(5)=Target_Knockout_TA'Default__Car_KnockOut_TA.DefaultTarget'
 	
 	CollisionComponent=CollisionCylinder
 }

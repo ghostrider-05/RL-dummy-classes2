@@ -10,5 +10,5 @@ class PlayerController_KnockOut_TA extends PlayerController_TA
 defaultproperties
 {
 	
-	Components(0)=GroupComponent_ORS'Default__PlayerController_KnockOut_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PlayerController_KnockOut_TA.DefaultRegistryGroup'
 }

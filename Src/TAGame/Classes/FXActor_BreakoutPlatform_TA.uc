@@ -42,6 +42,6 @@ defaultproperties
 	DamageDistanceSpeed=2000.0
 	DamagedState=FXActorEvent_X'FXActorEvents.Damaged'
 	BrokenState=FXActorEvent_X'FXActorEvents.Broken'
-	Parameters=ParameterDispenser_X'Default__FXActor_BreakoutPlatform_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_BreakoutPlatform_TA.DefaultParameters'
 	CollisionType=COLLIDE_CustomDefault
 }

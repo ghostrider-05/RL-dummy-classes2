@@ -31,5 +31,5 @@ defaultproperties
 	BallPulseTimeModifier=3.0
 	BrokenBeamResetTime=1.0
 	MaxTimePercentageToPerformPulse=0.950
-	Parameters=ParameterDispenser_X'Default__FXActor_BallHaunted_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_BallHaunted_TA.DefaultParameters'
 }

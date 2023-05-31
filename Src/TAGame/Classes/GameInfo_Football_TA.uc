@@ -10,5 +10,5 @@ class GameInfo_Football_TA extends GameInfo_Soccar_TA
 defaultproperties
 {
 	
-	Components(0)=GroupComponent_ORS'Default__GameInfo_Football_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_Football_TA.DefaultRegistryGroup'
 }

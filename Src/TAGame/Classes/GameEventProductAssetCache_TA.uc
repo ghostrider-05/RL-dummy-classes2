@@ -10,5 +10,5 @@ var array<PriAssetCache_TA> PriCache;
 
 defaultproperties
 {
-	AssetCache=ProductAssetCache_TA'Default__GameEventProductAssetCache_TA.DefaultAssetCache'
+	//AssetCache=ProductAssetCache_TA'Default__GameEventProductAssetCache_TA.DefaultAssetCache'
 }

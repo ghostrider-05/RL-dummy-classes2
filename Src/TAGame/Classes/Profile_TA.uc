@@ -31,5 +31,5 @@ var transient ProfileLoadoutSave_TA LoadoutSave;
 defaultproperties
 {
 	ControllerId=-1
-	SaveObjectProvider=ObjectProvider'Default__Profile_TA.DefaultObjectProvider'
+	//SaveObjectProvider=ObjectProvider'Default__Profile_TA.DefaultObjectProvider'
 }

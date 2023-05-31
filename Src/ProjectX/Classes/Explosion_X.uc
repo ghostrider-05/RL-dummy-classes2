@@ -14,8 +14,8 @@ var transient PRI_X Scorer;
 
 defaultproperties
 {
-	ExplosionComponent=ExplosionComponent_X'Default__Explosion_X.DefaultExplosion'
-	Components(0)=ExplosionComponent_X'Default__Explosion_X.DefaultExplosion'
+	//ExplosionComponent=ExplosionComponent_X'Default__Explosion_X.DefaultExplosion'
+	//Components(0)=ExplosionComponent_X'Default__Explosion_X.DefaultExplosion'
 	CollisionType=COLLIDE_CustomDefault
 	LifeSpan=5.0
 }

@@ -15,7 +15,7 @@ var() const float PsyNetDisconnectShutdownTime;
 
 defaultproperties
 {
-	HeartbeatTimer=CacheTimer_X'Default__OnlineGameDedicatedServerRegistration_X.DefaultHeartbeatTimer'
+	//HeartbeatTimer=CacheTimer_X'Default__OnlineGameDedicatedServerRegistration_X.DefaultHeartbeatTimer'
 	GameTimeTimer=30
 	PsyNetDisconnectShutdownTime=1800.0
 }

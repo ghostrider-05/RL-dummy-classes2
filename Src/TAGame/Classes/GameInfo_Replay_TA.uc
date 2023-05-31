@@ -18,5 +18,5 @@ defaultproperties
 {
 	
 	PlayerReplicationInfoClass=class'PRI_TA'
-	Components(0)=GroupComponent_ORS'Default__GameInfo_Replay_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_Replay_TA.DefaultRegistryGroup'
 }

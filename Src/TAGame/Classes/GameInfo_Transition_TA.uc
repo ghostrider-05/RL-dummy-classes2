@@ -13,5 +13,5 @@ defaultproperties
 	bRestartLevel=false
 	bWaitingToStartMatch=true
 	bKeepingLoadingMovieOpen=true
-	Components(0)=GroupComponent_ORS'Default__GameInfo_Transition_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__GameInfo_Transition_TA.DefaultRegistryGroup'
 }

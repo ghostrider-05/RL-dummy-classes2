@@ -23,5 +23,5 @@ var const transient array<OnlineMessageHandler> MessageHandlers;
 
 defaultproperties
 {
-	Serializer=JSONSerializer_X'Default__OnlineMessageComponent_X.DefaultSerializer'
+	//Serializer=JSONSerializer_X'Default__OnlineMessageComponent_X.DefaultSerializer'
 }

@@ -34,5 +34,5 @@ var export editinline PsyNetServiceSubscriptions_X Subscriptions;
 defaultproperties
 {
 	WaitForMessageTime=10.0
-	Subscriptions=PsyNetServiceSubscriptions_X'Default__PsyNetChannel_X.DefaultSubscriptions'
+	//Subscriptions=PsyNetServiceSubscriptions_X'Default__PsyNetChannel_X.DefaultSubscriptions'
 }

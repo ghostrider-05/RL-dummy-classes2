@@ -35,7 +35,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	
-	Components(0)=GroupComponent_ORS'Default__PlayerControllerBase_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PlayerControllerBase_TA.DefaultRegistryGroup'
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=None
 	end object

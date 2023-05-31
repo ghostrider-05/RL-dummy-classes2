@@ -17,8 +17,8 @@ var transient Vehicle_TA Car;
 
 defaultproperties
 {
-	BlowoffComponent=EngineAudioBlowoffComponent_TA'Default__EngineAudioBaseComponent_TA.BlowoffDefault'
-	WheelSpeed=WheelSpeedComponent_TA'Default__EngineAudioBaseComponent_TA.WheelSpeedDefault'
-	ThrottleComponent=ThrottleStateComponent_TA'Default__EngineAudioBaseComponent_TA.ThrottleStateDefault'
+	//BlowoffComponent=EngineAudioBlowoffComponent_TA'Default__EngineAudioBaseComponent_TA.BlowoffDefault'
+	//WheelSpeed=WheelSpeedComponent_TA'Default__EngineAudioBaseComponent_TA.WheelSpeedDefault'
+	//ThrottleComponent=ThrottleStateComponent_TA'Default__EngineAudioBaseComponent_TA.ThrottleStateDefault'
 	bTick=false
 }

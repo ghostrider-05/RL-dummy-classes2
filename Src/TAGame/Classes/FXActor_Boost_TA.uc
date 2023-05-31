@@ -87,5 +87,5 @@ defaultproperties
 	BoostMeshFadeInTime=(Min=0.0,Max=1.0)
 	BoostMeshFadeOutTime=(Min=1.0,Max=2.0)
 	bRenderInactive=true
-	Parameters=ParameterDispenser_X'Default__FXActor_Boost_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_Boost_TA.DefaultParameters'
 }

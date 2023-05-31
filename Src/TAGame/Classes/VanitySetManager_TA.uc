@@ -12,5 +12,5 @@ var export editinline VanityQuery_TA VanityQuery;
 
 defaultproperties
 {
-	VanityQuery=VanityQuery_TA'Default__VanitySetManager_TA.VanityQuery0'
+	//VanityQuery=VanityQuery_TA'Default__VanitySetManager_TA.VanityQuery0'
 }

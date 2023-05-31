@@ -182,7 +182,7 @@ defaultproperties
 	bDeactivateWhenOwnerDestroyed=true
 	bAutoActivate=true
 	DestroyWaitTime=10.0
-	Parameters=ParameterDispenser_X'Default__FXActor_X.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_X.DefaultParameters'
 	AnimationEndState=FXActorEvent_X'FXActorEvents.AnimationEnded'
 	TickGroup=TG_PostAsyncWork
 	bAlwaysRelevant=true

@@ -14,5 +14,5 @@ defaultproperties
 {
 	SpeedMultiplier=1.0
 	EditingState=FXActorEvent_X'FXActorEvents.Editing'
-	Parameters=ParameterDispenser_X'Default__FXActor_GameEditorActor_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_GameEditorActor_TA.DefaultParameters'
 }

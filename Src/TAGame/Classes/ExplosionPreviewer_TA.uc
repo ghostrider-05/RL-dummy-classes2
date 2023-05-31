@@ -14,5 +14,5 @@ var PlayerController PC;
 
 defaultproperties
 {
-	ProductLoader=ProductLoader_TA'Default__ExplosionPreviewer_TA.DefaultLoader'
+	//ProductLoader=ProductLoader_TA'Default__ExplosionPreviewer_TA.DefaultLoader'
 }

@@ -136,7 +136,7 @@ defaultproperties
 	CylinderComponent=None
 	
 	NavigationHandleClass=None
-	Components(0)=GroupComponent_ORS'Default__PlayerController_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PlayerController_TA.DefaultRegistryGroup'
 	CollisionComponent=None
 }
 replication

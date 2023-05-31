@@ -36,7 +36,7 @@ defaultproperties
 	JiggleDistance=100.0
 	JiggleSpeed=10.0
 	JiggleSlowDownSpeed=1.250
-	CollisionInformation=GoalCollisionShape_X'Default__JiggleHitHandler_TA.DefaultCollisionShape'
+	//CollisionInformation=GoalCollisionShape_X'Default__JiggleHitHandler_TA.DefaultCollisionShape'
 	bOnlyApplyImpulseOnce=false
 	Speed=20000.0
 }

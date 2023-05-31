@@ -11,5 +11,5 @@ var array<PsyNetChannel_X> Channels;
 
 defaultproperties
 {
-	Subscriptions=PsyNetServiceSubscriptions_X'Default__PsyNetServiceProvider_X.DefaultSubscriptions'
+	//Subscriptions=PsyNetServiceSubscriptions_X'Default__PsyNetServiceProvider_X.DefaultSubscriptions'
 }

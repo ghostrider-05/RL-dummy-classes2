@@ -11,5 +11,5 @@ var transient Team_TA TeamArchetype;
 
 defaultproperties
 {
-	Loader=ProductLoader_TA'Default__LoadoutRenderer_TA.DefaultLoader'
+	//Loader=ProductLoader_TA'Default__LoadoutRenderer_TA.DefaultLoader'
 }

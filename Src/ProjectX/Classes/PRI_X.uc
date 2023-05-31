@@ -10,5 +10,5 @@ class PRI_X extends PlayerReplicationInfo
 defaultproperties
 {
 	
-	Components(0)=GroupComponent_ORS'Default__PRI_X.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PRI_X.DefaultRegistryGroup'
 }

@@ -73,6 +73,6 @@ defaultproperties
 	CameraPresetSettings(3)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0)
 	CameraPresetSettings(4)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=260.0,Stiffness=0.30,SwivelSpeed=2.50,TransitionSpeed=1.0)
 	GroundClampZOffset=10.0
-	Blender=CameraStateBlender_X'Default__Camera_TA.StateBlender0'
+	//Blender=CameraStateBlender_X'Default__Camera_TA.StateBlender0'
 	bHidden=false
 }

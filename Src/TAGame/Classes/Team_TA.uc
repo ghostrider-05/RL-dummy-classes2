@@ -69,7 +69,7 @@ defaultproperties
 	FontColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 	ColorBlindFontColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 	
-	Components(0)=GroupComponent_ORS'Default__Team_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__Team_TA.DefaultRegistryGroup'
 	bTickIsDisabled=true
 }
 replication

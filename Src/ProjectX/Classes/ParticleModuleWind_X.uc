@@ -12,7 +12,7 @@ var() RawDistributionFloat AccelerationOverLife;
 
 defaultproperties
 {
-	StrengthScaleOverLife=(Distribution=DistributionFloatConstant'Default__ParticleModuleWind_X.DistributionInfluence',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1.0,1.0,1.0,1.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
-	AccelerationOverLife=(Distribution=DistributionFloatConstant'Default__ParticleModuleWind_X.DistributionAccel',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.0,0.0,0.0,0.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
+	//StrengthScaleOverLife=(Distribution=DistributionFloatConstant'Default__ParticleModuleWind_X.DistributionInfluence',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(1.0,1.0,1.0,1.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
+	//AccelerationOverLife=(Distribution=DistributionFloatConstant'Default__ParticleModuleWind_X.DistributionAccel',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.0,0.0,0.0,0.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
 	bUpdateModule=true
 }

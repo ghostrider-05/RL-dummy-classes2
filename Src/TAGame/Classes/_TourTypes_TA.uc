@@ -109,6 +109,11 @@ struct TourMatch
 
 	structdefaultproperties
 	{
+		MatchID=-1
+		
+		
+		
+		Games.Empty
 	}
 };
 

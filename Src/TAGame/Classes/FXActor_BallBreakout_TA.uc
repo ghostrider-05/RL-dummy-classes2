@@ -19,5 +19,5 @@ var float LastNoDamageHit;
 
 defaultproperties
 {
-	Parameters=ParameterDispenser_X'Default__FXActor_BallBreakout_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_BallBreakout_TA.DefaultParameters'
 }

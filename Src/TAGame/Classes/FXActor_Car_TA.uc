@@ -89,5 +89,5 @@ defaultproperties
 	BoostFlyState=FXActorEvent_X'FXActorEvents.BoostFly'
 	OnWallState=FXActorEvent_X'FXActorEvents.OnWall'
 	SuperSonicEndState=FXActorEvent_X'FXActorEvents.SuperSonicEnd'
-	Parameters=ParameterDispenser_X'Default__FXActor_Car_TA.DefaultParameters'
+	//Parameters=ParameterDispenser_X'Default__FXActor_Car_TA.DefaultParameters'
 }

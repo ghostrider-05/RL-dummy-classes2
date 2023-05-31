@@ -56,20 +56,20 @@ defaultproperties
 	bUseInGameColors=true
 	TeamColor=(R=0.50,G=0.0,B=0.0,A=1.0)
 	CustomColor=(R=0.0,G=0.0,B=0.0,A=1.0)
-	ProductLoader=ProductLoader_TA'Default__SkeletalMeshActorMAT_Products_TA.DefaultLoader'
+	//ProductLoader=ProductLoader_TA'Default__SkeletalMeshActorMAT_Products_TA.DefaultLoader'
 	bShouldShadowParentAllAttachedActors=true
 	
 	SkeletalMeshComponent=SkeletalMeshComponent0
-	LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
-	FacialAudioComp=AudioComponent'Default__SkeletalMeshActorMAT_Products_TA.FaceAudioComponent'
-	Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
+	//LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
+	//FacialAudioComp=AudioComponent'Default__SkeletalMeshActorMAT_Products_TA.FaceAudioComponent'
+	//Components(0)=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
 	begin object name=SkeletalMeshComponent0
 		ReplacementPrimitive=None
-		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
+//		LightEnvironment=DynamicLightEnvironmentComponent'Default__SkeletalMeshActorMAT_Products_TA.MyLightEnvironment'
 	end object
 	// Reference: SkeletalMeshComponent'Default__SkeletalMeshActorMAT_Products_TA.SkeletalMeshComponent0'
 	Components(1)=SkeletalMeshComponent0
-	Components(2)=AudioComponent'Default__SkeletalMeshActorMAT_Products_TA.FaceAudioComponent'
+//	Components(2)=AudioComponent'Default__SkeletalMeshActorMAT_Products_TA.FaceAudioComponent'
 	Physics=PHYS_Interpolating
 	
 	CollisionComponent=SkeletalMeshComponent0

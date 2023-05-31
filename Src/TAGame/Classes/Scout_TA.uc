@@ -26,7 +26,7 @@ defaultproperties
 	end object
 	// Reference: CylinderComponent'Default__Scout_TA.CollisionCylinder'
 	Components(0)=CollisionCylinder
-	Components(1)=GroupComponent_ORS'Default__Scout_TA.DefaultRegistryGroup'
+//	Components(1)=GroupComponent_ORS'Default__Scout_TA.DefaultRegistryGroup'
 	
 	CollisionComponent=CollisionCylinder
 }

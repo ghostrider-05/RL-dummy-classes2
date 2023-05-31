@@ -34,7 +34,7 @@ defaultproperties
 	Components(0)=MyLightEnvironment
 	begin object name=StaticMeshComponent0
 		ReplacementPrimitive=None
-		LightEnvironment=DynamicLightEnvironmentComponent'Default__ScreenDisplayActor_TA.MyLightEnvironment'
+//		LightEnvironment=DynamicLightEnvironmentComponent'Default__ScreenDisplayActor_TA.MyLightEnvironment'
 		LightingChannels=(bInitialized=true,Dynamic=true)
 	end object
 	// Reference: StaticMeshComponent'Default__ScreenDisplayActor_TA.StaticMeshComponent0'

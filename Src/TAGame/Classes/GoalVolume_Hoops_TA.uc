@@ -8,7 +8,7 @@ class GoalVolume_Hoops_TA extends GoalVolume_TA
 
 defaultproperties
 {
-	Goal=Goal_Hoops_TA'Default__GoalVolume_Hoops_TA.DefaultHoopsGoal'
+	//Goal=Goal_Hoops_TA'Default__GoalVolume_Hoops_TA.DefaultHoopsGoal'
 	
 	BrushComponent=BrushComponent0
 	begin object name=BrushComponent0
@@ -16,7 +16,7 @@ defaultproperties
 	end object
 	// Reference: BrushComponent'Default__GoalVolume_Hoops_TA.BrushComponent0'
 	Components(0)=BrushComponent0
-	Components(1)=Goal_Hoops_TA'Default__GoalVolume_Hoops_TA.DefaultHoopsGoal'
+//	Components(1)=Goal_Hoops_TA'Default__GoalVolume_Hoops_TA.DefaultHoopsGoal'
 	
 	CollisionComponent=BrushComponent0
 }

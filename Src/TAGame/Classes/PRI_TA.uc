@@ -199,7 +199,7 @@ defaultproperties
 	AirControlSensitivity=1.0
 	PendingLoadout=(Title=XP,Loadouts=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),Loadouts[1]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)))
 	
-	Components(0)=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'
 	TickGroup=TG_PreAsyncWork
 }
 replication

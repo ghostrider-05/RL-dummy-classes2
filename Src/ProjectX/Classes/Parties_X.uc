@@ -80,7 +80,7 @@ var() string PartySetting_JoinKey;
 defaultproperties
 {
 	
-	MessageQueue=PartyMessageQueue_X'Default__Parties_X.DefaultMessageQueue'
+	//MessageQueue=PartyMessageQueue_X'Default__Parties_X.DefaultMessageQueue'
 	SecondToWaitForPerConReconnect=10.0
 	PartySetting_PsyNetPartyId="PsyNetPartyId"
 	PartySetting_JoinKey="PsyNetJoinKey"

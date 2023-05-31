@@ -132,7 +132,7 @@ defaultproperties
 	NetworkSyncSettings=(LocationFixRate=4.0,AngularFixRate=5.0,MinDeltaLocation=5.0,WeldedLerpRate=18.0,MinDeltaRotation=100,MinDeltaLinearVelocity=10.0,ForceReplicationDelay=0.350,bDebug=false)
 	ReplicatedRBState=(Quaternion=(X=0.0,Y=0.0,Z=0.0,W=1.0),Location=(X=0.0,Y=0.0,Z=0.0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),Time=0.0,bSleeping=false,bNewData=false)
 	RBHistoryClass=class'RBHistory_TA'
-	Replay=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
+	//Replay=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
 	
 	bSimulateGravity=false
 	bCanBeBaseForPawns=true
@@ -149,8 +149,8 @@ defaultproperties
 	// Reference: CylinderComponent'Default__RBActor_TA.CollisionCylinder'
 	Components(1)=CollisionCylinder
 	Components(2)=None
-	Components(3)=GroupComponent_ORS'Default__RBActor_TA.DefaultRegistryGroup'
-	Components(4)=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
+//	Components(3)=GroupComponent_ORS'Default__RBActor_TA.DefaultRegistryGroup'
+//	Components(4)=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
 	Physics=PHYS_RigidBody
 	TickGroup=TG_PostAsyncWork
 	bAlwaysRelevant=true

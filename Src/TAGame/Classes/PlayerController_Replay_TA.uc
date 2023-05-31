@@ -16,14 +16,14 @@ defaultproperties
 	CylinderComponent=CollisionCylinder
 	/**ForceFeedbackManagerClassName=""*/
 	
-	Components(0)=GroupComponent_ORS'Default__PlayerController_Replay_TA.DefaultRegistryGroup'
+	//Components(0)=GroupComponent_ORS'Default__PlayerController_Replay_TA.DefaultRegistryGroup'
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__PlayerController_Replay_TA.CollisionCylinder'
 	Components(1)=CollisionCylinder
-	Components(2)=AudioParamsSuperSonicReplayComponent_TA'Default__PlayerController_Replay_TA.AudioParamsSuperSonicReplayComponent0'
-	Components(3)=AudioSlomoReplayComponent_TA'Default__PlayerController_Replay_TA.AudioSlomoReplayComponent0'
+//	Components(2)=AudioParamsSuperSonicReplayComponent_TA'Default__PlayerController_Replay_TA.AudioParamsSuperSonicReplayComponent0'
+//	Components(3)=AudioSlomoReplayComponent_TA'Default__PlayerController_Replay_TA.AudioSlomoReplayComponent0'
 	
 	CollisionComponent=CollisionCylinder
 }

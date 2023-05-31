@@ -12,5 +12,5 @@ var() export editinline ProductAssetReference_TA ForcedProduct;
 
 defaultproperties
 {
-	ForcedProduct=ProductAssetReference_TA'Default__ProductEquipProfileSlot_ForcedProduct_TA.DefaultForcedProduct'
+	//ForcedProduct=ProductAssetReference_TA'Default__ProductEquipProfileSlot_ForcedProduct_TA.DefaultForcedProduct'
 }

@@ -9,7 +9,7 @@ var export editinline ProductAssetCache_TA AssetCache;
 
 defaultproperties
 {
-	AssetCache=ProductAssetCache_TA'Default__OnlineGameJoinGame_TA.DefaultAssetCache'
+	//AssetCache=ProductAssetCache_TA'Default__OnlineGameJoinGame_TA.DefaultAssetCache'
 	
 	ReservationBeacon=DefaultBeacon
 }

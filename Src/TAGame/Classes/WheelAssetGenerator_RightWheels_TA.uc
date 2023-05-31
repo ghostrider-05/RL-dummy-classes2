@@ -15,6 +15,6 @@ var() export editinline WheelAssetSettings_TA BackRight;
 
 defaultproperties
 {
-	FrontRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_RightWheels_TA.DefaultFrontRight'
-	BackRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_RightWheels_TA.DefaultBackRight'
+	//FrontRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_RightWheels_TA.DefaultFrontRight'
+	//BackRight=WheelAssetSettings_TA'Default__WheelAssetGenerator_RightWheels_TA.DefaultBackRight'
 }

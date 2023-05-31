@@ -29,8 +29,8 @@ defaultproperties
 	/**PlayerLeavePartyString="left the party"*/
 	/**LocalPlayerLeavePartyString="You left the party"*/
 	/**PlayerNewLeaderPartyString="is the new party leader"*/
-	AssetCache=ProductAssetCache_TA'Default__OnlineGameParty_TA.DefaultAssetCache'
+	//AssetCache=ProductAssetCache_TA'Default__OnlineGameParty_TA.DefaultAssetCache'
 	/**VerifyProductsDelay=2.0*/
-	MessageComponent=OnlineMessageComponent_X'Default__OnlineGameParty_TA.DefaultMessageComponent'
-	NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_TA.NullSearchStatus0'
+	//MessageComponent=OnlineMessageComponent_X'Default__OnlineGameParty_TA.DefaultMessageComponent'
+	//NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_TA.NullSearchStatus0'
 }

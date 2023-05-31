@@ -19,9 +19,9 @@ var transient AkRevSimUpdateParams CachedUpdateParams;
 
 defaultproperties
 {
-	GearManager=EngineAudioRevSimGearManager_TA'Default__EngineAudioREVComponent_TA.DefaultGearManager'
+	//GearManager=EngineAudioRevSimGearManager_TA'Default__EngineAudioREVComponent_TA.DefaultGearManager'
 	CachedUpdateParams=(Throttle=0.0,Brake=0.0,EngineFrictionScale=1.0,GroundFrictionScale=1.0,ClutchedGearRatio=0.0,bEnableUpShifting=true,Controls=(Weight=900.0,EngineTorque=2500.0,BreakingHorsePower=6000.0,GearRatios=(3.50,2.0,1.40,1.0,0.70)),frame=(RPM=0.0,Gear=0,RevGear=0,Velocity=0.0))
-	BlowoffComponent=EngineAudioBlowoffComponent_TA'Default__EngineAudioREVComponent_TA.BlowoffDefault'
-	WheelSpeed=WheelSpeedComponent_TA'Default__EngineAudioREVComponent_TA.WheelSpeedDefault'
-	ThrottleComponent=ThrottleStateComponent_TA'Default__EngineAudioREVComponent_TA.ThrottleStateDefault'
+	//BlowoffComponent=EngineAudioBlowoffComponent_TA'Default__EngineAudioREVComponent_TA.BlowoffDefault'
+	//WheelSpeed=WheelSpeedComponent_TA'Default__EngineAudioREVComponent_TA.WheelSpeedDefault'
+	//ThrottleComponent=ThrottleStateComponent_TA'Default__EngineAudioREVComponent_TA.ThrottleStateDefault'
 }

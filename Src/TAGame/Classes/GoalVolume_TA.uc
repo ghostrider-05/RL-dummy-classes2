@@ -11,7 +11,7 @@ var() export editinline Goal_TA Goal;
 
 defaultproperties
 {
-	Goal=Goal_TA'Default__GoalVolume_TA.DefaultGoal'
+	//Goal=Goal_TA'Default__GoalVolume_TA.DefaultGoal'
 	
 	BrushComponent=BrushComponent0
 	begin object name=BrushComponent0
@@ -22,7 +22,7 @@ defaultproperties
 	end object
 	// Reference: BrushComponent'Default__GoalVolume_TA.BrushComponent0'
 	Components(0)=BrushComponent0
-	Components(1)=Goal_TA'Default__GoalVolume_TA.DefaultGoal'
+//	Components(1)=Goal_TA'Default__GoalVolume_TA.DefaultGoal'
 	
 	CollisionComponent=BrushComponent0
 }

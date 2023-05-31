@@ -14,6 +14,14 @@ struct MergePartyReplicatedData
 
 	structdefaultproperties
 	{
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 };
 

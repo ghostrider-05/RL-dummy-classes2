@@ -13,6 +13,6 @@ var(Surface) RawDistributionFloat VelocityMultiplier;
 
 defaultproperties
 {
-	VelocityMultiplier=(Distribution=DistributionFloatConstant'Default__ParticleModuleVelocitySurfaceNormal_X.DistributionVelocityMultiplier',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.0,0.0,0.0,0.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
+	//VelocityMultiplier=(Distribution=DistributionFloatConstant'Default__ParticleModuleVelocitySurfaceNormal_X.DistributionVelocityMultiplier',Type=0,Op=1,LookupTableNumElements=1,LookupTableChunkSize=1,LookupTable=(0.0,0.0,0.0,0.0),LookupTableTimeScale=0.0,LookupTableStartTime=0.0)
 	bSpawnModule=true
 }

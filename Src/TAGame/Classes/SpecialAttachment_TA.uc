@@ -22,7 +22,7 @@ defaultproperties
 {
 	
 	StaticMesh=DefaultMesh
-	Replay=ReplayComponent_TA'Default__SpecialAttachment_TA.ReplayComponent0'
+	//Replay=ReplayComponent_TA'Default__SpecialAttachment_TA.ReplayComponent0'
 	
 	begin object name=CollisionCylinder
 		ReplacementPrimitive=None
@@ -33,8 +33,8 @@ defaultproperties
 	
 	Components(1)=CollisionCylinder
 	Components(2)=None
-	Components(3)=GroupComponent_ORS'Default__SpecialAttachment_TA.DefaultRegistryGroup'
-	Components(4)=ReplayComponent_TA'Default__SpecialAttachment_TA.ReplayComponent0'
+//	Components(3)=GroupComponent_ORS'Default__SpecialAttachment_TA.DefaultRegistryGroup'
+//	Components(4)=ReplayComponent_TA'Default__SpecialAttachment_TA.ReplayComponent0'
 	begin object name=DefaultMesh class=StaticMeshComponent
 		ReplacementPrimitive=None
 		RBChannel=RBCC_Vehicle

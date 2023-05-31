@@ -15,5 +15,5 @@ var transient bool bPlaying;
 
 defaultproperties
 {
-	ProductLoader=ProductLoader_TA'Default__MusicStingersPreviewer_TA.DefaultLoader'
+	//ProductLoader=ProductLoader_TA'Default__MusicStingersPreviewer_TA.DefaultLoader'
 }

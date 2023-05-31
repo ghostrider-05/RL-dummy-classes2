@@ -25,7 +25,7 @@ var() OnlineSubsystem OnlineSub;
 
 defaultproperties
 {
-	DataStore=GFxDataStore_X'Default__GFxShell_X.DefaultDataStore'
+	//DataStore=GFxDataStore_X'Default__GFxShell_X.DefaultDataStore'
 	TableName=Shell
 	bLevelTransitionPersistent=true
 }
