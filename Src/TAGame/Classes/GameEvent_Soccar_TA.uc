@@ -26,27 +26,27 @@ struct MemberTitleStat
 	}
 };
 
-/** For comparing different car settings */
+// For comparing different car settings
 var() Car_TA TestCarArchetype;
-/** Ball to spawn for this level */
+// Ball to spawn for this level
 var(Setup) Ball_TA BallArchetype;
 var GoalIndicator_TA GoalIndicatorArchetype;
-/** Where to spawn the ball. If not set will spawn the ball at center */
+// Where to spawn the ball. If not set will spawn the ball at center
 var(Setup) Actor BallSpawnPoint;
-/** Handles giving XP to players */
+// Handles giving XP to players
 var() StatFactory_TA StatFactoryArchetype;
-/** Initial State Game Event goes to OnInit */
+// Initial State Game Event goes to OnInit
 var() name InitialEventState;
 var() int SeriesLength;
-/** How long a game is */
+// How long a game is
 var() int GameTime;
-/**  Min time to do warmup camera */
+//  Min time to do warmup camera
 var() int WarmupTime;
-/** A team wins if they reach this score */
+// A team wins if they reach this score
 var() int MaxScore;
 var() int AutoBalanceDifference;
 var() export editinline OvertimeComponent_TA OvertimeComponent;
-/** Slomo when goal scored */
+// Slomo when goal scored
 var() InterpCurveFloat ScoreSlomoCurve;
 var transient float ScoreSlomoTime;
 var transient float GameTimeRemaining;
@@ -77,16 +77,16 @@ var repnotify bool bClubMatch;
 var bool bCanDropOnlineRewards;
 var repnotify transient bool bAllowHonorDuels;
 var transient int NextSpawnIndex;
-/** handles replay recording and playback */
+// handles replay recording and playback
 var() ReplayDirector_TA ReplayDirectorArchetype;
 var repnotify transient ReplayDirector_TA ReplayDirector;
 var transient array<Ball_TA> GameBalls;
 var() int TotalGameBalls;
-/** Delay between goal score and replay/round restart */
+// Delay between goal score and replay/round restart
 var() float PostGoalTime;
 var transient StatFactory_TA StatFactory;
 var export editinline transient array<export editinline Goal_TA> Goals;
-/** When to start doing second-by-second countdown before the game is over */
+// When to start doing second-by-second countdown before the game is over
 var() int SecondsRemainingCountdown;
 var() Message_TA SecondsRemainingMessage;
 var transient Vector FieldCenter;
@@ -104,13 +104,14 @@ var transient float SlowestGoalSpeed;
 var transient float FurthestGoal;
 var transient PRI_TA ScoringPlayer;
 var transient int RoundNum;
-/** Only give assists if assisted within this amount of time */
+// Only give assists if assisted within this amount of time
 var() float AssistMaxTime;
 var float BallHasBeenHitStartDelay;
 var transient float BallRespawnTime;
 var() GameEvent_Soccar_SubRules_TA DefaultSubRules;
 var repnotify transient GameEvent_Soccar_SubRules_TA SubRulesArchetype;
 var transient GameEvent_Soccar_SubRules_TA SubRules;
+var SpawnPointCluster_TA SpawnPointsPodiumAnim;
 var SpawnPointCluster_TA SpawnPointsPodium;
 var float PodiumDelay;
 var float PodiumTime;

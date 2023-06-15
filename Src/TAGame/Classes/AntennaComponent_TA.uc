@@ -8,18 +8,18 @@ class AntennaComponent_TA extends SimpleSpringComponent_TA
 	collapsecategories
 	hidecategories(Object);
 
-/** Bone or socket on antenna to attach topper to */
+// Bone or socket on antenna to attach topper to
 var() name TopperSocket;
-/** Mesh to use as the bendable antenna */
+// Mesh to use as the bendable antenna
 var() SkeletalMesh AntennaMesh;
 var() float AntennaSegmentExtension;
-/** Override topper mesh material */
+// Override topper mesh material
 var() MaterialInterface AntennaMaterial;
-/** Antenna anim tree (for skeletal controllers) */
+// Antenna anim tree (for skeletal controllers)
 var() AnimTree AnimTreeTemplate;
-/** Name of skeletal controllers for bending the antenna */
+// Name of skeletal controllers for bending the antenna
 var() array<name> BendyBoneControllers;
-/** Overall scaler for how much each bone in the antenna can rotate */
+// Overall scaler for how much each bone in the antenna can rotate
 var float BendScale;
 var() float PitchScale;
 var() float RollScale;

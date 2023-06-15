@@ -5,25 +5,25 @@
 *******************************************************************************/
 class StatEvent_TA extends Object;
 
-/** How many points to give */
+// How many points to give
 var() const int Points;
 var() const float CooldownSeconds;
-/** True if we contribute to the score, otherwise we're just for XP */
+// True if we contribute to the score, otherwise we're just for XP
 var() const bool bAddToScore;
-/** True if it is a leaderboard stat */
+// True if it is a leaderboard stat
 var() const bool bIsLeaderboardStat;
-/** Should this stat notify the stat ticker */
+// Should this stat notify the stat ticker
 var() const bool bNotifyTicker;
 var() const bool bShowOnHUD;
 var() const bool bPrimaryStat;
 var() const bool bSkipReplication;
 var() const bool bCanMute;
 var() const bool bCountMultiplied;
-/** XP group we belong to. */
+// XP group we belong to.
 var() const StatGroup_TA Group;
-/** UI Icon */
+// UI Icon
 var() const Texture Texture;
-/** UI sound name (found in GFxSoundPack) */
+// UI sound name (found in GFxSoundPack)
 var() const name UISound;
 var() const class DisplayProductStatClass;
 var const localized string Label;

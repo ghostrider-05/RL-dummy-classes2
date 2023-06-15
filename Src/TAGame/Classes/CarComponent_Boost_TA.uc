@@ -8,11 +8,11 @@ class CarComponent_Boost_TA extends CarComponent_AirActivate_TA
 	hidecategories(Navigation);
 
 var() float BoostConsumptionRate;
-/** maximum amount of boost (in seconds) this car can hold */
+// maximum amount of boost (in seconds) this car can hold
 var() float MaxBoostAmount;
-/** how much boost the car starts with */
+// how much boost the car starts with
 var() float StartBoostAmount;
-/** how much boost (in seconds) the car currently has */
+// how much boost (in seconds) the car currently has
 var() float CurrentBoostAmount;
 var() float BoostModifier;
 var transient float LastBoostAmountRequestTime;
@@ -20,9 +20,9 @@ var transient float LastBoostAmount;
 var transient bool bPendingConfirmBoostAmount;
 var bool bRechargeGroundOnly;
 var() repnotify bool bNoBoost;
-/** Overall boost force */
+// Overall boost force
 var() float BoostForce;
-/** when someone presses boost, don't cut off unless this amount of time has passed: prevents annoying on/off boosting */
+// when someone presses boost, don't cut off unless this amount of time has passed: prevents annoying on/off boosting
 var() float MinBoostTime;
 var float RechargeRate;
 var float RechargeDelay;

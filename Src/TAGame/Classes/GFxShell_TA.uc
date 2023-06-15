@@ -11,7 +11,7 @@ var transient LocalPlayer_TA TAPlayer;
 var transient GFxData_System_TA SystemData;
 var transient GFxData_LocalPlayer_TA LocalPlayerData;
 var databinding bool bEnableFocusDebugger;
-/** Disable movies that play on startup */
+// Disable movies that play on startup
 var databinding bool bDisableStartupMovies;
 var const config bool bAllowOnlineStorageResyncModal;
 var const localized string EOSReconnectMessage;

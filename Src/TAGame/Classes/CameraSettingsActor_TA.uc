@@ -9,7 +9,7 @@ class CameraSettingsActor_TA extends ReplicationInfo
 var() float UploadCameraDelay;
 var repnotify transient PRI_TA PRI;
 var transient ProfileCameraSettings ProfileSettings;
-/** the player is using ballcam */
+// the player is using ballcam
 var transient bool bUsingSecondaryCamera;
 var transient bool bUsingBehindView;
 var transient bool bUsingFreecam;

@@ -5,6 +5,7 @@ import { copySrc } from './util/src.js';
 
 await createProcess('AssetExtraction', ['-a', '--steam'], {
     cwd: resolve('.', '../'),
+    onStart: () => console.log('Starting extraction of classes'),
     onError: (d) => console.error(`Error: ${d}`),
     error: { message: 'Failed to extract classes' },
 })

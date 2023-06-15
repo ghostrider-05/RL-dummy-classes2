@@ -1,6 +1,6 @@
 # UE3 Changelog
 
-> **warning**
+> **Warning**
 > This list does not contain all differences from classes in `Engine/Classes/`.
 > Some (variable) changes might result in compile errors, try them one by one to check if it will compile.
 

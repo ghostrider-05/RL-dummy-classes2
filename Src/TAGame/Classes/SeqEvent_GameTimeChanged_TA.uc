@@ -12,7 +12,7 @@ var bool bHasBeenCalled;
 
 defaultproperties
 {
-	/** The maximum number of times this event can be triggered, 0 for always */
+	// The maximum number of times this event can be triggered, 0 for always
 	MaxTriggerCount=0
 	bPlayerOnly=false
 	VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Float',LinkDesc="Call Time Percent",LinkVar=None,PropertyName=CallTimePercent,bWriteable=true,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=None,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)

@@ -24,7 +24,7 @@ var databinding bool bNameSanitized;
 var databinding bool bCanShowAvatar;
 var bool bAvatarPermissionDownloaded;
 var databinding bool bHidden;
-var databinding int GroupId;
+var databinding int PresenceId;
 var databinding Qword LastActive;
 var databinding string PlayerNote;
 var databinding string ClubTag;

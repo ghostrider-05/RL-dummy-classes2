@@ -48,7 +48,7 @@ var databinding int ForcedCustom0Color;
 var databinding int ForcedCustom1Color;
 var transient Profile_TA Profile;
 var transient LoadoutData Loadouts[2];
-var transient LoadoutData LastNonLicensedLoadout[2];
+var transient LoadoutData LastUnforcedLoadout[2];
 var transient LoadoutSet_TA LoadoutSet;
 var CarPreviewSet_TA CarPreviewSet;
 var export editinline ExplosionPreviewer_TA ExplosionPreview;
@@ -59,8 +59,8 @@ defaultproperties
 {
 	Loadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	Loadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
-	LastNonLicensedLoadout[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
-	LastNonLicensedLoadout[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	LastUnforcedLoadout[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	LastUnforcedLoadout[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	GoalExplosionSeqName=GarageGoalExplosion
 	TableName=Garage
 }

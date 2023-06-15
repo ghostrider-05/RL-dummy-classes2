@@ -7,8 +7,10 @@ class ItemShopNotificationsConfig_TA extends OnlineConfig_X;
 
 var() databinding bool bItemShopNotificationsEnabled;
 var() float PopUpDuration;
+var() int MinRequiredLevel;
 
 defaultproperties
 {
 	PopUpDuration=8.0
+	MinRequiredLevel=20
 }

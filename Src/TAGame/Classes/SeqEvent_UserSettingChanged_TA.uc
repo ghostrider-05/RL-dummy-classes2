@@ -11,7 +11,7 @@ var() name SettingName;
 
 defaultproperties
 {
-	/** The maximum number of times this event can be triggered, 0 for always */
+	// The maximum number of times this event can be triggered, 0 for always
 	MaxTriggerCount=0
 	bAutoActivateOutputLinks=true
 	ObjName="User Setting Changed"

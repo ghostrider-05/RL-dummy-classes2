@@ -7,12 +7,12 @@ class GFxDataRow_X extends Object
 	abstract
 	native;
 
-/** Name of the table to create */
+// Name of the table to create
 var() const name TableName;
 var() const name PrimaryKeyName;
-/** Act as a proxy for the databinding properties for this class (pretend we have the same properties as him, as far as exporting ActionScript) */
+// Act as a proxy for the databinding properties for this class (pretend we have the same properties as him, as far as exporting ActionScript)
 var() const class ProxyClass;
-/** If true, keep this data during level transitions. Otherwise it gets cleared. */
+// If true, keep this data during level transitions. Otherwise it gets cleared.
 var() bool bLevelTransitionPersistent;
 var const transient Object ProxyObject;
 var const transient GFxShell_X Shell;

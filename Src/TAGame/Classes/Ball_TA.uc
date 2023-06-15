@@ -83,15 +83,15 @@ struct native CarBallInteractionSettings
 	}
 };
 
-/** visual mesh */
+// visual mesh
 var() export editinline StaticMeshComponent StaticMesh;
 var export editinline StaticMeshComponent TranslucentStaticMesh;
 var const float MeshTranslucency;
 var const array<MaterialInterface> TranslucentMaterials;
 var() CarBallInteractionSettings CarInteraction;
-/** FX to replace the ball with when the game ends */
+// FX to replace the ball with when the game ends
 var() FXActor_X EndOfGameFXArchetype;
-/** explosion to spawn */
+// explosion to spawn
 var() Explosion_X ExplosionArchetype;
 var() Explosion_X NoGoalExplosionArchetype;
 var() bool bAllowPlayerExplosionOverride;
@@ -121,7 +121,7 @@ var float ReplicatedAddedCarBounceScale;
 var float AdditionalCarGroundBounceScaleZ;
 var float AdditionalCarGroundBounceScaleXY;
 var repnotify PhysicalMaterial ReplicatedPhysMatOverride;
-/** Team index that last hit the ball */
+// Team index that last hit the ball
 var repnotify transient byte HitTeamNum;
 var repnotify transient GameEvent_Soccar_TA GameEvent;
 var repnotify transient ExplosionData ReplicatedExplosionData;
@@ -130,7 +130,7 @@ var transient Explosion_X Explosion;
 var transient float ExplosionTime;
 var transient Vector OldLocation;
 var array<MaterialInterface> FadeMaterials;
-/** Timestep when predicting our next position(s) */
+// Timestep when predicting our next position(s)
 var() float PredictionTimestep;
 var const transient array<PredictedPosition> PredictedPositions;
 var const transient float LastPredictionTime;

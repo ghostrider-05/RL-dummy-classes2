@@ -8,11 +8,11 @@ class ProductAsset_Bot_TA extends ProductAsset_TA
 	hidecategories(Object);
 
 var() array<Product_TA> LoadoutProducts2;
-/** Team color per team */
+// Team color per team
 var() int BlueTeamColorID;
-/** Team color per team */
+// Team color per team
 var() int OrangeTeamColorID;
-/** Accent color */
+// Accent color
 var() int CustomColorID;
 
 defaultproperties

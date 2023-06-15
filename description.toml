@@ -575,7 +575,7 @@ ConcatenateWithSpace="Concatenate with a space between the values"
 BoostAmount="The amount of boost to give, a float between 0.0 and 1.0.\nTo remove boost, teleport a player to a boostpad with negative boost and back.\nTo give infinite boost, use the give super boost input."
 
 [SeqAct_IsActionPressed_TA.Variables]
-ActionName="The name of the action to check. Check My Games > Rocket League > TAGame > TAInput.ini for a list of actions"
+ActionName="The name of the action to check. Check https://github.com/ghostrider-05/RL-Dummy-Classes2/tree/main/Src/ProjectX/Classes/ControlPreset_X.uc for a list of actions"
 
 [SeqAct_LoadMap_TA.Variables]
 Map="The in-game file name to load. Example: \"Park_P\" for Beckwith Park"

@@ -23,7 +23,9 @@ var float PacketLossRollingAverageTimespan;
 var float RecentBadPacketLossFlagPercent;
 var float RecentPoorConnectionRollingTimespan;
 var float NotificationDelayInDays;
+var bool bJoinGameConnectionCheckEnabled;
 var bool bShouldProvidePoorConnectionHelp;
+var float BadPRIReadyTime;
 var string PoorConnectionHelpNotificationURL;
 
 defaultproperties
@@ -47,5 +49,6 @@ defaultproperties
 	RecentPoorConnectionRollingTimespan=900.0
 	NotificationDelayInDays=5.0
 	bShouldProvidePoorConnectionHelp=true
+	BadPRIReadyTime=5.0
 	PoorConnectionHelpNotificationURL="https://support.rocketleague.com/hc/en-us/categories/360001250553-Connectivity"
 }

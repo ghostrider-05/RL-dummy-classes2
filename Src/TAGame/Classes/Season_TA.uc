@@ -5,27 +5,27 @@
 *******************************************************************************/
 class Season_TA extends Object;
 
-/** # of teams participating */
+// # of teams participating
 var databinding int NumTeams;
-/** 1v1, 2v2, etc */
+// 1v1, 2v2, etc
 var databinding int TeamSize;
-/** AI difficulty (0, 1, 2) */
+// AI difficulty (0, 1, 2)
 var databinding int Difficulty;
-/** # of games in the regular season */
+// # of games in the regular season
 var databinding int NumRegularWeeks;
-/** # of games in the playoffs */
+// # of games in the playoffs
 var databinding int NumPlayoffsWeeks;
-/** # of teams that make it to the playoffs */
+// # of teams that make it to the playoffs
 var databinding int NumPlayoffsTeams;
-/** Info on teams participating in this season */
+// Info on teams participating in this season
 var databinding array<SeasonTeam> Teams;
-/** Info on players participating in this season */
+// Info on players participating in this season
 var databinding array<SeasonPlayer> Players;
-/** Player Stats for Season */
+// Player Stats for Season
 var databinding array<SeasonPlayerStat> PlayerStats;
-/** Which year this season is */
+// Which year this season is
 var databinding int Year;
-/** How many weeks into the season we are. This will exceed NumRegularWeeks as we enter the playoffs. */
+// How many weeks into the season we are. This will exceed NumRegularWeeks as we enter the playoffs.
 var databinding int CurrentWeek;
 var array<SeasonMatch> Matches;
 

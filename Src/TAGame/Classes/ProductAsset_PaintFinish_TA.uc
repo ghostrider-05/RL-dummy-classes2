@@ -7,9 +7,9 @@ class ProductAsset_PaintFinish_TA extends ProductAsset_TA
 	editinlinenew
 	hidecategories(Object);
 
-/** Light falloff curve type selector */
+// Light falloff curve type selector
 var() LightCurveType_TA LightCurveType;
-/** Tiling detail normal, for stuff like carbon fiber, brushed metal, wood etc. */
+// Tiling detail normal, for stuff like carbon fiber, brushed metal, wood etc.
 var() Texture DetailNormal;
 var() float SpecularTint;
 var() float RimLightTint;

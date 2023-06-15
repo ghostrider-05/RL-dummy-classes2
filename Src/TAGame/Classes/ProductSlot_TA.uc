@@ -13,18 +13,18 @@ var const transient int SlotIndex;
 var() Product_TA DefaultProduct_New;
 var() editoronly const editinline ProductTemplate_TA ProductTemplate;
 var() editoronly const editinline ProductAsset_TA ProductAssetTemplate;
-/** Icon to use for UI */
+// Icon to use for UI
 var() const Texture Icon;
 var() const Texture IconLarge;
-/** Replicate this slot when replicating client loadouts */
+// Replicate this slot when replicating client loadouts
 var() const bool bReplicated;
-/** Always cook products of this slot, even if bDefaultProductsOnly */
+// Always cook products of this slot, even if bDefaultProductsOnly
 var() const bool bAlwaysCooked;
 var() const bool bDedicatedServerRelevant;
 var() const bool bAlwaysLoaded;
 var() const bool bDefaultProductAlwaysLoaded;
 var() const bool bAllowLicensedEquip;
-/** Weight for dropping this item */
+// Weight for dropping this item
 var() const float DropWeight;
 
 defaultproperties

@@ -7,40 +7,40 @@ class CarComponent_Dodge_TA extends CarComponent_AirActivate_TA
 	notplaceable
 	hidecategories(Navigation);
 
-/** Range of 0...1 where the car's input decides if we can do a directional dodge */
+// Range of 0...1 where the car's input decides if we can do a directional dodge
 var() float DodgeInputThreshold;
-/** How much sideways impulse to apply */
+// How much sideways impulse to apply
 var() float SideDodgeImpulse;
-/** Scale sideways impulse when going max forward speed */
+// Scale sideways impulse when going max forward speed
 var() float SideDodgeImpulseMaxSpeedScale;
-/** How much forward impulse to apply */
+// How much forward impulse to apply
 var() float ForwardDodgeImpulse;
-/** Scale forward impulse when going max forward speed */
+// Scale forward impulse when going max forward speed
 var() float ForwardDodgeImpulseMaxSpeedScale;
-/** How much backward impulse to apply */
+// How much backward impulse to apply
 var() float BackwardDodgeImpulse;
-/** Scale backward impulse when going max forward speed */
+// Scale backward impulse when going max forward speed
 var() float BackwardDodgeImpulseMaxSpeedScale;
-/** Torque force to apply over time when dodging to the side */
+// Torque force to apply over time when dodging to the side
 var() float SideDodgeTorque;
-/** Torque force to apply over time when dodging forward */
+// Torque force to apply over time when dodging forward
 var() float ForwardDodgeTorque;
-/** How long we should apply torque forces for */
+// How long we should apply torque forces for
 var() float DodgeTorqueTime;
 var() float MinDodgeTorqueTime;
-/** Reduce the car's Z velocity by this % when dodging */
+// Reduce the car's Z velocity by this % when dodging
 var() float DodgeZDamping;
-/** Delay before we turn on the DodgeZDamping */
+// Delay before we turn on the DodgeZDamping
 var() float DodgeZDampingDelay;
-/** Delay before we turn on the DodgeZDamping */
+// Delay before we turn on the DodgeZDamping
 var() float DodgeZDampingUpTime;
 var() float DodgeImpulseScale;
 var() float DodgeTorqueScale;
-/** FX actor events */
+// FX actor events
 var() FXActorEvent_X JumpEvent;
-/** FX actor events */
+// FX actor events
 var() FXActorEvent_X DoubleJumpEvent;
-/** FX actor events */
+// FX actor events
 var() FXActorEvent_X DodgeEvent;
 var transient Vector DodgeTorque;
 var transient Vector DodgeDirection;

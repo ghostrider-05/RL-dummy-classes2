@@ -425,6 +425,7 @@ struct PlayerPermissions
 	var EChatPermissionLevel VoiceChat;
 	var ETradePermissionLevel Trade;
 	var bool bRequirePinForFriends;
+	var bool bItemShopNotificationsAllowed;
 
 	structdefaultproperties
 	{
@@ -432,6 +433,7 @@ struct PlayerPermissions
 		VoiceChat=CPL_Everybody
 		Trade=TPL_Everybody
 		bRequirePinForFriends=false
+		bItemShopNotificationsAllowed=false
 	}
 };
 

@@ -6,14 +6,14 @@
 class Message_TA extends Object
 	hidecategories(Object);
 
-/** The type of message this is (decides where to display it) */
+// The type of message this is (decides where to display it)
 var() const name Type;
-/** Sound to play when displayed */
+// Sound to play when displayed
 var() const AkSoundCue Sound;
 var() const AkSoundCue PrimaryPlayerSound;
-/** The key to look up in the localization file */
+// The key to look up in the localization file
 var() const string Key;
-/** Which section in the localization file */
+// Which section in the localization file
 var() const string Section;
 var() const EHUDMessageLevel MessageLevel;
 var const transient string LocalizedMessage;

@@ -19,34 +19,34 @@ enum ESplitScreenPosition
 	SSP_MAX
 };
 
-/** Set to notify when a player is in a shared UI state. Once all players clear SharedUIState, System.SharedUIState gets cleared. */
+// Set to notify when a player is in a shared UI state. Once all players clear SharedUIState, System.SharedUIState gets cleared.
 var databinding bool bOpenedStartMenu;
 var databinding bool bCheckedStartupEvents;
-/** True if save data loaded successfully */
+// True if save data loaded successfully
 var databinding bool bSaveDataLoaded;
-/** Currently using ballcam */
+// Currently using ballcam
 var databinding bool bBallcam;
 var databinding bool bUseHoldBallCam;
-/** We want to show the ballcam indicator on the hud when in ballcam */
+// We want to show the ballcam indicator on the hud when in ballcam
 var databinding bool bUseBallCamIndicator;
 var databinding bool bAlternateNameplates;
-/** Whether to use metric or standard units for distance */
+// Whether to use metric or standard units for distance
 var databinding bool bMetric;
 var databinding bool bTeamColoredBoostMeter;
-/** We are the primary splitscreen player */
+// We are the primary splitscreen player
 var databinding bool bPrimaryPlayer;
-/** Is Party Leader */
+// Is Party Leader
 var databinding bool bPartyLeader;
-/** Is in party */
+// Is in party
 var databinding bool bIsInParty;
 var databinding bool bIsPlayerTrading;
-/** Is this a demo build? */
+// Is this a demo build?
 var databinding bool bDemoBuild;
-/** We are forcing the world to draw full screen but the UI split screen */
+// We are forcing the world to draw full screen but the UI split screen
 var databinding bool bForceSplitScreenUI;
-/** Has authority over match settings at end of game */
+// Has authority over match settings at end of game
 var databinding bool bPrivateMatchGameOwner;
-/** This player is age-restricted */
+// This player is age-restricted
 var databinding bool bAgeRestricted;
 var databinding bool bPendingIdleKick;
 var databinding bool bStartVoteToForfeitDisabled;
@@ -56,35 +56,35 @@ var databinding bool bDisableDivisions;
 var databinding bool bDisableDivisionsSports;
 var bool bCheckedBootMessage;
 var databinding bool bUseSteamInput;
-/** Localized error received if savedata was unable to load */
+// Localized error received if savedata was unable to load
 var databinding string SaveDataError;
-/** Localized error received if something went wrong during the signin process */
+// Localized error received if something went wrong during the signin process
 var databinding string OnlineError;
-/** Name of player */
+// Name of player
 var databinding string PlayerName;
-/** Player avatar texture */
+// Player avatar texture
 var databinding Texture PlayerAvatarTexture;
-/** Player's XP Level */
+// Player's XP Level
 var databinding int XpLevel;
-/** Player's XP Title */
+// Player's XP Title
 var databinding string XPTitle;
-/** Player's Total XP */
+// Player's Total XP
 var databinding int XPTotal;
-/** Current XP in level */
+// Current XP in level
 var databinding int XPProgressInCurrentLevel;
-/** XP required for next level */
+// XP required for next level
 var databinding int XPRequiredForNextLevel;
-/** Player team */
+// Player team
 var databinding int Team;
-/** Worldspace camera yaw (degrees, range -180...180) */
+// Worldspace camera yaw (degrees, range -180...180)
 var databinding float CameraYaw;
-/** Player's Splitscreen position */
+// Player's Splitscreen position
 var databinding int SplitScreenPosition;
-/** Controller id of this player */
+// Controller id of this player
 var databinding int ControllerId;
-/** Index in the local players array. May not be the same as ControllerId */
+// Index in the local players array. May not be the same as ControllerId
 var databinding int LocalPlayerIndex;
-/** Store Last match type here for UI use on return to menu */
+// Store Last match type here for UI use on return to menu
 var databinding name LastMatchType;
 var databinding float IdleKickSeconds;
 var databinding ProductHashID ContainerToOpenId;

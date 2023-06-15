@@ -9,14 +9,14 @@ class CarComponent_TA extends Actor
 	notplaceable
 	hidecategories(Navigation);
 
-/** FXActor in charge of our visuals */
+// FXActor in charge of our visuals
 var() FXActor_X FXActorArchetype;
-/** Event to toggle when we activate/deactivate */
+// Event to toggle when we activate/deactivate
 var() FXActorEvent_X FXEvent;
 var bool bDisabled;
-/** Automatically activate after we are created for a car */
+// Automatically activate after we are created for a car
 var() bool bAutoActivate;
-/** If true the client will fire ApplyForces will be called on SimulatedProxy clients, as well as active time being corrected/simulated to attempt to match the server time. */
+// If true the client will fire ApplyForces will be called on SimulatedProxy clients, as well as active time being corrected/simulated to attempt to match the server time.
 var() const bool bSimulateComponent;
 var transient bool bCreated;
 var transient bool bActive;

@@ -28,16 +28,16 @@ struct native WorldContactData
 
 struct native NetworkSyncSettingsData
 {
-	/** How fast to blend out location errors over time */
+	// How fast to blend out location errors over time
 	var() float LocationFixRate;
-	/** How fast to blend out angular errors over time */
+	// How fast to blend out angular errors over time
 	var() float AngularFixRate;
-	/** Don't apply correction if the location difference is less than this */
+	// Don't apply correction if the location difference is less than this
 	var() float MinDeltaLocation;
 	var() float WeldedLerpRate;
-	/** Don't apply correction if the rotation difference is less than this */
+	// Don't apply correction if the rotation difference is less than this
 	var() const int MinDeltaRotation;
-	/** Don't apply correction if the velocity difference is less than this */
+	// Don't apply correction if the velocity difference is less than this
 	var() float MinDeltaLinearVelocity;
 	var() float ForceReplicationDelay;
 	var() bool bDebug;
@@ -78,12 +78,12 @@ struct native TimeOfImpactData
 };
 
 var native const noexport Pointer VfTable_IITickNotify_TA;
-/** Don't exceed this linear speed */
+// Don't exceed this linear speed
 var() repnotify const float MaxLinearSpeed;
-/** Don't exceed this angular speed */
+// Don't exceed this angular speed
 var() repnotify const float MaxAngularSpeed;
 var const float RollingFriction;
-/** Don't let this RB actor sleep, ever */
+// Don't let this RB actor sleep, ever
 var() const bool bDisableSleeping;
 var const transient bool bReplayActor;
 var repnotify transient bool bFrozen;
@@ -91,7 +91,7 @@ var const bool bAutoInitFXEffects;
 var transient bool bIgnoreSyncing;
 var transient bool bPhysInitialized;
 var transient bool bSkipNextErrorAccumulation;
-/** Adjust how we interpolate updates from the server */
+// Adjust how we interpolate updates from the server
 var() NetworkSyncSettingsData NetworkSyncSettings;
 var const transient ReplicatedRBState OldRBState;
 var const transient ReplicatedRBState RBState;
@@ -102,13 +102,13 @@ var const transient Vector SyncErrorLocation;
 var const transient float SyncErrorAngle;
 var const transient Vector SyncErrorAxis;
 var export editinline AkParamGroup Ak;
-/** FXActor to create */
+// FXActor to create
 var() FXActor_X FXActorArchetype;
 var transient FXActor_X FXActor;
-/** Handles playing collision FX */
+// Handles playing collision FX
 var() export editinline ImpactEffectsComponent_TA ImpactEffectsComponent;
 var const transient array<AccumulatedRigidBodyCollision> RBCollisions;
-/** Saves and restores vehicle history for networking */
+// Saves and restores vehicle history for networking
 var() class RBHistoryClass;
 var const export editinline transient RBHistory_TA RBHistory;
 var const transient int LastRBCollisionsFrame;

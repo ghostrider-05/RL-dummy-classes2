@@ -24,7 +24,7 @@ struct native WheelSkelControlSet
 	}
 };
 
-/** Conversion of product attachment socket to actual socket */
+// Conversion of product attachment socket to actual socket
 var() float BoostBlendInTime;
 var() float BoostBlendOutTime;
 var() float BoostDriveFlapScale;

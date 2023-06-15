@@ -8,9 +8,9 @@ class TickableStateObject_X extends StateObject_X
 	native;
 
 var native const noexport Pointer VfTable_FTickableObject;
-/** if true, this object will continue ticking even if the game is paused */
+// if true, this object will continue ticking even if the game is paused
 var() bool bTickWhenGamePaused;
-/** if true, will use FTickableObject to call the native tick. if false, NativeTick must be called manually */
+// if true, will use FTickableObject to call the native tick. if false, NativeTick must be called manually
 var() const bool bAutoTick;
 var const array<TimerData> Timers;
 var const float LatentFloat;

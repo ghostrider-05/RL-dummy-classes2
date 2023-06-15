@@ -17,11 +17,11 @@ struct native DebugColor
 	}
 };
 
-/** Grayscale values to include */
+// Grayscale values to include
 var() editoronly array<editoronly LinearColor> Grayscales;
-/** Hues */
+// Hues
 var() editoronly array<editoronly LinearColor> H;
-/** Brightness + Saturation pairs */
+// Brightness + Saturation pairs
 var() editoronly array<editoronly LinearColor> SV;
 var() LinearColor ColorBlindColor;
 var() editoronly const array<editoronly DebugColor> DebugColors;

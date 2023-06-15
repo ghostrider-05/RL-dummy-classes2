@@ -125,6 +125,7 @@ var transient bool bUsingItems;
 var repnotify bool PlayerHistoryValid;
 var repnotify transient bool bIdleBanned;
 var transient bool bStayAsPartyActive;
+var transient bool bAbleToStart;
 var transient GameEvent_TA GameEvent;
 var repnotify transient GameEvent_TA ReplicatedGameEvent;
 var transient Car_TA Car;
@@ -145,7 +146,7 @@ var transient CameraSettingsActor_TA Camera;
 var transient ProfileCameraSettings CameraSettings;
 var transient byte CameraPitch;
 var transient byte CameraYaw;
-/** type to check if the player is spectating, in editor or a normal player */
+// type to check if the player is spectating, in editor or a normal player
 var repnotify EPawnType PawnType;
 var repnotify byte PlayerHistoryKey[64];
 var EConnectionQualityState ReplicatedWorstNetQualityBeyondLatency;
@@ -235,8 +236,8 @@ replication
 
 	 if(bNetInitial/**Empty key for position: 77.*/)
 		PickupTimer, QuitSeverity, 
-		ReplacingBotPRI, bMatchAdmin, 
-		bStartVoteToForfeitDisabled;
+		ReplacingBotPRI, bAbleToStart, 
+		bMatchAdmin, bStartVoteToForfeitDisabled;
 
 	 if(bNetInitial/**Empty key for position: 102.*/)
 		BotAvatarProductID, BotBannerProductID, 

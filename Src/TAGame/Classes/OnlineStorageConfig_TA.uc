@@ -21,6 +21,7 @@ defaultproperties
 	DisabledClasses(6)=class'FirstTimeExperienceSave_TA'
 	DisabledClasses(7)=class'NotificationSave_TA'
 	DisabledClasses(8)=class'SeasonSave_TA'
+	DisabledClasses(9)=class'MultiItemDropsSave_TA'
 	OnlineStorageFileName="RLSaveData"
 	
 	UploadRetryTime=4.0

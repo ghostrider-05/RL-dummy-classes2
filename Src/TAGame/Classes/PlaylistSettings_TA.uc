@@ -11,6 +11,7 @@ var() class TourServerInfoClass;
 var() bool bAllowHonorDuelChallenges;
 var() bool bAllowVoiceChat;
 var() int DetailsGroup;
+var() BackFillPolicy_TA BackFillPolicy;
 var array<TeamColor> TeamColors;
 var ColorOverride BallSuperSonicColor;
 var ClientLoadoutData LoadoutOverrides[2];

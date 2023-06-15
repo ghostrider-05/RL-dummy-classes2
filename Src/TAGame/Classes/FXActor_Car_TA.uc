@@ -68,6 +68,8 @@ var FXActorEvent_X BoostPreviewState;
 var FXActorEvent_X BoostFlyState;
 var FXActorEvent_X OnWallState;
 var FXActorEvent_X SuperSonicEndState;
+var FXActorEvent_X PMCAnimBeginState;
+var FXActorEvent_X PMCAnimEndState;
 var transient PhysicalMaterial ContactPhysMat;
 var transient PhysicalMaterialProperty_TA ContactPhysMatProp;
 var transient array<WheelFX> WheelEffects;
@@ -89,5 +91,7 @@ defaultproperties
 	BoostFlyState=FXActorEvent_X'FXActorEvents.BoostFly'
 	OnWallState=FXActorEvent_X'FXActorEvents.OnWall'
 	SuperSonicEndState=FXActorEvent_X'FXActorEvents.SuperSonicEnd'
+	PMCAnimBeginState=FXActorEvent_X'FXActorEvents.PMCAnimBegin'
+	PMCAnimEndState=FXActorEvent_X'FXActorEvents.PMCAnimEnd'
 	//Parameters=ParameterDispenser_X'Default__FXActor_Car_TA.DefaultParameters'
 }

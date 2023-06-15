@@ -8,7 +8,6 @@ class VideoSettingsSave_TA extends SaveObject_TA;
 var bool bVsync;
 var bool bShowWeatherFX;
 var bool bShowLightShafts;
-var bool bTranslucentArenaShaders;
 var bool bShowLensFlares;
 var bool bEnableHDRSideBySideVisualizer;
 var bool bUncappedFramerate;
@@ -21,7 +20,6 @@ defaultproperties
 {
 	bShowWeatherFX=true
 	bShowLightShafts=true
-	bTranslucentArenaShaders=true
 	bShowLensFlares=true
 	HDRBrightnessScale=1250.0
 	HDRPaperWhiteScale=250.0

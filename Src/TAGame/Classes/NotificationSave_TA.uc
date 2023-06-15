@@ -5,9 +5,24 @@
 *******************************************************************************/
 class NotificationSave_TA extends SaveObject_TA;
 
+struct EngagementEventNotificationData
+{
+	var bool bStartNotificationShown;
+	var Qword EpochTimeStartForNotificationShown;
+
+	structdefaultproperties
+	{
+		bStartNotificationShown=false
+		
+	}
+};
+
 var array<Notification_TA> Notifications;
 var bool bShowInGameNotifications;
 var bool bShowItemShopNotifications;
+var bool bFirstTimeDefaultShopNotifications;
+var bool bShopNotificationsDefaultValue;
+var EngagementEventNotificationData EngagementEventNotification[EEngagementEventType];
 
 defaultproperties
 {

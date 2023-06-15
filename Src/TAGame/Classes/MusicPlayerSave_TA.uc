@@ -17,6 +17,7 @@ enum EGameplayMusicSetting
 	GameplayMusic_TraningOnly,
 	GameplayMusic_MatchesOnly,
 	GameplayMusic_AlwaysOn,
+	GameplayMusic_Undefined,
 	GameplayMusic_MAX
 };
 

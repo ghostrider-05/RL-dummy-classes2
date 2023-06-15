@@ -9,7 +9,7 @@ class SeqAct_ConcatenateStrings_TA extends SequenceAction
 
 var() string ValueA;
 var() string ValueB;
-/** Concatenate with a space between the values */
+// Concatenate with a space between the values
 var() bool ConcatenateWithSpace;
 var string StringResult;
 

@@ -10,23 +10,23 @@ class GameEvent_TA extends Actor
 	hidecategories(Navigation,Actor,Object);
 
 var() export editinline GroupComponent_ORS RegistryGroup;
-/** Type of match for this game event (online, private, season) */
+// Type of match for this game event (online, private, season)
 var() MatchType_TA MatchType;
 var() repnotify class MatchTypeClass;
-/** Editor ID for identifying this type of game event (Soccar, Knockout) */
+// Editor ID for identifying this type of game event (Soccar, Knockout)
 var() const name EventType;
 var() name AudioSoundMode;
 var() const name MatchTypeName;
-/** What type of car to spawn */
+// What type of car to spawn
 var() Car_TA CarArchetype;
-/** How long of a countdown to do */
+// How long of a countdown to do
 var() int CountdownTime;
-/** How long we should stay in the finished(match ended) state */
+// How long we should stay in the finished(match ended) state
 var() int FinishTime;
-/** If true, multiple players participate in this event */
+// If true, multiple players participate in this event
 var() const bool bMultiplayer;
 var bool bCountdownMessagesDisabled;
-/** Fill teams with AI? */
+// Fill teams with AI?
 var() bool bFillWithAI;
 var() bool bAllowQueueSaveReplay;
 var transient bool bAllowReadyUp;
@@ -37,23 +37,23 @@ var bool bAwardAchievements;
 var bool bIsBotMatch;
 var bool bAllowTeamVoiceChat;
 var bool bAllowSpectatorVoiceChat;
-/** If multiplayer, limits on how many people can play this event */
+// If multiplayer, limits on how many people can play this event
 var() int MinPlayers;
-/** If multiplayer, limits on how many people can play this event */
+// If multiplayer, limits on how many people can play this event
 var() int MaxPlayers;
-/** Starting points for this event */
+// Starting points for this event
 var(Setup) array<Actor> SpawnPoints;
-/** AI manager to spawn */
+// AI manager to spawn
 var() AIManager_TA AIManagerArchetype;
 var transient AIManager_TA AIManager;
 var(Setup) Pylon_Soccar_TA Pylon;
-/** AI controller to use for bots */
+// AI controller to use for bots
 var() AIController_TA BotArchetype;
 var transient float BotSkill;
 var() array<Mutator_TA> DefaultMutators;
 var transient array<Mutator_TA> Mutators;
 var() float MatchTimeDilation;
-/** HUD Archetype for this game event */
+// HUD Archetype for this game event
 var() HUD HUDArchetype;
 var transient PlayerController_TA Activator;
 var transient Car_TA ActivatorCar;

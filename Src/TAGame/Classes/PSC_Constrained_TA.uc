@@ -7,9 +7,9 @@ class PSC_Constrained_TA extends ParticleSystemComponent
 	editinlinenew
 	hidecategories(Object,Physics,Collision);
 
-/** Have the particle follow its owner on XY but stay here on Z */
+// Have the particle follow its owner on XY but stay here on Z
 var() float WorldZ;
-/** Match the owner's rotation */
+// Match the owner's rotation
 var() bool bAttachedRotation;
 
 defaultproperties

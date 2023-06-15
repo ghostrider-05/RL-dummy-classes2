@@ -8,13 +8,13 @@ class CrowdNoiseModifier_TA extends Object
 	collapsecategories
 	hidecategories(Object);
 
-/** Set the minimum crowd noise value to this */
+// Set the minimum crowd noise value to this
 var() float ValueMin;
-/** Set the maximum crowd noise value to this */
+// Set the maximum crowd noise value to this
 var() float ValueMax;
-/** Maintain the value for this amount of time */
+// Maintain the value for this amount of time
 var() float DurationMin;
-/** Maintain the value for this amount of time */
+// Maintain the value for this amount of time
 var() float DurationMax;
-/** Extra crowd sound */
+// Extra crowd sound
 var() AkSoundCue OneShotSound;

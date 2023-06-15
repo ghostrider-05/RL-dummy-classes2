@@ -6,8 +6,8 @@
 class GFxData_Friends_TA extends GFxDataSingleton_X
 	config(Game);
 
-const PartyGroupID = 10;
-const HiddenGroupId = 11;
+const PartyPresenceId = 10;
+const HiddenPresenceId = 11;
 
 enum ENameDisplayRelationshipProxy
 {
@@ -57,11 +57,11 @@ defaultproperties
 {
 	
 	/**bUsePresenceGroups=true*/
-	/**DefaultPlatformFriendGroups(0)=84
-	DefaultPlatformFriendGroups(1)=57*/
-	/**DefaultEpicFriendGroups(0)=84
-	DefaultEpicFriendGroups(1)=57*/
-	/**DefaultAllFriendGroups(0)=83*/
+	/**DefaultPlatformFriendGroups(0)=64
+	DefaultPlatformFriendGroups(1)=58*/
+	/**DefaultEpicFriendGroups(0)=64
+	DefaultEpicFriendGroups(1)=58*/
+	/**DefaultAllFriendGroups(0)=63*/
 	
 	TableName=Personas
 	bLevelTransitionPersistent=true

@@ -7,7 +7,7 @@ class SeqAct_MainMenuSwitch_TA extends SequenceAction
 	forcescriptorder(true)
 	hidecategories(Object);
 
-const MENU_BG_SWITCH_VERSION = 1;
+const MENU_BG_SWITCH_VERSION = 2;
 
 defaultproperties
 {
@@ -32,6 +32,7 @@ defaultproperties
 	OutputLinks(16)=(LinkDesc="Street",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	OutputLinks(17)=(LinkDesc="Fire and Ice",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	OutputLinks(18)=(LinkDesc="Oasis",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
+	OutputLinks(19)=(LinkDesc="Vida",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	VariableLinks.Empty
 	ObjName="Main Menu Switch"
 	ObjCategory="TAGame"

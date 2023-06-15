@@ -7,11 +7,11 @@ class CarComponent_FlipCar_TA extends CarComponent_TA
 	notplaceable
 	hidecategories(Navigation);
 
-/** Upward force to give when doing FlipCar */
+// Upward force to give when doing FlipCar
 var() float FlipCarImpulse;
-/** Torque to use when doing FlipCar */
+// Torque to use when doing FlipCar
 var() float FlipCarTorque;
-/** How much time to flip car if doing a 180 degree flip */
+// How much time to flip car if doing a 180 degree flip
 var() float FlipCarTime;
 var transient bool bFlipRight;
 

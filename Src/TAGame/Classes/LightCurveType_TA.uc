@@ -5,5 +5,5 @@
 *******************************************************************************/
 class LightCurveType_TA extends Object;
 
-/** Value for the "Type" scalar parameter for the material */
+// Value for the "Type" scalar parameter for the material
 var() int ParameterValue;

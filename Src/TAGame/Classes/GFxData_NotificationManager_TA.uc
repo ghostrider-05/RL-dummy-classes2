@@ -7,13 +7,13 @@ class GFxData_NotificationManager_TA extends GFxDataSingleton_X;
 
 struct GFXNotificationInfo
 {
-	var databinding int NotificationId;
+	var databinding int NotificationID;
 	var databinding string TableName;
 	var Notification_TA Notification;
 
 	structdefaultproperties
 	{
-		NotificationId=0
+		NotificationID=0
 		TableName=""
 		Notification=None
 	}
@@ -24,6 +24,7 @@ var() databinding bool bShowInGameNotifications;
 var() databinding bool bShowItemShopNotifications;
 var transient NotificationSave_TA NotificationSave;
 var transient array<Notification_TA> PendingNotifications;
+var transient array<Notification_TA> ActiveNotifications;
 
 defaultproperties
 {

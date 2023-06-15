@@ -52,6 +52,7 @@ var transient GameEvent_TA GameEvent;
 var export editinline NameplateComponentCar_TA NameplateComponentCar;
 var export editinline transient ExplosionHitHandler_TA ExplosionHitHandler;
 var repnotify float ReplicatedCarMaxLinearSpeedScale;
+var name PostMatchAnim;
 
 defaultproperties
 {
@@ -101,8 +102,9 @@ replication
 
 	 if(bNetDirty)
 		AddedBallForceMultiplier, AddedCarForceMultiplier, 
-		AttachedPickup, ReplicatedDemolish, 
-		ReplicatedDemolishGoalExplosion, RumblePickups;
+		AttachedPickup, PostMatchAnim, 
+		ReplicatedDemolish, ReplicatedDemolishGoalExplosion, 
+		RumblePickups;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)
 		bOverrideBoostOn, bOverrideHandbrakeOn;

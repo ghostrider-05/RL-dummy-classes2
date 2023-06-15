@@ -5,11 +5,14 @@
 *******************************************************************************/
 class ItemShopNotification_TA extends Notification_TA;
 
-var ItemShopNotificationsConfig_TA ItemShopNotificationsConfig;
-var databinding Texture Icon;
+var transient ItemShopNotificationsConfig_TA ItemShopNotificationsConfig;
+var databinding transient Texture Icon;
+var int ShopNotificationID;
 
 defaultproperties
 {
+	bSave=true
+	bPauseWhenModalsActive=true
 	PopUpDuration=8.0
 	GFxDataClass=class'GFxData_ItemShopNotification_TA'
 }

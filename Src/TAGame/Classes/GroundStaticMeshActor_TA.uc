@@ -6,7 +6,7 @@
 class GroundStaticMeshActor_TA extends StaticMeshActor
 	hidecategories(Navigation);
 
-/** Hide this mesh when the camera drops below our location Z + this offset; */
+// Hide this mesh when the camera drops below our location Z + this offset;
 var() float HideLocationOffset;
 
 defaultproperties

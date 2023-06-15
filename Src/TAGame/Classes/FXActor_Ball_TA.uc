@@ -6,7 +6,7 @@
 class FXActor_Ball_TA extends FXActor_TA
 	hidecategories(Navigation);
 
-/** Speed at which the ball is supersonic (show ball trail) */
+// Speed at which the ball is supersonic (show ball trail)
 var() float SuperSonicSpeed;
 var() float MaxGoalProximityDistance;
 var() float BallFadeInSpeed;
@@ -15,11 +15,11 @@ var() float TrailOpacityLerpSpeed;
 var transient float CurrentTrailOpacity;
 var transient float BallFadeSpeed;
 var transient float BallFadeOpacity;
-/** Shockwave param bounds and time */
+// Shockwave param bounds and time
 var() float ShockwaveParamMin;
-/** Shockwave param bounds and time */
+// Shockwave param bounds and time
 var() float ShockwaveParamMax;
-/** Shockwave param bounds and time */
+// Shockwave param bounds and time
 var() float ShockwaveParamTime;
 var FXActorEvent_X InAirState;
 var FXActorEvent_X SuperSonicState;

@@ -9,7 +9,7 @@ class ProductAsset_Body_TA extends ProductAsset_TA
 
 struct native VehicleWheelSettings
 {
-	/** Bone on mesh to attach the wheel to */
+	// Bone on mesh to attach the wheel to
 	var() name BoneName;
 
 	structdefaultproperties
@@ -44,9 +44,9 @@ struct native VehicleAxleSettings
 
 struct native TeamPaintFinish
 {
-	/** Team finish product ID */
+	// Team finish product ID
 	var() ProductAsset_PaintFinish_TA TeamFinish;
-	/** Custom finish product ID */
+	// Custom finish product ID
 	var() ProductAsset_PaintFinish_TA CustomFinish;
 
 	structdefaultproperties
@@ -70,36 +70,44 @@ struct native BoostAttachmentToggle
 	}
 };
 
-/** Static mesh for vehicle body */
+// Static mesh for vehicle body
 var(Mesh) SkeletalMesh Mesh;
-/** Animation tree for frame/chassis */
+var(Mesh) SkeletalMesh PostMatchCelebrationMesh;
+var(Mesh) SkeletalMesh PostMatchCelebrationMeshSplitBody;
+var(Mesh) name SplitBodyAttachBone;
+var(Mesh) string SplitBodyPrimarySuffix;
+var(Mesh) string SplitBodySecondarySuffix;
+// Animation tree for frame/chassis
 var(Mesh) AnimTree AnimTreeTemplate;
 var(Mesh) array<AnimSet> AnimSets;
-/** Physics asset */
+var(Mesh) name MVPPostMatchCelebrationAnim;
+var(Mesh) array<name> RegularPostMatchCelebrationAnims;
+// Physics asset
 var(Physics) PhysicsAsset PhysicsAsset;
 var(Physics) HandlingPreset_TA HandlingPreset;
 var(Physics) float HandlingPresetZOffset;
-/** Settings for front axle */
+// Settings for front axle
 var(Wheels) VehicleAxleSettings FrontAxle;
-/** Settings for rear axle */
+// Settings for rear axle
 var(Wheels) VehicleAxleSettings BackAxle;
 var(Wheels) array<VehicleAxleSettings> AdditionalAxles;
 var(Wheels) float SteerScale;
-/** Spring settings for bouncy chassis */
+// Spring settings for bouncy chassis
 var(Physics) SimpleSpringSettings ChassisSpring;
-/** Overall scaler for bouncy chassis rotation */
+// Overall scaler for bouncy chassis rotation
 var(Physics) duplicatetransient float ChassisRotationScale;
-/** Overall scaler for bouncy chassis translation */
+// Overall scaler for bouncy chassis translation
 var(Physics) duplicatetransient float ChassisTranslationScale;
-/** Max suspension travel for wheels */
+// Max suspension travel for wheels
 var(Physics) float SuspensionTravelMax;
-/** Min suspension travel for wheels */
+// Min suspension travel for wheels
 var(Physics) float SuspensionTravelMin;
 var bool bUseLegacySuspensionOffsets;
 var(FX) bool bOverrideBoostFlapsAngle;
-/** Engine and exhaust sounds */
+var(Thumbnail) editoronly bool bUseForcedColors;
+// Engine and exhaust sounds
 var deprecated AkSoundCue EngineSound;
-/** Engine and exhaust sounds */
+// Engine and exhaust sounds
 var deprecated AkSoundCue ExhaustSound;
 var deprecated AkSoundCue BlowoffSound;
 var deprecated EngineAudioProfile_TA EngineAudioProfile;
@@ -107,34 +115,34 @@ var editoronly deprecated ProductAsset_EngineAudio_TA EngineAudioAsset;
 var(Sound) editoronly array<editoronly ProductAsset_EngineAudio_TA> EngineAudioAssets;
 var deprecated int EngineAudioProductID;
 var(Sound) editinline ProductAssetReference_TA EngineAudioReference;
-/** FX actor specific to this body (ambient effects) */
+// FX actor specific to this body (ambient effects)
 var(FX) FXActor_X FXActor;
-/** Material index for skin */
+// Material index for skin
 var(FX) int SkinMaterialIndex;
-/** Material index for brakelights */
+// Material index for brakelights
 var(FX) int BrakelightMaterialIndex;
-/** Material index for chassis */
+// Material index for chassis
 var(FX) int ChassisMaterialIndex;
 var(FX) int BoostMaterialIndex;
-/** Override sockets to spawn boost emitters from. If not specified, will kep the one emitter at RocketBoost socket */
+// Override sockets to spawn boost emitters from. If not specified, will kep the one emitter at RocketBoost socket
 var(FX) array<name> BoostEmitterSockets;
-/** How far the boost flaps turn (degrees) */
+// How far the boost flaps turn (degrees)
 var(FX) float BoostFlapsAngle;
 var() LinearColor ForcedTeamColors[2];
-/** Force player to use this custom color when using this body */
+// Force player to use this custom color when using this body
 var() LinearColor ForcedCustomColor;
 var() Vector SupersonicTrailOffset;
 var() array<Product_TA> AdditionalUnlocks2;
 var() export editinline ProductEquipProfile_TA EquipProfile;
-/** Additional persistent attachments */
+// Additional persistent attachments
 var() array<ProductAttachment> Attachments;
-/** Paramaters to set on the boost particles */
+// Paramaters to set on the boost particles
 var(FX) array<ParticleSysParam> BoostParticleParameters;
-/** Particle for supersonic wheel fx */
+// Particle for supersonic wheel fx
 var(FX) ParticleSystem SupersonicWheelTemplate;
-/** FX Actor for demolish explosion */
+// FX Actor for demolish explosion
 var(FX) FXActor_X DemolishFX;
-/** FX Actor for spawning */
+// FX Actor for spawning
 var(FX) FXActor_X SpawnFX;
 var(FX) FXActor_X ExitFX;
 var(FX) float WheelPreviewAnimTranslateScale;

@@ -8,12 +8,12 @@ class GFxShell_X extends GFxDataSingleton_X
 
 var() GFxMoviePlayer_X MoviePlayerArchetype;
 var const transient LocalPlayer_X Player;
-/** Whether game is paused */
+// Whether game is paused
 var databinding bool bGamePaused;
 var const transient bool bWasFullscreen;
-/** Cache gamepad analog values for radial menus */
+// Cache gamepad analog values for radial menus
 var databinding float LeftX;
-/** Cache gamepad analog values for radial menus */
+// Cache gamepad analog values for radial menus
 var databinding float LeftY;
 var databinding float RightX;
 var databinding float RightY;

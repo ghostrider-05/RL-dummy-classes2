@@ -9,28 +9,26 @@ struct CachedPodiumCar
 {
 	var Car_TA Car;
 	var Vector Location;
+	var bool bHasPostMatchCelebration;
 
 	structdefaultproperties
 	{
 		Car=None
 		Location=(X=0.0,Y=0.0,Z=0.0)
+		bHasPostMatchCelebration=false
 	}
 };
 
-var float ArcT;
-var float CameraDistance;
-var float CameraOffsetYaw;
-var float CameraOffsetPitch;
-var float XOffsetDistanceStart;
-var float XOffsetDistanceEnd;
-var float XOffsetDollySpeed;
-var float DefaultFOV;
-var float FadeInDuration;
+var transient float CameraDistance;
+var const float CameraOffsetYawDeg;
+var const float CameraOffsetPitchDeg;
+var const float XOffsetDistanceStart;
+var const float XOffsetDistanceEnd;
+var const float XOffsetDollySpeed;
+var const float DefaultFOV;
+var const float FadeInDuration;
 var const float CameraZOffset;
-var transient array<CachedPodiumCar> Cars;
-
-defaultproperties
-{
-	DefaultFOV=70.0
-	CameraZOffset=20.0
-}
+var const float AnimDistanceOffset;
+var const float AnimPitchOffset;
+var const float AnimZOffset;
+var transient array<CachedPodiumCar> CachedCars;

@@ -113,15 +113,15 @@ var bool bDisplayedRedoPenaltyMessage;
 var bool bShowBoostMeter;
 var EDifficulty Difficulty;
 var ERotationType DebugRotationType;
-/** Difficulty Settings */
+// Difficulty Settings
 var() DifficultyInfo DifficultyList[3];
 var array<int> WaveIndexesLeft;
 var float GoalDepth;
-/** GameEvent rounds that have been played */
+// GameEvent rounds that have been played
 var() int GameEventRounds;
 var float EventStartTime;
 var Vector BallInitialVelocity;
-/** Spawn Type Override */
+// Spawn Type Override
 var() int SpawnIndexTypeOverride;
 var Cannon_TA Cannon;
 var transient int WaveIndex;

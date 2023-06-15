@@ -23,6 +23,23 @@ struct GameEventData
 	}
 };
 
+struct PostMatchCelebrationData
+{
+	var name CelebrationName;
+	var name MVPAnim;
+	var array<name> RegularAnims;
+	var int CelebrationPlayerCount;
+
+	structdefaultproperties
+	{
+		CelebrationName=None
+		MVPAnim=None
+		RegularAnims.Empty
+		CelebrationPlayerCount=0
+	}
+};
+
+var array<PostMatchCelebrationData> PostMatchCelebrations;
 var transient bool bShutdownQueued;
 var transient bool bShuttingDown;
 var transient GameEvent_TA CurrentGame;

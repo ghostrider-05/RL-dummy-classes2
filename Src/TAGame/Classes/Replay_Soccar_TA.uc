@@ -64,15 +64,15 @@ struct ReplayPlayerStats
 	}
 };
 
-/** Number of players per team (1v2, 2v2, etc) */
+// Number of players per team (1v2, 2v2, etc)
 var databinding int TeamSize;
 var databinding int UnfairTeamSize;
 var databinding bool bUnfairBots;
-/** Team of primary player */
+// Team of primary player
 var databinding int PrimaryPlayerTeam;
-/** Match score for team 0 */
+// Match score for team 0
 var databinding int Team0Score;
-/** Match score for team 1 */
+// Match score for team 1
 var databinding int Team1Score;
 var databinding array<ScoredGoal> Goals;
 var array<Highlight> HighLights;

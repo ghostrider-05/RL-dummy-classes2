@@ -8,7 +8,7 @@ class SkeletalMeshComponent_TA extends SkeletalMeshComponent
 	editinlinenew
 	hidecategories(Object);
 
-/** Override the FOV we render with */
+// Override the FOV we render with
 var() const float FOVOverride;
 var const transient bool bIgnoreScriptAttach;
 

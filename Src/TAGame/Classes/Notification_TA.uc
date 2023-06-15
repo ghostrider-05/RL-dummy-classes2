@@ -6,7 +6,7 @@
 class Notification_TA extends Object
 	abstract;
 
-var databinding int NotificationId;
+var databinding int NotificationID;
 var databinding string Title;
 var databinding string Body;
 var databinding bool bPopUp;

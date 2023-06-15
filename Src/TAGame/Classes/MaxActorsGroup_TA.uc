@@ -25,9 +25,9 @@ struct native MaxActorCallback
 };
 
 var native const noexport Pointer VfTable_FTickableObject;
-/** Don't allow more than this many active actors */
+// Don't allow more than this many active actors
 var() const int MaxActors;
-/** Delay between updating actor distances to local viewers */
+// Delay between updating actor distances to local viewers
 var() const float UpdateDelay;
 var const transient float NextUpdateTime;
 var const transient array<MaxActorCallback> Actors;

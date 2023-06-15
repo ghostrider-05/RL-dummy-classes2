@@ -7,7 +7,7 @@ class CarDemoActor_TA extends Actor
 	placeable
 	hidecategories(Navigation);
 
-/** The mesh that will demo the player on touch */
+// The mesh that will demo the player on touch
 var() const export editinline StaticMeshComponent StaticMeshComponent;
 
 defaultproperties

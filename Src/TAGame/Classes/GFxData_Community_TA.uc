@@ -9,6 +9,9 @@ var transient array<GFxData_BlogTile_TA> GFxBlogTiles;
 var BlogConfig_X Config;
 var databinding string MotD;
 var transient BlogTileCache_TA Cache;
+var transient ShopNotificationsManager_TA ShopNotificationsManager;
+var transient bool bIsNewsPanelExpanded;
+var transient bool bInitialLoadCompleted;
 
 defaultproperties
 {

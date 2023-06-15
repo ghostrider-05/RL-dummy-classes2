@@ -7,9 +7,9 @@ class CarComponent_DoubleJump_TA extends CarComponent_AirActivate_TA
 	notplaceable
 	hidecategories(Navigation);
 
-/** The impulse that is added to the car as soon as it jumps */
+// The impulse that is added to the car as soon as it jumps
 var() float JumpImpulse;
-/** Modifier jump impulse */
+// Modifier jump impulse
 var() float ImpulseScale;
 var transient Vector DoubleJumpImpulse;
 

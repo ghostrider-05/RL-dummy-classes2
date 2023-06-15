@@ -31,12 +31,12 @@ struct native AnimatedLinearColorParam extends AnimateParametersComponent_X.Anim
 	var() InterpCurveLinearColor ValueOverTime;
 };
 
-/** Float parameters to animate */
+// Float parameters to animate
 var() array<AnimatedFloatParam> FloatParameters;
-/** Vector parameters to animate */
+// Vector parameters to animate
 var() array<AnimatedVectorParam> VectorParameters;
 var() array<AnimatedLinearColorParam> ColorParameters;
-/** Perf: reset materials to default when this animation completes */
+// Perf: reset materials to default when this animation completes
 var() bool bResetMaterialsOnComplete;
 var transient float AnimTime;
 var const transient float EndTime;

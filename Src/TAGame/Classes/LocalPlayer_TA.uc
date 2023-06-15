@@ -17,3 +17,5 @@ var transient bool bOpenedStartMenu;
 var transient bool bPendingBroadcastLoadout;
 var transient bool bPendingBroadcastProfile;
 var ControllerLayoutStack ControllerLayouts;
+var transient JoinGameConnectionChecker_TA JoinGameConnectionChecker;
+var transient ConnectionQualityConfig_TA ConnectionQualityConfig;

@@ -95,7 +95,7 @@ defaultproperties
 	EASAuthURL="https://api.epicgames.dev/epic/oauth/v1/token"
 	DefaultChatPermissionLevel=CPL_Nobody
 	DefaultTradePermissionLevel=TPL_Nobody
-	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true)
+	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false)
 	ForgotPinURL="https://rocketleague.com/pin-reset/"
 	ParentalControlsURL="https://rl.gg/cabinedAccounts"
 	PrivacyPolicyURL="https://www.epicgames.com/site/privacypolicy"

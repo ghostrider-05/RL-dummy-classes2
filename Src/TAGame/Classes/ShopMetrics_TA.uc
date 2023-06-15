@@ -41,3 +41,6 @@ struct ShopTabData
 
 var array<ShopTabData> CurrentShopTabMetrics;
 var int CurrentBrowseSourceID;
+var ShopNotificationsManager_TA ShopNotificationsManager;
+var transient array<int> CurrentShopNotificationIDs;
+var transient array<int> PastShopNotificationIDs;

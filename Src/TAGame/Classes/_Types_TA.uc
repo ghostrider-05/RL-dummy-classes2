@@ -220,6 +220,7 @@ enum ELicenseGroup
 	LicenseGroup_Honda,
 	LicenseGroup_Bugatti,
 	LicenseGroup_Volkswagen,
+	LicenseGroup_Transformers,
 	LicenseGroup_MAX
 };
 
@@ -734,6 +735,7 @@ enum EMainMenuBackground
 	MMBG_Street,
 	MMBG_FireAndIce,
 	MMBG_Oasis,
+	MMBG_Vida,
 	MMBG_MAX
 };
 
@@ -1088,13 +1090,13 @@ struct SeasonTeamRank
 
 struct SeasonPlayer
 {
-	/** Which team this player belongs to */
+	// Which team this player belongs to
 	var databinding int Team;
-	/** Player's name */
+	// Player's name
 	var databinding string Name;
-	/** Players ID */
+	// Players ID
 	var databinding string Id;
-	/** Bot or human? */
+	// Bot or human?
 	var databinding bool bBot;
 
 	structdefaultproperties
@@ -1108,11 +1110,11 @@ struct SeasonPlayer
 
 struct SeasonPlayerStat
 {
-	/** Players Index */
+	// Players Index
 	var databinding int PlayerIndex;
-	/** Stat name */
+	// Stat name
 	var databinding string StatName;
-	/** Stat value */
+	// Stat value
 	var databinding int StatValue;
 
 	structdefaultproperties
@@ -1125,11 +1127,11 @@ struct SeasonPlayerStat
 
 struct SeasonTeam
 {
-	/** Team's name */
+	// Team's name
 	var databinding string Name;
-	/** Team's logo (name of logo asset, not texture path) */
+	// Team's logo (name of logo asset, not texture path)
 	var databinding name LogoAsset;
-	/** Week when this team got eliminated from playoffs */
+	// Week when this team got eliminated from playoffs
 	var databinding int EliminationWeek;
 
 	structdefaultproperties
@@ -1142,17 +1144,17 @@ struct SeasonTeam
 
 struct SeasonMatch
 {
-	/** Which week this match will take place */
+	// Which week this match will take place
 	var databinding int Week;
-	/** The two teams playing in this match. -1 if not determined yet */
+	// The two teams playing in this match. -1 if not determined yet
 	var databinding int Team0;
-	/** The two teams playing in this match. -1 if not determined yet */
+	// The two teams playing in this match. -1 if not determined yet
 	var databinding int Team1;
-	/** Final score of the match. 0 if not played yet. */
+	// Final score of the match. 0 if not played yet.
 	var databinding int Score0;
-	/** Final score of the match. 0 if not played yet. */
+	// Final score of the match. 0 if not played yet.
 	var databinding int Score1;
-	/** Who won this match. -1 if it hasn't been played yet. */
+	// Who won this match. -1 if it hasn't been played yet.
 	var databinding int Winner;
 	var bool bBye;
 
@@ -2623,8 +2625,8 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=181
-		TradeInQualities(1)=57
+		TradeInQualities(0)=167
+		TradeInQualities(1)=58
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0
 		TradeInQualities(4)=0

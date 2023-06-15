@@ -11,7 +11,7 @@ var Ball_TA SpawnedBall;
 var Actor Instigator;
 var Actor SpawnTransform;
 var Actor PlacedBall;
-/** When disabled, causes the ball to be unmoveable */
+// When disabled, causes the ball to be unmoveable
 var() bool bWake;
 /**
 A custom archetype for the ball to spawn: Ball_TA'{Package}.Group.My_ball'.
@@ -28,7 +28,7 @@ defaultproperties
 	InputLinks(0)=(LinkDesc="Add",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	InputLinks(1)=(LinkDesc="Destroy",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	InputLinks(2)=(LinkDesc="DestroyAll",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-	/** Make the ball moveable again */
+	// Make the ball moveable again
 	InputLinks(3)=(LinkDesc="Wake",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	InputLinks(4)=(LinkDesc="AddPlacedBall",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=None,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
 	OutputLinks(0)=(LinkDesc="Added",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)

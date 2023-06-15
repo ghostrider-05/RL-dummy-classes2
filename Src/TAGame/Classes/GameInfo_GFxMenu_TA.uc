@@ -10,6 +10,7 @@ class GameInfo_GFxMenu_TA extends GameInfoBase_TA
 var transient CarPreviewSet_TA CarPreviewSet;
 var transient PremiumGaragePreviewSet_TA PremiumPreviewSet;
 var export editinline transient ExplosionPreviewer_TA ExplosionPreviewer;
+var export editinline transient PostMatchCelebrationPreviewer_TA PostMatchPreviewer;
 var MusicStingersPreviewer_TA MusicStingersPreviewer;
 var() export editinline MenuSequencer_TA MenuSequencer;
 var const string UIStateNames[EUIMenuState];

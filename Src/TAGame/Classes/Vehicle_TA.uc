@@ -30,6 +30,7 @@ var transient bool bDoubleJumped;
 var transient bool bOnGround;
 var transient bool bSuperSonic;
 var repnotify transient bool bPodiumMode;
+var transient bool bHasPostMatchCelebration;
 var const transient VehicleInputs Input;
 var const transient byte ReplicatedThrottle;
 var const transient byte ReplicatedSteer;
@@ -47,6 +48,8 @@ var transient CarComponent_Dodge_TA DodgeComponent;
 var transient CarComponent_AirControl_TA AirControlComponent;
 var transient CarComponent_Jump_TA JumpComponent;
 var transient CarComponent_DoubleJump_TA DoubleJumpComponent;
+var transient int PodiumSpot;
+var transient int PMCAnimIdx;
 var const export editinline PitchTekDrawingComponent_TA PitchTekComponent;
 var export editinline transient LocalPlayerAudioParamsComponent_TA LocalPlayerAudioParamsComponent;
 var transient float TimeBelowSupersonicSpeed;
@@ -56,6 +59,7 @@ defaultproperties
 {
 	ReplicatedThrottle=128
 	ReplicatedSteer=128
+	PMCAnimIdx=-1
 	begin object name=DefaultPTDComponent class=PitchTekDrawingComponent_TA
 		DecalType=PTDT_Car
 	end object
@@ -83,7 +87,9 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		bDriving, bPodiumMode;
+		PMCAnimIdx, PodiumSpot, 
+		bDriving, bHasPostMatchCelebration, 
+		bPodiumMode;
 
 	 if(bNetDirty)
 		ReplicatedSteer, ReplicatedThrottle, 

@@ -45,56 +45,56 @@ struct native CrowdDefenseSettings
 	}
 };
 
-/** Rate at which NoiseLevel rises to TargetNoiseLevel */
+// Rate at which NoiseLevel rises to TargetNoiseLevel
 var() float NoiseRiseRate;
-/** Rate at which NoiseLevel falls to zero */
+// Rate at which NoiseLevel falls to zero
 var() float NoiseFallRate;
-/** Min and Max values to randomly fluctuate the base noise level to */
+// Min and Max values to randomly fluctuate the base noise level to
 var() RandomRange IdleNoise;
-/** How often we pick a new idle noise level */
+// How often we pick a new idle noise level
 var() RandomRange IdleNoiseDuration;
-/** Noise to add at the start of countdown */
+// Noise to add at the start of countdown
 var() editinline CrowdNoiseModifier_TA CountdownStartNoise;
-/** Noise to add on 'Go!' */
+// Noise to add on 'Go!'
 var() editinline CrowdNoiseModifier_TA CountdownEndNoise;
-/** Noise to add when we start overtime */
+// Noise to add when we start overtime
 var() editinline CrowdNoiseModifier_TA OvertimeStartNoise;
-/** Noise to add when we are almost out of time */
+// Noise to add when we are almost out of time
 var() editinline CrowdNoiseModifier_TA TimeAlmostOutNoise;
-/** Noise modifiers for each stat event */
+// Noise modifiers for each stat event
 var() editfixedsize array<StatCrowdNoise> StatNoises;
-/** Random chants */
+// Random chants
 var() AkSoundCue RandomChantsSound;
-/** Random delay between chants */
+// Random delay between chants
 var() RandomRange RandomChantsDelay;
-/** Check this to update the StatNoises array with new stats */
+// Check this to update the StatNoises array with new stats
 var() editoronly bool UpdateStatNoises;
-/** Increase base crowd noise level as the ball gets closer to the goal (input is distance to goal) */
+// Increase base crowd noise level as the ball gets closer to the goal (input is distance to goal)
 var() InterpCurveFloat BallGoalDistanceNoiseCurve;
 var() Vector GoalDotDirection;
 var() float MinGoalDotAngle;
-/** Increase base crowd noise level when a car hits the ball (input is relative speed of hit) */
+// Increase base crowd noise level when a car hits the ball (input is relative speed of hit)
 var() array<BallHitCrowdNoise> BallHitNoises;
-/** Minimum time between ball hit noises (unless a harder hit overrides) */
+// Minimum time between ball hit noises (unless a harder hit overrides)
 var() float BallHitNoiseDelay;
-/** count down sound list */
+// count down sound list
 var() array<AkSoundCue> CountDownSoundList;
 var() array<AkSoundCue> RoundCountDownSoundList;
 var() AkSoundCue OneMinRemaining;
 var() AkSoundCue ThirtySecondsRemaining;
-/** Crowd stinger sounds */
+// Crowd stinger sounds
 var() AkSoundCue CrowdStingerWin;
-/** Crowd stinger sounds */
+// Crowd stinger sounds
 var() AkSoundCue CrowdStingerLose;
-/** Crowd stinger sounds */
+// Crowd stinger sounds
 var() AkSoundCue CrowdStingerForfeit;
-/** Played when overtime starts */
+// Played when overtime starts
 var() AkSoundCue CrowdStartOverTimeSound;
-/** Played after match ended */
+// Played after match ended
 var() AkSoundCue MatchEndedEncore;
-/** Time to wait after match ended before playing Encore sound */
+// Time to wait after match ended before playing Encore sound
 var() float MatchEndedEncoreDelay;
-/** Defense chant settings */
+// Defense chant settings
 var() CrowdDefenseSettings DefenseChant;
 
 defaultproperties

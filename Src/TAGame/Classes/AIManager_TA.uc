@@ -25,7 +25,7 @@ struct native CachedNavMeshLocation
 var() const config bool bFlushAILogEachLine;
 var() const config bool bOutputLogToWindow;
 var transient bool bPauseForDirtyTrees;
-/** global AI locks */
+// global AI locks
 var() const export editinline BTLockCollection Locks;
 var transient GameEvent_TA GameEvent;
 var transient array<AIController_TA> Bots;

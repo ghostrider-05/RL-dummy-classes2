@@ -41,21 +41,21 @@ struct ReplayScoreData
 	}
 };
 
-/** Turn on slomo at this time before and after the scoring hit */
+// Turn on slomo at this time before and after the scoring hit
 var() float SlomoPreScoreTime;
-/** Turn on slomo at this time before and after the scoring hit */
+// Turn on slomo at this time before and after the scoring hit
 var() float SlomoPostScoreTime;
-/** Turn on slomo for this amount of time before the goal is scored, if a defender was nearby */
+// Turn on slomo for this amount of time before the goal is scored, if a defender was nearby
 var() float SlomoDefendTime;
-/** Turn on slomo for this amount of time before the goal is scored, if a defender was nearby */
+// Turn on slomo for this amount of time before the goal is scored, if a defender was nearby
 var() float SlomoDefendDistance;
-/** how much to slomo to */
+// how much to slomo to
 var() float SlomoTimeDilation;
-/** minimum and maximum amount of time the replay should show */
+// minimum and maximum amount of time the replay should show
 var() float MinReplayTime;
-/** minimum and maximum amount of time the replay should show */
+// minimum and maximum amount of time the replay should show
 var() float MaxReplayTime;
-/** Base amount of time to add to replay length to account for replication and focus time */
+// Base amount of time to add to replay length to account for replication and focus time
 var() float ReplayPadding;
 var() AkSoundCue ReplayStartSound;
 var() AkSoundCue SlomoStartSound;

@@ -233,6 +233,7 @@ struct RPC_GetBanStatus_TA {};
 struct RPC_GetChallengeDefault_TA {};
 struct RPC_GetChallengeProgress_TA {};
 struct RPC_GetCrateShop_TA {};
+struct RPC_GetItemShopNotifications_TA {};
 struct RPC_GetLegacyStatus_TA {};
 struct RPC_GetPersonaInfo_TA {};
 struct RPC_GetShopCatalogue_TA {};

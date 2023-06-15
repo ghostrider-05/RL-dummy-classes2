@@ -7,6 +7,6 @@ class TickComponent_X extends TimersComponent_X
 	native;
 
 var native const noexport Pointer VfTable_FTickableObject;
-/** if true, will tick even when game paused */
+// if true, will tick even when game paused
 var() bool bTickWhenGamePaused;
 var const bool bTick;

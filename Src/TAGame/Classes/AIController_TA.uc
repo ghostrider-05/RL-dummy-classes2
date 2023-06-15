@@ -80,13 +80,13 @@ struct native CachedObstaclesData
 
 var transient Car_TA Car;
 var transient Vehicle_TA Vehicle;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() export editinline BTComponent BT;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType SelfProxyType;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType NoneProxyType;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType DebugProxyType;
 var() BTProxyType TeamCarsProxyType;
 var() BTProxyType EnemyCarsProxyType;
@@ -101,13 +101,13 @@ var() BTTarget TeamCarsTarget;
 var() BTTarget SelectedTarget;
 var transient BTTarget ContextTarget;
 var() BTNode DebugBTNode;
-/** Locks local to this AI */
+// Locks local to this AI
 var() export editinline BTLockCollection Locks;
-/** Steer accuracy given the bot's skill level */
+// Steer accuracy given the bot's skill level
 var() SkillRange SkillSteerError;
-/** Steer speed given the bot's skill level */
+// Steer speed given the bot's skill level
 var() SkillRange SkillSteerSpeed;
-/** Throttle speed given the bot's skill level */
+// Throttle speed given the bot's skill level
 var() SkillRange SkillThrottleSpeed;
 var transient GameEvent_TA GameEvent;
 var transient AIManager_TA AIManager;

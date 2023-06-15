@@ -46,6 +46,8 @@ var databinding bool bProductCanBePlayerTraded;
 var databinding bool bProductIsContainer;
 var databinding bool bProductIsContainerKey;
 var databinding bool bProductIsSchematic;
+var databinding bool bHasPostMatchCelebration;
+var databinding bool bIsReactive;
 var databinding bool bIsFavorited;
 var databinding bool bIsArchived;
 var databinding bool bCanArchive;

@@ -8,7 +8,7 @@ class GameEvent_Team_TA extends GameEvent_TA
 	notplaceable
 	hidecategories(Navigation,Actor,Object);
 
-/** Teams to create */
+// Teams to create
 var() array<Team_TA> TeamArchetypes;
 var transient array<Team_TA> Teams;
 var transient int MaxTeamSize;
@@ -18,7 +18,7 @@ var transient bool bDisableMutingOtherTeam;
 var transient bool bForfeit;
 var transient bool bUnfairTeams;
 var bool bAlwaysAutoSelectTeam;
-/** Archetype for the rematch vote actor */
+// Archetype for the rematch vote actor
 var() VoteActor_TA RematchVoteArchetype;
 var transient VoteActor_TA RematchVote;
 var transient array<ProductAsset_TA> PreloadedBotAssets;

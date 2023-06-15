@@ -11,6 +11,7 @@ import { LocalClassesInstallation } from '@kismet.ts/parsers-node'
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
+            COOKED_PCCONSOLE_FOLDER: string
             DUMMY_CLASSES_SHA: string;
             DUMMY_CLASSES_FORK_SHA: string;
             GITHUB_TOKEN: string;
@@ -46,10 +47,12 @@ export function createProcess (
             filter?: (code: number | null) => boolean,
             message: string,
         },
+        onStart?: () => void,
     } & Partial<Record<'onError' | 'onMessage', (data: string) => void>>,
 ) {
     return new Promise<number | null>((resolve, reject) => {
         const proc = spawn(cmd, args, { cwd: options.cwd })
+        options.onStart?.()
 
         proc.stdout.on('data', (data: Buffer) => {
             options.onMessage?.(data.toString())

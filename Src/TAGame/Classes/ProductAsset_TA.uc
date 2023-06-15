@@ -21,17 +21,17 @@ struct native ProductReplacement
 };
 
 var(Product) editoronly editinline ProductTemplate_TA Product;
-/** Texture to use for UI */
+// Texture to use for UI
 var(Thumbnail) duplicatetransient editoronly const Texture2D Thumbnail;
 var(Thumbnail) ThumbnailRenderer_TA ThumbnailRenderer;
 var(Thumbnail) MaterialInterface ThumbnailMaterial;
 var(Thumbnail) float ThumbnailKeyLightBrightnessScale;
-/** Offset for camera in thumbnail scene - X forward, Y right, Z up */
+// Offset for camera in thumbnail scene - X forward, Y right, Z up
 var(Thumbnail) const Vector ThumbnailCameraTranslationOffset;
-/** Offset for camera rotation in thumbnail scene */
+// Offset for camera rotation in thumbnail scene
 var(Thumbnail) const Rotator ThumbnailCameraRotationOffset;
 var(Thumbnail) const float ThumbnailCameraFOV;
-/** Offset for product rotation in thumbnail scene */
+// Offset for product rotation in thumbnail scene
 var(Thumbnail) const Rotator ThumbnailProductRotation;
 var(Thumbnail) const Vector ThumbnailProductTranslationOffset;
 var(Thumbnail) const Vector ThumbnailProductDrawScale3D;
@@ -39,7 +39,7 @@ var(Thumbnail) const float ParticleWarmupTime;
 var(Thumbnail) const float AnimationWarmupTime;
 var(Thumbnail) const Vector ParticleFakeVelocity;
 var(Thumbnail) const Vector SkeletalMeshAnimationOffset;
-/** Check to force the thumbnail to rebuild */
+// Check to force the thumbnail to rebuild
 var(Thumbnail) editoronly const bool bForceRebuildThumbnail;
 var(Thumbnail) editoronly const bool bPreviewDynamicThumbnail;
 var editoronly transient bool bServerSideOnlyWasSetInitially;

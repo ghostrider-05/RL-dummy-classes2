@@ -184,6 +184,7 @@ struct ShopItem
 	var databinding array<int> ShopItemLocations;
 	var databinding string Title;
 	var databinding string Description;
+	var databinding string disclaimer;
 	var databinding array<OnlineShopAttribute> Attributes;
 	var databinding string ImageURL;
 	var databinding Texture ItemTexture;
@@ -204,6 +205,7 @@ struct ShopItem
 		ShopItemLocations.Empty
 		Title=""
 		Description=""
+		disclaimer=""
 		Attributes.Empty
 		ImageURL=""
 		ItemTexture=None
@@ -242,5 +244,27 @@ struct native DestructionProductValue
 	{
 		
 		Value.Empty
+	}
+};
+
+struct ItemShopNotificationData
+{
+	var int ShopNotificationID;
+	var int ShopItemCostID;
+	var Qword StartTime;
+	var Qword EndTime;
+	var string ImageURL;
+	var string Title;
+	var array<OnlineProductData> DeliverableProducts;
+
+	structdefaultproperties
+	{
+		ShopNotificationID=0
+		ShopItemCostID=0
+		
+		
+		ImageURL=""
+		Title=""
+		DeliverableProducts.Empty
 	}
 };

@@ -10,6 +10,7 @@ var databinding string EpicDisplayName;
 var databinding string AccountLinkURL;
 var databinding bool bEnforceCabinedMode;
 var databinding bool bInCabinedMode;
+var databinding bool bConnectionLost;
 var databinding string SetDOBErrorMessage;
 var databinding string SetParentEmailErrorMessage;
 var databinding string ConfirmDisplayNameErrorMessage;

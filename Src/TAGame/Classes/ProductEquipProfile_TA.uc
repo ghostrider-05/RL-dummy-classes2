@@ -18,6 +18,7 @@ var() editinline ProductEquipProfileSlot_TA CustomFinish;
 var() editinline ProductEquipProfileSlot_TA EngineAudio;
 var() editinline ProductEquipProfileSlot_TA SupersonicTrail;
 var() editinline ProductEquipProfileSlot_TA GoalExplosion;
+var() editinline ProductEquipProfileSlot_TA PostMatchCelebration;
 var() editinline array<ELicenseGroup> LicenseWhitelist;
 var() editinline array<ELicenseGroup> LicenseBlacklist;
 var() editinline bool bWhitelistAll;
@@ -45,4 +46,5 @@ defaultproperties
 //	AllSlots(7)=ProductEquipProfileSlot_Enabled_TA'Default__ProductEquipProfile_TA.SlotEnabled'
 //	AllSlots(8)=ProductEquipProfileSlot_Enabled_TA'Default__ProductEquipProfile_TA.SlotEnabled'
 //	AllSlots(9)=ProductEquipProfileSlot_Enabled_TA'Default__ProductEquipProfile_TA.SlotEnabled'
+	AllSlots(10)=None
 }

@@ -8,7 +8,7 @@ class PRI_KnockOut_TA extends PRI_TA
 
 var transient GameEvent_KnockOut_TA GameEvent_KO;
 var transient bool bShowMatchPlacement;
-var transient bool bIsEliminated;
+var repnotify transient bool bIsEliminated;
 var repnotify transient bool bIsActiveMVP;
 var transient int Knockouts;
 var transient int StackedKnockoutCount;

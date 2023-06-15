@@ -6,15 +6,15 @@
 class AIController_Soccar_TA extends AIController_TA
 	hidecategories(Navigation);
 
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType BallProxyType;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType BallLandingProxyType;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType BallTeamGoalLineProxyType;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType BallEnemyGoalLineProxyType;
-/** Targets used by the behavior tree */
+// Targets used by the behavior tree
 var() BTProxyType BallProjectedProxyType;
 var() BTProxyType TeamGoalProxyType;
 var() BTProxyType EnemyGoalProxyType;

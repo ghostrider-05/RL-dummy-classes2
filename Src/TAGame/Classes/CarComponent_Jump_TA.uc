@@ -7,15 +7,15 @@ class CarComponent_Jump_TA extends CarComponent_TA
 	notplaceable
 	hidecategories(Navigation);
 
-/** Force jump to stay active for this amount of time (mouse button taps have significantly variable hold time) */
+// Force jump to stay active for this amount of time (mouse button taps have significantly variable hold time)
 var() float MinJumpTime;
-/** The impulse that is added to the car as soon as it jumps */
+// The impulse that is added to the car as soon as it jumps
 var() float JumpImpulse;
-/** The force that is applied to the car over time as it jumps */
+// The force that is applied to the car over time as it jumps
 var() float JumpForce;
-/** Fade out the jump force over this amount of time */
+// Fade out the jump force over this amount of time
 var() float JumpForceTime;
-/** Fade out the jump force over this amount of time when in podium mode */
+// Fade out the jump force over this amount of time when in podium mode
 var() float PodiumJumpForceTime;
 var transient float JumpImpulseSpeed;
 var transient float JumpAccel;
