@@ -6,4 +6,5 @@
 class StreamerSafeConfig_TA extends OnlineConfig_X;
 
 var() array<string> StreamerSafeSoundCueNames;
+var() array<PlaylistTrack> FallbackStreamerSafeTitleTracks;
 var transient bool bPlayerSettingEnabled;

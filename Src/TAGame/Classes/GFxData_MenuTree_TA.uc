@@ -5,8 +5,22 @@
 *******************************************************************************/
 class GFxData_MenuTree_TA extends GFxDataSingleton_X;
 
+struct MenuTreeNodeData
+{
+	var databinding name NodeID;
+	var databinding string TableName;
+	var MenuTreeNode_TA Node;
+
+	structdefaultproperties
+	{
+		NodeID=None
+		TableName=""
+		Node=None
+	}
+};
+
 var MenuTreeConfig_TA MenuTreeConfig;
-var array<MenuTreeNode_TA> AllNodes;
+var MenuTreeBuilder_TA MenuTreeBuilder;
 var MenuTreeBranch_TA RootNode;
 var MenuTreeBranch_TA CurrentNode;
 var databinding array<Object> NodesData;

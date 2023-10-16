@@ -26,6 +26,7 @@ struct GarageTeam
 var() array<ProductSlot_TA> LoadoutSlots;
 var transient CarPreviewActor_TA PreviewActor;
 var array<GFxData_GarageProductSlot_TA> GarageProductSlots;
+var databinding int TabIndex;
 var databinding array<GarageTeam> Teams;
 var databinding int PaintFinishSlotIndex;
 var databinding int PreviewTeam;

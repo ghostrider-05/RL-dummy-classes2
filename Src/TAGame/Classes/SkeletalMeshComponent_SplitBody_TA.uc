@@ -10,6 +10,9 @@ class SkeletalMeshComponent_SplitBody_TA extends SkeletalMeshComponent_TA
 
 var name CurrentAnim;
 var name AnimToSyncWith;
+var(Mesh) name SplitAttachBone;
+var(Mesh) string SplitPrimarySuffix;
+var(Mesh) string SplitSecondarySuffix;
 
 defaultproperties
 {

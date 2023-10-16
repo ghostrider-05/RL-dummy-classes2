@@ -5,11 +5,37 @@
 *******************************************************************************/
 class GFxData_EngagementEventsConfig_TA extends GFxDataSingleton_X;
 
+enum ENotificationType
+{
+	NotificationType_Start,
+	NotificationType_End,
+	NotificationType_MAX
+};
+
+struct NotificationStatus
+{
+	var array<bool> bShow;
+
+	structdefaultproperties
+	{
+		bShow.Empty
+	}
+};
+
 var EngagementEventsConfig_TA EngagementEvents;
 var transient NotificationSave_TA NotificationSave;
+var array<name> ValidMenus;
+var transient bool bEndNotificationShownThisSession;
+var transient EngagementEventNotification_TA CurrentNotification;
 
 defaultproperties
 {
+	ValidMenus(0)=RootMenuMovie
+	ValidMenus(1)=MainPlayMenuMovie
+	ValidMenus(2)=PlayListMenuMovie
+	ValidMenus(3)=CasualPlayListMenuMovie
+	ValidMenus(4)=CompetitivePlayListMenuMovie
+	ValidMenus(5)=AutomatedTournamentsMenuMovie
 	TableName=EngagementEvents
 	
 }

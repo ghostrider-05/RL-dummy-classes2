@@ -6,4 +6,3 @@
 class Eula_TA extends LegalText_TA;
 
 var EulaConfig_TA EulaConfig;
-var bool bAcceptedEulaInCurrentSession;

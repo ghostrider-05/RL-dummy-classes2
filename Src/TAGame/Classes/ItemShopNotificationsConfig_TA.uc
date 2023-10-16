@@ -11,6 +11,7 @@ var() int MinRequiredLevel;
 
 defaultproperties
 {
+	bItemShopNotificationsEnabled=true
 	PopUpDuration=8.0
 	MinRequiredLevel=20
 }

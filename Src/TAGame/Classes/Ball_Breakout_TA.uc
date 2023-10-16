@@ -37,7 +37,8 @@ var float LastDamageTime;
 var repnotify int DamageIndex;
 var transient float AbsorbedForce;
 var repnotify AppliedBreakoutDamage AppliedDamage;
-var transient AccumulatedRigidBodyCollision ClosestCollision;
+var transient AccumulatedRigidBodyCollision ClosestPlatformCollision;
+var transient array<AccumulatedRigidBodyCollision> WorldCollisions;
 
 defaultproperties
 {

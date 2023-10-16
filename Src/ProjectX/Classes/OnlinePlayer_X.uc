@@ -19,6 +19,7 @@ var transient ELoginStatus LoginStatus;
 var transient int LocalPlayerNum;
 var bool bLoggingIn;
 var bool bLoggingOut;
+var transient bool bCabinedModeStatusKnown;
 var transient Error LoginError;
 var transient string CachedEpicID;
 var Error LoginStatusError;

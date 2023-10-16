@@ -221,6 +221,7 @@ enum ELicenseGroup
 	LicenseGroup_Bugatti,
 	LicenseGroup_Volkswagen,
 	LicenseGroup_Transformers,
+	LicenseGroup_43,
 	LicenseGroup_MAX
 };
 
@@ -780,6 +781,14 @@ enum EVoiceInputMode
 	VIM_PushToTalk,
 	VIM_ToggleMute,
 	VIM_MAX
+};
+
+enum EPackageSaveStatus
+{
+	PSS_Warning,
+	PSS_Error,
+	PSS_Success,
+	PSS_MAX
 };
 
 struct native PlayerActorIDPair
@@ -2625,8 +2634,8 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=167
-		TradeInQualities(1)=58
+		TradeInQualities(0)=48
+		TradeInQualities(1)=59
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0
 		TradeInQualities(4)=0

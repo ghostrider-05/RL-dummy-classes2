@@ -7,3 +7,4 @@ class LegalText_TA extends Object
 	abstract;
 
 var transient int LegalHash;
+var transient string LegalText;

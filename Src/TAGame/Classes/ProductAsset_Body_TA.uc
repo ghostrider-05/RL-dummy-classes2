@@ -72,16 +72,9 @@ struct native BoostAttachmentToggle
 
 // Static mesh for vehicle body
 var(Mesh) SkeletalMesh Mesh;
-var(Mesh) SkeletalMesh PostMatchCelebrationMesh;
-var(Mesh) SkeletalMesh PostMatchCelebrationMeshSplitBody;
-var(Mesh) name SplitBodyAttachBone;
-var(Mesh) string SplitBodyPrimarySuffix;
-var(Mesh) string SplitBodySecondarySuffix;
 // Animation tree for frame/chassis
 var(Mesh) AnimTree AnimTreeTemplate;
 var(Mesh) array<AnimSet> AnimSets;
-var(Mesh) name MVPPostMatchCelebrationAnim;
-var(Mesh) array<name> RegularPostMatchCelebrationAnims;
 // Physics asset
 var(Physics) PhysicsAsset PhysicsAsset;
 var(Physics) HandlingPreset_TA HandlingPreset;
@@ -149,6 +142,7 @@ var(FX) float WheelPreviewAnimTranslateScale;
 var(FX) array<BoostAttachmentToggle> BoostAttachmentsToModify;
 var() MaterialParams SkinParameters;
 var(Thumbnail) editinline ProductAssetReferenceWheel_TA ThumbnailWheelAsset;
+var(Thumbnail) editinline ProductAssetReferenceSkin_TA ThumbnailSkinAsset;
 var array<SkeletalMeshLODDistanceInfo> LODDistanceInfo;
 var() array<Object> MutatorArchetypes;
 

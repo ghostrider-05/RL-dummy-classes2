@@ -153,7 +153,6 @@ struct RPC_PartyLeave_X {};
 struct RPC_PartyMessage_X {};
 struct RPC_PartySendInvite_X {};
 struct RPC_PlayerCancelMatchmaking_X {};
-struct RPC_PlayerCancelPrivateMatch_X {};
 struct RPC_PlayerSearchPrivateMatch_X {};
 struct RPC_PlayerStorageGet_X {};
 struct RPC_PlayerStorageSet_X {};

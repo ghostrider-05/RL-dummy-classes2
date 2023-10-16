@@ -17,3 +17,5 @@ struct EulaVersion
 
 var array<EulaVersion> AcceptedEulas;
 var int ResetCounter;
+var string LatestCDNEula;
+var string LatestLanguage;
