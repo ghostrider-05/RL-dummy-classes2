@@ -5,19 +5,11 @@
 *******************************************************************************/
 class MenuTreeNode_TA extends Object;
 
-struct MenuTreeNodeData
-{
-	var databinding name NodeID;
-	var databinding string Title;
-	var databinding string Description;
-
-	structdefaultproperties
-	{
-		NodeID=None
-		Title=""
-		Description=""
-	}
-};
-
-var MenuTreeNodeData NodeData;
+var() databinding name NodeID;
+var databinding string Title;
+var databinding string Description;
+var class GFxDataClass;
 var MenuTreeBranch_TA ParentNode;
+var() string LocalizationCategory;
+var() string TitleKey;
+var() string DescriptionKey;

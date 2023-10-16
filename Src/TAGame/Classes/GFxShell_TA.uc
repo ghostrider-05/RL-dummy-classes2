@@ -16,6 +16,7 @@ var databinding bool bDisableStartupMovies;
 var const config bool bAllowOnlineStorageResyncModal;
 var const localized string EOSReconnectMessage;
 var const localized string EOSNotConnectedMessage;
+var const localized string EOSRestartLauncherMessage;
 var const localized string SaveReplayMessage;
 var const localized string DefaultDisconnectionTitle;
 var const localized string PsyNetReconnectMessage;
@@ -38,6 +39,7 @@ defaultproperties
 	/**bAllowOnlineStorageResyncModal=true*/
 	/**EOSReconnectMessage="You are not connected to Epic Online Services. Would you like to reconnect?"*/
 	/**EOSNotConnectedMessage="You are not connected to Epic Online Services. You will need to restart the game to use online features."*/
+	/**EOSRestartLauncherMessage="You are not connected to Epic Online Services. You will need to restart the Epic Games Launcher and restart the game to use online features."*/
 	/**SaveReplayMessage="Would you like to save the replay?"*/
 	/**DefaultDisconnectionTitle="Connection Lost"*/
 	/**PsyNetReconnectMessage="You are currently not connected to the Rocket League? servers. Would you like to reconnect?"*/

@@ -5,8 +5,6 @@
 *******************************************************************************/
 class EngagementEventsConfig_TA extends OnlineConfig_X;
 
-const SoonInSeconds = 86400;
-
 enum EEngagementEventType
 {
 	EngagementEventType_DoubleXP,
@@ -18,24 +16,20 @@ struct EngagementEventData
 {
 	var string Description;
 	var array<EEngagementEventType> EventTypes;
-	var string UTCStartTime;
-	var string UTCEndTime;
+	var Qword EpochStartTime;
+	var Qword EpochEndTime;
 	var transient bool bEndingSoon;
 	var transient bool bLiveNow;
 	var transient Qword EpochSoonEndTime;
-	var transient Qword EpochStartTime;
-	var transient Qword EpochEndTime;
 
 	structdefaultproperties
 	{
 		Description=""
 		EventTypes.Empty
-		UTCStartTime=""
-		UTCEndTime=""
+		
+		
 		bEndingSoon=false
 		bLiveNow=false
-		
-		
 		
 	}
 };
@@ -62,5 +56,15 @@ struct EngagementEventStatus
 	}
 };
 
+var databinding bool bEngagementEventIconsEnabled;
 var array<EngagementEventData> Events;
 var databinding array<EngagementEventStatus> EventStatuses;
+var EngagementEventStatus CurrentEventStatus;
+var float PopUpDuration;
+var Qword SoonInSeconds;
+
+defaultproperties
+{
+	PopUpDuration=8.0
+	
+}

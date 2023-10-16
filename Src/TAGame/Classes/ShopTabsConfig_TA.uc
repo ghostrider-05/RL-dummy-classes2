@@ -5,27 +5,29 @@
 *******************************************************************************/
 class ShopTabsConfig_TA extends OnlineConfig_X;
 
+var bool bUseLegacyTabSorting;
+var() bool bDisableItemsInCatalogCheck;
+var() bool bDebugShowIds;
+var() bool bDebugVerboseDebugging;
 var() array<string> EsportsShopValidRegions;
 var string ShopType_Esports;
 var string ShopType_EsportsTeam;
 var string ShopType_MTX;
-var() bool bDisableItemsInCatalogCheck;
-var() bool bDebugShowIds;
-var() bool bDebugVerboseDebugging;
 var() array<string> DisabledTypes;
 var IEpochNow Time;
 
 defaultproperties
 {
+	bDisableItemsInCatalogCheck=true
+	bDebugVerboseDebugging=true
 	EsportsShopValidRegions(0)="NA"
 	EsportsShopValidRegions(1)="EU"
 	EsportsShopValidRegions(2)="OCE"
 	EsportsShopValidRegions(3)="SAM"
 	EsportsShopValidRegions(4)="APAC"
 	EsportsShopValidRegions(5)="MENA"
-	ShopType_Esports="Esports"
+	ShopType_Esports="ESports"
 	ShopType_EsportsTeam="EsportsTeam"
 	ShopType_MTX="MTX"
-	bDisableItemsInCatalogCheck=true
 	DisabledTypes(0)="Tournament"
 }

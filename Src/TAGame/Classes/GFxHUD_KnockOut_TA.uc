@@ -10,6 +10,15 @@ class GFxHUD_KnockOut_TA extends GFxHUD_Soccar_TA
 
 var transient GameEvent_KnockOut_TA KnockOutGame;
 var transient GFxData_CarKnockOut_TA KnockOutCarData;
+var transient GameViewportClient_TA ViewportClient;
+var() int DefaultMinZOffsetValue;
+var() int DefaultMaxZOffsetValue;
+var() int LowMinZOffsetClampValue;
+var() int HighMinZOffsetClampValue;
+var() int LowMaxZOffsetClampValue;
+var() int HighMaxZOffsetClampValue;
+var() int MinSqDistance;
+var() int MaxSqDistance;
 
 defaultproperties
 {

@@ -10,6 +10,7 @@ var() OnlineGameTournaments_TA Tournaments;
 var() OnlineGameTourMatchmaking_TA TourMatchmaking;
 var Personas_TA Personas;
 var ClubPersonas_TA ClubPersonas;
+var MenuTreeBuilder_TA MenuTreeBuilder;
 
 defaultproperties
 {

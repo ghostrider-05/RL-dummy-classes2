@@ -7,6 +7,24 @@ class InMapScoreboard_TA extends Actor
 	placeable
 	hidecategories(Navigation);
 
+struct ScoreboardMaterialOverride
+{
+	var() MaterialInstanceConstant MaterialInstance;
+	var() int MaterialIndex;
+	var() InterpCurveFloat MICValueOverrideCurve;
+	var() name ParamToOverride;
+	var transient MaterialInstanceConstant MIC;
+
+	structdefaultproperties
+	{
+		MaterialInstance=None
+		MaterialIndex=0
+		MICValueOverrideCurve=(Points=None,InterpMethod=IMT_UseFixedTangentEvalAndNewAutoTangents)
+		ParamToOverride=None
+		MIC=None
+	}
+};
+
 var() StaticMeshActor StaticMesh;
 var() MaterialInstanceConstant MaterialInstance;
 var() int MaterialIndex;
@@ -20,6 +38,7 @@ var() name CountdownToggle;
 var() name ScoreToggle;
 var() name ScoreParam;
 var() name CountdownValueParam;
+var() array<ScoreboardMaterialOverride> ExtraScoreboardMICOverrides;
 var transient int LastCountdownTime;
 var transient float ReplayCountdownTime;
 var transient bool bHasReplayCountdownTime;
