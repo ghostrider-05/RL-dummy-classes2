@@ -1,8 +1,18 @@
-This PR updates the following classes to version {{version}}:
+This PR updates the Dummy classes to version {{version}}.
 
-| package | class                         | changes  |
+Rocket League:
+
+- [{{version}} patch notes](https://www.rocketleague.com/news/patch-notes-v{{versionslash}}/)
+- [All patch notes](https://www.rocketleague.com/news/?cat=7-5aa1f33-rqfqqm)
+
+<details>
+<summary>Changed classes</summary>
+
+| package | class                         | status   |
 | ------- | ----------------------------- | -------- |
 {{classes}}
+
+</details>
 
 Recompile status by merging {{count}} class(es):
 
@@ -18,6 +28,13 @@ Recompile status by merging {{count}} class(es):
 ```sh
 {{annotations}}
 ```
+
+</details>
+
+<details>
+<summary>v{{version}} assets</summary>
+
+{{kismetassets}}
 
 </details>
 

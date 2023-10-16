@@ -17,3 +17,4 @@ const content = interpolate(md, {
 
 await writeFile('./README.md', content)
 console.log('Synced readme with output from recompiling')
+process.exit(0)

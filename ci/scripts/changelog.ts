@@ -12,3 +12,4 @@ const diff = local.compare(process.env.UDK_SRC)
 const content = LocalClassesInstallation.createChangelog(diff)
 
 await writeFile('./out/ENGINE_CHANGELOG.md', content)
+process.exit(0)

@@ -1,6 +1,6 @@
-import { resolve } from 'node:path';
+import { basename, resolve, dirname } from 'node:path';
 import { existsSync } from 'node:fs';
-import { copyFile, mkdir, readdir, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readdir } from 'node:fs/promises';
 
 export type SrcFile = [
     pkg: string,
@@ -41,6 +41,15 @@ export async function copySrc () {
             resolve(process.env.UDK_SRC, `./${pkg}/Classes/${file}`)
         )
     })
+}
+
+export function getFileDetails (path: string): SrcFile {
+    return [
+        dirname(path.replace('/Classes', '').replace('Src/', '')),
+        basename(path).replace('.uc', ''),
+        path,
+        resolve('.', path)
+    ]
 }
 
 /**
