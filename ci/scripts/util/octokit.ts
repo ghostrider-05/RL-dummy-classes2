@@ -1,26 +1,49 @@
 import { Octokit } from 'octokit'
 
-import { type Annotation } from './annotations.js'
-import { parseFile, interpolate, readFile } from './process.js'
-import { type SrcFile } from './src.js'
+import { readFile } from './process.js'
 
-export interface Repo {
-    owner: string
-    repo: string
-}
+import { OctokitDescriptionUtil, type Repo } from './github/description.js'
+import { GitUtil } from './github/git.js'
 
 export interface OctokitUtilOptions {
     auth: string
+    /** @default 'master' */
+    mainBranch?: string
 }
 
-export class OctokitUtil {
+export class OctokitUtil extends GitUtil {
     private kit: Octokit
-    public mainBranch = 'master'
+    private main_branch: string
+
+    public descriptions = new OctokitDescriptionUtil()
+
+    public repos = {
+        dummy2: {
+            owner: 'ghostrider-05',
+            repo: 'RL-dummy-classes2',
+            mainBranch: 'main',
+        },
+        fork: {
+            owner: 'ghostrider-05',
+            repo: 'RL-Dummy-Classes',
+        },
+        main: {
+            owner: 'RocketLeagueMapMaking',
+            repo: 'RL-Dummy-Classes',
+        },
+    } satisfies Record<string, Repo>
 
     public constructor (options: OctokitUtilOptions) {
+        super();
+
+        this.main_branch = options.mainBranch ?? 'master'
         this.kit = new Octokit({ 
             auth: options.auth,
         })
+    }
+
+    public getMainBranch (repo: Repo) {
+        return repo.mainBranch ?? this.main_branch
     }
 
     protected async createNewTree (
@@ -45,7 +68,10 @@ export class OctokitUtil {
 
     protected createBlobForFile (repo: Repo) {
         return async (filePath: string) => {
-            const getFileAsUTF8 = async (filePath: string) => await readFile('./Src/' + filePath)
+            const getFileAsUTF8 = async (filePath: string) => {
+                // const path = filePath.endsWith('uc') ? './Src/' + filePath : filePath
+                return await readFile(filePath)
+            }
         
             const content = await getFileAsUTF8(filePath)
             return await this.kit.rest.git.createBlob({
@@ -68,7 +94,7 @@ export class OctokitUtil {
         }).catch(async err => {
             const mainBranch = await this.kit.rest.git.getRef({
                 ...repo,
-                ref: `heads/${this.mainBranch}`,
+                ref: `heads/${this.getMainBranch(repo)}`,
             })
 
             return await this.kit.rest.git.createRef({
@@ -157,7 +183,7 @@ export class OctokitUtil {
     ) {
         return await this.kit.rest.pulls.create({
             ...repo,
-            base: this.mainBranch,
+            base: this.getMainBranch(repo),
             head: from.branch,
             maintainer_can_modify: true,
             title: data.title,
@@ -183,33 +209,4 @@ export class OctokitUtil {
             state: data.state,
         })
     }
-}
-
-export async function createDescription (files: SrcFile[], downloadUrl: string) {
-    const toSnakeCase = (input: string) => input.replace(/ /g, '_').toLowerCase()
-    const template = await readFile('./ci/templates/pull_request.md')
-
-    const config = await parseFile<{ Version: string }>('./config.json')
-    const annotations = await parseFile<Annotation[]>('./out/annotations.json')
-        .then(value => value.filter(n => files.some(file => `Src/${file[2]}` === n.file)))
-
-    return interpolate(template, {
-        warnings: '+' + annotations.filter(a => a.annotation_level === 'warning').length,
-        errors: '+' + annotations.filter(a => a.annotation_level === 'failure').length,
-        version: config.Version,
-        downloadUrl,
-        count: files.length,
-        annotations: annotations.length > 0
-            ? annotations
-                .map(a => `[${a.annotation_level.toUpperCase()}] ${a.file} (${a.line}): ${a.message}`)
-                .join('\r\n')
-            : `No changes in the recompile process found...`,
-        classes: files.map(file => {
-            const name = file[1].split('.')[0]
-            const url = `https://github.com/ghostrider-05/RL-dummy-classes2/tree/main/Src/${file[2]}`
-            const changelog = `https://github.com/ghostrider-05/RL-dummy-classes2/blob/main/CHANGELOG.md#${toSnakeCase(name)}`
-    
-            return `| ${file[0]} | [${name}](${url}) | [view](${changelog}) |`
-        }).join('\r\n')
-    })
 }

@@ -4,13 +4,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "decompile": "node -r dotenv/config ./dist/decompile.js",
-    "extract": "node -r dotenv/config ./dist/extract.js",
-    "prestart": "tsc && node ./dist/prestart.js",
+    "decompile": "node -r dotenv/config ./dist/scripts/decompile.js",
+    "extract": "node -r dotenv/config ./dist/scripts/extract.js",
+    "prestart": "tsc && node ./dist/scripts/prestart.js",
     "start": "npm run extract && npm run decompile",
-    "poststart": "node ./dist/poststart.js",
-    "changelog": "npm run prestart && node -r dotenv/config ./dist/changelog.js",
-    "merge": "npm run prestart && node -r dotenv/config ./dist/merge.js"
+    "poststart": "node ./dist/scripts/poststart.js",
+    "changelog": "npm run prestart && node -r dotenv/config ./dist/scripts/changelog.js",
+    "github:merge": "npm run prestart && node -r dotenv/config ./dist/scripts/github/merge.js",
+    "github:new": "npm run prestart && node -r dotenv/config ./dist/scripts/github/newversion.js"
   },
   "dependencies": {
     "@iarna/toml": "2.2.5",

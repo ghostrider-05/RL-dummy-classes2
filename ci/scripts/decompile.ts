@@ -15,3 +15,5 @@ await createProcess(process.env.UDK_CMD!, ['make', '-full'], {
         
 console.log(annotator.lastInvalidLines.join(''))
 await annotator.write()
+
+process.exit(0)
