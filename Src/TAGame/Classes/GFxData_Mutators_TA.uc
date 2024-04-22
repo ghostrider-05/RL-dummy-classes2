@@ -23,10 +23,11 @@ struct CustomGameSetting
 	var databinding string MutatorCategoryDesc;
 	var databinding string SettingsName;
 	var databinding int SettingIndex;
+	var databinding int DefaultIndex;
 	var name InternalName;
 	var int GameSettingCategoryIndex;
 	var array<name> SettingNameExplicit;
-	var bool bPresetLocked;
+	var databinding bool bPresetLocked;
 
 	structdefaultproperties
 	{
@@ -34,6 +35,7 @@ struct CustomGameSetting
 		MutatorCategoryDesc=""
 		SettingsName=""
 		SettingIndex=0
+		DefaultIndex=0
 		InternalName=None
 		GameSettingCategoryIndex=0
 		SettingNameExplicit.Empty
@@ -47,6 +49,7 @@ var() databinding int SelectedBotDifficulty;
 var() databinding array<GameModeData> GameModes;
 var databinding array<CustomGameSetting> CustomGameSettings;
 var transient array<GameSettingCategory_X> GameSettingCategories;
+var transient array<GameSetting_X> GameModeMutatorSettingPresets;
 var int PresetCategoryIndex;
 var transient array<ModeMapPair> ModeMaps;
 var transient ECustomMatchSettingsType SettingsType;

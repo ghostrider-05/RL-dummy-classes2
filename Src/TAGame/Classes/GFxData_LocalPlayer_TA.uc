@@ -53,7 +53,6 @@ var databinding bool bStartVoteToForfeitDisabled;
 var databinding bool bDisableCrossPlay;
 var databinding bool bReplacingBot;
 var databinding bool bDisableDivisions;
-var databinding bool bDisableDivisionsSports;
 var bool bCheckedBootMessage;
 var databinding bool bUseSteamInput;
 // Localized error received if savedata was unable to load
@@ -88,6 +87,7 @@ var databinding int LocalPlayerIndex;
 var databinding name LastMatchType;
 var databinding float IdleKickSeconds;
 var databinding ProductHashID ContainerToOpenId;
+var databinding ERankInfoDisplayType RankInfoDisplayType;
 var transient byte OrphanedControllerId;
 var PersonaSave_TA PersonaSave;
 var databinding UniqueNetId PlayerID;

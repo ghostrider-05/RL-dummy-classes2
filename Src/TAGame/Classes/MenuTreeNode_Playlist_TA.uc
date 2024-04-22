@@ -5,11 +5,27 @@
 *******************************************************************************/
 class MenuTreeNode_Playlist_TA extends MenuTreeNode_TA;
 
+enum EPlaylistSpecialType
+{
+	PlaylistSpecialType_None,
+	PlaylistSpecialType_Dueling,
+	PlaylistSpecialType_LTM,
+	PlaylistSpecialType_MAX
+};
+
 var int PlaylistId;
 var databinding int PlaylistRowIndex;
+var GFxData_Playlist_TA Playlist;
+var int MinCompetitiveXPLevelRequired;
+var MenuTreePlaylistQueue_TA PlaylistQueue;
+var bool bSelected;
+var databinding EPlaylistSpecialType SpecialDisplayType;
+var MenuTreeConfig_TA MenuTreeConfig;
 
 defaultproperties
 {
+	PlaylistId=-1
 	PlaylistRowIndex=-1
+	MinCompetitiveXPLevelRequired=20
 	GFxDataClass=class'GFxData_MenuTreeNode_Playlist_TA'
 }

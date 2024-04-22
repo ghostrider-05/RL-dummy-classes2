@@ -32,7 +32,7 @@ struct CrumbRedefinedInfo
 	{
 		RedefinedType=CR_TrailData
 		RedefinedAction=CA_Add
-		CrumbData=(CrumbTrailId=None,CrumbNames=None,ActivationTriggers=None,CompletionOverride=None,bCompleteOnlyWhenActive=false,bRepeatable=false,bManualStart=false,ActivationCondition=None,CompletionCondition=None)
+		CrumbData=(CrumbTrailId=None,CrumbNames=None,MenuTreeTrailEnd=None,ActivationTriggers=None,CompletionOverride=None,bCompleteOnlyWhenActive=false,bRepeatable=false,bManualStart=false,ActivationCondition=None,CompletionCondition=None)
 	}
 };
 

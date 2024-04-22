@@ -57,6 +57,7 @@ var transient bool bDemolished;
 var const bool bGroundClampTrace;
 var transient CameraSettingsActor_TA CameraSettings;
 var const float GroundClampZOffset;
+var CameraConfig_TA CameraConfig;
 
 defaultproperties
 {

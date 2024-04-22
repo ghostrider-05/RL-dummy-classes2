@@ -31,6 +31,7 @@ var transient bool bDisableMatchmakingBan;
 var transient bool bBotTest;
 var transient string ReplacementServerID;
 var export editinline transient ServerPlayerTracker_X PlayerTracker;
+var transient ServerExploitManager_X ExploitManager;
 var() class MatchRecorderClass;
 var transient MatchRecorder_X MatchRecorder;
 var transient MatchLog_X MatchLog;

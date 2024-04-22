@@ -3,8 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class EpicLogin_X extends Object within OnlinePlayerAuthentication_X
-	config(Game);
+class EpicLogin_X extends Object within OnlinePlayerAuthentication_X;
 
 enum ELoginMethod
 {
@@ -43,11 +42,3 @@ var int LoginFailureCount;
 var Error LoginError;
 var Qword LoginErrorTimestamp;
 var EpicConfig_X EpicConfig;
-var config string CreateAccountURL;
-var const localized string Unknown;
-
-defaultproperties
-{
-	/**CreateAccountURL="https://api.epicgames.dev/epic/id/v1/accounts"*/
-	/**Unknown="Unknown"*/
-}

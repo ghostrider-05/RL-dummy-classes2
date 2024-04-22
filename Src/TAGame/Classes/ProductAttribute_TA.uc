@@ -12,4 +12,5 @@ class ProductAttribute_TA extends Object
 var const name Typename;
 var const bool bReplicated;
 var const bool bRequiresDynamicThumbnail;
+var const bool bDummyAttribute;
 var const localized string Label;

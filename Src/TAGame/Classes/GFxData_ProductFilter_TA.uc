@@ -11,6 +11,7 @@ enum EProductFilterType
 	ProductFilterType_TradeIn,
 	ProductFilterType_P2P,
 	ProductFilterType_Garage,
+	ProductFilterType_PremiumInventory,
 	ProductFilterType_MAX
 };
 
@@ -142,6 +143,7 @@ var() config array<config string> ProductSortingToIgnore;
 var() config array<config string> ProductAttributesToIgnore;
 var() config string DefaultSorting;
 var transient GarageArchiveSlot_TA GarageArchiveSlot;
+var transient GarageFavoritedSlot_TA GarageFavoritedSlot;
 var() MtxConfig_TA MtxConfig;
 var ProductsConfig_TA ProductsConfig;
 
@@ -151,9 +153,11 @@ defaultproperties
 	UIAttributes(1)=class'ProductAttribute_Painted_TA'
 	UIAttributes(2)=class'ProductAttribute_SpecialEdition_TA'
 	UIAttributes(3)=class'ProductAttribute_TeamEdition_TA'
+	UIAttributes(4)=class'ProductAttribute_Reactive_TA'
 	
 	/**bAllowDefaultProducts=true*/
 	BatchPreviewQuantityTimer=0.010
+	
 	
 	
 	

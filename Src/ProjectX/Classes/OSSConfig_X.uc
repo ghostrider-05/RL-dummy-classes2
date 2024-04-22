@@ -11,5 +11,5 @@ var() float EosInitTimeoutSeconds;
 
 defaultproperties
 {
-	EosInitTimeoutSeconds=15.0
+	EosInitTimeoutSeconds=40.0
 }

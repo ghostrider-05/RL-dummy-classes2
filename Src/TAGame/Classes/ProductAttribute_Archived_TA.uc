@@ -9,5 +9,6 @@ class ProductAttribute_Archived_TA extends ProductAttribute_TA
 
 defaultproperties
 {
+	bDummyAttribute=true
 	/**Label="Show Archived"*/
 }

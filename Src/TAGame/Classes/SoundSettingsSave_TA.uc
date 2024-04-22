@@ -14,6 +14,7 @@ var float CrowdVolume;
 var float VoiceVolume;
 var bool bMuteOnFocusLost;
 var bool bStreamerSafeAudioEnabled;
+var bool bIsFinishedLoadingSaveSettings;
 var EAkOutputType OutputType;
 var EAkDynamicRangeType DynamicRangeType;
 var EMusicStingersSetting MusicStingersSetting;

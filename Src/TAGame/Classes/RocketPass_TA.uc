@@ -9,6 +9,7 @@ var array<RocketPassRewardData> FreeRewards;
 var array<RocketPassRewardData> PremiumRewards;
 var array<RocketPassRewardData> PrestigeRewards;
 var databinding int TierCap;
+var databinding int PrestigeTierCap;
 var databinding bool bIsPassActive;
 var databinding bool bOwnsPremium;
 var bool bPrestigeItemsDirtied;

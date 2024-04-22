@@ -9,6 +9,7 @@ class GameViewportClient_X extends GameViewportClient within Engine
 
 var transient bool bHandCursor;
 var transient bool bMuteSoundOnFocusLost;
+var transient bool bIsFinishedLoadingSaveSettings;
 var const config int MaxSplitScreenPlayers;
 
 defaultproperties

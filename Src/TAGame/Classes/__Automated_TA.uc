@@ -9,6 +9,9 @@ enum EImageFilterOptions {
 enum EForceMode {
 	EForceMode_MAX,
 };
+enum EPlaylistSpecialType {
+	EPlaylistSpecialType_MAX,
+};
 enum EWeatherVariant {
 	EWeatherVariant_MAX,
 };
@@ -16,6 +19,7 @@ enum ESpecialEventState {
 	ESpecialEventState_MAX,
 };
 
+struct ActivePlaylistInfo {};
 struct AdInfo {};
 struct AIProxyData {};
 struct AngleSelectData {};
@@ -30,7 +34,6 @@ struct GroupComponent_ORS {};
 struct GFxLevelThreshold {};
 struct GFxRegion {};
 struct GFxTournamentReward {};
-struct IEpochNow {};
 struct JoinMatchSettings {};
 struct LoadingMovieMapInfo {};
 struct MTCatalogInfo {};
@@ -47,6 +50,7 @@ struct SkeletalMeshLODDistanceInfo {};
 struct TournamentResult {};
 struct TourMatchPlayerStats {};
 struct TourPlacementInfo {};
+struct RPC_GetActivePlaylists_TA {};
 struct TourStatus_TA {};
 struct Achievement_TA {};
 struct Achievement_AG_FarFarAway_TA {};
@@ -163,8 +167,7 @@ struct PartyMessage_TourCheckInError_TA {};
 struct PartyMessage_TourLeaveTournament_TA {};
 struct PartyMessage_TourPreCheckIn_TA {};
 struct PartyMessage_TourPreCheckInError_TA {};
-struct PartyMessage_TradeCurrencyUpdate_TA {};
-struct PartyMessage_TradeProductUpdate_TA {};
+struct PartyMessage_XPLevelUpdate_TA {};
 struct PlayerInput_TA {};
 struct PlayerInput_Edit_TA {};
 struct PlayerInput_Game_TA {};
@@ -260,10 +263,7 @@ struct RPC_ProductsDebugSetPainted_TA {};
 struct RPC_ProductsLoadoutGet_TA {};
 struct RPC_ProductsPlayerClear_TA {};
 struct RPC_ProductsPlayerGet_TA {};
-struct RPC_ProductsTradeAllowed_TA {};
 struct RPC_ProductsTradeIn_TA {};
-struct RPC_ProductsTradePlayer_TA {};
-struct RPC_ProductsTradePlayerStatus_TA {};
 struct RPC_PsyNetGetVanities_TA {};
 struct RPC_PsyNetGetAvatars_TA {};
 struct RPC_PsyNetSetVanity_TA {};
@@ -325,6 +325,7 @@ struct StatusTrigger_CrumbPathComplete_TA {};
 struct StatusTrigger_FTEGroupComplete_TA {};
 struct StatusTrigger_Menu_TA {};
 struct StatusTrigger_MenuButton_TA {};
+struct StatusTrigger_MenuTreeButton_TA {};
 struct StatusTrigger_Numerical_TA {};
 struct StatusTrigger_PlayerLevel_TA {};
 struct StatusTrigger_PlayerXP_TA {};

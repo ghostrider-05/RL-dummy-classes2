@@ -11,7 +11,6 @@ var const ErrorType ReplayNoReplay;
 var const ErrorType ReplayExportNoSpace;
 var const ErrorType UpdateRequired;
 var const ErrorType TradeInMaxed;
-var const ErrorType TransactionInProgress;
 var const ErrorType OrderNotFound;
 var const ErrorType InventoryOutOfSync;
 var const ErrorType TimedOut;
@@ -32,6 +31,7 @@ var const ErrorType ShopItemPlayerPurchaseMax;
 var const ErrorType MicrotransactionProductPurchaseLimitReached;
 var const ErrorType TwoFactorAuthenticationRequired;
 var const ErrorType MatchHasConcluded;
+var const ErrorType InvalidRocketPassPurchase;
 
 defaultproperties
 {

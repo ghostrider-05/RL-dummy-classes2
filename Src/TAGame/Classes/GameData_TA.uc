@@ -129,6 +129,7 @@ defaultproperties
 	OnlineProductAttributes(15)=class'ProductAttribute_BlueprintCost_TA'
 	OnlineProductAttributes(16)=class'ProductAttribute_Currency_TA'
 	OnlineProductAttributes(17)=class'ProductAttribute_NoNotify_TA'
+	OnlineProductAttributes(18)=class'ProductAttribute_Reactive_TA'
 	
 	
 	

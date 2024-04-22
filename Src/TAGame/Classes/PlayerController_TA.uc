@@ -51,6 +51,7 @@ var bool bHandbrakePressed;
 var bool bHasPitchedOrRolled;
 var bool bAirPitchSafetyEnabled;
 var config bool bAllowAsymmetricalMute;
+var bool bReportedPlayer;
 var transient string LoginURL;
 var transient EVoiceFilter DeprecatedVoiceFilter;
 var transient EChatFilter QuickChatFilter;
@@ -108,6 +109,8 @@ var EngineShare_TA EngineShare;
 var repnotify NetworkInputBuffer_TA InputBuffer;
 var CrossplayConfig_X CrossplayConfig;
 var const localized string PlayerReportedMessage;
+var const localized string PlayerReportedPostGameMessage;
+var const localized string CheckPlayerReportStatusMessage;
 var VoiceRoomCredentials RoomCredentials;
 var EOSGameClipsController_TA EOSGameClipsControllerArchetype;
 var EOSGameClipsController_TA EOSGameClipsController;
@@ -130,7 +133,9 @@ defaultproperties
 	/**MedianClientInputRate=40*/
 	/**MaxClientInputRate=60*/
 	/**ConfiguredClientInputRate=60*/
-	/**PlayerReportedMessage="REPORT RECEIVED\\nYour report is being reviewed for disciplinary action.\\nThank you"*/
+	/**PlayerReportedMessage="Your report will be sent after the match.\\nThank you"*/
+	/**PlayerReportedPostGameMessage="Thank you"*/
+	/**CheckPlayerReportStatusMessage="To check the status of your report, go to safety.epicgames.com/reports"*/
 	CheatClass=class'CheatManager_TA'
 	InputClass=class'PlayerInput_Game_TA'
 	CylinderComponent=None

@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ProductAttribute_TeamEdition_TA extends ProductAttribute_TA
+	editinlinenew
 	collapsecategories
 	hidecategories(Object);
 

@@ -5,6 +5,8 @@
 *******************************************************************************/
 class GFxData_MenuTreeNode_GenericFolder_TA extends GFxData_MenuTreeNode_TA;
 
+var databinding bool bShowQuickMatchButton;
+
 defaultproperties
 {
 	TableName=MenuTreeGenericFolderNode

@@ -91,6 +91,7 @@ struct native ReplayHeadersCountTask
 };
 
 var() const config string ReplaysPath;
+var() const config string EpicReplaysPath;
 var native transient array<Pointer> ExportTasks;
 var native transient array<Pointer> ClassTasks;
 var native transient array<Pointer> ImportTasks;
@@ -102,4 +103,5 @@ var transient array<ReplayImportCallbackData> ImportCallbacks;
 defaultproperties
 {
 	/**ReplaysPath="..\\..\\TAGame\\Demos\\"*/
+	/**EpicReplaysPath="..\\..\\TAGame\\DemosEpic\\"*/
 }

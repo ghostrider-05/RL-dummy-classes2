@@ -13,6 +13,7 @@ var databinding bool bTradeLocked;
 var transient bool bIsProcessingTrade;
 var bool bVerifyingTrade;
 var databinding int LockCountdownSecondsRemaining;
+var databinding string PlayerTradeWarningPopupText;
 var transient CurrencyProductSet_TA LocalCurrencyProducts;
 var transient CurrencyProductSet_TA RemoteCurrencyProducts;
 var transient Wallet_TA PlayerWallet;
@@ -24,6 +25,7 @@ var transient GFxModal_X ModalProcessing;
 var transient Guid TradeId;
 var transient UniqueNetId TradingPlayerID;
 var MtxConfig_TA MtxConfig;
+var TradeConfig_TA TradeConfig;
 var GFxData_PartyMemberProfile_TA PartyMemberProfile;
 
 defaultproperties

@@ -5,6 +5,10 @@
 *******************************************************************************/
 class GFxData_MenuTreeNode_Playlist_TA extends GFxData_MenuTreeNode_TA;
 
+var databinding bool bSelected;
+var databinding bool bLocked;
+var databinding string LockReason;
+
 defaultproperties
 {
 	TableName=MenuTreePlaylistNode

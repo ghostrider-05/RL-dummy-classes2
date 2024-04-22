@@ -5,7 +5,6 @@
 *******************************************************************************/
 class PlaylistSettings_TA extends PlaylistSettings_X;
 
-var() int XPLevelUnlocked;
 var() array<MapSkillSettings> MapSkillRequirements;
 var() class TourServerInfoClass;
 var() bool bAllowHonorDuelChallenges;

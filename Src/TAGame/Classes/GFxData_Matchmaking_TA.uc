@@ -34,6 +34,7 @@ var databinding int SeasonEndDays;
 var databinding int SeasonEndHours;
 var databinding int SeasonEndMinutes;
 var MatchmakingSettingsSave_TA MatchmakingSave;
+var PlayMenuSave_TA PlayMenuSave;
 var() array<MessageUpdate> MessageUpdates;
 var transient int CurrentMessageUpdateIndex;
 var() RankedConfig_X RankedConfig;

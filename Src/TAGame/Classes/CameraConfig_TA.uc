@@ -7,6 +7,7 @@ class CameraConfig_TA extends OnlineConfig_X;
 
 var() bool bFramerateIndependentInterp;
 var() bool bReplayFocusOnCarAfterGoal;
+var() bool bEnableDemoSwivel;
 
 defaultproperties
 {

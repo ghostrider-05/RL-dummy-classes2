@@ -5,7 +5,6 @@
 *******************************************************************************/
 class GameSettingPlaylist_TA extends GameSettingPlaylist_X;
 
-var() int XPLevelUnlocked;
 var() array<MapSkillSettings> MapSkillRequirements;
 var() class TourServerInfoClass;
 var() bool bAllowHonorDuelChallenges;

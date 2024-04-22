@@ -17,6 +17,10 @@ var databinding string ConfirmDisplayNameErrorMessage;
 var databinding string UnsupportedCorrectiveActionURL;
 var databinding string EpicPlayerName;
 var databinding string ParentalControlsURL;
+var databinding string ActivateURL;
+var databinding string AccountURL;
+var databinding string TOSURL;
+var databinding string PrivacyPolicyURL;
 var EpicConfig_X EpicConfig;
 
 defaultproperties

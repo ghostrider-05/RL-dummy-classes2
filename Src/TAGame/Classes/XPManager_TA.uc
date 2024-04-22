@@ -18,19 +18,14 @@ struct TitleInfo
 	}
 };
 
-var() const int LevelCap;
-var() const int Level_Max;
-var() const int Level_XPBaseStep;
-var() const int Level_XPBucketSize;
-var() const float Level_XPIncrementAmt;
-var() const int Level_XPBaseRequirement;
+var() const int MultiplierCapLevel;
+var() const int XPPerLevelMultiplier;
+var() const int XPPerLevelCap;
 var() const array<TitleInfo> Titles;
 
 defaultproperties
 {
-	LevelCap=75
-	Level_XPBaseStep=250
-	Level_XPBucketSize=5
-	Level_XPIncrementAmt=3.0
-	Level_XPBaseRequirement=1000
+	MultiplierCapLevel=20
+	XPPerLevelMultiplier=1000
+	XPPerLevelCap=20000
 }

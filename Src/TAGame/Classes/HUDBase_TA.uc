@@ -35,7 +35,6 @@ var const localized string DisconnectedString;
 var const localized string ServerMaintString;
 var const localized string PartyChatTitle;
 var transient GFxData_Chat_TA ChatData;
-var transient GFxData_MultiItemDrops_TA MultiItemDropData;
 
 defaultproperties
 {
