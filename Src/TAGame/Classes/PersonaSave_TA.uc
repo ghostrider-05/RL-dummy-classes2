@@ -6,7 +6,6 @@
 class PersonaSave_TA extends SaveObject_TA;
 
 var array<PersonaDataId> RecentPlayers;
-var array<PersonaDataId> RecentTradingPartners;
 var array<PlayerGameID> RecentGameIDs;
 var array<PlayerLoadoutData> ObservedPlayerLoadouts;
 var EOnlineFriendState PresenceState;

@@ -8,6 +8,7 @@ class GFxData_ReplayManager_TA extends GFxDataSingleton_X;
 var databinding string ReplaySaveID;
 var databinding string ReplaySaveError;
 var transient array<GFxData_Replay_TA> ReplayData;
+var transient array<ReplayHeaderLoadResult> ReplayLoadResults;
 var transient GFxModal_X ModalProcessing;
 var transient string PendingSaveName;
 

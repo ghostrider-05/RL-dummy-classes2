@@ -7,6 +7,22 @@ class CarComponent_Boost_TA extends CarComponent_AirActivate_TA
 	notplaceable
 	hidecategories(Navigation);
 
+struct native ReplicatedBoostData
+{
+	var byte GrantCount;
+	var byte BoostAmount;
+	var byte Unused1;
+	var byte Unused2;
+
+	structdefaultproperties
+	{
+		GrantCount=0
+		BoostAmount=0
+		Unused1=0
+		Unused2=0
+	}
+};
+
 var() float BoostConsumptionRate;
 // maximum amount of boost (in seconds) this car can hold
 var() float MaxBoostAmount;
@@ -27,6 +43,7 @@ var() float MinBoostTime;
 var float RechargeRate;
 var float RechargeDelay;
 var() int UnlimitedBoostRefCount;
+var repnotify transient ReplicatedBoostData ReplicatedBoost;
 var repnotify transient byte ReplicatedBoostAmount;
 var ProductAsset_Boost_TA BoostAsset;
 var() FXActorEvent_X BoostShakeState;
@@ -46,7 +63,7 @@ replication
 		CurrentBoostAmount, StartBoostAmount;
 
 	 if(bNetInitial/**Empty key for position: 35.*/)
-		ReplicatedBoostAmount;
+		ReplicatedBoost, ReplicatedBoostAmount;
 
 	 if(bNetInitial/**Empty key for position: 62.*/)
 		RechargeDelay, RechargeRate, 

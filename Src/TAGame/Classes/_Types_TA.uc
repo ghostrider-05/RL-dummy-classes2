@@ -93,6 +93,7 @@ enum EMatchmakingViewTab
 	MatchmakingViewTab_MicroEvent,
 	MatchmakingViewTab_DebugMicroEvent,
 	MatchmakingViewTab_Casual,
+	MatchmakingViewTab_MenuTree,
 	MatchmakingViewTab_MAX
 };
 
@@ -222,6 +223,9 @@ enum ELicenseGroup
 	LicenseGroup_Volkswagen,
 	LicenseGroup_Transformers,
 	LicenseGroup_43,
+	LicenseGroup_44,
+	LicenseGroup_45,
+	LicenseGroup_46,
 	LicenseGroup_MAX
 };
 
@@ -331,6 +335,14 @@ enum EArchiveProductFilter
 	ArchiveFilter_MAX
 };
 
+enum EFavoritedProductFilter
+{
+	FavoritedFilter_ExcludeFavoritedProducts,
+	FavoritedFilter_IncludeFavoritedProducts,
+	FavoritedFilter_OnlyShowFavoritedProducts,
+	FavoritedFilter_MAX
+};
+
 enum EBlueprintType
 {
 	BlueprintType_Unrevealed,
@@ -429,6 +441,15 @@ enum EStatEventDisplayLevels
 	SEDL_Primary,
 	SEDL_All,
 	SEDL_MAX
+};
+
+enum ERankInfoDisplayType
+{
+	RankInfoDisplayType_None,
+	RankInfoDisplayType_ExtraModesOnly,
+	RankInfoDisplayType_StandardOnly,
+	RankInfoDisplayType_All,
+	RankInfoDisplayType_MAX
 };
 
 enum EVoteStatus
@@ -737,6 +758,9 @@ enum EMainMenuBackground
 	MMBG_FireAndIce,
 	MMBG_Oasis,
 	MMBG_Vida,
+	MMBG_TokyoHax,
+	MMBG_EuroDusk,
+	MMBG_AquaGrass,
 	MMBG_MAX
 };
 
@@ -756,6 +780,15 @@ enum EPlaylistPopulationBucket
 	PPB_High,
 	PPB_Extreme,
 	PPB_MAX
+};
+
+enum ECrossEntitlementStatus
+{
+	CES_None,
+	CES_Pending,
+	CES_Locked,
+	CES_XEItem,
+	CES_MAX
 };
 
 enum EVoiceRoomType
@@ -1217,6 +1250,10 @@ struct native ThumbnailComponent
 	}
 };
 
+struct TradeSkipValidation
+{
+};
+
 struct native OnlineProductAttribute
 {
 	var name Key;
@@ -1478,6 +1515,7 @@ struct native ProductFilter
 	var array<OnlineProduct_TA> OnlineProducts;
 	var array<Product_TA> Products;
 	var array<ProductHashID> ArchivedProducts;
+	var array<ProductHashID> FavoritedProducts;
 	var string Label;
 	var array<int> Slots;
 	var array<ProductSlot_TA> ProhibitedSlots;
@@ -1492,6 +1530,7 @@ struct native ProductFilter
 	var array<int> SeriesIDs;
 	var ProductHashID PackHashID;
 	var bool bExcludePacks;
+	var bool bOnlyXEItems;
 	var bool bIgnoreEquipped;
 	var bool bIgnoreLicensedCars;
 	var bool bStackProducts;
@@ -1500,16 +1539,19 @@ struct native ProductFilter
 	var array<ProductHashID> EquippedHashIDs;
 	var byte LogLevel;
 	var EArchiveProductFilter ArchivedProductFilter;
+	var EFavoritedProductFilter FavoritedProductFilter;
 	var array<EBlueprintType> ProhibitedBlueprints;
 	var array<EProductFilterSortType> ProhibitedSortTypes;
 	var array< class > ProhibitedAttributeSortTypes;
 	var array<int> PaintIDs;
+	var bool bHoldXEInstance;
 
 	structdefaultproperties
 	{
 		OnlineProducts.Empty
 		Products.Empty
 		ArchivedProducts.Empty
+		FavoritedProducts.Empty
 		Label=""
 		Slots.Empty
 		ProhibitedSlots.Empty
@@ -1524,6 +1566,7 @@ struct native ProductFilter
 		SeriesIDs.Empty
 		PackHashID=(Id=-1)
 		bExcludePacks=false
+		bOnlyXEItems=false
 		bIgnoreEquipped=false
 		bIgnoreLicensedCars=false
 		bStackProducts=true
@@ -1532,10 +1575,12 @@ struct native ProductFilter
 		EquippedHashIDs.Empty
 		LogLevel=0
 		ArchivedProductFilter=ArchiveFilter_ExcludeArchivedProducts
+		FavoritedProductFilter=FavoritedFilter_ExcludeFavoritedProducts
 		ProhibitedBlueprints.Empty
 		ProhibitedSortTypes.Empty
 		ProhibitedAttributeSortTypes.Empty
 		PaintIDs.Empty
+		bHoldXEInstance=false
 	}
 };
 
@@ -2634,8 +2679,8 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=48
-		TradeInQualities(1)=59
+		TradeInQualities(0)=34
+		TradeInQualities(1)=60
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0
 		TradeInQualities(4)=0

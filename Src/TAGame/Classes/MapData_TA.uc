@@ -11,6 +11,7 @@ var() Texture2D Thumbnail;
 var() MapData_TA VariantOf;
 var() EWeatherVariant WeatherVariant;
 var() float RandomWeight;
+var() array<string> AdditionalGameTags;
 
 defaultproperties
 {

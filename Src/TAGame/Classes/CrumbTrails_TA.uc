@@ -9,6 +9,7 @@ struct CrumbTrailData
 {
 	var name CrumbTrailId;
 	var array<name> CrumbNames;
+	var name MenuTreeTrailEnd;
 	var array<TriggerClump_TA> ActivationTriggers;
 	var array<TriggerClump_TA> CompletionOverride;
 	var bool bCompleteOnlyWhenActive;
@@ -21,6 +22,7 @@ struct CrumbTrailData
 	{
 		CrumbTrailId=None
 		CrumbNames.Empty
+		MenuTreeTrailEnd=None
 		ActivationTriggers.Empty
 		CompletionOverride.Empty
 		bCompleteOnlyWhenActive=false

@@ -5,4 +5,10 @@
 *******************************************************************************/
 class MenuTreeConfig_TA extends OnlineConfig_X;
 
-var() bool bEnableMenuTree;
+var() bool bEnableDuelingIcons;
+var() int PlaylistCacheDuration;
+
+defaultproperties
+{
+	PlaylistCacheDuration=600
+}

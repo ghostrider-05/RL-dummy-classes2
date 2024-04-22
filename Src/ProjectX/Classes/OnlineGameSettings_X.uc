@@ -8,6 +8,7 @@ class OnlineGameSettings_X extends Settings;
 var int NumPublicConnections;
 var int NumOpenPublicConnections;
 var() array<GameSettingCategory_X> GameSettingCategories;
+var() array<GameSetting_X> GameModeMutatorSettingPresets;
 var transient bool bOffline;
 var bool bIgnoreHiddenMutatorsOverride;
 var int MinimumPlayersRequired;

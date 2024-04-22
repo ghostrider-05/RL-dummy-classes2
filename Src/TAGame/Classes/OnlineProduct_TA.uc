@@ -6,6 +6,7 @@
 class OnlineProduct_TA extends Object
 	implements(IProductAttributeProvider_TA);
 
+const TRADEHOLD_EXT_XE = -5;
 const TRADEHOLD_P2P = -2;
 const TRADEHOLD_ALL = -1;
 const TRADEHOLD_NONE = 0;

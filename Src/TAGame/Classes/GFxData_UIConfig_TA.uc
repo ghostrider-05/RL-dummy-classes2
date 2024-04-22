@@ -5,7 +5,6 @@
 *******************************************************************************/
 class GFxData_UIConfig_TA extends GFxDataSingleton_X;
 
-var databinding int MaxCurrencyTradeAmount;
 var databinding bool bAprilFoolsRankedIcons;
 var databinding bool bAprilFoolsPlaylistImages;
 

@@ -8,6 +8,12 @@ class MenuTreeNode_PlaylistFolder_TA extends MenuTreeNode_GenericFolder_TA;
 var databinding bool bCompetitive;
 var databinding bool bShowArenasAndRegions;
 var databinding bool bCanUseMultiSelect;
+var databinding EPlaylistSpecialType HeaderType;
+var databinding Qword HeaderEndTime;
+var databinding string LTMPlaylistName;
+var databinding string DuelingPlaylistNameA;
+var databinding string DuelingPlaylistNameB;
+var MenuTreeConfig_TA MenuTreeConfig;
 
 defaultproperties
 {

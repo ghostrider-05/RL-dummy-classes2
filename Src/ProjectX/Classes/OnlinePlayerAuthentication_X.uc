@@ -9,7 +9,6 @@ class OnlinePlayerAuthentication_X extends Online_X within OnlinePlayer_X
 var transient RPC_LoginAuthPlayer_X LoginRPC;
 var transient RPC_LoginAuthPlayer_X LoginSuccessRPC;
 var transient UniqueNetId LoggedInPlayerId;
-var transient string LoggedInPlayerName;
 var transient string PlayerUID;
 var transient string Platform;
 var bool bLoggedIn;

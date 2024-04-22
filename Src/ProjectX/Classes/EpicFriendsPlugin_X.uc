@@ -7,7 +7,7 @@ class EpicFriendsPlugin_X extends Object within OnlinePlayer_X
 	config(Game);
 
 var string ServerURL;
-var config string ProductionServerURL;
+var config string FriendsServerURL;
 var config string AddFriendURL;
 var config string RemoveFriendURL;
 var config string OutgoingFriendRequestsURL;
@@ -18,7 +18,7 @@ var config string AccountSummaryURL;
 
 defaultproperties
 {
-	/**ProductionServerURL="https://api.epicgames.dev/epic/friends"*/
+	/**FriendsServerURL="https://api.epicgames.dev/epic/friends"*/
 	/**AddFriendURL="/v1/{AccountId}/friends/{FriendId}"*/
 	/**RemoveFriendURL="/v1/{AccountId}/friends/{FriendId}"*/
 	/**OutgoingFriendRequestsURL="/v1/{AccountId}/outgoing"*/

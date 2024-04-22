@@ -40,7 +40,6 @@ var float TrainingGameSpeed;
 var float FreeplayBoostFillDelay;
 var string PreviousDefaultVoice;
 var string PreviousDefaultText;
-var string PreviousDefaultTrade;
 
 defaultproperties
 {
@@ -56,5 +55,4 @@ defaultproperties
 	FreeplayBoostFillDelay=1.50
 	PreviousDefaultVoice="everybody"
 	PreviousDefaultText="everybody"
-	PreviousDefaultTrade="everybody"
 }

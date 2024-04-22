@@ -7,5 +7,6 @@ class MenuTreeBuilder_TA extends Object;
 
 const MenuTreeMaxDepth = 20;
 
-var MenuTreeConfig_TA MenuTreeConfig;
-var() array<MenuTreeNode_TA> AllNodes;
+var MenuTreePlaylistManager_TA PlaylistManager;
+var() export editinline array<export editinline MenuTreeNode_TA> AllNodes;
+var() const ObjectReferencer PlaylistIconReferences;

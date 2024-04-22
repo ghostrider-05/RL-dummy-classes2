@@ -5,7 +5,24 @@
 *******************************************************************************/
 class GFxData_MenuTreeNode_TA extends GFxDataRow_X;
 
+enum ENodeBannerType
+{
+	NodeBannerType_None,
+	NodeBannerType_Unavailable,
+	NodeBannerType_Searching,
+	NodeBannerType_Locked,
+	NodeBannerType_MAX
+};
+
+var databinding bool bEnabled;
+var databinding bool bDisplayCrumbTrail;
+var databinding Texture ThumbnailImage;
+var databinding string BannerTitle;
+var databinding string BannerBody;
+var databinding ENodeBannerType BannerType;
+
 defaultproperties
 {
+	bEnabled=true
 	PrimaryKeyName=NodeID
 }

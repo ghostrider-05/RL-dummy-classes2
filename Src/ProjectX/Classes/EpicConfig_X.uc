@@ -55,8 +55,8 @@ var() int SecondsToWaitBeforeRetryingAuth;
 var() int SecondsToWaitBeforeUpdatingFriendsList;
 var() array<LocalizedAccountLinkURL> AccountLinkURLOverrides;
 var() string DefaultAccountLinkURL;
-var string ProductionPermissionServerURL;
-var string AccountPermissionsURL;
+var string PermissionServerURL;
+var string IdentityServerURL;
 var string CabinedModeURL;
 var string SetDOBURL;
 var string CreateAccountWithDOBURL;
@@ -64,15 +64,16 @@ var string SetParentEmailURL;
 var string AgeGateURL;
 var string ConfirmDisplayNameURL;
 var string EASAuthURL;
+var string CreateAccountURL;
 var array<ChatPermissionPair> ChatPermissionPairs;
-var array<TradePermissionPair> TradePermissionPairs;
-var array<TradePermissionEnabledPair> TradePermissionEnabledPairs;
 var EChatPermissionLevel DefaultChatPermissionLevel;
-var ETradePermissionLevel DefaultTradePermissionLevel;
 var PlayerPermissions DefaultPermissions;
 var string ForgotPinURL;
 var string ParentalControlsURL;
 var string PrivacyPolicyURL;
+var string ActivateURL;
+var string AccountURL;
+var string TOSURL;
 var() config string SandboxId;
 var() config string DeploymentId;
 
@@ -85,18 +86,21 @@ defaultproperties
 	SecondsBeforeRequestsTimeout=30
 	SecondsToWaitBeforeRetryingAuth=45
 	SecondsToWaitBeforeUpdatingFriendsList=2
-	ProductionPermissionServerURL="https://content-controls-prod.ol.epicgames.net/content-controls"
-	AccountPermissionsURL="/{principalId}/rules/namespaces/{namespace}"
-	CabinedModeURL="https://api.epicgames.dev/epic/id/v1/accounts?accountId={AccountId}"
-	SetDOBURL="https://api.epicgames.dev/epic/id/v1/corrections/dateOfBirth"
-	SetParentEmailURL="https://api.epicgames.dev/epic/id/v1/corrections/guardianEmail"
-	AgeGateURL="https://api.epicgames.dev/epic/id/v1/ageGate"
-	ConfirmDisplayNameURL="https://api.epicgames.dev/epic/id/v1/corrections/confirmDisplayName"
+	PermissionServerURL="https://api.kws.ol.epicgames.com/v1/epic-settings/public/users/{AccountId}/values?game=rl"
+	IdentityServerURL="https://api.epicgames.dev/epic/id"
+	CabinedModeURL="/v1/accounts?accountId={AccountId}"
+	SetDOBURL="/v1/corrections/dateOfBirth"
+	SetParentEmailURL="/v1/corrections/guardianEmail"
+	AgeGateURL="/v1/ageGate"
+	ConfirmDisplayNameURL="/v1/corrections/confirmDisplayName"
 	EASAuthURL="https://api.epicgames.dev/epic/oauth/v1/token"
+	CreateAccountURL="/v1/accounts"
 	DefaultChatPermissionLevel=CPL_Nobody
-	DefaultTradePermissionLevel=TPL_Nobody
 	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false)
 	ForgotPinURL="https://rocketleague.com/pin-reset/"
 	ParentalControlsURL="https://rl.gg/cabinedAccounts"
 	PrivacyPolicyURL="https://www.epicgames.com/site/privacypolicy"
+	ActivateURL="https://www.rocketleague.com/Activate/"
+	AccountURL="https://www.epicgames.com/account"
+	TOSURL="https://www.epicgames.com/site/tos"
 }

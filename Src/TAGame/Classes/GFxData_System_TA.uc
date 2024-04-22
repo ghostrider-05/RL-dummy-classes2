@@ -19,9 +19,11 @@ var databinding EInputPlatformType AvailableGamepadType;
 var databinding float SafeZoneRatio;
 var databinding float UIScale;
 var databinding string Platform;
+var const string SharedUIState_Unlock;
 
 defaultproperties
 {
+	SharedUIState_Unlock="Unlock"
 	TableName=System
 	bLevelTransitionPersistent=true
 }

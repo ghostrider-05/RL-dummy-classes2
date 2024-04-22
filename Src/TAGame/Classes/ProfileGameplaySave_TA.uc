@@ -5,15 +5,23 @@
 *******************************************************************************/
 class ProfileGameplaySave_TA extends SaveObject_TA;
 
+enum EProfileGameplaySaveVersion
+{
+	ProfileGameplaySaveVersion_RankInfoDisplayType,
+	ProfileGameplaySaveVersion_MAX
+};
+
 var bool bMetric;
 var bool bTeamColoredBoostMeter;
 var bool bDisableDivisions;
 var bool bDisableDivisionsSports;
 var EHUDMessageLevel HUDMessageThreshold;
+var ERankInfoDisplayType RankInfoDisplayType;
 var ENameplateMode NameplateMode;
 
 defaultproperties
 {
 	bTeamColoredBoostMeter=true
+	RankInfoDisplayType=RankInfoDisplayType_All
 	NameplateMode=NameplateMode_AlwaysVisible
 }

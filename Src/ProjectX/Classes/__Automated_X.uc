@@ -7,10 +7,14 @@ enum ECrossPlatformChatState {
 	PCCS_Everybody,
 	ECrossPlatformChatState_MAX,
 };
+enum EExploitType {
+	EExploitType_MAX,
+};
 
 struct ImageDecoder {};
 struct ReservationData {};
 struct TimeWindow {};
+struct IEpochNow {};
 struct WordFilterPair {};
 struct MigrationReservationData {};
 struct PlayerPermissions {};
@@ -55,24 +59,17 @@ struct EpicErrors_X {};
 struct Errors_X {};
 struct NNXErrors_X {};
 struct PartyErrors_X {};
-struct PartyMessage_AcceptInviteToTrade_X {};
 struct PartyMessage_CrossPlayTextChat_X {};
 struct PartyMessage_DisableCrossPlay_X {};
 struct PartyMessage_GetPlatformParty_X {};
 struct PartyMessage_GetPlatformPartyResponse_X {};
-struct PartyMessage_InviteToTrade_X {};
-struct PartyMessage_InviteToTradeError_X {};
 struct PartyMessage_JoinGame_X {};
 struct PartyMessage_Kick_X {};
 struct PartyMessage_LobbySettings_X {};
 struct PartyMessage_LocalPlayers_X {};
 struct PartyMessage_MatchmakingAvailability_X {};
 struct PartyMessage_PartyMemberJoinGame_X {};
-struct PartyMessage_PlayerTradeComplete_X {};
-struct PartyMessage_ReadyToConfirmTrade_X {};
-struct PartyMessage_ReadyToLockTrade_X {};
 struct PartyMessage_SetPlatformParty_X {};
-struct PartyMessage_TradingEnabled_X {};
 struct PendingAvatarRequest_X {};
 struct PlayerInput_X {};
 struct PrivilegeCheck_X {};
@@ -167,6 +164,7 @@ struct RPC_RemoveFromClub_X {};
 struct RPC_RemovePlayerFromRole_X {};
 struct RPC_RemoveQuitter_X {};
 struct RPC_ReportCheater_X {};
+struct RPC_ReportExploiter_X {};
 struct RPC_ReportLowFPS_X {};
 struct RPC_ReservationHeartbeat_X {};
 struct RPC_ServerToServer_X {};

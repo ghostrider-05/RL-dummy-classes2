@@ -5,6 +5,8 @@
 *******************************************************************************/
 class MenuTreeNode_GenericFolder_TA extends MenuTreeBranch_TA;
 
+var bool bCanShowQuickMatchButton;
+
 defaultproperties
 {
 	GFxDataClass=class'GFxData_MenuTreeNode_GenericFolder_TA'

@@ -9,8 +9,10 @@ class ProductAttribute_Reactive_TA extends ProductAttribute_TA
 	hidecategories(Object);
 
 var() string ReactiveLabelKey;
+var() bool bHasReactivePreview;
 
 defaultproperties
 {
 	Typename=Reactive
+	/**Label="Reactive"*/
 }

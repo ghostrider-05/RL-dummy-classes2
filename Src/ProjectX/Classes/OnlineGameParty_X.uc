@@ -44,7 +44,6 @@ var transient bool bPendingIncomingTradeInvite;
 var bool bTradeLocked;
 var transient name LastSearchState;
 var transient PartyJoinMatchSettings MatchSettings;
-var transient UniqueNetId PendingTradeInvite;
 var transient OnlineGameParty_X.PartyProcessingStatus ProcessingStatus;
 var const localized string NotInSameOnlineGameError;
 var const localized string MissingLicenseAgreementError;
@@ -68,7 +67,6 @@ defaultproperties
 	//MessageComponent=OnlineMessageComponent_X'Default__OnlineGameParty_X.DefaultMessageComponent'
 	//NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_X.NullSearchStatus0'
 	PartyTimeout=300
-	
 	/**NotInSameOnlineGameError="[PlayerName] is in an online game."*/
 	/**MissingLicenseAgreementError="[PlayerName] has not accepted the license agreement."*/
 }

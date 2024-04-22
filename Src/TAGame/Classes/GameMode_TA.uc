@@ -9,6 +9,7 @@ var() editoronly GameInfo GameArchetype;
 var() MapSet_TA MapSet;
 var() MapSet_TA FreeplayMapSet;
 var() MapSet_TA StandardMapSet;
+var() name MutatorPresetName;
 var() array<name> DisallowedMutatorCategories;
 var bool bEnabled;
 var class GameInfoClass;

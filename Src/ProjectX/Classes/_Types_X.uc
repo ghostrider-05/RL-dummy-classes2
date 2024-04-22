@@ -314,6 +314,7 @@ struct PartyMember
 	var string MemberName;
 	var int MatchmakeRestrictions;
 	var int LocalControllerId;
+	var int XpLevel;
 	var ECrossPlatformChatState CrossChatState;
 	var bool bDisableCrossPlay;
 	var bool bTradingEnabled;
@@ -331,6 +332,7 @@ struct PartyMember
 		MemberName=""
 		MatchmakeRestrictions=0
 		LocalControllerId=-1
+		XpLevel=0
 		CrossChatState=PCCS_Everybody
 		bDisableCrossPlay=false
 		bTradingEnabled=false

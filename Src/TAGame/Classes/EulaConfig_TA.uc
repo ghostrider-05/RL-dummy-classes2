@@ -14,6 +14,6 @@ defaultproperties
 {
 	bRequiresAcceptance=true
 	bAllowEulaReset=true
-	ExcludedPlatforms(0)=88
-	ExcludedPlatforms(1)=108
+	ExcludedPlatforms(0)=58
+	ExcludedPlatforms(1)=110
 }

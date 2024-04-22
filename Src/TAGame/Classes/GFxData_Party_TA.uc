@@ -20,14 +20,15 @@ struct GFxPartyMember
 	var databinding string PlayerName;
 	var databinding string ProfileId;
 	var databinding Texture PlayerAvatarTexture;
+	var databinding int XpLevel;
 	var databinding Qword ClubID;
 	var databinding bool bSplitScreen;
 	var databinding bool bLocalSplitScreen;
 	var databinding bool bHasProfile;
 	var databinding bool bPartyLeader;
-	var databinding bool bIsPlayerTrading;
 	var databinding bool bIsPlayerInMatch;
 	var databinding bool bPlayerCanTrade;
+	var databinding bool bIsPlayerTrading;
 
 	structdefaultproperties
 	{
@@ -35,14 +36,15 @@ struct GFxPartyMember
 		PlayerName=""
 		ProfileId=""
 		PlayerAvatarTexture=None
+		XpLevel=0
 		
 		bSplitScreen=false
 		bLocalSplitScreen=false
 		bHasProfile=false
 		bPartyLeader=false
-		bIsPlayerTrading=false
 		bIsPlayerInMatch=false
 		bPlayerCanTrade=false
+		bIsPlayerTrading=false
 	}
 };
 
@@ -55,7 +57,6 @@ var export editinline OnlineClubCache_X Clubs;
 var VanitySetManager_TA VanityManager;
 var databinding EPsyNetPartyStatus PsyNetPartyStatus;
 var const localized string RegionRestrictedPlayerTrade;
-var GFxModal_X PendingTradeInviteModal;
 var GFxModal_X PartyErrorModal;
 var bool bPendingAllowTrade;
 var CrossplayConfig_X CrossplayConfig;

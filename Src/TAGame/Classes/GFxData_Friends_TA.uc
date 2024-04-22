@@ -52,16 +52,17 @@ var GFxData_PersonaGroup_TA EpicPartyPresenceGroup;
 var export editinline transient OtherPlayerProfile_TA ObservedProfile;
 var string PinGrantPlatformName;
 var int PinGrantPlatform;
+var transient GFxModal_X ModalProcessing;
 
 defaultproperties
 {
 	
 	/**bUsePresenceGroups=true*/
-	/**DefaultPlatformFriendGroups(0)=201
-	DefaultPlatformFriendGroups(1)=58*/
-	/**DefaultEpicFriendGroups(0)=201
-	DefaultEpicFriendGroups(1)=58*/
-	/**DefaultAllFriendGroups(0)=200*/
+	/**DefaultPlatformFriendGroups(0)=185
+	DefaultPlatformFriendGroups(1)=59*/
+	/**DefaultEpicFriendGroups(0)=185
+	DefaultEpicFriendGroups(1)=59*/
+	/**DefaultAllFriendGroups(0)=184*/
 	
 	TableName=Personas
 	bLevelTransitionPersistent=true

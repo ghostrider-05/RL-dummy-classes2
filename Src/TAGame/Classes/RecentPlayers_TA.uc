@@ -32,7 +32,6 @@ struct PlayerLoadoutData
 };
 
 var array<PersonaDataId> RecentList;
-var array<PersonaDataId> RecentTradingPartners;
 var array<PlayerGameID> RecentGameIDs;
 var array<PlayerLoadoutData> ObservedLoadouts;
 var transient PersonaSave_TA PersonaSave;
