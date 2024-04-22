@@ -1,4 +1,5 @@
 [_DummyClass.Variables]
+# Replication
 Replication_0="bNetInitial"
 Replication_1=""
 Replication_10="bNetDirty"
@@ -575,13 +576,13 @@ ConcatenateWithSpace="Concatenate with a space between the values"
 BoostAmount="The amount of boost to give, a float between 0.0 and 1.0.\nTo remove boost, teleport a player to a boostpad with negative boost and back.\nTo give infinite boost, use the give super boost input."
 
 [SeqAct_IsActionPressed_TA.Variables]
-ActionName="The name of the action to check. Check https://github.com/ghostrider-05/RL-Dummy-Classes2/tree/main/Src/ProjectX/Classes/ControlPreset_X.uc for a list of actions"
+ActionName="The name of the action to check. One of:\n- ThrottleForward\n- ThrottleReverse\n- SteerRight\n- SteerLeft\n- LookUp\n- LookDown\n- LookRight\n- LookLeft\n- YawRight\n- YawLeft\n- PitchUp\n- PitchDown\n- RollRight\n- RollLeft\n- Boost\n- Jump\n- Handbrake\n- SecondaryCamera\n- ToggleRoll\n- ReadyUp\n- RearCamera\n- UsePickup\n- NextPickup\n- Grab\n- ButtonMash\n- ToggleMidGameMenu\n- ToggleScoreboard\n- PostMatchRequeue\n- Chat\n- TeamChat\n- PartyChat\n- ReplayMoveForward\n- ReplayMoveBackward\n- ReplayMoveRight\n- ReplayMoveLeft\n- ReplayRollRight\n- ReplayRollLeft\n- ReplayMoveUp\n- ReplayMoveDown\n- ReplayZoomIn\n- ReplayZoomOut\n- ReplayAddKeyframe\n- ReplayRemoveKeyframe\n- ReplayPrevKeyframe\n- ReplayNextKeyframe\n- ReplayScrubBackward\n- ReplayScrubForward\n- ReplayCycleNameplate\n- ReplayCycleHUD\n- ReplayPause\n- ReplaySpeedMenu\n- ReplayCycleFocus\n- ReplayFocusMenu\n- ReplayCycleCamera\n- ReplayCameraMenu\n- ReplayResetView\n- ReplayToggleRoll\n- ToggleReplayFXMenu\n- ChatPreset1\n- ChatPreset2\n- ChatPreset3\n- ChatPreset4\n- PushToTalk\n- ResetTraining\n- TutorialHelper\n- FreeplayBallInFront\n- FreeplayBallOnCar\n- FreeplayRedirectPass\n- FreeplayPopBallUp\n- FreeplayDefendShot\n- TrainingOpenShotSelectionMenu\n- TrainingPreviousShot\n- TrainingNextShot\n- TrainingToggleShuffle\n- TrainingMirrorShot\n- MusicNextTrack\n- MusicTogglePlaylistSelection\n- AutoSaveReplay\n- ReplayViewT0P0\n- ReplayViewT0P1\n- ReplayViewT0P2\n- ReplayViewT0P3\n- ReplayViewT1P0\n- ReplayViewT1P1\n- ReplayViewT1P2\n- ReplayViewT1P3\n- ReplayViewBall\n- ReplayViewNone\n- EditorPreviewTrajectory\n- EditorCycleActor\n- EditorReleaseActor\n- EditorIncreaseTime\n- EditorDecreaseTime\n- EditorUndo\n- EditorRedo\n- EditorIncreasePower\n- EditorDecreasePower\n- EditorTestShot\n- EditorToggleCamera\n- StopEditing\n- EditorShowControls\n- ToggleStatGraphs\n- TargetSelectLeft\n- TargetSelectRight\n- DanceLeanForward\n- DanceLeanBackward\n- DanceLeanRight\n- DanceLeanLeft\n- DanceMoveForward\n- DanceMoveBackward\n- DanceMoveRight\n- DanceMoveLeft\n- DanceRaise\n- DanceToggle\n- ClipInGoalReplay\n- ClipInGameplay\n- SwivelUp\n- SwivelDown\n- SwivelRight\n- SwivelLeft\n- ReplayViewNext\n- ReplayViewPrev\n- EditorIncreasePowerToggle\n- EditorDecreasePowerToggle"
 
 [SeqAct_LoadMap_TA.Variables]
 Map="The in-game file name to load. Example: \"Park_P\" for Beckwith Park"
 
 [SeqAct_SetTutorialGameEvent_TA.Variables]
-TutorialType="See the output links of SeqAct_GetTutorialType_TA for all valid types"
+TutorialType="Tutorial types:\n- Check\n- None\n- Basic\n- Advanced\n- BasicV2\n- AdvancedV2"
 
 [SeqEvent_GameEventStateChanged_TA.Variables]
 StateName="Names:\n- WaitingForPlayers\n- Countdown\n- Active\n- PostGoalScored\n- ReplayPlayback\n- PrePodiumSpotligh\n- PodiumSpotlight\n- Finished"
