@@ -12,6 +12,7 @@ const md = await readFile('./ci/templates/readme.md')
 
 const content = interpolate(md, {
     version: config.Version,
+    versionslash: config.Version.replace('.', '-'),
     ...output,
 })
 
