@@ -1734,6 +1734,30 @@ struct LoadoutAttributesArray
 	}
 };
 
+struct OnlineProductStat
+{
+	var ProductInstanceID InstanceID;
+	var ProductStat_TA ProductStat;
+
+	structdefaultproperties
+	{
+		
+		ProductStat=None
+	}
+};
+
+struct ClientOnlineProductStat
+{
+	var ProductInstanceID InstanceID;
+	var int Value;
+
+	structdefaultproperties
+	{
+		
+		Value=0
+	}
+};
+
 struct native VehicleInputs
 {
 	var() float Throttle;

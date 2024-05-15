@@ -23,30 +23,6 @@ struct SkillTierData
 	}
 };
 
-struct OnlineProductStat
-{
-	var ProductInstanceID InstanceID;
-	var ProductStat_TA ProductStat;
-
-	structdefaultproperties
-	{
-		
-		ProductStat=None
-	}
-};
-
-struct ClientOnlineProductStat
-{
-	var ProductInstanceID InstanceID;
-	var int Value;
-
-	structdefaultproperties
-	{
-		
-		Value=0
-	}
-};
-
 struct ClientLoadoutOnlineDatas
 {
 	var ClientLoadoutOnlineData Loadouts[2];
