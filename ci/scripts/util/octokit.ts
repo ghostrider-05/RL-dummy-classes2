@@ -176,11 +176,12 @@ export class OctokitUtil extends GitUtil {
     public async createMainPullRequest (
         repo: Repo,
         data: { 
-            title: string,
+            title: string
             description: string
+            draft?: boolean
         },
         from: Partial<Repo> & { branch: string },
-    ) {
+    ): Promise<number> {
         return await this.kit.rest.pulls.create({
             ...repo,
             base: this.getMainBranch(repo),
@@ -188,8 +189,33 @@ export class OctokitUtil extends GitUtil {
             maintainer_can_modify: true,
             title: data.title,
             body: data.description,
+            draft: data?.draft ?? false,
             head_repo: from.repo != undefined ? `${from.owner}/${from.repo}` : undefined,
-        }).then(res => res.data)
+        }).then(res => res.data.number)
+    }
+
+    public async updatePullRequestState (
+        repo: Omit<Repo, 'mainBranch'>,
+        pull: {
+            number: number,
+            approve?: boolean,
+            labels: string[] | { name: string }[]
+        }
+    ) {
+        if (typeof pull.number !== 'number') return
+
+        if (pull?.labels) await this.kit.rest.issues.addLabels({
+            issue_number: pull.number,
+            owner: repo.owner,
+            repo: repo.repo,
+            labels: pull.labels,
+        })
+
+        if (pull.approve) await this.kit.rest.pulls.createReview({
+            ...repo,
+            pull_number: pull.number,
+            event: 'APPROVE',
+        })
     }
 
     public async updateMainPullRequest (

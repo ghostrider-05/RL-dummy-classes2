@@ -34,7 +34,15 @@ await kit.uploadToRepo(
     `update dummy classes to ${version}`,
 )
 
-await kit.createMainPullRequest(repo, { title, description }, { branch })
+const prNumber = await kit.createMainPullRequest(repo, {
+    title,
+    description,
+}, { branch })
+
+await kit.updatePullRequestState(repo, {
+    labels: [{ name: 'patch update' }],
+    number: prNumber,
+})
 
 console.log('Finished pull request...')
 process.exit(0)
