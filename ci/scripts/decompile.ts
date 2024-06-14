@@ -10,7 +10,10 @@ await createProcess(process.env.UDK_CMD!, ['make', '-full'], {
         logInvalid: true,
         prefix: 'error: ',
     }),
-    error: { message: 'Failed to compile classes' }
+    error: {
+        filter: () => false,
+        message: 'Failed to compile classes',
+    }
 })
         
 console.log(annotator.lastInvalidLines.join(''))

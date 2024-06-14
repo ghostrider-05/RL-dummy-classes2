@@ -138,8 +138,9 @@ The [Engine changelog](/ci/changelog/CHANGELOG_Engine.md) will contain a list of
 
 You can also fetch the changelog (in JSON) from the GitHub API from the outputted files:
 
-- [kismet.json](/ci/changelog/kismet.json)
-- [classes.json](/ci/changelog/classes.json)
+- [kismet.json](/ci/changelog/kismet.json): lists new and deleted kismet nodes when switching from [the dummy classes](/ci/changelog/CHANGELOG_Engine.md).
+- [classes.json](CHANGELOG.md): lists new and deleted classes, including kismet nodes, when switching from [the dummy classes](CHANGELOG.md).
+- [extracted.json](/ci/changelog/extracted.json): lists all [`AkAudio`, `ProjectX` and `TAGame` classes](/Src/) in [JSON format](/ci/changelog/extracted-schema.json).
 
 ## Credits
 

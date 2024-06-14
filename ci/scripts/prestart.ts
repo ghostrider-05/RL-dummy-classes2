@@ -15,3 +15,5 @@ const tomlToJSON = async (name: string) => {
 
 await tomlToJSON('config')
 await tomlToJSON('description')
+
+process.exit(0)

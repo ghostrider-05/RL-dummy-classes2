@@ -69,6 +69,10 @@ export function createProcess (
             if (rejected) {
                 reject(options.error!.message);
             } else {
+                if (code !== 0 && options.error?.message) {
+                    console.log(options.error.message)
+                }
+
                 resolve(code)
             }
         })
