@@ -14,6 +14,7 @@ var ShopItemExpirationHelper_TA AutoLoadExpirationHelper;
 var Qword MinEndDateOffset;
 var Qword MaxEndDateOffset;
 var Qword RandomEndDateOffset;
+var float LastRequestStartTime;
 
 defaultproperties
 {

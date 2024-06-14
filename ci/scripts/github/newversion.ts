@@ -42,7 +42,7 @@ const prNumber = await kit.createMainPullRequest(repo, {
 }, { branch })
 
 await kit.updatePullRequestState(repo, {
-    labels: [{ name: 'patch update' }],
+    labels: ['patch update'],
     number: prNumber,
 })
 

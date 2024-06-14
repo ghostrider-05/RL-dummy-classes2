@@ -7,7 +7,7 @@ class SeqAct_MainMenuSwitch_TA extends SequenceAction
 	forcescriptorder(true)
 	hidecategories(Object);
 
-const MENU_BG_SWITCH_VERSION = 5;
+const MENU_BG_SWITCH_VERSION = 6;
 
 defaultproperties
 {
@@ -36,6 +36,7 @@ defaultproperties
 	OutputLinks(20)=(LinkDesc="Tokyo Hax",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	OutputLinks(21)=(LinkDesc="Mannfield Dusk",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	OutputLinks(22)=(LinkDesc="Aquadome Grass",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
+	OutputLinks(23)=(LinkDesc="Beach Night Grass",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	VariableLinks.Empty
 	ObjName="Main Menu Switch"
 	ObjCategory="TAGame"

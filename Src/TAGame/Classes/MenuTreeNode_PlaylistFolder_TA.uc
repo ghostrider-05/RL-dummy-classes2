@@ -13,7 +13,6 @@ var databinding Qword HeaderEndTime;
 var databinding string LTMPlaylistName;
 var databinding string DuelingPlaylistNameA;
 var databinding string DuelingPlaylistNameB;
-var MenuTreeConfig_TA MenuTreeConfig;
 
 defaultproperties
 {

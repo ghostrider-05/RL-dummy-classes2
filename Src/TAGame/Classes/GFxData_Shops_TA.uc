@@ -6,10 +6,23 @@
 class GFxData_Shops_TA extends GFxDataSingleton_X
 	config(Game);
 
+struct native ShopsMapEntry
+{
+	var int ShopIndex;
+	var GFxData_ShopCatalogue_TA Catalogue;
+
+	structdefaultproperties
+	{
+		ShopIndex=0
+		Catalogue=None
+	}
+};
+
 var() ShopsManager_TA ShopManager;
 var() OnlineImageDownloaderWeb ImageDownloader;
 var transient ShopsConfig_TA Config;
 var transient array<GFxData_ShopCatalogue_TA> Shops;
+var transient Map_Mirror ShopsMap;
 var databinding int DebugShopID;
 var databinding bool bHideMainMenuButton;
 var databinding bool bNewCatalogues;

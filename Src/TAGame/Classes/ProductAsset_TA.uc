@@ -43,6 +43,7 @@ var(Thumbnail) const Vector SkeletalMeshAnimationOffset;
 var(Thumbnail) editoronly const bool bForceRebuildThumbnail;
 var(Thumbnail) editoronly const bool bPreviewDynamicThumbnail;
 var editoronly transient bool bServerSideOnlyWasSetInitially;
+var(Thumbnail) editoronly const transient ProductPaint_TA PaintToTest;
 var(Asset) editinline array<editinline ProductAssetAttribute_TA> Attributes;
 
 defaultproperties

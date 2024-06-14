@@ -19,7 +19,7 @@ enum EShopDeliverableType
 	Deliverable_MAX
 };
 
-struct ShopCurrencyData
+struct native ShopCurrencyData
 {
 	var int Id;
 	var int Amount;
@@ -71,7 +71,7 @@ struct ShopCurrency
 	}
 };
 
-struct ShopPrice
+struct native ShopPrice
 {
 	var databinding int Id;
 	var databinding int Amount;
@@ -83,7 +83,7 @@ struct ShopPrice
 	}
 };
 
-struct ShopDiscount
+struct native ShopDiscount
 {
 	var databinding int Id;
 	var databinding int ShopItemCostID;
@@ -91,6 +91,7 @@ struct ShopDiscount
 	var databinding Qword EndDate;
 	var databinding array<ShopPrice> Price;
 	var databinding int Quantity;
+	var databinding bool IsProrated;
 
 	structdefaultproperties
 	{
@@ -100,10 +101,11 @@ struct ShopDiscount
 		
 		Price.Empty
 		Quantity=0
+		IsProrated=false
 	}
 };
 
-struct ShopCost
+struct native ShopCost
 {
 	var databinding int ShopItemCostID;
 	var databinding array<ShopPrice> Price;
@@ -137,12 +139,12 @@ struct native ShopCurrencyInfo
 	}
 };
 
-struct ShopDeliverable
+struct native ShopDeliverable
 {
 	var databinding int Count;
 	var databinding ProductInstanceID Id;
 	var databinding ProductHashID HashID;
-	var databinding bool bOwned;
+	var databinding bool IsOwned;
 	var databinding bool bOwnedUntradeable;
 	var OnlineProductData Product;
 
@@ -151,13 +153,13 @@ struct ShopDeliverable
 		Count=0
 		
 		HashID=(Id=0)
-		bOwned=false
+		IsOwned=false
 		bOwnedUntradeable=false
 		
 	}
 };
 
-struct OnlineShopAttribute
+struct native OnlineShopAttribute
 {
 	var databinding name Key;
 	var databinding string Value;
@@ -169,7 +171,7 @@ struct OnlineShopAttribute
 	}
 };
 
-struct ShopItem
+struct native ShopItem
 {
 	var databinding int ShopItemID;
 	var databinding bool Purchasable;
@@ -189,6 +191,7 @@ struct ShopItem
 	var databinding string ImageURL;
 	var databinding Texture ItemTexture;
 	var databinding bool bOwnsAllUntradeableProducts;
+	var databinding bool bOwnsAllDeliverables;
 
 	structdefaultproperties
 	{
@@ -210,6 +213,19 @@ struct ShopItem
 		ImageURL=""
 		ItemTexture=None
 		bOwnsAllUntradeableProducts=false
+		bOwnsAllDeliverables=false
+	}
+};
+
+struct ShopCatalogue
+{
+	var int ShopID;
+	var array<ShopItem> ShopItems;
+
+	structdefaultproperties
+	{
+		ShopID=0
+		ShopItems.Empty
 	}
 };
 

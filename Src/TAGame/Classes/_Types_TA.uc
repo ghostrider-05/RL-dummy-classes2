@@ -226,6 +226,7 @@ enum ELicenseGroup
 	LicenseGroup_44,
 	LicenseGroup_45,
 	LicenseGroup_46,
+	LicenseGroup_47,
 	LicenseGroup_MAX
 };
 
@@ -761,6 +762,7 @@ enum EMainMenuBackground
 	MMBG_TokyoHax,
 	MMBG_EuroDusk,
 	MMBG_AquaGrass,
+	MMBG_BeachNightGrass,
 	MMBG_MAX
 };
 
@@ -1012,6 +1014,20 @@ struct native DemolishData2 extends _Types_TA.DemolishData
 struct native DemolishDataGoalExplosion extends _Types_TA.DemolishData
 {
 	var PRI_TA GoalExplosionOwner;
+};
+
+struct native PrespawnData
+{
+	var bool bPrespawnSet;
+	var Vector Location;
+	var Rotator Rotation;
+
+	structdefaultproperties
+	{
+		bPrespawnSet=false
+		Location=(X=0.0,Y=0.0,Z=0.0)
+		Rotation=(Pitch=0,Yaw=0,Roll=0)
+	}
 };
 
 struct ProductStat
@@ -2703,7 +2719,7 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=34
+		TradeInQualities(0)=185
 		TradeInQualities(1)=60
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0

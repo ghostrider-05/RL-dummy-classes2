@@ -26,6 +26,7 @@ var() int FinishTime;
 // If true, multiple players participate in this event
 var() const bool bMultiplayer;
 var bool bCountdownMessagesDisabled;
+var bool bAllowPrespawn;
 // Fill teams with AI?
 var() bool bFillWithAI;
 var() bool bAllowQueueSaveReplay;
@@ -97,6 +98,7 @@ defaultproperties
 {
 	
 	CountdownTime=3
+	bAllowPrespawn=true
 	bAllowQueueSaveReplay=true
 	bAwardAchievements=true
 	bAllowTeamVoiceChat=true

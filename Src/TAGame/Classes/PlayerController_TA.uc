@@ -62,6 +62,7 @@ var export editinline LightBarComponent_TA LightBar;
 var export editinline GameMusicComponent_TA MusicComponent;
 var export editinline AudioPriorityComponent_TA AudioPriorityComponent;
 var export editinline AudioMixStateComponent_TA AudioMixStateComponent;
+var export editinline TeamDemoAudioComponent_TA TeamDemoAudioComponent;
 var transient PRI_TA FollowTarget;
 var() Camera SpectatorCameraArchetype;
 var() HUD SpectatorHUDArchetype;

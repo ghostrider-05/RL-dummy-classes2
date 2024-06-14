@@ -17,6 +17,7 @@ struct ChatMessage
 	var EChatChannel ChatChannel;
 	var bool bPreset;
 	var UniqueNetId Recipient;
+	var string TimeStamp;
 
 	structdefaultproperties
 	{
@@ -27,6 +28,7 @@ struct ChatMessage
 		ChatChannel=EChatChannel_Match
 		bPreset=false
 		
+		TimeStamp=""
 	}
 };
 

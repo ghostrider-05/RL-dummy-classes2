@@ -25,9 +25,11 @@ struct CustomGameSetting
 	var databinding int SettingIndex;
 	var databinding int DefaultIndex;
 	var name InternalName;
+	var int MutatorGroupID;
 	var int GameSettingCategoryIndex;
 	var array<name> SettingNameExplicit;
 	var databinding bool bPresetLocked;
+	var databinding int RowID;
 
 	structdefaultproperties
 	{
@@ -37,9 +39,11 @@ struct CustomGameSetting
 		SettingIndex=0
 		DefaultIndex=0
 		InternalName=None
+		MutatorGroupID=0
 		GameSettingCategoryIndex=0
 		SettingNameExplicit.Empty
 		bPresetLocked=false
+		RowID=0
 	}
 };
 
@@ -51,6 +55,7 @@ var databinding array<CustomGameSetting> CustomGameSettings;
 var transient array<GameSettingCategory_X> GameSettingCategories;
 var transient array<GameSetting_X> GameModeMutatorSettingPresets;
 var int PresetCategoryIndex;
+var transient array<int> MutatorGroupIDs;
 var transient array<ModeMapPair> ModeMaps;
 var transient ECustomMatchSettingsType SettingsType;
 var transient Profile_TA Profile;

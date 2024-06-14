@@ -27,17 +27,21 @@ struct native GFxMapData
 
 var() GFxMapData RandomMapData;
 var() GFxMapData RandomStandardMapData;
+var() GFxMapData RandomRocketLabsMedleyMapData;
 var() databinding array<GFxMapData> Data;
 var() databinding int ActiveMapIndex;
 var Texture2D LastLoadedMapImage;
 var const name RandomMapName;
 var const name RandomStandardMapName;
+var const name RandomRocketLabsMedleyMapName;
 
 defaultproperties
 {
 	RandomMapData=(Name=None,FriendlyName="",Thumbnail=,LargeImage=,Data=None,GameMode=0)
 	RandomStandardMapData=(Name=None,FriendlyName="",Thumbnail=,LargeImage=,Data=None,GameMode=0)
+	RandomRocketLabsMedleyMapData=(Name=None,FriendlyName="",Thumbnail=,LargeImage=,Data=None,GameMode=0)
 	RandomMapName=Random
 	RandomStandardMapName=RandomStandard
+	RandomRocketLabsMedleyMapName=RandomRocketLabsMedley
 	TableName=Maps
 }

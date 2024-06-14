@@ -16,6 +16,8 @@ var databinding transient Qword EndDate;
 var databinding transient Texture ShopImage;
 var transient string ShopImageURL;
 var databinding transient bool bLoaded;
+var databinding transient bool bNeedsUpdate;
+var transient bool bRelatedCatalogueBatchRequestInProgress;
 var databinding transient bool bFailedToLoad;
 var databinding transient bool bShopItemExpired;
 var databinding transient bool bAutoReload;
@@ -24,6 +26,7 @@ var transient array<ShopItem> CachedItems;
 var config float CacheDuration;
 var transient float LastCacheTime;
 var transient float LastOwnedCacheTime;
+var transient float LastOwnershipDesyncTime;
 var transient AsyncTask ShopTask;
 var export editinline transient OnlineProductStoreSet_TA CatalogueSet;
 var transient ShopItemExpirationHelper_TA ExpirationHelper;
@@ -34,5 +37,6 @@ defaultproperties
 {
 	/**CacheDuration=60.0*/
 	LastCacheTime=-1.0
+	LastOwnershipDesyncTime=-1.0
 	TableName=ShopCatalogue
 }

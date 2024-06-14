@@ -16,6 +16,7 @@ struct GFxChatMessage
 	var databinding UniqueNetId SenderId;
 	var databinding bool bPreset;
 	var databinding EChatMessageType MessageType;
+	var databinding string TimeStamp;
 
 	structdefaultproperties
 	{
@@ -28,6 +29,7 @@ struct GFxChatMessage
 		
 		bPreset=false
 		MessageType=CMT_Default
+		TimeStamp=""
 	}
 };
 
