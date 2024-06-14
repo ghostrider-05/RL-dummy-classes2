@@ -11,6 +11,7 @@ var() export editinline ExplosionComponent_X ExplosionComponent;
 var() repnotify FXActor_X FXActorArchetype;
 var transient FXActor_X FXActor;
 var transient PRI_X Scorer;
+var transient array<FXActorEvent_X> PostSpawnEvents;
 
 defaultproperties
 {

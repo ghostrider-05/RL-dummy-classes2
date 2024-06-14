@@ -9,16 +9,17 @@ struct CategorySettingPair
 {
 	var name Category;
 	var name Setting;
+	var bool bLockSetting;
 
 	structdefaultproperties
 	{
 		Category=None
 		Setting=None
+		bLockSetting=false
 	}
 };
 
 var array<CategorySettingPair> PresetTags;
 var array<name> RequiresMaps;
-var bool bLockSettings;
 var bool bHideSettings;
 var transient string OverrideName;

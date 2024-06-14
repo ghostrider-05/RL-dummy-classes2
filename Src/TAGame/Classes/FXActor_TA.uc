@@ -12,6 +12,8 @@ var FXActorEvent_X PaintedState;
 var FXActorEvent_X BoostEndEvent;
 var FXActorEvent_X StartOfReplayEvent;
 var array<FXActorEvent_X> TeamStates;
+var FXActorEvent_X MyTeamState;
+var FXActorEvent_X OpposingTeamState;
 var export editinline transient LocalPlayerAudioParamsComponent_TA LocalPlayerAudioParamsComponent;
 
 defaultproperties
@@ -23,6 +25,8 @@ defaultproperties
 	StartOfReplayEvent=FXActorEvent_X'FXActorEvents.StartOfReplay'
 	TeamStates(0)=FXActorEvent_X'FXActorEvents.Team0'
 	TeamStates(1)=FXActorEvent_X'FXActorEvents.Team1'
+	MyTeamState=FXActorEvent_X'FXActorEvents.MyTeamEvent'
+	OpposingTeamState=FXActorEvent_X'FXActorEvents.OpposingTeamEvent'
 	SpawnState=FXActorEvent_X'FXActorEvents.Spawned'
 	ActivationState=FXActorEvent_X'FXActorEvents.Active'
 	//Parameters=ParameterDispenser_X'Default__FXActor_TA.DefaultParameters'

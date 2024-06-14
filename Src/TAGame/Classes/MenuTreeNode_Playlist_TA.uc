@@ -20,7 +20,6 @@ var int MinCompetitiveXPLevelRequired;
 var MenuTreePlaylistQueue_TA PlaylistQueue;
 var bool bSelected;
 var databinding EPlaylistSpecialType SpecialDisplayType;
-var MenuTreeConfig_TA MenuTreeConfig;
 
 defaultproperties
 {

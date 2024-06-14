@@ -28,6 +28,7 @@ defaultproperties
 	
 	
 	
+	bAllowPrespawn=false
 	bAllowTeamVoiceChat=false
 	
 	

@@ -132,7 +132,7 @@ enum EAchievementDLC6
 {
 	ADLC6_StormTrooper,
 	ADLC6_GoodTimes,
-	ADLC6_SwapMeet,
+	ADLC6_NewProfileWhoThis,
 	ADLC6_TradeSecret,
 	ADLC6_RankUp,
 	ADLC6_ComingOnStrong,
@@ -261,3 +261,5 @@ var transient GameEvent_TA LastGameEvent;
 var transient Car_TA LastCar;
 var transient Guid PendingTradeGuid;
 var transient ProfileLoadoutSave_TA LoadoutSave;
+var transient PlayerBannerSave_TA PlayerBannerSave;
+var transient PlayerAvatarBorderSave_TA PlayerAvatarBorderSave;

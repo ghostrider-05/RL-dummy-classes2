@@ -23,4 +23,5 @@ defaultproperties
 	CollideActors=false
 	BlockActors=false
 	AbsoluteRotation=true
+	Scale3D=(X=1.0,Y=2.0,Z=1.0)
 }
