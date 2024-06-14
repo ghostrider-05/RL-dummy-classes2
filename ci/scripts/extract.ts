@@ -15,4 +15,6 @@ console.log('Completed asset extraction')
 await writeChangelog(resolve('.', './Src/'))
 await copySrc()
 
+console.log('Completed asset parsing')
+
 process.exit(0)

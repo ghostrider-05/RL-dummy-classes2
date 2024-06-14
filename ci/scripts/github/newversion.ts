@@ -14,6 +14,8 @@ const files = await kit.getCurrentModifiedFiles('uc', [
         'README.md',
         'config.toml',
         'ci/changelog/classes.json',
+        'ci/changelog/extracted-schema.json',
+        'ci/changelog/extracted.json',
         'ci/changelog/kismet.json',
 ])
 

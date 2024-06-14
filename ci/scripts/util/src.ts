@@ -2,6 +2,8 @@ import { basename, resolve, dirname } from 'node:path';
 import { existsSync } from 'node:fs';
 import { copyFile, mkdir, readdir } from 'node:fs/promises';
 
+import { parseFile, writeFile } from './process.js'
+
 export type SrcFile = [
     pkg: string,
     cls: string,
@@ -10,13 +12,17 @@ export type SrcFile = [
 ]
 
 async function iterateOverSrc <R>(
-    onFile: (name: string, pkg: string, collected: R[]) => Promise<R | undefined> | (R | undefined)
+    onFile: (name: string, pkg: string, collected: R[]) => Promise<R | undefined> | (R | undefined),
+    subDirectory = 'Classes',
 ): Promise<R[]> {
     const collected: R[] = []
 
     const packages = await readdir(resolve('.', './Src/'))
     for (const pkg of packages) {
-        const files = await readdir(resolve('.', `./Src/${pkg}/Classes`))
+        const folderPath = resolve('.', `./Src/${pkg}/${subDirectory}`)
+        if (!existsSync(folderPath)) continue;
+
+        const files = await readdir(folderPath)
 
         for (const file of files) {
             const value = await onFile(file, pkg, collected)
@@ -41,6 +47,17 @@ export async function copySrc () {
             resolve(process.env.UDK_SRC, `./${pkg}/Classes/${file}`)
         )
     })
+
+    console.log('Copying JSON classes')
+    const objects: object[] = []
+
+    // Copy JSON files to one output file
+    await iterateOverSrc(async (file, pkg) => {
+        const json = await parseFile<object>(`Src/${pkg}/out/json/${file}`)
+        objects.push(json)
+    }, 'out/json')
+
+    await writeFile('./ci/changelog/extracted.json', JSON.stringify(objects))
 }
 
 export function getFileDetails (path: string): SrcFile {
