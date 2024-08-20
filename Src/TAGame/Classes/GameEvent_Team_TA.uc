@@ -8,6 +8,18 @@ class GameEvent_Team_TA extends GameEvent_TA
 	notplaceable
 	hidecategories(Navigation,Actor,Object);
 
+struct native PlayerLeavingData
+{
+	var Controller Player;
+	var Team_TA Team;
+
+	structdefaultproperties
+	{
+		Player=None
+		Team=None
+	}
+};
+
 // Teams to create
 var() array<Team_TA> TeamArchetypes;
 var transient array<Team_TA> Teams;
@@ -22,6 +34,7 @@ var bool bAlwaysAutoSelectTeam;
 var() VoteActor_TA RematchVoteArchetype;
 var transient VoteActor_TA RematchVote;
 var transient array<ProductAsset_TA> PreloadedBotAssets;
+var transient array<PlayerLeavingData> PlayersRemovedThisFrame;
 
 defaultproperties
 {

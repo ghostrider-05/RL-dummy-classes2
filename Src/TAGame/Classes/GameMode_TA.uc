@@ -14,5 +14,6 @@ var() name MutatorPresetName;
 var() array<name> DisallowedMutatorCategories;
 var bool bEnabled;
 var bool bAllowPrivateMatchOnly;
+var int SortIdx;
 var class GameInfoClass;
 var string GameArchetypePath;

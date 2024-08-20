@@ -2088,11 +2088,13 @@ struct GameModeData
 {
 	var databinding int GameMode;
 	var databinding string LocalizedName;
+	var databinding int SortIdx;
 
 	structdefaultproperties
 	{
 		GameMode=0
 		LocalizedName=""
+		SortIdx=0
 	}
 };
 
@@ -2719,7 +2721,7 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=185
+		TradeInQualities(0)=180
 		TradeInQualities(1)=60
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0
