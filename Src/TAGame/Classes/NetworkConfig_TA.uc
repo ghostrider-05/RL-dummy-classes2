@@ -24,13 +24,16 @@ struct native NetworkLimit
 var() NetworkLimit ReplicationRate;
 var() NetworkLimit ClientRate;
 var() NetworkLimit ClientInputRate;
+var float MatchFailureSecondsOriginalValue;
 var() int MaxClientUploadFrames;
 var() bool bForceNetPackets;
 var() float ForcePacketSignificantDistance;
+var() float MatchFailureSeconds;
 
 defaultproperties
 {
 	MaxClientUploadFrames=10
 	bForceNetPackets=true
 	ForcePacketSignificantDistance=1000.0
+	MatchFailureSeconds=8.0
 }
