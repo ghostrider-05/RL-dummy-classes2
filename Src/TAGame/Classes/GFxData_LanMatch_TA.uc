@@ -12,5 +12,5 @@ var const ECustomMatchSettingsType SettingsType;
 
 defaultproperties
 {
-	TableName=LANMatch
+	TableName=LanMatchInfo
 }

@@ -227,6 +227,8 @@ enum ELicenseGroup
 	LicenseGroup_45,
 	LicenseGroup_46,
 	LicenseGroup_47,
+	LicenseGroup_48,
+	LicenseGroup_49,
 	LicenseGroup_MAX
 };
 
@@ -621,6 +623,7 @@ enum ECustomMatchSettingsType
 	CustomMatchSettingsType_PrivateMatch,
 	CustomMatchSettingsType_LocalMatch,
 	CustomMatchSettingsType_TourCreate,
+	CustomMatchSettingsType_OnlineFreeplay,
 	CustomMatchSettingsType_MAX
 };
 
@@ -763,6 +766,9 @@ enum EMainMenuBackground
 	MMBG_EuroDusk,
 	MMBG_AquaGrass,
 	MMBG_BeachNightGrass,
+	MMBG_Woods,
+	MMBG_WoodsNight,
+	MMBG_TokyoArcade,
 	MMBG_MAX
 };
 
@@ -2721,8 +2727,8 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=180
-		TradeInQualities(1)=60
+		TradeInQualities(0)=15
+		TradeInQualities(1)=61
 		TradeInQualities(2)=0
 		TradeInQualities(3)=0
 		TradeInQualities(4)=0

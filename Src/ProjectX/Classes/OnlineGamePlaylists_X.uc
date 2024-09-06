@@ -12,6 +12,8 @@ var() RankedConfig_X RankedConfig;
 var const localized string CompetitiveCategory;
 var const localized string CasualCategory;
 var const localized string ExtraModeCategory;
+var const localized string PrivateCategory;
+var const localized string TournamentCategory;
 
 defaultproperties
 {
@@ -19,4 +21,6 @@ defaultproperties
 	/**CompetitiveCategory="Competitive"*/
 	/**CasualCategory="Casual"*/
 	/**ExtraModeCategory="Extra Modes"*/
+	/**PrivateCategory="Private"*/
+	/**TournamentCategory="Tournament"*/
 }

@@ -9,3 +9,4 @@ var Controller Controller;
 var PRI_TA PRI;
 var float SecondsRemaining;
 var bool bWantsPrespawn;
+var float PrespawnSecondsRemaining;

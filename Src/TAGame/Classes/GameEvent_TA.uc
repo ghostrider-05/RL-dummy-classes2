@@ -93,6 +93,8 @@ var array<ProductAsset_Bot_TA> RandomizedBots;
 var array<GameState_TA> GameStates;
 var GameState_TA GameState;
 var transient PauseStaticDataSync_X PauseInstance;
+var Qword MatchStartEpoch;
+var float MatchTotalSecondsPlayed;
 
 defaultproperties
 {
@@ -148,7 +150,8 @@ replication
 		MatchTypeClass, bIsBotMatch;
 
 	 if(bNetInitial && Role==ROLE_Authority)
-		GameOwner, ReplicatedGameStateTimeRemaining, 
+		GameOwner, MatchStartEpoch, 
+		MatchTotalSecondsPlayed, ReplicatedGameStateTimeRemaining, 
 		ReplicatedRoundCountDownNumber, ReplicatedStateName, 
 		bAllowReadyUp, bCanVoteToForfeit, 
 		bHasLeaveMatchPenalty;

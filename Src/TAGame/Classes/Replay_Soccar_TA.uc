@@ -74,6 +74,9 @@ var databinding int PrimaryPlayerTeam;
 var databinding int Team0Score;
 // Match score for team 1
 var databinding int Team1Score;
+var float TotalSecondsPlayed;
+var Qword MatchStartEpoch;
+var int WinningTeam;
 var databinding array<ScoredGoal> Goals;
 var array<Highlight> HighLights;
 var array<ReplayPlayerStats> PlayerStats;

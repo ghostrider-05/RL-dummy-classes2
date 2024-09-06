@@ -25,6 +25,7 @@ var config ECameraSettingsPreset CameraSettingsPreset;
 var float DirectorMinChangeTeamFocusTime;
 var float DirectorMinSameTeamFocusTime;
 var float MaxProximityDistance;
+var float PrespawnLerpSpeed;
 
 defaultproperties
 {
@@ -40,4 +41,5 @@ defaultproperties
 	DirectorMinChangeTeamFocusTime=5.0
 	DirectorMinSameTeamFocusTime=4.0
 	MaxProximityDistance=500.0
+	PrespawnLerpSpeed=0.750
 }
