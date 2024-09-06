@@ -5,7 +5,7 @@
 *******************************************************************************/
 class MatchData_X extends Object;
 
-var string MatchGuid;
+var databinding string MatchGuid;
 var Qword RecordStartTimestamp;
 var Qword RecordEndTimestamp;
 var Qword MatchStartTimestamp;

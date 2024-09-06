@@ -158,6 +158,7 @@ var transient array< class > PlaybackClasses;
 var transient array< class > IgnoreClasses;
 var databinding transient string FilePath;
 var databinding string Id;
+var string MatchGuid;
 var databinding const name MapName;
 var databinding const string Date;
 var databinding const int NumFrames;

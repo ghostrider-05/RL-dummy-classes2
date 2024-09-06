@@ -115,6 +115,7 @@ var const localized string CheckPlayerReportStatusMessage;
 var VoiceRoomCredentials RoomCredentials;
 var EOSGameClipsController_TA EOSGameClipsControllerArchetype;
 var EOSGameClipsController_TA EOSGameClipsController;
+var repnotify PrespawnData Prespawn;
 
 defaultproperties
 {
@@ -149,4 +150,7 @@ replication
 {
 	 if(bNetInitial)
 		InputBuffer;
+
+	 if(bNetDirty)
+		Prespawn;
 }

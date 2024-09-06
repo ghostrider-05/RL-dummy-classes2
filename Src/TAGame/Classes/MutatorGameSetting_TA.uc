@@ -7,6 +7,7 @@ class MutatorGameSetting_TA extends GameSetting_X;
 
 var() array<string> RequiresMutators;
 var() array<string> DisallowedWithMutators;
+var() array<byte> DisallowedWithGameModes;
 var() string MutatorPackage;
 var() int MutatorGroupID;
 

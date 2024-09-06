@@ -192,6 +192,8 @@ struct native ShopItem
 	var databinding Texture ItemTexture;
 	var databinding bool bOwnsAllUntradeableProducts;
 	var databinding bool bOwnsAllDeliverables;
+	var databinding bool bIsProrated;
+	var databinding int BuyingProductCount;
 
 	structdefaultproperties
 	{
@@ -214,6 +216,8 @@ struct native ShopItem
 		ItemTexture=None
 		bOwnsAllUntradeableProducts=false
 		bOwnsAllDeliverables=false
+		bIsProrated=false
+		BuyingProductCount=0
 	}
 };
 

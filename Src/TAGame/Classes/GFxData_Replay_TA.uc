@@ -6,6 +6,10 @@
 class GFxData_Replay_TA extends GFxDataRow_X;
 
 var databinding string FriendlyMapName;
+var databinding bool bPrimaryPlayerInReplay;
+var databinding bool bLocalPlayerAbandoned;
+var databinding bool bNoContest;
+var databinding bool bForfeit;
 
 defaultproperties
 {
