@@ -115,7 +115,7 @@ var const localized string CheckPlayerReportStatusMessage;
 var VoiceRoomCredentials RoomCredentials;
 var EOSGameClipsController_TA EOSGameClipsControllerArchetype;
 var EOSGameClipsController_TA EOSGameClipsController;
-var repnotify PrespawnData Prespawn;
+var repnotify repretry PrespawnData Prespawn;
 
 defaultproperties
 {
