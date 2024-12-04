@@ -45,6 +45,7 @@ var databinding array<ShopCurrencyInfo> WeeklyCurrencies;
 var transient array<int> MaxTierScores;
 var float DataRefreshTime;
 var float LastSyncTime;
+var int SeasonCurrencyID;
 var AutoTourConfig_TA Config;
 var OnlineGame_X OnlineGame;
 var() OnlineGameTournaments_TA Tournaments;

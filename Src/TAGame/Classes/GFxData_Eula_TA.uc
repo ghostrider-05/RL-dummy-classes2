@@ -8,4 +8,5 @@ class GFxData_Eula_TA extends GFxDataSingleton_X;
 defaultproperties
 {
 	TableName=Eula
+	bLevelTransitionPersistent=true
 }

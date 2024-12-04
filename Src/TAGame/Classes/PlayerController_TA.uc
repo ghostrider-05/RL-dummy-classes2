@@ -116,6 +116,7 @@ var VoiceRoomCredentials RoomCredentials;
 var EOSGameClipsController_TA EOSGameClipsControllerArchetype;
 var EOSGameClipsController_TA EOSGameClipsController;
 var repnotify repretry PrespawnData Prespawn;
+var FreeplaySessionManager_TA FreeplaySessionManager;
 
 defaultproperties
 {
@@ -149,7 +150,7 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		InputBuffer;
+		FreeplaySessionManager, InputBuffer;
 
 	 if(bNetDirty)
 		Prespawn;

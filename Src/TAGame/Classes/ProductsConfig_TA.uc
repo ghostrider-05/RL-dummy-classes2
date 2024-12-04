@@ -48,14 +48,10 @@ struct ProductTradeHoldOverride
 };
 
 var array<ReplacementProduct> ProhibitedProducts;
-var transient array<ProductTradeInFilter> TradeInFilters;
-var array<SeriesGroup> ItemSeries_AllowTradeIn;
 var array<SeriesGroup> ItemSeries_PreventP2PTrade;
 var array<ProductTradeHoldOverride> ProductTradeHoldOverrides;
 
 defaultproperties
 {
-	ItemSeries_AllowTradeIn(0)=(SeriesID=1,ExcludedQualities=None)
-	ItemSeries_AllowTradeIn(1)=(SeriesID=855,ExcludedQualities=None)
 	ItemSeries_PreventP2PTrade(0)=(SeriesID=855,ExcludedQualities=None)
 }

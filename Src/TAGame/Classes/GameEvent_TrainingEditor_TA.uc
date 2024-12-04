@@ -7,7 +7,7 @@ class GameEvent_TrainingEditor_TA extends GameEvent_GameEditor_TA
 	collapsecategories
 	notplaceable
 	hidecategories(Navigation,Actor,Object)
-	implements(IStartRound_TA);
+	implements(IStartRound_TA,IGetShotAttempt_TA);
 
 enum EPlayTestType
 {

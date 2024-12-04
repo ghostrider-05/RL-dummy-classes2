@@ -5,7 +5,9 @@
 *******************************************************************************/
 class OnlineGamePrivateMatch_X extends OnlineGameMatchmakingBase_X within OnlineGame_X;
 
+var transient bool bCancelled;
 var transient string PreferredRegion;
+var transient int PreferredPlaylistID;
 var() const localized string SearchingString;
 var() const localized string StartSearchFailString;
 var() const localized string FoundServerString;

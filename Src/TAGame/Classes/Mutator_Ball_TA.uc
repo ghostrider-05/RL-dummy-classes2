@@ -24,3 +24,5 @@ var Vector BallMagnusCoefficient;
 var PhysicalMaterial PhysMatOverride;
 var float BallLiftImpulse;
 var float BallLiftDelay;
+var float StaleBallMaxTime;
+var float StaleBallWarningThreshold;

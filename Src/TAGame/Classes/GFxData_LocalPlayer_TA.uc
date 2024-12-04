@@ -55,6 +55,7 @@ var databinding bool bReplacingBot;
 var databinding bool bDisableDivisions;
 var bool bCheckedBootMessage;
 var databinding bool bUseSteamInput;
+var transient bool bControllerConnected;
 // Localized error received if savedata was unable to load
 var databinding string SaveDataError;
 // Localized error received if something went wrong during the signin process
@@ -96,6 +97,7 @@ var transient GFxModal_X ModalOrphaned;
 
 defaultproperties
 {
+	bControllerConnected=true
 	Team=-1
 	OrphanedControllerId=255
 	

@@ -5,8 +5,6 @@
 *******************************************************************************/
 class GFxData_Freeplay_TA extends GFxDataSingleton_X;
 
-var FreeplayCommands_TA FreeplayCommands;
-
 defaultproperties
 {
 	TableName=FreePlay

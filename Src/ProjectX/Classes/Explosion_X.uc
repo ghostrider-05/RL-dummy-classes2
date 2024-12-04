@@ -12,10 +12,13 @@ var() repnotify FXActor_X FXActorArchetype;
 var transient FXActor_X FXActor;
 var transient PRI_X Scorer;
 var transient array<FXActorEvent_X> PostSpawnEvents;
+var bool MuteExplosionOnSpawn;
+var name EnvDemoSoundAttachmentName;
 
 defaultproperties
 {
 	//ExplosionComponent=ExplosionComponent_X'Default__Explosion_X.DefaultExplosion'
+	EnvDemoSoundAttachmentName=Sound
 	//Components(0)=ExplosionComponent_X'Default__Explosion_X.DefaultExplosion'
 	CollisionType=COLLIDE_CustomDefault
 	LifeSpan=5.0

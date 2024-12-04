@@ -6,11 +6,12 @@
 class GFxData_LegalText_TA extends GFxDataSingleton_X;
 
 var array<_Types_Core.OnlinePlatform> LegacyLegalPlatforms;
+var bool bTriggeredSync;
 
 defaultproperties
 {
-	LegacyLegalPlatforms(0)=255
-	LegacyLegalPlatforms(1)=111
+	LegacyLegalPlatforms(0)=5
+	LegacyLegalPlatforms(1)=114
 	LegacyLegalPlatforms(2)=0
 	LegacyLegalPlatforms(3)=0
 	TableName=LegalText

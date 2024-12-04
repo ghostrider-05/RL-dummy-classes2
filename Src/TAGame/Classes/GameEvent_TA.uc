@@ -84,7 +84,7 @@ var transient array<UniqueNetId> ForfeitInitiatorIDs;
 var transient array<UniqueNetId> BannedPlayers;
 var repnotify transient PRI_TA GameOwner;
 var repnotify transient CustomMatchSettings MatchSettings;
-var string RichPresenceString;
+var repnotify string RichPresenceString;
 var transient MatchAdminComponent_TA MatchAdmin;
 var ListenServer_TA ListenServer;
 var repnotify int ReplicatedRoundCountDownNumber;
@@ -147,7 +147,8 @@ replication
 
 	 if(bNetInitial/**Empty key for position: 27.*/)
 		ActivatorCar, BotSkill, 
-		MatchTypeClass, bIsBotMatch;
+		MatchTypeClass, RichPresenceString, 
+		bIsBotMatch;
 
 	 if(bNetInitial && Role==ROLE_Authority)
 		GameOwner, MatchStartEpoch, 

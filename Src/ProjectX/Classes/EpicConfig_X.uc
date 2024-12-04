@@ -58,12 +58,6 @@ var() string DefaultAccountLinkURL;
 var string PermissionServerURL;
 var string IdentityServerURL;
 var string CabinedModeURL;
-var string SetDOBURL;
-var string CreateAccountWithDOBURL;
-var string SetParentEmailURL;
-var string AgeGateURL;
-var string ConfirmDisplayNameURL;
-var string EASAuthURL;
 var string CreateAccountURL;
 var array<ChatPermissionPair> ChatPermissionPairs;
 var EChatPermissionLevel DefaultChatPermissionLevel;
@@ -89,11 +83,6 @@ defaultproperties
 	PermissionServerURL="https://api.kws.ol.epicgames.com/v1/epic-settings/public/users/{AccountId}/values?game=rl"
 	IdentityServerURL="https://api.epicgames.dev/epic/id"
 	CabinedModeURL="/v1/accounts?accountId={AccountId}"
-	SetDOBURL="/v1/corrections/dateOfBirth"
-	SetParentEmailURL="/v1/corrections/guardianEmail"
-	AgeGateURL="/v1/ageGate"
-	ConfirmDisplayNameURL="/v1/corrections/confirmDisplayName"
-	EASAuthURL="https://api.epicgames.dev/epic/oauth/v1/token"
 	CreateAccountURL="/v1/accounts"
 	DefaultChatPermissionLevel=CPL_Nobody
 	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false)

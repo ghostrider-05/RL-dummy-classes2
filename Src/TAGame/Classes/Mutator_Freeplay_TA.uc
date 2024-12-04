@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class Mutator_Freeplay_TA extends Mutator_TA;
+class Mutator_Freeplay_TA extends Mutator_Freeplay_Base_TA;
 
 struct RumbleItemIndex
 {
@@ -17,9 +17,6 @@ struct RumbleItemIndex
 	}
 };
 
-var() Car_TA CarArchetype;
-var() array<Team_Soccar_TA> TeamArchetypes;
-var GameEvent_Soccar_TA SoccarGame;
 var array<RumbleItemIndex> PlayerRumbleItems;
 var float LastResetTime;
 var const float ResetCooldown;
@@ -31,5 +28,6 @@ defaultproperties
 {
 	ResetCooldown=1.0
 	BoostFillDelay=1.50
-	bRecordMetrics=false
+	MatchTypeClass=class'MatchType_Freeplay_TA'
+	RichPresenceString="Tutorial"
 }

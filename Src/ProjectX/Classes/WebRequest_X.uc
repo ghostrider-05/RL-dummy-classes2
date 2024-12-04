@@ -20,6 +20,7 @@ var() bool bLogRequestContent;
 var() bool bLogResponseContent;
 var() bool bLogSendRecv;
 var const transient bool bConnectionReset;
+var transient bool bCancelled;
 var const transient EWebRequestState RequestState;
 var const transient string URL;
 var transient HttpRequestInterface HTTPRequest;

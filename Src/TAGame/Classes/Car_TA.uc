@@ -35,6 +35,7 @@ var transient float LastWheelsHitBallTime;
 var repnotify transient LoadoutTeamPaint TeamPaint;
 var repnotify transient ClubColorSet ClubColors;
 var repnotify float ReplicatedCarScale;
+var repnotify transient DemolishDataExtended ReplicatedDemolishExtended;
 var repnotify transient DemolishData ReplicatedDemolish;
 var transient DemolishData2 ReplicatedDemolish_CustomFX;
 var repnotify transient DemolishDataGoalExplosion ReplicatedDemolishGoalExplosion;
@@ -103,8 +104,8 @@ replication
 	 if(bNetDirty)
 		AddedBallForceMultiplier, AddedCarForceMultiplier, 
 		AttachedPickup, PostMatchAnim, 
-		ReplicatedDemolish, ReplicatedDemolishGoalExplosion, 
-		RumblePickups;
+		ReplicatedDemolish, ReplicatedDemolishExtended, 
+		ReplicatedDemolishGoalExplosion, RumblePickups;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)
 		bOverrideBoostOn, bOverrideHandbrakeOn;

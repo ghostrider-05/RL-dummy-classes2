@@ -38,6 +38,7 @@ struct Highlight
 
 struct ReplayPlayerStats
 {
+	var UniqueNetId PlayerID;
 	var string Name;
 	var _Types_Core.OnlinePlatform Platform;
 	var Qword OnlineID;
@@ -51,6 +52,7 @@ struct ReplayPlayerStats
 
 	structdefaultproperties
 	{
+		
 		Name=""
 		Platform=OnlinePlatform_Unknown
 		
@@ -68,8 +70,11 @@ struct ReplayPlayerStats
 var databinding int TeamSize;
 var databinding int UnfairTeamSize;
 var databinding bool bUnfairBots;
+var databinding bool bNoContest;
+var databinding bool bForfeit;
+var bool bLocalPlayerAbandoned;
 // Team of primary player
-var databinding int PrimaryPlayerTeam;
+var int PrimaryPlayerTeam;
 // Match score for team 0
 var databinding int Team0Score;
 // Match score for team 1

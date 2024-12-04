@@ -91,6 +91,8 @@ var const array<MaterialInterface> TranslucentMaterials;
 var() CarBallInteractionSettings CarInteraction;
 // FX to replace the ball with when the game ends
 var() FXActor_X EndOfGameFXArchetype;
+var() FXActor_X WarnFXActorArchetype;
+var transient FXActor_X WarnFXActor;
 // explosion to spawn
 var() Explosion_X ExplosionArchetype;
 var() Explosion_X NoGoalExplosionArchetype;
@@ -102,6 +104,7 @@ var bool bFadeOut;
 var const transient bool bPredictionOnGround;
 var transient bool bCanBeAttached;
 var transient bool bItemFreeze;
+var repnotify bool bWarnBallReset;
 var() Vector MagnusCoefficient;
 var() float BallHitSpinScale;
 var export editinline BallCamTarget_TA BallCamTarget;
@@ -191,5 +194,6 @@ replication
 
 	 if(bNetDirty)
 		HitTeamNum, ReplicatedExplosionData, 
-		ReplicatedExplosionDataExtended, bEndOfGameHidden;
+		ReplicatedExplosionDataExtended, bEndOfGameHidden, 
+		bWarnBallReset;
 }

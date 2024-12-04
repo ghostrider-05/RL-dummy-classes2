@@ -11,9 +11,11 @@ var const ErrorType NoClosestGoal;
 var const ErrorType TeleportFailed;
 var const ErrorType InvalidHoopsGoal;
 var const ErrorType InvalidBreakoutGame;
+var const ErrorType StillInResetCooldown;
 
 defaultproperties
 {
+	
 	
 	
 	

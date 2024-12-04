@@ -64,6 +64,7 @@ var transient ProfileControlsSave_TA ProfileControlsSave;
 var transient NotificationSave_TA NotificationSave;
 var transient EpicAccountSave_TA EpicAccountSave;
 var transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
+var transient OnlineFreeplaySettingsSave_TA OnlineFreeplaySave;
 var transient GFxData_UserSetting_TA SteamInputSettings;
 var transient int ControllerCount;
 var const string DefaultDeviceString;

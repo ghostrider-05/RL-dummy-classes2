@@ -11,6 +11,9 @@ var transient array<GFxData_Replay_TA> ReplayData;
 var transient array<ReplayHeaderLoadResult> ReplayLoadResults;
 var transient GFxModal_X ModalProcessing;
 var transient string PendingSaveName;
+var databinding bool bDataMapUpdated;
+var MatchHistoryConfig_TA MatchHistoryConfig;
+var transient int CurrentLoadedIndex;
 
 defaultproperties
 {

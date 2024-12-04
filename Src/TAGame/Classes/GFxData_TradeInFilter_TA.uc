@@ -13,6 +13,6 @@ var transient SaveData_TA SaveData;
 
 defaultproperties
 {
-	
 	TableName=TradeInFilters
+	bLevelTransitionPersistent=true
 }

@@ -551,6 +551,14 @@ enum EBoostFillType
 	BoostFill_MAX
 };
 
+enum EGoalResetType
+{
+	GoalReset_Standard,
+	GoalReset_BallReset,
+	GoalReset_Disabled,
+	GoalReset_MAX
+};
+
 enum EControlsVisibilityType
 {
 	ControlsVisibility_Visible,
@@ -1020,6 +1028,13 @@ struct native DemolishData2 extends _Types_TA.DemolishData
 struct native DemolishDataGoalExplosion extends _Types_TA.DemolishData
 {
 	var PRI_TA GoalExplosionOwner;
+};
+
+struct native DemolishDataExtended extends _Types_TA.DemolishDataGoalExplosion
+{
+	var PRI_TA AttackerPRI;
+	var FXActor_X SelfDemoFX;
+	var bool bSelfDemolish;
 };
 
 struct native PrespawnData
@@ -1606,6 +1621,18 @@ struct native ProductFilter
 	}
 };
 
+struct native ProfileProduct
+{
+	var ProductInstanceID InstanceID;
+	var array<ProductAttribute_TA> Attributes;
+
+	structdefaultproperties
+	{
+		
+		Attributes.Empty
+	}
+};
+
 struct SchematicResourceData
 {
 	var databinding ProductInstanceID InstanceID;
@@ -2104,6 +2131,28 @@ struct GameModeData
 	}
 };
 
+struct GoalResetOptionData
+{
+	var databinding string LocalizedName;
+	var databinding string LocalizedDescription;
+
+	structdefaultproperties
+	{
+		LocalizedName=""
+		LocalizedDescription=""
+	}
+};
+
+struct BoostOptionData
+{
+	var databinding string LocalizedName;
+
+	structdefaultproperties
+	{
+		LocalizedName=""
+	}
+};
+
 struct native ReportedPlayerInfo
 {
 	var UniqueNetId Reporter;
@@ -2391,6 +2440,18 @@ struct StatData
 	}
 };
 
+struct StatDataFloat
+{
+	var name EventName;
+	var float Count;
+
+	structdefaultproperties
+	{
+		EventName=None
+		Count=0.0
+	}
+};
+
 struct native QuickChatGroup
 {
 	var string Key;
@@ -2424,6 +2485,7 @@ struct OnlinePlayerMatchData
 	var bool bJoinedInProgress;
 	var int ConsecutiveMatchesPlayed;
 	var UniqueNetId PartyLeader;
+	var array<UniqueNetId> PartyMembers;
 	var float DistanceDrivenKM;
 	var bool bPartyLeaderValid;
 	var int TeamIndex;
@@ -2454,6 +2516,7 @@ struct OnlinePlayerMatchData
 		bJoinedInProgress=false
 		ConsecutiveMatchesPlayed=0
 		
+		PartyMembers.Empty
 		DistanceDrivenKM=0.0
 		bPartyLeaderValid=false
 		TeamIndex=-1
@@ -2719,7 +2782,8 @@ struct ProductTradeInFilter
 	var string Label;
 	var array<int> SeriesIDs;
 	var bool bBlueprint;
-	var array<EProductQuality> TradeInQualities;
+	var array<EProductQuality> Qualities;
+	var array<string> TradeInQualities;
 
 	structdefaultproperties
 	{
@@ -2727,11 +2791,8 @@ struct ProductTradeInFilter
 		Label=""
 		SeriesIDs.Empty
 		bBlueprint=false
-		TradeInQualities(0)=15
-		TradeInQualities(1)=61
-		TradeInQualities(2)=0
-		TradeInQualities(3)=0
-		TradeInQualities(4)=0
+		Qualities.Empty
+		TradeInQualities.Empty
 	}
 };
 

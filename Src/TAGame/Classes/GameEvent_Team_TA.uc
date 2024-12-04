@@ -30,6 +30,7 @@ var transient bool bDisableMutingOtherTeam;
 var transient bool bForfeit;
 var transient bool bUnfairTeams;
 var bool bAlwaysAutoSelectTeam;
+var bool bDisableQuickChat;
 // Archetype for the rematch vote actor
 var() VoteActor_TA RematchVoteArchetype;
 var transient VoteActor_TA RematchVote;
@@ -50,7 +51,7 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		MaxTeamSize;
+		MaxTeamSize, bDisableQuickChat;
 
 	 if(bNetDirty)
 		bDisableMutingOtherTeam, bForfeit;

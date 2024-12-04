@@ -8,6 +8,7 @@ class TrainingEditorNavigation_TA extends Object;
 var TrainingEditorNavigationConfig_TA TrainingNavigationConfig;
 var IStartRound_TA RoundStarter;
 var IGetRoundNumber_TA RoundNumberGetter;
+var IGetShotAttempt_TA ShotAttemptGetter;
 var transient array<int> UnshuffledPlaylist;
 var transient array<int> ActivePlaylist;
 var transient int CurrentActivePlaylistIndex;

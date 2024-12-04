@@ -35,6 +35,7 @@ var ProductPaint_TA AntennaPaint;
 var ProductPaint_TA HatPaint;
 var ProductPaint_TA GoalExplosionPaint;
 var Car_TA ParentCar;
+var transient array<int> CarsToUpdateOnRespawn;
 
 defaultproperties
 {

@@ -22,7 +22,7 @@ var transient OnlineGameWordFilterProcessor_X WordFilterProcessor;
 var() OnlineGameVersion_X GameVersion;
 var() OnlinePlayer_X PlayerArchetype;
 var transient array<OnlinePlayer_X> OnlinePlayers;
-var export editinline OnlineLegalText_X Eula;
+var export editinline OnlineLegalTextEOS_X Eula;
 var export editinline OnlineLegalText_X PrivacyPolicy;
 var export editinline OnlineLegalText_X ToS;
 var export editinline OnlineLegalText_X SCT;

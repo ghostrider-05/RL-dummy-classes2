@@ -8,9 +8,12 @@ class Wallet_TA extends Object within OnlinePlayer_X;
 var() array<Currency> Currencies;
 var export editinline OnlineProductStoreSet_TA CurrencyProductSet;
 var const int RocketBucksCurrencyID;
+var const name AutoTourTokensName;
 var() SpecialEventConfig_TA SpecialEvent;
+var transient AutoTour_TA AutoTour;
 
 defaultproperties
 {
 	RocketBucksCurrencyID=13
+	AutoTourTokensName=AutoTourTokens
 }

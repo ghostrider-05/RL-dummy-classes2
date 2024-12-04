@@ -78,6 +78,7 @@ var(Mesh) array<AnimSet> AnimSets;
 // Physics asset
 var(Physics) PhysicsAsset PhysicsAsset;
 var(Physics) HandlingPreset_TA HandlingPreset;
+var transient RB_BodySetup OffsetBodySetup;
 var(Physics) float HandlingPresetZOffset;
 // Settings for front axle
 var(Wheels) VehicleAxleSettings FrontAxle;

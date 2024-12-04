@@ -144,6 +144,7 @@ var() config array<config string> ProductAttributesToIgnore;
 var() config string DefaultSorting;
 var transient GarageArchiveSlot_TA GarageArchiveSlot;
 var transient GarageFavoritedSlot_TA GarageFavoritedSlot;
+var transient ProfileLoadoutSave_TA LoadoutSave;
 var() MtxConfig_TA MtxConfig;
 var ProductsConfig_TA ProductsConfig;
 

@@ -257,6 +257,18 @@ struct native RenderProfile
 	}
 };
 
+struct native LinkedAccount
+{
+	var string identityProviderId;
+	var string AccountId;
+
+	structdefaultproperties
+	{
+		identityProviderId=""
+		AccountId=""
+	}
+};
+
 struct PlayerTitleCategory
 {
 	var name Id;

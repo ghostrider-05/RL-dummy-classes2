@@ -24,6 +24,6 @@ var transient array<LoadedMtxCatalog> Catalogs;
 
 defaultproperties
 {
-	ValidMtxShopTabs(0)=17
-	ValidMtxShopTabs(1)=106
+	ValidMtxShopTabs(0)=248
+	ValidMtxShopTabs(1)=107
 }
