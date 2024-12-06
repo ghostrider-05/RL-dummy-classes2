@@ -11,10 +11,11 @@ var databinding EProductQuality Quality;
 var databinding int NumberofTradeIns;
 var databinding int RemainingItems;
 var transient ProductTradeInFilter TradeInFilter;
+var transient array<ProductHashID> FilteredHashIDs;
 
 defaultproperties
 {
 	Filter=(OnlineProducts=None,Products=None,ArchivedProducts=None,FavoritedProducts=None,Label="",Slots=None,ProhibitedSlots=None,ExclusiveQualities=None,ProhibitedQualities=None,UnlockMethods=None,TradeRestrictions=None,TradeHoldRestrictions=None,ExclusiveAttributes=None,ProhibitedAttributes=None,SortType=ProductFilterSortType_Alphabetical,SeriesIDs=None,PackHashID=(Id=-1),bExcludePacks=false,bOnlyXEItems=false,bIgnoreEquipped=false,bIgnoreLicensedCars=false,bStackProducts=true,bAllowEquippedArchivedProducts=false,Loadout=None,EquippedHashIDs=None,LogLevel=0,ArchivedProductFilter=ArchiveFilter_ExcludeArchivedProducts,FavoritedProductFilter=FavoritedFilter_ExcludeFavoritedProducts,ProhibitedBlueprints=None,ProhibitedSortTypes=None,ProhibitedAttributeSortTypes=None,PaintIDs=None,bHoldXEInstance=false)
-	
 	TableName=PossibleTradeIns
+	bLevelTransitionPersistent=true
 }

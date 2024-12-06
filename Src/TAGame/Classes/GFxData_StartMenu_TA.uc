@@ -9,6 +9,7 @@ var() OnlineGame_X OnlineGame;
 var const localized string SigningInText;
 var transient GFxModal_X SignInModal;
 var transient int ClickedControllerIndex;
+var transient OnlinePlayerInterface PlayerInterfaceAwaiting;
 
 defaultproperties
 {

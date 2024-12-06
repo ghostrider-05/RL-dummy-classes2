@@ -6,10 +6,20 @@
 class GFxData_Replay_TA extends GFxDataRow_X;
 
 var databinding string FriendlyMapName;
+var databinding int PrimaryPlayerTeam;
+var databinding int PrimaryPlayerScore;
+var databinding int PrimaryPlayerGoals;
+var databinding int PrimaryPlayerAssists;
+var databinding int PrimaryPlayerSaves;
+var databinding int PrimaryPlayerShots;
+var databinding Qword MatchStartEpoch;
+var databinding Qword MatchEndEpoch;
+var databinding string MatchStartDate;
+var databinding string MatchEndDate;
+var databinding float TotalSecondsPlayed;
+var databinding int WinningTeam;
 var databinding bool bPrimaryPlayerInReplay;
 var databinding bool bLocalPlayerAbandoned;
-var databinding bool bNoContest;
-var databinding bool bForfeit;
 
 defaultproperties
 {

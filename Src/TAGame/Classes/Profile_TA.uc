@@ -5,18 +5,6 @@
 *******************************************************************************/
 class Profile_TA extends Object;
 
-struct ProfileProduct
-{
-	var ProductInstanceID InstanceID;
-	var array<ProductAttribute_TA> Attributes;
-
-	structdefaultproperties
-	{
-		
-		Attributes.Empty
-	}
-};
-
 var int LocalId;
 var string ProfileName;
 var transient SaveData_TA SaveData;

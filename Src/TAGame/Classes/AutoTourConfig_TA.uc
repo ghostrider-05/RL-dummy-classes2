@@ -19,7 +19,6 @@ struct ScheduleRegion
 
 var int MaxTournamentsPerWeek;
 var int TourResultsTimeoutSeconds;
-var int CurrencyID;
 var int MaxNumPlayers;
 var bool bAutoPartyUpEnabled;
 var array<ScheduleRegion> ScheduleRegions;
@@ -28,7 +27,6 @@ defaultproperties
 {
 	MaxTournamentsPerWeek=3
 	TourResultsTimeoutSeconds=30
-	CurrencyID=14
 	MaxNumPlayers=32
 	bAutoPartyUpEnabled=true
 }

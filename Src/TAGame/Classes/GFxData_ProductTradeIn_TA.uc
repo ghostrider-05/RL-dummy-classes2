@@ -21,7 +21,7 @@ var transient GFxModal_X ModalProcessing;
 var const localized string InvalidProductString;
 var const localized string NotEnoughProductsSelected;
 var const int NumProductsRequiredForTradeIn;
-var ProductsConfig_TA ProductsConfig;
+var transient array<ProductTradeInFilter> TradeInFilters;
 
 defaultproperties
 {
@@ -29,4 +29,5 @@ defaultproperties
 	/**NotEnoughProductsSelected="Not enough products are selected for a trade-in."*/
 	NumProductsRequiredForTradeIn=5
 	TableName=ProductTradeIn
+	bLevelTransitionPersistent=true
 }

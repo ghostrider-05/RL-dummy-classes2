@@ -10,12 +10,14 @@ struct native ContentPair
 	var name KeyName;
 	var string Content;
 	var transient EncryptedKeyIndex Index;
+	var transient bool bUnreleased;
 
 	structdefaultproperties
 	{
 		KeyName=None
 		Content=""
 		Index=(Index=0)
+		bUnreleased=false
 	}
 };
 

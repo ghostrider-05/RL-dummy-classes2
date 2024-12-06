@@ -47,6 +47,24 @@ struct CustomGameSetting
 	}
 };
 
+struct OnlineFreeplayOption
+{
+	var int OptionIndex;
+	var string LocalizationGroup;
+	var string LocalizationPackage;
+	var string LocalizationName;
+	var string LocalizationDescription;
+
+	structdefaultproperties
+	{
+		OptionIndex=0
+		LocalizationGroup=""
+		LocalizationPackage=""
+		LocalizationName=""
+		LocalizationDescription=""
+	}
+};
+
 var() databinding name SelectedMapName;
 var() databinding int SelectedGameMode;
 var() databinding int SelectedBotDifficulty;
@@ -60,10 +78,29 @@ var transient array<ModeMapPair> ModeMaps;
 var transient ECustomMatchSettingsType SettingsType;
 var transient Profile_TA Profile;
 var transient GameMode_TA GameModeObj;
+var transient array<OnlineFreeplayOption> AllGoalResetOptions;
+var transient bool bDisableGoalResetAllowed;
+var databinding array<GoalResetOptionData> GoalResetOptions;
+var databinding int SelectedGoalResetOption;
+var transient array<OnlineFreeplayOption> AllBoostOptions;
+var databinding array<BoostOptionData> BoostOptions;
+var databinding int SelectedBoostOption;
+var transient string BoostOptionKey;
+var transient string GoalResetOptionKey;
 var GameTags_TA GameTags;
+var transient OnlineFreeplaySettingsSave_TA OnlineFreeplaySave;
 
 defaultproperties
 {
 	PresetCategoryIndex=-1
+	AllGoalResetOptions(0)=(OptionIndex=0,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="ResetStandard",LocalizationDescription="ResetStandardTip")
+	AllGoalResetOptions(1)=(OptionIndex=1,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="DisableGoalDelay",LocalizationDescription="DisableGoalDelayTip")
+	AllGoalResetOptions(2)=(OptionIndex=2,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="DisableGoalScoring",LocalizationDescription="DisableGoalScoringTip")
+	bDisableGoalResetAllowed=true
+	AllBoostOptions(0)=(OptionIndex=0,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="UnlimitedBooster",LocalizationDescription="")
+	AllBoostOptions(1)=(OptionIndex=1,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="BoostStandard",LocalizationDescription="")
+	AllBoostOptions(2)=(OptionIndex=2,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="BoostAutoRefill",LocalizationDescription="")
+	BoostOptionKey="BoostOption"
+	GoalResetOptionKey="GoalResetOption"
 	TableName=Mutators
 }

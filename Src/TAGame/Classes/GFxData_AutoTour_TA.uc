@@ -18,7 +18,6 @@ var const localized string TournamentBanMessage;
 var const localized string PartyMembersTournamentBanned;
 var PsyNet_X PsyNet;
 var() OnlineGameTournaments_TA Tournaments;
-var AutoTourConfig_TA AutoTourConfig;
 var transient AutoTour_TA AutoTour;
 
 defaultproperties

@@ -13,6 +13,7 @@ enum EFreeplayCommand
 	FreeplayCommand_RedirectPass,
 	FreeplayCommand_PopBallUp,
 	FreeplayCommand_DefendShot,
+	FreeplayCommand_PlayerReset,
 	FreeplayCommand_MAX
 };
 

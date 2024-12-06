@@ -153,6 +153,7 @@ var repnotify transient name BotProductName;
 var repnotify int BotAvatarProductID;
 var repnotify int BotBannerProductID;
 var Qword ClubID;
+var int LastTeamIndex;
 var string PublicIP;
 var repnotify transient int SpectatorShortcut;
 var CarDistanceTracker_TA CarDistanceTracker;
@@ -176,6 +177,7 @@ defaultproperties
 	DodgeInputThreshold=0.50
 	SteeringSensitivity=1.0
 	AirControlSensitivity=1.0
+	LastTeamIndex=-1
 	PendingLoadout=(Title=XP,Loadouts=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),Loadouts[1]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)))
 	
 	//Components(0)=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'

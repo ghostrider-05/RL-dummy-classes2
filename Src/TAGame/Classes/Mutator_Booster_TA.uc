@@ -9,6 +9,7 @@ var() bool bNoBooster;
 var() bool bUnlimitedBoost;
 var() bool bBoostRechargeGroundOnly;
 var() bool bOverrideStartBoost;
+var transient bool bIsOnlineFreeplay;
 var() float BoostStrength;
 var() float BoostRechargeRate;
 var() float BoostRechargeDelay;

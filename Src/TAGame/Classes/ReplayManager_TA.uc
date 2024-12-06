@@ -90,6 +90,19 @@ struct native ReplayHeadersCountTask
 	}
 };
 
+struct native ReplayUpdateDataMapTask
+{
+	var init native Map_Mirror Data;
+	var init int RemovedIndex;
+	var ErrorType Error;
+
+	structdefaultproperties
+	{
+		RemovedIndex=0
+		Error=None
+	}
+};
+
 var() const config string ReplaysPath;
 var() const config string EpicReplaysPath;
 var native transient array<Pointer> ExportTasks;
@@ -99,6 +112,9 @@ var native transient Pointer HeadersCountTask;
 var native transient array<Pointer> HeaderLoadTasks;
 var transient array<ReplayExportCallbackData> ExportCallbacks;
 var transient array<ReplayImportCallbackData> ImportCallbacks;
+var native transient Map_Mirror ReplayDataByMatchIDMap;
+var native transient array<Pointer> ReplayDataMapUpdateTasks;
+var transient bool bDataMapUpdated;
 
 defaultproperties
 {

@@ -8,10 +8,14 @@ class CabinedModeResponse extends Object;
 struct CabinedModeData
 {
 	var bool cabinedMode;
+	var string AccountId;
+	var array<LinkedAccount> linkedAccounts;
 
 	structdefaultproperties
 	{
 		cabinedMode=false
+		AccountId=""
+		linkedAccounts.Empty
 	}
 };
 

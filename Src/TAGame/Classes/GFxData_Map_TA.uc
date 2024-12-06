@@ -34,6 +34,7 @@ var Texture2D LastLoadedMapImage;
 var const name RandomMapName;
 var const name RandomStandardMapName;
 var const name RandomRocketLabsMedleyMapName;
+var databinding Texture2D DefaultThumbnail;
 
 defaultproperties
 {
@@ -43,5 +44,6 @@ defaultproperties
 	RandomMapName=Random
 	RandomStandardMapName=RandomStandard
 	RandomRocketLabsMedleyMapName=RandomRocketLabsMedley
+	
 	TableName=Maps
 }

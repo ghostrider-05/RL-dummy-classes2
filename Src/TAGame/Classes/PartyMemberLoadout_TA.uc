@@ -11,7 +11,7 @@ var LoadoutData Loadout;
 var array<OnlineProductData> OnlineLoadoutData;
 var int GaragePreviewTeam;
 var transient LocalPlayer LocalPlayer;
-var export editinline OnlineProductStoreSet_TA ProductSet;
+var export editinline transient OnlineProductStoreSet_TA ProductSet;
 var byte SortWeight;
 
 defaultproperties

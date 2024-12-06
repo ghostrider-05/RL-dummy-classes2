@@ -14,7 +14,7 @@ var MenuTreeBuilder_TA MenuTreeBuilder;
 
 defaultproperties
 {
-	//Eula=OnlineLegalText_X'Default__OnlineGame_TA.DefaultEula'
+	//Eula=OnlineLegalTextEOS_X'Default__OnlineGame_TA.DefaultEula'
 	//PrivacyPolicy=OnlineLegalText_X'Default__OnlineGame_TA.DefaultPrivacyPolicy'
 	//ToS=OnlineLegalText_X'Default__OnlineGame_TA.DefaultToS'
 	//SCT=OnlineLegalText_X'Default__OnlineGame_TA.DefaultSCT'

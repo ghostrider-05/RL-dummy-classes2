@@ -4,3 +4,20 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class LoadoutRandomizer_TA extends Object;
+
+var() const array<ProductSlot_TA> RandomizeSlots;
+
+defaultproperties
+{
+	RandomizeSlots(0)=ProductSlot_TA'ProductSlots.Body'
+	RandomizeSlots(1)=ProductSlot_TA'ProductSlots.Skin'
+	RandomizeSlots(2)=ProductSlot_TA'ProductSlots.PaintFinish'
+	RandomizeSlots(3)=ProductSlot_TA'ProductSlots.Wheels'
+	RandomizeSlots(4)=ProductSlot_TA'ProductSlots.Boost'
+	RandomizeSlots(5)=ProductSlot_TA'ProductSlots.EngineAudio'
+	RandomizeSlots(6)=ProductSlot_TA'ProductSlots.SupersonicTrail'
+	RandomizeSlots(7)=ProductSlot_TA'ProductSlots.Hat'
+	RandomizeSlots(8)=ProductSlot_TA'ProductSlots.Antenna'
+	RandomizeSlots(9)=ProductSlot_TA'ProductSlots.CustomFinish'
+	RandomizeSlots(10)=ProductSlot_TA'ProductSlots.GoalExplosion'
+}

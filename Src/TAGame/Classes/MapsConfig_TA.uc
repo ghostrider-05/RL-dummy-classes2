@@ -9,11 +9,13 @@ struct OnlineMapData
 {
 	var() MapData_TA Map;
 	var() float Frequency;
+	var() bool bInRotation;
 
 	structdefaultproperties
 	{
 		Map=None
 		Frequency=1.0
+		bInRotation=true
 	}
 };
 
@@ -32,3 +34,4 @@ struct OnlineMapSet
 };
 
 var() databinding array<OnlineMapSet> OnlineMapSets;
+var ContentConfig_X ContentConfig;

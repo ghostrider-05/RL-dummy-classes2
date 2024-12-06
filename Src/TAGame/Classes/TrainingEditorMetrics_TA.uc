@@ -13,6 +13,7 @@ struct TrainingNavigationEvent
 	var int NewPlaylistIndex;
 	var int PrevRoundNum;
 	var int NewRoundNum;
+	var int PrevShotAttempt;
 	var bool bShuffle;
 
 	structdefaultproperties
@@ -23,6 +24,7 @@ struct TrainingNavigationEvent
 		NewPlaylistIndex=0
 		PrevRoundNum=0
 		NewRoundNum=0
+		PrevShotAttempt=0
 		bShuffle=false
 	}
 };

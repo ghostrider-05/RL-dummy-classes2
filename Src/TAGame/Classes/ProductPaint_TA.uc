@@ -10,7 +10,10 @@ class ProductPaint_TA extends Object
 var() const localized string Label;
 var() LinearColor Colors[EPaintColorVariant];
 var() EPaintFinishType FinishType;
+var() float EmissiveAmount;
+var() name EmissiveParameterName;
 var() bool bVisible;
+var() bool bIncludeByDefault;
 
 defaultproperties
 {
@@ -27,4 +30,5 @@ defaultproperties
 	Colors[10]=(R=0.0,G=0.0,B=0.0,A=1.0)
 	Colors[11]=(R=0.0,G=0.0,B=0.0,A=1.0)
 	bVisible=true
+	bIncludeByDefault=true
 }

@@ -43,6 +43,8 @@ var MenuTreeNodeCrumbTrail_TA CrumbTrail;
 var() string LocalizationCategory;
 var() string TitleKey;
 var() string DescriptionKey;
+var() name FeatureOn;
+var() name FeatureOff;
 var databinding string SecondaryTitle;
 var databinding int SecondaryTitleTimeAmount;
 var databinding bool bUppercaseSecondaryTitle;

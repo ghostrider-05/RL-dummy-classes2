@@ -31,6 +31,22 @@ var() Car_TA TestCarArchetype;
 // Ball to spawn for this level
 var(Setup) Ball_TA BallArchetype;
 var GoalIndicator_TA GoalIndicatorArchetype;
+var transient bool bShouldSpawnGoalIndicators;
+var transient bool bRoundActive;
+var() bool bPlayReplays;
+var repnotify transient bool bBallHasBeenHit;
+var repnotify transient bool bOverTime;
+var bool bUnlimitedTime;
+var repnotify transient bool bGoalsEnabled;
+var transient bool bNoContest;
+var transient bool bDisableGoalDelay;
+var const bool bShowNoScorerGoalMessage;
+var repnotify transient bool bMatchEnded;
+var repnotify transient bool bDisableCrowdSound;
+var bool bShowIntroScene;
+var repnotify bool bClubMatch;
+var bool bCanDropOnlineRewards;
+var repnotify transient bool bAllowHonorDuels;
 // Where to spawn the ball. If not set will spawn the ball at center
 var(Setup) Actor BallSpawnPoint;
 // Handles giving XP to players
@@ -63,19 +79,6 @@ var Message_TA StopMessage;
 var Message_TA GamePausedMessage;
 var Message_TA GameUnPausedMessage;
 var Message_TA OutOfBoundsMessage;
-var transient bool bRoundActive;
-var() bool bPlayReplays;
-var repnotify transient bool bBallHasBeenHit;
-var repnotify transient bool bOverTime;
-var bool bUnlimitedTime;
-var transient bool bNoContest;
-var transient bool bDisableGoalDelay;
-var const bool bShowNoScorerGoalMessage;
-var repnotify transient bool bMatchEnded;
-var bool bShowIntroScene;
-var repnotify bool bClubMatch;
-var bool bCanDropOnlineRewards;
-var repnotify transient bool bAllowHonorDuels;
 var transient int NextSpawnIndex;
 // handles replay recording and playback
 var() ReplayDirector_TA ReplayDirectorArchetype;
@@ -141,8 +144,10 @@ var transient array<PRI_TA> RemovedPRIs;
 
 defaultproperties
 {
-	SeriesLength=1
+	bShouldSpawnGoalIndicators=true
+	bGoalsEnabled=true
 	bShowNoScorerGoalMessage=true
+	SeriesLength=1
 	TotalGameBalls=1
 	ReplicatedScoredOnTeam=255
 	SlowestGoalSpeed=-1.0
@@ -177,9 +182,10 @@ replication
 		SecondsRemaining, SubRulesArchetype, 
 		TieBreakDecision, WaitTimeRemaining, 
 		bAllowHonorDuels, bBallHasBeenHit, 
-		bCanDropOnlineRewards, bMatchEnded, 
+		bCanDropOnlineRewards, bDisableCrowdSound, 
+		bGoalsEnabled, bMatchEnded, 
 		bNoContest, bOverTime, 
-		bShowIntroScene;
+		bShouldSpawnGoalIndicators, bShowIntroScene;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)
 		ReplicatedServerPerformanceState;
