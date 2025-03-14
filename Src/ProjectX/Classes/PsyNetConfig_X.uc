@@ -20,6 +20,7 @@ var() config float PerConPingInterval;
 var() float FreshConnectionWindow;
 var() float MatchmakingHeartbeatTimeSeconds;
 var() config array<config string> SuppressHeadersForDebug;
+var EPsyNetEnvironment PsyNetEnvironment;
 
 defaultproperties
 {

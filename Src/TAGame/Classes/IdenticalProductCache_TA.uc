@@ -8,3 +8,4 @@ class IdenticalProductCache_TA extends Component
 
 var native const transient Map_Mirror Products;
 var native const transient Map_Mirror ProductIDMap;
+var native const transient Map_Mirror InstanceIDMap;

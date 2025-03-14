@@ -36,6 +36,16 @@ enum EOnlinePlayerPermission
 	OPP_MAX
 };
 
+enum EPsyNetEnvironment
+{
+	EPE_Unset,
+	EPE_Environment1,
+	EPE_Environment2,
+	EPE_Environment3,
+	EPE_Environment4,
+	EPE_MAX
+};
+
 enum EReservationStatus
 {
 	ReservationStatus_None,
@@ -52,6 +62,13 @@ enum EPartyMatchmakingRestriction
 	PMR_InMainMenu,
 	PMR_NotLoggedInPsyNet,
 	PMR_MAX
+};
+
+enum EVoiceReportingLevel
+{
+	VRP_OffWhenPossible,
+	VRP_Always,
+	VRP_MAX
 };
 
 enum EButtonPressType
@@ -336,6 +353,7 @@ struct PartyMember
 	var bool bReadyToConfirmTrade;
 	var PartyMemberServer Server;
 	var UniqueLobbyId PlatformParty;
+	var EVoiceReportingLevel VoiceReportingLevel;
 
 	structdefaultproperties
 	{
@@ -354,6 +372,7 @@ struct PartyMember
 		bReadyToConfirmTrade=false
 		Server=(ServerName="",CustomPassword="",JoinName="",JoinPassword="",PlaylistId=0)
 		
+		VoiceReportingLevel=VRP_OffWhenPossible
 	}
 };
 
@@ -440,6 +459,7 @@ struct PlayerPermissions
 	var ETradePermissionLevel Trade;
 	var bool bRequirePinForFriends;
 	var bool bItemShopNotificationsAllowed;
+	var EVoiceReportingLevel VoiceReporting;
 
 	structdefaultproperties
 	{
@@ -448,6 +468,7 @@ struct PlayerPermissions
 		Trade=TPL_Everybody
 		bRequirePinForFriends=false
 		bItemShopNotificationsAllowed=false
+		VoiceReporting=VRP_Always
 	}
 };
 

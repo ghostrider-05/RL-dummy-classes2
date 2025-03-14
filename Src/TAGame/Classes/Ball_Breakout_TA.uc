@@ -35,6 +35,8 @@ var Car_TA LastCarTouch;
 var int LastDamage;
 var float LastDamageTime;
 var repnotify int DamageIndex;
+var int LockedDamageIndex;
+var array<int> DamageIndexPointsToAward;
 var transient float AbsorbedForce;
 var repnotify AppliedBreakoutDamage AppliedDamage;
 var transient AccumulatedRigidBodyCollision ClosestPlatformCollision;
@@ -47,6 +49,7 @@ defaultproperties
 	DoubleTapTime=0.10
 	LastTeamTouch=255
 	LastDamageTime=-1.0
+	LockedDamageIndex=-1
 	
 	StaticMesh=DefaultMesh
 	//BallCamTarget=BallCamTarget_TA'Default__Ball_Breakout_TA.DefaultBallCamTarget'

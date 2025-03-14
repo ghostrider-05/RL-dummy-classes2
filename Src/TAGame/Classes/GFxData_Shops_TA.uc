@@ -26,6 +26,7 @@ var transient Map_Mirror ShopsMap;
 var databinding int DebugShopID;
 var databinding bool bHideMainMenuButton;
 var databinding bool bNewCatalogues;
+var databinding bool bHidePurchaseEsportToken;
 var export editinline transient OnlineProductStoreSet_TA CrateShopSet;
 var config float CacheDuration;
 var transient float LastCacheTime;

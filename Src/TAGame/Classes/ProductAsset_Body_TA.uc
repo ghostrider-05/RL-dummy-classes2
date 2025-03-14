@@ -7,6 +7,15 @@ class ProductAsset_Body_TA extends ProductAsset_TA
 	editinlinenew
 	hidecategories(Object);
 
+enum EForcedThumbnailColors
+{
+	USE_NO_FORCED_COLORS,
+	USE_FORCED_ALL_COLORS,
+	USE_FORCED_TEAM_COLOR,
+	USE_FORCED_CUSTOM_COLOR,
+	USE_MAX
+};
+
 struct native VehicleWheelSettings
 {
 	// Bone on mesh to attach the wheel to
@@ -78,8 +87,8 @@ var(Mesh) array<AnimSet> AnimSets;
 // Physics asset
 var(Physics) PhysicsAsset PhysicsAsset;
 var(Physics) HandlingPreset_TA HandlingPreset;
-var transient RB_BodySetup OffsetBodySetup;
 var(Physics) float HandlingPresetZOffset;
+var(Physics) float HandlingPresetXOffset;
 // Settings for front axle
 var(Wheels) VehicleAxleSettings FrontAxle;
 // Settings for rear axle
@@ -98,7 +107,6 @@ var(Physics) float SuspensionTravelMax;
 var(Physics) float SuspensionTravelMin;
 var bool bUseLegacySuspensionOffsets;
 var(FX) bool bOverrideBoostFlapsAngle;
-var(Thumbnail) editoronly bool bUseForcedColors;
 // Engine and exhaust sounds
 var deprecated AkSoundCue EngineSound;
 // Engine and exhaust sounds
@@ -144,6 +152,7 @@ var(FX) array<BoostAttachmentToggle> BoostAttachmentsToModify;
 var() MaterialParams SkinParameters;
 var(Thumbnail) editinline ProductAssetReferenceWheel_TA ThumbnailWheelAsset;
 var(Thumbnail) editinline ProductAssetReferenceSkin_TA ThumbnailSkinAsset;
+var(Thumbnail) EForcedThumbnailColors ForcedThumbnailColors;
 var array<SkeletalMeshLODDistanceInfo> LODDistanceInfo;
 var() array<Object> MutatorArchetypes;
 

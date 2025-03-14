@@ -11,10 +11,12 @@ var() int FinishTime;
 var() int GameScore;
 var GameEvent_Soccar_SubRules_TA SubRules;
 var bool bUnlimitedTime;
+var float ItemGiveRateOverride;
 var() OvertimeSettings_TA OvertimeComponent;
 var() MaxTimeComponent_TA MaxTimeComponent;
 
 defaultproperties
 {
 	GameScore=-1
+	ItemGiveRateOverride=-1.0
 }

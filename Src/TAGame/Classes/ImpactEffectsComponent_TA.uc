@@ -55,6 +55,7 @@ var export editinline transient ShakeComponent_X ShakeComponent;
 var transient CollisionEffectData LastCollisionEffectData;
 var transient CollisionEffectData SlideCollisionEffectData;
 var transient PhysicalMaterialProperty_TA SlidePhysMatProp;
+var ImpactModifier_TA ImpactModifier;
 var() ArenaReflectionsManager_TA SlapbackManager;
 
 defaultproperties

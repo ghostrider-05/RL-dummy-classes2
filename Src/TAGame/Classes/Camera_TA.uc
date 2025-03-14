@@ -56,6 +56,7 @@ var transient Rotator CurrentSwivel;
 var transient RBActor_TA Demolisher;
 var transient bool bDemolished;
 var const bool bGroundClampTrace;
+var transient Pawn DemolishedPawn;
 var transient CameraSettingsActor_TA CameraSettings;
 var const float GroundClampZOffset;
 var CameraConfig_TA CameraConfig;

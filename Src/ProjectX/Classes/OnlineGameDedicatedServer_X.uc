@@ -15,6 +15,7 @@ var() OnlineGameDedicatedServerRegistration_X Registration;
 var() OnlineGameReservations_X Reservations;
 var transient ClanforgeReservation_X Clanforge;
 var transient string Region;
+var transient string SubRegion;
 var transient string DataCenter;
 var int CurrentPlaylistId;
 var int MutatorIndex;
@@ -29,7 +30,6 @@ var transient bool bFindingReplacementServer;
 var bool bHasValidMigrationServer;
 var transient bool bDisableMatchmakingBan;
 var transient bool bBotTest;
-var transient bool bRecordMatch;
 var transient string ReplacementServerID;
 var export editinline transient ServerPlayerTracker_X PlayerTracker;
 var transient ServerExploitManager_X ExploitManager;
@@ -43,6 +43,5 @@ defaultproperties
 {
 	CurrentPlaylistId=-1
 	
-	bRecordMatch=true
 	MatchRecorderClass=class'MatchRecorder_X'
 }

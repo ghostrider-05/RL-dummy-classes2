@@ -165,6 +165,13 @@ var transient int MaxTimeTillItem;
 var ProductsConfig_TA ProductsConfig;
 var repnotify string CurrentVoiceRoom;
 var transient ServerSetLoadoutParams PendingLoadout;
+var transient int PossessionSteals;
+var transient int PossessionDenials;
+var transient int PossessionClears;
+var transient int BallDemolitionSaves;
+var transient int CarDemolitions;
+var transient int BallDemolitions;
+var transient int SelfDemolitions;
 
 defaultproperties
 {
@@ -215,11 +222,17 @@ replication
 		ReplicatedWorstNetQualityBeyondLatency, SpectatorShortcut;
 
 	 if(bNetInitial/**Empty key for position: 77.*/)
+		BallDemolitionSaves, BallDemolitions, 
+		CarDemolitions, PossessionClears, 
+		PossessionDenials, PossessionSteals, 
+		SelfDemolitions;
+
+	 if(bNetInitial/**Missing key for position: 87.*/)
 		PickupTimer, QuitSeverity, 
 		ReplacingBotPRI, bAbleToStart, 
 		bMatchAdmin, bStartVoteToForfeitDisabled;
 
-	 if(bNetInitial/**Empty key for position: 102.*/)
+	 if(bNetInitial/**Missing key for position: 112.*/)
 		BotAvatarProductID, BotBannerProductID, 
 		BotProductName, PersistentCamera;
 }

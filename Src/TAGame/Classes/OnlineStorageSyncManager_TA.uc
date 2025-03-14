@@ -6,6 +6,7 @@
 class OnlineStorageSyncManager_TA extends Object within SaveData_TA;
 
 var() OnlineStorageConfig_TA Config;
+var transient ProductsConfig_TA ProductsConfig;
 var EOSOnlineStorageSync_TA EOSOnlineStorageSync;
 var() bool bDebugSyncManager;
 var bool bSyncInProgress;

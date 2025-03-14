@@ -98,6 +98,7 @@ var() Explosion_X ExplosionArchetype;
 var() Explosion_X NoGoalExplosionArchetype;
 var() bool bAllowPlayerExplosionOverride;
 var transient bool bNotifyGroundHit;
+var bool bAwardDemolishCredit;
 var repnotify transient bool bEndOfGameHidden;
 var bool bFadeIn;
 var bool bFadeOut;
@@ -105,12 +106,18 @@ var const transient bool bPredictionOnGround;
 var transient bool bCanBeAttached;
 var transient bool bItemFreeze;
 var repnotify bool bWarnBallReset;
+var bool bCanBeScored;
+var repnotify bool bPossessionEnabled;
 var() Vector MagnusCoefficient;
 var() float BallHitSpinScale;
 var export editinline BallCamTarget_TA BallCamTarget;
 var transient float Radius;
+var transient float SpawnWidth;
 var float VisualRadius;
 var transient array<BallHitInfo> Touches;
+var EVehicleDemolishMode VehicleDemolishMode;
+// Team index that last hit the ball
+var repnotify transient byte HitTeamNum;
 var transient float LastCalculateCarHit;
 var transient Vector InitialLocation;
 var transient Rotator InitialRotation;
@@ -124,8 +131,7 @@ var float ReplicatedAddedCarBounceScale;
 var float AdditionalCarGroundBounceScaleZ;
 var float AdditionalCarGroundBounceScaleXY;
 var repnotify PhysicalMaterial ReplicatedPhysMatOverride;
-// Team index that last hit the ball
-var repnotify transient byte HitTeamNum;
+var transient int GameBallIndex;
 var repnotify transient GameEvent_Soccar_TA GameEvent;
 var repnotify transient ExplosionData ReplicatedExplosionData;
 var repnotify transient ExplosionDataExtended ReplicatedExplosionDataExtended;
@@ -143,14 +149,18 @@ var transient Car_TA CurrentAffector;
 var export editinline BallTrajectoryComponent_TA TrajectoryComponent;
 var const export editinline PitchTekDrawingComponent_TA PitchTekComponent;
 var transient GoalExplosionOrientation_TA GoalExplosionOrientation;
+var FXActor_X PossessionFXActorArchetype;
+var transient FXActor_X PossessionFXActor;
 
 defaultproperties
 {
 	
 	StaticMesh=DefaultMesh
 	bAllowPlayerExplosionOverride=true
+	bAwardDemolishCredit=true
 	bFadeIn=true
 	bFadeOut=true
+	bCanBeScored=true
 	//BallCamTarget=BallCamTarget_TA'Default__Ball_TA.DefaultBallCamTarget'
 	HitTeamNum=255
 	PredictionTimestep=0.050
@@ -186,14 +196,15 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		BallHitSpinScale, GameEvent, 
-		MagnusCoefficient, ReplicatedAddedCarBounceScale, 
-		ReplicatedBallGravityScale, ReplicatedBallMaxLinearSpeedScale, 
-		ReplicatedBallMesh, ReplicatedBallScale, 
-		ReplicatedPhysMatOverride, ReplicatedWorldBounceScale;
+		BallHitSpinScale, GameBallIndex, 
+		GameEvent, MagnusCoefficient, 
+		ReplicatedAddedCarBounceScale, ReplicatedBallGravityScale, 
+		ReplicatedBallMaxLinearSpeedScale, ReplicatedBallMesh, 
+		ReplicatedBallScale, ReplicatedPhysMatOverride, 
+		ReplicatedWorldBounceScale;
 
 	 if(bNetDirty)
 		HitTeamNum, ReplicatedExplosionData, 
 		ReplicatedExplosionDataExtended, bEndOfGameHidden, 
-		bWarnBallReset;
+		bPossessionEnabled, bWarnBallReset;
 }

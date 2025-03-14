@@ -30,6 +30,8 @@ var const name AudioCurveName;
 var const name AudioIntensityName;
 var const FXActorEvent_X FXEvent_TeamChanged;
 var const FXActorEvent_X FXEvent_IntensityChanged;
+var const bool bSwapTeamOnWorldHit;
+var const bool bBackwardsDirectionCheckEnabled;
 
 defaultproperties
 {
@@ -53,6 +55,8 @@ defaultproperties
 	MaxSpeedColor=(R=0.60,G=0.30,B=0.550,A=1.0)
 	AudioCurveName=BallCurve
 	AudioIntensityName=BallIntensity
+	bSwapTeamOnWorldHit=true
+	bBackwardsDirectionCheckEnabled=true
 	
 	StaticMesh=DefaultMesh
 	//BallCamTarget=BallCamTarget_TA'Default__Ball_God_TA.DefaultBallCamTarget'

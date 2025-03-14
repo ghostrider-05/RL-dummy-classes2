@@ -7,3 +7,4 @@ class Mutator_Demolish_TA extends Mutator_TA;
 
 var() EDemolishTarget DemolishTarget;
 var() EDemolishSpeed DemolishSpeed;
+var() EVehicleDemolishMode VehicleDemolishMode;

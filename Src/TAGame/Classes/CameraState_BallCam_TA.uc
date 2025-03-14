@@ -18,6 +18,7 @@ var bool bActive;
 var array< class > TargetClasses;
 var array<PlaneSelectData> PlaneSelectSettings;
 var array<AngleSelectData> AngleSelectSettings;
+var export editinline transient array<export editinline Target_TA> AvailableTargets;
 
 defaultproperties
 {

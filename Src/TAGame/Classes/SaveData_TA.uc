@@ -38,6 +38,9 @@ var config transient bool bEnableOnlineData;
 var transient bool bUnloaded;
 var array<OnlineProduct_TA> OnlineProducts;
 var export editinline transient OnlineProductStoreSet_TA OnlineProductSet;
+var Qword MostRecentProductUpdatedTimestamp;
+var EPsyNetEnvironment PsyNetEnvironment;
+var transient ProductsConfig_TA ProductsConfig;
 var export editinline transient ProductTransactions_TA ProductTransactions;
 // Loaded profiles
 var(Account) array<Profile_TA> Profiles;

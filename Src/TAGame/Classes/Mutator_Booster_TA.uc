@@ -14,3 +14,4 @@ var() float BoostStrength;
 var() float BoostRechargeRate;
 var() float BoostRechargeDelay;
 var() float BoostStartAmount;
+var() EBoostRestriction BoostRestriction;

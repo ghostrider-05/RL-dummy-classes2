@@ -38,6 +38,7 @@ struct native BreakoutDamageState
 
 var() bool bHalfSize;
 var() bool bPrimaryPlayerStart;
+var() bool bLockedDamageState;
 var() int TeamIndex;
 var() int MaxDamage;
 var() const export editinline StaticMeshComponent StaticMeshComponent;
@@ -52,6 +53,7 @@ var() StaticMesh DisconnectedCollisionMesh_HalfSize;
 var export editinline transient array<export editinline StaticMeshComponent> CollisionComponents;
 var float LastHitTime;
 var repnotify BreakoutDamageState DamageState;
+var EBreakoutDamageState DefaultDamageState;
 var FXActor_X FXActor;
 var transient BreakoutDamageState PreReplayState;
 var const Vector HalfSizeFirstTileScale;
@@ -92,5 +94,6 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		DamageState;
+		DamageState, DefaultDamageState, 
+		bLockedDamageState;
 }

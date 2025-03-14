@@ -106,6 +106,14 @@ enum SearchStatusOwner
 	StatusOwner_MAX
 };
 
+enum EDemolishSource
+{
+	EDS_None,
+	EDS_Car,
+	EDS_Ball,
+	EDS_MAX
+};
+
 enum ESettingsAutoUpdateReason
 {
 	SAUR_PartyJoin,
@@ -129,6 +137,14 @@ enum EPaintTeam
 	PaintTeam_Orange,
 	PaintTeam_None,
 	PaintTeam_MAX
+};
+
+enum ETargetCamSwivelMode
+{
+	TCSM_ZeroOut,
+	TCSM_AllowKickoff,
+	TCSM_AllowAlways,
+	TCSM_MAX
 };
 
 enum ESupportType
@@ -472,6 +488,29 @@ enum EBallHitType
 	HitType_MAX
 };
 
+enum EVehicleDemolishMode
+{
+	VDM_None,
+	VDM_Team,
+	VDM_FFA,
+	VDM_MAX
+};
+
+enum EBoostRestriction
+{
+	EBR_None,
+	EBR_GroundedOnly,
+	EBR_AerialOnly,
+	EBR_MAX
+};
+
+enum EInputRestriction
+{
+	EIR_None,
+	EIR_BackwardsMode,
+	EIR_MAX
+};
+
 enum ETAStatType
 {
 	StatType_Private,
@@ -777,6 +816,7 @@ enum EMainMenuBackground
 	MMBG_Woods,
 	MMBG_WoodsNight,
 	MMBG_TokyoArcade,
+	MMBG_FutureUtopia,
 	MMBG_MAX
 };
 
@@ -832,12 +872,42 @@ enum EVoiceInputMode
 	VIM_MAX
 };
 
+enum EVoiceNotificationLevel
+{
+	VNL_None,
+	VNL_Text,
+	VNL_Match,
+	VNL_TextMatch,
+	VNL_MainMenu,
+	VNL_TextMainMenu,
+	VNL_MatchMainMenu,
+	VNL_All,
+	VNL_MAX
+};
+
 enum EPackageSaveStatus
 {
 	PSS_Warning,
 	PSS_Error,
 	PSS_Success,
 	PSS_MAX
+};
+
+enum EMatchHistoryUI
+{
+	MatchHistoryUI_MatchHistoryTab,
+	MatchHistoryUI_SavedReplaysTab,
+	MatchHistoryUI_PostGame,
+	MatchHistoryUI_MidGameReplayMenu,
+	MatchHistoryUI_MAX
+};
+
+enum EMatchHistoryNavigableButton
+{
+	MatchHistoryNavigableButton_ChangeTabButton,
+	MatchHistoryNavigableButton_GoToSaveReplay,
+	MatchHistoryNavigableButton_WatchReplay,
+	MatchHistoryNavigableButton_MAX
 };
 
 struct native PlayerActorIDPair
@@ -1081,6 +1151,18 @@ struct XPInfo
 	}
 };
 
+struct StatEventScore
+{
+	var StatEvent_TA StatEvent;
+	var int Score;
+
+	structdefaultproperties
+	{
+		StatEvent=None
+		Score=0
+	}
+};
+
 struct native ProfileCameraSettings
 {
 	var float FOV;
@@ -1321,6 +1403,12 @@ struct native OnlineProductData
 		TradeHold=0
 		
 	}
+};
+
+struct native OnlineProductTimestampedData extends _Types_TA.OnlineProductData
+{
+	var Qword UpdatedTimestamp;
+	var Qword DeletedTimestamp;
 };
 
 struct native OnlineXPModifier

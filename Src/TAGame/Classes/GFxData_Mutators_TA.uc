@@ -69,6 +69,11 @@ var() databinding name SelectedMapName;
 var() databinding int SelectedGameMode;
 var() databinding int SelectedBotDifficulty;
 var() databinding array<GameModeData> GameModes;
+var databinding int MaxNumRows;
+var databinding int MaxNumColumns;
+var databinding int MaxAllowedMutators;
+var databinding int MaxPreviewMutators;
+var databinding int NumSelectedMutators;
 var databinding array<CustomGameSetting> CustomGameSettings;
 var transient array<GameSettingCategory_X> GameSettingCategories;
 var transient array<GameSetting_X> GameModeMutatorSettingPresets;
@@ -89,9 +94,14 @@ var transient string BoostOptionKey;
 var transient string GoalResetOptionKey;
 var GameTags_TA GameTags;
 var transient OnlineFreeplaySettingsSave_TA OnlineFreeplaySave;
+var transient MutatorConfig_TA MutatorConfig;
 
 defaultproperties
 {
+	MaxNumRows=10
+	MaxNumColumns=3
+	MaxAllowedMutators=18
+	MaxPreviewMutators=8
 	PresetCategoryIndex=-1
 	AllGoalResetOptions(0)=(OptionIndex=0,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="ResetStandard",LocalizationDescription="ResetStandardTip")
 	AllGoalResetOptions(1)=(OptionIndex=1,LocalizationGroup="OnlineFreePlay",LocalizationPackage="TAGame",LocalizationName="DisableGoalDelay",LocalizationDescription="DisableGoalDelayTip")

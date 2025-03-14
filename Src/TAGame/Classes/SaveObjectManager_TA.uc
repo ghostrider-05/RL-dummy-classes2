@@ -6,6 +6,15 @@
 class SaveObjectManager_TA extends Object
 	native;
 
+enum EInitSaveProviderResult
+{
+	InitSaveProviderResult_Pending,
+	InitSaveProviderResult_Success,
+	InitSaveProviderResult_UserNotSignedIn,
+	InitSaveProviderResult_Error,
+	InitSaveProviderResult_MAX
+};
+
 struct native DingoContentCache
 {
 	var Qword UserXUID;
@@ -26,6 +35,11 @@ struct native SaveDataTask
 		ControllerIndex=0
 		Path=""
 	}
+};
+
+struct native InitSaveProviderTask extends SaveObjectManager_TA.SaveDataTask
+{
+	var EInitSaveProviderResult Result;
 };
 
 struct native SaveDataExportTask extends SaveObjectManager_TA.SaveDataTask
@@ -72,6 +86,7 @@ var string SavePath;
 var int ControllerId;
 var transient bool bSaving;
 var() bool bPlayerSaveData;
+var init native transient array<init Pointer> InitializeTasks;
 
 defaultproperties
 {

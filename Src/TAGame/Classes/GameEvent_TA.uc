@@ -38,6 +38,7 @@ var bool bAwardAchievements;
 var bool bIsBotMatch;
 var bool bAllowTeamVoiceChat;
 var bool bAllowSpectatorVoiceChat;
+var bool bAlwaysShowMatchTypeLabel;
 // If multiplayer, limits on how many people can play this event
 var() int MinPlayers;
 // If multiplayer, limits on how many people can play this event
@@ -148,14 +149,14 @@ replication
 	 if(bNetInitial/**Empty key for position: 27.*/)
 		ActivatorCar, BotSkill, 
 		MatchTypeClass, RichPresenceString, 
-		bIsBotMatch;
+		bAllowQueueSaveReplay, bIsBotMatch;
 
 	 if(bNetInitial && Role==ROLE_Authority)
 		GameOwner, MatchStartEpoch, 
 		MatchTotalSecondsPlayed, ReplicatedGameStateTimeRemaining, 
 		ReplicatedRoundCountDownNumber, ReplicatedStateName, 
-		bAllowReadyUp, bCanVoteToForfeit, 
-		bHasLeaveMatchPenalty;
+		bAllowReadyUp, bAlwaysShowMatchTypeLabel, 
+		bCanVoteToForfeit, bHasLeaveMatchPenalty;
 
 	 if(bNetInitial/**Empty key for position: 47.*/)
 		ReplicatedStateIndex;

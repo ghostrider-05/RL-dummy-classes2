@@ -19,7 +19,7 @@ struct FreeplaySettings
 	}
 };
 
-var FreeplayCommands_TA FreeplayCommands;
+var repnotify transient FreeplayCommands_TA FreeplayCommands;
 var transient GameEvent_Soccar_TA SoccarEvent;
 var transient bool bCanDisableGoalReset;
 var bool bDefaultBoostRechargeGroundOnly;

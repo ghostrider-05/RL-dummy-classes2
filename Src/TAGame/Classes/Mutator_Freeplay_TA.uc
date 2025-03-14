@@ -21,8 +21,10 @@ var array<RumbleItemIndex> PlayerRumbleItems;
 var float LastResetTime;
 var const float ResetCooldown;
 var FreeplayConfig_TA FreeplayConfig;
+var EGoalResetType GoalResetType;
 var EBoostFillType BoostFillType;
 var float BoostFillDelay;
+var transient FreeplaySessionManager_TA FreeplaySessionManager;
 
 defaultproperties
 {

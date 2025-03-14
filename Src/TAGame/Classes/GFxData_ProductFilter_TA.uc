@@ -81,6 +81,18 @@ struct FilterProductAttribute
 	}
 };
 
+struct FilterProductExtraAttributeEntry
+{
+	var class OriginalAttributeClass;
+	var class ExtraAttributeClass;
+
+	structdefaultproperties
+	{
+		OriginalAttributeClass=None
+		ExtraAttributeClass=None
+	}
+};
+
 struct FilterProductSeries
 {
 	var databinding string Label;
@@ -129,6 +141,7 @@ var databinding string Label;
 var databinding array<FilterProductSlot> Slots;
 var databinding array<FilterProductQuality> Qualities;
 var databinding array<FilterProductAttribute> Attributes;
+var array<FilterProductExtraAttributeEntry> ExtraAttributes;
 var databinding array<FilterProductPaint> Paints;
 var databinding array<FilterProductSeries> SeriesIDs;
 var databinding array<FilterProductSorting> SortingLabels;
@@ -156,6 +169,7 @@ defaultproperties
 	UIAttributes(3)=class'ProductAttribute_TeamEdition_TA'
 	UIAttributes(4)=class'ProductAttribute_Reactive_TA'
 	
+	ExtraAttributes(0)=(OriginalAttributeClass=,ExtraAttributeClass=)
 	/**bAllowDefaultProducts=true*/
 	BatchPreviewQuantityTimer=0.010
 	

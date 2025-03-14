@@ -117,6 +117,7 @@ var EOSGameClipsController_TA EOSGameClipsControllerArchetype;
 var EOSGameClipsController_TA EOSGameClipsController;
 var repnotify repretry PrespawnData Prespawn;
 var FreeplaySessionManager_TA FreeplaySessionManager;
+var Actor TargettedActor;
 
 defaultproperties
 {

@@ -6,6 +6,7 @@
 class MatchType_Custom_TA extends MatchType_TA
 	abstract;
 
+var EnforceMaxTeamSizeConfig_TA EnforceTeamSizeConfig;
 var transient bool bOnePlayerSelectedTeam;
 var int LargestMaxTeamSize;
 
