@@ -26,6 +26,7 @@ var const localized string RankedReconnectTitle;
 var const localized string RankedReconnectBody;
 var const localized string BannedTimeRemainingMessage;
 var const localized string PermaBannedMessage;
+var const localized string VoiceChatDisabledTitle;
 var transient array<GFxModal_X> ActiveModals;
 var transient EProgressMessageType PendingMessageType;
 var transient string PendingErrorTitle;
@@ -33,6 +34,7 @@ var transient string PendingErrorMessage;
 var transient float LastPsyNetReconnectTime;
 var transient GFxModal_X ModalKick;
 var databinding string BuildEdition;
+var EOSVoiceManager_TA VoiceManager;
 
 defaultproperties
 {
@@ -49,5 +51,6 @@ defaultproperties
 	/**RankedReconnectBody="It appears you accidentally left a ranked match. Would you like to rejoin?"*/
 	/**BannedTimeRemainingMessage="[Hours] hour(s) [Minutes] minute(s) remaining."*/
 	/**PermaBannedMessage="This ban is permanent."*/
+	/**VoiceChatDisabledTitle="Voice Chat Disabled"*/
 	//DataStore=GFxDataStore_X'Default__GFxShell_TA.DefaultDataStore'
 }

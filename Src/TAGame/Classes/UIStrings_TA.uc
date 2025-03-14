@@ -14,6 +14,7 @@ var const localized string Cancel;
 var const localized string Yes;
 var const localized string No;
 var const localized string SignIn;
+var const localized string ViewTerms;
 var const localized string Days;
 var const localized string Hours;
 var const localized string Minutes;
@@ -41,6 +42,7 @@ defaultproperties
 	/**Yes="Yes"*/
 	/**No="No"*/
 	/**SignIn="Sign In"*/
+	/**ViewTerms="View Terms"*/
 	/**Days="Days"*/
 	/**Hours="Hours"*/
 	/**Minutes="Minutes"*/

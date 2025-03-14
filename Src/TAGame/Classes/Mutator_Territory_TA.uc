@@ -7,3 +7,8 @@ class Mutator_Territory_TA extends Mutator_TA;
 
 var TrackerWallDynamicMeshActor_TA TrackerWall;
 var CarComponent_TerritoryDemolish_TA TerritoryDemolishComponent;
+var float StaleBallMaxTime;
+var float StaleBallWarningThreshold;
+var float StaleBallNoTeamMaxTime;
+var float StaleBallNoTeamWarningThreshold;
+var float StaleBallYRespawnOffset;

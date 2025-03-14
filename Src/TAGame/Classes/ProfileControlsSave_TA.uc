@@ -14,6 +14,7 @@ enum EProfilePCSaveVersion
 var const float WaveformScalar;
 var EForceFeedbackType ForceFeedbackType;
 var EForceFeedbackMode ForceFeedbackMode;
+var ETargetCamSwivelMode TargetCamSwivelMode;
 var const transient float LegacyForceFeedbackScales[EForceFeedbackType];
 var float ForceFeedbackScale;
 var bool bPushToTalk;

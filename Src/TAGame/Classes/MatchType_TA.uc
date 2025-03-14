@@ -9,6 +9,7 @@ class MatchType_TA extends Object
 var GameEvent_TA GameEvent;
 var() array<ComponentTemplate> Components;
 var() bool bPreAssignedTeams;
+var bool bAreMatchSettingsCached;
 var int ForfeitVoteWaitGameTime;
 var int WaitForPlayersTime;
 var float WaitingForPlayersStartTime;
@@ -16,6 +17,9 @@ var name MatchTypeName;
 var float LobbyTime;
 var const float LobbyIntroTime;
 var const int LobbyEndCountdown;
+var CustomMatchSettings CachedMatchSettings;
+var transient GameTags_TA GameTags;
+var transient Profile_TA Profile;
 
 defaultproperties
 {

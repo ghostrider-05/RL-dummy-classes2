@@ -26,6 +26,7 @@ var databinding bool bDisableTeamSelectScreen;
 var databinding bool bStayAsPartyButtonVisible;
 var databinding bool bStayAsPartyButtonEnabled;
 var databinding bool bServerShutdown;
+var databinding bool bAlwaysShowMatchTypeLabel;
 var databinding string MatchState;
 var databinding name GameState;
 var databinding name MatchType;

@@ -5,16 +5,20 @@
 *******************************************************************************/
 class BallStaleTimerComponent_TA extends ActorComponent_X within Ball_TA;
 
-var int MaxTime;
-var int CountdownThreshold;
+var float MaxTime;
+var float NoTeamMaxTime;
+var float CountdownThreshold;
+var float NoTeamCountdownThreshold;
 var float CurrentStaleTime;
 var bool bWasInRedSide;
-var bool bTimerEnabled;
 var bool bNotifiedStaleBall;
 var float Tolerance;
+var float StaleBallYRespawnOffset;
+var const float HeatseekerResetForce;
 var GameEvent_Soccar_TA SoccarGameEvent;
 
 defaultproperties
 {
 	Tolerance=0.50
+	HeatseekerResetForce=100.0
 }

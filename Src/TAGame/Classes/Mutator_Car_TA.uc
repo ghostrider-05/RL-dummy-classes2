@@ -8,3 +8,13 @@ class Mutator_Car_TA extends Mutator_TA;
 var() float CarScale;
 var() float JumpScale;
 var() float CarMaxLinearSpeedScale;
+var() float MaxTimeForDodge;
+var() bool bUnlimitedTimeForDodge;
+var() bool bUnlimitedJumps;
+var() int MaxNumJumps;
+
+defaultproperties
+{
+	MaxTimeForDodge=-1.0
+	MaxNumJumps=-1
+}

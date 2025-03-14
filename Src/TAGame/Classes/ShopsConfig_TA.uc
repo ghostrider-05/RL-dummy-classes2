@@ -8,12 +8,14 @@ class ShopsConfig_TA extends OnlineConfig_X;
 var int DebugShopID;
 var bool bEnableShopMetrics;
 var bool bHideMainMenuButton;
+var bool bHidePurchaseEsportToken;
 var array<string> ShopTypesForOwnedTracking;
 
 defaultproperties
 {
 	DebugShopID=-1
 	bEnableShopMetrics=true
+	bHidePurchaseEsportToken=true
 	ShopTypesForOwnedTracking(0)="Featured"
 	ShopTypesForOwnedTracking(1)="Bundle"
 }

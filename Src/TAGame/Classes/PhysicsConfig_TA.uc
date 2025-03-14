@@ -58,7 +58,7 @@ var bool bUseNEQ;
 var() bool bExtrapolateRendering;
 var bool bEnableCustomExplosionPhysics;
 var bool bLegacyDropshotTileCollision;
-var bool bEnableHandlingPresetCenterOfMassXOffset;
+var bool bPodiumDoubleJumpsEnabled;
 var float JumpLeaveGroundTime;
 var SimTimeScaleSettings STS;
 var ContinuousSimTimeScaleSettings CSTS;
@@ -70,7 +70,7 @@ defaultproperties
 	SuperSonicSettings=(Speed=2200.0,TurnoffSpeedBuffer=100.0,TurnoffTime=1.0)
 	bQuantizePhysics=true
 	bEnableCustomExplosionPhysics=true
-	bEnableHandlingPresetCenterOfMassXOffset=true
+	bPodiumDoubleJumpsEnabled=true
 	JumpLeaveGroundTime=0.1250
 	STS=(FixedAdjustSimTimeRate=0.0090)
 	CSTS=(TimeDilations=1.02560,TimeDilations[1]=1.00630,TimeDilations[2]=1.0,TimeDilations[3]=0.99380,TimeDilations[4]=0.97560,Inputs_Starved=2,Inputs_Good=4,Inputs_Saturated=6,Inputs_ExtremelySaturated=14,Inputs_Max=20,ExtraBufferMax=8,ExtraBufferHistorySeconds=30.0,ExtraBufferUpdatePeriod=1.0)

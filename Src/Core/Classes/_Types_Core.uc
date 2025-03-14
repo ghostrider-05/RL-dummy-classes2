@@ -56,6 +56,7 @@ enum EVoiceResultCode
 	VRC_UserBanned,
 	VRC_ServiceFailure,
 	VRC_AccessDenied,
+	VRC_VoiceModerationError,
 	VRC_UnexpectedError,
 	VRC_MAX
 };

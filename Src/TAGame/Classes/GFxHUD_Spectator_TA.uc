@@ -15,6 +15,7 @@ var transient GFxHUD_TA GameHUD;
 var transient PRI_TA TargetPlayerPRI;
 var transient bool bZoomIn;
 var transient bool bZoomOut;
+var bool bReplayTimeSkipped;
 var transient float ZoomInTime;
 var transient float ZoomOutTime;
 

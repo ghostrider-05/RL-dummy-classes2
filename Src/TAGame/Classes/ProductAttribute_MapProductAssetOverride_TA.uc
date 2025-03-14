@@ -8,5 +8,5 @@ class ProductAttribute_MapProductAssetOverride_TA extends ProductAssetAttribute_
 	collapsecategories
 	hidecategories(Object);
 
-var() MapSet_TA MapsToUseDefaultProduct;
+var() array<MapSet_TA> MapSetsToUseDefaultProduct;
 var() array< class > GameTypesToUseDefaultProduct;

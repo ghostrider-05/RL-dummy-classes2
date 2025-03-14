@@ -14,8 +14,11 @@ var() export editinline ThrottleShakeComponent_TA ThrottleShake;
 var transient CarComponent_FlipCar_TA FlipComponent;
 var transient EDemolishTarget DemolishTarget;
 var transient EDemolishSpeed DemolishSpeed;
+var EDemolishSource DemolishSource;
 var export editinline ProductLoader_TA Loadout;
 var bool bLoadoutSet;
+var() bool bUnlimitedTimeForDodge;
+var() bool bUnlimitedJumps;
 var transient bool bDemolishOnOpposingGround;
 var transient bool bWasOnOpposingGround;
 var transient bool bDemolishOnGoalZone;
@@ -31,6 +34,8 @@ var const class TargetClass;
 var() export editinline TargetIndicator_TA TargetIndicatorArchetype;
 var export editinline transient array<export editinline TargetIndicator_TA> TargetIndicators;
 var() float MaxTimeForDodge;
+var() int MaxNumJumps;
+var() AkSoundCue GroundedJumpFailedSFX;
 var transient float LastWheelsHitBallTime;
 var repnotify transient LoadoutTeamPaint TeamPaint;
 var repnotify transient ClubColorSet ClubColors;
@@ -61,6 +66,7 @@ defaultproperties
 	EngineAudio=DefaultEngineAudio
 	//Loadout=ProductLoader_TA'Default__Car_TA.DefaultCarLoadout'
 	bTeamBumpsUseCarForceMultiplier=true
+	MaxNumJumps=2
 	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
 	//NameplateComponentCar=NameplateComponentCar_TA'Default__Car_TA.NameplateComponentCar0'
 	begin object name=DefaultMesh class=CarMeshComponent_TA
@@ -103,9 +109,11 @@ replication
 
 	 if(bNetDirty)
 		AddedBallForceMultiplier, AddedCarForceMultiplier, 
-		AttachedPickup, PostMatchAnim, 
+		AttachedPickup, MaxNumJumps, 
+		MaxTimeForDodge, PostMatchAnim, 
 		ReplicatedDemolish, ReplicatedDemolishExtended, 
-		ReplicatedDemolishGoalExplosion, RumblePickups;
+		ReplicatedDemolishGoalExplosion, RumblePickups, 
+		bUnlimitedJumps, bUnlimitedTimeForDodge;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)
 		bOverrideBoostOn, bOverrideHandbrakeOn;

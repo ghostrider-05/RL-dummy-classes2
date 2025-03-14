@@ -7,3 +7,8 @@ class NameplateRenderTarget_TA extends ScriptedTexture
 	hidecategories(Object,Texture);
 
 var transient GFxMoviePlayer_X NameplatesMovie;
+
+defaultproperties
+{
+	ClearColor=(R=0.0,G=0.0,B=0.0,A=0.0)
+}

@@ -77,21 +77,7 @@ struct ChatPresetMessage
 	}
 };
 
-struct ActiveChatTab
-{
-	var databinding EChatChannel Channel;
-	var databinding UniqueNetId PersonaId;
-
-	structdefaultproperties
-	{
-		Channel=EChatChannel_Match
-		
-	}
-};
-
 var() int MaxMessages;
-var transient int MaxActiveChatTabs;
-var() databinding array<ActiveChatTab> ActiveChatTabs;
 var() databinding array<ChatPresetMessageGroup> PresetGroups;
 var() databinding array<ChatPresetMessage> PresetMessages;
 var databinding array<GFxChatMessage> Messages;
@@ -107,7 +93,6 @@ var AprilConfig_X AprilConfig;
 defaultproperties
 {
 	MaxMessages=10
-	MaxActiveChatTabs=5
 	PresetGroups(0)=(bTeam=true,Label="")
 	MaxNumGroups=4
 	MaxNumMessagesPerGroup=4

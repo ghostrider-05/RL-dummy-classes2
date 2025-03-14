@@ -50,8 +50,12 @@ struct ProductTradeHoldOverride
 var array<ReplacementProduct> ProhibitedProducts;
 var array<SeriesGroup> ItemSeries_PreventP2PTrade;
 var array<ProductTradeHoldOverride> ProductTradeHoldOverrides;
+var bool bUseSaveDataCacheProducts;
+var int ProductsUpdatedTimestampThreshold;
 
 defaultproperties
 {
 	ItemSeries_PreventP2PTrade(0)=(SeriesID=855,ExcludedQualities=None)
+	bUseSaveDataCacheProducts=true
+	ProductsUpdatedTimestampThreshold=5256576
 }

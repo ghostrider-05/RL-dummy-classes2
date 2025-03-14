@@ -43,8 +43,9 @@ var() float MinBoostTime;
 var float RechargeRate;
 var float RechargeDelay;
 var() int UnlimitedBoostRefCount;
-var repnotify transient ReplicatedBoostData ReplicatedBoost;
+var EBoostRestriction BoostRestriction;
 var repnotify transient byte ReplicatedBoostAmount;
+var repnotify transient ReplicatedBoostData ReplicatedBoost;
 var ProductAsset_Boost_TA BoostAsset;
 var() FXActorEvent_X BoostShakeState;
 var ProfileControlsSave_TA ControlsSave;
@@ -68,4 +69,7 @@ replication
 	 if(bNetInitial/**Empty key for position: 62.*/)
 		RechargeDelay, RechargeRate, 
 		UnlimitedBoostRefCount, bRechargeGroundOnly;
+
+	 if(bNetInitial/**Missing key for position: 72.*/)
+		BoostRestriction;
 }

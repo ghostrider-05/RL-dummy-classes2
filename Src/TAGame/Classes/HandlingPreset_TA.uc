@@ -24,7 +24,6 @@ var() VehicleAxleData FrontAxle;
 var() VehicleAxleData BackAxle;
 var() PhysicsAsset PhysAsset;
 var() SimpleSpringSettings ChassisSpringDefaults;
-var() float CenterOfMassXOffset;
 
 defaultproperties
 {

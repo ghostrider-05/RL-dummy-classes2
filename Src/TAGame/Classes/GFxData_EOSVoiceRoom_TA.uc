@@ -19,7 +19,14 @@ struct NotificationCooldown
 
 var databinding string RoomName;
 var databinding EVoiceRoomType RoomType;
+var databinding EChatFilter VoiceChatFilter;
 var databinding string RoomTitle;
+var databinding bool bVoiceReportingEnabled;
+var databinding bool bRecordingActive;
+var databinding bool bJoinable;
+var bool bPlayersAllowVoiceReporting;
+var bool bRecordingDataAvailable;
+var bool bManuallyJoined;
 var const localized string PartyRoomTitle;
 var const localized string MatchRoomTitle;
 var const localized string SettingDisabledTitle;
@@ -30,19 +37,22 @@ var const localized string SpectatorRoomTitle;
 var const localized string SpectatorTypeTitle;
 var const localized string RemotePlayerJoinedRoom;
 var const localized string PlayerJoinedRoom;
+var const localized string EnableVoiceReportingModalTitle;
 var string RoomTypeString;
 var array<GFxData_EOSVoiceRoomMember_TA> RoomMembers;
 var transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
-var bool bManuallyJoined;
 var array<NotificationCooldown> NotificationCooldowns;
 var Qword CreatedTimestamp;
 var VoiceRoomPlayerActivity PlayerActivity;
+var const int MinPlayersForVoiceRecording;
 var EOSVoiceManager_TA VoiceManager;
 var Personas_TA Personas;
 var EOSVoiceConfig_TA VoiceConfig;
+var ChatFilterManager_TA ChatFilterManager;
 
 defaultproperties
 {
+	bPlayersAllowVoiceReporting=true
 	/**PartyRoomTitle="Party Channel"*/
 	/**MatchRoomTitle="Team Channel"*/
 	/**SettingDisabledTitle="Voice Disabled"*/
@@ -53,6 +63,8 @@ defaultproperties
 	/**SpectatorTypeTitle="Spectator"*/
 	/**RemotePlayerJoinedRoom="[PlayerName] has joined the [VoiceRoomType] Voice Channel"*/
 	/**PlayerJoinedRoom="You have joined the [VoiceRoomType] Voice Channel"*/
+	/**EnableVoiceReportingModalTitle="Enable Voice Reporting"*/
+	MinPlayersForVoiceRecording=2
 	TableName=EOSVoiceRoom
 	bLevelTransitionPersistent=true
 }

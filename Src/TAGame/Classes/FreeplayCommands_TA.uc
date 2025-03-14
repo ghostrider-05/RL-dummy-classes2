@@ -33,5 +33,5 @@ defaultproperties
 	ResetCooldown=1.0
 	RemoteRole=ROLE_SimulatedProxy
 	CollisionType=COLLIDE_CustomDefault
-	bAlwaysRelevant=true
+	bOnlyRelevantToOwner=true
 }

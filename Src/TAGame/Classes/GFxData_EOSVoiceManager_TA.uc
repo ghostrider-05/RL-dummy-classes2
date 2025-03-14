@@ -16,6 +16,7 @@ var databinding bool bMatchNotifications;
 var databinding bool bVoiceSettingEnabled;
 var databinding bool bDisplayVoiceTab;
 var databinding bool bVoiceFeatureEnabled;
+var databinding string VoiceReportURL;
 var const float InactivePTTVolume;
 var const float ActivePTTVolume;
 var transient GameViewportClient_X ViewportClient;

@@ -34,6 +34,7 @@ var transient bool bHasPostMatchCelebration;
 var const transient VehicleInputs Input;
 var const transient byte ReplicatedThrottle;
 var const transient byte ReplicatedSteer;
+var EInputRestriction InputRestriction;
 var transient AIController_TA AIController;
 var transient PlayerController_TA PlayerController;
 var transient PRI_TA PRI;
@@ -94,4 +95,7 @@ replication
 	 if(bNetDirty)
 		ReplicatedSteer, ReplicatedThrottle, 
 		bReplicatedHandbrake;
+
+	 if(bNetInitial/**Empty key for position: 42.*/)
+		InputRestriction;
 }

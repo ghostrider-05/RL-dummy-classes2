@@ -108,8 +108,15 @@ struct StatEventCollection
 	var() StatEvent_TA CarTouches;
 	var() StatEvent_TA Demolition;
 	var() StatEvent_TA Demolish;
+	var() StatEvent_TA BallDemolitionScore;
+	var() StatEvent_TA CarDemolitionScore;
+	var() StatEvent_TA DemolitionSave;
 	var() StatEvent_TA LowFive;
 	var() StatEvent_TA HighFive;
+	var() StatEvent_TA PossessionPoint;
+	var() StatEvent_TA PossessionSteal;
+	var() StatEvent_TA PossessionDenial;
+	var() StatEvent_TA PossessionClear;
 
 	structdefaultproperties
 	{
@@ -154,8 +161,15 @@ struct StatEventCollection
 		CarTouches=None
 		Demolition=None
 		Demolish=None
+		BallDemolitionScore=None
+		CarDemolitionScore=None
+		DemolitionSave=None
 		LowFive=None
 		HighFive=None
+		PossessionPoint=None
+		PossessionSteal=None
+		PossessionDenial=None
+		PossessionClear=None
 	}
 };
 
@@ -180,9 +194,11 @@ var transient bool bGaveFirstTouch;
 var transient GameEvent_Soccar_TA SoccarGame;
 var transient PRI_TA ScoringPRI;
 var transient array<Car_TA> CarsIssuedAnyFiveHit;
+var const float MinPossessionTimeForSteal;
 
 defaultproperties
 {
+	MinPossessionTimeForSteal=0.10
 	TickGroup=TG_PostAsyncWork
 	bTickIsDisabled=true
 }

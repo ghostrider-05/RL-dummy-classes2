@@ -33,6 +33,7 @@ var transient UniqueLobbyId PartyID;
 var transient UniqueNetId PartyLeader;
 var const int MaxPartySize;
 var const export editinline OnlineMessageComponent_X MessageComponent;
+var transient string JoinMatchType;
 var transient PartyMessage_SearchStatus_X PendingSearchStatus;
 var PartyMessage_SearchStatus_X NullSearchStatus;
 // The amount of time in seconds that it takes for a party of size 1 to timeout and get destroyed

@@ -36,9 +36,9 @@ var config string OfflineURL;
 defaultproperties
 {
 	/**EOSServerURL="https://eulatracking-public-service-prod06.ol.epicgames.com/eulatracking/"*/
-	/**EOSTextURL="api/eos/v1/agreements/{key}"*/
-	/**EOSSyncURL="api/eos/v1/agreements/{key}/identities/{identityId}"*/
-	/**EOSAcceptURL="api/eos/v1/agreements/{key}/version/{version}/identities/{identityId}/accept"*/
-	/**EOSDeclineURL="api/eos/v1/agreements/{key}/version/{version}/identities/{identityId}/decline"*/
+	/**EOSTextURL="api/eos/v1/agreements/{key}?locale={locale}"*/
+	/**EOSSyncURL="api/eos/v1/agreements/{key}/identities/{identityId}?locale={locale}"*/
+	/**EOSAcceptURL="api/eos/v1/agreements/{key}/version/{version}/identities/{identityId}/accept?locale={locale}"*/
+	/**EOSDeclineURL="api/eos/v1/agreements/{key}/version/{version}/identities/{identityId}/decline?locale={locale}"*/
 	/**OfflineURL="Legal/{platform}/{region}/{folder}/{language}.txt"*/
 }

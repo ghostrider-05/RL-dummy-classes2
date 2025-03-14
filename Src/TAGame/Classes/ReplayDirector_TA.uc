@@ -67,6 +67,7 @@ var name LiveReplay_PostGoal;
 var name LiveReplay_None;
 var() float HighlightReplayDuration;
 var() float TimeBeforeHighlightReplay;
+var() float LastScoredGoalTime;
 var transient Replay_Soccar_TA Replay;
 var transient Actor FocusCar;
 var transient float FocusCarChangeTime;

@@ -167,6 +167,7 @@ struct K3SFirstTimeDefaults
 	var string AgeGateDefaultText;
 	var string AgeGateDefaultTrade;
 	var string ItemShopNotificationsDefaultEnabled;
+	var string AgeGateDefaultVoiceReporting;
 
 	structdefaultproperties
 	{
@@ -174,6 +175,7 @@ struct K3SFirstTimeDefaults
 		AgeGateDefaultText=""
 		AgeGateDefaultTrade=""
 		ItemShopNotificationsDefaultEnabled=""
+		AgeGateDefaultVoiceReporting=""
 	}
 };
 
