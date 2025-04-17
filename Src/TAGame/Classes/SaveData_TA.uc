@@ -34,11 +34,13 @@ struct PlaylistSkillData
 
 var transient SaveGameManager_TA SaveManager;
 var bool bFromPreviousSave;
+var transient bool bClearSyncTimestampOnMissingProduct;
 var config transient bool bEnableOnlineData;
 var transient bool bUnloaded;
 var array<OnlineProduct_TA> OnlineProducts;
 var export editinline transient OnlineProductStoreSet_TA OnlineProductSet;
 var Qword MostRecentProductUpdatedTimestamp;
+var Qword LastFullProductSyncTimestamp;
 var EPsyNetEnvironment PsyNetEnvironment;
 var transient ProductsConfig_TA ProductsConfig;
 var export editinline transient ProductTransactions_TA ProductTransactions;

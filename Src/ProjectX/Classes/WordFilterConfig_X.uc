@@ -18,12 +18,12 @@ defaultproperties
 {
 	PsyNetFilterEnabled=true
 	NameHistoryCacheLength=100
-	/**IgnoreFilterList(0)=108
+	/**IgnoreFilterList(0)=139
 	IgnoreFilterList(1)=38
 	IgnoreFilterList(2)=0
 	IgnoreFilterList(3)=0
 	IgnoreFilterList(4)=0*/
-	/**PlatformFilterList(0)=106
+	/**PlatformFilterList(0)=137
 	PlatformFilterList(1)=38*/
 	PsyNetWordFilterBatchDelay=0.10
 	PsyNetWordFilterBatchMaxSize=100

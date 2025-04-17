@@ -1054,6 +1054,20 @@ struct native PsyNetPersonaData
 	}
 };
 
+struct SuperRegionData
+{
+	var string Region;
+	var string Label;
+	var array<string> SubRegions;
+
+	structdefaultproperties
+	{
+		Region=""
+		Label=""
+		SubRegions.Empty
+	}
+};
+
 struct RegionSecret
 {
 	var string Region;

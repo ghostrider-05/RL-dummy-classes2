@@ -7,7 +7,7 @@ class LocalPlayer_TA extends LocalPlayer_X within Engine
 	transient
 	config(Engine);
 
-var native const noexport Pointer VfTable_FCallbackEventDevice;
+var string Invalid;
 var SaveGameManager_TA SaveGameManager;
 var transient Profile_TA Profile;
 var export editinline transient ObjectProvider ProfileObjectProvider;

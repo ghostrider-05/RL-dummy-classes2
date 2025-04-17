@@ -38,7 +38,7 @@ defaultproperties
 	//PitchTekComponent=PitchTekDrawingComponent_TA'Default__Ball_Fire_TA.DefaultPTDComponent'
 	//Replay=ReplayComponent_TA'Default__Ball_Fire_TA.ReplayComponent0'
 	
-	begin object name=CollisionCylinder class=CylinderComponent
+	begin object name=CollisionCylinder
 		ReplacementPrimitive=None
 	end object
 	// Reference: CylinderComponent'Default__Ball_Fire_TA.CollisionCylinder'
@@ -49,7 +49,7 @@ defaultproperties
 	Components(2)=None
 //	Components(3)=GroupComponent_ORS'Default__Ball_Fire_TA.DefaultRegistryGroup'
 //	Components(4)=ReplayComponent_TA'Default__Ball_Fire_TA.ReplayComponent0'
-	begin object name=DefaultMesh class=StaticMeshComponent
+	begin object name=DefaultMesh
 		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__Ball_Fire_TA.DefaultMesh'

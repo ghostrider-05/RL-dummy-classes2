@@ -12,7 +12,7 @@ defaultproperties
 {
 	
 	BrushComponent=BrushComponent0
-	begin object name=BrushComponent0 class=BrushComponent
+	begin object name=BrushComponent0
 		ReplacementPrimitive=None
 	end object
 	// Reference: BrushComponent'Default__GoalCrossbarVolumeManager_TA.BrushComponent0'
