@@ -51,11 +51,13 @@ var array<ReplacementProduct> ProhibitedProducts;
 var array<SeriesGroup> ItemSeries_PreventP2PTrade;
 var array<ProductTradeHoldOverride> ProductTradeHoldOverrides;
 var bool bUseSaveDataCacheProducts;
-var int ProductsUpdatedTimestampThreshold;
+var bool bClearSyncTimestampOnMissingProduct;
+var int MaxSecondsBetweenFullProductSyncs;
 
 defaultproperties
 {
 	ItemSeries_PreventP2PTrade(0)=(SeriesID=855,ExcludedQualities=None)
 	bUseSaveDataCacheProducts=true
-	ProductsUpdatedTimestampThreshold=5256576
+	bClearSyncTimestampOnMissingProduct=true
+	MaxSecondsBetweenFullProductSyncs=1209600
 }

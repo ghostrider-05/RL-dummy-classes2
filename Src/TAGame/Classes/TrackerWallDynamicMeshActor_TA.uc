@@ -17,7 +17,7 @@ defaultproperties
 	end object
 	// Reference: StaticMeshComponent'Default__TrackerWallDynamicMeshActor_TA.TrackerWallMesh0'
 	StaticMeshComponent=TrackerWallMesh0
-	begin object name=StaticMeshComponent0 class=StaticMeshComponent
+	begin object name=StaticMeshComponent0
 		ReplacementPrimitive=None
 	end object
 	// Reference: StaticMeshComponent'Default__TrackerWallDynamicMeshActor_TA.StaticMeshComponent0'

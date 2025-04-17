@@ -27,7 +27,7 @@ const title = 'Update to Rocket League ' + version
 console.log(`Uploading ${files.length} classes...`)
 
 await kit.uploadToRepo(
-    files.map(({ src }) => {
+    files.filter(f => f.status !== 'deleted').map(({ src }) => {
         const [,, path] = src
         return path
     }),

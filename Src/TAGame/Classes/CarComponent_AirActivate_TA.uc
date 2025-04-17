@@ -10,6 +10,7 @@ class CarComponent_AirActivate_TA extends CarComponent_TA
 
 var repnotify transient int AirActivateCount;
 var const int MaxAirActivateCount;
+var transient int LocalAirActivateCount;
 
 replication
 {
