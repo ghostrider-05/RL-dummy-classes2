@@ -98,7 +98,7 @@ var transient bool bUsingFreecam;
 var repnotify bool bIsInSplitScreen;
 var repnotify transient bool bStartVoteToForfeitDisabled;
 var transient bool bUsingItems;
-var repnotify bool PlayerHistoryValid;
+var bool bPlayerHistoryValid;
 var repnotify transient bool bIdleBanned;
 var transient bool bStayAsPartyActive;
 var transient bool bAbleToStart;
@@ -115,6 +115,7 @@ var repnotify transient ClientLoadoutDatas ClientLoadouts;
 var repnotify transient ClientLoadoutOnlineDatas ClientLoadoutsOnline;
 var transient array<OnlineProductStat> OnlineProductStats;
 var transient float TimeLoadoutWasLocked;
+var transient float TimeLastTeamChangeRequested;
 var transient LoadoutTeamPaint TeamPaint;
 var transient array<TAPlayerStat> MatchStats;
 var transient int WaitingStartTime;
@@ -139,6 +140,9 @@ var repnotify transient float SteeringSensitivity;
 var transient float AirControlSensitivity;
 var transient array<StatCooldown> StatCooldowns;
 var transient int BoostPickups;
+var transient int SmallBoostsCollected;
+var transient int BigBoostsCollected;
+var transient int MaxDodgeStreak;
 var transient int BallTouches;
 var transient int CarTouches;
 var repnotify transient PRI_TA ReplacingBotPRI;
@@ -157,6 +161,7 @@ var int LastTeamIndex;
 var string PublicIP;
 var repnotify transient int SpectatorShortcut;
 var CarDistanceTracker_TA CarDistanceTracker;
+var CarGrappleTracker_TA CarGrappleTracker;
 var StayAsPartyVoter_TA StayAsPartyVoter;
 var StayAsPartyVoteYes_TA StayAsPartyVoteYes;
 var PickupTimer_TA PickupTimer;
@@ -216,7 +221,7 @@ replication
 		PrimaryTitle, SecondaryTitle;
 
 	 if(bNetInitial/**Empty key for position: 57.*/)
-		PlayerHistoryKey, PlayerHistoryValid;
+		PlayerHistoryKey;
 
 	 if(bNetInitial/**Empty key for position: 67.*/)
 		ReplicatedWorstNetQualityBeyondLatency, SpectatorShortcut;

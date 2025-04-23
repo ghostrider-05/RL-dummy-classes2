@@ -28,6 +28,7 @@ struct BallInfo
 	var float BallHitTime;
 	var float SaveTime;
 	var float ShotTime;
+	var float CrossbarHitTime;
 
 	structdefaultproperties
 	{
@@ -42,6 +43,7 @@ struct BallInfo
 		BallHitTime=0.0
 		SaveTime=0.0
 		ShotTime=0.0
+		CrossbarHitTime=0.0
 	}
 };
 
@@ -117,6 +119,15 @@ struct StatEventCollection
 	var() StatEvent_TA PossessionSteal;
 	var() StatEvent_TA PossessionDenial;
 	var() StatEvent_TA PossessionClear;
+	var() StatEvent_TA SmallBoostsCollected;
+	var() StatEvent_TA BigBoostsCollected;
+	var() StatEvent_TA BoostUsed;
+	var() StatEvent_TA Dodges;
+	var() StatEvent_TA DistanceDrivenMeters;
+	var() StatEvent_TA DistanceFlown;
+	var() StatEvent_TA CrossbarHits;
+	var() StatEvent_TA DoubleGrapple;
+	var() StatEvent_TA MaxDodgeStreak;
 
 	structdefaultproperties
 	{
@@ -170,6 +181,15 @@ struct StatEventCollection
 		PossessionSteal=None
 		PossessionDenial=None
 		PossessionClear=None
+		SmallBoostsCollected=None
+		BigBoostsCollected=None
+		BoostUsed=None
+		Dodges=None
+		DistanceDrivenMeters=None
+		DistanceFlown=None
+		CrossbarHits=None
+		DoubleGrapple=None
+		MaxDodgeStreak=None
 	}
 };
 
@@ -195,10 +215,12 @@ var transient GameEvent_Soccar_TA SoccarGame;
 var transient PRI_TA ScoringPRI;
 var transient array<Car_TA> CarsIssuedAnyFiveHit;
 var const float MinPossessionTimeForSteal;
+var const float CrossbarHitsCooldown;
 
 defaultproperties
 {
 	MinPossessionTimeForSteal=0.10
+	CrossbarHitsCooldown=0.10
 	TickGroup=TG_PostAsyncWork
 	bTickIsDisabled=true
 }

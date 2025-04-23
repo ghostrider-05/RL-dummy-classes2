@@ -34,6 +34,7 @@ var transient string PendingErrorMessage;
 var transient float LastPsyNetReconnectTime;
 var transient GFxModal_X ModalKick;
 var databinding string BuildEdition;
+var const int MAX_CLIENT_OFFSET;
 var EOSVoiceManager_TA VoiceManager;
 
 defaultproperties
@@ -52,5 +53,6 @@ defaultproperties
 	/**BannedTimeRemainingMessage="[Hours] hour(s) [Minutes] minute(s) remaining."*/
 	/**PermaBannedMessage="This ban is permanent."*/
 	/**VoiceChatDisabledTitle="Voice Chat Disabled"*/
+	MAX_CLIENT_OFFSET=-300
 	//DataStore=GFxDataStore_X'Default__GFxShell_TA.DefaultDataStore'
 }

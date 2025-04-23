@@ -165,7 +165,6 @@ struct RPC_RelayToServer_X {};
 struct RPC_RemoveFromClub_X {};
 struct RPC_RemovePlayerFromRole_X {};
 struct RPC_RemoveQuitter_X {};
-struct RPC_ReportCheater_X {};
 struct RPC_ReportExploiter_X {};
 struct RPC_ReportLowFPS_X {};
 struct RPC_ReservationHeartbeat_X {};

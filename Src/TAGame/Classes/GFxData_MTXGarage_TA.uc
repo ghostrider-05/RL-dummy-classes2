@@ -10,6 +10,7 @@ struct MTXPurchaseInfo
 	var databinding int CatalogID;
 	var databinding string Title;
 	var databinding string Description;
+	var databinding string PriceDescription;
 	var databinding string TabTitle;
 	var databinding Texture Image;
 	var databinding string PurchasePrice;
@@ -26,6 +27,7 @@ struct MTXPurchaseInfo
 		CatalogID=0
 		Title=""
 		Description=""
+		PriceDescription=""
 		TabTitle=""
 		Image=None
 		PurchasePrice=""

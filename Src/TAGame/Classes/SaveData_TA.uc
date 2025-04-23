@@ -60,6 +60,7 @@ var transient OnlineProductExpirationHelper_TA ExpirationHelper;
 var transient CachedUnlockedProducts_TA CachedUnlockedProducts;
 var transient OnlineDLCProductCache_TA OnlineDLCProductCache;
 var transient array<OnlineProduct_TA> NewProductNotificationQueue;
+var float UploadDelayedTime;
 var const string RPRewardForCurrentSeason;
 var const string RPRewardForOldSeasons;
 var const string CreditRefundForCurrentSeason;
@@ -72,6 +73,7 @@ defaultproperties
 	XPGainPercentage(0)=1.0
 	XPGainPercentage(1)=0.50
 	XPGainPercentage(2)=0.0
+	UploadDelayedTime=0.10
 	RPRewardForCurrentSeason="CrewSubscriptionCurrentSeasonReward"
 	RPRewardForOldSeasons="CrewSubscriptionOldSeasonReward"
 	CreditRefundForCurrentSeason="CrewSubscriptionCurrentSeasonRefund"

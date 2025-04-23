@@ -17,6 +17,8 @@ var() bool bAllowClientBacktraceLogUploads;
 var() bool bAllowPlayerCancelMatch;
 var() config float PerConTimeout;
 var() config float PerConPingInterval;
+var() array<_Types_Core.OnlinePlatform> DisabledServerBacktracePlatforms;
+var() array<_Types_Core.OnlinePlatform> DisabledClientBacktracePlatforms;
 var() float FreshConnectionWindow;
 var() float MatchmakingHeartbeatTimeSeconds;
 var() config array<config string> SuppressHeadersForDebug;

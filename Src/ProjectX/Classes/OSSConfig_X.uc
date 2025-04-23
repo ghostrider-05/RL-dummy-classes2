@@ -8,8 +8,12 @@ class OSSConfig_X extends OnlineConfig_X
 
 var() config bool bEnablePresence;
 var() float EosInitTimeoutSeconds;
+var() float GdkUpdateDlcTimeoutSeconds;
+var() int GdkMaxConcurrentDlcLicenseRequests;
 
 defaultproperties
 {
 	EosInitTimeoutSeconds=40.0
+	GdkUpdateDlcTimeoutSeconds=4.0
+	GdkMaxConcurrentDlcLicenseRequests=2
 }

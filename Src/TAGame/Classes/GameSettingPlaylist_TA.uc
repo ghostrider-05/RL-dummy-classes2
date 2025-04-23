@@ -12,6 +12,7 @@ var() bool bAllowVoiceChat;
 var() int DetailsGroup;
 var array<TeamColor> TeamColors;
 var ColorOverride BallSuperSonicColor;
+var array<string> TeamNames;
 var ClientLoadoutData LoadoutOverrides[2];
 var BackFillPolicy_TA BackFillPolicy;
 

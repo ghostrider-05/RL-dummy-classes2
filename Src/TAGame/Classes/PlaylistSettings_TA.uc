@@ -13,6 +13,7 @@ var() int DetailsGroup;
 var() BackFillPolicy_TA BackFillPolicy;
 var array<TeamColor> TeamColors;
 var ColorOverride BallSuperSonicColor;
+var array<string> TeamNames;
 var ClientLoadoutData LoadoutOverrides[2];
 
 defaultproperties
