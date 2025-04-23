@@ -45,6 +45,8 @@ var() FXActorEvent_X DodgeEvent;
 var transient Vector DodgeTorque;
 var transient Vector DodgeDirection;
 var deprecated transient Vector DodgeImpulse;
+var transient int DodgesCount;
+var transient int MaxDodgeStreak;
 
 defaultproperties
 {

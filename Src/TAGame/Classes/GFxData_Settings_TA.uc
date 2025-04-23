@@ -34,6 +34,7 @@ var() ProfileSliderLimits HDRGammaScaleLimits;
 var() ProfileSliderLimits ForceFeedbackScaleLimits;
 var() ProfileSliderLimits TrainingGameSpeedLimits;
 var() ProfileSliderLimits FreeplayBoostFillDelayLimits;
+var() ProfileSliderLimits PickupActivationBufferLimits;
 var const localized string LoadingString;
 var SettingsMenuConfig_TA SettingsConfig;
 var FreeplayConfig_TA FreeplayConfig;
@@ -93,6 +94,7 @@ defaultproperties
 	ForceFeedbackScaleLimits=(Min=0.0,Max=3.0,interval=0.10)
 	TrainingGameSpeedLimits=(Min=0.50,Max=1.0,interval=0.050)
 	FreeplayBoostFillDelayLimits=(Min=0.50,Max=3.0,interval=0.250)
+	PickupActivationBufferLimits=(Min=0.0,Max=1.0,interval=0.050)
 	/**ShowBindingsModal_ErrorMessage="Cannot open Big Picture Mode bindings. Make sure you have selected which controller you want to use."*/
 	
 	SettingObserver=SettingObserver0

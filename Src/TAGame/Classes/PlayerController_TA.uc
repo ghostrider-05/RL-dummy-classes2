@@ -52,10 +52,12 @@ var bool bHasPitchedOrRolled;
 var bool bAirPitchSafetyEnabled;
 var config bool bAllowAsymmetricalMute;
 var bool bReportedPlayer;
+var bool bUsePickupPressed;
 var transient string LoginURL;
 var transient EVoiceFilter DeprecatedVoiceFilter;
 var transient EChatFilter QuickChatFilter;
 var transient EChatFilter MatchChatFilter;
+var ENetworkInputBuffer RequestedInputBufferType;
 var() ChatSpamData ChatSpam;
 var ChatSpamData ChatSpamHarsh;
 var export editinline LightBarComponent_TA LightBar;
@@ -118,6 +120,8 @@ var EOSGameClipsController_TA EOSGameClipsController;
 var repnotify repretry PrespawnData Prespawn;
 var FreeplaySessionManager_TA FreeplaySessionManager;
 var Actor TargettedActor;
+var float PickupButtonPressedSeconds;
+var float PickupActivationBuffer;
 
 defaultproperties
 {

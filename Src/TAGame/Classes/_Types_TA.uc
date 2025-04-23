@@ -1030,6 +1030,24 @@ struct FPSBucketMetrics
 	}
 };
 
+struct native NetBucketMetrics
+{
+	var() int MinPossibleValue;
+	var float TotalSeconds;
+	var float AvgRecordedValue;
+	var float MaxRecordedValue;
+	var int Count;
+
+	structdefaultproperties
+	{
+		MinPossibleValue=0
+		TotalSeconds=0.0
+		AvgRecordedValue=0.0
+		MaxRecordedValue=0.0
+		Count=0
+	}
+};
+
 struct native PlaylistMapPrefs extends _Types_X.MapPrefs
 {
 	var name Playlist;
@@ -2574,7 +2592,7 @@ struct OnlinePlayerMatchData
 	var int ConsecutiveMatchesPlayed;
 	var UniqueNetId PartyLeader;
 	var array<UniqueNetId> PartyMembers;
-	var float DistanceDrivenKM;
+	var int DistanceDrivenMeters;
 	var bool bPartyLeaderValid;
 	var int TeamIndex;
 	var array<StatData> Stats;
@@ -2605,7 +2623,7 @@ struct OnlinePlayerMatchData
 		ConsecutiveMatchesPlayed=0
 		
 		PartyMembers.Empty
-		DistanceDrivenKM=0.0
+		DistanceDrivenMeters=0
 		bPartyLeaderValid=false
 		TeamIndex=-1
 		Stats.Empty

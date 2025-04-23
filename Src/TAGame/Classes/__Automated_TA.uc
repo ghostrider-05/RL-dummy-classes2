@@ -261,6 +261,7 @@ struct RPC_MicroTransactions_StartPurchase_TA {};
 struct RPC_MicroTransactions_UnlockContainer_TA {};
 struct RPC_OnlineFreeplayComplete_TA {};
 struct RPC_PlatformAuth_TA {};
+struct RPC_PrivateMatchComplete_TA {};
 struct RPC_ProductsClearExpired_TA {};
 struct RPC_ProductsDebugAddProduct_TA {};
 struct RPC_ProductsDebugAddProducts_TA {};

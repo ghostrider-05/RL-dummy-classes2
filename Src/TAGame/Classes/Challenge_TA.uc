@@ -9,9 +9,11 @@ var databinding bool bIsHidden;
 var databinding bool bRewardsAvailable;
 var databinding bool bNotifyNewInfo;
 var databinding bool bComplete;
+var databinding bool bLocked;
 var databinding int CompleteCount;
 var databinding Qword ProgressResetTimeUTC;
 var array<ChallengeRequirement_TA> RequirementProgress;
+var array<ChallengeReward_TA> UnlockChallengeRewards;
 
 defaultproperties
 {

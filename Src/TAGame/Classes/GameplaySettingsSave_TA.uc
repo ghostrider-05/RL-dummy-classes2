@@ -40,6 +40,7 @@ var float TrainingGameSpeed;
 var float FreeplayBoostFillDelay;
 var string PreviousDefaultVoice;
 var string PreviousDefaultText;
+var float PickupActivationBuffer;
 
 defaultproperties
 {

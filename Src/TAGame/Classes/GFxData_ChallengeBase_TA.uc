@@ -9,6 +9,7 @@ class GFxData_ChallengeBase_TA extends GFxData_ChallengeObject_TA
 var GFxData_ChallengeReward_TA GFxReward;
 var array<GFxData_ChallengeCurrency_TA> GFxCurrency;
 var array<GFxData_ChallengeRequirement_TA> GFxRequirement;
+var array<GFxData_ChallengeReward_TA> GFxUnlockChallengesRewards;
 var transient GFxModal_X ModalProcessing;
 
 defaultproperties

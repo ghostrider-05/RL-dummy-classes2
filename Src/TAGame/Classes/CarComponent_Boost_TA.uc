@@ -28,6 +28,7 @@ var() float BoostConsumptionRate;
 var() float MaxBoostAmount;
 // how much boost the car starts with
 var() float StartBoostAmount;
+var() float BoostUsed;
 // how much boost (in seconds) the car currently has
 var() float CurrentBoostAmount;
 var() float BoostModifier;
