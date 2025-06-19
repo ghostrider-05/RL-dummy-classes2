@@ -16,6 +16,7 @@ defaultproperties
 {
 	TorqueTimeScale=0.750
 	bSimulateComponent=true
+	CollisionType=COLLIDE_CustomDefault
 }
 replication
 {

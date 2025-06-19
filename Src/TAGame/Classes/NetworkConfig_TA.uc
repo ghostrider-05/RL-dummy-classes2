@@ -27,13 +27,16 @@ var() NetworkLimit ClientInputRate;
 var float MatchFailureSecondsOriginalValue;
 var() int MaxClientUploadFrames;
 var() bool bForceNetPackets;
+var bool bKickActorOverflow;
 var() float ForcePacketSignificantDistance;
 var() float MatchFailureSeconds;
+var array<string> IgnoredActorOverflowVariables;
 
 defaultproperties
 {
 	MaxClientUploadFrames=10
 	bForceNetPackets=true
+	bKickActorOverflow=true
 	ForcePacketSignificantDistance=1000.0
 	MatchFailureSeconds=8.0
 }

@@ -12,6 +12,7 @@ var transient int MaxTimeTillItem;
 
 defaultproperties
 {
+	CollisionType=COLLIDE_CustomDefault
 	NetUpdateFrequency=0.10
 }
 replication

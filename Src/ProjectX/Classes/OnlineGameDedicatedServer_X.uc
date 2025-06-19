@@ -33,7 +33,7 @@ var transient bool bBotTest;
 var transient string ReplacementServerID;
 var export editinline transient ServerPlayerTracker_X PlayerTracker;
 var transient ServerExploitManager_X ExploitManager;
-var() class MatchRecorderClass;
+var() class<GFxSoundPack_X> MatchRecorderClass;
 var transient MatchRecorder_X MatchRecorder;
 var transient MatchLog_X MatchLog;
 var() transient ServerConfig_X Config;

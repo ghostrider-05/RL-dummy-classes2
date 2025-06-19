@@ -25,7 +25,7 @@ struct CachedPlayerData
 
 var() float PlayerTitleCacheTime;
 var transient array<CachedPlayerData> PlayerCache;
-var PlayerTitleConfig_X TitleConfig;
+var TitleConfig_X TitleConfig;
 
 defaultproperties
 {

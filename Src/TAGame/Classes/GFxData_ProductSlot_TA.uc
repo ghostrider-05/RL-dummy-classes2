@@ -7,6 +7,8 @@ class GFxData_ProductSlot_TA extends GFxDataRow_X;
 
 var databinding bool bEnabled;
 var databinding bool bCanUnequip;
+var databinding bool bDefaultEquipped0;
+var databinding bool bDefaultEquipped1;
 var databinding name SlotName;
 var databinding string Label;
 var databinding string PluralLabel;

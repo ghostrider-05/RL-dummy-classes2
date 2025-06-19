@@ -18,7 +18,7 @@ struct native RBVehicleSnapshot
 
 	structdefaultproperties
 	{
-		Input=(Throttle=0.0,Steer=0.0,Pitch=0.0,Yaw=0.0,Roll=0.0,DodgeForward=0.0,DodgeRight=0.0,bHandbrake=false,bJump=false,bActivateBoost=false,bHoldingBoost=false,bJumped=false,bGrab=false,bButtonMash=false)
+		Input=(Throttle=0.0,Steer=0.0,Pitch=0.0,Yaw=0.0,Roll=0.0,DodgeForward=0.0,DodgeRight=0.0,bHandbrake=false,bJump=false,bActivateBoost=false,bHoldingBoost=false,bJumped=false,bGrab=false,bButtonMash=false,bTargetFind=false)
 		WheelContact0=(bHasContact=false,bHasContactWithWorldGeometry=false,HasContactChangeTime=0.0,Actor=None,Component=None,Location=(X=0.0,Y=0.0,Z=0.0),Normal=(X=0.0,Y=0.0,Z=0.0),LatDirection=(X=0.0,Y=0.0,Z=0.0),LongDirection=(X=0.0,Y=0.0,Z=0.0),PhysMatProp=None)
 		WheelContact1=(bHasContact=false,bHasContactWithWorldGeometry=false,HasContactChangeTime=0.0,Actor=None,Component=None,Location=(X=0.0,Y=0.0,Z=0.0),Normal=(X=0.0,Y=0.0,Z=0.0),LatDirection=(X=0.0,Y=0.0,Z=0.0),LongDirection=(X=0.0,Y=0.0,Z=0.0),PhysMatProp=None)
 		WheelContact2=(bHasContact=false,bHasContactWithWorldGeometry=false,HasContactChangeTime=0.0,Actor=None,Component=None,Location=(X=0.0,Y=0.0,Z=0.0),Normal=(X=0.0,Y=0.0,Z=0.0),LatDirection=(X=0.0,Y=0.0,Z=0.0),LongDirection=(X=0.0,Y=0.0,Z=0.0),PhysMatProp=None)

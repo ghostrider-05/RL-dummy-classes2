@@ -19,9 +19,13 @@ var() export editinline array<export editinline Goal_TA> Goals;
 // PlayerStarts contained in this field
 var() array<PlayerStart> SpawnPoints;
 var const float GroundZ;
+var() Vector PodiumSpotlightOverride;
+var() float PodiumSpotlightZ;
+var() bool bRandomBallSpawnPoint;
 
 defaultproperties
 {
+	bRandomBallSpawnPoint=true
 	bUseRecast=true
 	
 	CylinderComponent=CollisionCylinder

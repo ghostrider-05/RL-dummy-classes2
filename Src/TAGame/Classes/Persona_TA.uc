@@ -13,6 +13,7 @@ var EOnlineFriendState OnlinePresenceState_Platform;
 var EOnlineFriendState OnlinePresenceState_PsyNet;
 var EOnlineFriendState OnlinePresenceState_Epic;
 var databinding _Types_Core.OnlinePlatform Platform;
+var databinding EClubRole ClubRole;
 var databinding _Types_Core.OnlinePlatform SecondaryPlatform;
 var databinding string OnlinePresenceMessage;
 var databinding bool bBlockedStatus;
@@ -20,6 +21,7 @@ var databinding bool bPlatformFriend;
 var databinding bool bPsyNetFriend;
 var databinding bool bEpicFriend;
 var databinding bool bNoEpicAccountIdFound;
+var databinding bool bIsClubMemberPersonaInGame;
 var databinding bool bNameSanitized;
 var databinding bool bCanShowAvatar;
 var bool bAvatarPermissionDownloaded;
@@ -39,4 +41,5 @@ defaultproperties
 	OnlinePresenceState_Platform=OFS_Unknown
 	OnlinePresenceState_PsyNet=OFS_Unknown
 	OnlinePresenceState_Epic=OFS_Unknown
+	ClubRole=ClubRole_None
 }

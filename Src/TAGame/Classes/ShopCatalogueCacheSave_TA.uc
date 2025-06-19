@@ -5,4 +5,29 @@
 *******************************************************************************/
 class ShopCatalogueCacheSave_TA extends SaveObject_TA;
 
+struct ShopItemCacheItem
+{
+	var int ShopItemID;
+	var array<ProductHashID> ProductHashIDs;
+
+	structdefaultproperties
+	{
+		ShopItemID=0
+		ProductHashIDs.Empty
+	}
+};
+
+struct CatalogueCacheItem
+{
+	var int ShopID;
+	var array<ShopItemCacheItem> StoreItems;
+
+	structdefaultproperties
+	{
+		ShopID=0
+		StoreItems.Empty
+	}
+};
+
 var array<int> ViewedShopIDs;
+var array<CatalogueCacheItem> ShopContentCache;

@@ -9,6 +9,7 @@ var databinding string TeamName;
 var databinding Color TeamColor;
 var databinding int Score;
 var databinding Texture TeamLogo;
+var databinding Qword TeamClubID;
 var databinding int SeriesScore;
 var transient Team_TA Team;
 var databinding int Difficulty;

@@ -8,16 +8,23 @@ class GFxData_ClubDetails_TA extends GFxDataRow_X;
 var databinding Qword ClubID;
 var databinding string ClubName;
 var databinding string ClubTag;
-var databinding string ClubMotD;
 var databinding int PrimaryColorID;
 var databinding int AccentColorID;
 var databinding UniqueNetId OwnerId;
 var databinding bool bVerified;
 var databinding bool bCrossPlatformFiltered;
+var databinding name ClubTitleID;
+var databinding string ClubTitleText;
+var databinding Color ClubTitleColor;
+var databinding Color ClubTitleGlowColor;
+var databinding EClubBadge AssistBadgeSeasonTier;
+var databinding EClubBadge GoalBadgeSeasonTier;
+var databinding EClubBadge SaveBadgeSeasonTier;
 var transient ClubDetails_X ClubDetails;
 var transient array<GFxData_ClubMember_TA> ClubMembers;
 var OnlineGameWordFilter_X WordFilter;
 var CrossplayConfig_X CrossplayConfig;
+var Personas_TA Personas;
 
 defaultproperties
 {

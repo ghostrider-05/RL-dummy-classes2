@@ -84,7 +84,7 @@ var() repnotify const float MaxLinearSpeed;
 var() repnotify const float MaxAngularSpeed;
 var const float RollingFriction;
 // Don't let this RB actor sleep, ever
-var() const bool bDisableSleeping;
+var() bool bDisableSleeping;
 var const transient bool bReplayActor;
 var repnotify transient bool bFrozen;
 var const bool bAutoInitFXEffects;
@@ -152,6 +152,7 @@ defaultproperties
 //	Components(3)=GroupComponent_ORS'Default__RBActor_TA.DefaultRegistryGroup'
 //	Components(4)=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
 	Physics=PHYS_RigidBody
+	CollisionType=COLLIDE_CustomDefault
 	TickGroup=TG_PostAsyncWork
 	bAlwaysRelevant=true
 	bReplicateMovement=false

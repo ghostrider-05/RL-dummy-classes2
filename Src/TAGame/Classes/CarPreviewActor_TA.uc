@@ -35,6 +35,7 @@ var transient array<FXActor_TA> SupersonicFX;
 var transient ProductAsset_EngineAudio_TA EngineAudioAsset;
 var transient EngineAudioPreviewBase_TA EngineAudioPreview;
 var transient ProductAttribute_PreviewWheelSpin_TA WheelSpinAttribute;
+var transient ProductAttribute_SetPreviewObjectSpeedShaderParam_TA GameShaderParamAttribute;
 var transient int PreviewTeam;
 var() int LinkedControllerId;
 var FXActor_X RootFXActor;

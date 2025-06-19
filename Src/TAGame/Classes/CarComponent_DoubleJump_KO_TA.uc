@@ -8,3 +8,8 @@ class CarComponent_DoubleJump_KO_TA extends CarComponent_DoubleJump_TA
 	hidecategories(Navigation);
 
 var const float LimitVelocityToForceScale;
+
+defaultproperties
+{
+	CollisionType=COLLIDE_CustomDefault
+}

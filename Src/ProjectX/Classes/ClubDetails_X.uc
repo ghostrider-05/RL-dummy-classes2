@@ -5,11 +5,33 @@
 *******************************************************************************/
 class ClubDetails_X extends ClubSettings_X;
 
+enum EClubBadge
+{
+	ClubBadge_None,
+	ClubBadge_Tier1,
+	ClubBadge_Tier2,
+	ClubBadge_Tier3,
+	ClubBadge_MAX
+};
+
+struct StatBadge
+{
+	var name Stat;
+	var EClubBadge Badge;
+
+	structdefaultproperties
+	{
+		Stat=None
+		Badge=ClubBadge_None
+	}
+};
+
 var Qword ClubID;
 var UniqueNetId OwnerPlayerID;
-var string MotD;
 var bool bVerified;
 var Qword LastUpdatedTime;
+var array<StatBadge> Badges;
+var name EquippedTitle;
 var array<ClubMember> Members;
 
 defaultproperties

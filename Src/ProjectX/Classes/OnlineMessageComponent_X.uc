@@ -7,7 +7,7 @@ class OnlineMessageComponent_X extends Component;
 
 struct native OnlineMessageHandler
 {
-	var class MessageClass;
+	var class<GFxSoundPack_X> MessageClass;
 	var array< Object > Delegates;
 
 	structdefaultproperties

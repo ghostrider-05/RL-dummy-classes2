@@ -5,9 +5,20 @@
 *******************************************************************************/
 class OnlineGamePrivateMatch_X extends OnlineGameMatchmakingBase_X within OnlineGame_X;
 
+struct PrivateMatchmakingRequestData
+{
+	var string SubRegionToMatchmake;
+	var int PlaylistId;
+
+	structdefaultproperties
+	{
+		SubRegionToMatchmake=""
+		PlaylistId=0
+	}
+};
+
 var transient bool bCancelled;
 var transient string PreferredRegion;
-var transient array<RegionPing_X> PreferredSubRegion;
 var transient int PreferredPlaylistID;
 var() const localized string SearchingString;
 var() const localized string StartSearchFailString;

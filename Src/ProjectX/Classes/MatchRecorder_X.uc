@@ -5,8 +5,8 @@
 *******************************************************************************/
 class MatchRecorder_X extends Object;
 
-var() class MatchDataClass;
-var() class PlayerDataClass;
+var() class<GFxSoundPack_X> MatchDataClass;
+var() class<GFxSoundPack_X> PlayerDataClass;
 var MatchData_X Match;
 
 defaultproperties

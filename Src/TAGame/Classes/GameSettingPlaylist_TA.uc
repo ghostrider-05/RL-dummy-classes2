@@ -9,6 +9,7 @@ var() array<MapSkillSettings> MapSkillRequirements;
 var() class TourServerInfoClass;
 var() bool bAllowHonorDuelChallenges;
 var() bool bAllowVoiceChat;
+var() bool bAllowViralItems;
 var() int DetailsGroup;
 var array<TeamColor> TeamColors;
 var ColorOverride BallSuperSonicColor;

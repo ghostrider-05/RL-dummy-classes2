@@ -10,3 +10,4 @@ class WheelAssetGenerator_TA extends Component
 	hidecategories(Object);
 
 var() export editinline array<export editinline WheelAssetSettings_TA> Wheels;
+var() editinline ProductAssetReferenceWheel_TA AdditionalAxleWheel;

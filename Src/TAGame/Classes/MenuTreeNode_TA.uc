@@ -17,6 +17,7 @@ enum ENodeBadgeType
 	NodeBadgeType_None,
 	NodeBadgeType_Default,
 	NodeBadgeType_Success,
+	NodeBadgeType_Viral,
 	NodeBadgeType_MAX
 };
 

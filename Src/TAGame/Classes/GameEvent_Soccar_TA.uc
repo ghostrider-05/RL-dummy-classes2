@@ -26,12 +26,37 @@ struct MemberTitleStat
 	}
 };
 
+struct PendingClubStatRecord
+{
+	var int TeamIndex;
+	var Qword ClubID;
+
+	structdefaultproperties
+	{
+		TeamIndex=0
+		
+	}
+};
+
+struct ClubMemberCount
+{
+	var int Count;
+	var Qword ClubID;
+
+	structdefaultproperties
+	{
+		Count=0
+		
+	}
+};
+
 // For comparing different car settings
 var() Car_TA TestCarArchetype;
 // Ball to spawn for this level
 var(Setup) Ball_TA BallArchetype;
 var GoalIndicator_TA GoalIndicatorArchetype;
 var transient bool bShouldSpawnGoalIndicators;
+var bool bRandomBallSpawnPoint;
 var transient bool bRoundActive;
 var() bool bPlayReplays;
 var repnotify transient bool bBallHasBeenHit;
@@ -44,11 +69,13 @@ var const bool bShowNoScorerGoalMessage;
 var repnotify transient bool bMatchEnded;
 var repnotify transient bool bDisableCrowdSound;
 var bool bShowIntroScene;
+var bool bReadyToStartGame;
 var repnotify bool bClubMatch;
+var bool bFullClubMatch;
 var bool bCanDropOnlineRewards;
 var repnotify transient bool bAllowHonorDuels;
-// Where to spawn the ball. If not set will spawn the ball at center
-var(Setup) Actor BallSpawnPoint;
+var(Setup) array<Actor> BallSpawnPoints;
+var int BallSpawnPointIndex;
 // Handles giving XP to players
 var() StatFactory_TA StatFactoryArchetype;
 // Initial State Game Event goes to OnInit
@@ -84,7 +111,7 @@ var transient int NextSpawnIndex;
 var() ReplayDirector_TA ReplayDirectorArchetype;
 var repnotify transient ReplayDirector_TA ReplayDirector;
 var transient array<Ball_TA> GameBalls;
-var() int TotalGameBalls;
+var() repnotify int TotalGameBalls;
 // Delay between goal score and replay/round restart
 var() float PostGoalTime;
 var transient StatFactory_TA StatFactory;
@@ -95,6 +122,7 @@ var() Message_TA SecondsRemainingMessage;
 var transient Vector FieldCenter;
 var repnotify transient Team_TA GameWinner;
 var repnotify transient Team_TA MatchWinner;
+var Team_TA TeamLastScored;
 var transient ETieBreakDecision TieBreakDecision;
 var repnotify transient byte ReplicatedScoredOnTeam;
 var EConnectionQualityState ReplicatedServerPerformanceState;
@@ -136,6 +164,7 @@ var() export editinline FpsBucketRecorder_TA InactiveFpsRecorder;
 var() export editinline ServerPerformanceTracker_TA ServerPerformanceTracker;
 var() MatchSeries_TA MatchSeries;
 var() export editinline CrowdSoundManagerBase_TA CrowdSound;
+var array<PendingClubStatRecord> PendingClubStatRecords;
 var const float LobbyTagOffsetZ;
 var const float PodiumTagOffsetZ;
 var const float BallSpacing;
@@ -147,6 +176,7 @@ defaultproperties
 	bShouldSpawnGoalIndicators=true
 	bGoalsEnabled=true
 	bShowNoScorerGoalMessage=true
+	BallSpawnPointIndex=-1
 	SeriesLength=1
 	TotalGameBalls=1
 	ReplicatedScoredOnTeam=255
@@ -172,7 +202,8 @@ replication
 {
 	 if(bNetInitial)
 		MaxScore, SeriesLength, 
-		bClubMatch, bUnlimitedTime;
+		bClubMatch, bFullClubMatch, 
+		bUnlimitedTime;
 
 	 if(bNetDirty)
 		GameTime, GameWinner, 
@@ -180,11 +211,12 @@ replication
 		ReplayDirector, ReplicatedScoredOnTeam, 
 		ReplicatedStatEvent, RoundNum, 
 		SecondsRemaining, SubRulesArchetype, 
-		TieBreakDecision, WaitTimeRemaining, 
-		bAllowHonorDuels, bBallHasBeenHit, 
-		bCanDropOnlineRewards, bDisableCrowdSound, 
-		bGoalsEnabled, bMatchEnded, 
-		bNoContest, bOverTime, 
+		TieBreakDecision, TotalGameBalls, 
+		WaitTimeRemaining, bAllowHonorDuels, 
+		bBallHasBeenHit, bCanDropOnlineRewards, 
+		bDisableCrowdSound, bGoalsEnabled, 
+		bMatchEnded, bNoContest, 
+		bOverTime, bReadyToStartGame, 
 		bShouldSpawnGoalIndicators, bShowIntroScene;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)

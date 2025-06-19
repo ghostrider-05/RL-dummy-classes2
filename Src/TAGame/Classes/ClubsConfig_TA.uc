@@ -9,6 +9,8 @@ var databinding int TagLengthMin;
 var databinding int TagLengthMax;
 var databinding int NameLengthMin;
 var databinding int NameLengthMax;
+var int MilestoneDataCacheDurationSeconds;
+var bool bEnforceFriendsOnlyParty;
 
 defaultproperties
 {
@@ -16,4 +18,5 @@ defaultproperties
 	TagLengthMax=4
 	NameLengthMin=3
 	NameLengthMax=32
+	MilestoneDataCacheDurationSeconds=300
 }

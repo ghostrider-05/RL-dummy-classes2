@@ -45,6 +45,6 @@ var() int SortPriority;
 defaultproperties
 {
 	UnlockMethod=UnlockMethod_Online
-	ProductIP(0)=89
+	ProductIP(0)=110
 	XELabelKey="GenericXELabel"
 }

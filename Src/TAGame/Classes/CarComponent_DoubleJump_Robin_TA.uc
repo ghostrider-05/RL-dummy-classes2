@@ -10,3 +10,8 @@ class CarComponent_DoubleJump_Robin_TA extends CarComponent_DoubleJump_TA
 var() WaveParams RandomPitch;
 var() WaveParams RandomYaw;
 var() WaveParams RandomRoll;
+
+defaultproperties
+{
+	CollisionType=COLLIDE_CustomDefault
+}

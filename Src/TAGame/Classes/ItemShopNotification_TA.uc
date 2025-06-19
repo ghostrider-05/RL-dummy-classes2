@@ -11,8 +11,8 @@ var int ShopNotificationID;
 
 defaultproperties
 {
-	bSave=true
 	bPauseWhenModalsActive=true
+	bSave=true
 	PopUpDuration=8.0
 	GFxDataClass=class'GFxData_ItemShopNotification_TA'
 }

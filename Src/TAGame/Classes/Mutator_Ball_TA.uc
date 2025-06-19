@@ -22,5 +22,6 @@ var float BallMaxAngularSpeed;
 var float BallHitSpinScale;
 var Vector BallMagnusCoefficient;
 var PhysicalMaterial PhysMatOverride;
+var float BallMagnusMinSpeed;
 var float BallLiftImpulse;
 var float BallLiftDelay;

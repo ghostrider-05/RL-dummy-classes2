@@ -8,3 +8,4 @@ class GFxClubAction_TA extends Object
 
 var AsyncTask Task;
 var string ErrorMessage;
+var transient GFxData_Clubs_TA GFxClubsOwner;

@@ -5,5 +5,5 @@
 *******************************************************************************/
 class TriggerInfo extends Object;
 
-var class AcceptedType;
+var class<GFxSoundPack_X> AcceptedType;
 var array<StatusTrigger_X> Triggers;

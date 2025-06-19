@@ -18,6 +18,7 @@ defaultproperties
 	
 	CylinderComponent=CollisionCylinder
 	
+	CollisionType=COLLIDE_CustomDefault
 	bShouldBaseAtStartup=false
 	bCanTeleport=false
 	

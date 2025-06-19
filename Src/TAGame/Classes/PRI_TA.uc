@@ -99,6 +99,7 @@ var repnotify bool bIsInSplitScreen;
 var repnotify transient bool bStartVoteToForfeitDisabled;
 var transient bool bUsingItems;
 var bool bPlayerHistoryValid;
+var transient bool PlayerHistoryValid;
 var repnotify transient bool bIdleBanned;
 var transient bool bStayAsPartyActive;
 var transient bool bAbleToStart;
@@ -177,6 +178,7 @@ var transient int BallDemolitionSaves;
 var transient int CarDemolitions;
 var transient int BallDemolitions;
 var transient int SelfDemolitions;
+var const transient array<ProductSlot_TA> ValidationFailedClearedSlots;
 
 defaultproperties
 {
@@ -190,7 +192,9 @@ defaultproperties
 	SteeringSensitivity=1.0
 	AirControlSensitivity=1.0
 	LastTeamIndex=-1
-	PendingLoadout=(Title=XP,Loadouts=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),Loadouts[1]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)))
+	PendingLoadout=(Title=XP,Loadouts=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),Loadouts[1]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false)),DataProducts=None)
+	ValidationFailedClearedSlots(0)=ProductSlot_TA'ProductSlots.PlayerTitle'
+	ValidationFailedClearedSlots(1)=ProductSlot_TA'ProductSlots.PlayerBanner'
 	
 	//Components(0)=GroupComponent_ORS'Default__PRI_TA.DefaultRegistryGroup'
 	TickGroup=TG_PreAsyncWork

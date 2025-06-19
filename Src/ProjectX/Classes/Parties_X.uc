@@ -72,10 +72,12 @@ var PartySequence_CreateParty_X SequenceCreateParty;
 var PartySequence_JoinParty_X SequenceJoinParty;
 var PartySequence_LeaveParty_X SequenceLeaveParty;
 var PartySequence_InviteToParty_X SequenceInviteToParty;
+var PartySequence_JoinRequest_X SequenceJoinRequest;
 var bool bRejoiningParty;
 var() float SecondToWaitForPerConReconnect;
 var() string PartySetting_PsyNetPartyId;
 var() string PartySetting_JoinKey;
+var array<PsyNetService_Party_X> PendingNotifications;
 
 defaultproperties
 {

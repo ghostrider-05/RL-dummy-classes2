@@ -16,7 +16,6 @@ enum EWordFilterUsage
 	WordFilterUsage_TourTeamName,
 	WordFilterUsage_ClubName,
 	WordFilterUsage_ClubTag,
-	WordFilterUsage_ClubMotD,
 	WordFilterUsage_ClubTagPlayerName,
 	WordFilterUsage_MatchChat,
 	WordFilterUsage_PartyChat,

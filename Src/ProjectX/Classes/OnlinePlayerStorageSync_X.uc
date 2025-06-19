@@ -21,7 +21,7 @@ struct OnlinePlayerStorageSyncRequest
 
 struct OnlinePlayerStorageSyncResult
 {
-	var class DataClass;
+	var class<GFxSoundPack_X> DataClass;
 	var Object RemoteData;
 	var int ServerTick;
 	var int Checksum;
