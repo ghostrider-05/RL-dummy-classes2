@@ -13,6 +13,7 @@ var Replay_TA ReplayToUpload;
 var RLBot_SessionRecorder_TA FlatbufferSession;
 var EOSVoiceTokenCache_TA VoiceTokenCache;
 var NetBucketRecorder_TA NetMetricsRecorder;
+var ActorChannelMonitor_TA ActorChannelMonitor;
 var GameModesConfig_TA GameModesConfig;
 
 defaultproperties

@@ -34,7 +34,6 @@ var transient FXActor_X FXActor;
 defaultproperties
 {
 	RemoteRole=ROLE_SimulatedProxy
-	CollisionType=COLLIDE_CustomDefault
 	TickGroup=TG_PostAsyncWork
 	bHidden=true
 	bTickIsDisabled=true

@@ -62,6 +62,7 @@ var(Events) float TenseNearGoalMinTension;
 var(Events) float TenseNearGoalDuration;
 var(Events) float TenseNearGoalDistance;
 var(Events) float TenseClearDistance;
+var(Events) float MinCrossbarImpactForce;
 var(State) array<CrowdScoreState> ScoreStates;
 
 defaultproperties
@@ -137,6 +138,7 @@ defaultproperties
 	TenseNearGoalDuration=3.0
 	TenseNearGoalDistance=1200.0
 	TenseClearDistance=2000.0
+	MinCrossbarImpactForce=1000.0
 	ScoreStates(0)=(MaxIncreaseScoreSeparation=99,MaxDecreaseScoreSeparation=99,StateName=High)
 	ScoreStates(1)=(MaxIncreaseScoreSeparation=3,MaxDecreaseScoreSeparation=4,StateName=Med)
 	ScoreStates(2)=(MaxIncreaseScoreSeparation=2,MaxDecreaseScoreSeparation=2,StateName=Low)

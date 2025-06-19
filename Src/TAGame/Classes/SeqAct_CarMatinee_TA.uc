@@ -15,6 +15,7 @@ var array< class > ClassesToNotShow;
 
 defaultproperties
 {
+	CinematicCarArchPath="Archetypes.Car.Car_Cinematic"
 	bHideAfterCompleted=true
 	ClassesToNotShow(0)=class'InterpActor'
 	ObjName="Car Matinee"

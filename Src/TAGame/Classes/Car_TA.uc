@@ -64,6 +64,8 @@ defaultproperties
 {
 	
 	EngineAudio=DefaultEngineAudio
+	DemolishTarget=DemolishTarget_OtherTeam
+	DemolishSpeed=DemolishSpeed_Supersonic
 	//Loadout=ProductLoader_TA'Default__Car_TA.DefaultCarLoadout'
 	bTeamBumpsUseCarForceMultiplier=true
 	MaxNumJumps=2

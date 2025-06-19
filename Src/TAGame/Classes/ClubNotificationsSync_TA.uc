@@ -4,3 +4,4 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class ClubNotificationsSync_TA extends Object;
+

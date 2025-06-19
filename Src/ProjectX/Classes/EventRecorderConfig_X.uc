@@ -9,7 +9,7 @@ var() bool bEnabled;
 var() bool bSeparatePlayerIDs;
 var() bool bExcludePlayerIDs;
 var() array<name> DisabledEvents;
-var() class EventRecorderClass;
+var() class<GFxSoundPack_X> EventRecorderClass;
 var() float PlayerNetMetricsPeriod;
 var() int MaxUnstableConnections;
 var() int UnstableConnectionsTimePeriodSeconds;

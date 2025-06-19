@@ -5,19 +5,98 @@
 *******************************************************************************/
 class GFxData_Clubs_TA extends GFxDataSingleton_X;
 
+struct GFxSeasonBadgesData
+{
+	var databinding int Season;
+	var databinding EClubBadge AssistBadgeSeasonTier;
+	var databinding EClubBadge GoalBadgeSeasonTier;
+	var databinding EClubBadge SaveBadgeSeasonTier;
+
+	structdefaultproperties
+	{
+		Season=0
+		AssistBadgeSeasonTier=ClubBadge_None
+		GoalBadgeSeasonTier=ClubBadge_None
+		SaveBadgeSeasonTier=ClubBadge_None
+	}
+};
+
+struct GFxClubStatData
+{
+	var databinding string Id;
+	var databinding string Name;
+	var databinding string DisplayValue;
+
+	structdefaultproperties
+	{
+		Id=""
+		Name=""
+		DisplayValue=""
+	}
+};
+
+struct GFxClubSeasonStatMilestoneData
+{
+	var databinding int MilestoneStatValue;
+	var databinding int MilestoneSize;
+
+	structdefaultproperties
+	{
+		MilestoneStatValue=0
+		MilestoneSize=0
+	}
+};
+
+struct GFxClubSeasonMilestoneData
+{
+	var databinding string TitleText;
+	var databinding Color TitleColor;
+	var databinding Color TitleGlowColor;
+	var databinding array<GFxClubSeasonStatMilestoneData> Stats;
+
+	structdefaultproperties
+	{
+		TitleText=""
+		TitleColor=(R=0,G=0,B=0,A=0)
+		TitleGlowColor=(R=0,G=0,B=0,A=0)
+		Stats.Empty
+	}
+};
+
+struct GFxClubActionData
+{
+	var databinding string LocalizedName;
+	var databinding EClubMemberAction ClubAction;
+
+	structdefaultproperties
+	{
+		LocalizedName=""
+		ClubAction=ClubMemberAction_RemoveMember
+	}
+};
+
 var databinding Qword LocalClubID;
 var databinding bool bClubOwner;
 var databinding bool bSyncedLocalClub;
+var bool bCrossPlatformFiltered;
 var transient bool bHasSyncedClubInvites;
+var transient bool bNeedsStatMilestoneDataRequest;
+var transient bool bOnlineStorageSyncCompleted;
+var transient bool bOmitRoleChangeNotification;
+var databinding EClubRole LocalPlayerClubRole;
 var databinding string LocalClubSyncError;
 var databinding string ExecutingClubAction;
+var databinding array<PlayerTitleData> LocalAvailableClubTitles;
+var databinding array<PersonaDataId> LocalClubMembers;
 var PsyNet_X PsyNet;
 var OnlineClubProvider_X ClubProvider;
 var ClubsConfig_TA ClubsConfig;
+var TitleConfig_X TitleConfig;
 var OnlineGameParty_X Party;
 var transient Personas_TA PersonasData;
 var OnlineClubManager_X ClubManager;
 var transient array<GFxData_ClubDetails_TA> AllClubDetails;
+var transient ClubDetails_X LocalClubDetails;
 var transient GFxClubAction_TA CurrentClubAction;
 var const localized string TagTooShort;
 var const localized string TagTooLong;
@@ -25,15 +104,143 @@ var const localized string TagHasInvalidCharacters;
 var const localized string NameTooShort;
 var const localized string NameTooLong;
 var const localized string NameHasInvalidCharacters;
+var const localized string RoleMember;
+var const localized string RoleManager;
+var const localized string RoleOwner;
+var const localized string RoleNone;
+var const localized string RoleChangeNotificationTitle;
+var const localized string RoleChangeNotificationBody;
+var const localized string NoClubNotificationBody;
+var transient RPC_GetClubStats_X ClubMilestoneDataRPC;
+var transient RPC_GetClubTitles_X ClubAvailableTitlesRPC;
+var Qword LastMilestoneDataRequestTime;
+var databinding int MatchesPlayed;
+var databinding float WinPercent;
+var databinding string TimePlayed;
+var databinding array<GFxSeasonBadgesData> PreviousSeasonBadges;
+var array<name> MilestoneStatNames;
+var array<string> MilestoneStatDisplayNames;
+var array<GFxClubSeasonMilestoneData> SeasonMilestoneData;
+var databinding array<GFxClubStatData> Stats;
+var databinding int AssistStat;
+var databinding int GoalStat;
+var databinding int SaveStat;
+var const StatEvent_TA WinStatEvent;
+var const StatEvent_TA TimePlayedStatEvent;
+var const StatEvent_TA GoalStatEvent;
+var const StatEvent_TA AerialGoalStatEvent;
+var const StatEvent_TA LongGoalStatEvent;
+var const StatEvent_TA BackwardsGoalStatEvent;
+var const StatEvent_TA OvertimeGoalStatEvent;
+var const StatEvent_TA TurtleGoalStatEvent;
+var const StatEvent_TA AssistStatEvent;
+var const StatEvent_TA PlaymakerStatEvent;
+var const StatEvent_TA SaveStatEvent;
+var const StatEvent_TA EpicSaveStatEvent;
+var const StatEvent_TA SaviorStatEvent;
+var const StatEvent_TA ShotStatEvent;
+var const StatEvent_TA CenterStatEvent;
+var const StatEvent_TA ClearStatEvent;
+var const StatEvent_TA AerialHitStatEvent;
+var const StatEvent_TA BicycleHitStatEvent;
+var const StatEvent_TA JuggleHitStatEvent;
+var const StatEvent_TA DemolishStatEvent;
+var const StatEvent_TA DemolitionStatEvent;
+var const StatEvent_TA FirstTouchStatEvent;
+var const StatEvent_TA PoolShotStatEvent;
+var const StatEvent_TA LowFiveStatEvent;
+var const StatEvent_TA HighFiveStatEvent;
+var const StatEvent_TA BreakoutDamageStatEvent;
+var const StatEvent_TA BreakoutDamageLargeStatEvent;
+var const StatEvent_TA HoopsSwishGoalStatEvent;
+var const localized string RemoveMemberLoc;
+var const localized string SetClubOwnerLoc;
+var const localized string SetClubManagerLoc;
+var const localized string RemoveClubManagerLoc;
+var const localized string InvitePartyLoc;
+var const localized string RequestJoinPartyLoc;
+var const localized string ViewProfileLoc;
+var const localized string BlockMemberLoc;
+var const localized string UnblockMemberLoc;
+var const localized string AddEpicFriendLoc;
+var const localized string RemoveEpicFriendLoc;
+var const localized string ReportMemberLoc;
+var array<GFxClubActionData> ActionsOwnerToManager;
+var array<GFxClubActionData> ActionsOwnerToMember;
+var array<GFxClubActionData> ActionsManagerToOwner;
+var array<GFxClubActionData> ActionsManagerToManager;
+var array<GFxClubActionData> ActionsManagerToMember;
+var array<GFxClubActionData> ActionsMember;
 
 defaultproperties
 {
+	bNeedsStatMilestoneDataRequest=true
 	/**TagTooShort="Club tag is too short."*/
 	/**TagTooLong="Club tag is too long."*/
 	/**TagHasInvalidCharacters="Club tag contains invalid characters."*/
 	/**NameTooShort="Club name is too short."*/
 	/**NameTooLong="Club name is too long."*/
 	/**NameHasInvalidCharacters="Club name contains invalid characters."*/
+	/**RoleMember="Member"*/
+	/**RoleManager="Manager"*/
+	/**RoleOwner="Owner"*/
+	/**RoleNone="None"*/
+	/**RoleChangeNotificationTitle="Club Role Changed"*/
+	/**RoleChangeNotificationBody="You are now [Role] in your club"*/
+	/**NoClubNotificationBody="You are no longer a member of a club"*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**RemoveMemberLoc="Remove Player"*/
+	/**SetClubOwnerLoc="Set Club Owner"*/
+	/**SetClubManagerLoc="Set Club Manager"*/
+	/**RemoveClubManagerLoc="Remove Club Manager"*/
+	/**InvitePartyLoc="Invite to Party"*/
+	/**RequestJoinPartyLoc="Request to Join Party"*/
+	/**ViewProfileLoc="View Player Profile"*/
+	/**BlockMemberLoc="Block Player"*/
+	/**UnblockMemberLoc="Unblock Player"*/
+	/**AddEpicFriendLoc="Add As Epic Friend"*/
+	/**RemoveEpicFriendLoc="Remove Epic Friend"*/
+	/**ReportMemberLoc="Report Player"*/
+	ActionsOwnerToManager(0)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember)
+	ActionsOwnerToManager(1)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubOwner)
+	ActionsOwnerToManager(2)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveClubManager)
+	ActionsOwnerToManager(3)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
+	ActionsOwnerToMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember)
+	ActionsOwnerToMember(1)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubOwner)
+	ActionsOwnerToMember(2)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubManager)
+	ActionsOwnerToMember(3)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
+	ActionsManagerToOwner(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
+	ActionsManagerToManager(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
+	ActionsManagerToMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember)
+	ActionsManagerToMember(1)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
+	ActionsMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
 	TableName=Clubs
 	bLevelTransitionPersistent=true
 }

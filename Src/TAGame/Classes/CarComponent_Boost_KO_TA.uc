@@ -9,3 +9,8 @@ class CarComponent_Boost_KO_TA extends CarComponent_Boost_TA
 
 var const float LimitVelocityXYToForceScale;
 var const float LimitVelocityZToForceScale;
+
+defaultproperties
+{
+	CollisionType=COLLIDE_CustomDefault
+}

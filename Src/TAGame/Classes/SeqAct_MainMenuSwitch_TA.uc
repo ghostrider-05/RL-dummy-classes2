@@ -7,7 +7,7 @@ class SeqAct_MainMenuSwitch_TA extends SequenceAction
 	forcescriptorder(true)
 	hidecategories(Object);
 
-const MENU_BG_SWITCH_VERSION = 9;
+const MENU_BG_SWITCH_VERSION = 10;
 
 defaultproperties
 {
@@ -41,6 +41,7 @@ defaultproperties
 	OutputLinks(25)=(LinkDesc="Woods Night",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	OutputLinks(26)=(LinkDesc="Tokyo Arcade",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	OutputLinks(27)=(LinkDesc="Future Utopia",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
+	OutputLinks(28)=(LinkDesc="Anniversary",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=None,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
 	VariableLinks.Empty
 	ObjName="Main Menu Switch"
 	ObjCategory="TAGame"

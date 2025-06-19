@@ -11,6 +11,7 @@ var transient array<VehiclePickup_Boost_TA> ActiveBoostPills;
 var transient bool bHideWorldUI;
 var export editinline transient array<export editinline NameplateComponent_TA> Nameplates;
 var transient array<CarPreviewActor_TA> CarPreviewActors;
+var transient int TotalGameBalls;
 var const export editinline transient array<export editinline AkSoundSource> SoundSourcePool;
 
 defaultproperties

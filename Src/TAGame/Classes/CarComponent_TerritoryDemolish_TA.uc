@@ -27,4 +27,5 @@ var() FXActor_X DemoOverrideFXArchetype;
 defaultproperties
 {
 	AmbientMuffleRTCP=SoccarPong_OOB
+	CollisionType=COLLIDE_CustomDefault
 }

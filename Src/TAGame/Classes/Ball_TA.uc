@@ -109,6 +109,8 @@ var repnotify bool bWarnBallReset;
 var bool bCanBeScored;
 var repnotify bool bPossessionEnabled;
 var() Vector MagnusCoefficient;
+var() float MagnusMinSpeed;
+var() float AngularVelocityDamping;
 var() float BallHitSpinScale;
 var export editinline BallCamTarget_TA BallCamTarget;
 var transient float Radius;
@@ -204,7 +206,9 @@ replication
 		ReplicatedWorldBounceScale;
 
 	 if(bNetDirty)
-		HitTeamNum, ReplicatedExplosionData, 
-		ReplicatedExplosionDataExtended, bEndOfGameHidden, 
-		bPossessionEnabled, bWarnBallReset;
+		AdditionalCarGroundBounceScaleXY, AdditionalCarGroundBounceScaleZ, 
+		HitTeamNum, MagnusMinSpeed, 
+		ReplicatedExplosionData, ReplicatedExplosionDataExtended, 
+		bEndOfGameHidden, bPossessionEnabled, 
+		bWarnBallReset;
 }

@@ -5,7 +5,7 @@
 *******************************************************************************/
 class RPCConfig_X extends OnlineConfig_X;
 
-var() array< class > DisabledClasses;
+var() array< class<GFxSoundPack_X> > DisabledClasses;
 var() array<string> DisabledServices;
 var() int MaxRPCsPerBatch;
 

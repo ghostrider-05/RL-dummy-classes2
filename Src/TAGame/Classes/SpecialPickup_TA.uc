@@ -39,6 +39,7 @@ var int CooldownSeconds;
 defaultproperties
 {
 	CooldownSeconds=10
+	CollisionType=COLLIDE_CustomDefault
 	bTickIsDisabled=false
 }
 replication

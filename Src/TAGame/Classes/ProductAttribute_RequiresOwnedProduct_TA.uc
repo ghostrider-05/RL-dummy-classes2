@@ -8,4 +8,4 @@ class ProductAttribute_RequiresOwnedProduct_TA extends ProductAttribute_TA
 	collapsecategories
 	hidecategories(Object);
 
-var() Product_TA Product;
+var() array<Product_TA> Products;

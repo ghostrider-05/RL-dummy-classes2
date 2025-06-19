@@ -6,6 +6,36 @@
 class _Types_TA extends Object
 	abstract;
 
+const StatName_Assist = 'Assist';
+const StatName_Goal = 'Goal';
+const StatName_Save = 'Save';
+const StatName_MatchPlayed = 'MatchPlayed';
+const StatName_Win = 'Win';
+const StatName_TimePlayed = 'TimePlayed';
+const StatName_AerialGoal = 'AerialGoal';
+const StatName_LongGoal = 'LongGoal';
+const StatName_BackwardsGoal = 'BackwardsGoal';
+const StatName_OvertimeGoal = 'OvertimeGoal';
+const StatName_TurtleGoal = 'TurtleGoal';
+const StatName_Playmaker = 'Playmaker';
+const StatName_EpicSave = 'EpicSave';
+const StatName_Savior = 'Savior';
+const StatName_Shot = 'Shot';
+const StatName_Center = 'Center';
+const StatName_Clear = 'Clear';
+const StatName_AerialHit = 'AerialHit';
+const StatName_BicycleHit = 'BicycleHit';
+const StatName_JuggleHit = 'JuggleHit';
+const StatName_Demolish = 'Demolish';
+const StatName_Demolition = 'Demolition';
+const StatName_FirstTouch = 'FirstTouch';
+const StatName_PoolShot = 'PoolShot';
+const StatName_LowFive = 'LowFive';
+const StatName_HighFive = 'HighFive';
+const StatName_BreakoutDamage = 'BreakoutDamage';
+const StatName_BreakoutDamageLarge = 'BreakoutDamageLarge';
+const StatName_HoopsSwishGoal = 'HoopsSwishGoal';
+
 enum EAchievementType
 {
 	AT_Game,
@@ -372,6 +402,7 @@ enum EBlueprintType
 
 enum EDemolishTarget
 {
+	DemolishTarget_Unset,
 	DemolishTarget_OtherTeam,
 	DemolishTarget_Everyone,
 	DemolishTarget_None,
@@ -380,8 +411,12 @@ enum EDemolishTarget
 
 enum EDemolishSpeed
 {
-	DemolishSpeed_Supersonic,
+	DemolishSpeed_Unset,
 	DemolishSpeed_None,
+	DemolishSpeed_Low,
+	DemolishSpeed_Medium,
+	DemolishSpeed_High,
+	DemolishSpeed_Supersonic,
 	DemolishSpeed_MAX
 };
 
@@ -469,6 +504,14 @@ enum ERankInfoDisplayType
 	RankInfoDisplayType_StandardOnly,
 	RankInfoDisplayType_All,
 	RankInfoDisplayType_MAX
+};
+
+enum EInfectedType
+{
+	InfectedType_NotInfected,
+	InfectedType_NormalInfected,
+	InfectedType_SpecialInfected,
+	InfectedType_MAX
 };
 
 enum EVoteStatus
@@ -817,6 +860,7 @@ enum EMainMenuBackground
 	MMBG_WoodsNight,
 	MMBG_TokyoArcade,
 	MMBG_FutureUtopia,
+	MMBG_Anniversary,
 	MMBG_MAX
 };
 
@@ -1123,6 +1167,18 @@ struct native DemolishDataExtended extends _Types_TA.DemolishDataGoalExplosion
 	var PRI_TA AttackerPRI;
 	var FXActor_X SelfDemoFX;
 	var bool bSelfDemolish;
+};
+
+struct DemolishInvulnerability
+{
+	var Object ObjectSource;
+	var array<EDemolishSource> DemolishSources;
+
+	structdefaultproperties
+	{
+		ObjectSource=None
+		DemolishSources.Empty
+	}
 };
 
 struct native PrespawnData
@@ -1860,12 +1916,14 @@ struct native ServerSetLoadoutParams
 {
 	var name Title;
 	var ServerSetLoadoutTeam Loadouts[2];
+	var array<LoadoutProductData> DataProducts;
 
 	structdefaultproperties
 	{
 		Title=XP
 		Loadouts[0]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false))
 		Loadouts[1]=(Products=None,TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false))
+		DataProducts.Empty
 	}
 };
 
@@ -1929,6 +1987,7 @@ struct native VehicleInputs
 	var bool bJumped;
 	var bool bGrab;
 	var bool bButtonMash;
+	var bool bTargetFind;
 
 	structdefaultproperties
 	{
@@ -1946,6 +2005,7 @@ struct native VehicleInputs
 		bJumped=false
 		bGrab=false
 		bButtonMash=false
+		bTargetFind=false
 	}
 };
 
@@ -1957,7 +2017,7 @@ struct native ClientFrameData
 
 	structdefaultproperties
 	{
-		VehicleInput=(Throttle=0.0,Steer=0.0,Pitch=0.0,Yaw=0.0,Roll=0.0,DodgeForward=0.0,DodgeRight=0.0,bHandbrake=false,bJump=false,bActivateBoost=false,bHoldingBoost=false,bJumped=false,bGrab=false,bButtonMash=false)
+		VehicleInput=(Throttle=0.0,Steer=0.0,Pitch=0.0,Yaw=0.0,Roll=0.0,DodgeForward=0.0,DodgeRight=0.0,bHandbrake=false,bJump=false,bActivateBoost=false,bHoldingBoost=false,bJumped=false,bGrab=false,bButtonMash=false,bTargetFind=false)
 		frame=0
 		TimeStamp=0.0
 	}

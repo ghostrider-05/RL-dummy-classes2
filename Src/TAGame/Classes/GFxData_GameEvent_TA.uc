@@ -22,11 +22,14 @@ var databinding bool bHasLeaveMatchPenalty;
 var databinding bool bCanVoteToForfeit;
 var databinding bool bViewingEndGameReplay;
 var databinding bool bShowIntroScene;
+var databinding bool bReadyToStartGame;
+var databinding bool bClubMatch;
 var databinding bool bDisableTeamSelectScreen;
 var databinding bool bStayAsPartyButtonVisible;
 var databinding bool bStayAsPartyButtonEnabled;
 var databinding bool bServerShutdown;
 var databinding bool bAlwaysShowMatchTypeLabel;
+var databinding bool bShowMutatorInfo;
 var databinding string MatchState;
 var databinding name GameState;
 var databinding name MatchType;
@@ -42,12 +45,14 @@ var databinding int MaxScore;
 var databinding string PlaylistName;
 var databinding name PlaylistId;
 var databinding string ServerName;
+var databinding string GamemodeName;
 var databinding string PartyPlaylistName;
 var databinding string MutatorsString;
 var databinding int SeriesGames;
 
 defaultproperties
 {
+	bShowMutatorInfo=true
 	WinningTeam=-1
 	TableName=GameEvent
 }

@@ -9,11 +9,15 @@ class CarComponent_AirControl_TA extends CarComponent_TA
 
 var() Rotator AirTorque;
 var() Rotator AirDamping;
+var() float AirTorqueScalar;
+var() float AirDampingScalar;
 var() float ThrottleForce;
 var transient float AirControlSensitivity;
 
 defaultproperties
 {
+	AirTorqueScalar=1000.0
+	AirDampingScalar=1000.0
 	AirControlSensitivity=1.0
 	RemoteRole=ROLE_None
 }

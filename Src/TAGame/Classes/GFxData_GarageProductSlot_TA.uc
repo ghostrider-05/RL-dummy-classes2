@@ -5,6 +5,8 @@
 *******************************************************************************/
 class GFxData_GarageProductSlot_TA extends GFxData_ProductSlot_TA;
 
+var transient LoadoutSet_TA SavedLoadoutSet;
+
 defaultproperties
 {
 	TableName=GarageProductSlots

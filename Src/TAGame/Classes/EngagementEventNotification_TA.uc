@@ -9,8 +9,8 @@ var databinding transient string UIEngagementEventTypeAnim;
 
 defaultproperties
 {
-	bSave=true
 	bPauseWhenModalsActive=true
+	bSave=true
 	PopUpDuration=5.0
 	GFxDataClass=class'GFxData_EngagementEventNotification_TA'
 }

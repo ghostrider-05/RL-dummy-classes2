@@ -7,7 +7,7 @@ class ReservationBeacon_X extends Component;
 
 struct native BeaconMessageHandler
 {
-	var class MessageClass;
+	var class<GFxSoundPack_X> MessageClass;
 	var array< Object > Delegates;
 
 	structdefaultproperties

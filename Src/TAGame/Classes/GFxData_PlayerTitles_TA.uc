@@ -8,7 +8,7 @@ class GFxData_PlayerTitles_TA extends GFxDataSingleton_X;
 var databinding int SelectedTitle;
 var databinding array<PlayerTitleData> PlayerTitles;
 var transient ProfileLoadoutSave_TA LoadoutSave;
-var PlayerTitleConfig_X TitleConfig;
+var TitleConfig_X TitleConfig;
 
 defaultproperties
 {

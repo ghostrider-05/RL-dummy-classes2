@@ -6,4 +6,4 @@
 class PsyNetWordFilter_X extends Component;
 
 var() WordFilterConfig_X Config;
-var RPC_FilterContent_X PendingFilterRPC;
+var array<RPC_FilterContent_X> PendingFilterRPCs;

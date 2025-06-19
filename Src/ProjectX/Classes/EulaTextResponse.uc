@@ -5,12 +5,12 @@
 *******************************************************************************/
 class EulaTextResponse extends Object;
 
+var string Key;
 var string Title;
 var string Body;
 var string Locale;
 var int Version;
 var int Status;
-var string Key;
 var int Revision;
 var string CreatedTimestamp;
 var string LastModifiedTimestamp;

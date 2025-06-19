@@ -9,4 +9,5 @@ defaultproperties
 {
 	TableName=ItemDropGroup
 	
+	bLevelTransitionPersistent=true
 }

@@ -58,11 +58,11 @@ defaultproperties
 {
 	
 	/**bUsePresenceGroups=true*/
-	/**DefaultPlatformFriendGroups(0)=67
-	DefaultPlatformFriendGroups(1)=63*/
-	/**DefaultEpicFriendGroups(0)=67
-	DefaultEpicFriendGroups(1)=63*/
-	/**DefaultAllFriendGroups(0)=66*/
+	/**DefaultPlatformFriendGroups(0)=82
+	DefaultPlatformFriendGroups(1)=65*/
+	/**DefaultEpicFriendGroups(0)=82
+	DefaultEpicFriendGroups(1)=65*/
+	/**DefaultAllFriendGroups(0)=81*/
 	
 	TableName=Personas
 	bLevelTransitionPersistent=true

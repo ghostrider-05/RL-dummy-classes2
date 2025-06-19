@@ -15,6 +15,8 @@ var() array<name> DisallowedMutatorCategories;
 var bool bEnabled;
 var bool bAllowPrivateMatchOnly;
 var bool bIsEnabledForOnlineFreeplay;
+var bool bMultiGameMode;
 var int SortIdx;
 var class GameInfoClass;
 var string GameArchetypePath;
+var string OverrideLocalizationKey;

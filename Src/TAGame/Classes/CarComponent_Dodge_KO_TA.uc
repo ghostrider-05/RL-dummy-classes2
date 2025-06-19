@@ -15,6 +15,10 @@ var const float VelocityTransferBlend;
 var transient Rotator DodgeRotation;
 var repnotify transient int DodgeRotationCompressed;
 
+defaultproperties
+{
+	CollisionType=COLLIDE_CustomDefault
+}
 replication
 {
 	 if(bNetInitial)

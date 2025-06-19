@@ -36,6 +36,32 @@ enum EOnlinePlayerPermission
 	OPP_MAX
 };
 
+enum EClubRole
+{
+	ClubRole_Member,
+	ClubRole_Owner,
+	ClubRole_Manager,
+	ClubRole_None,
+	ClubRole_MAX
+};
+
+enum EClubMemberAction
+{
+	ClubMemberAction_RemoveMember,
+	ClubMemberAction_SetClubOwner,
+	ClubMemberAction_SetClubManager,
+	ClubMemberAction_RemoveClubManager,
+	ClubMemberAction_InviteParty,
+	ClubMemberAction_RequestJoinParty,
+	ClubMemberAction_ViewProfile,
+	ClubMemberAction_BlockMember,
+	ClubMemberAction_UnblockMember,
+	ClubMemberAction_AddEpicFriend,
+	ClubMemberAction_RemoveEpicFriend,
+	ClubMemberAction_ReportMember,
+	ClubMemberAction_MAX
+};
+
 enum EPsyNetEnvironment
 {
 	EPE_Unset,
@@ -193,12 +219,16 @@ struct ClubMember
 	var UniqueNetId PlayerID;
 	var UniqueNetId EpicPlayerID;
 	var string PlayerName;
+	var string EpicPlayerName;
+	var EClubRole RoleID;
 
 	structdefaultproperties
 	{
 		
 		
 		PlayerName=""
+		EpicPlayerName=""
+		RoleID=ClubRole_Member
 	}
 };
 
@@ -651,8 +681,8 @@ struct native CustomMatchSettings
 	var string ServerName;
 	var string Password;
 	var bool bPublic;
-	var CustomMatchTeamSettings TeamSettings[2];
 	var bool bClubServer;
+	var CustomMatchTeamSettings TeamSettings[2];
 
 	structdefaultproperties
 	{
@@ -663,9 +693,9 @@ struct native CustomMatchSettings
 		ServerName=""
 		Password=""
 		bPublic=false
+		bClubServer=false
 		TeamSettings[0]=(Name="",Colors=(TeamColorID=0,CustomColorID=0,bTeamColorSet=false,bCustomColorSet=false),GameScore=0)
 		TeamSettings[1]=(Name="",Colors=(TeamColorID=0,CustomColorID=0,bTeamColorSet=false,bCustomColorSet=false),GameScore=0)
-		bClubServer=false
 	}
 };
 
@@ -743,7 +773,7 @@ struct ServerResult
 	{
 		Address=""
 		ServerName=""
-		Settings=(GameTags="",MapName=None,GameMode=0,MaxPlayerCount=0,ServerName="",Password="",bPublic=false,TeamSettings=(Name="",Colors=(TeamColorID=0,CustomColorID=0,bTeamColorSet=false,bCustomColorSet=false),GameScore=0),TeamSettings[1]=(Name="",Colors=(TeamColorID=0,CustomColorID=0,bTeamColorSet=false,bCustomColorSet=false),GameScore=0),bClubServer=false)
+		Settings=(GameTags="",MapName=None,GameMode=0,MaxPlayerCount=0,ServerName="",Password="",bPublic=false,bClubServer=false,TeamSettings=(Name="",Colors=(TeamColorID=0,CustomColorID=0,bTeamColorSet=false,bCustomColorSet=false),GameScore=0),TeamSettings[1]=(Name="",Colors=(TeamColorID=0,CustomColorID=0,bTeamColorSet=false,bCustomColorSet=false),GameScore=0))
 	}
 };
 

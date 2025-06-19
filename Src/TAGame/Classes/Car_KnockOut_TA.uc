@@ -80,6 +80,7 @@ var const float TradeImpulseSpeed;
 var const float TorqueStunBeginDelay;
 var const float DamagePointsPerImpulseSpeed;
 var const float ThrowVelocityTransferScale;
+var() float GrabFixJumpVelocity;
 var const export editinline Target_TA AttachedTarget;
 var transient array<CarComponent_TA> AttackComponents;
 var transient CarComponent_Torque_TA TorqueComponent;
