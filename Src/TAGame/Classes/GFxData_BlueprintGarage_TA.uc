@@ -25,9 +25,13 @@ var export editinline transient OnlineProductStoreSet_TA BlueprintGarageSet;
 var transient array<BlueprintPreviewProduct> BlueprintPreviewProducts;
 var OnlineProduct_TA PendingBlueprintProduct;
 var transient SaveData_TA SaveData;
+var bool bBlueprintProductPreviewed;
+var bool bBlueprintProductBuilt;
+var float SaveTimeDelay;
 
 defaultproperties
 {
+	SaveTimeDelay=1.0
 	TableName=BlueprintGarage
 	bLevelTransitionPersistent=true
 }

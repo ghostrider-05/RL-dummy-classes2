@@ -8,13 +8,13 @@ class MatchHistoryMetrics_TA extends MetricsGroup_X;
 struct MatchPreviewData
 {
 	var int Index;
-	var string MatchGuid;
+	var string MatchGUID;
 	var int TimesPreviewed;
 
 	structdefaultproperties
 	{
 		Index=0
-		MatchGuid=""
+		MatchGUID=""
 		TimesPreviewed=0
 	}
 };

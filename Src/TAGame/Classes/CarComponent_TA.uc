@@ -30,6 +30,7 @@ var transient float ActivityTime;
 var const float MinInactiveTime;
 var repnotify transient float ReplicatedActivityTime;
 var transient FXActor_X FXActor;
+var transient GameEvent_Soccar_TA GameEvent;
 
 defaultproperties
 {

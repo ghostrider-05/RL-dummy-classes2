@@ -7,13 +7,13 @@ class MatchCompleteMetrics_TA extends MetricsGroup_X;
 
 struct MatchCompleteHistory
 {
-	var string MatchGuid;
+	var string MatchGUID;
 	var array<UniqueNetId> Players;
 	var float MatchCompleteTime;
 
 	structdefaultproperties
 	{
-		MatchGuid=""
+		MatchGUID=""
 		Players.Empty
 		MatchCompleteTime=0.0
 	}

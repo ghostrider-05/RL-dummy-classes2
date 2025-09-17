@@ -17,7 +17,12 @@ var() bool bRemoveAfterSplashScreen;
 var() bool bCaptureInput;
 var() bool bConfirm;
 var() bool bPrimaryPlayerOnly;
+var() bool bSwapIndices;
 var() string Message;
+var() string Cipher;
+var() PlaylistTrack MusicTrack;
+var() Texture MainMenuLogo;
+var() AkSoundCue SoundCue;
 var transient array<name> CurrentSequence;
 
 defaultproperties

@@ -55,6 +55,7 @@ var databinding int SecondaryStat;
 var databinding Qword ClubID;
 var databinding EConnectionQualityState WorstConnectionQualityStateBeyondLatency;
 var databinding transient ESeverityType QuitSeverity;
+var databinding EInfectedType InfectedStatus;
 var databinding int SpectatorShortcut;
 var transient GFxData_PlayerBanner_TA GFxPlayerBanner;
 var transient GFxData_PlayerAvatar_TA GFxPlayerAvatar;

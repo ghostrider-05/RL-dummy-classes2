@@ -13,6 +13,7 @@ var const name PossessionTeamColorParam;
 var const float BallFreezeScale;
 var export editinline transient StaticMeshComponent PossessionMesh;
 var transient MaterialInstanceConstant TeamOwnerInstance;
+var transient Ball_TA BallOwner;
 
 defaultproperties
 {

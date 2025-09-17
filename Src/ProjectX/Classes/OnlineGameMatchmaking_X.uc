@@ -17,6 +17,30 @@ struct DSRegionInfo
 	}
 };
 
+struct MatchmakingRequestData
+{
+	var string PartyID;
+	var array<DSRegionInfo> Regions;
+	var array<int> Playlists;
+	var int SecondsSearching;
+	var string CurrentServerID;
+	var bool bDisableCrossPlay;
+	var bool bIgnoreSkill;
+	var array<UniqueNetId> PartyMembers;
+
+	structdefaultproperties
+	{
+		PartyID=""
+		Regions.Empty
+		Playlists.Empty
+		SecondsSearching=0
+		CurrentServerID=""
+		bDisableCrossPlay=false
+		bIgnoreSkill=false
+		PartyMembers.Empty
+	}
+};
+
 var transient array<int> PreferredPlaylists;
 var transient array<DSRegionInfo> PreferredRegions;
 var const localized string SearchingString;

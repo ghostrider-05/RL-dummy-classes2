@@ -5,6 +5,7 @@
 *******************************************************************************/
 class GFxData_DynamicLogos_TA extends GFxDataSingleton_X;
 
+var Texture LogoOverride;
 var DynamicLogosConfig_TA DynamicLogosConfig;
 
 defaultproperties

@@ -30,8 +30,10 @@ struct ShopTab
 var() ShopTabsConfig_TA Config;
 var() export editinline LoadedMtxCatalog_TA LoadedMtx;
 var transient string EsportsLabel;
+var transient int MaxTabs;
 
 defaultproperties
 {
 	//LoadedMtx=LoadedMtxCatalog_TA'Default__ShopTabs_TA.DefaultLoadedMtx'
+	MaxTabs=9
 }

@@ -13,12 +13,22 @@ enum EChallengeSort
 	ECS_MAX
 };
 
+enum EChallengeType
+{
+	ChallengeType_NewDriver,
+	ChallengeType_Week,
+	ChallengeType_Season,
+	ChallengeType_Event,
+	ChallengeType_MAX
+};
+
 var databinding string CodeName;
 var databinding string DisplayName;
 var databinding int ChallengeID;
 var databinding int DefaultActiveIndex;
 var databinding Qword StartTime;
 var databinding Qword EndTime;
+var databinding EChallengeType ChallengeType;
 var EChallengeSort ChallengeFolderSort;
 var array<int> ChallengeIDs;
 var array<ChallengeFolder_TA> SubFolders;

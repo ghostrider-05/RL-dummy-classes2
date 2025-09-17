@@ -164,6 +164,7 @@ var() export editinline FpsBucketRecorder_TA InactiveFpsRecorder;
 var() export editinline ServerPerformanceTracker_TA ServerPerformanceTracker;
 var() MatchSeries_TA MatchSeries;
 var() export editinline CrowdSoundManagerBase_TA CrowdSound;
+var array<ClubReplicationInfo> ClubInformation;
 var array<PendingClubStatRecord> PendingClubStatRecords;
 var const float LobbyTagOffsetZ;
 var const float PodiumTagOffsetZ;

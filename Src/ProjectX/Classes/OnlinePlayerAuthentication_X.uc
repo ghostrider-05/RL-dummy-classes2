@@ -21,6 +21,7 @@ var transient BanMessage_X BanMessage;
 var transient string EncryptedAuthTicket;
 var transient string EpicAuthTicket;
 var config int AuthRequestFailureMax;
+var config int AuthReloginTime;
 var const int AuthRequestRetryTime;
 var transient int AuthRequestFailureCount;
 var transient string AuthenticatedName;

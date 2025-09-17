@@ -12,4 +12,4 @@ var() editoronly array<editoronly MapSet_TA> ExcludeSets;
 var() editoronly array<editoronly MapData_TA> IncludeMaps;
 var() editoronly array<editoronly MapData_TA> ExcludeMaps;
 var() array<MapData_TA> Maps;
-var const transient array<MapData_TA> Maps_Pristine;
+var transient array<MapData_TA> Maps_Pristine;

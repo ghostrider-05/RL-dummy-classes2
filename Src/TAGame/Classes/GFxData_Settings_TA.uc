@@ -47,6 +47,7 @@ var transient string OldWindowMode;
 var transient bool OldVSync;
 var transient bool bSettingRenderDetail;
 var transient bool bSettingCameraPreset;
+var bool IsCurrentResolutionNative;
 var transient Profile_TA Profile;
 var transient SaveData_TA SaveData;
 var transient GameViewportClient_X Viewport;
@@ -75,6 +76,9 @@ var const localized string WarnCrossPlatformTournament;
 var const localized string WarnCrossPlatformTournamentAndParty;
 var const localized string DisableAndLeave;
 var const localized string WarnChangingScheduleRegion;
+var GFxData_UserSetting_TA ResolutionSetting;
+var string DraggedScreenResolutionLabel;
+var string DraggedScreenResolutionValue;
 
 defaultproperties
 {

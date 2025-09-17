@@ -11,9 +11,11 @@ var const ErrorType InvalidKey;
 var const ErrorType PlayerAlreadyPremium;
 var const ErrorType DoesNotOwnPremium;
 var const ErrorType PurchasableNotFound;
+var const ErrorType InvalidClaim;
 
 defaultproperties
 {
+	
 	
 	
 	

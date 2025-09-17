@@ -107,6 +107,7 @@ var transient bool bCanBeAttached;
 var transient bool bItemFreeze;
 var repnotify bool bWarnBallReset;
 var bool bCanBeScored;
+var bool bCanEndRoundOnGroundTouch;
 var repnotify bool bPossessionEnabled;
 var() Vector MagnusCoefficient;
 var() float MagnusMinSpeed;
@@ -163,6 +164,7 @@ defaultproperties
 	bFadeIn=true
 	bFadeOut=true
 	bCanBeScored=true
+	bCanEndRoundOnGroundTouch=true
 	//BallCamTarget=BallCamTarget_TA'Default__Ball_TA.DefaultBallCamTarget'
 	HitTeamNum=255
 	PredictionTimestep=0.050

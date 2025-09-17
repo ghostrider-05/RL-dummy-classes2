@@ -10,15 +10,13 @@ var() config bool bAllowPerCon;
 var config bool bRequiresPerCon;
 var() bool bAllowPsyNetParty;
 var() config bool bSendPingMessage;
-var() bool bAllowServerBacktraceUploads;
-var() bool bAllowServerBacktraceLogUploads;
-var() bool bAllowClientBacktraceUploads;
-var() bool bAllowClientBacktraceLogUploads;
+var() bool bAllowBacktraceUploads;
+var() bool bAllowBacktraceLogUploads;
 var() bool bAllowPlayerCancelMatch;
 var() config float PerConTimeout;
 var() config float PerConPingInterval;
-var() array<_Types_Core.OnlinePlatform> DisabledServerBacktracePlatforms;
-var() array<_Types_Core.OnlinePlatform> DisabledClientBacktracePlatforms;
+var() string BacktraceURL;
+var() string BacktraceToken;
 var() float FreshConnectionWindow;
 var() float MatchmakingHeartbeatTimeSeconds;
 var() config array<config string> SuppressHeadersForDebug;
@@ -30,8 +28,6 @@ defaultproperties
 	/**bRequiresPerCon=true*/
 	bAllowPsyNetParty=true
 	/**bSendPingMessage=true*/
-	bAllowServerBacktraceUploads=true
-	bAllowServerBacktraceLogUploads=true
 	bAllowPlayerCancelMatch=true
 	/**PerConTimeout=90.0*/
 	/**PerConPingInterval=60.0*/

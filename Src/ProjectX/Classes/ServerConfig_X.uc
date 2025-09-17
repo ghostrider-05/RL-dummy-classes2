@@ -11,6 +11,7 @@ var() config float HeartbeatRetrySeconds;
 var() config bool bUploadLogFiles;
 var() config bool bUploadReplays;
 var() config bool bFlatbufferRecordInput;
+var bool bPrivateMatchCreatorAdmin;
 var() config int MaxUploadLogFileSize;
 var() config float NetServerMaxTickRate;
 var() config float IdleNetServerMaxTickRate;
@@ -27,6 +28,7 @@ defaultproperties
 	/**bUploadLogFiles=true*/
 	/**bUploadReplays=true*/
 	/**bFlatbufferRecordInput=true*/
+	bPrivateMatchCreatorAdmin=true
 	/**MaxUploadLogFileSize=1048576*/
 	/**NetServerMaxTickRate=57.0*/
 	/**IdleNetServerMaxTickRate=20.0*/

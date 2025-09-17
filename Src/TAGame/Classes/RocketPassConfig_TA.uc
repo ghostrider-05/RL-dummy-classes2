@@ -12,6 +12,8 @@ var int StartRangeSeconds;
 var Qword FinalStartTime;
 var transient bool bIsActive;
 var bool bHideMainMenuButton;
+var string SeasonLogoURL;
+var string NewSeasonModalImageURL;
 
 defaultproperties
 {

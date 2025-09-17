@@ -82,6 +82,7 @@ var transient int MatchShots;
 var transient int MatchDemolishes;
 var transient int MatchBonusXP;
 var transient int MatchBreakoutDamage;
+var transient float TotalIdleTime;
 var repnotify transient bool bMatchMVP;
 var repnotify transient bool bMatchAdmin;
 var transient bool bLoadoutSet;
@@ -110,6 +111,9 @@ var transient Car_TA Car;
 var transient LoadoutData FullLoadouts[2];
 var transient LoadoutAttributesArray FullLoadoutAttributes[2];
 var transient ClientLoadoutOnlineData FullOnlineLoadout[2];
+var transient array<LoadoutProductData> DataProducts;
+var transient array<OnlineProduct_TA> DataOnlineProducts;
+var const int MaxDataProducts;
 var repnotify transient ClientLoadoutData ClientLoadout;
 var repnotify transient ClientLoadoutOnlineData ClientLoadoutOnline;
 var repnotify transient ClientLoadoutDatas ClientLoadouts;
@@ -144,6 +148,8 @@ var transient int BoostPickups;
 var transient int SmallBoostsCollected;
 var transient int BigBoostsCollected;
 var transient int MaxDodgeStreak;
+var transient float BoostUsed;
+var transient int Dodges;
 var transient int BallTouches;
 var transient int CarTouches;
 var repnotify transient PRI_TA ReplacingBotPRI;
@@ -166,6 +172,7 @@ var CarGrappleTracker_TA CarGrappleTracker;
 var StayAsPartyVoter_TA StayAsPartyVoter;
 var StayAsPartyVoteYes_TA StayAsPartyVoteYes;
 var PickupTimer_TA PickupTimer;
+var repnotify ViralItemActor_TA ViralItemActor;
 var transient int TimeTillItem;
 var transient int MaxTimeTillItem;
 var ProductsConfig_TA ProductsConfig;
@@ -184,6 +191,7 @@ defaultproperties
 {
 	FullLoadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	FullLoadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
+	MaxDataProducts=1
 	CameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0)
 	CameraPitch=128
 	CameraYaw=128
@@ -217,9 +225,10 @@ replication
 
 	 if(bNetInitial && Role==ROLE_Authority)
 		MatchAssists, MatchBreakoutDamage, 
-		MatchGoals, MatchSaves, 
-		MatchScore, MatchShots, 
-		bMatchMVP, bUsingItems;
+		MatchDemolishes, MatchGoals, 
+		MatchSaves, MatchScore, 
+		MatchShots, bMatchMVP, 
+		bUsingItems;
 
 	 if(bNetInitial/**Empty key for position: 47.*/)
 		PrimaryTitle, SecondaryTitle;
@@ -236,12 +245,18 @@ replication
 		PossessionDenials, PossessionSteals, 
 		SelfDemolitions;
 
-	 if(bNetInitial/**Missing key for position: 87.*/)
+	 if(bNetInitial/**Missing key for position: 97.*/)
 		PickupTimer, QuitSeverity, 
 		ReplacingBotPRI, bAbleToStart, 
 		bMatchAdmin, bStartVoteToForfeitDisabled;
 
-	 if(bNetInitial/**Missing key for position: 112.*/)
+	 if(bNetInitial/**Missing key for position: 122.*/)
 		BotAvatarProductID, BotBannerProductID, 
 		BotProductName, PersistentCamera;
+
+	 if(bNetInitial/**Missing key for position: 132.*/)
+		ViralItemActor;
+
+	 if(bNetInitial/**Missing key for position: 142.*/)
+		TotalGameTimePlayed, TotalIdleTime;
 }

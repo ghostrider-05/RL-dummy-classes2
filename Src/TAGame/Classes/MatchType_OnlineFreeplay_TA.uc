@@ -7,5 +7,6 @@ class MatchType_OnlineFreeplay_TA extends MatchType_Private_TA;
 
 defaultproperties
 {
+	
 	MatchTypeName=Training
 }

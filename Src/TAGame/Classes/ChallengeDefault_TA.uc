@@ -31,3 +31,4 @@ var databinding Texture NotifyAvailableImage;
 var databinding Texture NotifyCompleteImage;
 var databinding int BackgroundColor;
 var array<int> UnlockChallengeIDs;
+var databinding int Sort;

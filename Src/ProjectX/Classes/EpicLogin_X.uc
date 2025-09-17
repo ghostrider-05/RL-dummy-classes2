@@ -37,7 +37,6 @@ var bool bIsExternalUIOpen;
 var databinding string ParentalConsentURL;
 var databinding EpicLogin_X.AgeGateState CabinedFlowState;
 var EpicLogin_X.AgeGateState OldCabinedFlowState_Switch;
-var int LoginFailureCount;
 var Error LoginError;
 var Qword LoginErrorTimestamp;
 var EpicConfig_X EpicConfig;

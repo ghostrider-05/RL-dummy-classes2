@@ -60,6 +60,7 @@ var databinding string CartTotal;
 var transient string Currency;
 var transient bool TransactionInProgress;
 var bool bCatalogReady;
+var databinding bool bShowJapaneseDisclaimer;
 var transient GFxModal_X ModalProcessing;
 var int BlackMarketSkinProductID;
 var transient float CatalogExpirationTime;
@@ -74,6 +75,7 @@ var OnlinePurchaseInterface PurchaseInterface;
 var PsyNetConnection_X PsyNetConnection;
 var const localized string RegionRestrictedOpenCrate;
 var export editinline transient OnlineProductStoreSet_TA OnlineProductStoreSet;
+var databinding const localized string JapaneseDisclaimerBody;
 
 defaultproperties
 {
@@ -82,6 +84,7 @@ defaultproperties
 	PurchaseTimeoutTime=60.0
 	GetPriceTimeoutTime=10.0
 	/**RegionRestrictedOpenCrate="Sorry, your country’s regulations do not allow for you to open Crates with keys."*/
+	/**JapaneseDisclaimerBody="UNIMPLEMENTED"*/
 	TableName=MTXGarage
 	bLevelTransitionPersistent=true
 }
