@@ -3,7 +3,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "rootDir": "ci",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "outDir": "./dist/",
     "esModuleInterop": true,

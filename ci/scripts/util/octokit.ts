@@ -199,7 +199,7 @@ export class OctokitUtil extends GitUtil {
         pull: {
             number: number,
             approve?: boolean,
-            labels: string[] | { name: string }[]
+            labels: string[]
         }
     ) {
         if (typeof pull.number !== 'number') return

@@ -10,17 +10,16 @@ const branch = 'update/' + version.replace('.', '')
 const repo = kit.repos.dummy2
 
 const files = await kit.getCurrentModifiedFiles('uc', [
-        'CHANGELOG.md',
-        'README.md',
-        'config.toml',
-        'ci/changelog/classes.json',
-        'ci/changelog/extracted-schema.json',
-        'ci/changelog/extracted.json',
-        'ci/changelog/kismet.json',
+    'CHANGELOG.md',
+    'README.md',
+    'config.toml',
+    'ci/changelog/classes.json',
+    'ci/changelog/extracted-schema.json',
+    'ci/changelog/extracted.json',
+    'ci/changelog/kismet.json',
 ])
 
-const downloadUrl = kit.descriptions.getDownloadLink(repo, branch)
-const description = await kit.descriptions.createPullRequest('newVersion', files, downloadUrl)
+const description = await kit.descriptions.createPullRequest('newVersion', files, repo, branch)
 
 const title = 'Update to Rocket League ' + version
 

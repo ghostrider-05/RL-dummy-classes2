@@ -7,7 +7,7 @@ DO NOT EDIT ./README.md, instead edit ./ci/templates/readme.md!
 [!["Recompile warning"](https://img.shields.io/badge/Recompile%20warnings-{{warnings}}-orange)](https://github.com/ghostrider-05/RL-dummy-classes2/issues/4)
 [![Chat on Discord](https://img.shields.io/badge/chat-discord-5865F2?logo=discord)][discord]
 
-Is a class working incorrect? [Create an issue](https://github.com/ghostrider-05/RL-dummy-classes2/issues)
+Is a class working incorrect? [Create an issue](https://github.com/ghostrider-05/RL-dummy-classes2/issues) or message ghostrider-05 [on Discord][discord].
 
 ## Getting started
 
@@ -58,6 +58,23 @@ UDK make -full
 ```
 
 That's it!
+
+</details>
+
+<details>
+<summary>Scripts to update classes</summary>
+
+## Update to a new version
+
+1. Update the game to the new version.
+1. Set `Version` in `config.toml` to the new version.
+1. Run `npm start`. Update all cases to recompile without errors.
+1. Run `npm run github:new` to create a new pull request.
+1. Merge the pull request.
+
+## Sync with the dummy classes repo
+
+To merge only some classes with the [Dummy classes repo][dc], as that repo is more used, run `npm run github:merge` and pick the classes to merge.
 
 </details>
 

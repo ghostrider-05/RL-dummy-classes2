@@ -14,9 +14,7 @@ const title = 'synchronize: ' + await askInput('The title of the PR: ')
 const branch = 'sync/' + await askInput('The branch name for the PR: ')
 const commitMsg = await askInput('The commit message in the PR: ')
 
-const description = await kit.descriptions.createPullRequest('update', files, 
-    kit.descriptions.getDownloadLink(kit.repos.fork, branch)
-)
+const description = await kit.descriptions.createPullRequest('update', files, kit.repos.fork, branch)
 console.log(`Uploading ${files.length} classes...`)
 
 await kit.uploadToRepo(
