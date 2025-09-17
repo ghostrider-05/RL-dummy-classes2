@@ -14,6 +14,7 @@ var databinding string Description;
 var databinding Qword ScheduleID;
 var databinding int TeamSize;
 var databinding byte GameMode;
+var array<string> GameModesDisplayNames;
 var databinding bool bIsIneligible;
 var databinding bool bCanCheckIn;
 var databinding bool bRegistered;

@@ -56,6 +56,9 @@ var databinding bool bDisableDivisions;
 var bool bCheckedBootMessage;
 var databinding bool bUseSteamInput;
 var transient bool bControllerConnected;
+var bool bCompletedChallengesForCompetitive;
+var bool bLegacyPlayer;
+var bool bGuestAccount;
 // Localized error received if savedata was unable to load
 var databinding string SaveDataError;
 // Localized error received if something went wrong during the signin process
@@ -89,17 +92,14 @@ var databinding name LastMatchType;
 var databinding float IdleKickSeconds;
 var databinding ProductHashID ContainerToOpenId;
 var databinding ERankInfoDisplayType RankInfoDisplayType;
-var transient byte OrphanedControllerId;
+var databinding EInfectedType InfectedStatus;
 var PersonaSave_TA PersonaSave;
 var databinding UniqueNetId PlayerID;
 var transient LocalPlayer_TA Player;
-var transient GFxModal_X ModalOrphaned;
 
 defaultproperties
 {
-	bControllerConnected=true
 	Team=-1
-	OrphanedControllerId=255
 	
 	TableName=LocalPlayer
 	bLevelTransitionPersistent=true

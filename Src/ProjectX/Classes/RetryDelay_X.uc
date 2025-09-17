@@ -7,3 +7,9 @@ class RetryDelay_X extends Object;
 
 var name Id;
 var array<float> DelaySeconds;
+var bool bUseRandomMultiplier;
+
+defaultproperties
+{
+	bUseRandomMultiplier=true
+}

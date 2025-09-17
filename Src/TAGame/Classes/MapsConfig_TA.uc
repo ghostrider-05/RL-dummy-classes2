@@ -33,5 +33,20 @@ struct OnlineMapSet
 	}
 };
 
+struct MapSetMapData
+{
+	var MapSet_TA MapSet;
+	var array<MapData_TA> MapsToAdd;
+	var array<MapData_TA> MapsToRemove;
+
+	structdefaultproperties
+	{
+		MapSet=None
+		MapsToAdd.Empty
+		MapsToRemove.Empty
+	}
+};
+
 var() databinding array<OnlineMapSet> OnlineMapSets;
+var array<MapSetMapData> ClientMapSetChanges;
 var ContentConfig_X ContentConfig;

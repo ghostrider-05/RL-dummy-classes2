@@ -6,7 +6,7 @@
 class OnlineGamePlaylists_X extends Online_X within OnlineGame_Base_X
 	implements(IOnlineGamePlaylists_X);
 
-var() class<GFxSoundPack_X> PlaylistClass;
+var() class PlaylistClass;
 var transient array<GameSettingPlaylist_X> DownloadedPlaylists;
 var() RankedConfig_X RankedConfig;
 var const localized string CompetitiveCategory;

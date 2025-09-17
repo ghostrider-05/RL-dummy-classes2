@@ -13,6 +13,7 @@ var const localized string PlayerLeavePartyString;
 var const localized string LocalPlayerLeavePartyString;
 var const localized string PlayerNewLeaderPartyString;
 var export editinline ProductAssetCache_TA AssetCache;
+var array<int> ChallengesRequired;
 var bool bIsVerifyingProducts;
 var EOSVoiceManager_TA VoiceManager;
 

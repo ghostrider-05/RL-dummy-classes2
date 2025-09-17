@@ -29,5 +29,5 @@ struct native UploadStatDataSet
 	}
 };
 
-var string MatchGuid;
+var string MatchGUID;
 var int PlaylistId;

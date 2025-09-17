@@ -85,7 +85,7 @@ defaultproperties
 	CabinedModeURL="/v1/accounts?accountId={AccountId}"
 	CreateAccountURL="/v1/accounts"
 	DefaultChatPermissionLevel=CPL_Nobody
-	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false,VoiceReporting=VRP_Always)
+	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false,VoiceReporting=VRP_Always,TextReporting=VRP_Always,bFilterMatureLanguage=true)
 	ForgotPinURL="https://rocketleague.com/pin-reset/"
 	ParentalControlsURL="https://rl.gg/cabinedAccounts"
 	PrivacyPolicyURL="https://www.epicgames.com/site/privacypolicy"

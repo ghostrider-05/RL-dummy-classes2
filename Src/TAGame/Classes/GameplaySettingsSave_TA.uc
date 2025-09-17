@@ -23,6 +23,7 @@ var bool bIsTradingEnabled;
 var bool bFirstTimeDefaultVoice;
 var bool bFirstTimeDefaultText;
 var bool bFirstTimeDefaultTrade;
+var bool bFilterMatureLanguage;
 var EChatFilter QuickChatFilter;
 var EChatFilter MatchChatFilter;
 var EChatFilter PartyChatFilter;

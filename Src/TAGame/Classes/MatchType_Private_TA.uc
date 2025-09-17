@@ -7,5 +7,6 @@ class MatchType_Private_TA extends MatchType_Custom_TA;
 
 defaultproperties
 {
+	
 	MatchTypeName=Private
 }

@@ -17,6 +17,7 @@ struct ReservationLoadout
 	}
 };
 
+var ClubsConfig_TA ClubsConfig;
 var transient array<ReservationLoadout> Loadouts;
 
 defaultproperties

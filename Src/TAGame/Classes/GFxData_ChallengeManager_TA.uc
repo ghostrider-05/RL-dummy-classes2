@@ -17,10 +17,15 @@ var databinding EChallengeFilter ActiveChallengeFilter;
 var ChallengeManager_TA ChallengeManager;
 var array<GFxData_ChallengePage_TA> GFxChallengePages;
 var array< class > ChallengeFilters;
+var transient string LastSelectedPage;
+var transient string LastSelectedSubfolder;
+var const string MainMenuString;
+var ChallengeConfig_TA ChallengeConfig;
 
 defaultproperties
 {
 	ChallengeFilters(0)=class'ChallengeFilter_Default_TA'
 	ChallengeFilters(1)=class'ChallengeFilter_Progress_TA'
+	MainMenuString="MainMenu"
 	TableName=ChallengeManager
 }

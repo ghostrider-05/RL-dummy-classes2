@@ -67,11 +67,13 @@ struct GFxClubActionData
 {
 	var databinding string LocalizedName;
 	var databinding EClubMemberAction ClubAction;
+	var int Priority;
 
 	structdefaultproperties
 	{
 		LocalizedName=""
 		ClubAction=ClubMemberAction_RemoveMember
+		Priority=0
 	}
 };
 
@@ -118,7 +120,6 @@ var databinding int MatchesPlayed;
 var databinding float WinPercent;
 var databinding string TimePlayed;
 var databinding array<GFxSeasonBadgesData> PreviousSeasonBadges;
-var array<name> MilestoneStatNames;
 var array<string> MilestoneStatDisplayNames;
 var array<GFxClubSeasonMilestoneData> SeasonMilestoneData;
 var databinding array<GFxClubStatData> Stats;
@@ -216,7 +217,7 @@ defaultproperties
 	
 	
 	
-	/**RemoveMemberLoc="Remove Player"*/
+	/**RemoveMemberLoc="Remove Player from Club"*/
 	/**SetClubOwnerLoc="Set Club Owner"*/
 	/**SetClubManagerLoc="Set Club Manager"*/
 	/**RemoveClubManagerLoc="Remove Club Manager"*/
@@ -228,19 +229,19 @@ defaultproperties
 	/**AddEpicFriendLoc="Add As Epic Friend"*/
 	/**RemoveEpicFriendLoc="Remove Epic Friend"*/
 	/**ReportMemberLoc="Report Player"*/
-	ActionsOwnerToManager(0)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember)
-	ActionsOwnerToManager(1)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubOwner)
-	ActionsOwnerToManager(2)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveClubManager)
-	ActionsOwnerToManager(3)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
-	ActionsOwnerToMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember)
-	ActionsOwnerToMember(1)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubOwner)
-	ActionsOwnerToMember(2)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubManager)
-	ActionsOwnerToMember(3)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
-	ActionsManagerToOwner(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
-	ActionsManagerToManager(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
-	ActionsManagerToMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember)
-	ActionsManagerToMember(1)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
-	ActionsMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember)
+	ActionsOwnerToManager(0)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubOwner,Priority=0)
+	ActionsOwnerToManager(1)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveClubManager,Priority=0)
+	ActionsOwnerToManager(2)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember,Priority=0)
+	ActionsOwnerToManager(3)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember,Priority=0)
+	ActionsOwnerToMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubOwner,Priority=0)
+	ActionsOwnerToMember(1)=(LocalizedName="",ClubAction=ClubMemberAction_SetClubManager,Priority=0)
+	ActionsOwnerToMember(2)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember,Priority=0)
+	ActionsOwnerToMember(3)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember,Priority=0)
+	ActionsManagerToOwner(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember,Priority=0)
+	ActionsManagerToManager(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember,Priority=0)
+	ActionsManagerToMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_RemoveMember,Priority=0)
+	ActionsManagerToMember(1)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember,Priority=0)
+	ActionsMember(0)=(LocalizedName="",ClubAction=ClubMemberAction_ReportMember,Priority=0)
 	TableName=Clubs
 	bLevelTransitionPersistent=true
 }

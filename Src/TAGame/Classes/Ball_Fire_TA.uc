@@ -7,19 +7,32 @@ class Ball_Fire_TA extends Ball_God_TA
 	config(Game)
 	hidecategories(Navigation);
 
+var() ParticleSystem SpinPSArchetype;
+var export editinline ParticleSystemComponent SpinPSC;
+var string ParticleColorParamName;
+var LinearColor DefaultParticleColor;
+var LinearColor SupersonicParticleColor;
 var const float SecondsToRampUp;
 var const float MinSpeedScalar;
 var const float MinRedirectScalar;
-var float TeamNumChangeTimestamp;
+var repnotify float TeamNumChangeTimestamp;
+var float TimeSinceLastChangeTimeStamp;
 var const bool bUseTargetTeamIndex;
+var transient bool bAtSupersonicThreshold;
 var const float MaxDistanceForSave;
 var const float DotProductSaveThreshold;
 var const float TargetLowSpeedDistanceThreshold;
 var const float TargetLowSpeedThreshold;
 var const float TargetLowSpeedScalar;
+var const float TargetAlphaThreshold;
+var AkSoundCue SpeedupCue;
+var transient int SpeedThresholdState;
 
 defaultproperties
 {
+	ParticleColorParamName="Color"
+	DefaultParticleColor=(R=0.0,G=0.0,B=0.0,A=1.0)
+	SupersonicParticleColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 	SecondsToRampUp=10.0
 	MinSpeedScalar=0.80
 	MinRedirectScalar=0.350
@@ -28,6 +41,7 @@ defaultproperties
 	TargetLowSpeedDistanceThreshold=2000.0
 	TargetLowSpeedThreshold=300.0
 	TargetLowSpeedScalar=2.0
+	TargetAlphaThreshold=1.0
 	TargetBlendScaleXY=6.450
 	bSwapTeamOnWorldHit=false
 	bBackwardsDirectionCheckEnabled=false

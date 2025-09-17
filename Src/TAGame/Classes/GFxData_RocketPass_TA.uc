@@ -33,11 +33,13 @@ struct RocketPassProduct
 {
 	var databinding ProductHashID HashID;
 	var databinding int Tier;
+	var databinding ERocketPassTierType UnlockType;
 
 	structdefaultproperties
 	{
 		HashID=(Id=0)
 		Tier=0
+		UnlockType=Unknown
 	}
 };
 
@@ -50,18 +52,22 @@ var databinding Qword StartTime;
 var databinding Qword EndTime;
 var export editinline transient OnlineProductStoreSet_TA RocketPassSet;
 var transient AsyncTask PendingMasterTask;
-var const localized string RegionRestrictedPurchaseTiers;
 var const name MainMenuName;
 var const name RocketPassMenuName;
 var databinding bool bHideMainMenuButton;
 var() transient RocketPass_TA RocketPass;
 var transient RocketPassConfig_TA RocketPassConfig;
+var OnlineImageDownloaderWeb ImageDownloader;
+var const name RocketPassIDKey;
+var transient int UISavedValueRocketPassID;
+var RocketPassNotificationsManager_TA RocketPassNotificationsManager;
 
 defaultproperties
 {
-	/**RegionRestrictedPurchaseTiers="Sorry, your country’s regulations prevent Rocket Pass tier purchasing."*/
 	MainMenuName=RootMenuMovie
 	RocketPassMenuName=RocketPassMenuMovie
+	RocketPassIDKey=RocketPassID
 	TableName=RocketPass
 	
+	bLevelTransitionPersistent=true
 }

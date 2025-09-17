@@ -5,7 +5,7 @@
 *******************************************************************************/
 class GetUploadUrlsMatch_TA extends Object;
 
-var string MatchGuid;
+var string MatchGUID;
 var Qword RecordStartTimestamp;
 var int Playlist;
 var array<name> Mutators;

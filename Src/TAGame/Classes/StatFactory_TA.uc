@@ -124,10 +124,13 @@ struct StatEventCollection
 	var() StatEvent_TA BoostUsed;
 	var() StatEvent_TA Dodges;
 	var() StatEvent_TA DistanceDrivenMeters;
+	var() StatEvent_TA SupersonicDistanceDrivenMeters;
 	var() StatEvent_TA DistanceFlown;
 	var() StatEvent_TA CrossbarHits;
 	var() StatEvent_TA DoubleGrapple;
 	var() StatEvent_TA MaxDodgeStreak;
+	var() StatEvent_TA InfectedPlayersDefeated;
+	var() StatEvent_TA PlayersInfected;
 
 	structdefaultproperties
 	{
@@ -186,10 +189,13 @@ struct StatEventCollection
 		BoostUsed=None
 		Dodges=None
 		DistanceDrivenMeters=None
+		SupersonicDistanceDrivenMeters=None
 		DistanceFlown=None
 		CrossbarHits=None
 		DoubleGrapple=None
 		MaxDodgeStreak=None
+		InfectedPlayersDefeated=None
+		PlayersInfected=None
 	}
 };
 

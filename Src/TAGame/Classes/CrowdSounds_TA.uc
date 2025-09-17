@@ -18,6 +18,7 @@ var() CrowdExcitementSounds RelevantDemolition;
 var() CrowdExcitementSounds KickoffTouch;
 var() CrowdExcitementSounds TenseClear;
 var() CrowdExcitementSounds CrossbarHit;
+var() CrowdExcitementSounds CrossbarHitSpecial;
 
 defaultproperties
 {
@@ -34,4 +35,5 @@ defaultproperties
 	KickoffTouch=(Name=KickoffTouch,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
 	TenseClear=(Name=TenseClear,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
 	CrossbarHit=(Name=CrossbarHit,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
+	CrossbarHitSpecial=(Name=CrossbarHitSpecial,Cooldown=5.0,Sounds=None,CompareType=CVT_Excitement,LastPlayed=0.0)
 }

@@ -8,13 +8,17 @@ class InterpTrackBoostToggle_TA extends InterpTrackToggle
 	hidecategories(Object);
 
 var() ProductAsset_Boost_TA OverrideBoost;
+var() bool bOverrideBoostGlow;
+var bool bIsBoostActive;
+var() float BoostGlowAmount;
 var export editinline array<export editinline ParticleSystemComponent> AttachedParticleSystems;
 var array<name> AttachedSocketNames;
 var Actor CurrentActor;
 var FXActor_Boost_TA CurrentBoostFX;
-var bool bIsBoostActive;
 
 defaultproperties
 {
+	bOverrideBoostGlow=true
+	BoostGlowAmount=1.0
 	TrackTitle="Boost"
 }

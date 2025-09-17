@@ -63,6 +63,8 @@ var float JumpLeaveGroundTime;
 var SimTimeScaleSettings STS;
 var ContinuousSimTimeScaleSettings CSTS;
 var float PushForceConstantScale;
+var byte bAllowBackwardsDemolitions;
+var float DemoSpeedThreshold[EDemolishSpeed];
 
 defaultproperties
 {
@@ -75,4 +77,8 @@ defaultproperties
 	STS=(FixedAdjustSimTimeRate=0.0090)
 	CSTS=(TimeDilations=1.02560,TimeDilations[1]=1.00630,TimeDilations[2]=1.0,TimeDilations[3]=0.99380,TimeDilations[4]=0.97560,Inputs_Starved=2,Inputs_Good=4,Inputs_Saturated=6,Inputs_ExtremelySaturated=14,Inputs_Max=20,ExtraBufferMax=8,ExtraBufferHistorySeconds=30.0,ExtraBufferUpdatePeriod=1.0)
 	PushForceConstantScale=1.0
+	bAllowBackwardsDemolitions=1
+	DemoSpeedThreshold[2]=900.0
+	DemoSpeedThreshold[3]=1300.0
+	DemoSpeedThreshold[4]=1700.0
 }

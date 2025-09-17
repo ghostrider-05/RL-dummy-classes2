@@ -20,4 +20,5 @@ struct PlayerClubSyncResult
 var export editinline OnlineClubCache_X Cache;
 var array<RPC_GetClubDetails_X> SyncingClubs;
 var array<RPC_GetPlayerClubDetails_X> SyncingPlayers;
+var array<RPC_GetClubDetailsArray_X> SyncingClubsArray;
 var array<PlayerClubSyncResult> PlayerClubSyncResults;

@@ -14,6 +14,7 @@ defaultproperties
 	//Loadout=ProductLoader_TA'Default__CinematicsCar_TA.DefaultCarLoadout'
 	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__CinematicsCar_TA.CarTrajectoryComponent0'
 	//NameplateComponentCar=NameplateComponentCar_TA'Default__CinematicsCar_TA.NameplateComponentCar0'
+	//ViralItemFXComponent=ViralItemFXComponent_TA'Default__CinematicsCar_TA.ViralItemFXComponent0'
 	begin object name=DefaultMesh
 		ReplacementPrimitive=None
 	end object

@@ -29,4 +29,5 @@ defaultproperties
 	Default2PSplitType=eSST_2P_VERTICAL
 	Default3PSplitType=eSST_3P_FAVOR_SIDELEFT
 	
+	
 }

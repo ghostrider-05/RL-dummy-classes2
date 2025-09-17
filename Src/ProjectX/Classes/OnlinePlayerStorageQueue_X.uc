@@ -8,7 +8,7 @@ class OnlinePlayerStorageQueue_X extends Object within OnlinePlayerStorage_X;
 struct PendingStorage
 {
 	var Object Data;
-	var class<GFxSoundPack_X> DataClass;
+	var class DataClass;
 	var int Tick;
 
 	structdefaultproperties

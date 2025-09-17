@@ -39,6 +39,7 @@ var bool bIsBotMatch;
 var bool bAllowTeamVoiceChat;
 var bool bAllowSpectatorVoiceChat;
 var bool bAlwaysShowMatchTypeLabel;
+var transient bool bGameTearingDown;
 // If multiplayer, limits on how many people can play this event
 var() int MinPlayers;
 // If multiplayer, limits on how many people can play this event

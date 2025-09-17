@@ -7,3 +7,4 @@ class CrossplayConfig_X extends OnlineConfig_X;
 
 var() array<CrossplayGroup> Groups;
 var() array<CrossplayGroup> DisabledCrossplayGroups;
+var() bool bAllowCrossplayTextChat;

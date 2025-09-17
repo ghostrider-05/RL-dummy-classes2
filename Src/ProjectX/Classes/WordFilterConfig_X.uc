@@ -8,6 +8,7 @@ class WordFilterConfig_X extends OnlineConfig_X
 
 var() bool bSanitizeEntirePhrase;
 var() bool PsyNetFilterEnabled;
+var() bool bAllowMatureLanguage;
 var() int NameHistoryCacheLength;
 var() config array<EWordFilterUsage> IgnoreFilterList;
 var() config array<EWordFilterUsage> PlatformFilterList;
@@ -18,12 +19,12 @@ defaultproperties
 {
 	PsyNetFilterEnabled=true
 	NameHistoryCacheLength=100
-	/**IgnoreFilterList(0)=83
-	IgnoreFilterList(1)=39
+	/**IgnoreFilterList(0)=17
+	IgnoreFilterList(1)=40
 	IgnoreFilterList(2)=0
 	IgnoreFilterList(3)=0*/
-	/**PlatformFilterList(0)=81
-	PlatformFilterList(1)=39*/
+	/**PlatformFilterList(0)=15
+	PlatformFilterList(1)=40*/
 	PsyNetWordFilterBatchDelay=0.10
 	PsyNetWordFilterBatchMaxSize=100
 }

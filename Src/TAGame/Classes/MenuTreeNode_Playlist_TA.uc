@@ -17,6 +17,7 @@ var int PlaylistId;
 var databinding int PlaylistRowIndex;
 var GFxData_Playlist_TA Playlist;
 var int MinCompetitiveXPLevelRequired;
+var array<int> ChallengesRequired;
 var MenuTreePlaylistQueue_TA PlaylistQueue;
 var bool bSelected;
 var databinding EPlaylistSpecialType SpecialDisplayType;

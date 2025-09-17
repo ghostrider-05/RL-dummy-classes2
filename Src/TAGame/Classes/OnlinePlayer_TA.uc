@@ -23,6 +23,7 @@ var ChatHistory_TA ChatHistory;
 var OnlinePlayerMTX_TA MTX;
 var export editinline ObjectProvider RewardDrops;
 var export editinline AccountSettingsComponent_TA AccountSettings;
+var PlayerActivityTracker_TA ActivityTracker;
 var transient UniqueNetId StayAsPartyLeaderID;
 var EOSPermissions_TA EOSPermissions;
 var bool bInCabinedMode;
