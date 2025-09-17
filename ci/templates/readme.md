@@ -133,7 +133,7 @@ PropertyName="Something interesting"
 ## Replication blocks
 
 > [!WARNING]
-> These replication statements may not be correct. Please check the official documentation or ask help in [the Rocket League mapmaking discord server][discord].
+> These replication statements may not be correct and more to give a suggestion on what could be replicated. Please check [the official UDK documentation](https://docs.unrealengine.com/udk/Three/ReplicationHome.html) or reach out to Psyonix with your question, I likely do not know the answer.
 
 If a class has replicated variables, there will be a `replicated` block at the bottom of the class.
 
@@ -155,8 +155,8 @@ The [Engine changelog](/ci/changelog/CHANGELOG_Engine.md) will contain a list of
 
 You can also fetch the changelog (in JSON) from the GitHub API from the outputted files:
 
-- [kismet.json](/ci/changelog/kismet.json): lists new and deleted kismet nodes when switching from [the dummy classes](/ci/changelog/CHANGELOG_Engine.md).
-- [classes.json](CHANGELOG.md): lists new and deleted classes, including kismet nodes, when switching from [the dummy classes](CHANGELOG.md).
+- [kismet.json](/ci/changelog/kismet.json): lists new and deleted kismet nodes when switching from [the dummy classes][dc].
+- [classes.json](/ci/changelog/classes.json): lists new and deleted classes, including kismet nodes, when switching from [the dummy classes][dc].
 - [extracted.json](/ci/changelog/extracted.json): lists all [`AkAudio`, `ProjectX` and `TAGame` classes](/Src/) in [JSON format](/ci/changelog/extracted-schema.json).
 
 ## Credits
