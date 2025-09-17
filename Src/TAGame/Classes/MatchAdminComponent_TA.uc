@@ -7,3 +7,4 @@ class MatchAdminComponent_TA extends Object;
 
 var GameEvent_TA GameEvent;
 var OnlinePlayerPermissions_X PlayerPermissions;
+var ServerConfig_X ServerConfig;

@@ -5,3 +5,14 @@
 *******************************************************************************/
 class MaxTimeSystem_TA extends Object
 	abstract;
+
+var const int ThirtySeconds;
+var const int OneMinute;
+var const int TwoMinutes;
+
+defaultproperties
+{
+	ThirtySeconds=30
+	OneMinute=60
+	TwoMinutes=120
+}

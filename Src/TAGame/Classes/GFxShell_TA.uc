@@ -33,6 +33,7 @@ var transient string PendingErrorTitle;
 var transient string PendingErrorMessage;
 var transient float LastPsyNetReconnectTime;
 var transient GFxModal_X ModalKick;
+var transient GFxModal_X EGSReconnectModal;
 var databinding string BuildEdition;
 var const int MAX_CLIENT_OFFSET;
 var EOSVoiceManager_TA VoiceManager;

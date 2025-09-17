@@ -59,6 +59,7 @@ var transient EOSOnlineStorageUploader_TA EOSStorageUploader;
 var transient OnlineProductExpirationHelper_TA ExpirationHelper;
 var transient CachedUnlockedProducts_TA CachedUnlockedProducts;
 var transient OnlineDLCProductCache_TA OnlineDLCProductCache;
+var transient DataProductCache_TA DataProductCache;
 var transient array<OnlineProduct_TA> NewProductNotificationQueue;
 var float UploadDelayedTime;
 var const string RPRewardForCurrentSeason;

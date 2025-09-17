@@ -8,6 +8,7 @@ class GFxData_RedeemCodes_TA extends GFxDataSingleton_X;
 var transient AsyncTask RedeemTask;
 var const localized string RedeemingTitleString;
 var const localized string RedeemingBodyString;
+var transient CodeRedeemer_TA CodeRedeemer;
 
 defaultproperties
 {

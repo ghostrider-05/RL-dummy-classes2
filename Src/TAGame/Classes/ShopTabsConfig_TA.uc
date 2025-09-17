@@ -14,6 +14,7 @@ var string ShopType_Esports;
 var string ShopType_EsportsTeam;
 var string ShopType_MTX;
 var() array<string> DisabledTypes;
+var() array<string> PlaceholderTypes;
 var IEpochNow Time;
 
 defaultproperties
@@ -29,4 +30,7 @@ defaultproperties
 	ShopType_EsportsTeam="EsportsTeam"
 	ShopType_MTX="MTX"
 	DisabledTypes(0)="Tournament"
+	DisabledTypes(1)="EsportsTeam"
+	PlaceholderTypes(0)="MTX"
+	PlaceholderTypes(1)="ESports"
 }

@@ -8,7 +8,7 @@ class OnlineConfig_X extends Object
 
 struct native ModifierSubscription
 {
-	var class<GFxSoundPack_X> ObjClass;
+	var class ObjClass;
 
 	structdefaultproperties
 	{

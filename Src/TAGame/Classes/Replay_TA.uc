@@ -158,7 +158,7 @@ var transient array< class > PlaybackClasses;
 var transient array< class > IgnoreClasses;
 var databinding transient string FilePath;
 var databinding string Id;
-var string MatchGuid;
+var string MatchGUID;
 var databinding bool bIsUnfinishedMatchReplay;
 var databinding const bool bFileCorrupted;
 var const transient bool bForceKeyframe;

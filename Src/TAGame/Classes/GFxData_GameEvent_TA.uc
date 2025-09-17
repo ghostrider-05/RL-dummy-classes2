@@ -30,6 +30,7 @@ var databinding bool bStayAsPartyButtonEnabled;
 var databinding bool bServerShutdown;
 var databinding bool bAlwaysShowMatchTypeLabel;
 var databinding bool bShowMutatorInfo;
+var databinding bool bUnlimitedTime;
 var databinding string MatchState;
 var databinding name GameState;
 var databinding name MatchType;

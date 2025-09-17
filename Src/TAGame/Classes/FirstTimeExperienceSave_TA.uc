@@ -27,3 +27,8 @@ var FirstTimeExperienceManager_TA.FTELegacyGroupType LegacyGroupType;
 var name ActiveGroup;
 var name ActiveCheckpoint;
 var bool bTentativelyComplete;
+
+defaultproperties
+{
+	LegacyGroupType=LGT_NewUser
+}

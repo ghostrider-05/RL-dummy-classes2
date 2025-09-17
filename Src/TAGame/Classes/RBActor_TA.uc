@@ -123,6 +123,7 @@ var native transient Pointer Constraint2D;
 var native transient Pointer BulletRigidBody;
 var PhysicsConfig_TA PhysicsConfig;
 var repnotify transient byte TeleportCounter;
+var FXActor_X AttackerDemolishFX;
 
 defaultproperties
 {

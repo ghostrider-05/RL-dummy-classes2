@@ -6,3 +6,4 @@
 class IdlePlayer_TA extends Object;
 
 var float StartTime;
+var float StopIdleTime;

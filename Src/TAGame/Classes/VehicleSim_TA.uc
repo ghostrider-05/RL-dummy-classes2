@@ -29,6 +29,7 @@ var transient Vehicle_TA Vehicle;
 var transient Car_TA Car;
 var native const transient Pointer BulletVehicle;
 var transient float SteeringSensitivity;
+var array<float> WheelsSteer;
 var const array<float> TireFrictionScales;
 var const float TireFrictionScale;
 

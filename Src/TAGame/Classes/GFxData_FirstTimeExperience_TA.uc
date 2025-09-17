@@ -8,6 +8,7 @@ class GFxData_FirstTimeExperience_TA extends GFxDataSingleton_X;
 var databinding name CurrentCheckpoint;
 var databinding name CurrentGroup;
 var databinding bool bActive;
+var bool bClosedFirstMatchWindow;
 var FirstTimeExperienceManager_TA FTEManager;
 
 defaultproperties

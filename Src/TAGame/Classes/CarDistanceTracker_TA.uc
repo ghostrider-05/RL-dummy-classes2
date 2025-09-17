@@ -10,6 +10,7 @@ var float TotalDriveDistanceKM;
 var float CurrentDriveDistanceKM;
 var Vector LastAirBoostLocation;
 var float TotalFlownDistanceM;
+var float TotalSupersonicDriveDistanceM;
 
 defaultproperties
 {

@@ -11,7 +11,7 @@ class GFxDataRow_X extends Object
 var() const name TableName;
 var() const name PrimaryKeyName;
 // Act as a proxy for the databinding properties for this class (pretend we have the same properties as him, as far as exporting ActionScript)
-var() const class<GFxSoundPack_X> ProxyClass;
+var() const class ProxyClass;
 // If true, keep this data during level transitions. Otherwise it gets cleared.
 var() bool bLevelTransitionPersistent;
 var const transient Object ProxyObject;

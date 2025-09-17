@@ -35,6 +35,7 @@ const StatName_HighFive = 'HighFive';
 const StatName_BreakoutDamage = 'BreakoutDamage';
 const StatName_BreakoutDamageLarge = 'BreakoutDamageLarge';
 const StatName_HoopsSwishGoal = 'HoopsSwishGoal';
+const F2PSeasonsRestart = 15;
 
 enum EAchievementType
 {
@@ -362,6 +363,39 @@ enum ELegacyBoxStatus
 	LBS_MAX
 };
 
+enum ERocketPassNotificationRewardType
+{
+	RPNRT_None,
+	RPNRT_Premium,
+	RPNRT_Free,
+	RPNRT_MAX
+};
+
+enum ERocketPassTierLockState
+{
+	RPTLock_Locked,
+	RPTLock_Unlocked,
+	RPTLock_Claimed,
+	RPTLock_MAX
+};
+
+enum ERocketPassTierType
+{
+	Unknown,
+	Filler,
+	Reinforcement,
+	Anchor,
+	ProTier,
+	ERocketPassTierType_MAX
+};
+
+enum ERocketPassRewardType
+{
+	RewardType_Product,
+	RewardType_Currency,
+	RewardType_MAX
+};
+
 enum ECurrency
 {
 	Currency_Soft,
@@ -587,15 +621,6 @@ enum EUIMenuState
 	UIMS_StartMenu,
 	UIMS_MainMenu,
 	UIMS_MAX
-};
-
-enum EChatChannel
-{
-	EChatChannel_Match,
-	EChatChannel_Team,
-	EChatChannel_Party,
-	EChatChannel_Individual,
-	EChatChannel_MAX
 };
 
 enum EChatMessageType
@@ -861,6 +886,7 @@ enum EMainMenuBackground
 	MMBG_TokyoArcade,
 	MMBG_FutureUtopia,
 	MMBG_Anniversary,
+	MMBG_Mall,
 	MMBG_MAX
 };
 
@@ -1581,6 +1607,18 @@ struct RocketPassBundleInfo
 	}
 };
 
+struct RocketPassPurchasable
+{
+	var int PurchasableID;
+	var int Count;
+
+	structdefaultproperties
+	{
+		PurchasableID=0
+		Count=0
+	}
+};
+
 struct RocketPassStore
 {
 	var transient array<RocketPassBundleInfo> Tiers;
@@ -1663,19 +1701,147 @@ struct native Currency
 	}
 };
 
-struct RocketPassRewardData
+struct RocketPassClaimData
 {
 	var int Tier;
 	var array<OnlineProductData> ProductData;
-	var array<XPRewardData> XPRewards;
 	var array<Currency> CurrencyDrops;
 
 	structdefaultproperties
 	{
 		Tier=0
 		ProductData.Empty
+		CurrencyDrops.Empty
+	}
+};
+
+struct InstanceAttributes
+{
+	var string Key;
+	var int Value;
+
+	structdefaultproperties
+	{
+		Key=""
+		Value=0
+	}
+};
+
+struct ItemInstances
+{
+	var int ProductID;
+	var string InstanceID;
+	var array<InstanceAttributes> Attributes;
+	var int SeriesID;
+	var float AddedTimestamp;
+	var float UpdatedTimestamp;
+
+	structdefaultproperties
+	{
+		ProductID=0
+		InstanceID=""
+		Attributes.Empty
+		SeriesID=0
+		AddedTimestamp=0.0
+		UpdatedTimestamp=0.0
+	}
+};
+
+struct ItemSetsData
+{
+	var array<ItemInstances> Instances;
+	var string Name;
+	var int Id;
+	var float StartTime;
+	var float EndTime;
+	var bool HideNotification;
+
+	structdefaultproperties
+	{
+		Instances.Empty
+		Name=""
+		Id=0
+		StartTime=0.0
+		EndTime=0.0
+		HideNotification=false
+	}
+};
+
+struct RocketPassRewardData
+{
+	var int Tier;
+	var ERocketPassTierType UnlockType;
+	var bool Claimable;
+	var array<OnlineProductData> ProductData;
+	var array<ItemSetsData> ItemSets;
+	var array<XPRewardData> XPRewards;
+	var array<Currency> CurrencyDrops;
+
+	structdefaultproperties
+	{
+		Tier=0
+		UnlockType=Unknown
+		Claimable=false
+		ProductData.Empty
+		ItemSets.Empty
 		XPRewards.Empty
 		CurrencyDrops.Empty
+	}
+};
+
+struct RocketPassExtendedRewardData extends _Types_TA.RocketPassRewardData
+{
+	var bool bPremiumTier;
+	var ERocketPassTierLockState LockState;
+};
+
+struct RocketPassPage
+{
+	var bool bProTier;
+	var array<RocketPassExtendedRewardData> Rewards;
+	var int MaxTierLevel;
+
+	structdefaultproperties
+	{
+		bProTier=false
+		Rewards.Empty
+		MaxTierLevel=0
+	}
+};
+
+struct TierUnlockRequirements
+{
+	var int Tier;
+	var int Requirement;
+
+	structdefaultproperties
+	{
+		Tier=0
+		Requirement=0
+	}
+};
+
+struct RocketPassPageData
+{
+	var int Id;
+	var int RocketPassID;
+	var int Page;
+	var int StartLevel;
+	var int EndLevel;
+	var int LevelRequiredToUnlock;
+	var int ClaimsRequiredToUnlock;
+	var array<TierUnlockRequirements> TierClaimRequirements;
+
+	structdefaultproperties
+	{
+		Id=0
+		RocketPassID=0
+		Page=0
+		StartLevel=0
+		EndLevel=0
+		LevelRequiredToUnlock=0
+		ClaimsRequiredToUnlock=0
+		TierClaimRequirements.Empty
 	}
 };
 
@@ -2660,6 +2826,7 @@ struct OnlinePlayerMatchData
 	var array<QuickChatGroup> QuickChat;
 	var bool ForceDrop;
 	var bool PreventDrop;
+	var EInfectedType InfectedByType;
 
 	structdefaultproperties
 	{
@@ -2691,6 +2858,21 @@ struct OnlinePlayerMatchData
 		QuickChat.Empty
 		ForceDrop=false
 		PreventDrop=false
+		InfectedByType=InfectedType_NotInfected
+	}
+};
+
+struct PlayerPrivateMatchData
+{
+	var UniqueNetId PlayerID;
+	var float GameSecondsPlayed;
+	var int GameScore;
+
+	structdefaultproperties
+	{
+		
+		GameSecondsPlayed=0.0
+		GameScore=0
 	}
 };
 

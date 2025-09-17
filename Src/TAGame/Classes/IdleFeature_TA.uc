@@ -8,9 +8,11 @@ class IdleFeature_TA extends Object
 
 var() float IdleActionTime;
 var() float IdleWarningTime;
+var() float IdleStartTrackingTime;
 
 defaultproperties
 {
 	IdleActionTime=30.0
 	IdleWarningTime=5.0
+	IdleStartTrackingTime=-1.0
 }

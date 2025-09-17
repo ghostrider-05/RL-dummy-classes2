@@ -8,6 +8,7 @@ class GFxData_EOSVoiceUser_TA extends GFxDataSingleton_X;
 var databinding bool bVoiceAgreementAccepted;
 var databinding bool bVoiceAgeRestricted;
 var databinding bool bHasVoiceChatPermissions;
+var bool bClosedFirstMatchWindow;
 var bool bDropsFinished;
 var bool bInMainMenu;
 var const name NewUserLastFTEGroupName;

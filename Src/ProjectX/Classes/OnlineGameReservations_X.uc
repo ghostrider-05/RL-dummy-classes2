@@ -44,6 +44,7 @@ var transient bool bMatchStarted;
 var transient bool bLockTeams;
 var transient bool bIsBotMatch;
 var transient bool bMigrationInProgress;
+var bool bFirstClubDetailsRequestDone;
 var export editinline ReservationBeacon_X Beacon;
 var export editinline UdpPingBeaconServer_X PingBeacon;
 var transient array<ReservationData> Players;

@@ -4,3 +4,8 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class MatchType_AdHoc_TA extends MatchType_Private_TA;
+
+defaultproperties
+{
+	
+}

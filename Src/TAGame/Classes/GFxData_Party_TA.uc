@@ -21,6 +21,9 @@ struct GFxPartyMember
 	var databinding string ProfileId;
 	var databinding Texture PlayerAvatarTexture;
 	var databinding int XpLevel;
+	var databinding bool bCompletedChallenges;
+	var databinding bool bLegacyPlayer;
+	var databinding bool bGuestAccount;
 	var databinding Qword ClubID;
 	var databinding bool bSplitScreen;
 	var databinding bool bLocalSplitScreen;
@@ -37,6 +40,9 @@ struct GFxPartyMember
 		ProfileId=""
 		PlayerAvatarTexture=None
 		XpLevel=0
+		bCompletedChallenges=false
+		bLegacyPlayer=false
+		bGuestAccount=false
 		
 		bSplitScreen=false
 		bLocalSplitScreen=false

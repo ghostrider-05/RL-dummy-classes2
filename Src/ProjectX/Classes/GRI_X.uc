@@ -14,7 +14,7 @@ var repnotify transient ReplicatedReservationData Reservations[8];
 var transient string GameServerID;
 var repnotify transient bool bGameStarted;
 var transient bool bGameEnded;
-var repnotify string MatchGuid;
+var repnotify string MatchGUID;
 
 defaultproperties
 {
@@ -36,7 +36,7 @@ replication
 		ReplicatedServerRegion;
 
 	 if(bNetDirty)
-		GameServerID, MatchGuid, 
+		GameServerID, MatchGUID, 
 		ReplicatedGameMutatorIndex, ReplicatedGamePlaylist, 
 		Reservations, bGameStarted;
 }

@@ -11,6 +11,8 @@ var databinding int NameLengthMin;
 var databinding int NameLengthMax;
 var int MilestoneDataCacheDurationSeconds;
 var bool bEnforceFriendsOnlyParty;
+var bool bAllowSeverClubInfoReplication;
+var array<name> MilestoneStatNames;
 
 defaultproperties
 {
@@ -19,4 +21,8 @@ defaultproperties
 	NameLengthMin=3
 	NameLengthMax=32
 	MilestoneDataCacheDurationSeconds=300
+	bAllowSeverClubInfoReplication=true
+	MilestoneStatNames(0)=Goal
+	MilestoneStatNames(1)=Save
+	MilestoneStatNames(2)=Assist
 }

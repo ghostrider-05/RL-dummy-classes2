@@ -7,4 +7,5 @@ class OnlineGameWordFilter_X extends Online_X within OnlineGame_Base_X;
 
 var transient array<WordFilterPair> Filtered;
 var() WordFilterConfig_X Config;
+var OnlineGame_X OnlineGame;
 var export editinline PsyNetWordFilter_X PsyNetWordFilter;

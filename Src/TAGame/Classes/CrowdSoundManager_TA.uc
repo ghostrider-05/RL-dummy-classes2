@@ -28,3 +28,4 @@ var transient float TenseNearGoalTime;
 var transient int LastScoreSeparation;
 var transient int ScoreSeparationTrend;
 var transient name LastScoreState;
+var SFXConfig_TA SFXConfig;

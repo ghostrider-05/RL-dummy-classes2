@@ -29,6 +29,7 @@ var() float PaintEmissiveMultiplier;
 var() editoronly array<editoronly MaterialInterface> PaintableMaterials;
 var() editoronly array<editoronly MaterialInterface> PaintableMaterialsMetallic;
 var() editoronly const transient array<editoronly ProductPaint_TA> IncludePaints;
+var() const array<int> IncludePaintIDs;
 var() editoronly array<editoronly ProductPaint_TA> ExcludePaints;
 var() editoronly array<editoronly ProductPaint_TA> UnsupportedPaints;
 var() editoronly const array<editoronly ProductPaint_TA> ShopExclusivePaints;

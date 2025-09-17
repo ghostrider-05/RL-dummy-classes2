@@ -59,6 +59,9 @@ var export editinline NameplateComponentCar_TA NameplateComponentCar;
 var export editinline transient ExplosionHitHandler_TA ExplosionHitHandler;
 var repnotify float ReplicatedCarMaxLinearSpeedScale;
 var name PostMatchAnim;
+var transient int DoubleJumps;
+var transient name DoubleJumpKey;
+var export editinline ViralItemFXComponent_TA ViralItemFXComponent;
 
 defaultproperties
 {
@@ -71,6 +74,8 @@ defaultproperties
 	MaxNumJumps=2
 	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
 	//NameplateComponentCar=NameplateComponentCar_TA'Default__Car_TA.NameplateComponentCar0'
+	DoubleJumpKey=DoubleJumpCounter
+	//ViralItemFXComponent=ViralItemFXComponent_TA'Default__Car_TA.ViralItemFXComponent0'
 	begin object name=DefaultMesh class=CarMeshComponent_TA
 		ReplacementPrimitive=None
 		LightingChannels=(BSP=false,Static=false)

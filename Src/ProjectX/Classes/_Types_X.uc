@@ -62,6 +62,14 @@ enum EClubMemberAction
 	ClubMemberAction_MAX
 };
 
+enum EClubInviteEventType
+{
+	CIET_Accept,
+	CIET_Reject,
+	CIET_Send,
+	CIET_MAX
+};
+
 enum EPsyNetEnvironment
 {
 	EPE_Unset,
@@ -90,7 +98,7 @@ enum EPartyMatchmakingRestriction
 	PMR_MAX
 };
 
-enum EVoiceReportingLevel
+enum EChatReportingLevel
 {
 	VRP_OffWhenPossible,
 	VRP_Always,
@@ -157,6 +165,15 @@ enum EJoinMatchType
 	JMT_Public,
 	JMT_Private,
 	JMT_MAX
+};
+
+enum EClubBadge
+{
+	ClubBadge_None,
+	ClubBadge_Tier1,
+	ClubBadge_Tier2,
+	ClubBadge_Tier3,
+	ClubBadge_MAX
 };
 
 enum EConsoleQualityMode
@@ -373,7 +390,11 @@ struct PartyMember
 	var string MemberName;
 	var int MatchmakeRestrictions;
 	var int LocalControllerId;
+	var bool bDataLoaded;
 	var int XpLevel;
+	var bool bCompletedChallenges;
+	var bool bLegacyPlayer;
+	var bool bGuestAccount;
 	var ECrossPlatformChatState CrossChatState;
 	var bool bDisableCrossPlay;
 	var bool bTradingEnabled;
@@ -383,7 +404,7 @@ struct PartyMember
 	var bool bReadyToConfirmTrade;
 	var PartyMemberServer Server;
 	var UniqueLobbyId PlatformParty;
-	var EVoiceReportingLevel VoiceReportingLevel;
+	var EChatReportingLevel VoiceReportingLevel;
 
 	structdefaultproperties
 	{
@@ -392,7 +413,11 @@ struct PartyMember
 		MemberName=""
 		MatchmakeRestrictions=0
 		LocalControllerId=-1
+		bDataLoaded=false
 		XpLevel=0
+		bCompletedChallenges=false
+		bLegacyPlayer=false
+		bGuestAccount=false
 		CrossChatState=PCCS_Everybody
 		bDisableCrossPlay=false
 		bTradingEnabled=false
@@ -489,7 +514,9 @@ struct PlayerPermissions
 	var ETradePermissionLevel Trade;
 	var bool bRequirePinForFriends;
 	var bool bItemShopNotificationsAllowed;
-	var EVoiceReportingLevel VoiceReporting;
+	var EChatReportingLevel VoiceReporting;
+	var EChatReportingLevel TextReporting;
+	var bool bFilterMatureLanguage;
 
 	structdefaultproperties
 	{
@@ -499,6 +526,8 @@ struct PlayerPermissions
 		bRequirePinForFriends=false
 		bItemShopNotificationsAllowed=false
 		VoiceReporting=VRP_Always
+		TextReporting=VRP_Always
+		bFilterMatureLanguage=true
 	}
 };
 
@@ -932,6 +961,7 @@ struct native ReservationData
 	var bool bDisableCrossPlay;
 	var PlayerReplicationInfo PRI;
 	var byte Team;
+	var Qword ClubID;
 	var AddReservationMessage_X ReservationMessage;
 	var IReservationConnection_X Connection;
 	var bool bIgnoreBeaconDisconnect;
@@ -949,12 +979,41 @@ struct native ReservationData
 		bDisableCrossPlay=false
 		PRI=None
 		Team=255
+		
 		ReservationMessage=None
 		Connection=None
 		bIgnoreBeaconDisconnect=false
 		Skill=(Mu=25.0,Sigma=8.3330)
 		MapLikes.Empty
 		MapDislikes.Empty
+	}
+};
+
+struct ClubReplicationInfo
+{
+	var Qword ClubID;
+	var bool bVerified;
+	var name EquippedTitle;
+	var string ClubName;
+	var string ClubTag;
+	var int PrimaryColor;
+	var int AccentColor;
+	var EClubBadge FirstBadgeTier;
+	var EClubBadge SecondBadgeTier;
+	var EClubBadge ThirdBadgeTier;
+
+	structdefaultproperties
+	{
+		
+		bVerified=false
+		EquippedTitle=None
+		ClubName=""
+		ClubTag=""
+		PrimaryColor=0
+		AccentColor=0
+		FirstBadgeTier=ClubBadge_None
+		SecondBadgeTier=ClubBadge_None
+		ThirdBadgeTier=ClubBadge_None
 	}
 };
 

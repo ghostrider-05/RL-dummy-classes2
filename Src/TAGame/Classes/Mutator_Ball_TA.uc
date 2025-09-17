@@ -5,6 +5,18 @@
 *******************************************************************************/
 class Mutator_Ball_TA extends Mutator_TA;
 
+struct MapBallArcOverride
+{
+	var MapData_TA Map;
+	var Ball_TA BallArchetype;
+
+	structdefaultproperties
+	{
+		Map=None
+		BallArchetype=None
+	}
+};
+
 var GameEvent_Soccar_TA SoccarGame;
 var float BallScale;
 var float BallBounciness;

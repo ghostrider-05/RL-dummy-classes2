@@ -7,7 +7,7 @@ class PsyNetServiceSubscriptions_X extends Component;
 
 struct native ServiceSubscription
 {
-	var class<GFxSoundPack_X> Class;
+	var class Class;
 
 	structdefaultproperties
 	{

@@ -117,6 +117,7 @@ defaultproperties
 	//Loadout=ProductLoader_TA'Default__Car_KnockOut_TA.DefaultCarLoadout'
 	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_KnockOut_TA.CarTrajectoryComponent0'
 	//NameplateComponentCar=NameplateComponentCar_TA'Default__Car_KnockOut_TA.NameplateComponentCar0'
+	//ViralItemFXComponent=ViralItemFXComponent_TA'Default__Car_KnockOut_TA.ViralItemFXComponent0'
 	begin object name=DefaultMesh
 		ReplacementPrimitive=None
 	end object

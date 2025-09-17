@@ -21,6 +21,7 @@ var databinding float LivesVisibility;
 var databinding int RemainingLives;
 var databinding int MaxLives;
 var databinding float BoostAmount;
+var databinding EInfectedType InfectedStatus;
 var export editinline transient NameplateComponent_TA NameplateComponent;
 var transient ProfileGameplaySave_TA GameplaySettings;
 var transient Persona_TA Persona;
