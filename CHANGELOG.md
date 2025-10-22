@@ -5234,6 +5234,14 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 - (8): native
 ```
 
+## OutOfWorldVolume_TA
+
+### flags
+
+```diff
++ (6): placeable
+```
+
 ## PhysicalMaterialProperty_TA
 
 ### variables
@@ -7441,17 +7449,22 @@ Changes between an installation with [dummy classes](https://github.com/RocketLe
 ### defaultproperties
 
 ```diff
-- (11): BrushComponent=BrushComponent0
-- (12): begin object name=BrushComponent0
-- (13): bBlockComplexCollisionTrace=true
-- (14): ReplacementPrimitive=None
-- (15): bAcceptsLights=false
-- (16): CollideActors=false
-- (17): BlockZeroExtent=true
-- (18): AlwaysLoadOnServer=false
-- (19): end object
-- (21): Components(0)=BrushComponent0
-- (23): CollisionComponent=BrushComponent0
+- (12): BrushComponent=BrushComponent0
+- (13): begin object name=BrushComponent0
+- (14): bBlockComplexCollisionTrace=true
+- (15): ReplacementPrimitive=None
+- (16): bAcceptsLights=false
+- (17): CollideActors=false
+- (18): BlockZeroExtent=true
+- (19): AlwaysLoadOnServer=false
+- (20): end object
+- (22): Components(0)=BrushComponent0
+- (24): CollisionComponent=BrushComponent0
+```
+### flags
+
+```diff
++ (6): placeable
 ```
 
 ## StatEvent_TA

@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class GoalCrossbarVolumeManager_TA extends Volume
+	placeable
 	hidecategories(Navigation,Object,Movement,Display);
 
 var PostImpactModifier_TA HitModifier;
