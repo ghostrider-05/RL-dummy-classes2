@@ -15,6 +15,7 @@ var float PitchMaxSpeed;
 var float PitchBlendbackModifier;
 var float PitchBlendbackMin;
 var InterpCurveFloat CameraReturnBlendCurve;
+var string TurntableActorPath;
 var transient float LastAdjustTime;
 var transient TurnTableActor_TA TurntableActor;
 var transient GFxShell_TA Shell;

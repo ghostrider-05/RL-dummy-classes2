@@ -30,6 +30,7 @@ struct CustomGameSetting
 	var array<name> SettingNameExplicit;
 	var databinding bool bPresetLocked;
 	var databinding int RowID;
+	var array<string> PreviouslyBlockedCategories;
 
 	structdefaultproperties
 	{
@@ -44,6 +45,7 @@ struct CustomGameSetting
 		SettingNameExplicit.Empty
 		bPresetLocked=false
 		RowID=0
+		PreviouslyBlockedCategories.Empty
 	}
 };
 

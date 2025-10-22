@@ -10,6 +10,7 @@ var databinding bool bSelected;
 var databinding bool bNotifyNewInfo;
 var databinding bool bNormalRewardsAvailable;
 var databinding bool bPremiumRewardsAvailable;
+var databinding bool bHasChallenges;
 var GFxData_ChallengeFolder_TA GFxParentFolder;
 var array<GFxData_ChallengeFolder_TA> GFxSubFolders;
 var class SubFolderClass;

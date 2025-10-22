@@ -185,6 +185,9 @@ var transient int BallDemolitionSaves;
 var transient int CarDemolitions;
 var transient int BallDemolitions;
 var transient int SelfDemolitions;
+var transient int KeepUpDenials;
+var transient int KeepUpClears;
+var transient int KeepUpPossessions;
 var const transient array<ProductSlot_TA> ValidationFailedClearedSlots;
 
 defaultproperties
@@ -244,6 +247,10 @@ replication
 		CarDemolitions, PossessionClears, 
 		PossessionDenials, PossessionSteals, 
 		SelfDemolitions;
+
+	 if(bNetInitial/**Missing key for position: 87.*/)
+		KeepUpClears, KeepUpDenials, 
+		KeepUpPossessions;
 
 	 if(bNetInitial/**Missing key for position: 97.*/)
 		PickupTimer, QuitSeverity, 

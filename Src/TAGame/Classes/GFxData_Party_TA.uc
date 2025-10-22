@@ -65,11 +65,13 @@ var databinding EPsyNetPartyStatus PsyNetPartyStatus;
 var const localized string RegionRestrictedPlayerTrade;
 var GFxModal_X PartyErrorModal;
 var bool bPendingAllowTrade;
+var databinding bool bDisplayPartyLeaderLeftModal;
+var GameplaySettingsSave_TA GameplaySettingsSave;
 var CrossplayConfig_X CrossplayConfig;
 
 defaultproperties
 {
-	/**RegionRestrictedPlayerTrade="Sorry, your country’s regulations prevent player to player item trading."*/
+	/**RegionRestrictedPlayerTrade="Sorry, your country?s regulations prevent player to player item trading."*/
 	TableName=Party
 	bLevelTransitionPersistent=true
 }

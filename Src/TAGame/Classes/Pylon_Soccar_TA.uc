@@ -25,7 +25,6 @@ var() bool bRandomBallSpawnPoint;
 
 defaultproperties
 {
-	bRandomBallSpawnPoint=true
 	bUseRecast=true
 	
 	CylinderComponent=CollisionCylinder

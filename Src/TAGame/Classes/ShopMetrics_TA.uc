@@ -9,12 +9,16 @@ struct ShopItemData
 {
 	var int ShopItemID;
 	var int NumTimesPreviewed;
+	var int NumTimesPurchaseOpened;
+	var int NumTimesPurchaseCancelled;
 	var array<int> Costs;
 
 	structdefaultproperties
 	{
 		ShopItemID=0
 		NumTimesPreviewed=0
+		NumTimesPurchaseOpened=0
+		NumTimesPurchaseCancelled=0
 		Costs.Empty
 	}
 };

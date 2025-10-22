@@ -48,6 +48,8 @@ var bool bFirstClubDetailsRequestDone;
 var export editinline ReservationBeacon_X Beacon;
 var export editinline UdpPingBeaconServer_X PingBeacon;
 var transient array<ReservationData> Players;
+var transient array<UniqueNetId> PsynetReservationsTeam0Players;
+var transient array<UniqueNetId> PsynetReservationsTeam1Players;
 var transient array<TeamPairHistory> TeamPairHistories;
 var transient array<string> BotNames;
 var() CrossplayConfig_X Crossplay;

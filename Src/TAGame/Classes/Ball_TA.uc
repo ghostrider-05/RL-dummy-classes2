@@ -154,6 +154,8 @@ var const export editinline PitchTekDrawingComponent_TA PitchTekComponent;
 var transient GoalExplosionOrientation_TA GoalExplosionOrientation;
 var FXActor_X PossessionFXActorArchetype;
 var transient FXActor_X PossessionFXActor;
+var Vector AirResistance;
+var Vector MinResistanceVelocity;
 
 defaultproperties
 {
@@ -209,7 +211,8 @@ replication
 
 	 if(bNetDirty)
 		AdditionalCarGroundBounceScaleXY, AdditionalCarGroundBounceScaleZ, 
-		HitTeamNum, MagnusMinSpeed, 
+		AirResistance, HitTeamNum, 
+		MagnusMinSpeed, MinResistanceVelocity, 
 		ReplicatedExplosionData, ReplicatedExplosionDataExtended, 
 		bEndOfGameHidden, bPossessionEnabled, 
 		bWarnBallReset;

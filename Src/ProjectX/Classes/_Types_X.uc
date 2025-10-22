@@ -183,6 +183,15 @@ enum EConsoleQualityMode
 	ConsoleQualityMode_MAX
 };
 
+enum EChatChannel
+{
+	EChatChannel_Match,
+	EChatChannel_Team,
+	EChatChannel_Party,
+	EChatChannel_Individual,
+	EChatChannel_MAX
+};
+
 enum EBanType
 {
 	BanType_None,
@@ -352,6 +361,7 @@ struct PlayerTitleData
 	var databinding name Id;
 	var databinding string Text;
 	var name Category;
+	var int SortPriority;
 	var databinding Color Color;
 	var databinding Color GlowColor;
 
@@ -360,6 +370,7 @@ struct PlayerTitleData
 		Id=None
 		Text=""
 		Category=None
+		SortPriority=0
 		Color=(R=0,G=0,B=0,A=0)
 		GlowColor=(R=0,G=0,B=0,A=0)
 	}
@@ -405,6 +416,7 @@ struct PartyMember
 	var PartyMemberServer Server;
 	var UniqueLobbyId PlatformParty;
 	var EChatReportingLevel VoiceReportingLevel;
+	var EChatReportingLevel TextReportingLevel;
 
 	structdefaultproperties
 	{
@@ -428,6 +440,7 @@ struct PartyMember
 		Server=(ServerName="",CustomPassword="",JoinName="",JoinPassword="",PlaylistId=0)
 		
 		VoiceReportingLevel=VRP_OffWhenPossible
+		TextReportingLevel=VRP_OffWhenPossible
 	}
 };
 
@@ -517,6 +530,8 @@ struct PlayerPermissions
 	var EChatReportingLevel VoiceReporting;
 	var EChatReportingLevel TextReporting;
 	var bool bFilterMatureLanguage;
+	var bool bEnableCPCCShowRoWModal;
+	var bool bEnableCPCCShowRealPrice;
 
 	structdefaultproperties
 	{
@@ -528,6 +543,8 @@ struct PlayerPermissions
 		VoiceReporting=VRP_Always
 		TextReporting=VRP_Always
 		bFilterMatureLanguage=true
+		bEnableCPCCShowRoWModal=false
+		bEnableCPCCShowRealPrice=false
 	}
 };
 
@@ -1140,6 +1157,48 @@ struct native PsyNetPersonaData
 		PlayerName=""
 		PresenceInfo=""
 		PresenceState=""
+	}
+};
+
+struct native MessagePayload
+{
+	var string SenderId;
+	var string RoomId;
+	var string MessageText;
+	var Qword TimeStamp;
+	var int SequenceNumber;
+	var bool bWantsToRecord;
+	var EChatChannel ChannelType;
+	var string MessageId;
+
+	structdefaultproperties
+	{
+		SenderId=""
+		RoomId=""
+		MessageText=""
+		
+		SequenceNumber=0
+		bWantsToRecord=false
+		ChannelType=EChatChannel_Match
+		MessageId=""
+	}
+};
+
+struct SignedMessagePacket
+{
+	var string MessagePayload;
+	var string Signature;
+	var Qword ReceivingTimestamp;
+	var string SanitizedReceivedTextMessage;
+	var string PublicKey;
+
+	structdefaultproperties
+	{
+		MessagePayload=""
+		Signature=""
+		
+		SanitizedReceivedTextMessage=""
+		PublicKey=""
 	}
 };
 

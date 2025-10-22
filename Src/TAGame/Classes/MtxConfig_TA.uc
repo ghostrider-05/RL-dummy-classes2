@@ -6,17 +6,41 @@
 class MtxConfig_TA extends OnlineConfig_X
 	config(Engine);
 
+struct native CurrencyReplacement
+{
+	var string CurrencyString;
+	var string SubstitutionString;
+
+	structdefaultproperties
+	{
+		CurrencyString=""
+		SubstitutionString=""
+	}
+};
+
 var() bool bAllowMicroTransactions;
 var() config bool bAllowCurrencyTrading;
 var() config bool bAllowCurrencyGifting;
 var() config bool bAllowCurrencyForCurrencyTrades;
 var() bool bEnablePlatformStartPurchase;
+var bool bEnableCPCCShowRoWModal;
+var bool bEnableCPCCShowRealPrice;
+var bool bEnableExactAmountPackLogic;
+var bool bLevToEuro;
+var bool bLevBeforeEuro;
 var() int MaxCurrencyWalletAmount;
 var() int MaxCurrencyDailyAmount;
+var int CatalogCacheDurationSeconds;
 var const localized string FulfillmentRestrictedWalletMessage;
 var const localized string FulfillmentRestrictedDailyMessage;
 var const localized string FulfillmentRestrictedTitle;
 var const localized string CurrencyDelimeter;
+var float LevToEuro;
+var int VCFactor;
+var int VCMaxExactPack;
+var int FilteredCatalogItemsMax;
+var string ExactAmountVCPackCategory;
+var array<CurrencyReplacement> CurrencyReplacements;
 
 defaultproperties
 {
@@ -24,8 +48,14 @@ defaultproperties
 	/**bAllowCurrencyTrading=true*/
 	MaxCurrencyWalletAmount=1000000
 	MaxCurrencyDailyAmount=200000
+	CatalogCacheDurationSeconds=600
 	/**FulfillmentRestrictedWalletMessage="Your account inventory is limited to a total of {WalletMax} Credits and Esports Tokens.  Your purchases will be added to your account once you use enough Credits or Esports Tokens to get below the limit and relaunch Rocket League."*/
 	/**FulfillmentRestrictedDailyMessage="Purchases are limited to a total of {DailyMax} Credits and Esports Tokens per day."*/
 	/**FulfillmentRestrictedTitle="Transaction Delayed"*/
 	/**CurrencyDelimeter=","*/
+	LevToEuro=0.5112920
+	VCFactor=50
+	VCMaxExactPack=5000
+	FilteredCatalogItemsMax=6
+	ExactAmountVCPackCategory="ExactAmountVCPack"
 }

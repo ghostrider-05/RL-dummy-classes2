@@ -17,5 +17,6 @@ var transient AkSoundCue GoalScoreStinger;
 var transient ProductAsset_MusicStingers_TA ActiveStinger;
 var ArenaSoundConfig_TA Config;
 var StreamerSafeConfig_TA StreamerSafeConfig;
+var GameEvent_Soccar_TA SoccarEvent;
 var ArenaSoundEvent_TA NextTimedEvent;
 var int TimedEventPlayingID;

@@ -36,6 +36,6 @@ var transient int AccumulatedPlayerLevelBetweenTierLevelNotifies;
 
 defaultproperties
 {
-	/**RegionRestrictedPurchaseTiers="Sorry, your country’s regulations prevent Rocket Pass tier purchasing."*/
+	/**RegionRestrictedPurchaseTiers="Sorry, your country?s regulations prevent Rocket Pass tier purchasing."*/
 	//Bundles=RocketPassBundleContainer_TA'Default__RocketPass_TA.RPBundles'
 }

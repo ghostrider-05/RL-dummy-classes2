@@ -6,3 +6,11 @@
 class EASAuthResponse extends Object;
 
 var string access_token;
+var string token_type;
+var string expires_at;
+var int expires_in;
+var array<string> Features;
+var string organization_id;
+var string product_id;
+var string sandbox_id;
+var string deployment_id;

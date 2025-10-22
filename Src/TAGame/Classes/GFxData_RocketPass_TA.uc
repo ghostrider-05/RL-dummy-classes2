@@ -55,11 +55,17 @@ var transient AsyncTask PendingMasterTask;
 var const name MainMenuName;
 var const name RocketPassMenuName;
 var databinding bool bHideMainMenuButton;
+var transient bool bSavedSeasonActive;
 var() transient RocketPass_TA RocketPass;
 var transient RocketPassConfig_TA RocketPassConfig;
 var OnlineImageDownloaderWeb ImageDownloader;
 var const name RocketPassIDKey;
 var transient int UISavedValueRocketPassID;
+var const name SavedSeasonStatusKey;
+var const string SavedSeasonActiveString;
+var const string SavedSeasonInactiveString;
+var const name SavedSeasonFinalRankKey;
+var const name SavedSeasonClaimsAvailableKey;
 var RocketPassNotificationsManager_TA RocketPassNotificationsManager;
 
 defaultproperties
@@ -67,6 +73,11 @@ defaultproperties
 	MainMenuName=RootMenuMovie
 	RocketPassMenuName=RocketPassMenuMovie
 	RocketPassIDKey=RocketPassID
+	SavedSeasonStatusKey=RocketPassSeasonStatus
+	SavedSeasonActiveString="active"
+	SavedSeasonInactiveString="inactive"
+	SavedSeasonFinalRankKey=RocketPassSeasonFinalRank
+	SavedSeasonClaimsAvailableKey=RocketPassSeasonClaimsAvailable
 	TableName=RocketPass
 	
 	bLevelTransitionPersistent=true

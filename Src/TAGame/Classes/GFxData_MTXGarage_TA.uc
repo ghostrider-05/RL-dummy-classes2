@@ -5,69 +5,21 @@
 *******************************************************************************/
 class GFxData_MTXGarage_TA extends GFxDataSingleton_X;
 
-struct MTXPurchaseInfo
-{
-	var databinding int CatalogID;
-	var databinding string Title;
-	var databinding string Description;
-	var databinding string PriceDescription;
-	var databinding string TabTitle;
-	var databinding Texture Image;
-	var databinding string PurchasePrice;
-	var databinding string OriginalPrice;
-	var databinding int DiscountPercentage;
-	var databinding string ProductHashIDs;
-	var databinding string BundleCurrencies;
-	var databinding bool bCanBePlayerTraded;
-	var databinding bool bIsOwned;
-	var string ImageURL;
-
-	structdefaultproperties
-	{
-		CatalogID=0
-		Title=""
-		Description=""
-		PriceDescription=""
-		TabTitle=""
-		Image=None
-		PurchasePrice=""
-		OriginalPrice=""
-		DiscountPercentage=0
-		ProductHashIDs=""
-		BundleCurrencies=""
-		bCanBePlayerTraded=false
-		bIsOwned=false
-		ImageURL=""
-	}
-};
-
-struct CartInfo
-{
-	var databinding int CatalogID;
-	var databinding int Count;
-
-	structdefaultproperties
-	{
-		CatalogID=0
-		Count=0
-	}
-};
-
-var databinding array<MTXPurchaseInfo> CatalogItems;
-var transient array<MTCatalogInfo> CatalogProducts;
 var databinding array<CartInfo> CartItems;
 var databinding string CartTotal;
-var transient string Currency;
 var transient bool TransactionInProgress;
-var bool bCatalogReady;
+var databinding bool bIsExactPackEnabled;
+var databinding bool bIsCPCCShowRoWModal;
+var databinding bool bIsCPCCShowRealPrice;
 var databinding bool bShowJapaneseDisclaimer;
+var transient bool bTriggerUICallbackState;
+var transient bool ForceAllCurrencySymbolsState;
 var transient GFxModal_X ModalProcessing;
 var int BlackMarketSkinProductID;
-var transient float CatalogExpirationTime;
-var float CatalogCacheDuration;
 var transient EMTXCatalogCategory CatalogCategory;
 var const float PurchaseTimeoutTime;
 var const float GetPriceTimeoutTime;
+var string BulgariaCountryCode;
 var transient GameInfo_GFxMenu_TA Menu;
 var() MtxConfig_TA MtxConfig;
 var OnlineSystemInterface SystemInterface;
@@ -75,16 +27,71 @@ var OnlinePurchaseInterface PurchaseInterface;
 var PsyNetConnection_X PsyNetConnection;
 var const localized string RegionRestrictedOpenCrate;
 var export editinline transient OnlineProductStoreSet_TA OnlineProductStoreSet;
+var databinding const localized string RightOfWithdrawalTitle;
+var databinding const localized string RightOfWithdrawalShopBody;
+var databinding const localized string RightOfWithdrawalRocketPassBody;
+var databinding const localized string RightOfWithdrawalRocketPassTierBody;
+var databinding const localized string RightOfWithdrawalBlueprintBody;
 var databinding const localized string JapaneseDisclaimerBody;
+var const localized string VirtualCurrencyDisclaimerBody;
+var const localized string RealPriceText;
+var const localized string RightOfWithdrawalCallToActionConfirmation;
+var const localized string RealPriceDisclaimerBody;
+var const localized string NoExactPacksRealPriceDisclaimerBody;
+var const localized string DualCurrencyRealPriceText;
+var const localized string DualCurrencyRealPriceDisclaimerBody;
+var const localized string DualCurrencyNoExactPacksRealPriceDisclaimerBody;
+var databinding const localized string OfferInformationText;
+var databinding const localized string ExactPackExplainerText;
+var databinding const localized string ExactPackLabelText;
+var const string RealPriceArgumentVCAmount;
+var const string RealPriceArgumentFormattedRCPrice;
+var const string RightOfWithdrawalArgumentCost;
+var const string RightOfWithdrawalArgumentItemName;
+var const string RightOfWithdrawalArgumentUser;
+var const string DualCurrencyRealPrice1;
+var const string DualCurrencyRealPrice2;
+var transient array<MTXGarageCatalogCache_TA> CatalogCache;
+var databinding array<MTXPurchaseInfo> CatalogItems;
+var transient array<MTCatalogInfo> CombinedCatalogInfoItems;
+var transient array<PriceInfo> PriceInfoItems;
+var transient OnlinePlayer_TA OnlinePlayer;
+var transient array<SonyPricingInfo_TA> SonyPricingInfo;
+var transient SonyPricingInfoConfig_TA SonyPricingInfoConfig;
+var CountryConfig_TA CountryConfig;
+var transient string ActiveCurrency;
 
 defaultproperties
 {
+	ForceAllCurrencySymbolsState=true
 	BlackMarketSkinProductID=1412
-	CatalogCacheDuration=300.0
 	PurchaseTimeoutTime=60.0
 	GetPriceTimeoutTime=10.0
-	/**RegionRestrictedOpenCrate="Sorry, your country’s regulations do not allow for you to open Crates with keys."*/
+	/**RegionRestrictedOpenCrate="Sorry, your country?s regulations do not allow for you to open Crates with keys."*/
+	/**RightOfWithdrawalTitle="Right of Withdrawal"*/
+	/**RightOfWithdrawalShopBody="You can contact player support to request a refund within the next 30 days, for up to 3 purchases lifetime. When you click \\"Confirm\\" you will immediately get access to the content and have no other rights of withdrawal."*/
+	/**RightOfWithdrawalRocketPassBody="When you click \\"Confirm\\" you will immediately get access to the pass and have no rights to withdraw from the purchase."*/
+	/**RightOfWithdrawalRocketPassTierBody="When you click \\"Confirm\\" you will immediately get access to the pass tiers and have no rights to withdraw from the purchase."*/
+	/**RightOfWithdrawalBlueprintBody="When you click \\"Confirm\\" you will immediately get access to the content represented by the Blueprint you are developing and have no rights to withdraw from the purchase."*/
 	/**JapaneseDisclaimerBody="UNIMPLEMENTED"*/
+	/**VirtualCurrencyDisclaimerBody="*Extra Credits percentage shown as compared to price of {VCAmount} Credits pack."*/
+	/**RealPriceText="(equivalent to {FormattedRCPrice}*)"*/
+	/**RightOfWithdrawalCallToActionConfirmation="{Cost} will be used to unlock {ItemName} for {User}. Are you sure you want to continue?"*/
+	/**RealPriceDisclaimerBody="*To buy exactly {VCAmount} Credits, you'd pay {FormattedRCPrice}."*/
+	/**NoExactPacksRealPriceDisclaimerBody="*To buy exactly {VCAmount} Credits where available, you'd pay {FormattedRCPrice}. Exact amount purchase is not supported on this platform."*/
+	/**DualCurrencyRealPriceText="(equivalent to {FormattedRCPrice1} / {FormattedRCPrice2}*)"*/
+	/**DualCurrencyRealPriceDisclaimerBody="*To buy exactly {VCAmount} Credits, you'd pay {FormattedRCPrice1} / {FormattedRCPrice2}."*/
+	/**DualCurrencyNoExactPacksRealPriceDisclaimerBody="*To buy exactly {VCAmount} Credits where available, you'd pay {FormattedRCPrice1} / {FormattedRCPrice2}. Exact amount purchase is not supported on this platform."*/
+	/**OfferInformationText="The Offer You Were Viewing"*/
+	/**ExactPackExplainerText="Amount Needed to Complete Purchase"*/
+	/**ExactPackLabelText="Exact Amount"*/
+	RealPriceArgumentVCAmount="{VCAmount}"
+	RealPriceArgumentFormattedRCPrice="{FormattedRCPrice}"
+	RightOfWithdrawalArgumentCost="{Cost}"
+	RightOfWithdrawalArgumentItemName="{ItemName}"
+	RightOfWithdrawalArgumentUser="{User}"
+	DualCurrencyRealPrice1="{FormattedRCPrice1}"
+	DualCurrencyRealPrice2="{FormattedRCPrice2}"
 	TableName=MTXGarage
 	bLevelTransitionPersistent=true
 }

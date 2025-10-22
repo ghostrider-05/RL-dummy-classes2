@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class GoalCrossbarVolume_TA extends Volume
+	placeable
 	hidecategories(Navigation,Object,Movement,Display);
 
 var() PhysicalMaterial CrossbarMaterial;

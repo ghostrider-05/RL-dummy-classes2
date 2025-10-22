@@ -11,7 +11,8 @@ var native Map_Mirror PersonaMap;
 var const config bool bVerbosePresenceSort;
 var const localized string DeletedAccountDisplayName;
 var transient array<UniqueNetId> EpicIdRequests;
-var OnlineGame_X OnlineGame;
+var OnlineGame_TA OnlineGame;
+var OnlineGameParty_TA OnlineGameParty;
 
 defaultproperties
 {

@@ -171,7 +171,7 @@ defaultproperties
 	LocalizedCopyrightGroups(81)=
 	LocalizedCopyrightGroups(82)=
 	LocalizedCopyrightGroups(83)=
-	LocalizedCopyrightGroups(84)=None
+	LocalizedCopyrightGroups(84)=
 	LocalizedCopyrightGroups(85)=
 	LocalizedCopyrightGroups(86)=
 	LocalizedCopyrightGroups(87)=
