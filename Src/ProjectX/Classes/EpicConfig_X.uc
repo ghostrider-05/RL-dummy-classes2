@@ -68,6 +68,9 @@ var string PrivacyPolicyURL;
 var string ActivateURL;
 var string AccountURL;
 var string TOSURL;
+var string EOSAccessTokenURL;
+var string EOSAccessContentString;
+var string PublicKeyURL;
 var() config string SandboxId;
 var() config string DeploymentId;
 
@@ -85,11 +88,14 @@ defaultproperties
 	CabinedModeURL="/v1/accounts?accountId={AccountId}"
 	CreateAccountURL="/v1/accounts"
 	DefaultChatPermissionLevel=CPL_Nobody
-	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false,VoiceReporting=VRP_Always,TextReporting=VRP_Always,bFilterMatureLanguage=true)
+	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false,VoiceReporting=VRP_Always,TextReporting=VRP_Always,bFilterMatureLanguage=true,bEnableCPCCShowRoWModal=false,bEnableCPCCShowRealPrice=false)
 	ForgotPinURL="https://rocketleague.com/pin-reset/"
 	ParentalControlsURL="https://rl.gg/cabinedAccounts"
 	PrivacyPolicyURL="https://www.epicgames.com/site/privacypolicy"
 	ActivateURL="https://www.rocketleague.com/Activate/"
 	AccountURL="https://www.epicgames.com/account"
 	TOSURL="https://www.epicgames.com/site/tos"
+	EOSAccessTokenURL="https://api.epicgames.dev/auth/v1/oauth/token"
+	EOSAccessContentString="grant_type=external_auth&nonce=noncestring&external_auth_type=epicgames_access_token&deployment_id={DeploymentId}&external_auth_token={AuthToken}"
+	PublicKeyURL="https://publickey-service-live.ecosec.on.epicgames.com/publickey/v2/eas/"
 }

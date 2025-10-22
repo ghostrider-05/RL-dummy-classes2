@@ -54,6 +54,7 @@ var transient Actor LastTarget;
 var transient float TestLastLogTime;
 var Car_TA CarDisplayingBoost;
 var AdHocBeacon_X AdHocBeacon;
+var transient GameInfo_Replay_TA ReplayGameInfo;
 var const localized string ServerMigrationTitle;
 var const localized string ServerMigrationBody;
 var transient GFxData_Scoreboard_TA Scoreboard;

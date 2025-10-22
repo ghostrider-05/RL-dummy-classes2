@@ -120,6 +120,7 @@ var EOSGameClipsController_TA EOSGameClipsController;
 var repnotify repretry PrespawnData Prespawn;
 var FreeplaySessionManager_TA FreeplaySessionManager;
 var Actor TargettedActor;
+var transient TextChatActor_TA TextChatActor;
 var float PickupButtonPressedSeconds;
 var float PickupActivationBuffer;
 
@@ -155,7 +156,8 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		FreeplaySessionManager, InputBuffer;
+		FreeplaySessionManager, InputBuffer, 
+		TextChatActor;
 
 	 if(bNetDirty)
 		Prespawn;

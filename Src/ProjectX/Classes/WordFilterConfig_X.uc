@@ -14,17 +14,19 @@ var() config array<EWordFilterUsage> IgnoreFilterList;
 var() config array<EWordFilterUsage> PlatformFilterList;
 var() float PsyNetWordFilterBatchDelay;
 var() int PsyNetWordFilterBatchMaxSize;
+var() array<EWordFilterUsage> IgnoreMatureLanguageFilterList;
 
 defaultproperties
 {
 	PsyNetFilterEnabled=true
 	NameHistoryCacheLength=100
-	/**IgnoreFilterList(0)=17
+	/**IgnoreFilterList(0)=109
 	IgnoreFilterList(1)=40
 	IgnoreFilterList(2)=0
 	IgnoreFilterList(3)=0*/
-	/**PlatformFilterList(0)=15
+	/**PlatformFilterList(0)=107
 	PlatformFilterList(1)=40*/
 	PsyNetWordFilterBatchDelay=0.10
 	PsyNetWordFilterBatchMaxSize=100
+	IgnoreMatureLanguageFilterList(0)=107
 }

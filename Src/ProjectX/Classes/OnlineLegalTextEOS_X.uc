@@ -19,11 +19,13 @@ enum ELegalSyncState
 var() string EOSKey;
 var() string OfflineFolder;
 var() string OfflineTitleKey;
+var() bool bNeedsKeyRequest;
+var bool bInputRecorded;
+var() string KeyRequestURL;
 var EulaTextResponse LastResponse;
 var int LastResponseCode;
 var EulaTextResponse TextResponse;
 var int TextResponseCode;
-var bool bInputRecorded;
 var ELegalSyncState SyncState;
 var EulaTextResponse PendingResponseToAccept;
 var config string EOSServerURL;

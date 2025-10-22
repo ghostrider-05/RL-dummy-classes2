@@ -17,6 +17,7 @@ struct GFxChatMessage
 	var databinding bool bPreset;
 	var databinding EChatMessageType MessageType;
 	var databinding string TimeStamp;
+	var databinding Color TeamColor;
 
 	structdefaultproperties
 	{
@@ -30,6 +31,7 @@ struct GFxChatMessage
 		bPreset=false
 		MessageType=CMT_Default
 		TimeStamp=""
+		TeamColor=(R=0,G=0,B=0,A=0)
 	}
 };
 
@@ -77,6 +79,18 @@ struct ChatPresetMessage
 	}
 };
 
+struct ChatChannelHistory
+{
+	var EChatChannel ChatChannel;
+	var array<GFxChatMessage> Messages;
+
+	structdefaultproperties
+	{
+		ChatChannel=EChatChannel_Match
+		Messages.Empty
+	}
+};
+
 var() int MaxMessages;
 var() databinding array<ChatPresetMessageGroup> PresetGroups;
 var() databinding array<ChatPresetMessage> PresetMessages;
@@ -88,7 +102,10 @@ var const int MaxNumGroups;
 var const int MaxNumMessagesPerGroup;
 var const ChatPresetGroupOverride PostGameGroupOverride;
 var const ChatPresetGroupOverride PreGameGroupOverride;
+var databinding array<ChatChannelHistory> ChannelHistories;
 var AprilConfig_X AprilConfig;
+var TextModerationConfig_TA TextModConfig;
+var databinding int MaxVisibleMessages;
 
 defaultproperties
 {
@@ -99,4 +116,5 @@ defaultproperties
 	PostGameGroupOverride=(GroupIndex=0,GroupName="Group5",MessageIDOffset=16,bTeam=false)
 	PreGameGroupOverride=(GroupIndex=0,GroupName="Group6",MessageIDOffset=20,bTeam=false)
 	TableName=Chat
+	bLevelTransitionPersistent=true
 }

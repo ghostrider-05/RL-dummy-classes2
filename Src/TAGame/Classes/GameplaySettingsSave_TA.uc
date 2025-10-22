@@ -19,6 +19,7 @@ var bool bEnableHorizontalSplitscreen;
 var bool bEnableFreeplayUnlimitedBoost;
 var bool bUseSteamInput;
 var bool bDisableFreeplayGoals;
+var bool bDisplayPartyLeaderLeftModal;
 var bool bIsTradingEnabled;
 var bool bFirstTimeDefaultVoice;
 var bool bFirstTimeDefaultText;
@@ -34,6 +35,7 @@ var config EStatEventDisplayLevels StatEventDisplayLevel;
 var EBoostFillType FreeplayBoostFillType;
 var EStatGraphLevel StatGraphLevel;
 var EControlsVisibilityType TrainingControlsVisibility;
+var EChatReportingLevel TextReportingLevel;
 var float SafeZoneRatio;
 var float UIScale;
 var float NameplateScale;
@@ -46,6 +48,7 @@ var float PickupActivationBuffer;
 defaultproperties
 {
 	bEnableFreeplayUnlimitedBoost=true
+	bDisplayPartyLeaderLeftModal=true
 	bIsTradingEnabled=true
 	QuickChatFilter=ChatFilter_Preset
 	DeprecatedVoiceFilter=VoiceFilter_None

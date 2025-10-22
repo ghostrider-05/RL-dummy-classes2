@@ -37,3 +37,7 @@ var PhysicalMaterial PhysMatOverride;
 var float BallMagnusMinSpeed;
 var float BallLiftImpulse;
 var float BallLiftDelay;
+var Vector BallAirResistance;
+var Vector BallMinResistanceVelocity;
+var float AdditionalCarGroundBounceScaleXYOverride;
+var float AdditionalCarGroundBounceScaleZOverride;

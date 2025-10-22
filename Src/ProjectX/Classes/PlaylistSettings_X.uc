@@ -34,6 +34,7 @@ var() bool bAllowClubs;
 var() bool bDisableSaveReplays;
 var() bool bOpenDetailsOnFirstTimeClicked;
 var() bool bAllowStayAsParty;
+var() bool bEnforceDDoSPrevention;
 var() string PlaylistImageURL;
 var() string PlaylistImageTexture;
 var() string PlaylistIconActiveURL;

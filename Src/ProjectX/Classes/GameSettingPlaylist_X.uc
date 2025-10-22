@@ -49,8 +49,3 @@ var() name MapName;
 var() string ServerCommand;
 var() name MapSetName;
 var() array<int> PopulationBuckets;
-
-defaultproperties
-{
-	bEnforceDDoSPrevention=true
-}

@@ -6,3 +6,84 @@
 class MTXGarageUtils_TA extends Object;
 
 const JapaneseLanguage = "JPN";
+
+struct native PriceInfo
+{
+	var int CatalogID;
+	var string Title;
+	var bool bIsExactPack;
+	var int Price;
+	var string PurchasePrice;
+	var int VCAmount;
+
+	structdefaultproperties
+	{
+		CatalogID=0
+		Title=""
+		bIsExactPack=false
+		Price=0
+		PurchasePrice=""
+		VCAmount=0
+	}
+};
+
+struct MTXPurchaseInfo
+{
+	var databinding int CatalogID;
+	var databinding string Title;
+	var databinding string Description;
+	var databinding string PriceDescription;
+	var databinding string TabTitle;
+	var databinding Texture Image;
+	var databinding string PurchasePrice;
+	var databinding string OriginalPrice;
+	var databinding int DiscountPercentage;
+	var databinding string ProductHashIDs;
+	var databinding string BundleCurrencies;
+	var databinding bool bCanBePlayerTraded;
+	var databinding bool bIsOwned;
+	var databinding bool bIsExactPack;
+	var databinding int BonusVCPercentage;
+	var int Price;
+	var int VCAmount;
+	var bool bIsPriceUpdated;
+	var string ImageURL;
+	var string PlatformProductID;
+
+	structdefaultproperties
+	{
+		CatalogID=0
+		Title=""
+		Description=""
+		PriceDescription=""
+		TabTitle=""
+		Image=None
+		PurchasePrice=""
+		OriginalPrice=""
+		DiscountPercentage=0
+		ProductHashIDs=""
+		BundleCurrencies=""
+		bCanBePlayerTraded=false
+		bIsOwned=false
+		bIsExactPack=false
+		BonusVCPercentage=0
+		Price=0
+		VCAmount=0
+		bIsPriceUpdated=false
+		ImageURL=""
+		PlatformProductID=""
+	}
+};
+
+struct CartInfo
+{
+	var databinding int CatalogID;
+	var databinding int Count;
+
+	structdefaultproperties
+	{
+		CatalogID=0
+		Count=0
+	}
+};
+

@@ -61,15 +61,6 @@ enum EVoiceResultCode
 	VRC_MAX
 };
 
-enum EChatChannel
-{
-	EChatChannel_Match,
-	EChatChannel_Team,
-	EChatChannel_Party,
-	EChatChannel_Individual,
-	EChatChannel_MAX
-};
-
 struct native SceNpOnlineId
 {
 	var Qword Data[2];
@@ -170,48 +161,6 @@ struct native VoiceRoomMemberStatus
 		bLocalMuted=false
 		bAdminMuted=false
 		bBlocked=false
-	}
-};
-
-struct native MessagePayload
-{
-	var UniqueNetId SenderId;
-	var string RoomId;
-	var string MessageText;
-	var Qword TimeStamp;
-	var int SequenceNumber;
-	var bool bWantsToRecord;
-	var EChatChannel ChannelType;
-	var int MessageId;
-
-	structdefaultproperties
-	{
-		
-		RoomId=""
-		MessageText=""
-		
-		SequenceNumber=0
-		bWantsToRecord=false
-		ChannelType=EChatChannel_Match
-		MessageId=0
-	}
-};
-
-struct native SignedMessageData
-{
-	var MessagePayload Payload;
-	var string Signature;
-	var Qword ReceivingTimestamp;
-	var string SanitizedReceivedTextMessage;
-	var string PublicKey;
-
-	structdefaultproperties
-	{
-		
-		Signature=""
-		
-		SanitizedReceivedTextMessage=""
-		PublicKey=""
 	}
 };
 

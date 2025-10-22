@@ -131,6 +131,10 @@ struct StatEventCollection
 	var() StatEvent_TA MaxDodgeStreak;
 	var() StatEvent_TA InfectedPlayersDefeated;
 	var() StatEvent_TA PlayersInfected;
+	var() StatEvent_TA KeepUpPoint;
+	var() StatEvent_TA KeepUpPossession;
+	var() StatEvent_TA KeepUpDenial;
+	var() StatEvent_TA KeepUpClear;
 
 	structdefaultproperties
 	{
@@ -196,6 +200,10 @@ struct StatEventCollection
 		MaxDodgeStreak=None
 		InfectedPlayersDefeated=None
 		PlayersInfected=None
+		KeepUpPoint=None
+		KeepUpPossession=None
+		KeepUpDenial=None
+		KeepUpClear=None
 	}
 };
 

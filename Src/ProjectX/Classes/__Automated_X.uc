@@ -187,6 +187,7 @@ struct RPC_SetPlayerSkillTier_X {};
 struct RPC_SetRichPresence_X {};
 struct RPC_SetSeasonReward_X {};
 struct RPC_SetServerNotJoinable_X {};
+struct RPC_SignedPartyChat_X {};
 struct RPC_StartMatchmaking_X {};
 struct RPC_Test_X {};
 struct RPC_TestPlayerID_X {};

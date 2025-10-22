@@ -14,6 +14,7 @@ enum EChallengeFilter
 
 var databinding string ActiveFolderCodeName;
 var databinding EChallengeFilter ActiveChallengeFilter;
+var databinding bool bRelevantRewardsAvailable;
 var ChallengeManager_TA ChallengeManager;
 var array<GFxData_ChallengePage_TA> GFxChallengePages;
 var array< class > ChallengeFilters;
@@ -21,6 +22,7 @@ var transient string LastSelectedPage;
 var transient string LastSelectedSubfolder;
 var const string MainMenuString;
 var ChallengeConfig_TA ChallengeConfig;
+var SpecialEventConfig_TA SpecialEventConfig;
 
 defaultproperties
 {

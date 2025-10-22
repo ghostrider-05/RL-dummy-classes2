@@ -23,6 +23,8 @@ var transient float AverageMMR;
 var transient float AverageConservativeMMR;
 var transient int MachineId;
 var string Port;
+var transient string DDosServicePort;
+var transient DDoSService_X DDoSService;
 var transient CustomMatchSettings CustomMatch;
 var transient UniqueNetId CustomMatchOwner;
 var transient Qword CustomMatchClubID;

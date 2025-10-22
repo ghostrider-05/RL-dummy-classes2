@@ -9,4 +9,5 @@ var() StatEventScore TrackedStatEventScore;
 var() StatEventScore GoalStatEventScore;
 var() float PossessionSeconds;
 var() int PossessionScore;
+var BallKeepUpComponent_TA KeepUpCompArchetype;
 var transient GameEvent_Soccar_TA SoccarEvent;

@@ -21,14 +21,16 @@ struct native DDoSServicePayloadStruct
 	}
 };
 
+var Qword DDoSServiceMessageSentTimestamp;
+var const int DDoSServiceMessageRetryTime;
 var string DDoSServiceURL;
 var string DDoSServiceName;
 var int DDoSServiceVersion;
-var bool bDDoSPreventionSystemEnabled;
 var array<string> CachedClientIPs;
 
 defaultproperties
 {
+	DDoSServiceMessageRetryTime=3
 	DDoSServiceURL="http://localhost"
 	DDoSServiceName="firewall"
 	DDoSServiceVersion=1

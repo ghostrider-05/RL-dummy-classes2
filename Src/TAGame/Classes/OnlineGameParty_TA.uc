@@ -16,6 +16,9 @@ var export editinline ProductAssetCache_TA AssetCache;
 var array<int> ChallengesRequired;
 var bool bIsVerifyingProducts;
 var EOSVoiceManager_TA VoiceManager;
+var Personas_TA Personas;
+var TextModerationManager_TA TextModerationManager;
+var TextModerationConfig_TA TextModerationConfig;
 
 defaultproperties
 {

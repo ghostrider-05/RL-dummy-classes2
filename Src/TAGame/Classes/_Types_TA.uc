@@ -774,6 +774,7 @@ enum EMTXCatalogCategory
 	MTX_RocketBucks,
 	MTX_StarterPack,
 	MTX_StandardPack,
+	MTX_ExactAmountVCPack,
 	MTX_MAX
 };
 
@@ -978,6 +979,15 @@ enum EMatchHistoryNavigableButton
 	MatchHistoryNavigableButton_GoToSaveReplay,
 	MatchHistoryNavigableButton_WatchReplay,
 	MatchHistoryNavigableButton_MAX
+};
+
+enum ERequestResolvedStatus
+{
+	ERequestResolvedStatus_Success,
+	ERequestResolvedStatus_FinalRetryFailed,
+	ERequestResolvedStatus_FailureRetryInProgress,
+	ERequestResolvedStatus_UpdatedByUser,
+	ERequestResolvedStatus_MAX
 };
 
 struct native PlayerActorIDPair
@@ -1715,41 +1725,9 @@ struct RocketPassClaimData
 	}
 };
 
-struct InstanceAttributes
-{
-	var string Key;
-	var int Value;
-
-	structdefaultproperties
-	{
-		Key=""
-		Value=0
-	}
-};
-
-struct ItemInstances
-{
-	var int ProductID;
-	var string InstanceID;
-	var array<InstanceAttributes> Attributes;
-	var int SeriesID;
-	var float AddedTimestamp;
-	var float UpdatedTimestamp;
-
-	structdefaultproperties
-	{
-		ProductID=0
-		InstanceID=""
-		Attributes.Empty
-		SeriesID=0
-		AddedTimestamp=0.0
-		UpdatedTimestamp=0.0
-	}
-};
-
 struct ItemSetsData
 {
-	var array<ItemInstances> Instances;
+	var array<OnlineProductTimestampedData> Instances;
 	var string Name;
 	var int Id;
 	var float StartTime;
@@ -3255,6 +3233,18 @@ struct VoiceRoomDetails
 		RoomType=VRT_Invalid
 		
 		
+	}
+};
+
+struct PlayerMessageInfo
+{
+	var string SenderId;
+	var string DisplayName;
+
+	structdefaultproperties
+	{
+		SenderId=""
+		DisplayName=""
 	}
 };
 
