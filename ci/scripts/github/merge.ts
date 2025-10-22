@@ -1,3 +1,5 @@
+import { sep } from 'node:path'
+
 import { OctokitUtil } from '../util/octokit.js'
 import { askInput } from '../util/process.js'
 import { searchSrc } from '../util/src.js'
@@ -18,7 +20,7 @@ const description = await kit.descriptions.createPullRequest('update', files, ki
 console.log(`Uploading ${files.length} classes...`)
 
 await kit.uploadToRepo(
-    files.map(([,, path]) => path),
+    files.map(([,, path]) => 'Src' + sep + path),
     kit.repos.fork,
     branch,
     commitMsg
