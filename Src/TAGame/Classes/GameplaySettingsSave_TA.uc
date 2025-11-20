@@ -24,7 +24,7 @@ var bool bIsTradingEnabled;
 var bool bFirstTimeDefaultVoice;
 var bool bFirstTimeDefaultText;
 var bool bFirstTimeDefaultTrade;
-var bool bFilterMatureLanguage;
+var bool bFilterLanguage;
 var EChatFilter QuickChatFilter;
 var EChatFilter MatchChatFilter;
 var EChatFilter PartyChatFilter;
@@ -50,6 +50,7 @@ defaultproperties
 	bEnableFreeplayUnlimitedBoost=true
 	bDisplayPartyLeaderLeftModal=true
 	bIsTradingEnabled=true
+	bFilterLanguage=true
 	QuickChatFilter=ChatFilter_Preset
 	DeprecatedVoiceFilter=VoiceFilter_None
 	/**StatEventDisplayLevel=SEDL_Primary*/
