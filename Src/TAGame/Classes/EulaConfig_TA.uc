@@ -7,6 +7,7 @@ class EulaConfig_TA extends OnlineConfig_X;
 
 var() bool bRequiresAcceptance;
 var() bool bAllowEulaReset;
+var() bool bShowToS;
 var() array<_Types_Core.OnlinePlatform> ExcludedPlatforms;
 var() array<int> IgnoredHashIds;
 

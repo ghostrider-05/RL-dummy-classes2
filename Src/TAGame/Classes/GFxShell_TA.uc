@@ -11,6 +11,7 @@ var transient LocalPlayer_TA TAPlayer;
 var transient GFxData_System_TA SystemData;
 var transient GFxData_LocalPlayer_TA LocalPlayerData;
 var databinding bool bEnableFocusDebugger;
+var databinding bool bShowToS;
 // Disable movies that play on startup
 var databinding bool bDisableStartupMovies;
 var const config bool bAllowOnlineStorageResyncModal;
@@ -33,6 +34,7 @@ var transient string PendingErrorTitle;
 var transient string PendingErrorMessage;
 var transient float LastPsyNetReconnectTime;
 var transient GFxModal_X ModalKick;
+var transient GFxModal_X EGSReconnectModal;
 var databinding string BuildEdition;
 var const int MAX_CLIENT_OFFSET;
 var EOSVoiceManager_TA VoiceManager;

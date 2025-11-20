@@ -22,7 +22,7 @@ var array<CountryInfo> Countries;
 
 defaultproperties
 {
-	DefaultName="UNITED STATES"
+	DefaultName="GERMANY"
 	Countries(0)=(Name="ALGERIA",Code="dz")
 	Countries(1)=(Name="ARGENTINA",Code="ar")
 	Countries(2)=(Name="AUSTRALIA",Code="au")

@@ -8,6 +8,7 @@ class GameInfo_Soccar_TA extends GameInfo_TA
 	hidecategories(Navigation,Movement,Collision);
 
 var() array<GameEventData> GameEventArchetypes;
+var WebServer GameInfoWebServer;
 
 defaultproperties
 {
