@@ -64,16 +64,21 @@ var repnotify transient bool bOverTime;
 var bool bUnlimitedTime;
 var repnotify transient bool bGoalsEnabled;
 var transient bool bNoContest;
+var transient bool bAntiCheatTerminated;
 var transient bool bDisableGoalDelay;
 var const bool bShowNoScorerGoalMessage;
+var const bool bSkipMatchCompleteNoContest;
 var repnotify transient bool bMatchEnded;
+var repnotify transient bool bFullMatchWinnerDecided;
 var repnotify transient bool bDisableCrowdSound;
 var bool bShowIntroScene;
 var bool bReadyToStartGame;
 var repnotify bool bClubMatch;
 var bool bFullClubMatch;
+var bool bMatchCreatorAdminEnabled;
 var bool bCanDropOnlineRewards;
 var repnotify transient bool bAllowHonorDuels;
+var bool bThistleMatch;
 var(Setup) array<Actor> BallSpawnPoints;
 var int BallSpawnPointIndex;
 // Handles giving XP to players
@@ -172,12 +177,14 @@ var const float PodiumTagOffsetZ;
 var const float BallSpacing;
 var const float PreMatchPlayersReadyStartDelay;
 var transient array<PRI_TA> RemovedPRIs;
+var ThistleConfig_TA ThistleConfig;
 
 defaultproperties
 {
 	bShouldSpawnGoalIndicators=true
 	bGoalsEnabled=true
 	bShowNoScorerGoalMessage=true
+	bSkipMatchCompleteNoContest=true
 	BallSpawnPointIndex=-1
 	SeriesLength=1
 	TotalGameBalls=1
@@ -205,7 +212,7 @@ replication
 	 if(bNetInitial)
 		MaxScore, SeriesLength, 
 		bClubMatch, bFullClubMatch, 
-		bUnlimitedTime;
+		bThistleMatch, bUnlimitedTime;
 
 	 if(bNetDirty)
 		GameTime, GameWinner, 
@@ -215,11 +222,13 @@ replication
 		SecondsRemaining, SubRulesArchetype, 
 		TieBreakDecision, TotalGameBalls, 
 		WaitTimeRemaining, bAllowHonorDuels, 
-		bBallHasBeenHit, bCanDropOnlineRewards, 
-		bDisableCrowdSound, bGoalsEnabled, 
-		bMatchEnded, bNoContest, 
-		bOverTime, bReadyToStartGame, 
-		bShouldSpawnGoalIndicators, bShowIntroScene;
+		bAntiCheatTerminated, bBallHasBeenHit, 
+		bCanDropOnlineRewards, bDisableCrowdSound, 
+		bFullMatchWinnerDecided, bGoalsEnabled, 
+		bMatchCreatorAdminEnabled, bMatchEnded, 
+		bNoContest, bOverTime, 
+		bReadyToStartGame, bShouldSpawnGoalIndicators, 
+		bShowIntroScene;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)
 		ReplicatedServerPerformanceState;

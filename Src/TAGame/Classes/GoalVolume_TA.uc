@@ -8,6 +8,8 @@ class GoalVolume_TA extends Volume
 	hidecategories(Navigation,Object,Movement,Display);
 
 var() export editinline Goal_TA Goal;
+var(HighContrastMode) HighContrastActor_TA HighContrastActorArchetype;
+var HighContrastActor_TA HighContrastActor;
 
 defaultproperties
 {

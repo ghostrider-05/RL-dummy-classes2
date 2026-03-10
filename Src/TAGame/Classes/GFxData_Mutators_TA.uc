@@ -96,6 +96,7 @@ var transient string BoostOptionKey;
 var transient string GoalResetOptionKey;
 var GameTags_TA GameTags;
 var transient OnlineFreeplaySettingsSave_TA OnlineFreeplaySave;
+var transient PrivateMatchSettingsSave_TA PrivateSettingsSave;
 var transient MutatorConfig_TA MutatorConfig;
 
 defaultproperties

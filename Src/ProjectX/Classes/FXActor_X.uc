@@ -184,6 +184,7 @@ defaultproperties
 	DestroyWaitTime=10.0
 	//Parameters=ParameterDispenser_X'Default__FXActor_X.DefaultParameters'
 	AnimationEndState=FXActorEvent_X'FXActorEvents.AnimationEnded'
+	CollisionType=COLLIDE_CustomDefault
 	TickGroup=TG_PostAsyncWork
 	bAlwaysRelevant=true
 	bHardAttach=true

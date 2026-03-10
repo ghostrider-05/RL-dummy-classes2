@@ -11,9 +11,17 @@ var transient int SecondsDelayNewNotification;
 var databinding string TrainingFolderName;
 var databinding string WeeklyFolderName;
 var databinding string SeasonFolderName;
+var databinding string DashboardFolderName;
 var databinding bool bHideChallengeUI;
+var array<int> TrainingIDs;
 
 defaultproperties
 {
 	MaxSecondsDelayNewNotification=60
+	DashboardFolderName="Dashboard"
+	TrainingIDs(0)=390
+	TrainingIDs(1)=557
+	TrainingIDs(2)=560
+	TrainingIDs(3)=563
+	TrainingIDs(4)=569
 }

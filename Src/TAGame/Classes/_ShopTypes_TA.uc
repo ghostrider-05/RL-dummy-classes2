@@ -6,6 +6,8 @@
 class _ShopTypes_TA extends Object
 	abstract;
 
+const AttributeKey_Quality = 'Quality';
+
 enum EItemDisplayType
 {
 	DisplayDaily,
@@ -146,6 +148,7 @@ struct native ShopDeliverable
 	var databinding ProductHashID HashID;
 	var databinding bool IsOwned;
 	var databinding bool bOwnedUntradeable;
+	var bool bIsInjectedProduct;
 	var OnlineProductData Product;
 
 	structdefaultproperties
@@ -155,6 +158,7 @@ struct native ShopDeliverable
 		HashID=(Id=0)
 		IsOwned=false
 		bOwnedUntradeable=false
+		bIsInjectedProduct=false
 		
 	}
 };
@@ -194,6 +198,8 @@ struct native ShopItem
 	var databinding bool bOwnsAllDeliverables;
 	var databinding bool bIsProrated;
 	var databinding int BuyingProductCount;
+	var databinding int NonInjectedBuyingProductCount;
+	var array<int> IgnoreOfflineProductIDs;
 
 	structdefaultproperties
 	{
@@ -218,6 +224,8 @@ struct native ShopItem
 		bOwnsAllDeliverables=false
 		bIsProrated=false
 		BuyingProductCount=0
+		NonInjectedBuyingProductCount=0
+		IgnoreOfflineProductIDs.Empty
 	}
 };
 

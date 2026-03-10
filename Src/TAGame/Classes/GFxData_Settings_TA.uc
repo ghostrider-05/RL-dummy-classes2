@@ -35,6 +35,12 @@ var() ProfileSliderLimits ForceFeedbackScaleLimits;
 var() ProfileSliderLimits TrainingGameSpeedLimits;
 var() ProfileSliderLimits FreeplayBoostFillDelayLimits;
 var() ProfileSliderLimits PickupActivationBufferLimits;
+var() ProfileSliderLimits VehicleLocationModifierLimits;
+var() ProfileSliderLimits VehicleRotationModifierLimits;
+var() ProfileSliderLimits BallSpeedModifierLimits;
+var() ProfileSliderLimits BallLocationModifierLimits;
+var() ProfileSliderLimits BallHeightModifierLimits;
+var() ProfileSliderLimits RestartRoundInputDelayLimits;
 var const localized string LoadingString;
 var SettingsMenuConfig_TA SettingsConfig;
 var FreeplayConfig_TA FreeplayConfig;
@@ -47,6 +53,7 @@ var transient string OldWindowMode;
 var transient bool OldVSync;
 var transient bool bSettingRenderDetail;
 var transient bool bSettingCameraPreset;
+var bool IsCurrentResolutionNative;
 var transient Profile_TA Profile;
 var transient SaveData_TA SaveData;
 var transient GameViewportClient_X Viewport;
@@ -66,6 +73,7 @@ var transient NotificationSave_TA NotificationSave;
 var transient EpicAccountSave_TA EpicAccountSave;
 var transient EOSVoiceSettingsSave_TA VoiceSettingsSave;
 var transient OnlineFreeplaySettingsSave_TA OnlineFreeplaySave;
+var transient CustomTrainingSave_TA CustomTrainingSave;
 var transient GFxData_UserSetting_TA SteamInputSettings;
 var transient int ControllerCount;
 var const string DefaultDeviceString;
@@ -75,6 +83,9 @@ var const localized string WarnCrossPlatformTournament;
 var const localized string WarnCrossPlatformTournamentAndParty;
 var const localized string DisableAndLeave;
 var const localized string WarnChangingScheduleRegion;
+var GFxData_UserSetting_TA ResolutionSetting;
+var string DraggedScreenResolutionLabel;
+var string DraggedScreenResolutionValue;
 
 defaultproperties
 {
@@ -95,6 +106,12 @@ defaultproperties
 	TrainingGameSpeedLimits=(Min=0.50,Max=1.0,interval=0.050)
 	FreeplayBoostFillDelayLimits=(Min=0.50,Max=3.0,interval=0.250)
 	PickupActivationBufferLimits=(Min=0.0,Max=1.0,interval=0.050)
+	VehicleLocationModifierLimits=(Min=0.0,Max=1000.0,interval=10.0)
+	VehicleRotationModifierLimits=(Min=0.0,Max=100.0,interval=1.0)
+	BallSpeedModifierLimits=(Min=0.0,Max=1.0,interval=0.010)
+	BallLocationModifierLimits=(Min=0.0,Max=1000.0,interval=10.0)
+	BallHeightModifierLimits=(Min=0.0,Max=1000.0,interval=10.0)
+	RestartRoundInputDelayLimits=(Min=0.0,Max=0.10,interval=0.010)
 	/**ShowBindingsModal_ErrorMessage="Cannot open Big Picture Mode bindings. Make sure you have selected which controller you want to use."*/
 	
 	SettingObserver=SettingObserver0

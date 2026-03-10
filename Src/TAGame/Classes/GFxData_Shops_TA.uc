@@ -35,6 +35,7 @@ var export editinline ShopMetrics_TA ShopMetrics;
 var export editinline ShopTabs_TA ShopTabs;
 var ShopNotificationsManager_TA ShopNotificationsManager;
 var transient ShopCatalogueCacheSave_TA CatalogueCache;
+var ProductsConfig_TA ProductsConfig;
 
 defaultproperties
 {

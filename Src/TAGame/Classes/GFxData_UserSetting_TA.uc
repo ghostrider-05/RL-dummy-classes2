@@ -14,6 +14,7 @@ enum EUserSettingType
 };
 
 var databinding EUserSettingType Type;
+var databinding ESettingDisplayMode DisplayMode;
 var databinding name Group;
 var databinding name Id;
 var databinding string Label;
@@ -24,11 +25,13 @@ var databinding string Labels;
 var databinding string Value;
 var databinding bool bUserSetting;
 var databinding bool bEnabled;
+var databinding int decimals;
 var string DefaultValue;
 var transient ProfileSliderLimits Limits;
 
 defaultproperties
 {
+	decimals=2
 	Limits=(Min=0.0,Max=1.0,interval=0.010)
 	TableName=UserSettings
 }

@@ -11,5 +11,5 @@ var array<PlayerPermissionsList> PlayerPermissions;
 
 defaultproperties
 {
-	SyncDelay=1.0
+	SyncDelay=0.10
 }

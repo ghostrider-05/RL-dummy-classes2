@@ -72,6 +72,7 @@ var FXActorEvent_X PMCAnimBeginState;
 var FXActorEvent_X PMCAnimEndState;
 var transient PhysicalMaterial ContactPhysMat;
 var transient PhysicalMaterialProperty_TA ContactPhysMatProp;
+var const name DefaultPhysMatName;
 var transient array<WheelFX> WheelEffects;
 var transient ParticleSystem WheelEffectsParticle;
 var export editinline transient CarMeshComponent_TA CarMesh;
@@ -93,5 +94,6 @@ defaultproperties
 	SuperSonicEndState=FXActorEvent_X'FXActorEvents.SuperSonicEnd'
 	PMCAnimBeginState=FXActorEvent_X'FXActorEvents.PMCAnimBegin'
 	PMCAnimEndState=FXActorEvent_X'FXActorEvents.PMCAnimEnd'
+	DefaultPhysMatName=Collision_Sticky
 	//Parameters=ParameterDispenser_X'Default__FXActor_Car_TA.DefaultParameters'
 }

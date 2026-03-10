@@ -11,15 +11,22 @@ enum ELinkType
 	LinkType_RocketPass,
 	LinkType_Event,
 	LinkType_ESports,
+	LinkType_Clubs,
 	LinkType_MAX
 };
 
 var databinding string Title;
 var databinding string DescriptionHeader;
 var databinding string Description;
+var databinding string SubDescriptionHeader;
 var databinding string WebURL;
 var databinding string CarName;
 var string ImageURL;
+var int ImageWidth;
+var int ImageHeight;
+var string ThumbnailURL;
+var int ThumbnailWidth;
+var int ThumbnailHeight;
 var string StartTime;
 var Qword StartTimeEpoch;
 var string EndTime;
@@ -31,3 +38,5 @@ var databinding int ProductID;
 var databinding int CategoryID;
 var databinding int PlaylistId;
 var databinding string InfoURL;
+var databinding string InfoButtonText;
+var databinding string TrackingId;

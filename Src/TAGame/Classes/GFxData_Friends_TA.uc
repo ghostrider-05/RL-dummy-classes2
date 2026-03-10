@@ -53,17 +53,20 @@ var export editinline transient OtherPlayerProfile_TA ObservedProfile;
 var string PinGrantPlatformName;
 var int PinGrantPlatform;
 var transient GFxModal_X ModalProcessing;
+var transient array<PersonaUpdateData> PersonasToUpdate;
+var transient float FriendsProcessingWaitTime;
 
 defaultproperties
 {
 	
 	/**bUsePresenceGroups=true*/
-	/**DefaultPlatformFriendGroups(0)=188
-	DefaultPlatformFriendGroups(1)=67*/
-	/**DefaultEpicFriendGroups(0)=188
-	DefaultEpicFriendGroups(1)=67*/
-	/**DefaultAllFriendGroups(0)=187*/
+	/**DefaultPlatformFriendGroups(0)=173
+	DefaultPlatformFriendGroups(1)=68*/
+	/**DefaultEpicFriendGroups(0)=173
+	DefaultEpicFriendGroups(1)=68*/
+	/**DefaultAllFriendGroups(0)=172*/
 	
+	FriendsProcessingWaitTime=0.0080
 	TableName=Personas
 	bLevelTransitionPersistent=true
 }

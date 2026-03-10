@@ -9,6 +9,7 @@ var() int ReconnectTimeoutSeconds;
 var() array<int> SkillTierToSeasonRewardLevel;
 var() array<int> SeasonRewardRequiredWinsPerLevel;
 var() bool bCheckReservationID;
+var() bool bUsePsyNetRankedDisparity;
 var() Qword SeasonEndTimeSeconds;
 var() int MaximumRankDisparity;
 var() int PlacementMatchesNeededToReceiveRank;

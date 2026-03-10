@@ -21,6 +21,7 @@ var databinding bool bRestricted;
 var databinding bool bNew;
 var databinding bool bIsMicroEventPlaylist;
 var databinding bool bTournament;
+var databinding bool bPlayerSkillsUpdated;
 var databinding bool bCompletedPlacementMatches;
 var databinding bool bOpenDetailsOnFirstTimeClicked;
 var databinding bool bDisableSaveReplays;
@@ -29,10 +30,8 @@ var databinding bool bUndersizedPartyWithRankDisparity;
 var databinding bool bIsTimeRestricted;
 var databinding bool bForceDetailsPage;
 var databinding transient Texture PlaylistBackgroundTexture;
-var databinding transient Texture PlaylistIconActiveTexture;
-var databinding transient Texture PlaylistIconInactiveTexture;
 var databinding transient Texture PlaylistNodeThumbnailTexture;
-var databinding EPlaylistPopulationBucket PlayerCountBucket;
+var databinding int PlayerCount;
 var databinding int SkillTier;
 var databinding int SkillDivision;
 var databinding int SkillMatchesPlayed;
@@ -45,6 +44,7 @@ var databinding Qword StartTime;
 var databinding Qword EndTime;
 var transient int DetailsGroup;
 var transient MicroEventConfig_TA MicroEventConfig;
+var() RankedConfig_X RankedConfig;
 
 defaultproperties
 {

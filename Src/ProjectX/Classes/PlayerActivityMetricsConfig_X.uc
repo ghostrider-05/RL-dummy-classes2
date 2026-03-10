@@ -18,6 +18,6 @@ defaultproperties
 	SecondsUntilMatchInactive=10.0
 	HeartbeatSeconds=5.0
 	AxisDeadzone=0.90
-	IgnoredInputTypes(0)=194
+	IgnoredInputTypes(0)=180
 	bIgnoreKBMAxis=true
 }

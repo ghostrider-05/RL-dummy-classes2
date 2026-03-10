@@ -39,6 +39,7 @@ var transient ServerExploitManager_X ExploitManager;
 var() class MatchRecorderClass;
 var transient MatchRecorder_X MatchRecorder;
 var transient MatchLog_X MatchLog;
+var transient OnlinePlayerPermissions_X PlayerPermissions;
 var() transient ServerConfig_X Config;
 var transient PsyNetConfig_X PsyNetConfig;
 

@@ -81,6 +81,7 @@ var array<PendingKeyGenMessage> PendingKeyGenMessages;
 var transient OnlineSubsystemEOS EOS;
 var transient array<UserPublicKey> UserKeys;
 var const string KeyAlgorithm;
+var export editinline transient TextModerationMetrics_TA Metrics;
 var WordFilterConfig_X FilterConfig;
 var EpicConfig_X EpicConfig;
 var OnlineGameWordFilter_X WordFilter;

@@ -11,6 +11,8 @@ class GameEvent_Tutorial_Basic_TA extends GameEvent_Tutorial_TA
 var int CurrentScore;
 var int TotalRounds;
 var int CurrentRounds;
+var Vector InitialLocation;
+var Rotator InitialRotation;
 
 defaultproperties
 {

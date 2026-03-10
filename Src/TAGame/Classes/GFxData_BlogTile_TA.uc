@@ -8,6 +8,9 @@ class GFxData_BlogTile_TA extends GFxDataRow_X;
 var databinding Texture ImageTexture;
 var databinding int TextureSizeX;
 var databinding int TextureSizeY;
+var databinding Texture ThumbnailTexture;
+var databinding int ThumbnailTextureSizeX;
+var databinding int ThumbnailTextureSizeY;
 var databinding bool bNewInfo;
 
 defaultproperties

@@ -53,6 +53,8 @@ var() const float HorizontalSplitscreenFOVOffset;
 var() const float VerticalSplitscreenFOVOffset;
 var() float ClipRate;
 var transient Rotator CurrentSwivel;
+var transient GFxShell_TA Shell;
+var transient EInputPlatformType CurrentInputType;
 var transient RBActor_TA Demolisher;
 var transient bool bDemolished;
 var const bool bGroundClampTrace;
@@ -71,11 +73,11 @@ defaultproperties
 	SwivelSpeedLimits=(Min=1.0,Max=10.0,interval=0.10)
 	TransitionSpeedLimits=(Min=1.0,Max=2.0,interval=0.10)
 	PrespawnLerpLimits=(Min=0.0,Max=1.0,interval=0.050)
-	CameraPresetSettings(0)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0)
-	CameraPresetSettings(1)=(FOV=100.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.20)
-	CameraPresetSettings(2)=(FOV=110.0,Height=110.0,Pitch=-3.0,Distance=280.0,Stiffness=0.50,SwivelSpeed=5.0,TransitionSpeed=1.50)
-	CameraPresetSettings(3)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0)
-	CameraPresetSettings(4)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=260.0,Stiffness=0.30,SwivelSpeed=2.50,TransitionSpeed=1.0)
+	CameraPresetSettings(0)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
+	CameraPresetSettings(1)=(FOV=100.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.20,bUnconstrainRotation=false,bAutoRecenter=false)
+	CameraPresetSettings(2)=(FOV=110.0,Height=110.0,Pitch=-3.0,Distance=280.0,Stiffness=0.50,SwivelSpeed=5.0,TransitionSpeed=1.50,bUnconstrainRotation=false,bAutoRecenter=false)
+	CameraPresetSettings(3)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
+	CameraPresetSettings(4)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=260.0,Stiffness=0.30,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
 	GroundClampZOffset=10.0
 	//Blender=CameraStateBlender_X'Default__Camera_TA.StateBlender0'
 	bHidden=false

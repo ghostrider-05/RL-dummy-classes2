@@ -7,3 +7,9 @@ class BlogConfig_X extends OnlineConfig_X;
 
 var array<BlogTile_X> Entries;
 var string MotD;
+var float RetryTime;
+
+defaultproperties
+{
+	RetryTime=15.0
+}

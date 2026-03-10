@@ -35,6 +35,7 @@ var const transient array<BodyToEngineAudioPair> BodyToEngineAudioMap_Pristine;
 var() GarageFolderData GarageFolderInfo;
 var native const Map_Mirror ProductNameToProductID;
 var native const transient Map_Mirror ProductNameToProductID_Pristine;
+var native transient Map_Mirror RequiredProductToUnlockedProducts;
 var native const Map_Mirror DuplicateToAssetSourceMap;
 var config transient array<config TemporaryProduct> TemporaryProducts;
 var config bool bUseQualityToCheckForOnlineProduct;

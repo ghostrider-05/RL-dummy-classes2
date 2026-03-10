@@ -35,6 +35,8 @@ var() bool bDisableSaveReplays;
 var() bool bOpenDetailsOnFirstTimeClicked;
 var() bool bEnforceDDoSPrevention;
 var() bool bAllowStayAsParty;
+var() bool bEnforceEAC;
+var() bool bAllowEACTerminations;
 var() string PlaylistImageURL;
 var() string PlaylistImageTexture;
 var() string PlaylistIconActiveURL;
@@ -49,3 +51,8 @@ var() name MapName;
 var() string ServerCommand;
 var() name MapSetName;
 var() array<int> PopulationBuckets;
+
+defaultproperties
+{
+	bEnforceEAC=true
+}

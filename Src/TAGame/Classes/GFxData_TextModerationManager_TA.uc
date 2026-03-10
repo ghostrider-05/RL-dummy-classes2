@@ -13,8 +13,8 @@ var transient OnlineGame_TA OnlineGame;
 
 defaultproperties
 {
-	ChatChannelsToCreate(0)=161
-	ChatChannelsToCreate(1)=64
+	ChatChannelsToCreate(0)=113
+	ChatChannelsToCreate(1)=65
 	TableName=TextModerationManager
 	bLevelTransitionPersistent=true
 }

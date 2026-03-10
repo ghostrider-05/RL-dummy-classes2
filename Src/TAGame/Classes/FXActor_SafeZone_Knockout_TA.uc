@@ -50,5 +50,6 @@ defaultproperties
 	StateEvents(0)=FXActorEvent_X'FXActorEvents.SafeZone_Active'
 	StateEvents(1)=FXActorEvent_X'FXActorEvents.SafeZone_FinalZone'
 	//Parameters=ParameterDispenser_X'Default__FXActor_SafeZone_Knockout_TA.DefaultParameters'
+	CollisionType=COLLIDE_CustomDefault
 	TickGroup=TG_PostUpdateWork
 }

@@ -26,8 +26,11 @@ var() bool bEnablePlatformStartPurchase;
 var bool bEnableCPCCShowRoWModal;
 var bool bEnableCPCCShowRealPrice;
 var bool bEnableExactAmountPackLogic;
+var bool bEnableDebugFeatures;
+var bool bEnableMTXTabsOfflineItemsInjection;
 var bool bLevToEuro;
 var bool bLevBeforeEuro;
+var bool bConvertBGEuroToLev;
 var() int MaxCurrencyWalletAmount;
 var() int MaxCurrencyDailyAmount;
 var int CatalogCacheDurationSeconds;
@@ -36,6 +39,7 @@ var const localized string FulfillmentRestrictedDailyMessage;
 var const localized string FulfillmentRestrictedTitle;
 var const localized string CurrencyDelimeter;
 var float LevToEuro;
+var float EuroToLev;
 var int VCFactor;
 var int VCMaxExactPack;
 var int FilteredCatalogItemsMax;
@@ -46,6 +50,7 @@ defaultproperties
 {
 	bAllowMicroTransactions=true
 	/**bAllowCurrencyTrading=true*/
+	bEnableMTXTabsOfflineItemsInjection=true
 	MaxCurrencyWalletAmount=1000000
 	MaxCurrencyDailyAmount=200000
 	CatalogCacheDurationSeconds=600
@@ -54,6 +59,7 @@ defaultproperties
 	/**FulfillmentRestrictedTitle="Transaction Delayed"*/
 	/**CurrencyDelimeter=","*/
 	LevToEuro=0.5112920
+	EuroToLev=1.955830
 	VCFactor=50
 	VCMaxExactPack=5000
 	FilteredCatalogItemsMax=6

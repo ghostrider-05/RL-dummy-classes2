@@ -10,9 +10,11 @@ var() ViewTargetTransitionParams DefaultBlendParams;
 var transient WorldInfo WorldInfo;
 var transient Camera_X Camera;
 var const bool bCanSwivel;
+var const bool bCanFreeLook;
 
 defaultproperties
 {
 	DefaultBlendParams=(BlendTime=0.250,BlendFunction=VTBlend_EaseIn,BlendExp=2.0,bLockOutgoing=false)
 	bCanSwivel=true
+	bCanFreeLook=true
 }

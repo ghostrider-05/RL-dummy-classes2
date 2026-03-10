@@ -20,6 +20,7 @@ var const localized string NotAllPlayersJoinedString;
 var const localized string CanceledString;
 var const localized string SecurityKeyAcquisitionFailed;
 var const localized string SecurityKeyVerificationFailed;
+var const localized string MatchSetupFailedString;
 var const localized string SendingReservationMessage;
 var const localized string JoiningPartyLeadersGame;
 var const localized string InvalidPassword;
@@ -49,6 +50,7 @@ defaultproperties
 	/**CanceledString="Canceled by user. (Error: 83)"*/
 	/**SecurityKeyAcquisitionFailed="Unable to connect to game server. (Error: 72)"*/
 	/**SecurityKeyVerificationFailed="Unable to connect to game server. (Error: 82)"*/
+	/**MatchSetupFailedString="Match configuration error occurred. (Error: 94)"*/
 	/**SendingReservationMessage="Sending reservation to game server"*/
 	/**JoiningPartyLeadersGame="Joining Party Leader's game"*/
 	/**InvalidPassword="Cannot join game. Password does not match."*/

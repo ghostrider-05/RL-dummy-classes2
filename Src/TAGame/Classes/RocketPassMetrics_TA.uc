@@ -33,3 +33,4 @@ struct RocketPassTiersData
 
 var array<RocketPassPremiumData> PurchasePremiumData;
 var array<RocketPassTiersData> PurchaseTiersData;
+var RocketPassConfig_TA RocketPassConfig;

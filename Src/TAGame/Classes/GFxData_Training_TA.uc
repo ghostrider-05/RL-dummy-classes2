@@ -26,6 +26,7 @@ var databinding name SelectedFreeplayMap;
 var databinding bool bShowBoostMeter;
 var databinding bool bShufflePlay;
 var databinding bool bIsCustomTraining;
+var databinding bool bCanRandomizeShot;
 var databinding array<UseAction> UseActions;
 var databinding string TutorialTip;
 var databinding array<TrainingRoundProgress> ProgressPerShot;
@@ -34,10 +35,18 @@ var databinding EControlsVisibilityType ControlsVisibility;
 var GameEvent_TrainingEditor_TA TrainingEditor;
 var transient TrainingProgressTracker_TA ProgressTracker;
 var TrainingConfig_TA TrainingConfig;
+var const name HideFastFreeplayConfirmation;
+var const localized string FastFreeplayTitle;
+var const localized string FastFreeplayDesc;
+var const localized string FastFreeplayModalOff;
 
 defaultproperties
 {
 	CurrentScore=-1
 	bShowBoostMeter=true
+	HideFastFreeplayConfirmation=HideFastFreeplayModal
+	/**FastFreeplayTitle="Enter Free Play"*/
+	/**FastFreeplayDesc="You are about to leave this match and enter Free Play. Continue?"*/
+	/**FastFreeplayModalOff="Yes (Stop Asking)"*/
 	TableName=Training
 }

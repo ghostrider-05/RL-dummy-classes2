@@ -13,12 +13,16 @@ struct SkillTierData
 {
 	var byte Tier;
 	var byte PlacementMatchesPlayed;
+	var float MMR;
+	var float PrevMMR;
 	var bool bReplicated;
 
 	structdefaultproperties
 	{
 		Tier=0
 		PlacementMatchesPlayed=0
+		MMR=0.0
+		PrevMMR=0.0
 		bReplicated=false
 	}
 };
@@ -195,7 +199,7 @@ defaultproperties
 	FullLoadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	FullLoadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	MaxDataProducts=1
-	CameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0)
+	CameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
 	CameraPitch=128
 	CameraYaw=128
 	

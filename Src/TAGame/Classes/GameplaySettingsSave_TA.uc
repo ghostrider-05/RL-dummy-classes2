@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class GameplaySettingsSave_TA extends SaveObject_TA
+class GameplaySettingsSave_TA extends JsonSaveObject_TA
 	config(Game);
 
 enum EGameplaySettingsSaveVersion
@@ -20,11 +20,15 @@ var bool bEnableFreeplayUnlimitedBoost;
 var bool bUseSteamInput;
 var bool bDisableFreeplayGoals;
 var bool bDisplayPartyLeaderLeftModal;
+var bool bQuickDropOpening;
 var bool bIsTradingEnabled;
 var bool bFirstTimeDefaultVoice;
 var bool bFirstTimeDefaultText;
 var bool bFirstTimeDefaultTrade;
+var bool bTargetedNewsFirstSetup;
 var bool bFilterLanguage;
+var bool bPlayFlipResetFx;
+var bool bEnableHighContrastMode;
 var EChatFilter QuickChatFilter;
 var EChatFilter MatchChatFilter;
 var EChatFilter PartyChatFilter;
@@ -50,7 +54,9 @@ defaultproperties
 	bEnableFreeplayUnlimitedBoost=true
 	bDisplayPartyLeaderLeftModal=true
 	bIsTradingEnabled=true
+	bTargetedNewsFirstSetup=true
 	bFilterLanguage=true
+	bPlayFlipResetFx=true
 	QuickChatFilter=ChatFilter_Preset
 	DeprecatedVoiceFilter=VoiceFilter_None
 	/**StatEventDisplayLevel=SEDL_Primary*/

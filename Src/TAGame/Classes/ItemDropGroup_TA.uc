@@ -14,6 +14,7 @@ enum EDropGroupDisplayOrder
 	DropGroupDisplayOrder_LevelUpReward,
 	DropGroupDisplayOrder_Currency,
 	DropGroupDisplayOrder_Container,
+	DropGroupDisplayOrder_OfflineInjectedProduct,
 	DropGroupDisplayOrder_MAX
 };
 
@@ -21,6 +22,7 @@ var databinding array<Currency> Currency;
 var databinding array<ProductDrop> Products;
 var databinding int XP;
 var databinding string Message;
+var databinding bool bIsRocketPassDrop;
 var const class GFxDataClass;
 var EDropGroupDisplayOrder DisplayOrder;
 

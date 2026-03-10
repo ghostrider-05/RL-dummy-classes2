@@ -11,3 +11,5 @@ var() const bool bUseableWhileHidden;
 var() const array<name> GamemodeVisibleOverrideList;
 var() const array<name> GamemodeHiddenOverrideList;
 var() array<GameSetting_X> GameSettings;
+var() const int SortPriority;
+var() const Color ColorOverride;

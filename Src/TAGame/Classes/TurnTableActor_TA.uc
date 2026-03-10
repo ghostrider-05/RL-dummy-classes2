@@ -46,7 +46,6 @@ defaultproperties
 	
 	Components(3)=PreviewMesh
 //	Components(4)=RotateComponent_TA'Default__TurnTableActor_TA.RotateComp'
-	CollisionType=COLLIDE_CustomDefault
 	bNoDelete=false
 	
 	CollisionComponent=SkeletalMeshComponent0

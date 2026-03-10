@@ -13,11 +13,17 @@ var() float AirTorqueScalar;
 var() float AirDampingScalar;
 var() float ThrottleForce;
 var transient float AirControlSensitivity;
+var bool bAllowTargetFind;
+var transient float JumpInactiveBuffer;
+var transient float DodgeInactiveBuffer;
+var transient Actor AutoControlTarget;
 
 defaultproperties
 {
 	AirTorqueScalar=1000.0
 	AirDampingScalar=1000.0
 	AirControlSensitivity=1.0
+	JumpInactiveBuffer=0.250
+	DodgeInactiveBuffer=0.250
 	RemoteRole=ROLE_None
 }

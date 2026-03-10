@@ -9,6 +9,7 @@ var() EDemolishTarget DemolishTarget;
 var() EDemolishSpeed DemolishSpeed;
 var() EVehicleDemolishMode VehicleDemolishMode;
 var() bool bAwardDemolishCredit;
+var() FXActor_TA DemoFXOverride;
 
 defaultproperties
 {

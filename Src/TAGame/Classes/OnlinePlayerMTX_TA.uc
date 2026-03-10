@@ -10,6 +10,8 @@ var bool bEntitlementsDirty;
 var bool bClaimingEntitlements;
 var bool bMtxCodeExpired;
 var const config bool bAllowEntitlements;
+var ContentAuthorizationTokenInterface CATInterface;
+var const config string ContentAuthorizationTokenClass;
 
 defaultproperties
 {

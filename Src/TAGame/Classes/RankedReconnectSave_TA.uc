@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class RankedReconnectSave_TA extends SaveObject_TA;
+class RankedReconnectSave_TA extends JsonSaveObject_TA;
 
 var ServerReservationData Reservation;
 var Qword EpochTime;

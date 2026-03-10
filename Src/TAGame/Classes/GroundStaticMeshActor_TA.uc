@@ -19,7 +19,6 @@ defaultproperties
 	end object
 	// Reference: StaticMeshComponent'Default__GroundStaticMeshActor_TA.StaticMeshComponent0'
 	Components(0)=StaticMeshComponent0
-	CollisionType=COLLIDE_NoCollision
 	bStatic=false
 	bNoDelete=true
 	bTickIsDisabled=true

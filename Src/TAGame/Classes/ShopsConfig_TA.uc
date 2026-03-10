@@ -9,13 +9,21 @@ var int DebugShopID;
 var bool bEnableShopMetrics;
 var bool bHideMainMenuButton;
 var bool bHidePurchaseEsportToken;
+var bool bEnableBundleTabsOfflineItemsInjection;
 var array<string> ShopTypesForOwnedTracking;
+var array<string> ShopTypesForItemInjection;
+var array<int> DisallowedBodiesForItemInjection;
+var array<int> DisallowedProductsForItemInjection;
+var transient Set_Mirror DisallowedBodiesForItemInjectionSet;
+var transient Set_Mirror DisallowedProductsForItemInjectionSet;
 
 defaultproperties
 {
 	DebugShopID=-1
 	bEnableShopMetrics=true
 	bHidePurchaseEsportToken=true
+	bEnableBundleTabsOfflineItemsInjection=true
 	ShopTypesForOwnedTracking(0)="Featured"
 	ShopTypesForOwnedTracking(1)="Bundle"
+	ShopTypesForItemInjection(0)="Bundle"
 }

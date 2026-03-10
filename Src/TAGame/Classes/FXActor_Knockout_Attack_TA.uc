@@ -23,4 +23,5 @@ defaultproperties
 	AttackEvents(1)=FXActorEvent_X'FXActorEvents.KO_AttackLight'
 	AttackEvents(2)=FXActorEvent_X'FXActorEvents.KO_AttackHeavy'
 	//Parameters=ParameterDispenser_X'Default__FXActor_Knockout_Attack_TA.DefaultParameters'
+	CollisionType=COLLIDE_CustomDefault
 }

@@ -6,8 +6,3 @@
 class ThankYouMessageConfig_TA extends OnlineConfig_X;
 
 var bool bThankYouMessageEnabled;
-
-defaultproperties
-{
-	bThankYouMessageEnabled=true
-}

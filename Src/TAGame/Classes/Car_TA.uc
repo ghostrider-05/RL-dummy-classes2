@@ -27,6 +27,8 @@ var transient bool bOverrideHandbrakeOn;
 var bool bTeamBumpsUseCarForceMultiplier;
 var transient bool bOverrideBoostOn;
 var config bool bUseDefaultLoadout;
+var transient bool bDodgesRefreshed;
+var transient bool bDodgeCounterReplicated;
 var() FXActor_X ExitFXArchetype;
 var() Explosion_X DemolishExplosionArchetype;
 var transient Explosion_X DemolishExplosion;
@@ -61,6 +63,9 @@ var repnotify float ReplicatedCarMaxLinearSpeedScale;
 var name PostMatchAnim;
 var transient int DoubleJumps;
 var transient name DoubleJumpKey;
+var repnotify int DodgesRefreshedCounter;
+var FXActor_X FlipResetFXActorArchetype;
+var transient FXActor_X FlipResetFXActor;
 var export editinline ViralItemFXComponent_TA ViralItemFXComponent;
 
 defaultproperties
@@ -75,6 +80,7 @@ defaultproperties
 	//CarTrajectoryComponent=CarTrajectoryComponent_TA'Default__Car_TA.CarTrajectoryComponent0'
 	//NameplateComponentCar=NameplateComponentCar_TA'Default__Car_TA.NameplateComponentCar0'
 	DoubleJumpKey=DoubleJumpCounter
+	DodgesRefreshedCounter=-1
 	//ViralItemFXComponent=ViralItemFXComponent_TA'Default__Car_TA.ViralItemFXComponent0'
 	begin object name=DefaultMesh class=CarMeshComponent_TA
 		ReplacementPrimitive=None
@@ -111,16 +117,17 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		ClubColors, ReplicatedCarMaxLinearSpeedScale, 
-		ReplicatedCarScale, TeamPaint;
+		ReplicatedCarMaxLinearSpeedScale, ReplicatedCarScale;
 
 	 if(bNetDirty)
 		AddedBallForceMultiplier, AddedCarForceMultiplier, 
-		AttachedPickup, MaxNumJumps, 
+		AttachedPickup, ClubColors, 
+		DodgesRefreshedCounter, MaxNumJumps, 
 		MaxTimeForDodge, PostMatchAnim, 
 		ReplicatedDemolish, ReplicatedDemolishExtended, 
 		ReplicatedDemolishGoalExplosion, RumblePickups, 
-		bUnlimitedJumps, bUnlimitedTimeForDodge;
+		TeamPaint, bUnlimitedJumps, 
+		bUnlimitedTimeForDodge;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)
 		bOverrideBoostOn, bOverrideHandbrakeOn;

@@ -9,11 +9,11 @@ const PrimaryControllerId = 0;
 
 struct PlayerBlockListenData
 {
-	var string EpicId;
+	var string EpicID;
 
 	structdefaultproperties
 	{
-		EpicId=""
+		EpicID=""
 		
 	}
 };

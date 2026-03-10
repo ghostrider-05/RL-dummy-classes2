@@ -73,6 +73,7 @@ var databinding bool bUnfairBots;
 var databinding bool bNoContest;
 var databinding bool bForfeit;
 var bool bLocalPlayerAbandoned;
+var databinding bool bMatchCreatorAdminEnabled;
 // Team of primary player
 var int PrimaryPlayerTeam;
 // Match score for team 0

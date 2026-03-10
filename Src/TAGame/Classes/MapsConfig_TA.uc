@@ -49,4 +49,10 @@ struct MapSetMapData
 
 var() databinding array<OnlineMapSet> OnlineMapSets;
 var array<MapSetMapData> ClientMapSetChanges;
+var bool bAllowBoostWarmupFx;
 var ContentConfig_X ContentConfig;
+
+defaultproperties
+{
+	bAllowBoostWarmupFx=true
+}

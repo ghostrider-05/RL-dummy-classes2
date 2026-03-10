@@ -3,9 +3,9 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class ProfileLoadoutSave_TA extends SaveObject_TA;
+class ProfileLoadoutSave_TA extends JsonSaveObject_TA;
 
-const MaxLoadoutSets = 50;
+const MaxLoadoutSets = 75;
 
 enum ELoadoutSaveVersion
 {

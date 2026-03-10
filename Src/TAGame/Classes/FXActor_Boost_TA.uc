@@ -64,6 +64,9 @@ struct native PreviewParticleOverride
 var array<ParticleParameterSet> ParametersPerExtraBoostSockets;
 var() array<ParticleBodyParameterSet> BodyParticleParameters;
 var() AkSoundCue DryFireSound;
+var() AkSoundCue DefaultBoostSound;
+var() AkSoundCue OriginalBoostSound;
+var transient SoundSettingsSave_TA SoundSettings;
 var() LinearColor CarBoostGlowColor;
 var() array<AnimatedMaterialMesh> BoostMeshMaterialParams;
 var() array<BoostMeshMaterialOverride> BoostMeshMaterialOverrides;
@@ -83,9 +86,11 @@ var export editinline transient CarMeshComponentBase_TA CarMesh;
 
 defaultproperties
 {
+	DefaultBoostSound=AkSoundCue'SFX_Car_Boost.Boost_Standard_Loop'
 	CarBoostGlowColor=(R=0.0,G=0.0,B=0.0,A=1.0)
 	BoostMeshFadeInTime=(Min=0.0,Max=1.0)
 	BoostMeshFadeOutTime=(Min=1.0,Max=2.0)
 	bRenderInactive=true
 	//Parameters=ParameterDispenser_X'Default__FXActor_Boost_TA.DefaultParameters'
+	CollisionType=COLLIDE_CustomDefault
 }

@@ -123,6 +123,9 @@ var Actor TargettedActor;
 var transient TextChatActor_TA TextChatActor;
 var float PickupButtonPressedSeconds;
 var float PickupActivationBuffer;
+var transient GameplaySettingsSave_TA GameplaySettingsSave;
+var transient float CachedInputPitch;
+var transient float CachedInputYaw;
 
 defaultproperties
 {

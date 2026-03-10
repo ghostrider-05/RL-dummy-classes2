@@ -8,10 +8,16 @@ class GRI_TA extends GRI_X
 	hidecategories(Navigation,Movement,Collision);
 
 var transient bool bHasTalkers;
+var transient bool bAllowTargetFind;
 var transient string NewDedicatedServerIP;
 
 defaultproperties
 {
 	
 	//Components(0)=GroupComponent_ORS'Default__GRI_TA.DefaultRegistryGroup'
+}
+replication
+{
+	 if(bNetInitial)
+		bAllowTargetFind;
 }

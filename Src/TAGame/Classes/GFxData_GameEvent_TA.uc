@@ -22,6 +22,7 @@ var databinding bool bHasLeaveMatchPenalty;
 var databinding bool bCanVoteToForfeit;
 var databinding bool bViewingEndGameReplay;
 var databinding bool bShowIntroScene;
+var databinding bool bFullMatchWinnerDecided;
 var databinding bool bReadyToStartGame;
 var databinding bool bClubMatch;
 var databinding bool bDisableTeamSelectScreen;
@@ -31,6 +32,9 @@ var databinding bool bServerShutdown;
 var databinding bool bAlwaysShowMatchTypeLabel;
 var databinding bool bShowMutatorInfo;
 var databinding bool bUnlimitedTime;
+var databinding bool bMatchCreatorAdminEnabled;
+var databinding bool bThistleMatch;
+var databinding bool bAntiCheatTerminated;
 var databinding string MatchState;
 var databinding name GameState;
 var databinding name MatchType;
@@ -50,6 +54,7 @@ var databinding string GamemodeName;
 var databinding string PartyPlaylistName;
 var databinding string MutatorsString;
 var databinding int SeriesGames;
+var databinding array<MutatorInfo> ActiveMutators;
 
 defaultproperties
 {

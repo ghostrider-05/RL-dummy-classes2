@@ -35,9 +35,11 @@ var transient string PendingErrorMessage;
 var transient float LastPsyNetReconnectTime;
 var transient GFxModal_X ModalKick;
 var transient GFxModal_X EGSReconnectModal;
+var transient GFxModal_X BanModal;
 var databinding string BuildEdition;
 var const int MAX_CLIENT_OFFSET;
 var EOSVoiceManager_TA VoiceManager;
+var EpicConfig_X EpicConfig;
 
 defaultproperties
 {
@@ -47,9 +49,9 @@ defaultproperties
 	/**EOSRestartLauncherMessage="You are not connected to Epic Online Services. You will need to restart the Epic Games Launcher and restart the game to use online features."*/
 	/**SaveReplayMessage="Would you like to save the replay?"*/
 	/**DefaultDisconnectionTitle="Connection Lost"*/
-	/**PsyNetReconnectMessage="You are currently not connected to the Rocket League? servers. Would you like to reconnect?"*/
-	/**PSPlusTipTitle="PlayStation?Plus Required"*/
-	/**PSPlusTipMessage="To play online splitscreen, ALL players must be signed into the PlayStation?Network. The primary player must also have PlayStation?Plus with their PlayStation?4 designated as their primary system."*/
+	/**PsyNetReconnectMessage="You are currently not connected to the Rocket League  servers. Would you like to reconnect?"*/
+	/**PSPlusTipTitle="PlayStation Plus Required"*/
+	/**PSPlusTipMessage="To play online splitscreen, ALL players must be signed into the PlayStation Network. The primary player must also have PlayStation Plus with their PlayStation 4 designated as their primary system."*/
 	/**RankedReconnectTitle="Reconnect"*/
 	/**RankedReconnectBody="It appears you accidentally left a ranked match. Would you like to rejoin?"*/
 	/**BannedTimeRemainingMessage="[Hours] hour(s) [Minutes] minute(s) remaining."*/

@@ -9,11 +9,13 @@ struct native MatchInfoJson
 {
 	var string Guid;
 	var array<string> ip_addresses;
+	var bool bIsPlaylistProtected;
 
 	structdefaultproperties
 	{
 		Guid=""
 		ip_addresses.Empty
+		bIsPlaylistProtected=false
 	}
 };
 

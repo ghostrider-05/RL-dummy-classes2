@@ -124,6 +124,8 @@ var native transient Pointer BulletRigidBody;
 var PhysicsConfig_TA PhysicsConfig;
 var repnotify transient byte TeleportCounter;
 var FXActor_X AttackerDemolishFX;
+var const transient float GroundTraceDistance;
+var const transient float GroundOffsetDistance;
 
 defaultproperties
 {
@@ -134,6 +136,8 @@ defaultproperties
 	ReplicatedRBState=(Quaternion=(X=0.0,Y=0.0,Z=0.0,W=1.0),Location=(X=0.0,Y=0.0,Z=0.0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),Time=0.0,bSleeping=false,bNewData=false)
 	RBHistoryClass=class'RBHistory_TA'
 	//Replay=ReplayComponent_TA'Default__RBActor_TA.ReplayComponent0'
+	GroundTraceDistance=5000.0
+	GroundOffsetDistance=-13.0
 	
 	bSimulateGravity=false
 	bCanBeBaseForPawns=true

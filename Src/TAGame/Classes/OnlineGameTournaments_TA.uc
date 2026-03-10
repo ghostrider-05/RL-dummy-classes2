@@ -24,3 +24,11 @@ var() TourMatchServerBrowser_TA MatchServerBrowser;
 var() TourStatus_TA Status;
 var() AutoTour_TA AutoTour;
 var transient TourEvent_TA TourEvent;
+var const name ManualTournamentName;
+var const name AutoTournamentName;
+
+defaultproperties
+{
+	ManualTournamentName=Tournament
+	AutoTournamentName=AutoTournament
+}

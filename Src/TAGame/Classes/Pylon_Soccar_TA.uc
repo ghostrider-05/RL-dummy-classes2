@@ -18,6 +18,8 @@ var() Vector FieldCenter;
 var() export editinline array<export editinline Goal_TA> Goals;
 // PlayerStarts contained in this field
 var() array<PlayerStart> SpawnPoints;
+var() LinearColor MainBoostpadWarmupColor;
+var() LinearColor SecondaryBoostpadWarmupColor;
 var const float GroundZ;
 var() Vector PodiumSpotlightOverride;
 var() float PodiumSpotlightZ;
@@ -25,6 +27,8 @@ var() bool bRandomBallSpawnPoint;
 
 defaultproperties
 {
+	MainBoostpadWarmupColor=(R=0.750,G=0.840,B=1.0,A=1.0)
+	SecondaryBoostpadWarmupColor=(R=0.250,G=0.750,B=1.0,A=1.0)
 	bUseRecast=true
 	
 	CylinderComponent=CollisionCylinder

@@ -18,6 +18,7 @@ var bool bClubVsClub;
 var databinding bool bOverTime;
 var databinding bool bNoContest;
 var databinding bool bForfeit;
+var databinding bool bAntiCheatTerminated;
 var int ClubID;
 var UniqueNetId CustomMatchCreatorPlayerID;
 var string CustomServerName;

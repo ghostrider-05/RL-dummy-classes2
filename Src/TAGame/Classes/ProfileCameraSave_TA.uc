@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class ProfileCameraSave_TA extends SaveObject_TA
+class ProfileCameraSave_TA extends JsonSaveObject_TA
 	config(Game);
 
 var ProfileAutoCamSettings AutoCam;
@@ -30,7 +30,7 @@ var float PrespawnLerpSpeed;
 defaultproperties
 {
 	AutoCam=(FOV=90.0,Height=250.0,Distance=1200.0,MoveSpeed=2.0,MoveSpeedZ=0.50,RotateSpeed=3.0,AerialDistance=300.0,FocusBlendSpeed=15.0,AerialPrediction=0.10,bUseReplayCamera=true,bFocusOnGoals=true)
-	Camera=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0)
+	Camera=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
 	bInvertSwivelPitch=true
 	bToggleSecondaryCamera=true
 	bUseBallIndicator=true

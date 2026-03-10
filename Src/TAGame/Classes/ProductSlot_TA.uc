@@ -10,7 +10,9 @@ var const localized string PluralLabel;
 var const localized string Description;
 var() string OnlineLabel;
 var const transient int SlotIndex;
+var transient int InjectedProductSlotSortIndex;
 var() Product_TA DefaultProduct_New;
+var() Texture2D DefaultThumbnail;
 var() editoronly const editinline ProductTemplate_TA ProductTemplate;
 var() editoronly const editinline ProductAsset_TA ProductAssetTemplate;
 // Icon to use for UI
@@ -29,5 +31,6 @@ var() const float DropWeight;
 
 defaultproperties
 {
+	InjectedProductSlotSortIndex=99
 	DropWeight=10.0
 }

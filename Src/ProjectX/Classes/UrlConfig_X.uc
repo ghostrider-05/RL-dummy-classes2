@@ -10,10 +10,16 @@ var config string CDN;
 var string ESportsURL;
 var config string CrossPlatformSupportURL;
 var config string LegalTextWebFolder;
+var config array<config string> ValidUrls_Switch;
 
 defaultproperties
 {
 	/**CDN="https://rl-cdn.psyonix.com/"*/
 	/**CrossPlatformSupportURL="https://support.rocketleague.com/hc/en-us/articles/360015502074-How-do-I-play-with-a-friend-that-is-on-a-different-platform-"*/
 	/**LegalTextWebFolder="Legal/"*/
+	/**ValidUrls_Switch(0)="^https://([0-9A-Za-z\\-]+\\.)*rocketleague\\.com(/|$)"
+	ValidUrls_Switch(1)="^https://([0-9A-Za-z\\-]+\\.)*nintendo\\.com(/|$)"
+	ValidUrls_Switch(2)="^https://psyonix\\.zendesk\\.com(/|$)"
+	ValidUrls_Switch(3)="^https://([0-9A-Za-z\\-]+\\.)*epicgames\\.com(/|$)"
+	ValidUrls_Switch(4)="^https://([0-9A-Za-z\\-]+\\.)*rl\\.gg(/|$)"*/
 }

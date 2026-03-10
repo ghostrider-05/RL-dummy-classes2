@@ -10,5 +10,4 @@ defaultproperties
 {
 	
 	Components(0)=DefaultORS
-	CollisionType=COLLIDE_CustomDefault
 }

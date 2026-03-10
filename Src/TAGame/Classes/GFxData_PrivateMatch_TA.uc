@@ -10,6 +10,7 @@ var() databinding string ServerName;
 var() databinding string Password;
 var() databinding int SelectedMaxPlayerCount;
 var() databinding bool bPublicMatch;
+var databinding bool bMatchCreatorAdminEnabled;
 var() const int MinServerNameLength;
 var() const localized string AlreadySearchingMessage;
 var() const localized string AlreadySearchingForPublicMessage;
@@ -17,6 +18,7 @@ var() const localized string ServerNameLengthError;
 var() const localized string DuplicateLanServerMessage;
 var transient _Types_TA.SearchStatusOwner SearchStatusOwner;
 var const ECustomMatchSettingsType SettingsType;
+var transient PrivateMatchSettingsSave_TA SettingsSave;
 
 defaultproperties
 {

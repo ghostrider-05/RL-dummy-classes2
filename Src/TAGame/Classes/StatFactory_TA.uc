@@ -110,6 +110,7 @@ struct StatEventCollection
 	var() StatEvent_TA CarTouches;
 	var() StatEvent_TA Demolition;
 	var() StatEvent_TA Demolish;
+	var() StatEvent_TA Demolished;
 	var() StatEvent_TA BallDemolitionScore;
 	var() StatEvent_TA CarDemolitionScore;
 	var() StatEvent_TA DemolitionSave;
@@ -119,6 +120,7 @@ struct StatEventCollection
 	var() StatEvent_TA PossessionSteal;
 	var() StatEvent_TA PossessionDenial;
 	var() StatEvent_TA PossessionClear;
+	var() StatEvent_TA ComebackWin;
 	var() StatEvent_TA SmallBoostsCollected;
 	var() StatEvent_TA BigBoostsCollected;
 	var() StatEvent_TA BoostUsed;
@@ -135,6 +137,7 @@ struct StatEventCollection
 	var() StatEvent_TA KeepUpPossession;
 	var() StatEvent_TA KeepUpDenial;
 	var() StatEvent_TA KeepUpClear;
+	var() StatEvent_TA FlipReset;
 
 	structdefaultproperties
 	{
@@ -179,6 +182,7 @@ struct StatEventCollection
 		CarTouches=None
 		Demolition=None
 		Demolish=None
+		Demolished=None
 		BallDemolitionScore=None
 		CarDemolitionScore=None
 		DemolitionSave=None
@@ -188,6 +192,7 @@ struct StatEventCollection
 		PossessionSteal=None
 		PossessionDenial=None
 		PossessionClear=None
+		ComebackWin=None
 		SmallBoostsCollected=None
 		BigBoostsCollected=None
 		BoostUsed=None
@@ -204,6 +209,7 @@ struct StatEventCollection
 		KeepUpPossession=None
 		KeepUpDenial=None
 		KeepUpClear=None
+		FlipReset=None
 	}
 };
 
@@ -224,15 +230,18 @@ var() int HatTrickThreshold;
 var() int PlaymakerThreshold;
 var() int SaviorThreshold;
 var() int DemolitionThreshold;
+var() int ComebackScoreDifference;
 var transient bool bGaveFirstTouch;
 var transient GameEvent_Soccar_TA SoccarGame;
 var transient PRI_TA ScoringPRI;
 var transient array<Car_TA> CarsIssuedAnyFiveHit;
+var transient array<Team_TA> ComebackTeams;
 var const float MinPossessionTimeForSteal;
 var const float CrossbarHitsCooldown;
 
 defaultproperties
 {
+	ComebackScoreDifference=3
 	MinPossessionTimeForSteal=0.10
 	CrossbarHitsCooldown=0.10
 	TickGroup=TG_PostAsyncWork

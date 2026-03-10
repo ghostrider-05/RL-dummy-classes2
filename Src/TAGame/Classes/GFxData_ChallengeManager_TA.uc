@@ -21,13 +21,28 @@ var array< class > ChallengeFilters;
 var transient string LastSelectedPage;
 var transient string LastSelectedSubfolder;
 var const string MainMenuString;
+var const name SeasonTabName;
+var const name WeeklyTabName;
+var const name TrainingTabName;
 var ChallengeConfig_TA ChallengeConfig;
 var SpecialEventConfig_TA SpecialEventConfig;
+var ThistleConfig_TA ThistleConfig;
+var const localized string ThistleIntroTitle;
+var const localized string ThistleIntroSubTitle;
+var const localized string ThistleIntroDescription;
+var const localized string ThistleIntroSubText;
 
 defaultproperties
 {
 	ChallengeFilters(0)=class'ChallengeFilter_Default_TA'
 	ChallengeFilters(1)=class'ChallengeFilter_Progress_TA'
 	MainMenuString="MainMenu"
+	SeasonTabName=seasonTab
+	WeeklyTabName=challengesTab
+	TrainingTabName=newDriverTab
+	/**ThistleIntroTitle="You've been sorted!"*/
+	/**ThistleIntroSubTitle="Celebrate the achievements of your house as part of Rocket League's Frosty Fest event in 2025"*/
+	/**ThistleIntroDescription="Play with a House Title equipped to collect points for your chosen House. Every completed match awards a point, with an extra point granted for winning. When the event ends, the House with the most points earns a special House Title!\\nWhether you're a Gryffindor, Slytherin, Ravenclaw or Hufflepuff, get ready to rep your house pride!"*/
+	/**ThistleIntroSubText="All House Titles will be available for free via the Item Shop. Simply choose your house, equip your House Title and go play Rocket League!"*/
 	TableName=ChallengeManager
 }
