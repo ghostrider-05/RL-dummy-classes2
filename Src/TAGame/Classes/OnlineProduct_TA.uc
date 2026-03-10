@@ -17,6 +17,7 @@ var array<ProductAttribute_TA> Attributes;
 var int SeriesID;
 var int TradeHold;
 var Qword AddedTimestamp;
+var bool bIsRocketPassProduct;
 var const transient string CachedSortLabel;
 var const transient string CachedShortSortLabel;
 var const transient ProductHashID CachedHash;

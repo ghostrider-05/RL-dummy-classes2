@@ -18,9 +18,40 @@ enum EBoostType
 var() float BoostAmount;
 var() AkSoundCue LocalPickupSound;
 var() EBoostType BoostType;
+var() FXActor_X WarmupFXActorArchetype;
+var transient FXActor_X WarmupFXActor;
+var FXActorEvent_X WarmupEvent;
+var FXActorEvent_X RespawnEvent;
+var() float WarmupGlowPower;
+var LinearColor MainWarmupColor;
+var LinearColor SecondaryWarmupColor;
+var const name WarmupPanAnimateName;
+var const name WarmupGlowMeshName;
+var const name WarmupMeshName;
+var const name WarmupBrightnessName;
+var const name WarmupRTPCName;
+var const name WarmupRespawnSoundName;
+var const name BoostPadColorName;
+var const name BoostPadFirstScrollColorName;
+var const name BoostPadSecondScrollColorName;
+var const float WarmupPosOffset;
 
 defaultproperties
 {
+	WarmupEvent=FXActorEvent_X'FXActorEvents.Warmup'
+	RespawnEvent=FXActorEvent_X'FXActorEvents.Respawn'
+	WarmupGlowPower=3.0
+	MainWarmupColor=(R=0.0,G=0.0,B=0.0,A=1.0)
+	SecondaryWarmupColor=(R=0.0,G=0.0,B=0.0,A=1.0)
+	WarmupPanAnimateName=PanAnimate
+	WarmupGlowMeshName=GlowMesh
+	WarmupMeshName=WarmupMesh
+	WarmupBrightnessName=Brightness
+	WarmupRTPCName=Boost_Pickup_Respawn_Timer
+	WarmupRespawnSoundName=PickupRespawnStartSound
+	BoostPadColorName=BoostPad_Color
+	BoostPadFirstScrollColorName=BoostPad_ScrollColor_1
+	BoostPadSecondScrollColorName=BoostPad_ScrollColor_2
 	
 	CylinderComponent=DefaultCollisionCylinder
 	begin object name=DefaultCollisionCylinder

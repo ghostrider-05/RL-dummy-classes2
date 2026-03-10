@@ -97,6 +97,7 @@ var GameState_TA GameState;
 var transient PauseStaticDataSync_X PauseInstance;
 var Qword MatchStartEpoch;
 var float MatchTotalSecondsPlayed;
+var FXActor_TA DemoFXOverride;
 
 defaultproperties
 {
@@ -153,11 +154,12 @@ replication
 		bAllowQueueSaveReplay, bIsBotMatch;
 
 	 if(bNetInitial && Role==ROLE_Authority)
-		GameOwner, MatchStartEpoch, 
-		MatchTotalSecondsPlayed, ReplicatedGameStateTimeRemaining, 
-		ReplicatedRoundCountDownNumber, ReplicatedStateName, 
-		bAllowReadyUp, bAlwaysShowMatchTypeLabel, 
-		bCanVoteToForfeit, bHasLeaveMatchPenalty;
+		DemoFXOverride, GameOwner, 
+		MatchStartEpoch, MatchTotalSecondsPlayed, 
+		ReplicatedGameStateTimeRemaining, ReplicatedRoundCountDownNumber, 
+		ReplicatedStateName, bAllowReadyUp, 
+		bAlwaysShowMatchTypeLabel, bCanVoteToForfeit, 
+		bHasLeaveMatchPenalty;
 
 	 if(bNetInitial/**Empty key for position: 47.*/)
 		ReplicatedStateIndex;

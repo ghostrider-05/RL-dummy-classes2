@@ -195,6 +195,7 @@ defaultproperties
 	// Reference: StaticMeshComponent'Default__Ball_TA.DefaultMesh'
 	Components(5)=DefaultMesh
 //	Components(6)=PitchTekDrawingComponent_TA'Default__Ball_TA.DefaultPTDComponent'
+	HighContrastRenderingMode=HighContrastRenderingMode_WorldAndHighContrastPass
 	NetPriority=10.0
 	
 	CollisionComponent=DefaultMesh

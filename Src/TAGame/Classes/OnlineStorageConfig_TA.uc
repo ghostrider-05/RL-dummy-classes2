@@ -5,24 +5,44 @@
 *******************************************************************************/
 class OnlineStorageConfig_TA extends OnlineConfig_X;
 
-var const array< class > DisabledClasses;
-var string OnlineStorageFileName;
+var const array< class > SaveDisabledClasses;
+var const array< class > SettingsEnabledClasses;
+var string OnlineSaveFileName;
+var string OnlineSettingsFileName;
 var Qword MinSecondsBetweenCloudUploads;
 var float UploadRetryTime;
 
 defaultproperties
 {
-	DisabledClasses(0)=class'PersonaSave_TA'
-	DisabledClasses(1)=class'VideoSettingsSavePC_TA'
-	DisabledClasses(2)=class'VideoSettingsSaveConsole_TA'
-	DisabledClasses(3)=class'ConnectionQualitySave_TA'
-	DisabledClasses(4)=class'RankedReconnectSave_TA'
-	DisabledClasses(5)=class'ContentSave_TA'
-	DisabledClasses(6)=class'FirstTimeExperienceSave_TA'
-	DisabledClasses(7)=class'NotificationSave_TA'
-	DisabledClasses(8)=class'SeasonSave_TA'
-	DisabledClasses(9)=class'MultiItemDropsSave_TA'
-	OnlineStorageFileName="RLSaveData"
+	SaveDisabledClasses(0)=class'PersonaSave_TA'
+	SaveDisabledClasses(1)=class'VideoSettingsSavePC_TA'
+	SaveDisabledClasses(2)=class'VideoSettingsSaveConsole_TA'
+	SaveDisabledClasses(3)=class'ConnectionQualitySave_TA'
+	SaveDisabledClasses(4)=class'RankedReconnectSave_TA'
+	SaveDisabledClasses(5)=class'ContentSave_TA'
+	SaveDisabledClasses(6)=class'NotificationSave_TA'
+	SaveDisabledClasses(7)=class'SeasonSave_TA'
+	SaveDisabledClasses(8)=class'MultiItemDropsSave_TA'
+	SettingsEnabledClasses(0)=class'EOSVoiceSettingsSave_TA'
+	SettingsEnabledClasses(1)=class'GameplaySettingsSave_TA'
+	SettingsEnabledClasses(2)=class'MusicPlayerSave_TA'
+	SettingsEnabledClasses(3)=class'NetworkSave_TA'
+	SettingsEnabledClasses(4)=class'OnlineFreeplaySettingsSave_TA'
+	SettingsEnabledClasses(5)=class'PlayerAvatarBorderSave_TA'
+	SettingsEnabledClasses(6)=class'PlayerBannerSave_TA'
+	SettingsEnabledClasses(7)=class'ProductsArchiveSave_TA'
+	SettingsEnabledClasses(8)=class'ProductsFavoriteSave_TA'
+	SettingsEnabledClasses(9)=class'ProfileCameraSave_TA'
+	SettingsEnabledClasses(10)=class'ProfileControlsSave_TA'
+	SettingsEnabledClasses(11)=class'ProfileGamepadSave_TA'
+	SettingsEnabledClasses(12)=class'ProfileGameplaySave_TA'
+	SettingsEnabledClasses(13)=class'ProfileLoadoutSave_TA'
+	SettingsEnabledClasses(14)=class'ProfilePCSave_TA'
+	SettingsEnabledClasses(15)=class'ProfileQuickChatSave_TA'
+	SettingsEnabledClasses(16)=class'ProfileStatsSave_TA'
+	SettingsEnabledClasses(17)=class'SoundSettingsSave_TA'
+	OnlineSaveFileName="RLSaveData"
+	OnlineSettingsFileName="RLSettingsData"
 	
 	UploadRetryTime=4.0
 }

@@ -11,6 +11,7 @@ var SignedMessageObject_X MessageObject;
 var UniqueNetId SenderPlatformId;
 var array<string> PublicKeyParts;
 var int MessageId;
+var bool bSentToServer;
 
 defaultproperties
 {

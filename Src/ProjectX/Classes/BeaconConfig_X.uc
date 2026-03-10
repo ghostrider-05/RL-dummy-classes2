@@ -7,6 +7,7 @@ class BeaconConfig_X extends OnlineConfig_X
 	config(Engine);
 
 var config bool bUdpPingMetrics;
+var bool bBroadcastMapNotFoundMessages;
 var config int MaxPingsPerAddress;
 var config int MaxPingsWindowSeconds;
 var config int StatsLogDelaySeconds;
@@ -16,6 +17,7 @@ var config int PingsPerSecond;
 defaultproperties
 {
 	/**bUdpPingMetrics=true*/
+	bBroadcastMapNotFoundMessages=true
 	/**MaxPingsPerAddress=3*/
 	/**MaxPingsWindowSeconds=1*/
 	/**StatsLogDelaySeconds=30*/

@@ -6,3 +6,4 @@
 class PrivateMatchSettingsSave_TA extends CustomMatchSettingsSave_TA;
 
 var string Region;
+var bool bMatchCreatorAdminEnabled;

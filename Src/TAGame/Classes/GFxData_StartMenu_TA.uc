@@ -10,9 +10,10 @@ var const localized string SigningInText;
 var transient GFxModal_X SignInModal;
 var transient int ClickedControllerIndex;
 var transient OnlinePlayerInterface PlayerInterfaceAwaiting;
+var transient bool bSkipLogin;
 
 defaultproperties
 {
-	/**SigningInText="Signing in to Rocket League? servers..."*/
+	/**SigningInText="Signing in to Rocket League  servers..."*/
 	TableName=StartMenu
 }

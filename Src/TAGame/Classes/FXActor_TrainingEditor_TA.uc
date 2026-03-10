@@ -22,4 +22,5 @@ defaultproperties
 	AdjustingSpeedState=FXActorEvent_X'FXActorEvents.Editing'
 	PlaytestingState=FXActorEvent_X'FXActorEvents.Active'
 	//Parameters=ParameterDispenser_X'Default__FXActor_TrainingEditor_TA.DefaultParameters'
+	CollisionType=COLLIDE_CustomDefault
 }

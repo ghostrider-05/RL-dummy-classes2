@@ -5,6 +5,19 @@
 *******************************************************************************/
 class FriendsListBuilder_TA extends Object;
 
+struct native PersonaUpdateData
+{
+	var OnlineFriend FriendData;
+	var EPersonaInfoOrigin Origin;
+
+	structdefaultproperties
+	{
+		
+		Origin=PersonaOrigin_Platform
+	}
+};
+
 var array<PersonaDataId> PlatformFriends;
 var array<PersonaDataId> EpicFriends;
 var array<PersonaDataId> AllFriends;
+var transient array<PersonaUpdateData> PersonasToUpdate;

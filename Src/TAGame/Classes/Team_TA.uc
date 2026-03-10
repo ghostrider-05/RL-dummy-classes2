@@ -75,9 +75,9 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		ClubColors, CustomTeamName, 
 		GameEvent, LogoData;
 
 	 if(bNetDirty)
-		ClubID, Difficulty;
+		ClubColors, ClubID, 
+		CustomTeamName, Difficulty;
 }

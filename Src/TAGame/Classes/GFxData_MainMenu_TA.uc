@@ -13,11 +13,19 @@ var transient int QueuedSubIdx;
 var const name UISoundState_AudioPreview;
 var const name UISoundState_MusicPreview;
 var name UISoundState_CurrentPreview;
+var const name S22NewSettingsTutorial;
+var const name OptionsMenuMovieName;
+var const localized string NewOptionsTitle;
+var const localized string S22NewOptionsDescription;
 
 defaultproperties
 {
 	PreviewCameraRotationScale=50.0
 	UISoundState_AudioPreview=AudioPreview
 	UISoundState_MusicPreview=MusicPreview
+	S22NewSettingsTutorial=S22NewSettingsTutorial
+	OptionsMenuMovieName=OptionsMenuMovie
+	/**NewOptionsTitle="New Options"*/
+	/**S22NewOptionsDescription="New options have been added to the Settings menu this Season including toggles for the Flip Reset Indicator in Gameplay and Standard Boost Audio override in Audio."*/
 	TableName=MainMenu
 }

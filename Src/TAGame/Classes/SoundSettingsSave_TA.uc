@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class SoundSettingsSave_TA extends SaveObject_TA;
+class SoundSettingsSave_TA extends JsonSaveObject_TA;
 
 var float MasterVolume;
 var float SoundVolume;
@@ -14,7 +14,8 @@ var float CrowdVolume;
 var float VoiceVolume;
 var bool bMuteOnFocusLost;
 var bool bStreamerSafeAudioEnabled;
-var bool bIsFinishedLoadingSaveSettings;
+var transient bool bIsFinishedLoadingSaveSettings;
+var bool bOverrideBoostSoundToDefault;
 var EAkOutputType OutputType;
 var EAkDynamicRangeType DynamicRangeType;
 var EMusicStingersSetting MusicStingersSetting;

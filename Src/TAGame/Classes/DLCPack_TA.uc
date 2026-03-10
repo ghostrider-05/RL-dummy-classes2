@@ -13,5 +13,5 @@ var(Entitlements) int SteamID;
 var(Entitlements) string PS4ID;
 var(Entitlements) string XboxOneID;
 var(Entitlements) string SwitchID;
-var(Entitlements) string EpicId;
+var(Entitlements) string EpicID;
 var() array<Product_TA> Products;

@@ -9,9 +9,14 @@ class GameInfo_GFxMenu_TA extends GameInfoBase_TA
 
 var transient CarPreviewSet_TA CarPreviewSet;
 var transient PremiumGaragePreviewSet_TA PremiumPreviewSet;
+var transient RocketPassPreviewSet_TA RocketPassPreviewSet;
 var export editinline transient ExplosionPreviewer_TA ExplosionPreviewer;
 var export editinline transient PostMatchCelebrationPreviewer_TA PostMatchPreviewer;
 var MusicStingersPreviewer_TA MusicStingersPreviewer;
+var const int GaragePreviewCarController1;
+var const int GaragePreviewCarController2;
+var const int RocketPassPreviewCarController1;
+var const int RocketPassPreviewCarController2;
 var() export editinline MenuSequencer_TA MenuSequencer;
 var const string UIStateNames[EUIMenuState];
 var const name UISoundState_MainMenu;

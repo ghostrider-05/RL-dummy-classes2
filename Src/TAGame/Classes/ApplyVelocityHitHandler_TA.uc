@@ -7,8 +7,10 @@ class ApplyVelocityHitHandler_TA extends ExplosionHitHandler_TA
 	editinlinenew;
 
 var() Vector VelocityToApply;
+var() const float ReferenceFPS;
 
 defaultproperties
 {
+	ReferenceFPS=60.0
 	bOnlyApplyImpulseOnce=false
 }

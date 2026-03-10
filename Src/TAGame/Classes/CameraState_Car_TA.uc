@@ -47,6 +47,8 @@ var transient float AirGroundBlend;
 var transient CameraOrientation ViewOffset;
 var transient bool bFirstExecution;
 var transient bool bOnGround;
+var transient bool bFreeLookActive;
+var transient bool bRecenterActive;
 var transient Vector GroundNormal;
 var float CameraStartDistance;
 var CameraConfig_TA Config;

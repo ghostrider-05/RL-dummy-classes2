@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class PersonaSave_TA extends SaveObject_TA;
+class PersonaSave_TA extends JsonSaveObject_TA;
 
 var array<PersonaDataId> RecentPlayers;
 var array<PlayerGameID> RecentGameIDs;

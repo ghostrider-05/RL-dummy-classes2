@@ -48,6 +48,7 @@ var bool bEnforcePinRequirementForFriends;
 var bool bEnforceCabinedMode;
 var bool bPromptForPin;
 var bool bForceEnableTrade;
+var bool bEOSSocialOverlayEnabled;
 var() float RemoteAvatarPermissionRequestDelay;
 var() int SecondsBetweenPolling;
 var() int SecondsBeforeRequestsTimeout;
@@ -78,6 +79,7 @@ defaultproperties
 {
 	bPollDuringAccountLinking=true
 	bEnforcePinRequirementForFriends=true
+	bEOSSocialOverlayEnabled=true
 	RemoteAvatarPermissionRequestDelay=0.10
 	SecondsBetweenPolling=15
 	SecondsBeforeRequestsTimeout=30
@@ -88,7 +90,7 @@ defaultproperties
 	CabinedModeURL="/v1/accounts?accountId={AccountId}"
 	CreateAccountURL="/v1/accounts"
 	DefaultChatPermissionLevel=CPL_Nobody
-	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false,VoiceReporting=VRP_Always,TextReporting=VRP_Always,bFilterMatureLanguage=true,bEnableCPCCShowRoWModal=false,bEnableCPCCShowRealPrice=false)
+	DefaultPermissions=(TextChat=CPL_Nobody,VoiceChat=CPL_Nobody,Trade=TPL_Nobody,bRequirePinForFriends=true,bItemShopNotificationsAllowed=false,VoiceReporting=VRP_Always,TextReporting=VRP_Always,bFilterMatureLanguage=true,bEnableCPCCShowRoWModal=false,bEnableCPCCShowRealPrice=false,bAllowTargetedNewsSetting_Functional=false,bAllowTargetedNewsSetting_Marketing=false,bAllowTargetedNewsSetting_Experience=false)
 	ForgotPinURL="https://rocketleague.com/pin-reset/"
 	ParentalControlsURL="https://rl.gg/cabinedAccounts"
 	PrivacyPolicyURL="https://www.epicgames.com/site/privacypolicy"

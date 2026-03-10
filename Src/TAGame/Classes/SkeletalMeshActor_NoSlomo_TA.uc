@@ -26,7 +26,6 @@ defaultproperties
 	end object
 	// Reference: SkeletalMeshComponent_NoSlomo_TA'Default__SkeletalMeshActor_NoSlomo_TA.SkeletalMeshComponent1'
 	Components(2)=SkeletalMeshComponent1
-	CollisionType=COLLIDE_CustomDefault
 	
 	CollisionComponent=SkeletalMeshComponent1
 }

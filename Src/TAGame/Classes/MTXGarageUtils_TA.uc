@@ -27,6 +27,20 @@ struct native PriceInfo
 	}
 };
 
+struct native MTXProduct
+{
+	var int ProductID;
+	var databinding ProductHashID HashID;
+	var databinding bool bIsOwned;
+
+	structdefaultproperties
+	{
+		ProductID=0
+		HashID=(Id=0)
+		bIsOwned=false
+	}
+};
+
 struct MTXPurchaseInfo
 {
 	var databinding int CatalogID;
@@ -38,12 +52,14 @@ struct MTXPurchaseInfo
 	var databinding string PurchasePrice;
 	var databinding string OriginalPrice;
 	var databinding int DiscountPercentage;
-	var databinding string ProductHashIDs;
+	var databinding array<MTXProduct> Products;
+	var databinding array<MTXProduct> InjectedProducts;
 	var databinding string BundleCurrencies;
 	var databinding bool bCanBePlayerTraded;
 	var databinding bool bIsOwned;
 	var databinding bool bIsExactPack;
 	var databinding int BonusVCPercentage;
+	var databinding bool bDualLev;
 	var int Price;
 	var int VCAmount;
 	var bool bIsPriceUpdated;
@@ -61,12 +77,14 @@ struct MTXPurchaseInfo
 		PurchasePrice=""
 		OriginalPrice=""
 		DiscountPercentage=0
-		ProductHashIDs=""
+		Products.Empty
+		InjectedProducts.Empty
 		BundleCurrencies=""
 		bCanBePlayerTraded=false
 		bIsOwned=false
 		bIsExactPack=false
 		BonusVCPercentage=0
+		bDualLev=false
 		Price=0
 		VCAmount=0
 		bIsPriceUpdated=false

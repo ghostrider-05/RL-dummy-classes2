@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class MatchmakingSettingsSave_TA extends SaveObject_TA;
+class MatchmakingSettingsSave_TA extends JsonSaveObject_TA;
 
 var EMatchmakingViewTab MatchmakingViewTab;
 var array<name> QuickMatchPlaylists;

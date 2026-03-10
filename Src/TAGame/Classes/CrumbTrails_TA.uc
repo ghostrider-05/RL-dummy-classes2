@@ -37,3 +37,4 @@ var array<CrumbTrailData> CrumbTrails;
 var CrumbTrailRedefinition_TA CrumbRedefine;
 var CrumbTrailSave_TA CrumbSave;
 var transient bool bTrailSetup;
+var array<name> RuntimeCrumbNames;

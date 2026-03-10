@@ -71,7 +71,7 @@ var CrossplayConfig_X CrossplayConfig;
 
 defaultproperties
 {
-	/**RegionRestrictedPlayerTrade="Sorry, your country?s regulations prevent player to player item trading."*/
+	/**RegionRestrictedPlayerTrade="Sorry, your country s regulations prevent player to player item trading."*/
 	TableName=Party
 	bLevelTransitionPersistent=true
 }

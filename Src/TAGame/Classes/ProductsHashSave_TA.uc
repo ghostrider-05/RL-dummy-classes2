@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class ProductsHashSave_TA extends SaveObject_TA;
+class ProductsHashSave_TA extends JsonSaveObject_TA;
 
 var transient array<ProductHashID> HashIDs;
 var array<Qword> InstanceIDs;

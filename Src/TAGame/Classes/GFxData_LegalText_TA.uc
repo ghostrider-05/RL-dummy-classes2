@@ -10,8 +10,8 @@ var bool bTriggeredSync;
 
 defaultproperties
 {
-	LegacyLegalPlatforms(0)=214
-	LegacyLegalPlatforms(1)=124
+	LegacyLegalPlatforms(0)=50
+	LegacyLegalPlatforms(1)=126
 	LegacyLegalPlatforms(2)=0
 	LegacyLegalPlatforms(3)=0
 	TableName=LegalText

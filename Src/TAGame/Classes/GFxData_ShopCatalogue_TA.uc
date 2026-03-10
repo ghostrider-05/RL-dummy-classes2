@@ -32,6 +32,7 @@ var export editinline transient OnlineProductStoreSet_TA CatalogueSet;
 var transient ShopItemExpirationHelper_TA ExpirationHelper;
 var transient ShopAutoLoadHelper_TA AutoLoadHelper;
 var ShopsConfig_TA ShopsConfig;
+var ProductsConfig_TA ProductsConfig;
 
 defaultproperties
 {

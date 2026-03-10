@@ -7,11 +7,17 @@ class GFxData_Community_TA extends GFxDataSingleton_X;
 
 var transient array<GFxData_BlogTile_TA> GFxBlogTiles;
 var BlogConfig_X Config;
+var array<BlogTile_X> BlogTiles;
 var databinding string MotD;
 var transient BlogTileCache_TA Cache;
 var transient ShopNotificationsManager_TA ShopNotificationsManager;
+var transient RocketPassConfig_TA RocketPassConfig;
+var transient OnlinePlayerAuthentication_X OnlineAuth;
 var transient bool bIsNewsPanelExpanded;
 var transient bool bInitialLoadCompleted;
+var array<string> ViewInteractionEvents;
+var array<string> EngageInteractionEvents;
+var transient RPC_CommunityNews_TA CommunityNewsRPC;
 
 defaultproperties
 {

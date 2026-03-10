@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class ProfileGameplaySave_TA extends SaveObject_TA;
+class ProfileGameplaySave_TA extends JsonSaveObject_TA;
 
 enum EProfileGameplaySaveVersion
 {
@@ -15,13 +15,27 @@ var bool bMetric;
 var bool bTeamColoredBoostMeter;
 var bool bDisableDivisions;
 var bool bDisableDivisionsSports;
+var bool bAllowTargetedNews_Experience;
+var bool bAllowTargetedNews_Marketing;
+var bool bAllowTargetedNews_Functional;
 var EHUDMessageLevel HUDMessageThreshold;
 var ERankInfoDisplayType RankInfoDisplayType;
 var ENameplateMode NameplateMode;
+var EVisibleMMRPreference VisibleMMRPreference;
+var const string TARGETING_EXPERIENCE;
+var const string TARGETING_MARKETING;
+var const string TARGETING_FUNCTIONAL;
 
 defaultproperties
 {
 	bTeamColoredBoostMeter=true
+	bAllowTargetedNews_Experience=true
+	bAllowTargetedNews_Marketing=true
+	bAllowTargetedNews_Functional=true
 	RankInfoDisplayType=RankInfoDisplayType_All
 	NameplateMode=NameplateMode_AlwaysVisible
+	VisibleMMRPreference=VMP_Everywhere
+	TARGETING_EXPERIENCE="experience"
+	TARGETING_MARKETING="marketing"
+	TARGETING_FUNCTIONAL="functional"
 }

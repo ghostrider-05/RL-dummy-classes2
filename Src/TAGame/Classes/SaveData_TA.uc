@@ -42,6 +42,7 @@ var export editinline transient OnlineProductStoreSet_TA OnlineProductSet;
 var Qword MostRecentProductUpdatedTimestamp;
 var Qword LastFullProductSyncTimestamp;
 var EPsyNetEnvironment PsyNetEnvironment;
+var EPsyNetEnvironment SyncedCloudEnvironment;
 var transient ProductsConfig_TA ProductsConfig;
 var export editinline transient ProductTransactions_TA ProductTransactions;
 // Loaded profiles
@@ -53,6 +54,7 @@ var int SaveDataVersion;
 var export editinline transient ObjectProvider SaveObjectProvider;
 var array<SaveObject_TA> SaveObjects;
 var int SaveTick;
+var Qword SaveTimestamp;
 var transient AsyncTask SyncOnlineStorageTask;
 var transient OnlineStorageSyncManager_TA StorageSyncManager;
 var transient EOSOnlineStorageUploader_TA EOSStorageUploader;
@@ -70,6 +72,7 @@ var const string CreditRefundForOldSeasons;
 defaultproperties
 {
 	/**bEnableOnlineData=true*/
+	SyncedCloudEnvironment=EPE_Environment4
 	//ProductTransactions=ProductTransactions_TA'Default__SaveData_TA.DefaultProductTransactions'
 	XPGainPercentage(0)=1.0
 	XPGainPercentage(1)=0.50

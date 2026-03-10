@@ -13,15 +13,15 @@ var const localized string NotLoggedInPsynetMessage;
 var const localized string BannedMessage;
 var const localized string NotPartyLeaderMsg;
 var transient int CountdownSeconds;
-var transient OnlineGameParty_X OnlineParty;
+var transient OnlineGameParty_TA OnlineParty;
 var databinding string OnlineStatusError;
 var transient GFxData_OnlineMatchStatus_TA SearchStatusData;
 var transient bool bSearching;
 
 defaultproperties
 {
-	/**NoRegionsMessage="Unable to contact Rocket League? servers, please try again later."*/
-	/**NotLoggedInPsynetMessage="Not logged in to Rocket League? servers."*/
+	/**NoRegionsMessage="Unable to contact Rocket League  servers, please try again later."*/
+	/**NotLoggedInPsynetMessage="Not logged in to Rocket League  servers."*/
 	/**BannedMessage="You are banned from playing online."*/
 	/**NotPartyLeaderMsg="Only the party leader can start and cancel matchmaking."*/
 }

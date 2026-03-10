@@ -8,6 +8,7 @@ class RetryDelayer_X extends Component;
 var() array<float> RetryDelays;
 var() int ReattemptsAtMaxBackoff;
 var() bool bRepeatUntilSuccess;
+var bool bIsRunning;
 var int FailedAttempts;
 
 defaultproperties

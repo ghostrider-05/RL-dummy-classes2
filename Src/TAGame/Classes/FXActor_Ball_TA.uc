@@ -45,4 +45,5 @@ defaultproperties
 	MaxTrailDilation=4.0
 	TrailIntensityName=TrailIntensity
 	//Parameters=ParameterDispenser_X'Default__FXActor_Ball_TA.DefaultParameters'
+	CollisionType=COLLIDE_CustomDefault
 }

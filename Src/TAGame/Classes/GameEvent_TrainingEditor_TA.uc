@@ -17,12 +17,40 @@ enum EPlayTestType
 	PlayTest_MAX
 };
 
+struct CachedLocationModifier
+{
+	var class ActorClass;
+	var Vector ActorLocation;
+	var Rotator ActorRotation;
+
+	structdefaultproperties
+	{
+		ActorClass=None
+		ActorLocation=(X=0.0,Y=0.0,Z=0.0)
+		ActorRotation=(Pitch=0,Yaw=0,Roll=0)
+	}
+};
+
+struct CachedSpeedModifier
+{
+	var class ActorClass;
+	var float SpeedModifier;
+
+	structdefaultproperties
+	{
+		ActorClass=None
+		SpeedModifier=0.0
+	}
+};
+
 var float MinRoundTime;
 var float MaxRoundTime;
 var transient bool bNoEditor;
 var transient bool bDisplayedRedoPenaltyMessage;
 var transient bool bUnsavedChanges;
 var transient bool bShouldEndTraining;
+var transient bool bCanRandomizeShot;
+var transient bool bModifiersUsed;
 var transient int PointsScoredThisRound;
 var GFxModal_X ResetModal;
 var transient int ShotAttempt;
@@ -40,12 +68,20 @@ var TrainingEditorNavigationConfig_TA TrainingNavigationConfig;
 var TrainingEditorManipulationConfig_TA TrainingManipulationConfig;
 var transient TrainingEditorNavigation_TA TrainingNavigator;
 var transient TrainingEditorMirror_TA TrainingMirror;
+var const float RestartRoundCooldown;
+var transient CustomTrainingSave_TA CustomTrainingSave;
+var transient array<CachedLocationModifier> CachedLocationModifiers;
+var transient array<CachedSpeedModifier> CachedSpeedModifiers;
+var transient int CachedActiveRound;
+var const int MaxOffsetAttempts;
 
 defaultproperties
 {
 	MinRoundTime=1.0
 	MaxRoundTime=59.0
 	SaveDelayTime=0.50
+	RestartRoundCooldown=0.10
+	MaxOffsetAttempts=8
 	
 	MaxRounds=50
 	

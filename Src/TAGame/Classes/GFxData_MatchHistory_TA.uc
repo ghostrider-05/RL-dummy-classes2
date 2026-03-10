@@ -12,6 +12,7 @@ var databinding bool bHasSavedReplay;
 var databinding bool bIsLocalPlayerMvp;
 var databinding bool bLocalPlayerAbandoned;
 var databinding bool bIsPrivateMatch;
+var databinding bool bMatchCreatorAdminEnabled;
 var databinding int TeamSize;
 var databinding string MatchGameMode;
 var databinding string MatchPlaylist;

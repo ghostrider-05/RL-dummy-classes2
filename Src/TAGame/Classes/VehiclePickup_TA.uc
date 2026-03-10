@@ -33,6 +33,7 @@ struct native PickupData2
 	}
 };
 
+var byte PreviousPickedUpValue;
 var() float RespawnDelay;
 var() FXActor_X FXActorArchetype;
 var() duplicatetransient FXActor_X FXActor;
@@ -43,6 +44,7 @@ var repnotify transient PickupData ReplicatedPickupData;
 var repnotify transient PickupData2 NewReplicatedPickupData;
 var bool bNetRelevant;
 var repnotify transient bool bNoPickup;
+var transient float ReplayRespawnCounter;
 
 defaultproperties
 {
@@ -58,6 +60,7 @@ defaultproperties
 	end object
 	// Reference: CylinderComponent'Default__VehiclePickup_TA.DefaultCollisionCylinder'
 	Components(0)=DefaultCollisionCylinder
+	HighContrastRenderingMode=HighContrastRenderingMode_WorldAndHighContrastPass
 	CollisionType=COLLIDE_CustomDefault
 	bNoDelete=true
 	bAlwaysRelevant=true

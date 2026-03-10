@@ -22,4 +22,5 @@ struct native OnlineSaveObject
 var int Version;
 var Qword TimeStamp;
 var int SaveTick;
+var Qword SaveTimestamp;
 var array<OnlineSaveObject> SaveObjects;

@@ -25,6 +25,10 @@ struct ESportEventData
 	var transient Qword EpochSoonStartTime;
 	var transient Qword EpochStartTime;
 	var transient Qword EpochEndTime;
+	var databinding string ButtonTitle;
+	var databinding string ButtonDescription;
+	var databinding bool bShowLiveNow;
+	var databinding bool bCanNavigateToEventURL;
 
 	structdefaultproperties
 	{
@@ -44,7 +48,19 @@ struct ESportEventData
 		
 		
 		
+		ButtonTitle=""
+		ButtonDescription=""
+		bShowLiveNow=true
+		bCanNavigateToEventURL=false
 	}
 };
 
 var databinding array<ESportEventData> Events;
+var const localized string EsportTitleString;
+var const localized string EsportDescriptionString;
+
+defaultproperties
+{
+	/**EsportTitleString="ESPORTS"*/
+	/**EsportDescriptionString="Watch Live!"*/
+}

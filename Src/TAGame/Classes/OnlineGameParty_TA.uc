@@ -19,6 +19,7 @@ var EOSVoiceManager_TA VoiceManager;
 var Personas_TA Personas;
 var TextModerationManager_TA TextModerationManager;
 var TextModerationConfig_TA TextModerationConfig;
+var const int MaxPartyMessageSize;
 
 defaultproperties
 {
@@ -27,6 +28,7 @@ defaultproperties
 	/**LocalPlayerLeavePartyString="You left the party"*/
 	/**PlayerNewLeaderPartyString="is the new party leader"*/
 	//AssetCache=ProductAssetCache_TA'Default__OnlineGameParty_TA.DefaultAssetCache'
+	MaxPartyMessageSize=128
 	//MessageComponent=OnlineMessageComponent_X'Default__OnlineGameParty_TA.DefaultMessageComponent'
 	//NullSearchStatus=PartyMessage_SearchStatus_X'Default__OnlineGameParty_TA.NullSearchStatus0'
 }

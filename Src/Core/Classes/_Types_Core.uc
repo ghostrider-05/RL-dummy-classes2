@@ -61,6 +61,58 @@ enum EVoiceResultCode
 	VRC_MAX
 };
 
+enum EClientActionReason
+{
+	ECAR_Invalid,
+	ECAR_InternalError,
+	ECAR_InvalidMessage,
+	ECAR_AuthenticationFailed,
+	ECAR_NullClient,
+	ECAR_HeartbeatTimeout,
+	ECAR_ClientViolation,
+	ECAR_BackendViolation,
+	ECAR_TemporaryCooldown,
+	ECAR_TemporaryBanned,
+	ECAR_PermanentBanned,
+	ECAR_MAX
+};
+
+enum EClientActionCode
+{
+	ECAC_Invalid,
+	ECAC_RemovePlayer,
+	ECAC_MAX
+};
+
+enum EClientAuthStatus
+{
+	ECAS_Invalid,
+	ECAS_LocalAuthComplete,
+	ECAS_RemoteAuthComplete,
+	ECAS_MAX
+};
+
+enum EClientIntegrityViolation
+{
+	ECIV_Invalid,
+	ECIV_IntegrityCatalogNotFound,
+	ECIV_IntegrityCatalogError,
+	ECIV_IntegrityCatalogCertificateRevoked,
+	ECIV_IntegrityCatalogMissingMainExecutable,
+	ECIV_GameFileMismatch,
+	ECIV_RequiredGameFileNotFound,
+	ECIV_UnknownGameFileForbidden,
+	ECIV_SystemFileUntrusted,
+	ECIV_ForbiddenModuleLoaded,
+	ECIV_CorruptedMemory,
+	ECIV_ForbiddenToolDetected,
+	ECIV_InternalAntiCheatViolation,
+	ECIV_CorruptedNetworkMessageFlow,
+	ECIV_VirtualMachineNotAllowed,
+	ECIV_ForbiddenSystemConfiguration,
+	ECIV_MAX
+};
+
 struct native SceNpOnlineId
 {
 	var Qword Data[2];

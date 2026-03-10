@@ -15,7 +15,6 @@ defaultproperties
 	end object
 	// Reference: StaticMeshComponent'Default__BreakoutFloor_TA.StaticMeshComponent0'
 	Components(0)=StaticMeshComponent0
-	CollisionType=COLLIDE_CustomDefault
 	
 	CollisionComponent=StaticMeshComponent0
 }

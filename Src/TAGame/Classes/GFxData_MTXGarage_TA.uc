@@ -12,8 +12,9 @@ var databinding bool bIsExactPackEnabled;
 var databinding bool bIsCPCCShowRoWModal;
 var databinding bool bIsCPCCShowRealPrice;
 var databinding bool bShowJapaneseDisclaimer;
-var transient bool bTriggerUICallbackState;
+var databinding bool bIsDebugFeaturesEnabled;
 var transient bool ForceAllCurrencySymbolsState;
+var transient array<bool> CatalogRequestInProgress;
 var transient GFxModal_X ModalProcessing;
 var int BlackMarketSkinProductID;
 var transient EMTXCatalogCategory CatalogCategory;
@@ -21,7 +22,9 @@ var const float PurchaseTimeoutTime;
 var const float GetPriceTimeoutTime;
 var string BulgariaCountryCode;
 var transient GameInfo_GFxMenu_TA Menu;
-var() MtxConfig_TA MtxConfig;
+var() transient MtxConfig_TA MtxConfig;
+var transient ProductsConfig_TA ProductsConfig;
+var transient ShopsConfig_TA ShopConfig;
 var OnlineSystemInterface SystemInterface;
 var OnlinePurchaseInterface PurchaseInterface;
 var PsyNetConnection_X PsyNetConnection;
@@ -44,6 +47,10 @@ var const localized string DualCurrencyNoExactPacksRealPriceDisclaimerBody;
 var databinding const localized string OfferInformationText;
 var databinding const localized string ExactPackExplainerText;
 var databinding const localized string ExactPackLabelText;
+var const localized string QuickDropModalTitle;
+var const localized string QuickDropModalDescription;
+var const name ManageInventoryScreenName;
+var const name QuickDropTutorial;
 var const string RealPriceArgumentVCAmount;
 var const string RealPriceArgumentFormattedRCPrice;
 var const string RightOfWithdrawalArgumentCost;
@@ -51,8 +58,9 @@ var const string RightOfWithdrawalArgumentItemName;
 var const string RightOfWithdrawalArgumentUser;
 var const string DualCurrencyRealPrice1;
 var const string DualCurrencyRealPrice2;
+var const string DualCurrencyString;
 var transient array<MTXGarageCatalogCache_TA> CatalogCache;
-var databinding array<MTXPurchaseInfo> CatalogItems;
+var transient array<MTXPurchaseInfo> CatalogItems;
 var transient array<MTCatalogInfo> CombinedCatalogInfoItems;
 var transient array<PriceInfo> PriceInfoItems;
 var transient OnlinePlayer_TA OnlinePlayer;
@@ -64,10 +72,16 @@ var transient string ActiveCurrency;
 defaultproperties
 {
 	ForceAllCurrencySymbolsState=true
+	CatalogRequestInProgress(0)=false
+	CatalogRequestInProgress(1)=false
+	CatalogRequestInProgress(2)=false
+	CatalogRequestInProgress(3)=false
+	CatalogRequestInProgress(4)=false
+	CatalogRequestInProgress(5)=false
 	BlackMarketSkinProductID=1412
 	PurchaseTimeoutTime=60.0
 	GetPriceTimeoutTime=10.0
-	/**RegionRestrictedOpenCrate="Sorry, your country?s regulations do not allow for you to open Crates with keys."*/
+	/**RegionRestrictedOpenCrate="Sorry, your country s regulations do not allow for you to open Crates with keys."*/
 	/**RightOfWithdrawalTitle="Right of Withdrawal"*/
 	/**RightOfWithdrawalShopBody="You can contact player support to request a refund within the next 30 days, for up to 3 purchases lifetime. When you click \\"Confirm\\" you will immediately get access to the content and have no other rights of withdrawal."*/
 	/**RightOfWithdrawalRocketPassBody="When you click \\"Confirm\\" you will immediately get access to the pass and have no rights to withdraw from the purchase."*/
@@ -85,6 +99,10 @@ defaultproperties
 	/**OfferInformationText="The Offer You Were Viewing"*/
 	/**ExactPackExplainerText="Amount Needed to Complete Purchase"*/
 	/**ExactPackLabelText="Exact Amount"*/
+	/**QuickDropModalTitle="Skip Animations"*/
+	/**QuickDropModalDescription="There is now a setting to skip the animation that plays when opening a drop. Would you like to enable this setting?"*/
+	ManageInventoryScreenName=PremiumInventoryMenuMovie
+	QuickDropTutorial=QuickDropTutorial
 	RealPriceArgumentVCAmount="{VCAmount}"
 	RealPriceArgumentFormattedRCPrice="{FormattedRCPrice}"
 	RightOfWithdrawalArgumentCost="{Cost}"
@@ -92,6 +110,7 @@ defaultproperties
 	RightOfWithdrawalArgumentUser="{User}"
 	DualCurrencyRealPrice1="{FormattedRCPrice1}"
 	DualCurrencyRealPrice2="{FormattedRCPrice2}"
+	DualCurrencyString="{Currency1} / {Currency2}"
 	TableName=MTXGarage
 	bLevelTransitionPersistent=true
 }

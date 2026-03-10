@@ -48,6 +48,7 @@ var() const array<name> ProductAttachmentSockets;
 var transient int QueuedTeamFinishID;
 var transient int QueuedCustomFinishID;
 var export editinline SkeletalMeshComponent_SplitBody_TA PMCSplitBodyMesh;
+var TeamColorPreferences_TA ColorPrefs;
 var transient array<InheritedObjects> ObjectsWithInheritedSettings;
 
 defaultproperties

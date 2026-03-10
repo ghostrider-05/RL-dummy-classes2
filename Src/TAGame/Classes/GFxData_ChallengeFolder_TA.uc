@@ -14,6 +14,7 @@ var databinding bool bHasChallenges;
 var GFxData_ChallengeFolder_TA GFxParentFolder;
 var array<GFxData_ChallengeFolder_TA> GFxSubFolders;
 var class SubFolderClass;
+var array<Challenge_TA> CachedSortedChallenges;
 
 defaultproperties
 {

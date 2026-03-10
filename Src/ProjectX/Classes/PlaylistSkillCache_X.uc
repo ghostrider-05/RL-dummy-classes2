@@ -6,4 +6,12 @@
 class PlaylistSkillCache_X extends Object;
 
 var transient array<UpdatedPlayerSkillRating> Players;
+var transient RankedDisparitySettings PsyNetDisparitySettings;
+var transient RankedDisparitySettings StaticDataDisparitySettings;
 var() RankedConfig_X RankedConfig;
+
+defaultproperties
+{
+	PsyNetDisparitySettings=(MaximumRankDisparity=-1,HighestTierNewPlayersCanPlayWith=0,HighestMuNewPlayersCanHave=0)
+	StaticDataDisparitySettings=(MaximumRankDisparity=-1,HighestTierNewPlayersCanPlayWith=0,HighestMuNewPlayersCanHave=0)
+}

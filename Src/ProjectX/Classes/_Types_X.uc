@@ -26,6 +26,7 @@ enum EOnlinePlayerRole
 {
 	OPR_PrivateMatchAdmin,
 	OPR_SuperPrivateMatchAdmin,
+	OPR_AntiCheatExempt,
 	OPR_MAX
 };
 
@@ -33,7 +34,15 @@ enum EOnlinePlayerPermission
 {
 	OPP_PrivateMatchAdmin,
 	OPP_SuperPrivateMatchAdmin,
+	OPP_AntiCheatExempt,
 	OPP_MAX
+};
+
+enum EOnlineStorageFiles
+{
+	OSF_Save,
+	OSF_Settings,
+	OSF_MAX
 };
 
 enum EClubRole
@@ -77,6 +86,7 @@ enum EPsyNetEnvironment
 	EPE_Environment2,
 	EPE_Environment3,
 	EPE_Environment4,
+	EPE_Environment5,
 	EPE_MAX
 };
 
@@ -151,6 +161,14 @@ enum ETradePermissionLevel
 	TPL_MAX
 };
 
+enum ETrackingPermissionType
+{
+	Tracking_Marketing,
+	Tracking_Functional,
+	Tracking_Experience,
+	Tracking_MAX
+};
+
 enum EDatabaseEnvironment
 {
 	DBE_DevLocal,
@@ -212,6 +230,13 @@ enum ESeverityType
 	SeverityType_Medium,
 	SeverityType_High,
 	SeverityType_MAX
+};
+
+enum ENewsInteractionType
+{
+	NIT_VIEW,
+	NIT_ENGAGED,
+	NIT_MAX
 };
 
 struct native NetStats
@@ -394,6 +419,20 @@ struct PartyMemberServer
 	}
 };
 
+struct RankedDisparitySettings
+{
+	var int MaximumRankDisparity;
+	var int HighestTierNewPlayersCanPlayWith;
+	var int HighestMuNewPlayersCanHave;
+
+	structdefaultproperties
+	{
+		MaximumRankDisparity=-1
+		HighestTierNewPlayersCanPlayWith=0
+		HighestMuNewPlayersCanHave=0
+	}
+};
+
 struct PartyMember
 {
 	var UniqueNetId PrimaryMemberId;
@@ -417,6 +456,7 @@ struct PartyMember
 	var UniqueLobbyId PlatformParty;
 	var EChatReportingLevel VoiceReportingLevel;
 	var EChatReportingLevel TextReportingLevel;
+	var bool bAntiCheatEnabled;
 
 	structdefaultproperties
 	{
@@ -441,6 +481,7 @@ struct PartyMember
 		
 		VoiceReportingLevel=VRP_OffWhenPossible
 		TextReportingLevel=VRP_OffWhenPossible
+		bAntiCheatEnabled=true
 	}
 };
 
@@ -513,6 +554,7 @@ struct UpdatedPlayerSkillRating extends _Types_X.PlayerSkillRating
 	var float PrevSigma;
 	var int PrevTier;
 	var int PrevDivision;
+	var float PrevMMR;
 };
 
 struct PlaylistTierSkillRating extends _Types_X.TierSkillRating
@@ -532,6 +574,9 @@ struct PlayerPermissions
 	var bool bFilterMatureLanguage;
 	var bool bEnableCPCCShowRoWModal;
 	var bool bEnableCPCCShowRealPrice;
+	var bool bAllowTargetedNewsSetting_Functional;
+	var bool bAllowTargetedNewsSetting_Marketing;
+	var bool bAllowTargetedNewsSetting_Experience;
 
 	structdefaultproperties
 	{
@@ -545,6 +590,9 @@ struct PlayerPermissions
 		bFilterMatureLanguage=true
 		bEnableCPCCShowRoWModal=false
 		bEnableCPCCShowRealPrice=false
+		bAllowTargetedNewsSetting_Functional=false
+		bAllowTargetedNewsSetting_Marketing=false
+		bAllowTargetedNewsSetting_Experience=false
 	}
 };
 
@@ -1037,8 +1085,11 @@ struct ClubReplicationInfo
 struct MigrationReservationData
 {
 	var UniqueNetId PlayerID;
+	var string EpicID;
+	var string EpicPUID;
 	var string PlayerName;
 	var UniqueNetId PartyID;
+	var Qword ClubID;
 	var EReservationStatus Status;
 	var bool bDisableCrossPlay;
 	var byte Team;
@@ -1050,7 +1101,10 @@ struct MigrationReservationData
 	structdefaultproperties
 	{
 		
+		EpicID=""
+		EpicPUID=""
 		PlayerName=""
+		
 		
 		Status=ReservationStatus_None
 		bDisableCrossPlay=false
@@ -1269,12 +1323,16 @@ struct PsyNetBeaconPlayerReservation
 	var UniqueNetId PlayerID;
 	var NetworkEncryptionKey Keys;
 	var string DSConnectToken;
+	var UniqueNetId EpicID;
+	var string EpicPUID;
 
 	structdefaultproperties
 	{
 		
 		Keys=None
 		DSConnectToken=""
+		
+		EpicPUID=""
 	}
 };
 
@@ -1315,6 +1373,102 @@ struct native GFxBlurRect
 		TopLeftY=0.0
 		BottomRightX=0.0
 		BottomRightY=0.0
+	}
+};
+
+struct native HTTPRequestCapturedParam
+{
+	var string Name;
+	var string Value;
+
+	structdefaultproperties
+	{
+		Name=""
+		Value=""
+	}
+};
+
+struct ImageContent
+{
+	var int Width;
+	var int Height;
+	var string URL;
+
+	structdefaultproperties
+	{
+		Width=0
+		Height=0
+		URL=""
+	}
+};
+
+struct NewsContent
+{
+	var string Title;
+	var string DescriptionHeader;
+	var string Description;
+	var string SubDescriptionHeader;
+	var string WebURL;
+	var string CarName;
+	var array<ImageContent> Image;
+	var array<ImageContent> Thumbnail;
+	var string StartTime;
+	var string LinkType;
+	var string InfoURL;
+	var string InfoButtonText;
+	var string EndTime;
+	var Qword StartTimeEpoch;
+	var Qword EndTimeEpoch;
+	var int ShopID;
+	var int ShopItemID;
+	var int ProductID;
+	var int CategoryID;
+	var int PlaylistId;
+
+	structdefaultproperties
+	{
+		Title=""
+		DescriptionHeader=""
+		Description=""
+		SubDescriptionHeader=""
+		WebURL=""
+		CarName=""
+		Image.Empty
+		Thumbnail.Empty
+		StartTime=""
+		LinkType=""
+		InfoURL=""
+		InfoButtonText=""
+		EndTime=""
+		
+		
+		ShopID=0
+		ShopItemID=0
+		ProductID=0
+		CategoryID=0
+		PlaylistId=0
+	}
+};
+
+struct NewsPlacement
+{
+	var string TrackingId;
+
+	structdefaultproperties
+	{
+		TrackingId=""
+	}
+};
+
+struct NewsTileData
+{
+	var NewsContent ContentFields;
+	var array<NewsPlacement> Placements;
+
+	structdefaultproperties
+	{
+		
+		Placements.Empty
 	}
 };
 

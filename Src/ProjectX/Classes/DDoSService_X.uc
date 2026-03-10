@@ -27,6 +27,10 @@ var string DDoSServiceURL;
 var string DDoSServiceName;
 var int DDoSServiceVersion;
 var array<string> CachedClientIPs;
+var const name DDoSEndProtectionInFlight_Name;
+var const name DDoSStartProtectionInFlight_Name;
+var const name DDoSProtectionEnabled_Name;
+var const name DDoSProtectionDisabled_Name;
 
 defaultproperties
 {
@@ -34,4 +38,8 @@ defaultproperties
 	DDoSServiceURL="http://localhost"
 	DDoSServiceName="firewall"
 	DDoSServiceVersion=1
+	DDoSEndProtectionInFlight_Name=DDoSEndProtectionInFlight
+	DDoSStartProtectionInFlight_Name=DDoSStartProtectionInFlight
+	DDoSProtectionEnabled_Name=DDoSProtectionEnabled
+	DDoSProtectionDisabled_Name=DDoSProtectionDisabled
 }

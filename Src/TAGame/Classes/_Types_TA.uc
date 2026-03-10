@@ -35,6 +35,8 @@ const StatName_HighFive = 'HighFive';
 const StatName_BreakoutDamage = 'BreakoutDamage';
 const StatName_BreakoutDamageLarge = 'BreakoutDamageLarge';
 const StatName_HoopsSwishGoal = 'HoopsSwishGoal';
+const Mutator_MatchAdmin = 'MatchCreatorAdminEnabled';
+const MutatorCategory_MatchAdmin = 'MatchAdmin';
 const F2PSeasonsRestart = 15;
 
 enum EAchievementType
@@ -137,6 +139,14 @@ enum SearchStatusOwner
 	StatusOwner_MAX
 };
 
+enum ESettingDisplayMode
+{
+	ESD_None,
+	ESD_Percentage,
+	ESD_Degrees,
+	ESD_MAX
+};
+
 enum EDemolishSource
 {
 	EDS_None,
@@ -215,6 +225,19 @@ enum EControllerSoundMode
 	CSM_On,
 	CSM_Off,
 	CSM_MAX
+};
+
+enum EPlayMusicMode
+{
+	EPMM_Menu_Only,
+	EPMM_Menu_Training,
+	EPMM_Training_Only,
+	EPMM_Game_Only,
+	EPMM_Game_Training,
+	EPMM_Game_Menu,
+	EPMM_Everywhere,
+	EPMM_Mute,
+	EPMM_MAX
 };
 
 enum EEffectsIntensity
@@ -373,6 +396,7 @@ enum ERocketPassNotificationRewardType
 
 enum ERocketPassTierLockState
 {
+	RPTLock_Unknown,
 	RPTLock_Locked,
 	RPTLock_Unlocked,
 	RPTLock_Claimed,
@@ -888,7 +912,16 @@ enum EMainMenuBackground
 	MMBG_FutureUtopia,
 	MMBG_Anniversary,
 	MMBG_Mall,
+	MMBG_Paris,
 	MMBG_MAX
+};
+
+enum EChatValidationFailureReason
+{
+	CVFR_MisconfiguredJWT,
+	CVFR_MissingKey,
+	CVFR_BadSignature,
+	CVFR_MAX
 };
 
 enum ETieBreakDecision
@@ -900,15 +933,6 @@ enum ETieBreakDecision
 	TBD_MAX
 };
 
-enum EPlaylistPopulationBucket
-{
-	PPB_Empty,
-	PPB_Average,
-	PPB_High,
-	PPB_Extreme,
-	PPB_MAX
-};
-
 enum ECrossEntitlementStatus
 {
 	CES_None,
@@ -916,6 +940,15 @@ enum ECrossEntitlementStatus
 	CES_Locked,
 	CES_XEItem,
 	CES_MAX
+};
+
+enum EVisibleMMRPreference
+{
+	VMP_None,
+	VMP_MenuOnly,
+	VMP_InGameOnly,
+	VMP_Everywhere,
+	VMP_MAX
 };
 
 enum EVoiceRoomType
@@ -990,6 +1023,14 @@ enum ERequestResolvedStatus
 	ERequestResolvedStatus_MAX
 };
 
+enum ESpecialEventState
+{
+	SES_Inactive,
+	SES_Active,
+	SES_Redemption,
+	SES_MAX
+};
+
 struct native PlayerActorIDPair
 {
 	var int ActorID;
@@ -1017,10 +1058,12 @@ struct native PaintWithOverride
 struct native PersonaDataId
 {
 	var databinding UniqueNetId PersonaId;
+	var string EpicPUID;
 
 	structdefaultproperties
 	{
 		
+		EpicPUID=""
 	}
 };
 
@@ -1231,6 +1274,22 @@ struct native PrespawnData
 	}
 };
 
+struct MutatorInfo
+{
+	var databinding string Name;
+	var databinding string Category;
+	var databinding Color ColorOverride;
+	var int SortPriority;
+
+	structdefaultproperties
+	{
+		Name=""
+		Category=""
+		ColorOverride=(R=0,G=0,B=0,A=0)
+		SortPriority=0
+	}
+};
+
 struct ProductStat
 {
 	var int ProductID;
@@ -1282,6 +1341,8 @@ struct native ProfileCameraSettings
 	var float Stiffness;
 	var float SwivelSpeed;
 	var float TransitionSpeed;
+	var bool bUnconstrainRotation;
+	var bool bAutoRecenter;
 
 	structdefaultproperties
 	{
@@ -1292,6 +1353,8 @@ struct native ProfileCameraSettings
 		Stiffness=0.50
 		SwivelSpeed=2.50
 		TransitionSpeed=1.0
+		bUnconstrainRotation=false
+		bAutoRecenter=false
 	}
 };
 
@@ -1515,6 +1578,18 @@ struct native OnlineProductData
 	}
 };
 
+struct native MTXOnlineProductData
+{
+	var OnlineProductData Item;
+	var bool IsOwned;
+
+	structdefaultproperties
+	{
+		
+		IsOwned=false
+	}
+};
+
 struct native OnlineProductTimestampedData extends _Types_TA.OnlineProductData
 {
 	var Qword UpdatedTimestamp;
@@ -1684,6 +1759,7 @@ struct native Currency
 	var int /** _Types_TA.ECurrency*/ Type;
 	var name Name;
 	var bool bCanBeTraded;
+	var bool bIsRocketPassDrop;
 	var int TradeHold;
 	var CurrencyProductData ProductData;
 	var databinding int CurrencyID;
@@ -1699,6 +1775,7 @@ struct native Currency
 		Type=0
 		Name=None
 		bCanBeTraded=false
+		bIsRocketPassDrop=false
 		TradeHold=0
 		ProductData=(Product=None,OnlineProduct=None)
 		CurrencyID=0
@@ -1748,8 +1825,8 @@ struct ItemSetsData
 struct RocketPassRewardData
 {
 	var int Tier;
-	var ERocketPassTierType UnlockType;
 	var bool Claimable;
+	var ERocketPassTierType UnlockType;
 	var array<OnlineProductData> ProductData;
 	var array<ItemSetsData> ItemSets;
 	var array<XPRewardData> XPRewards;
@@ -1758,8 +1835,8 @@ struct RocketPassRewardData
 	structdefaultproperties
 	{
 		Tier=0
-		UnlockType=Unknown
 		Claimable=false
+		UnlockType=Unknown
 		ProductData.Empty
 		ItemSets.Empty
 		XPRewards.Empty
@@ -1771,20 +1848,8 @@ struct RocketPassExtendedRewardData extends _Types_TA.RocketPassRewardData
 {
 	var bool bPremiumTier;
 	var ERocketPassTierLockState LockState;
-};
-
-struct RocketPassPage
-{
-	var bool bProTier;
-	var array<RocketPassExtendedRewardData> Rewards;
-	var int MaxTierLevel;
-
-	structdefaultproperties
-	{
-		bProTier=false
-		Rewards.Empty
-		MaxTierLevel=0
-	}
+	var int LevelRequirement;
+	var int ClaimRequirement;
 };
 
 struct TierUnlockRequirements
@@ -1799,7 +1864,7 @@ struct TierUnlockRequirements
 	}
 };
 
-struct RocketPassPageData
+struct RocketPassPage
 {
 	var int Id;
 	var int RocketPassID;
@@ -1809,6 +1874,9 @@ struct RocketPassPageData
 	var int LevelRequiredToUnlock;
 	var int ClaimsRequiredToUnlock;
 	var array<TierUnlockRequirements> TierClaimRequirements;
+	var transient bool bProTier;
+	var transient array<RocketPassExtendedRewardData> Rewards;
+	var transient int NumClaimedRewards;
 
 	structdefaultproperties
 	{
@@ -1820,6 +1888,9 @@ struct RocketPassPageData
 		LevelRequiredToUnlock=0
 		ClaimsRequiredToUnlock=0
 		TierClaimRequirements.Empty
+		bProTier=false
+		Rewards.Empty
+		NumClaimedRewards=0
 	}
 };
 
@@ -1850,6 +1921,18 @@ struct RocketPassTierBonusRange
 		Start=0
 		End=0
 		Bonus=0
+	}
+};
+
+struct RocketPassPlayerRewards
+{
+	var int BaseTierRewards;
+	var int ProTierRewards;
+
+	structdefaultproperties
+	{
+		BaseTierRewards=0
+		ProTierRewards=0
 	}
 };
 
@@ -2131,7 +2214,7 @@ struct native VehicleInputs
 	var bool bJumped;
 	var bool bGrab;
 	var bool bButtonMash;
-	var bool bTargetFind;
+	var bool bAirRoll;
 
 	structdefaultproperties
 	{
@@ -2149,7 +2232,7 @@ struct native VehicleInputs
 		bJumped=false
 		bGrab=false
 		bButtonMash=false
-		bTargetFind=false
+		bAirRoll=false
 	}
 };
 
@@ -2161,7 +2244,7 @@ struct native ClientFrameData
 
 	structdefaultproperties
 	{
-		VehicleInput=(Throttle=0.0,Steer=0.0,Pitch=0.0,Yaw=0.0,Roll=0.0,DodgeForward=0.0,DodgeRight=0.0,bHandbrake=false,bJump=false,bActivateBoost=false,bHoldingBoost=false,bJumped=false,bGrab=false,bButtonMash=false,bTargetFind=false)
+		VehicleInput=(Throttle=0.0,Steer=0.0,Pitch=0.0,Yaw=0.0,Roll=0.0,DodgeForward=0.0,DodgeRight=0.0,bHandbrake=false,bJump=false,bActivateBoost=false,bHoldingBoost=false,bJumped=false,bGrab=false,bButtonMash=false,bAirRoll=false)
 		frame=0
 		TimeStamp=0.0
 	}
@@ -3245,6 +3328,22 @@ struct PlayerMessageInfo
 	{
 		SenderId=""
 		DisplayName=""
+	}
+};
+
+struct SavedTrainingData
+{
+	var string TrainingType;
+	var string Difficulty;
+	var int Score;
+	var int TotalRounds;
+
+	structdefaultproperties
+	{
+		TrainingType=""
+		Difficulty=""
+		Score=0
+		TotalRounds=0
 	}
 };
 

@@ -52,6 +52,7 @@ var transient CarComponent_DoubleJump_TA DoubleJumpComponent;
 var transient int PodiumSpot;
 var transient int PMCAnimIdx;
 var const export editinline PitchTekDrawingComponent_TA PitchTekComponent;
+var const int NumWheelsForGrounded;
 var export editinline transient LocalPlayerAudioParamsComponent_TA LocalPlayerAudioParamsComponent;
 var transient float TimeBelowSupersonicSpeed;
 var NetworkConfig_TA NetworkConfig;
@@ -66,6 +67,7 @@ defaultproperties
 	end object
 	// Reference: PitchTekDrawingComponent_TA'Default__Vehicle_TA.DefaultPTDComponent'
 	PitchTekComponent=DefaultPTDComponent
+	NumWheelsForGrounded=3
 	RBHistoryClass=class'RBVehicleHistory_TA'
 	//Replay=ReplayComponent_TA'Default__Vehicle_TA.ReplayComponent0'
 	
@@ -81,6 +83,7 @@ defaultproperties
 //	Components(2)=ReplayComponent_TA'Default__Vehicle_TA.ReplayComponent0'
 	
 	Components(3)=DefaultPTDComponent
+	HighContrastRenderingMode=HighContrastRenderingMode_WorldAndHighContrastPass
 	Physics=PHYS_None
 	
 	CollisionComponent=CollisionCylinder

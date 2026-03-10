@@ -52,12 +52,35 @@ var array<SeriesGroup> ItemSeries_PreventP2PTrade;
 var array<ProductTradeHoldOverride> ProductTradeHoldOverrides;
 var bool bUseSaveDataCacheProducts;
 var bool bClearSyncTimestampOnMissingProduct;
+var bool bEnableOfflineItemsDuplicationPrevention;
 var int MaxSecondsBetweenFullProductSyncs;
+var array<name> AllowedAttributeNamesForOnlineDuplication;
+var transient array< class > AllowedAttributeClassesForOnlineDuplication;
+var array<ProductSlot_TA> InjectedProductsSortingOrder;
 
 defaultproperties
 {
 	ItemSeries_PreventP2PTrade(0)=(SeriesID=855,ExcludedQualities=None)
 	bUseSaveDataCacheProducts=true
 	bClearSyncTimestampOnMissingProduct=true
+	bEnableOfflineItemsDuplicationPrevention=true
 	MaxSecondsBetweenFullProductSyncs=1209600
+	AllowedAttributeNamesForOnlineDuplication(0)=Quality
+	InjectedProductsSortingOrder(0)=ProductSlot_TA'ProductSlots.Body'
+	InjectedProductsSortingOrder(1)=ProductSlot_TA'ProductSlots.Skin'
+	InjectedProductsSortingOrder(2)=ProductSlot_TA'ProductSlots.CustomFinish'
+	InjectedProductsSortingOrder(3)=ProductSlot_TA'ProductSlots.PaintFinish'
+	InjectedProductsSortingOrder(4)=ProductSlot_TA'ProductSlots.Wheels'
+	InjectedProductsSortingOrder(5)=ProductSlot_TA'ProductSlots.Boost'
+	InjectedProductsSortingOrder(6)=ProductSlot_TA'ProductSlots.SupersonicTrail'
+	InjectedProductsSortingOrder(7)=ProductSlot_TA'ProductSlots.EngineAudio'
+	InjectedProductsSortingOrder(8)=ProductSlot_TA'ProductSlots.Antenna'
+	InjectedProductsSortingOrder(9)=ProductSlot_TA'ProductSlots.Hat'
+	InjectedProductsSortingOrder(10)=ProductSlot_TA'ProductSlots.Front'
+	InjectedProductsSortingOrder(11)=ProductSlot_TA'ProductSlots.GoalExplosion'
+	InjectedProductsSortingOrder(12)=ProductSlot_TA'ProductSlots.MusicStingers'
+	InjectedProductsSortingOrder(13)=ProductSlot_TA'ProductSlots.PlayerAvatar'
+	InjectedProductsSortingOrder(14)=ProductSlot_TA'ProductSlots.PlayerAvatarBorder'
+	InjectedProductsSortingOrder(15)=ProductSlot_TA'ProductSlots.PlayerBanner'
+	InjectedProductsSortingOrder(16)=ProductSlot_TA'ProductSlots.PlayerTitle'
 }

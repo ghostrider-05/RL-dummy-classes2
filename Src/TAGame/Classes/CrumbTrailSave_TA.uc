@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class CrumbTrailSave_TA extends SaveObject_TA;
+class CrumbTrailSave_TA extends JsonSaveObject_TA;
 
 var array<name> CompletedTrails;
 var array<name> ActiveTrails;

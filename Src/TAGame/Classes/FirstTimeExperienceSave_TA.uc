@@ -3,7 +3,7 @@
 * MVN.RLLib © 2019 Martin VN. All rights reserved.
 * All rights belong to their respective owners.
 *******************************************************************************/
-class FirstTimeExperienceSave_TA extends SaveObject_TA;
+class FirstTimeExperienceSave_TA extends JsonSaveObject_TA;
 
 struct CompletedFTEInfo
 {
@@ -27,6 +27,8 @@ var FirstTimeExperienceManager_TA.FTELegacyGroupType LegacyGroupType;
 var name ActiveGroup;
 var name ActiveCheckpoint;
 var bool bTentativelyComplete;
+var bool bRocketPassViewed;
+var int RocketPassViewedID;
 
 defaultproperties
 {

@@ -9,4 +9,3 @@ class ProductAttribute_SpecialEditionLabel_TA extends ProductAttribute_TA
 	hidecategories(Object);
 
 var() ProductSpecialEdition_TA SpecialEdition;
-var() string CustomLabel;

@@ -13,6 +13,7 @@ var transient array<MTCatalogInfo> CatalogInfoItems;
 var transient array<MTCatalogInfo> CatalogInfoExactPacks;
 var transient bool bCatalogRequestInFlight;
 var transient bool bReady;
+var bool bInjectedProductsOwnershipDirty;
 var transient float CatalogExpirationTime;
 var transient AsyncTask PendingGetCatalogInfoItemsTask;
 var transient AsyncTask PendingGetCatalogInfoExactPacksTask;

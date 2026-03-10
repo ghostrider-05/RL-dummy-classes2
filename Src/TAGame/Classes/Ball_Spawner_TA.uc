@@ -17,6 +17,7 @@ var float FXSpawnTime;
 var transient GameEvent_Soccar_TA SoccarGame;
 var repnotify transient Ball_TA SpawnedBall;
 var repnotify float SpawnDelaySeconds;
+var bool bReplayMode;
 
 defaultproperties
 {

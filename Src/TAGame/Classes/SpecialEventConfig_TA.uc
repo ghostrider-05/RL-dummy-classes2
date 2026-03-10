@@ -5,34 +5,6 @@
 *******************************************************************************/
 class SpecialEventConfig_TA extends OnlineConfig_X;
 
-enum ESpecialEventState
-{
-	SES_Inactive,
-	SES_Active,
-	SES_Redemption,
-	SES_MAX
-};
-
-struct SpecialEventStoreConfigs
-{
-	var() databinding int EventID;
-	var() databinding string TabTitle;
-	var() databinding Texture TabIconTexture;
-	var() databinding Qword StartTime;
-	var() databinding Qword EndTime;
-	var() string TabIconImageURL;
-
-	structdefaultproperties
-	{
-		EventID=0
-		TabTitle=""
-		TabIconTexture=None
-		
-		
-		TabIconImageURL=""
-	}
-};
-
 struct DebugMicroEventPlaylistID
 {
 	var() databinding int Id;
@@ -43,36 +15,9 @@ struct DebugMicroEventPlaylistID
 	}
 };
 
-var databinding array<SpecialEventStoreConfigs> StoreConfigs;
 var() databinding array<DebugMicroEventPlaylistID> DebugMicroEventPlaylistIDs;
-var() databinding int CurrencyID;
-var() databinding int ShopID;
-var() databinding string Title;
-var() databinding string Subtitle;
-var() databinding string RedemptionTitle;
-var() databinding string Description;
-var() databinding string RedemptionDescription;
-var() databinding string CurrencyName;
-var() string CurrencyImageURL;
-var() string CurrencyImageLargeURL;
-var() string BackgroundLogoURL;
-var() string BackgroundImageURL;
-var() string LogoImageURL;
-var() databinding int CurrencyColor;
-var() databinding int BackgroundColor;
-var databinding transient Qword StartTime;
-var databinding transient string StartTimeString;
-var databinding transient Qword EndTime;
-var databinding transient string EndTimeString;
-var databinding transient Qword RedemptionEndTime;
-var databinding transient string RedemptionEndTimeString;
-var databinding string EventFolderName;
-var databinding transient Texture BackgroundLogo;
-var databinding transient Texture BackgroundImage;
-var databinding transient Texture CurrencyImage;
-var databinding transient Texture CurrencyImageLarge;
-var databinding transient Texture LogoImage;
 var transient bool bApplied;
+var array<SpecialEvent_TA> ActiveEvents;
 
 defaultproperties
 {

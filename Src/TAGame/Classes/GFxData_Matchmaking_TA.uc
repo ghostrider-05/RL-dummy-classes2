@@ -30,6 +30,7 @@ var databinding int TotalPopulation;
 var databinding EMatchmakingViewTab MatchmakingViewTab;
 var databinding bool bRankedPlaylistsEnabled;
 var databinding bool bMultiSelectEnabled;
+var transient bool bEACError;
 var databinding int SeasonEndDays;
 var databinding int SeasonEndHours;
 var databinding int SeasonEndMinutes;
@@ -48,8 +49,8 @@ defaultproperties
 	/**LeavePenaltyMessage="You are banned from matchmaking for [PenaltyHours] hour(s), [PenaltyMinutes] minute(s). Leaving matches creates an unfair match for your teammates, hurts your rank, and will cause increasingly severe punishments."*/
 	/**MatchmakingBanMessage="You are banned from matchmaking for [PenaltyHours] hour(s), [PenaltyMinutes] minute(s)."*/
 	/**PartySkillTooDistant="Party skills must be within [TierCount] tiers to search for a competitive match. [HighPlayerName] is [TierGap] tiers above [LowPlayerName]."*/
-	/**PartyMemberNotOriginalAppOwner="\\"Family Sharing\\" accounts are not eligible for competitive matches. [PlayerName] must own Rocket League? to gain access."*/
-	/**PartyMemberNotLoggedIn="[PlayerName], or one of their splitscreen players, is not logged in to Rocket League? servers."*/
+	/**PartyMemberNotOriginalAppOwner="\\"Family Sharing\\" accounts are not eligible for competitive matches. [PlayerName] must own Rocket League  to gain access."*/
+	/**PartyMemberNotLoggedIn="[PlayerName], or one of their splitscreen players, is not logged in to Rocket League  servers."*/
 	TableName=Matchmaking
 	bLevelTransitionPersistent=true
 }

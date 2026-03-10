@@ -19,6 +19,14 @@ enum ESplitScreenPosition
 	SSP_MAX
 };
 
+enum EChallengeManagerState
+{
+	Challenge_Sync,
+	Challenge_Success,
+	Challenge_Error,
+	Challenge_MAX
+};
+
 // Set to notify when a player is in a shared UI state. Once all players clear SharedUIState, System.SharedUIState gets cleared.
 var databinding bool bOpenedStartMenu;
 var databinding bool bCheckedStartupEvents;
@@ -55,7 +63,6 @@ var databinding bool bReplacingBot;
 var databinding bool bDisableDivisions;
 var bool bCheckedBootMessage;
 var databinding bool bUseSteamInput;
-var transient bool bControllerConnected;
 var bool bCompletedChallengesForCompetitive;
 var bool bLegacyPlayer;
 var bool bGuestAccount;
@@ -92,7 +99,9 @@ var databinding name LastMatchType;
 var databinding float IdleKickSeconds;
 var databinding ProductHashID ContainerToOpenId;
 var databinding ERankInfoDisplayType RankInfoDisplayType;
+var databinding EVisibleMMRPreference VisibleMMRPreference;
 var databinding EInfectedType InfectedStatus;
+var EChallengeManagerState ChallengeState;
 var PersonaSave_TA PersonaSave;
 var databinding UniqueNetId PlayerID;
 var transient LocalPlayer_TA Player;
