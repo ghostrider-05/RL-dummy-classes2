@@ -6,9 +6,11 @@
 class MatchType_AutoTournament_TA extends MatchType_Tournament_TA;
 
 var() AutoTourConfig_TA AutoTourConfig;
+var transient int MigrationWaitingTime;
 
 defaultproperties
 {
+	MigrationWaitingTime=90
 	PlaylistName=AutoTournament
 	
 	WaitForPlayersTime=30

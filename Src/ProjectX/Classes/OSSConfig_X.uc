@@ -7,13 +7,17 @@ class OSSConfig_X extends OnlineConfig_X
 	config(Engine);
 
 var() config bool bEnablePresence;
+var() bool bWin64OptimizedKeyPolling;
+var() bool bUseSteamControllerCache;
 var() float EosInitTimeoutSeconds;
 var() float GdkUpdateDlcTimeoutSeconds;
 var() int GdkMaxConcurrentDlcLicenseRequests;
 
 defaultproperties
 {
-	EosInitTimeoutSeconds=40.0
+	bWin64OptimizedKeyPolling=true
+	bUseSteamControllerCache=true
+	EosInitTimeoutSeconds=30.0
 	GdkUpdateDlcTimeoutSeconds=4.0
 	GdkMaxConcurrentDlcLicenseRequests=2
 }

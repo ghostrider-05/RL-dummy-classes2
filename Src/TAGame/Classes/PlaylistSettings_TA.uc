@@ -10,6 +10,7 @@ var() class TourServerInfoClass;
 var() bool bAllowHonorDuelChallenges;
 var() bool bAllowVoiceChat;
 var() bool bAllowViralItems;
+var() bool bAllowAnonymize;
 var() int DetailsGroup;
 var() BackFillPolicy_TA BackFillPolicy;
 var array<TeamColor> TeamColors;
@@ -21,5 +22,6 @@ defaultproperties
 {
 	bAllowHonorDuelChallenges=true
 	bAllowVoiceChat=true
+	bAllowAnonymize=true
 	BallSuperSonicColor=(bOverride=false,Color=(R=0.0,G=0.0,B=0.0,A=1.0))
 }

@@ -29,6 +29,7 @@ struct LocalizedAction extends _Types_X.BindingAction
 struct UIPlayerBinding extends _Types_X.PlayerBinding
 {
 	var databinding string UIKey;
+	var databinding string UIAxisKey;
 };
 
 var databinding array<LocalizedBindingCategory> Categories;

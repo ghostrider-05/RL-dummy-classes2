@@ -6,3 +6,8 @@
 class SettingsMenuConfig_TA extends OnlineConfig_X;
 
 var() bool bShowTrainingTab;
+
+defaultproperties
+{
+	bShowTrainingTab=true
+}

@@ -55,3 +55,4 @@ var databinding transient Texture CurrencyImageLarge;
 var databinding transient Texture LogoImage;
 var databinding ESpecialEventState EventState;
 var databinding int SecondsRemaining;
+var databinding bool bIsTargetedChallengeEvent;

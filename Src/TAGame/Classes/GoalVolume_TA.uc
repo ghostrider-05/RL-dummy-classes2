@@ -9,11 +9,13 @@ class GoalVolume_TA extends Volume
 
 var() export editinline Goal_TA Goal;
 var(HighContrastMode) HighContrastActor_TA HighContrastActorArchetype;
+var(HighContrastMode) bool HighContrastRenderingEnabled;
 var HighContrastActor_TA HighContrastActor;
 
 defaultproperties
 {
 	//Goal=Goal_TA'Default__GoalVolume_TA.DefaultGoal'
+	HighContrastRenderingEnabled=true
 	
 	BrushComponent=BrushComponent0
 	begin object name=BrushComponent0

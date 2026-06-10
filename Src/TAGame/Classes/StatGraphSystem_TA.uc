@@ -10,6 +10,7 @@ var EStatGraphLevel GraphLevel;
 var export editinline PerfStatGraph_TA PerfStatGraph;
 var export editinline NetStatGraph_TA NetStatGraph;
 var export editinline InputBufferGraph_TA InputBufferGraph;
+var export editinline RBActorStatGraph_TA ActorStatGraphs;
 var export editinline array<export editinline StatGraph_TA> StatGraphs;
 var export editinline array<export editinline StatGraph_TA> VisibleStatGraphs;
 var int PreallocGraphLines;

@@ -15,6 +15,7 @@ var transient PostProcessManager_TA PostProcessManager;
 var transient int SpectatorPitchDir;
 var transient int SwivelPitchDir;
 var transient SpectatorVolume_TA SpectatorVolume;
+var transient EInputPlatformType LastInputType;
 var const float FullRotationScalar;
 var const float FullRotationMax;
 var VanitySetManager_TA VanityMgr;

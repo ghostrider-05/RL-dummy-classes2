@@ -12,10 +12,12 @@ var() HUD HUDArchetype;
 var transient Pawn OldPawnReference;
 var transient Actor LockedDebugActor;
 var transient bool bPausedForExternalUI;
+var const float CloseConnectionDelay;
 var transient NetConnection NetConnection;
 
 defaultproperties
 {
+	CloseConnectionDelay=1.0
 	CheatClass=class'CheatManager_X'
 	InputClass=class'PlayerInput_X'
 	

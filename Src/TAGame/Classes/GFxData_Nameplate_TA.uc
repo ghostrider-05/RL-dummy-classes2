@@ -16,6 +16,7 @@ var bool bInKnockoutGameMode;
 var databinding bool bIsDistracted;
 var databinding bool bLocalPlayer;
 var databinding bool bRenderBoostAmount;
+var databinding bool bShowViralNameplateVisuals;
 var transient bool bShowShortcut;
 var databinding float LivesVisibility;
 var databinding int RemainingLives;
@@ -25,6 +26,7 @@ var databinding EInfectedType InfectedStatus;
 var export editinline transient NameplateComponent_TA NameplateComponent;
 var transient ProfileGameplaySave_TA GameplaySettings;
 var transient Persona_TA Persona;
+var GameplaySettingsSave_TA GameplaySettingsSave;
 
 defaultproperties
 {

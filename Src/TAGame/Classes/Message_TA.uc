@@ -21,6 +21,7 @@ var const transient array<name> ParamNames;
 var const transient array<string> ParamTokens;
 var transient MessagePacket Packet;
 var transient MessagePacket DefaultPacket;
+var transient PlayerController_TA MessageReceiver;
 
 defaultproperties
 {

@@ -120,6 +120,7 @@ var transient float PreWeldMass;
 var repnotify transient float ReplicatedGravityScale;
 var repnotify transient float ReplicatedCollisionScale;
 var native transient Pointer Constraint2D;
+var native transient Pointer Constraint3D;
 var native transient Pointer BulletRigidBody;
 var PhysicsConfig_TA PhysicsConfig;
 var repnotify transient byte TeleportCounter;

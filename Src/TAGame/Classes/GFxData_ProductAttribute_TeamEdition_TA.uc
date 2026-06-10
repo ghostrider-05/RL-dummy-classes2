@@ -5,6 +5,8 @@
 *******************************************************************************/
 class GFxData_ProductAttribute_TeamEdition_TA extends GFxData_ProductAttribute_TA;
 
+const BAD_LABEL_TAG = "<bad-decal-label>";
+
 var databinding string TeamName;
 var databinding Texture TeamLogo;
 var databinding string ItemShopLabel;

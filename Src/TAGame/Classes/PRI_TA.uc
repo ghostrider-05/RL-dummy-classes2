@@ -109,6 +109,10 @@ var repnotify transient bool bIdleBanned;
 var transient bool bStayAsPartyActive;
 var transient bool bAbleToStart;
 var transient bool bTeamChanged;
+var repnotify bool bAnonymizeToTeammates;
+var repnotify bool bAnonymizeToOpponents;
+var repnotify transient bool bReceivedAnonymizationSettings;
+var transient bool bAutoSkipGoalReplay;
 var transient GameEvent_TA GameEvent;
 var repnotify transient GameEvent_TA ReplicatedGameEvent;
 var transient Car_TA Car;
@@ -154,6 +158,7 @@ var transient int BigBoostsCollected;
 var transient int MaxDodgeStreak;
 var transient float BoostUsed;
 var transient int Dodges;
+var transient int PowerUpsUsed;
 var transient int BallTouches;
 var transient int CarTouches;
 var repnotify transient PRI_TA ReplacingBotPRI;
@@ -173,6 +178,7 @@ var string PublicIP;
 var repnotify transient int SpectatorShortcut;
 var CarDistanceTracker_TA CarDistanceTracker;
 var CarGrappleTracker_TA CarGrappleTracker;
+var CarFlipResetTracker_TA CarFlipResetTracker;
 var StayAsPartyVoter_TA StayAsPartyVoter;
 var StayAsPartyVoteYes_TA StayAsPartyVoteYes;
 var PickupTimer_TA PickupTimer;
@@ -192,14 +198,17 @@ var transient int SelfDemolitions;
 var transient int KeepUpDenials;
 var transient int KeepUpClears;
 var transient int KeepUpPossessions;
+var transient string EpicPUID;
 var const transient array<ProductSlot_TA> ValidationFailedClearedSlots;
+var repnotify transient DemoSpawnSelectionData DemoSelectionData;
+var string AnonymizedName;
 
 defaultproperties
 {
 	FullLoadouts[0]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
 	FullLoadouts[1]=(TeamPaint=(TeamFinishID=0,CustomFinishID=0,Team=0,TeamColorID=0,CustomColorID=0,bSet=false),Title=XP,TeamIndex=0,OnlineProducts=None,Products=None)
-	MaxDataProducts=1
-	CameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
+	MaxDataProducts=2
+	CameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
 	CameraPitch=128
 	CameraYaw=128
 	
@@ -220,12 +229,12 @@ replication
 		ClientLoadout, ClientLoadoutOnline, 
 		ClientLoadouts, ClientLoadoutsOnline, 
 		ClubID, CurrentVoiceRoom, 
-		PawnType, ReplicatedGameEvent, 
-		SkillTier, StayAsPartyVoteYes, 
-		StayAsPartyVoter, SteeringSensitivity, 
-		Title, bIdleBanned, 
-		bIsDistracted, bOnlineLoadoutSet, 
-		bReady;
+		EpicPUID, PawnType, 
+		ReplicatedGameEvent, SkillTier, 
+		StayAsPartyVoteYes, StayAsPartyVoter, 
+		SteeringSensitivity, Title, 
+		bIdleBanned, bIsDistracted, 
+		bOnlineLoadoutSet, bReady;
 
 	 if(bNetDirty)
 		PartyLeader, bIsInSplitScreen;
@@ -257,9 +266,10 @@ replication
 		KeepUpPossessions;
 
 	 if(bNetInitial/**Missing key for position: 97.*/)
-		PickupTimer, QuitSeverity, 
-		ReplacingBotPRI, bAbleToStart, 
-		bMatchAdmin, bStartVoteToForfeitDisabled;
+		DemoSelectionData, PickupTimer, 
+		QuitSeverity, ReplacingBotPRI, 
+		bAbleToStart, bMatchAdmin, 
+		bStartVoteToForfeitDisabled;
 
 	 if(bNetInitial/**Missing key for position: 122.*/)
 		BotAvatarProductID, BotBannerProductID, 
@@ -270,4 +280,10 @@ replication
 
 	 if(bNetInitial/**Missing key for position: 142.*/)
 		TotalGameTimePlayed, TotalIdleTime;
+
+	 if(bNetInitial/**Missing key for position: 152.*/)
+		AnonymizedName, bReceivedAnonymizationSettings;
+
+	 if(bNetInitial/**Missing key for position: 162.*/)
+		bAnonymizeToOpponents, bAnonymizeToTeammates;
 }

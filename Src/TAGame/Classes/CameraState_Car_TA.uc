@@ -48,7 +48,8 @@ var transient CameraOrientation ViewOffset;
 var transient bool bFirstExecution;
 var transient bool bOnGround;
 var transient bool bFreeLookActive;
-var transient bool bRecenterActive;
+var() bool bShowDebug;
+var transient bool bLastStateWasLookAtBall;
 var transient Vector GroundNormal;
 var float CameraStartDistance;
 var CameraConfig_TA Config;
@@ -60,6 +61,8 @@ var const float ProximityDistanceBlendInSpeed;
 var const float ProximityDistanceBlendOutSpeed;
 var const class ProximityTargetClass;
 var const ProfileSliderLimits ProximityDistanceLimits;
+var transient Rotator InterpRotationGround;
+var transient Rotator InterpRotationWall;
 
 defaultproperties
 {

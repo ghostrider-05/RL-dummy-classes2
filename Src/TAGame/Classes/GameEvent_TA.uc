@@ -84,6 +84,7 @@ var repnotify transient int ReplicatedGameStateTimeRemaining;
 var BotConfig_TA BotConfig;
 var transient array<UniqueNetId> ForfeitInitiatorIDs;
 var transient array<UniqueNetId> BannedPlayers;
+var transient array<UniqueNetId> EACViolators;
 var repnotify transient PRI_TA GameOwner;
 var repnotify transient CustomMatchSettings MatchSettings;
 var repnotify string RichPresenceString;
@@ -98,6 +99,7 @@ var transient PauseStaticDataSync_X PauseInstance;
 var Qword MatchStartEpoch;
 var float MatchTotalSecondsPlayed;
 var FXActor_TA DemoFXOverride;
+var array<UniqueNetId> AnonymizedIndex;
 
 defaultproperties
 {

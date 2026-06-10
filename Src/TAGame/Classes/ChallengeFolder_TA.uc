@@ -36,6 +36,11 @@ var databinding string SubFolderNames;
 var databinding string LinkedFolderCodeName;
 var databinding Qword ActiveSubFolderStartTime;
 var databinding Qword ActiveSubFolderEndTime;
+var databinding string Description;
+var string WidgetURL;
+var string DashboardURL;
+var databinding Texture WidgetImage;
+var databinding Texture DashboardImage;
 var native Map_Mirror ChallengeCache;
 
 defaultproperties

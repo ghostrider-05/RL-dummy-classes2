@@ -21,6 +21,7 @@ struct native DDoSServicePayloadStruct
 	}
 };
 
+var transient bool bDDoSPreventionTriggered;
 var Qword DDoSServiceMessageSentTimestamp;
 var const int DDoSServiceMessageRetryTime;
 var string DDoSServiceURL;

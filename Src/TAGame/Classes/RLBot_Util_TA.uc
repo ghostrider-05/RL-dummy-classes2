@@ -44,6 +44,20 @@ struct native PlayerStats
 	}
 };
 
+struct native PlayerPickupData
+{
+	var class PickupClass;
+	var int TimeTillItem;
+	var int MaxTimeTillItem;
+
+	structdefaultproperties
+	{
+		PickupClass=None
+		TimeTillItem=0
+		MaxTimeTillItem=0
+	}
+};
+
 var config string ControllerURL;
 var config string OutputFilePath;
 var config float PacketSendRate;

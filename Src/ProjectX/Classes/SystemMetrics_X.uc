@@ -9,11 +9,13 @@ struct OSMetrics
 {
 	var string Type;
 	var string Bits;
+	var string Native;
 
 	structdefaultproperties
 	{
 		Type=""
 		Bits=""
+		Native=""
 	}
 };
 

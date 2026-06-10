@@ -12,6 +12,7 @@ var() SkeletalMesh SkeletalMesh;
 var() AnimTree AnimTree;
 var() editinline array<editinline AttachmentBehavior_TA> Behaviors;
 var() array<WheelAttachment> Attachments;
+var() FXActor_X FXActor;
 var() Vector Scale3D;
 var() Rotator Rotation;
 

@@ -35,6 +35,7 @@ var FXActor_X PickupFX;
 var export editinline ShakeComponent_X ShakeComp;
 var int PickupSlot;
 var int CooldownSeconds;
+var() StatEvent_TA PickupStatEvent;
 
 defaultproperties
 {

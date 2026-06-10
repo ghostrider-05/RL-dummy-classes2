@@ -31,6 +31,7 @@ var const localized string ThistleIntroTitle;
 var const localized string ThistleIntroSubTitle;
 var const localized string ThistleIntroDescription;
 var const localized string ThistleIntroSubText;
+var WorldCupConfig_TA WorldCupConfig;
 
 defaultproperties
 {

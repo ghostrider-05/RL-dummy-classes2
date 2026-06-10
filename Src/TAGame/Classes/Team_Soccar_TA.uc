@@ -9,6 +9,8 @@ class Team_Soccar_TA extends Team_TA
 var repnotify transient int GameScore;
 var transient array<Actor> PrimaryStarts;
 var transient array<Actor> SecondaryStarts;
+var transient array<Actor> LeftSecondaryStarts;
+var transient array<Actor> RightSecondaryStarts;
 
 defaultproperties
 {

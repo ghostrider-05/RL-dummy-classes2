@@ -4,3 +4,8 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class AppMetrics_TA extends MetricsGroup_X;
+
+defaultproperties
+{
+	Category="App"
+}

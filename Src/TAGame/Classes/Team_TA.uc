@@ -62,6 +62,7 @@ var transient VoteActor_TA ForfeitVote;
 var transient VoteActor_TA PartyUpVote;
 var transient bool bForfeit;
 var transient array<TemporarySpawnSpot> TemporarySpawnSpots;
+var transient StreamerSafeAnonymizationUtils_TA LocalAnonymizationSettingsHelper;
 var transient int Difficulty;
 
 defaultproperties

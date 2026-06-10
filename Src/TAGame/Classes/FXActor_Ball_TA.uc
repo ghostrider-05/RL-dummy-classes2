@@ -26,7 +26,7 @@ var FXActorEvent_X SuperSonicState;
 var transient Ball_TA Ball;
 var transient float TouchingWorldTime;
 var transient bool bInAir;
-var transient bool bSuperSonic;
+var transient bool bSupersonic;
 var transient float CurrentTrailDilation;
 var() float MaxTrailDilation;
 var() name TrailIntensityName;

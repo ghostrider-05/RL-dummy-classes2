@@ -37,6 +37,7 @@ var bool bLocalPlayer;
 var transient ProductAsset_PaintFinish_TA TeamFinish;
 var transient ProductAsset_PaintFinish_TA CustomFinish;
 var transient ClubColorSet ClubColors;
+var transient StreamerSafeAnonymizationUtils_TA LocalAnonymizationSettingsHelper;
 var export editinline transient array<export editinline AntennaComponent_TA> Antennas;
 var export editinline transient array<export editinline MeshComponent> WheelMeshes;
 var transient FXActor_X BodyFX;

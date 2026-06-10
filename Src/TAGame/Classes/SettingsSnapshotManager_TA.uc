@@ -8,6 +8,7 @@ class SettingsSnapshotManager_TA extends Object within OnlinePlayer_TA;
 enum ESaveExportSchemaVersion
 {
 	SaveExportVersion_Base,
+	SaveExportVersion_Products,
 	SaveExportVersion_Max
 };
 
@@ -33,8 +34,27 @@ struct JsonMetadata
 	}
 };
 
+struct ProductData
+{
+	var ProductInstanceID InstanceID;
+	var int ProductID;
+	var int PaintID;
+	var int SpecialEditionID;
+	var int TeamEditionId;
+
+	structdefaultproperties
+	{
+		
+		ProductID=0
+		PaintID=0
+		SpecialEditionID=0
+		TeamEditionId=0
+	}
+};
+
 var string MetadataString;
 var string Payload;
+var string Products;
 var LocalPlayer_TA Player;
 var array<JsonSaveObject_TA> RegisteredSettings;
 var int PayloadChecksum;

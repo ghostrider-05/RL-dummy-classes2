@@ -19,6 +19,7 @@ var EOSVoiceManager_TA VoiceManager;
 var Personas_TA Personas;
 var TextModerationManager_TA TextModerationManager;
 var TextModerationConfig_TA TextModerationConfig;
+var AntiCheatManager_TA AntiCheatManager;
 var const int MaxPartyMessageSize;
 
 defaultproperties

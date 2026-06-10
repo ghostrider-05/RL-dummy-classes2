@@ -9,6 +9,7 @@ var databinding array<GFxTeamColor> Custom;
 var databinding array<GFxTeamColor> Team0;
 var databinding array<GFxTeamColor> Team1;
 var databinding array<GFxTeamColor> Clubs;
+var databinding array<GFxTeamColor> CarCustom;
 var databinding array<GFxTeamColor> PlayerBanners;
 var databinding array<GFxTeamColor> PlayerVanity;
 

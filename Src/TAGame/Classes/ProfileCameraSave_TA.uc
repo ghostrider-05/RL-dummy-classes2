@@ -6,6 +6,12 @@
 class ProfileCameraSave_TA extends JsonSaveObject_TA
 	config(Game);
 
+enum EGameplaySettingsSaveVersion
+{
+	EProfileCameraSaveVersion_DemoSpawnSelection,
+	EProfileCameraSaveVersion_MAX
+};
+
 var ProfileAutoCamSettings AutoCam;
 var ProfileCameraSettings Camera;
 var bool bInvertSwivelPitch;
@@ -21,16 +27,19 @@ var bool bUseBallIndicator;
 var bool bUseBallCamIndicator;
 var bool bEnableCameraShake;
 var bool bDirectorAllowCameraBlending;
+var bool bReplayScorerView;
 var config ECameraSettingsPreset CameraSettingsPreset;
 var float DirectorMinChangeTeamFocusTime;
 var float DirectorMinSameTeamFocusTime;
 var float MaxProximityDistance;
 var float PrespawnLerpSpeed;
+var float DemoSelectLerpTime;
+var float DemoSelectChangeSpawnTime;
 
 defaultproperties
 {
 	AutoCam=(FOV=90.0,Height=250.0,Distance=1200.0,MoveSpeed=2.0,MoveSpeedZ=0.50,RotateSpeed=3.0,AerialDistance=300.0,FocusBlendSpeed=15.0,AerialPrediction=0.10,bUseReplayCamera=true,bFocusOnGoals=true)
-	Camera=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
+	Camera=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
 	bInvertSwivelPitch=true
 	bToggleSecondaryCamera=true
 	bUseBallIndicator=true
@@ -41,5 +50,7 @@ defaultproperties
 	DirectorMinChangeTeamFocusTime=5.0
 	DirectorMinSameTeamFocusTime=4.0
 	MaxProximityDistance=500.0
-	PrespawnLerpSpeed=0.750
+	PrespawnLerpSpeed=0.50
+	DemoSelectLerpTime=0.250
+	DemoSelectChangeSpawnTime=0.10
 }

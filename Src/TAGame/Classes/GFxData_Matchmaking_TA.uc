@@ -36,6 +36,8 @@ var databinding int SeasonEndHours;
 var databinding int SeasonEndMinutes;
 var MatchmakingSettingsSave_TA MatchmakingSave;
 var PlayMenuSave_TA PlayMenuSave;
+var transient AntiCheatManager_TA AntiCheatManager;
+var transient AntiCheatConfig_TA AntiCheatConfig;
 var() array<MessageUpdate> MessageUpdates;
 var transient int CurrentMessageUpdateIndex;
 var() RankedConfig_X RankedConfig;

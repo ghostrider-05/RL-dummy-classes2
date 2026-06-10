@@ -7,8 +7,13 @@ class DynamicSpawnPointMesh_TA extends GameEditor_Actor_TA
 	notplaceable
 	hidecategories(Navigation);
 
+var float VelocityStartSpeed;
+var const float MaxStartSpeed;
+var export editinline transient CarVelocityPreviewComponent_TA VelocityPreviewComponent;
+
 defaultproperties
 {
+	MaxStartSpeed=2300.0
 	begin object name=StaticComponent0
 		ReplacementPrimitive=None
 	end object

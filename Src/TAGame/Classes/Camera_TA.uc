@@ -47,6 +47,7 @@ var() const ProfileSliderLimits StiffnessLimits;
 var() const ProfileSliderLimits SwivelSpeedLimits;
 var() const ProfileSliderLimits TransitionSpeedLimits;
 var() const ProfileSliderLimits PrespawnLerpLimits;
+var() const ProfileSliderLimits DemoSelectLerpLimits;
 var() const array<ProfileCameraSettings> CameraPresetSettings;
 var() const float HorizontalSplitscreenHeightOffset;
 var() const float HorizontalSplitscreenFOVOffset;
@@ -72,12 +73,13 @@ defaultproperties
 	StiffnessLimits=(Min=0.0,Max=1.0,interval=0.050)
 	SwivelSpeedLimits=(Min=1.0,Max=10.0,interval=0.10)
 	TransitionSpeedLimits=(Min=1.0,Max=2.0,interval=0.10)
-	PrespawnLerpLimits=(Min=0.0,Max=1.0,interval=0.050)
-	CameraPresetSettings(0)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
-	CameraPresetSettings(1)=(FOV=100.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.20,bUnconstrainRotation=false,bAutoRecenter=false)
-	CameraPresetSettings(2)=(FOV=110.0,Height=110.0,Pitch=-3.0,Distance=280.0,Stiffness=0.50,SwivelSpeed=5.0,TransitionSpeed=1.50,bUnconstrainRotation=false,bAutoRecenter=false)
-	CameraPresetSettings(3)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
-	CameraPresetSettings(4)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=260.0,Stiffness=0.30,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
+	PrespawnLerpLimits=(Min=0.0,Max=0.50,interval=0.050)
+	DemoSelectLerpLimits=(Min=0.0,Max=0.50,interval=0.050)
+	CameraPresetSettings(0)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
+	CameraPresetSettings(1)=(FOV=100.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.20,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
+	CameraPresetSettings(2)=(FOV=110.0,Height=110.0,Pitch=-3.0,Distance=280.0,Stiffness=0.50,SwivelSpeed=5.0,TransitionSpeed=1.50,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
+	CameraPresetSettings(3)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
+	CameraPresetSettings(4)=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=260.0,Stiffness=0.30,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
 	GroundClampZOffset=10.0
 	//Blender=CameraStateBlender_X'Default__Camera_TA.StateBlender0'
 	bHidden=false

@@ -79,6 +79,7 @@ var bool bMatchCreatorAdminEnabled;
 var bool bCanDropOnlineRewards;
 var repnotify transient bool bAllowHonorDuels;
 var bool bThistleMatch;
+var bool bAllowDemoSpawnSelection;
 var(Setup) array<Actor> BallSpawnPoints;
 var int BallSpawnPointIndex;
 // Handles giving XP to players
@@ -178,6 +179,9 @@ var const float BallSpacing;
 var const float PreMatchPlayersReadyStartDelay;
 var transient array<PRI_TA> RemovedPRIs;
 var ThistleConfig_TA ThistleConfig;
+var WorldCupConfig_TA WorldCupConfig;
+var const string TimeFormatString;
+var const string ScoreFormatString;
 
 defaultproperties
 {
@@ -185,6 +189,7 @@ defaultproperties
 	bGoalsEnabled=true
 	bShowNoScorerGoalMessage=true
 	bSkipMatchCompleteNoContest=true
+	bAllowDemoSpawnSelection=true
 	BallSpawnPointIndex=-1
 	SeriesLength=1
 	TotalGameBalls=1
@@ -197,6 +202,8 @@ defaultproperties
 	PodiumTagOffsetZ=-20.0
 	BallSpacing=50.0
 	PreMatchPlayersReadyStartDelay=5.0
+	TimeFormatString="[Min]:[Sec] "
+	ScoreFormatString="([Home] - [Away])"
 	
 	bMultiplayer=true
 	

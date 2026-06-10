@@ -13,8 +13,10 @@ var transient ProfileCameraSettings ProfileSettings;
 var transient bool bUsingSecondaryCamera;
 var transient bool bUsingBehindView;
 var transient bool bUsingFreecam;
+var transient bool bLookingAtBall;
 var bool bDirtySecondaryCamera;
 var bool bDirtyBehindView;
+var bool bDirtyLookingAtBall;
 var transient byte CameraPitch;
 var transient byte CameraYaw;
 var transient float MaxProximityDistance;
@@ -24,7 +26,7 @@ var float LastReplicateRotationTime;
 defaultproperties
 {
 	UploadCameraDelay=0.03330
-	ProfileSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
+	ProfileSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
 	CameraPitch=127
 	CameraYaw=127
 	CollisionType=COLLIDE_CustomDefault
@@ -38,6 +40,7 @@ replication
 
 	 if(bNetDirty)
 		CameraPitch, CameraYaw, 
-		ProfileSettings, bUsingBehindView, 
-		bUsingFreecam, bUsingSecondaryCamera;
+		ProfileSettings, bLookingAtBall, 
+		bUsingBehindView, bUsingFreecam, 
+		bUsingSecondaryCamera;
 }

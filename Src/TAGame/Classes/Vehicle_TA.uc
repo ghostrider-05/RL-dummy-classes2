@@ -28,7 +28,7 @@ var const transient bool bReplicatedHandbrake;
 var transient bool bJumped;
 var transient bool bDoubleJumped;
 var transient bool bOnGround;
-var transient bool bSuperSonic;
+var transient bool bSupersonic;
 var repnotify transient bool bPodiumMode;
 var transient bool bHasPostMatchCelebration;
 var const transient VehicleInputs Input;
