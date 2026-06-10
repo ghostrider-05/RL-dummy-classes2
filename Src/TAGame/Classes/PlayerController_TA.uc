@@ -82,6 +82,7 @@ var int BallVelocityIncrementFireCount;
 var float BallVelocityIncrementFireCountMax;
 var float BallVelocityIncrementSpeedDefault;
 var float BallVelocityIncrementSpeedMax;
+var float VehicleVelocityIncrementAmount;
 var float CrosshairTraceDistance;
 var Actor TracedCrosshairActor;
 var array<CrosshairExtentInfo> CrosshairTraceExtents;
@@ -121,11 +122,14 @@ var repnotify repretry PrespawnData Prespawn;
 var FreeplaySessionManager_TA FreeplaySessionManager;
 var Actor TargettedActor;
 var transient TextChatActor_TA TextChatActor;
+var transient AntiCheatMessenger_TA AntiCheatMessenger;
 var float PickupButtonPressedSeconds;
 var float PickupActivationBuffer;
 var transient GameplaySettingsSave_TA GameplaySettingsSave;
 var transient float CachedInputPitch;
 var transient float CachedInputYaw;
+var GameEvent_Soccar_TA SoccarGameEvent;
+var const float PresenceUpdateFrequency;
 
 defaultproperties
 {
@@ -136,6 +140,7 @@ defaultproperties
 	BallVelocityIncrementFireCountMax=2.0
 	BallVelocityIncrementSpeedDefault=0.250
 	BallVelocityIncrementSpeedMax=0.020
+	VehicleVelocityIncrementAmount=50.0
 	CrosshairTraceDistance=12000.0
 	CrosshairTraceExtents(0)=(Extent=(X=1.0,Y=1.0,Z=1.0),minDot=0.0)
 	CrosshairTraceExtents(1)=(Extent=(X=100.0,Y=100.0,Z=100.0),minDot=0.70)
@@ -148,6 +153,7 @@ defaultproperties
 	/**PlayerReportedMessage="Your report will be sent after the match.\\nThank you"*/
 	/**PlayerReportedPostGameMessage="Thank you"*/
 	/**CheckPlayerReportStatusMessage="To check the status of your report, go to safety.epicgames.com/reports"*/
+	PresenceUpdateFrequency=30.0
 	CheatClass=class'CheatManager_TA'
 	InputClass=class'PlayerInput_Game_TA'
 	CylinderComponent=None
@@ -159,8 +165,8 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		FreeplaySessionManager, InputBuffer, 
-		TextChatActor;
+		AntiCheatMessenger, FreeplaySessionManager, 
+		InputBuffer, TextChatActor;
 
 	 if(bNetDirty)
 		Prespawn;

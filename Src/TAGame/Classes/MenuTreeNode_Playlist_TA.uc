@@ -21,6 +21,7 @@ var array<int> ChallengesRequired;
 var MenuTreePlaylistQueue_TA PlaylistQueue;
 var bool bSelected;
 var databinding EPlaylistSpecialType SpecialDisplayType;
+var transient AntiCheatManager_TA AntiCheatManager;
 
 defaultproperties
 {

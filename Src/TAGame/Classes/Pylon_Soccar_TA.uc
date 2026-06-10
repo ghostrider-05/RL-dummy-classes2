@@ -29,6 +29,7 @@ defaultproperties
 {
 	MainBoostpadWarmupColor=(R=0.750,G=0.840,B=1.0,A=1.0)
 	SecondaryBoostpadWarmupColor=(R=0.250,G=0.750,B=1.0,A=1.0)
+	bRandomBallSpawnPoint=true
 	bUseRecast=true
 	
 	CylinderComponent=CollisionCylinder

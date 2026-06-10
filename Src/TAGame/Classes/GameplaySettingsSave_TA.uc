@@ -9,6 +9,7 @@ class GameplaySettingsSave_TA extends JsonSaveObject_TA
 enum EGameplaySettingsSaveVersion
 {
 	EGameplaySettingsSaveVersion_ChatFilterDisambiguation,
+	EGameplaySettingsSaveVersion_FlipResetFxAdjustment,
 	EGameplaySettingsSaveVersion_MAX
 };
 
@@ -29,6 +30,9 @@ var bool bTargetedNewsFirstSetup;
 var bool bFilterLanguage;
 var bool bPlayFlipResetFx;
 var bool bEnableHighContrastMode;
+var bool bFreeplayDefaultTeamColors;
+var bool bDrawVehicleHitbox;
+var bool bShowSpecialEventVisuals;
 var EChatFilter QuickChatFilter;
 var EChatFilter MatchChatFilter;
 var EChatFilter PartyChatFilter;
@@ -40,6 +44,7 @@ var EBoostFillType FreeplayBoostFillType;
 var EStatGraphLevel StatGraphLevel;
 var EControlsVisibilityType TrainingControlsVisibility;
 var EChatReportingLevel TextReportingLevel;
+var EFlipResetFxPref FlipResetFxPref;
 var float SafeZoneRatio;
 var float UIScale;
 var float NameplateScale;
@@ -57,9 +62,11 @@ defaultproperties
 	bTargetedNewsFirstSetup=true
 	bFilterLanguage=true
 	bPlayFlipResetFx=true
+	bShowSpecialEventVisuals=true
 	QuickChatFilter=ChatFilter_Preset
 	DeprecatedVoiceFilter=VoiceFilter_None
 	/**StatEventDisplayLevel=SEDL_Primary*/
+	FlipResetFxPref=EFRP_Enabled
 	SafeZoneRatio=1.0
 	UIScale=1.0
 	NameplateScale=1.0

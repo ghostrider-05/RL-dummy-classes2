@@ -13,5 +13,5 @@ defaultproperties
 {
 	bPrespawnFeatureEnabled=true
 	MinRespawnDelayThreshold=3.0
-	PrespawnStateLength=1.0
+	PrespawnStateLength=0.50
 }

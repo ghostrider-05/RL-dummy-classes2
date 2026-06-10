@@ -36,6 +36,10 @@ var databinding bool bOnPodium;
 var databinding bool bWantsToHonorDuel;
 var databinding bool bChallengedToHonorDuel;
 var databinding bool bCanChallengeToHonorDuel;
+var databinding bool bShowViralScoreboardVisuals;
+var databinding bool bShowViralAvatarVisuals;
+var databinding bool bIsAnonymized;
+var databinding bool bNameReady;
 var databinding string ConnectionStatus;
 var databinding string PartyID;
 var databinding string XPTitle;
@@ -68,10 +72,13 @@ var transient Persona_TA PrimaryPersona;
 var transient Personas_TA Personas;
 var transient GFxData_ScoreboardStat_TA ScoreboardStats;
 var transient GFxData_SpectatorStat_TA SpectatorStats;
+var GameplaySettingsSave_TA GameplaySettingsSave;
+var transient ProfileGameplaySave_TA ProfileGameplaySettings;
 
 defaultproperties
 {
 	Team=-1
+	bNameReady=true
 	
 	TableName=PlayerInfo
 }

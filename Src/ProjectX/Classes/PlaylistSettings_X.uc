@@ -35,8 +35,10 @@ var() bool bDisableSaveReplays;
 var() bool bOpenDetailsOnFirstTimeClicked;
 var() bool bAllowStayAsParty;
 var() bool bEnforceDDoSPrevention;
+var() bool bStartMatchWithFirewallProtections;
 var() bool bEnforceEAC;
 var() bool bAllowEACTerminations;
+var() bool bAllowEACWhitelist;
 var() string PlaylistImageURL;
 var() string PlaylistImageTexture;
 var() string PlaylistIconActiveURL;
@@ -56,6 +58,7 @@ defaultproperties
 	bAllowBotFills=true
 	bSkipGameModeVerification=true
 	bEnforceEAC=true
+	bAllowEACWhitelist=true
 	PopulationBuckets(0)=1
 	PopulationBuckets(1)=2500
 	PopulationBuckets(2)=10000

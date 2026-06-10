@@ -75,7 +75,26 @@ enum EStatGraphLevel
 	StatGraphLevel_NetSummary,
 	StatGraphLevel_NetGraphShort,
 	StatGraphLevel_NetGraphLong,
+	StatGraphLevel_ActorGraphSummary,
+	StatGraphLevel_ActorGraphShort,
+	StatGraphLevel_ActorGraphLong,
 	StatGraphLevel_MAX
+};
+
+enum EDemoSpawnPreference
+{
+	EDSP_None,
+	EDSP_Left,
+	EDSP_Right,
+	EDSP_MAX
+};
+
+enum EDemoSelectionState
+{
+	EDSS_None,
+	EDSS_Locked,
+	EDSS_Active,
+	EDSS_MAX
 };
 
 enum EMeshMirrorMode
@@ -506,6 +525,15 @@ enum EShowOnly
 	SHOW_MAX
 };
 
+enum EFlipResetFxPref
+{
+	EFRP_Off,
+	EFRP_AudioOnly,
+	EFRP_VisualOnly,
+	EFRP_Enabled,
+	EFRP_MAX
+};
+
 enum ETrainingType
 {
 	Training_None,
@@ -847,6 +875,15 @@ enum ENameplateMode
 	NameplateMode_MAX
 };
 
+enum EAnonymizationTargets
+{
+	ToNobody,
+	ToTeammates,
+	ToOpponents,
+	ToEveryone,
+	EAnonymizationTargets_MAX
+};
+
 enum EMusicStingersSetting
 {
 	MusicStingers_Off,
@@ -913,6 +950,7 @@ enum EMainMenuBackground
 	MMBG_Anniversary,
 	MMBG_Mall,
 	MMBG_Paris,
+	MMBG_FuturaNight,
 	MMBG_MAX
 };
 
@@ -1040,6 +1078,28 @@ struct native PlayerActorIDPair
 	{
 		ActorID=0
 		
+	}
+};
+
+struct DemoSpawnSelectionData
+{
+	var EDemoSpawnPreference SpawnPreference;
+	var EDemoSelectionState SelectionState;
+	var int PercentageTimeLeft;
+	var Actor SpawnActor;
+	var int SpawnIndex;
+	var Vector SpawnLocation;
+	var Rotator SpawnRotation;
+
+	structdefaultproperties
+	{
+		SpawnPreference=EDSP_None
+		SelectionState=EDSS_None
+		PercentageTimeLeft=0
+		SpawnActor=None
+		SpawnIndex=0
+		SpawnLocation=(X=0.0,Y=0.0,Z=0.0)
+		SpawnRotation=(Pitch=0,Yaw=0,Roll=0)
 	}
 };
 
@@ -1343,6 +1403,7 @@ struct native ProfileCameraSettings
 	var float TransitionSpeed;
 	var bool bUnconstrainRotation;
 	var bool bAutoRecenter;
+	var bool bFreeLookSmoothing;
 
 	structdefaultproperties
 	{
@@ -1353,8 +1414,23 @@ struct native ProfileCameraSettings
 		Stiffness=0.50
 		SwivelSpeed=2.50
 		TransitionSpeed=1.0
-		bUnconstrainRotation=false
+		bUnconstrainRotation=true
 		bAutoRecenter=false
+		bFreeLookSmoothing=true
+	}
+};
+
+struct ProfileCameraInputSettings
+{
+	var bool bInvertSwivelPitch;
+	var bool bUnconstrainRotation;
+	var bool bFreeLookSmoothing;
+
+	structdefaultproperties
+	{
+		bInvertSwivelPitch=true
+		bUnconstrainRotation=false
+		bFreeLookSmoothing=true
 	}
 };
 

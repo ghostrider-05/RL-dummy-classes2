@@ -61,6 +61,18 @@ struct native GoalPenetrationData
 	}
 };
 
+struct native BallExtraData
+{
+	var int DamageIndex;
+	var float TargetSpeed;
+
+	structdefaultproperties
+	{
+		DamageIndex=0
+		TargetSpeed=0.0
+	}
+};
+
 struct native CarBallInteractionSettings
 {
 	var() bool bSkipScriptForces;
@@ -156,6 +168,7 @@ var FXActor_X PossessionFXActorArchetype;
 var transient FXActor_X PossessionFXActor;
 var Vector AirResistance;
 var Vector MinResistanceVelocity;
+var float SecondsSinceGroundedChanged;
 
 defaultproperties
 {

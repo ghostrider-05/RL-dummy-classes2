@@ -12,9 +12,13 @@ var float VehicleLocationModifier;
 var float VehicleRotationModifier;
 var bool bForceSpawnVehicleOnGround;
 var bool bSkipGoalReplay;
+var bool bUnlimitedBoost;
 var float RestartRoundInputDelay;
+var float StartingBoost;
 
 defaultproperties
 {
 	bForceSpawnVehicleOnGround=true
+	bUnlimitedBoost=true
+	StartingBoost=33.0
 }

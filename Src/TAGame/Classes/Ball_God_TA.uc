@@ -32,6 +32,7 @@ var const FXActorEvent_X FXEvent_TeamChanged;
 var const FXActorEvent_X FXEvent_IntensityChanged;
 var const bool bSwapTeamOnWorldHit;
 var const bool bBackwardsDirectionCheckEnabled;
+var const bool bIncrementSpeedOnHitNumChange;
 
 defaultproperties
 {
@@ -57,6 +58,7 @@ defaultproperties
 	AudioIntensityName=BallIntensity
 	bSwapTeamOnWorldHit=true
 	bBackwardsDirectionCheckEnabled=true
+	bIncrementSpeedOnHitNumChange=true
 	
 	StaticMesh=DefaultMesh
 	//BallCamTarget=BallCamTarget_TA'Default__Ball_God_TA.DefaultBallCamTarget'

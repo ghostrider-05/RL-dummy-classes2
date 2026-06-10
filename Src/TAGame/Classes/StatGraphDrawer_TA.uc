@@ -35,7 +35,8 @@ struct native SummaryLabel
 
 var export editinline SampleHistory_TA History;
 var float MaxSampleAge;
-var float Scale;
+var float XScale;
+var float YScale;
 var float PixelsPerSample;
 var float ValueStartX;
 var float MaxCharHeight;

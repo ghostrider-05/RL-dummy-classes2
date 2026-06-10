@@ -41,6 +41,8 @@ var() ProfileSliderLimits BallSpeedModifierLimits;
 var() ProfileSliderLimits BallLocationModifierLimits;
 var() ProfileSliderLimits BallHeightModifierLimits;
 var() ProfileSliderLimits RestartRoundInputDelayLimits;
+var() ProfileSliderLimits TrainingStartingBoostLimits;
+var() ProfileSliderLimits MaxMatchmakingDelayLimits;
 var const localized string LoadingString;
 var SettingsMenuConfig_TA SettingsConfig;
 var FreeplayConfig_TA FreeplayConfig;
@@ -86,6 +88,8 @@ var const localized string WarnChangingScheduleRegion;
 var GFxData_UserSetting_TA ResolutionSetting;
 var string DraggedScreenResolutionLabel;
 var string DraggedScreenResolutionValue;
+var const string HitboxVisualTutorial;
+var const string SpeedGraphTutorial;
 
 defaultproperties
 {
@@ -112,6 +116,8 @@ defaultproperties
 	BallLocationModifierLimits=(Min=0.0,Max=1000.0,interval=10.0)
 	BallHeightModifierLimits=(Min=0.0,Max=1000.0,interval=10.0)
 	RestartRoundInputDelayLimits=(Min=0.0,Max=0.10,interval=0.010)
+	TrainingStartingBoostLimits=(Min=0.0,Max=100.0,interval=1.0)
+	MaxMatchmakingDelayLimits=(Min=0.0,Max=60.0,interval=1.0)
 	/**ShowBindingsModal_ErrorMessage="Cannot open Big Picture Mode bindings. Make sure you have selected which controller you want to use."*/
 	
 	SettingObserver=SettingObserver0
@@ -122,5 +128,7 @@ defaultproperties
 	/**WarnCrossPlatformTournamentAndParty="Disabling cross-platform play will remove you from your registered tournament and party. Are you sure you want to disable cross-platform play?"*/
 	/**DisableAndLeave="Disable and Leave"*/
 	/**WarnChangingScheduleRegion="This setting will be locked for 24 hours upon entering a tournament.\\n\\nAre you sure you want to change your schedule region?"*/
+	HitboxVisualTutorial="HitboxVisualizer"
+	SpeedGraphTutorial="SpeedGraphs"
 	TableName=Settings
 }

@@ -19,8 +19,20 @@ struct ViralSeriesGroup
 
 var float ViralPostGoalTime;
 var array<ViralSeriesGroup> ViralSeriesGroups;
+var bool bInfectDuringMatch;
+var bool bAllowViralItemsInAllPlaylists;
+var bool bRequiresViralItemEquipped;
+var array<EInfectedType> ScoreboardInfectedTypes;
+var array<EInfectedType> NameplateInfectedTypes;
+var array<EInfectedType> AvatarInfectedTypes;
 
 defaultproperties
 {
 	ViralPostGoalTime=-1.0
+	ScoreboardInfectedTypes(0)=232
+	ScoreboardInfectedTypes(1)=102
+	NameplateInfectedTypes(0)=232
+	NameplateInfectedTypes(1)=102
+	AvatarInfectedTypes(0)=232
+	AvatarInfectedTypes(1)=102
 }

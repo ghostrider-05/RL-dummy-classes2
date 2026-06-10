@@ -17,4 +17,5 @@ defaultproperties
 {
 	TableName=BlogTiles
 	
+	bLevelTransitionPersistent=true
 }

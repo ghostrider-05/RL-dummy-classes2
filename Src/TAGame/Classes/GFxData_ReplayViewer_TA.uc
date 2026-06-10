@@ -39,6 +39,7 @@ var databinding int ViewRoll;
 var transient Replay_TA Replay;
 var databinding int PendingSkipToFrame;
 var transient GFxModal_X ModalProcessing;
+var databinding string PlayerFocusPrefix;
 
 defaultproperties
 {

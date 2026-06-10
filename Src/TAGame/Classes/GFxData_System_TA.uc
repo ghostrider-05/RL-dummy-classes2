@@ -13,6 +13,7 @@ var databinding bool bSaveDataLoaded;
 var databinding bool bLoggedInPsyNet;
 var databinding bool bLoggedInPlatform;
 var databinding bool bOnline;
+var databinding bool bHideHUD;
 var databinding bool bUndocked;
 var databinding ESplitScreenType SplitScreenType;
 var databinding EInputPlatformType AvailableGamepadType;
@@ -20,6 +21,7 @@ var databinding float SafeZoneRatio;
 var databinding float UIScale;
 var databinding string Platform;
 var const string SharedUIState_Unlock;
+var transient ProfileGameplaySave_TA ProfileGameplaySave;
 
 defaultproperties
 {

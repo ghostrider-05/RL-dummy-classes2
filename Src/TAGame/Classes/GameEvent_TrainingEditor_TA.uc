@@ -9,6 +9,8 @@ class GameEvent_TrainingEditor_TA extends GameEvent_GameEditor_TA
 	hidecategories(Navigation,Actor,Object)
 	implements(IStartRound_TA,IGetShotAttempt_TA);
 
+const NudgeClearanceZ = 0.2f;
+
 enum EPlayTestType
 {
 	PlayTest_LoopRound,
@@ -51,6 +53,7 @@ var transient bool bUnsavedChanges;
 var transient bool bShouldEndTraining;
 var transient bool bCanRandomizeShot;
 var transient bool bModifiersUsed;
+var transient bool bRotationOrVelocityChanged;
 var transient int PointsScoredThisRound;
 var GFxModal_X ResetModal;
 var transient int ShotAttempt;
@@ -66,6 +69,7 @@ var float SaveCooldown;
 var transient string TrainingFileName;
 var TrainingEditorNavigationConfig_TA TrainingNavigationConfig;
 var TrainingEditorManipulationConfig_TA TrainingManipulationConfig;
+var transient PlayerController_TA PrimaryPC;
 var transient TrainingEditorNavigation_TA TrainingNavigator;
 var transient TrainingEditorMirror_TA TrainingMirror;
 var const float RestartRoundCooldown;
@@ -74,6 +78,9 @@ var transient array<CachedLocationModifier> CachedLocationModifiers;
 var transient array<CachedSpeedModifier> CachedSpeedModifiers;
 var transient int CachedActiveRound;
 var const int MaxOffsetAttempts;
+var const int DefaultStartingBoostInt;
+var const float DefaultStartingBoost;
+var const string RotationAndVelocityTutorialName;
 
 defaultproperties
 {
@@ -82,6 +89,9 @@ defaultproperties
 	SaveDelayTime=0.50
 	RestartRoundCooldown=0.10
 	MaxOffsetAttempts=8
+	DefaultStartingBoostInt=33
+	DefaultStartingBoost=0.3330
+	RotationAndVelocityTutorialName="TrainingRotationVelocity"
 	
 	MaxRounds=50
 	

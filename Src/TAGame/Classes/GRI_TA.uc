@@ -10,6 +10,7 @@ class GRI_TA extends GRI_X
 var transient bool bHasTalkers;
 var transient bool bAllowTargetFind;
 var transient string NewDedicatedServerIP;
+var transient string LanMatchGUID;
 
 defaultproperties
 {
@@ -19,5 +20,5 @@ defaultproperties
 replication
 {
 	 if(bNetInitial)
-		bAllowTargetFind;
+		LanMatchGUID, bAllowTargetFind;
 }

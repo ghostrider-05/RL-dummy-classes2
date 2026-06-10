@@ -29,6 +29,7 @@ var transient bool bOverrideBoostOn;
 var config bool bUseDefaultLoadout;
 var transient bool bDodgesRefreshed;
 var transient bool bDodgeCounterReplicated;
+var repnotify bool bConstrained3D;
 var() FXActor_X ExitFXArchetype;
 var() Explosion_X DemolishExplosionArchetype;
 var transient Explosion_X DemolishExplosion;
@@ -66,7 +67,10 @@ var transient name DoubleJumpKey;
 var repnotify int DodgesRefreshedCounter;
 var FXActor_X FlipResetFXActorArchetype;
 var transient FXActor_X FlipResetFXActor;
+var transient array<DemolishInvulnerability> DemolishInvulnerabilities;
 var export editinline ViralItemFXComponent_TA ViralItemFXComponent;
+var export editinline transient DrawBoxComponent HitboxDrawComponent;
+var export editinline transient array<export editinline DrawCylinderComponent> HitboxWheelComponents;
 
 defaultproperties
 {
@@ -126,8 +130,8 @@ replication
 		MaxTimeForDodge, PostMatchAnim, 
 		ReplicatedDemolish, ReplicatedDemolishExtended, 
 		ReplicatedDemolishGoalExplosion, RumblePickups, 
-		TeamPaint, bUnlimitedJumps, 
-		bUnlimitedTimeForDodge;
+		TeamPaint, bConstrained3D, 
+		bUnlimitedJumps, bUnlimitedTimeForDodge;
 
 	 if(bNetInitial/**Empty key for position: 20.*/)
 		bOverrideBoostOn, bOverrideHandbrakeOn;

@@ -8,6 +8,7 @@ class CameraState_TA extends CameraState_X
 
 var() bool bShowCarHUD;
 var const bool bAllowRearCamera;
+var transient CameraOrientation LastCalculatedPOV;
 var transient float StateStartTime;
 
 defaultproperties

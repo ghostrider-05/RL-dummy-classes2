@@ -1412,13 +1412,10 @@ struct NewsContent
 	var string CarName;
 	var array<ImageContent> Image;
 	var array<ImageContent> Thumbnail;
-	var string StartTime;
 	var string LinkType;
 	var string InfoURL;
 	var string InfoButtonText;
-	var string EndTime;
-	var Qword StartTimeEpoch;
-	var Qword EndTimeEpoch;
+	var string EventFolderID;
 	var int ShopID;
 	var int ShopItemID;
 	var int ProductID;
@@ -1435,13 +1432,10 @@ struct NewsContent
 		CarName=""
 		Image.Empty
 		Thumbnail.Empty
-		StartTime=""
 		LinkType=""
 		InfoURL=""
 		InfoButtonText=""
-		EndTime=""
-		
-		
+		EventFolderID=""
 		ShopID=0
 		ShopItemID=0
 		ProductID=0
@@ -1467,7 +1461,7 @@ struct NewsTileData
 
 	structdefaultproperties
 	{
-		
+		ContentFields=(Title="",DescriptionHeader="",Description="",SubDescriptionHeader="",WebURL="",CarName="",Image=None,Thumbnail=None,LinkType="",InfoURL="",InfoButtonText="",EventFolderID="",ShopID=0,ShopItemID=0,ProductID=0,CategoryID=0,PlaylistId=0)
 		Placements.Empty
 	}
 };

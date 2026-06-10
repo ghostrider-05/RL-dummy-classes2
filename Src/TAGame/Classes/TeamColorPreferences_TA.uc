@@ -7,3 +7,4 @@ class TeamColorPreferences_TA extends Object;
 
 var bool bColorBlind;
 var bool bForceDefaultColors;
+var bool bFreeplayDefaultTeamColors;

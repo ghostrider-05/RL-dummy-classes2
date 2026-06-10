@@ -59,6 +59,7 @@ var() const PaintDatabase_TA PaintDB;
 var() const CertifiedStatDatabase_TA CertifiedStatDB;
 var() const SpecialEditionDatabase_TA SpecialEditionDB;
 var() const DataAssetDatabase_ESportsTeam_TA ESportsTeamDB;
+var() const string PlayerFocusPrefix;
 
 defaultproperties
 {
@@ -134,4 +135,5 @@ defaultproperties
 	
 	
 	
+	PlayerFocusPrefix="Player_"
 }

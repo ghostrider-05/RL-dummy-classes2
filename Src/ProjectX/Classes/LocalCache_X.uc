@@ -56,3 +56,4 @@ var transient array<CacheImportCallbackData> ImportCallbacks;
 var init native transient array<init Pointer> ExportTasks;
 var transient array<CacheExportCallbackData> ExportCallbacks;
 var() bool bDebug;
+var native bool GLocalCacheCommitPending;

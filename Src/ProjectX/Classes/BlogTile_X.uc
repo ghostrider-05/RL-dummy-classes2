@@ -40,3 +40,4 @@ var databinding int PlaylistId;
 var databinding string InfoURL;
 var databinding string InfoButtonText;
 var databinding string TrackingId;
+var databinding string EventFolderID;

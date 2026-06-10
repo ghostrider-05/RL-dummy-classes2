@@ -26,6 +26,7 @@ var SaveData_GameEditor_TA SaveData;
 var int ActiveRoundNumber;
 var array<SpawnArchetypeData> SpawnableArchetypes;
 var array<DynamicSpawnPointMesh_TA> CarSpawnPoints;
+var transient DynamicSpawnPointMesh_TA LastUsedSpawnPoint;
 var GameEditor_Pawn_TA EditorPawnArchetype;
 var int MaxRounds;
 var array<ActorHistory> UndoHistory;

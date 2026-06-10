@@ -7,6 +7,7 @@ class TextModerationConfig_TA extends OnlineConfig_X;
 
 var bool bTextChatEnabled;
 var bool bUseEOSTokenFlow;
+var bool bCheckMessageConversion;
 var int MaxReportableMessages;
 var int MaxVisibleMessages;
 var string ReportURL;
@@ -14,6 +15,7 @@ var string ReportURL;
 defaultproperties
 {
 	bTextChatEnabled=true
+	bCheckMessageConversion=true
 	MaxReportableMessages=50
 	MaxVisibleMessages=50
 	ReportURL="https://epic.gm/my-reports/"

@@ -45,6 +45,7 @@ var repnotify transient PickupData2 NewReplicatedPickupData;
 var bool bNetRelevant;
 var repnotify transient bool bNoPickup;
 var transient float ReplayRespawnCounter;
+var transient float ReplayPickedUpTime;
 
 defaultproperties
 {
@@ -52,6 +53,7 @@ defaultproperties
 	LocalPickedUpEvent=FXActorEvent_X'FXActorEvents.LocalPickedUp'
 	
 	CylinderComponent=DefaultCollisionCylinder
+	ReplayPickedUpTime=-1.0
 	begin object name=DefaultCollisionCylinder class=CylinderComponent
 		CollisionHeight=100.0
 		CollisionRadius=100.0

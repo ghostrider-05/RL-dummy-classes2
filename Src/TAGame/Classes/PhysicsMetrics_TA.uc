@@ -13,6 +13,8 @@ struct ResimMetricData
 	var int MinNumResimFramesPerEvent;
 	var int MaxNumResimFramesPerEvent;
 	var float AverageNumResimFramesPerEvent;
+	var float AverageCorrectionEventsPerSecond;
+	var float AverageResimFramesPerSecond;
 
 	structdefaultproperties
 	{
@@ -22,7 +24,15 @@ struct ResimMetricData
 		MinNumResimFramesPerEvent=0
 		MaxNumResimFramesPerEvent=0
 		AverageNumResimFramesPerEvent=0.0
+		AverageCorrectionEventsPerSecond=0.0
+		AverageResimFramesPerSecond=0.0
 	}
 };
 
 var array<ResimMetricData> CorrectionEvents;
+var int TotalCorrectionEvents;
+var int TotalResimFrames;
+var int GlobalMinResimFrames;
+var int GlobalMaxResimFrames;
+var float AverageCorrectionEventsPerSecond;
+var float AverageResimFramesPerSecond;

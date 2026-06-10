@@ -8,8 +8,10 @@ class BlogConfig_X extends OnlineConfig_X;
 var array<BlogTile_X> Entries;
 var string MotD;
 var float RetryTime;
+var float RequestDelay;
 
 defaultproperties
 {
 	RetryTime=15.0
+	RequestDelay=1.0
 }

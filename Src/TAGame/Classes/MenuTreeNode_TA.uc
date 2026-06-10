@@ -9,6 +9,7 @@ enum ENodeEnabledRequirement
 {
 	NodeEnabledRequirement_InMainMenu,
 	NodeEnabledRequirement_RankedEnabled,
+	NodeEnabledRequirement_AntiCheat,
 	NodeEnabledRequirement_MAX
 };
 
@@ -54,6 +55,7 @@ var databinding ENodeBadgeType BadgeType;
 var() array<ENodeEnabledRequirement> EnabledRequirements;
 var() array<EEngagementEventType> SupportedEngagementEvents;
 var() NodePlatformAvailability PlatformAvailability;
+var int AntiCheatPlaylistId;
 
 defaultproperties
 {

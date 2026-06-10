@@ -10,6 +10,7 @@ const MaxLoadoutSets = 75;
 enum ELoadoutSaveVersion
 {
 	ELoadoutSaveVersion_InstanceIDV2,
+	ELoadoutSaveVersion_NewColorSet,
 	ELoadoutSaveVersion_MAX
 };
 

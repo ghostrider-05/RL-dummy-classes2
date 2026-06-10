@@ -22,4 +22,5 @@ var transient RPC_CommunityNews_TA CommunityNewsRPC;
 defaultproperties
 {
 	TableName=Community
+	bLevelTransitionPersistent=true
 }

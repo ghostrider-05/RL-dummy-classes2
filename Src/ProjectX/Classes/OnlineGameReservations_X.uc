@@ -44,6 +44,7 @@ var transient bool bMatchStarted;
 var transient bool bLockTeams;
 var transient bool bIsBotMatch;
 var transient bool bMigrationInProgress;
+var transient bool bAwaitingMigrationStart;
 var bool bFirstClubDetailsRequestDone;
 var export editinline ReservationBeacon_X Beacon;
 var export editinline UdpPingBeaconServer_X PingBeacon;
@@ -52,6 +53,7 @@ var transient array<UniqueNetId> PsynetReservationsTeam0Players;
 var transient array<UniqueNetId> PsynetReservationsTeam1Players;
 var transient array<TeamPairHistory> TeamPairHistories;
 var transient array<string> BotNames;
+var const float AwaitingMigrationTimeoutSeconds;
 var() CrossplayConfig_X Crossplay;
 var() MapPrefsConfig_X MapPrefsConfig;
 var() BeaconConfig_X BeaconConfig;
@@ -72,4 +74,5 @@ defaultproperties
 	bAllowPrivateMatchCrossPlayDisable=true
 	
 	Beacon=DefaultBeacon
+	AwaitingMigrationTimeoutSeconds=75.0
 }

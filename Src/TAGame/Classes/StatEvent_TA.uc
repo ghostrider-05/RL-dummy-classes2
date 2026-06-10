@@ -19,6 +19,7 @@ var() const bool bPrimaryStat;
 var() const bool bSkipReplication;
 var() const bool bCanMute;
 var() const bool bCountMultiplied;
+var() const bool bNotifyReceiverOnly;
 // XP group we belong to.
 var() const StatGroup_TA Group;
 // UI Icon

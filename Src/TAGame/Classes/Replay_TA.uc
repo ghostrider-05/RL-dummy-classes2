@@ -18,6 +18,7 @@ enum EReplayVersion
 	ReplayVersion_MutatorSeekFree,
 	ReplayVersion_ClubColors,
 	ReplayVersion_CameraTrack,
+	ReplayVersion_CarColorSet,
 	ReplayVersion_MAX
 };
 

@@ -9,6 +9,7 @@ var() ProfileCameraSettings ForcedCameraSettings;
 
 defaultproperties
 {
-	ForcedCameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=false,bAutoRecenter=false)
+	ForcedCameraSettings=(FOV=90.0,Height=100.0,Pitch=-3.0,Distance=270.0,Stiffness=0.50,SwivelSpeed=2.50,TransitionSpeed=1.0,bUnconstrainRotation=true,bAutoRecenter=false,bFreeLookSmoothing=true)
 	bAllowRearCamera=false
+	bCanFreeLook=false
 }

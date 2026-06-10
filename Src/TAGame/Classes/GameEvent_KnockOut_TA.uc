@@ -25,6 +25,7 @@ var float PodiumSpawnLocationZ;
 
 defaultproperties
 {
+	bAllowDemoSpawnSelection=false
 	
 	
 	

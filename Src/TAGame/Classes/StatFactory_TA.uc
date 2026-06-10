@@ -131,6 +131,7 @@ struct StatEventCollection
 	var() StatEvent_TA CrossbarHits;
 	var() StatEvent_TA DoubleGrapple;
 	var() StatEvent_TA MaxDodgeStreak;
+	var() StatEvent_TA PowerUpsUsed;
 	var() StatEvent_TA InfectedPlayersDefeated;
 	var() StatEvent_TA PlayersInfected;
 	var() StatEvent_TA KeepUpPoint;
@@ -138,6 +139,10 @@ struct StatEventCollection
 	var() StatEvent_TA KeepUpDenial;
 	var() StatEvent_TA KeepUpClear;
 	var() StatEvent_TA FlipReset;
+	var() StatEvent_TA AerialFlipReset;
+	var() StatEvent_TA BellyFlipReset;
+	var() StatEvent_TA AerialBellyFlipReset;
+	var() StatEvent_TA MaxFlipResetStreak;
 
 	structdefaultproperties
 	{
@@ -203,6 +208,7 @@ struct StatEventCollection
 		CrossbarHits=None
 		DoubleGrapple=None
 		MaxDodgeStreak=None
+		PowerUpsUsed=None
 		InfectedPlayersDefeated=None
 		PlayersInfected=None
 		KeepUpPoint=None
@@ -210,6 +216,10 @@ struct StatEventCollection
 		KeepUpDenial=None
 		KeepUpClear=None
 		FlipReset=None
+		AerialFlipReset=None
+		BellyFlipReset=None
+		AerialBellyFlipReset=None
+		MaxFlipResetStreak=None
 	}
 };
 
@@ -224,6 +234,8 @@ var() float JuggleMinSpeed;
 var() float BulletHitSpeed;
 var() float AerialHitHeight;
 var() float AerialHitMinRelSpeed;
+var() float FlipResetBallAerialBuffer;
+var() float AerialFlipResetHeight;
 var() float BicycleSpinSpeed;
 var() float LongGoalDistance;
 var() int HatTrickThreshold;
@@ -241,6 +253,8 @@ var const float CrossbarHitsCooldown;
 
 defaultproperties
 {
+	FlipResetBallAerialBuffer=0.050
+	AerialFlipResetHeight=500.0
 	ComebackScoreDifference=3
 	MinPossessionTimeForSteal=0.10
 	CrossbarHitsCooldown=0.10
